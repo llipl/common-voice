@@ -1,9 +1,14 @@
 import * as React from 'react';
 import { Localized } from 'fluent-react/compat';
+import { trackGlobal, trackNav } from '../../services/tracker';
 import URLS from '../../urls';
 import ContactModal from '../contact-modal/contact-modal';
 import ShareButtons from '../share-buttons/share-buttons';
-import { LocaleLink } from '../locale-helpers';
+import {
+  localeConnector,
+  LocaleLink,
+  LocalePropsFromState,
+} from '../locale-helpers';
 import {
   ContactIcon,
   DiscourseIcon,
@@ -15,22 +20,30 @@ import Logo from './logo';
 
 import './footer.css';
 
+const LocalizedLocaleLink = localeConnector(
+  ({ id, locale, to }: { id: string; to: string } & LocalePropsFromState) => (
+    <Localized id={id} onClick={() => trackNav(id, locale)}>
+      <LocaleLink to={to} />
+    </Localized>
+  )
+);
+
 interface FooterState {
   showContactModal: boolean;
 }
 
-class Footer extends React.PureComponent<{}, FooterState> {
-  private shareURLInput: HTMLInputElement;
-
+class Footer extends React.PureComponent<LocalePropsFromState, FooterState> {
   state: FooterState = {
     showContactModal: false,
   };
 
   private toggleContactModal = () => {
+    trackGlobal('contact', this.props.locale);
     this.setState(state => ({ showContactModal: !state.showContactModal }));
   };
 
   render() {
+    const { locale } = this.props;
     return (
       <footer>
         {this.state.showContactModal && (
@@ -39,7 +52,7 @@ class Footer extends React.PureComponent<{}, FooterState> {
         <div id="help-links">
           <LocaleLink id="help" to={URLS.FAQ}>
             <SupportIcon />
-            <Localized id="help">
+            <Localized id="help" onClick={() => trackNav('help', locale)}>
               <div />
             </Localized>
           </LocaleLink>
@@ -47,7 +60,8 @@ class Footer extends React.PureComponent<{}, FooterState> {
           <a
             id="contribute"
             target="_blank"
-            href="https://github.com/mozilla/voice-web">
+            href="https://github.com/mozilla/voice-web"
+            onClick={() => trackGlobal('github', locale)}>
             <GithubIcon />
             <div>GitHub</div>
           </a>
@@ -55,7 +69,8 @@ class Footer extends React.PureComponent<{}, FooterState> {
           <a
             id="discourse"
             target="blank"
-            href="https://discourse.mozilla-community.org/c/voice">
+            href="https://discourse.mozilla-community.org/c/voice"
+            onClick={() => trackGlobal('discourse', locale)}>
             <DiscourseIcon />
             <div>Discourse</div>
           </a>
@@ -86,12 +101,8 @@ class Footer extends React.PureComponent<{}, FooterState> {
           </div>
           <div className="links">
             <div>
-              <Localized id="privacy">
-                <LocaleLink to={URLS.PRIVACY} />
-              </Localized>
-              <Localized id="terms">
-                <LocaleLink to={URLS.TERMS} />
-              </Localized>
+              <LocalizedLocaleLink id="privacy" to={URLS.PRIVACY} />
+              <LocalizedLocaleLink id="terms" to={URLS.TERMS} />
             </div>
             <div>
               <Localized id="cookies">
@@ -100,9 +111,7 @@ class Footer extends React.PureComponent<{}, FooterState> {
                   href="https://www.mozilla.org/en-US/privacy/websites/#cookies"
                 />
               </Localized>
-              <Localized id="faq">
-                <LocaleLink to={URLS.FAQ}>FAQ</LocaleLink>
-              </Localized>
+              <LocalizedLocaleLink id="faq" to={URLS.FAQ} />
             </div>
           </div>
           <div id="sharing">
@@ -128,4 +137,4 @@ class Footer extends React.PureComponent<{}, FooterState> {
   }
 }
 
-export default Footer;
+export default localeConnector(Footer);

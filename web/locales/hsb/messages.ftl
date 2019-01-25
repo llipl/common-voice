@@ -17,8 +17,11 @@ indicates-required = * Woznamjenja trěbne polo
 
 ## Languages
 
+ab = Abchazišćina
 ace = Ačehšćina
+ady = Adygišćina
 af = Afrikanšćina
+am = Amharšćina
 an = Aragonšćina
 ar = Arabšćina
 as = Asamšćina
@@ -37,6 +40,7 @@ cy = Walizišćina
 da = Danšćina
 de = Němčina
 dsb = Delnjoserbšćina
+dv = Dhivehi
 el = Grjekšćina
 en = Jendźelšćina
 eo = Esperanto
@@ -65,8 +69,10 @@ kpv = Komi-syrjenšćina
 kw = Kornišćina
 ky = Kirgišćina
 mdf = Mokša
+mhr = Łučna marišćina
 mk = Makedonšćina
 mn = Mongolšćina
+mrj = Hórska marišćina
 myv = Erzya
 nb-NO = Norwegski Bokmål
 ne-NP = Nepalšćina
@@ -91,10 +97,13 @@ te = Telugušćina
 th = Thaišćina
 tr = Turkowšćina
 tt = Tataršćina
+uby = Ubychišćina
+udm = Udmurtšćina
 uk = Ukrainšćina
 ur = Urdu
 uz = Uzbekšćina
 vi = Vietnamšćina
+vot = Wotšćina
 zh-CN = Chinšćina (China)
 zh-HK = Chinšćina (Hong Kong)
 zh-TW = Chinšćina (Taiwan)
@@ -185,6 +194,7 @@ improve-audio = Profilowe informacije awdiodaty polěpšeja, kotrež so při tre
 keep-track = Wobchowajće swój postup a swoje měrjenske daty za wjacore rěče we wóčku.
 compare-progress = Hladajće, kak so swój postup z druhimi sobuskutkowajemi z cyłeho swěta přirunuje.
 view-goals = Přirunajće swój postup z wosobinskimi a projektowymi cilemi.
+join-newsletter = Přidružće so na přeće našej e-mejlowej lisćinje, zo byšće aktualizacije a nowe informacije wo projekće dóstał.
 
 ## What's public
 
@@ -241,8 +251,10 @@ english = Jendźelšćina
 
 profile-form-username =
     .label = Wužiwarske mjeno
-profile-form-language =
-    .label = Rěč
+profile-form-native-language =
+    .label = Maćeršćina
+profile-form-additional-language =
+    .label = Přidatna rěč
 profile-form-accent =
     .label = Akcent
 profile-form-age =
@@ -306,6 +318,7 @@ faq-title = Huste prašenja
 faq-what-cv-q = Što Common Voice je?
 faq-why-important-q = Čehodla je wažne?
 faq-how-get-q = Kak móžu daty Common Voice dóstać?
+faq-how-get-a = Datowa sadźba Common Voice je pod licencu <licenseLink>CC0</licenseLink> na <datasetLink>našej stronje datowych sadźbow</datasetLink> za sćehnjenje k dispoziciji. Móžeće tež wjacore druhe zjawnje k dispoziciji stejace datowe sadźby ze samsneje strony sćahnyć.
 faq-when-release-q = Hdy Common Voice w druhich rěčach wozjewiće?
 faq-why-mission-q = Čehodla je Common Voice dźěl misije Mozilla?
 faq-what-cv-and-deepspeech-q = Što je rozdźěl mjez Common Voice a Deep Speech?
@@ -314,12 +327,15 @@ faq-do-want-native-q = Njejsym maćernorěcny a rěču z akcentom, chceće mój 
 faq-why-different-speakers-q = Čehodla trjebaće wjele rozdźělnych rěčnikow na rěč?
 faq-why-my-lang-q = Čehodla moja rěč hišće njeje?
 faq-what-quality-q = Kotra awdiokwalita je trěbna, zo by so hłosowy klip w datowej sadźbje wužiwał?
+faq-why-10k-hours-q = Čehodla je 10.000 přepruwowanych hodźin na rěč cil za awdionatočenje?
+faq-why-10k-hours-a = To je přibližnje ličba hodźin, kotrež su trěbne, zo by produktiwny system rěčenje do teksta treněrowało.
 faq-how-calc-hours-q = Kak Common Voice hodźiny wobličuje?
 faq-where-src-from-2-q = Zwotkel žórłowy tekst pochadźa?
 faq-why-not-ask-read-q = Čehodla ludźi njeprosyće, z knihow abo nastawkow Wikipedije w rozdźělnych rěčach předčitać?
 faq-why-account-q = Čehodla měł ja konto załožić?
 faq-is-account-public-q = Su moje kontowe informacije zjawne?
 faq-how-privacy-q = Kak zawěsćujeće anonymnosć a priwatnosć ludźi, kotřiž su swoje hłosy darili?
+faq-what-determine-identity-q = Što woznamjenja, zo njemóžu „identitu“ rěčnikow w datowej sadźbje Common Voice „zwěsćić“?
 
 ## Glossary
 
@@ -327,6 +343,7 @@ glossary = Glosar
 localization = Lokalizacija
 localization-explanation = To je naš proces za přełožowanje a přiměrjenje našeho wobsaha za wjele lokalow (rěčow).
 sentence-collection = Zběrka sadow
+sentence-collection-explanation = Hromadźenje powšitkownosći wužitnych sadow abo pisanje nowych powšitkownosći wužitnych sadow.
 hours-recorded-explanation = Ličba dotal nahromadźenych natočenych hodźin.
 sst = Rěčenje-do-teksta (STT)
 sst-explanation = Technologije Rěčenje-do-teksta (STT) hłosowe daty to teksta konwertuja.

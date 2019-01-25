@@ -17,8 +17,11 @@ indicates-required = * yemmal-d urti ilaqen
 
 ## Languages
 
+ab = Tabxazit
 ace = Acehnese
+ady = Tadyigit
 af = Tafrikant
+am = Tamharikt
 an = Taṛagunit
 ar = Taεrabt
 as = Tasamizt
@@ -37,6 +40,7 @@ cy = Tagalit
 da = Tadanit
 de = Talmanit
 dsb = Sorbyan, Tamectuḥt
+dv = Tadhivhit
 el = Tagrigit
 en = Taglizit
 eo = Taspiruntit
@@ -65,8 +69,10 @@ kpv = Takumt Zyrian
 kw = Takuṛnikt
 ky = Takirgizt
 mdf = Mukca
+mhr = Tamarit n uzaɣar
 mk = Tamasidunit
 mn = Tamungult
+mrj = Tamarit n udrar
 myv = Erzya
 nb-NO = Tanuṛvijt Bokmål
 ne-NP = Tanipalit
@@ -91,10 +97,13 @@ te = Tatelgut
 th = Taṭaylant
 tr = Taṭurkit
 tt = Taṭaṭarit
+uby = Tubyixt
+udm = Tudmurt
 uk = Takrinit
 ur = Urdu
 uz = Tazbikit
 vi = Tavyiṭnamit
+vot = Tavutikt
 zh-CN = Tacinwat (Cin)
 zh-HK = Tacinit (Hung Kung)
 zh-TW = Tacinwat (Taywan)
@@ -236,8 +245,10 @@ english = Taglizit
 
 profile-form-username =
     .label = Isem n useqdac:
-profile-form-language =
-    .label = Tutlayt
+profile-form-native-language =
+    .label = Tutlayt tayemmat
+profile-form-additional-language =
+    .label = Tutlayt-nniḍen
 profile-form-accent =
     .label = Asusru
 profile-form-age =
@@ -538,4 +549,8 @@ keep = Ḥrez
 remove = Kkes
 keep-info = Ikalsen-ik n taɣect udrigen ad qqimen deg taffa n yisefka n Common Voice. Ticki tekkseḍ amaɣnu-ik ur tettizmireḍ ara ad tazneḍ asuter akken ad ttwakksen ikalasen-ik seg taffa n yisefka
 remove-info = Ad nwali asuter-ik n tukksa n yikalasen-ik n taɣect seg taffa n yisefka. Ma yella asuter-ik yettwaqbel, ad nennermes wid yessidren taffa n yisefka sakin ad sen-nessuter ad kksen ikalasen-ik n taɣect.
+why-delete-recordings =
+    Ikalasen Common Voice ad ten-sqedcen ikadimanen, tikebbaniyin meẓẓiyen, akked wid yettnadin ɣef uɛqal n taɣect akken ad mudden afus deg usluɣmu, daɣen akken ad yissimɣer s wudem azayez tiɣbula yellan am tneɣrufin n taɣect.
+    
+    Tebɣiḍ ad aɣ-teǧǧeḍ ad nẓeṛ acuɣer tebɣiḍ ad nekkes ikalasen-ik?
 profile-form-delete = Kkes amaɣnu

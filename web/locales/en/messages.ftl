@@ -13,8 +13,11 @@ indicates-required = * Indicates required field
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
 ## Languages
+ab = Abkhaz
 ace = Acehnese
+ady = Adyghe
 af = Afrikaans
+am = Amharic
 an = Aragonese
 ar = Arabic
 as = Assamese
@@ -33,6 +36,7 @@ cy = Welsh
 da = Danish
 de = German
 dsb = Sorbian, Lower
+dv = Dhivehi
 el = Greek
 en = English
 eo = Esperanto
@@ -61,8 +65,10 @@ kpv = Komi-Zyrian
 kw = Cornish
 ky = Kyrgyz
 mdf = Moksha
+mhr = Meadow Mari
 mk = Macedonian
 mn = Mongolian
+mrj = Hill Mari
 myv = Erzya
 nb-NO = Norwegian Bokmål
 ne-NP = Nepali
@@ -87,10 +93,13 @@ te = Telugu
 th = Thai
 tr = Turkish
 tt = Tatar
+uby = Ubykh
+udm = Udmurt
 uk = Ukrainian
 ur = Urdu
 uz = Uzbek
 vi = Vietnamese
+vot = Votic
 zh-CN = Chinese (China)
 zh-HK = Chinese (Hong Kong)
 zh-TW = Chinese (Taiwan)
@@ -237,8 +246,10 @@ english = English
 ## ProfileForm
 profile-form-username =
     .label = User Name
-profile-form-language =
-    .label = Language
+profile-form-native-language =
+    .label = Native Language
+profile-form-additional-language =
+    .label = Additional Language
 profile-form-accent =
     .label = Accent
 profile-form-age =
@@ -550,4 +561,7 @@ keep = Keep
 remove = Remove
 keep-info = Your anonymous voice recordings will remain in the Common Voice dataset. Once you delete your profile you will no longer be able to submit a request to remove your recordings from the dataset
 remove-info = We will review your request to remove your voice recordings from the dataset. If your request is approved, we will contact those who have downloaded the dataset and request they remove your voice recordings as well.
+why-delete-recordings = Common Voice recordings are used by academics, small businesses, and voice recognition enthusiasts to help train and grow publicly available resources like voice models.
+
+    Can you let us know why you would like your recordings deleted?
 profile-form-delete = Delete Profile

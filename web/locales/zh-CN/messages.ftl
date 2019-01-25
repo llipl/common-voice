@@ -17,8 +17,11 @@ indicates-required = * 表示必填字段
 
 ## Languages
 
+ab = 阿布哈兹语
 ace = 亚齐语
+ady = 阿迪格语
 af = 南非语
+am = 阿姆哈拉语
 an = 阿拉贡语
 ar = 阿拉伯语
 as = 阿萨姆语
@@ -37,6 +40,7 @@ cy = 威尔士语
 da = 丹麦语
 de = 德语
 dsb = 下索布语
+dv = 迪维希语
 el = 希腊语
 en = 英语
 eo = 世界语
@@ -65,8 +69,10 @@ kpv = 科米-齐良语
 kw = 康沃尔语
 ky = 吉尔吉斯语
 mdf = 莫克沙语
+mhr = 草原马里语
 mk = 马其顿语
 mn = 蒙古语
+mrj = 山地马里语
 myv = 厄尔兹亚语
 nb-NO = 书面挪威语
 ne-NP = 尼泊尔语
@@ -91,10 +97,13 @@ te = 泰卢固语
 th = 泰语
 tr = 土耳其语
 tt = 鞑靼语
+uby = 尤比克语
+udm = 乌德穆尔特语
 uk = 乌克兰语
 ur = 乌尔都语
 uz = 乌兹别克语
 vi = 越南语
+vot = 沃提克语
 zh-CN = 汉语（中国大陆）
 zh-HK = 汉语（香港）
 zh-TW = 汉语（台湾）
@@ -232,8 +241,10 @@ english = 英语
 
 profile-form-username =
     .label = 用户名
-profile-form-language =
-    .label = 语言
+profile-form-native-language =
+    .label = 母语
+profile-form-additional-language =
+    .label = 附加语言
 profile-form-accent =
     .label = 口音
 profile-form-age =
@@ -527,4 +538,8 @@ keep = 保留
 remove = 移除
 keep-info = 您的录音将匿名保留在 Common Voice 数据集中。删除个人资料后，就无法再要求从数据集删除
 remove-info = 我们将审核您从数据集中删除录音的请求。如果您的请求获得批准，我们将会联系已下载数据集的用户，并请他们也删除您的录音。
+why-delete-recordings =
+    学术界、小型企业与语音识别爱好者会使用 Common Voice 的录音片段来帮助训练、发展语音模型等公共资源。
+    
+    能让我们知道您为什么想要删除录音片段吗？
 profile-form-delete = 删除用户资料

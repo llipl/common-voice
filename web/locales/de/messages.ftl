@@ -17,8 +17,11 @@ indicates-required = * Pflichtfeld
 
 ## Languages
 
+ab = Abchasisch
 ace = Acehnesisch
+ady = Adygejisch
 af = Afrikaans
+am = Amharisch
 an = Aragonesisch
 ar = Arabisch
 as = Assamesisch
@@ -37,6 +40,7 @@ cy = Walisisch
 da = Dänisch
 de = Deutsch
 dsb = Niedersorbisch
+dv = Dhivehi
 el = Griechisch
 en = Englisch
 eo = Esperanto
@@ -65,8 +69,10 @@ kpv = Komi-Syrjänisch
 kw = Cornish
 ky = Kirgisisch
 mdf = Mokschanisch
+mhr = Wiesenmari
 mk = Mazedonisch
 mn = Mongolisch
+mrj = Bergmari
 myv = Ersjanisch
 nb-NO = Norwegisches Bokmål
 ne-NP = Nepali
@@ -91,10 +97,13 @@ te = Telugu
 th = Thailändisch
 tr = Türkisch
 tt = Tatarisch
+uby = Ubychisch
+udm = Udmurtisch
 uk = Ukrainisch
 ur = Urdu
 uz = Usbekisch
 vi = Vietnamesisch
+vot = Wotisch
 zh-CN = Chinesisch (China)
 zh-HK = Chinesisch (Hong Kong)
 zh-TW = Chinesisch (Taiwan)
@@ -236,8 +245,10 @@ english = Englisch
 
 profile-form-username =
     .label = Benutzername
-profile-form-language =
-    .label = Sprache
+profile-form-native-language =
+    .label = Muttersprache
+profile-form-additional-language =
+    .label = Zusätzliche Sprache
 profile-form-accent =
     .label = Akzent
 profile-form-age =
@@ -456,8 +467,8 @@ listen = Anhören
 skip = Überspringen
 shortcuts = Tastenkürzel
 clips-with-count = <bold>{ $count }</bold> Aufzeichnungen
-goal-help-recording = Sie haben Common Voice geholfen, <goalPercentage></goalPercentage> des heutigen Aufzeichnungsziels »{ $goalValue }« zu erreichen!
-goal-help-validation = Sie haben Common Voice geholfen, <goalPercentage></goalPercentage> des heutigen Bestätigungsziels »{ $goalValue }« zu erreichen!
+goal-help-recording = Sie haben Common Voice geholfen, <goalPercentage></goalPercentage> des heutigen Aufzeichnungsziels von { $goalValue } zu erreichen!
+goal-help-validation = Sie haben Common Voice geholfen, <goalPercentage></goalPercentage> des heutigen Bestätigungsziels von { $goalValue } zu erreichen!
 contribute-more = Bereit { $count } weitere zu machen?
 record-cta = Aufnehmen
 record-platform-not-supported = Es tut uns leid, Ihre Plattform wird derzeit nicht unterstützt.
@@ -537,4 +548,8 @@ keep = Erhalten
 remove = Löschen
 keep-info = Ihre anonymen Stimmaufzeichnungen verbleiben im Common-Voice-Datensatz. Nachdem Sie Ihr Profil gelöscht haben, können Sie die Löschung Ihrer Aufzeichnungen aus dem Datensatz nicht mehr beantragen.
 remove-info = Wir werden Ihre Anfrage zur Löschung Ihrer Stimmaufzeichnungen aus dem Datensatz prüfen. Wenn Ihrer Anfrage stattgegeben wird, kontaktieren wir diejenigen, die den Datensatz heruntergeladen haben, und fordern diese auf, Ihre Aufzeichnungen ebenfalls zu entfernen.
+why-delete-recordings =
+    Common-Voice-Aufnahmen werden von Akademikern, kleinen Unternehmen und Enthusiasten zur Spracherkennung verwendet, um öffentlich verfügbare Ressourcen wie Sprachmodelle zu trainieren und zu erweitern.
+    
+    Können Sie uns mitteilen, warum Sie Ihre Aufnahmen löschen möchten?
 profile-form-delete = Profil löschen

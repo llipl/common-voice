@@ -55,6 +55,7 @@ apache::vhost { $project_name:
     ExpiresByType text/javascript 'access plus 1 hour'
     ExpiresByType application/javascript 'access plus 1 hour'
     ExpiresByType text/css 'access plus 1 hour'
+    ExpiresByType text/ftl 'access plus 1 hour'
 
     # Fonts
     ExpiresByType application/x-font-ttf 'access plus 60 days'
@@ -76,6 +77,7 @@ apache::vhost { $project_name:
     ProxyPass /dist/index.css !
     ProxyPass /img !
     ProxyPass /font !
+    ProxyPass /locales !
 
     ProxyPass / http://localhost:9000/ retry=0
     ProxyPassReverse / http://localhost:9000/

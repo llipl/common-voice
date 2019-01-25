@@ -17,8 +17,11 @@ indicates-required = * ikurrak ezinbesteko eremua dela esan nahi du
 
 ## Languages
 
+ab = Abkhaziera
 ace = Acehnesa
+ady = Adigera
 af = Afrikaansa
+am = Amharera
 an = Aragoiera
 ar = Arabiera
 as = Assamera
@@ -37,6 +40,7 @@ cy = Galesera
 da = Daniera
 de = Alemana
 dsb = Behe-sorabiera
+dv = Maldivera
 el = Grekoa
 en = Ingelesa
 eo = Esperantoa
@@ -65,8 +69,10 @@ kpv = Komiera
 kw = Kornubiera
 ky = Kirgizera
 mdf = Moksha
+mhr = Larreetako mariera
 mk = Mazedoniera
 mn = Mongoliera
+mrj = Mendietako mariera
 myv = Erziera
 nb-NO = Bokmåla
 ne-NP = Nepalera
@@ -91,10 +97,13 @@ te = Telugua
 th = Thailandiera
 tr = Turkiera
 tt = Tatarera
+uby = Ubikera
+udm = Udmurtera
 uk = Ukrainera
 ur = Urdua
 uz = Uzbekera
 vi = Vietnamera
+vot = Votikera
 zh-CN = Txinera (Txina)
 zh-HK = Txinera (Hong Kong)
 zh-TW = Txinera (Taiwan)
@@ -115,8 +124,8 @@ privacy = Pribatutasuna
 terms = Baldintzak
 cookies = Cookieak
 faq = Ohiko galderak
-content-license-text = Edukia <licenseLink>Creative Common lizentzia</licenseLink> baten bitartez dago eskuragarri
-share-title = Lagun gaitzazu boluntario gehiago aurkitzen!
+content-license-text = Edukia <licenseLink>Creative Common lizentzia</licenseLink> batekin eskuragarri
+share-title = Lagundu boluntario gehiago aurkitzen!
 share-text = Lagundu makinei irakasten benetako pertsonek nola hitz egiten duten, utzi zure ahotsa hemen: { $link }
 link-copied = Lotura kopiatuta
 back-top = Itzuli gora
@@ -138,7 +147,7 @@ no-clips-to-validate = Badirudi ez dagoela grabaketa gehiagorik entzuteko hizkun
 vote-yes = Bai
 vote-no = Ez
 toggle-play-tooltip = Sakatu { shortcut-play-toggle } erreproduzitze modura aldatzeko
-speak-subtitle = Utzi zure ahotsa
+speak-subtitle = Grabatu zure ahotsa
 speak-paragraph = Ahots grabaketak egitea proiektu honetako datu bilketaren funtsa da; batzuek diote dibertigarria ere badela.
 speak-goal-text = Egindako grabaketak
 listen-subtitle = Lagun gaitzazu ahotsak balioztatzen
@@ -148,11 +157,11 @@ hours-recorded = Grabatutako orduak
 hours-validated = Balioztatutako orduak
 voices-online = Orain online daude ahotsak
 todays-progress = Gaurko aurrerabidea
-help-reach-goal = Lagun gaitzazu lortzen { $goal }
+help-reach-goal = Lagun gaitzazu { $goal } lortzen
 read-terms-q = Gure Baldintzak irakurri dituzu?
 ready-to-record = Zure ahotsarekin laguntzeko prest?
 all-locales = Guztiak
-today = Gaur
+today = gaur
 x-weeks-short =
     { $count ->
         [one] 1 aste
@@ -175,15 +184,21 @@ sign-up-account = Sortu kontu bat
 ## Account Benefits
 
 benefits = Onurak
+rich-data = Bihur itzazu zuk igotako datuak ahalik aberatsen zure profilean datu demografiko anonimo batzuk zehaztuz. Datu demografiko guztiak des-identifikatu egiten ditugu publikoak egin aurretik.
+improve-audio = Profileko informazioak ahotsaren ezagutzaren trebatzea egiteko erabiltzen diren datuak hobetzen ditu.
 keep-track = Hizkuntza desberdinetan egiten dituzun aurrerapenen eta estatistiken berri izan.
 compare-progress = Ikusi zure aurrerapenak munduan zehar dauden beste laguntzaileenekin konparatuta.
 view-goals = Ikusi zure aurrerapenak helburu pertsonalekiko eta proiektuko helburuekiko.
+join-newsletter = Aukera duzu gure e-posta zerrendan izena emateko eta proiektuari buruzko informazioa eta azken berriak jasotzeko.
 
 ## What's public
 
 whats-public = Zer da Publikoa?
 email-not-public = Ez dugu zure e-posta helbidea publiko egingo.
+recordings-and-locale-public = Grabaketa kopurua eta zein hizkuntzatan laguntzen duzun publikoa izango da.
 username-optin-public = Zure erabiltzaile-izena publikoa edo anonimoa izatea aukera dezakezu.
+demographic-deidentified = Nahi izanez gero, zehaztu ditzakezun datu demografikoak (adibidez, adina, sexua, hizkuntza eta azentua) igotzen dituzun ahots datuetatik des-identifikatu egiten dira eta ez dira inoiz publiko egiten zure profilean.
+username-email-not-demographic = Zure erabiltzaile-izena eta e-posta ez dira argitaratutako datuekin lotuko.
 
 ## Speak & Listen Shortcuts
 
@@ -230,8 +245,10 @@ english = Ingelesa
 
 profile-form-username =
     .label = Erabiltzaile-izena
-profile-form-language =
-    .label = Hizkuntza
+profile-form-native-language =
+    .label = Ama hizkuntza
+profile-form-additional-language =
+    .label = Hizkuntza gehigarria
 profile-form-accent =
     .label = Azentua
 profile-form-age =
@@ -293,22 +310,55 @@ change-email-setings = Aldatu zure e-posta Hobespenetako "Saioa hasteko identita
 
 faq-title = Ohiko galderak
 faq-what-cv-q = Zer da Common Voice?
+faq-what-cv-a =
+    Ahotsaren ezagutzaren teknologiak, makinekin elkar eragiteko dugun moduan iraultza ekartzen ari da, baina egun erabilgarri dauden sistemak garestiak eta jabedunak dira. Common Voice, Mozillaren ekimenaren parte da eta bere helburua ahotsaren ezagutzaren teknologiak hobeak eta guztientzat irisgarriagoak egitea da. Common Voice dohaintzan emandako ahots grabaketa-sorta  erraldoia da, edonori ahalbidetu diezaiokeena, potentzialki edozein hizkuntzan, ahotsa erabiltzen duten app-ak modu azkar eta erraz batean trebatzea.
+    
+    Ez gara ari hizkuntza zabalduenetan bakarrik ahots grabaketak biltzen, baizik eta hiztun gutxiago dituztenetan ere bai. Mota askotako ahotsez osatutako datu-sorta bat argitaratuz, garatzaile, ekintzaile eta komunitateei existitzen den hutsune hori betetzeko ahaldundu nahi ditugu. Common Voice datu-sortaz gain, Deep Speech izena duen ahots ezagutza motor libre bat ere sortzen ari gara.
 faq-why-important-q = Zergatik da garrantzitsua?
+faq-why-important-a = Ahotsa gure artean komunikatzeko dugun modurik naturalena da eta ahots teknologiek gaitasun hori gure ordenagailu eta sakelakoek izatea lortzen ari dira. Garatzaileak ahots ezagutza aplikazio txundigarriak sortzeko ahaldundu nahi ditugu, denbora errealeko itzultzaileak edo ahots bidezko asistente digitalak bezala. Baina oraintxe bertan, era honetako app-ak sortzeko behar diren ahots-datuak garestiak eta jabedunak dira. Common Voice datu-sortarekin, berritzaileak izateko eta ahots teknologiak beraien hizkuntzetan eskuragarri jartzeko garatzaileek behar dutena ematea espero dugu.
 faq-how-get-q = Nola lor ditzaket Common Voiceko datuak?
+faq-how-get-a = Common Voice datu-sorta deskargagarri dago <licenseLink>CC0</licenseLink></licenseLink> lizentziapean gure <datasetLink>datu-sorta orrian</datasetLink>. Bertatik, publikoki deskargagarri dauden beste hainbat datu-sorta ere deskargatu ditzakezu.
+faq-when-release-q = Noiz aterako duzue Common Voice beste hizkuntzetan?
+faq-when-release-a = Komunitatea, Common Voice datu-sortaren bertsioa eleanitza prestatzen eta garbitzen ari da. Lan honetan lagundu nahi baduzu, <contactLink>kontakta gaitzazu</contactLink>. Orain, gure helburua 2019ko urtarrilean argitaratzea da. Ondoren, aldian-aldian hizkuntzak gehituko ditugu eta grabaketa berriak eskuragarri jartzen joango gara. Oraingoz ez dago argitalpen-zikloaren erritmorik zehaztuta.
 faq-why-mission-q = Zergatik da Common Voice  Mozilla misioaren parte?
+faq-why-mission-a = Mozillaren egitekoa, weba guztiontzat irekia eta eskuragarri mantentzea da. Horretarako, web sortzaileak Common Voice bezalako proiektuekin ahaldundu behar ditugu. Ahots teknologiek beraien merkatu-nitxotik haratagoko aplikazioetara hedatzen diren heinean, uste dugu erabiltzaile guztiei berdin zerbitzatu behar dietela. Horregatik saiatzen gara hizkuntza gehiagotara zabaltzen eta ahots teknologien sortzea eta proba, hizkera eta talde demografiko ezberdinetara moldatzen. Common Voice guztientzat eskuragarri dagoen baliabide publiko bat da eta munduan zehar dauden Mozilla taldeek eta garatzaileek, dagoeneko beraien proiektuetarako erabiltzen ari dira.
+faq-what-cv-and-deepspeech-q = Zein desberdintasun dago Common Voicen eta Ahots Sakonaren artean?
+faq-is-goal-assistant-q = Common Voicen helburua ahots asistente bat sortzea al da?
+faq-is-goal-assistant-a = Common Voice datu-sortaren helburua, munduko edonori ahotsaren ezagutza, hizlari detekzioa edo ahots datuak behar dituen beste edozein aplikazio sortzen laguntzea da. Ahots asistente bat datu-sortarekin sor daitekeen aplikazio motetako bat besterik ez da.
+faq-do-want-native-q = Ez naiz hizlari natiboa eta azentuarekin hitz egiten dut, hala ere nire ahotsa nahi duzue?
+faq-do-want-native-a = Bai, zure ahotsa bereziki nahi dugu! Common Voicen helburuetako bat ahalik azentu desberdin gehien biltzea da, ahots ezagutza zerbitzuak guztiekin ondo ibil daitezen. Honek esan nahi du natiboak ez diren hizlarien laguntza bereziki erabilgarria dela.
 faq-why-different-speakers-q = Zergatik behar ditugu hainbeste hizlari desberdin hizkuntzako?
 faq-why-my-lang-q = Zergatik ez da nire hizkuntza hemen agertzen?
+faq-what-quality-q = Zenbateko audio kalitatea behar da grabaketa datu-sortan erabilia izan dadin?
+faq-why-10k-hours-q = Zergatik lortu behar dira balioztatutako 10.000 audio ordu hizkuntza bakoitzean?
+faq-why-10k-hours-a = Ordu kopuru hau gutxi-gora-behera ekoizpeneko speech-to-text sistema bat trebatzeko behar dena da.
 faq-how-calc-hours-q = Common Voicek nola kalkulatzen ditu orduak?
+faq-how-calc-hours-a = Orduak kalkulatzeko grabaketa bakoitzaren batezbesteko luzera hartu eta hizkuntza guztietan egindako grabaketa guztien kopuruagatik biderkatzen dugu.
+faq-where-src-from-2-q = Nondik dator iturri testua?
+faq-where-src-from-2-a =
+    Gure iturburu testuak proiektuko laguntzaileek berariaz sortutakoak dira eta baita <italic>Bizitza ederra da</italic> bezala jabetza publikoan dauden filmen azpitituluetatik ateratakoak. Euskararen kasuan, hainbat esaldi <italic>Argia</italic> aldizkaritik ateratakoak dira, proiektu honetarako espresuki jabetza publikoan utzi baititu.
+    
+    Iturburu esaldiak <githubLink>GitHub karpeta</githubLink> honetan ikus ditzakezu.
+faq-why-not-ask-read-q = Zergatik ez diozue jendeari eskatzen liburuak edo Wikipediako artikuluak irakurtzeko hizkuntza desberdinetan?
 faq-why-account-q = Zergatik eman beharko nuke izena eta kontu bat sortu?
 faq-is-account-public-q = Nire kontuko informazioa publikoa da?
+faq-how-privacy-q = Nola ziurtatzen dituzue beren ahotsak lagatzen dituzten pertsonen anonimotasuna eta pribatutasuna?
+faq-how-privacy-a = Datu-sortako ahots grabaketa guztiei informazio pertsonala kentzen zaie. Laguntzaile batek datu demografikoa ematen duenean bere profilaren bitartez, informazio hori des-identifikatu egiten da datu-sorta deskargagarri izateko prestatzen denean eta inoiz ez da datu demografikoa publiko egiten profil publikoetan.
+faq-what-determine-identity-q = Zer nahi du esan ezin dela hizlarien "identitatea ondorioztatu" Common Voice datu-sortan?
 
 ## Glossary
 
 glossary = Glosarioa
 localization = Lokalizazioa
+localization-explanation = gure edukia hainbat lokaletara (hizkuntzatara) itzultzeko eta moldatzeko prozesuari deritzo.
 sentence-collection = Esaldiak biltzea
+sentence-collection-explanation = jabetza publikoan dauden esaldiak biltzea edo zuzenean berriak idaztea eta berauok jabetza publikoan uztea.
+hours-recorded-explanation = orain arte bildu ditugun ahots grabaketa ordu kopurua.
+hours-validated-explanation = 2 edo 3 erabiltzailek "Bai" bezala bozkatu dituzten ahots grabaketa orduak. 10.000 orduko helburuarekiko aurrerabidea honen arabera kalkulatzen da.
 sst = Speech-to-text (STT)
-sst-explanation = Speech-to-text (STT) teknologiek ahots datuak, testu bihurtzen dituzte.
+sst-explanation = ahotsetik testura teknologiek (STT), ahots datuak testu bihurtzen dituzte.
+de-identified = Des-identifikazioa
+de-identified-explanation = datu-sorta deskargagarri uzteko paketatzen denean, egilearen profilaren informazioa berak grabatutako grabaketetatik ezkutatzeko prozesua.
 
 ## NotFound
 
@@ -378,8 +428,8 @@ request-language-success-content = Laster jarriko gara zurekin harremanetan Comm
 
 ## Languages Overview
 
-language-section-in-progress = Aurrerabidean
-language-section-in-progress-description = Aurrerabidean dauden hizkuntzak, gure komunitateak prestatzen ari direnak dira; beraien aurrerabide-mailak webgunea zenbat lokalizatu duten eta esaldi bilketan nola doakien adierazten du.
+language-section-in-progress = Prestatzen
+language-section-in-progress-description = Prestatzen dauden hizkuntzak, gure komunitateak prestatzen ari direnak dira; beraien aurrerabide-mailak webgunea zenbat lokalizatu duten eta esaldi bilketan nola doazen adierazten du.
 language-section-launched = Martxan
 language-section-launched-new-description = Martxan dauden hizkuntza hauetan, webgunea ondo lokalizatu da eta behar beste esaldi bildu dira <italic>Mintzatu</italic> eta <italic>Entzun</italic> ekarpenekin hasteko.
 languages-show-more = Ikusi gehiago
@@ -420,7 +470,7 @@ record-error-too-short = Grabaketa laburregia izan da.
 record-error-too-long = Grabaketa luzeegia izan da.
 record-error-too-quiet = Grabaketa baxuegi entzuten da.
 record-cancel = Ezeztatu berriro grabatzea
-record-instruction = { $actionType }<recordIcon></recordIcon> esaldia altuan irakurtzeko
+record-instruction = { $actionType }<recordIcon></recordIcon> ikurrean esaldia altuan irakurtzeko
 record-stop-instruction = { $actionType }<stopIcon></stopIcon> egindakoan
 record-three-more-instruction = Bagoaz!
 record-again-instruction = Bikain!<recordIcon></recordIcon> Egin zure hurrengo grabaketa
@@ -467,14 +517,14 @@ validations =
 
 your-languages = Zure hizkuntzak
 toward-next-goal = Hurrengo helbururantz
-clips-you-recorded = Zuk egindako grabaketak
-clips-you-validated = Zuk balioztatu dituzun grabaketak
+clips-you-recorded = Egin dituzun grabaketak
+clips-you-validated = Balioztatu dituzun grabaketak
 todays-recorded-progress = Common Voicen gaurko aurrerapena egindako grabaketetan
 todays-validated-progress = Common Voicen gaurko aurrerapena balioztatutako grabaketetan
 stats = Estatistikak
-you = Zu
-everyone = Guztiok
-contribution-activity = Laguntza-jarduera
+you = Zuk
+everyone = Denek
+contribution-activity = Gaurko jarduera
 top-contributors = Laguntzaile gogotsuenak
 recorded-clips = Egindako grabaketak
 validated-clips = Balioztatutako grabaketak
@@ -486,6 +536,6 @@ overall-accuracy = Zehaztasun orokorra
 delete-q = Egin dituzun ahots grabaketak ere ezabatzea nahi duzu ala nahiago dugu Common Voicen datu-sortan manten daitezen?
 keep = Mantendu
 remove = Kendu
-keep-info = Zure ahots grabaketa anonimoak Common Voice datu-sortan gordeko dira. Behin zure profila ezabatzen duzunean, ezingo duzu eskatu zure grabaketak datu-sortatik kentzea.
+keep-info = Zure ahots grabaketa anonimoak Common Voice datu-sortan gordeko dira. Behin zure profila ezabatzen duzunean, ezingo duzu eskatu zure grabaketak datu-sortatik kentzerik.
 remove-info = Zure ahots grabaketak datu-sortatik ezabatzeko eskaria berrikusiko dugu. Zure eskaria onartua dada, datu-sorta deskargatu dutenekin ere harremanetan jarriko gara eta zure ahots grabaketak ezabatzeko eskatuko diegu.
 profile-form-delete = Ezabatu profila
