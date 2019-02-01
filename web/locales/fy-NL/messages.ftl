@@ -402,11 +402,6 @@ data-get-started = <speechBlogLink>Start no mei spraakwerkenning</speechBlogLink
 data-other-title = Oare stimgegevenssets…
 data-other-goto = Gean nei { $name }
 data-other-download = Gegevens downloade
-data-other-librispeech-description = LibriSpeech is in korpus fan ûngefear 1.000 oeren lêzen Ingelske spraak yn 16Khz ôfkomstich fan lêzen audioboeken fan it LibriVox-projekt.
-data-other-ted-name = TED-LIUM-korpus
-data-other-ted-description = De TED-LIUM-korpus is makke fan audiopetearen en harren ûndertitels beskikber op de TED-website.
-data-other-voxforge-description = VoxForge is opset om ûndertitele spraak te sammeljen foar gebrûk mei Free en Open Source Speech Recognition Engines.
-data-other-tatoeba-description = Tatoeba is in grutte database mei sinnen, oersettingen, en sprutsen audio foar gebrûk yn it oanlearen fan taal. Dizze download befettet al it sprutsen Ingelsk opnommen troch harren mienskip.
 data-bundle-button = Bondel gegevensset downloade
 data-bundle-description = Common Voice-gegevens plus alle oare boppesteande stimgegevenssets.
 license = Lisinsje: <licenseLink>{ $license }</licenseLink>
@@ -422,6 +417,43 @@ review-rerecord = Opnij opnimme
 review-cancel = Ynstjoering annulearje
 review-keep-recordings = Opnamen bewarje
 review-delete-recordings = Myn opnamen fuortsmite
+
+## New Datasets Page
+
+datasets-headline = Wy bouwe in meartalige, iepen boarne gegevensset fan stimmen, dy't elkenien brûke kin om mei spraak oanstjoerde applikaasjes te trainen.
+language = Taal
+# File size in gigabytes
+size = Grutte
+validated-hr-total = Totaal falidearre oeren
+overall-hr-total = Totaal oeren
+cv-license = Lisinsje
+audio-format = Audioformaat
+number-of-voices = Oantal stimmen
+splits = Sindielen
+email-to-download = Fier e-mailadres yn om te downloaden
+why-email = <b>Wêrom in e-mailadres?</b> Mooglik moatte wy jo yn de takomst oer wizigingen yn de gegevensset ynformearje. In e-mailadres jout ús in kontaktmooglikheid.
+confirm-size = Jo binne ree om in download te starten fan <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+download-language = { $language } downloade
+validated-hours = Falidearre oeren:
+recorded-hours = Opnommen oeren
+whats-inside = Wat is de ynhâld fan de Common Voice-gegevensset?
+subscribe = Abonnearje
+get-started-speech = Oan 'e gong mei spraakwerkenning
+other-datasets = Oare stimgegevensets
+feedback-q = Kommentaar?
+common-voice-info = Hawwe jo fragen oer Common Voice? Start by ús <discourseLink>Discuorse-foarum</ discourseLink>.
+data-other-librispeech-description = LibriSpeech is in korpus fan ûngefear 1.000 oeren lêzen Ingelske spraak yn 16Khz ôfkomstich fan lêzen audioboeken fan it LibriVox-projekt.
+data-other-ted-name = TED-LIUM-korpus
+data-other-ted-description = De TED-LIUM-korpus is makke fan audiopetearen en harren ûndertitels beskikber op de TED-website.
+data-other-voxforge-description = VoxForge is opset om ûndertitele spraak te sammeljen foar gebrûk mei Free en Open Source Speech Recognition Engines.
+data-other-tatoeba-description = Tatoeba is in grutte database mei sinnen, oersettingen, en sprutsen audio foar gebrûk yn it oanlearen fan taal. Dizze download befettet al it sprutsen Ingelsk opnommen troch harren mienskip.
+your-feedback = Hawwe jo ideeën oer hoe't wy de Common Voice gegevensset better meitsje kinne? Lit it ús witte op Discourse
+go-discourse = Gean nei Discourse
+missing-language = Sjogge jo jo taal net yn de gegevensset reflektearre? Gean nei ús talenside om in taal oan te freegjen.
+go-languages-page = Gean nei talenside
+ready-to-validate = Ree om te helpen sinnen te falidearjen?
 
 ## Download Modal
 

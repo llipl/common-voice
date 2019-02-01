@@ -388,11 +388,6 @@ data-get-started = <speechBlogLink>Bắt đầu với nhận dạng giọng nói
 data-other-title = Bộ dữ liệu giọng nói khác…
 data-other-goto = Đi đến { $name }
 data-other-download = Tải dữ liệu
-data-other-librispeech-description = LibriSpeech là một kho tàng khoảng 1000 giờ của 16Khz bài phát biểu tiếng Anh có nguồn gốc từ các audiobook từ dự án LibriVox.
-data-other-ted-name = TED-LIUM Corpus
-data-other-ted-description = TED-LIUM corpus được tạo từ các cuộc nói chuyện, và các bản ghi chép của họ có sẵn trên trang web của TED.
-data-other-voxforge-description = VoxForge được thiết lập để thu thập câu nói được chép lại để sử dụng với Hệ thống nhận dạng giọng nói miễn phí và nguồn mở.
-data-other-tatoeba-description = Tatoeba là một cơ sở dữ liệu lớn gồm các câu, bản dịch và bản nói chuyện để sử dụng trong việc học ngôn ngữ. Bản tải xuống này chứa tiếng Anh được ghi bởi cộng đồng của họ.
 data-bundle-button = Tải Gói dữ liệu xuống
 data-bundle-description = Dữ liệu Common Voice cộng với tất cả các bộ dữ liệu giọng nói khác ở trên.
 license = Giấy phép: <licenseLink>{ $license }</licenseLink>
@@ -408,6 +403,56 @@ review-rerecord = Ghi lại
 review-cancel = Hủy gửi
 review-keep-recordings = Giữ bản ghi âm
 review-delete-recordings = Xóa bản ghi âm của tôi
+
+## New Datasets Page
+
+datasets-headline = Chúng tôi đã xây dựng một bộ dữ liệu giọng nói đa ngôn ngữ mã nguồn mở mà bất kỳ ai cũng có thể sử dụng để huấn luyện các ứng dụng hỗ trợ giọng nói.
+datasets-positioning =
+    Chúng tôi tin rằng các bộ dữ liệu giọng nói lớn, có sẵn công khai sẽ thúc đẩy sự đổi mới và cạnh tranh thương mại lành mạnh trong công nghệ lời nói dựa trên máy học.
+    
+    Bộ dữ liệu đa ngôn ngữ của Common Voice đã là bộ dữ liệu giọng nói có sẵn công khai lớn nhất thuộc loại này, nhưng nó không phải là bộ dữ liệu duy nhất.
+    
+    Hãy xem trang này như một trung tâm tham chiếu cho các bộ dữ liệu giọng nói nguồn mở khác và, khi Common Voice tiếp tục phát triển, một ngôi nhà cho các bản cập nhật phát hành của chúng tôi.
+language = Ngôn ngữ
+# File size in gigabytes
+size = Kích thước
+validated-hr-total = Tổng số giờ đã xác nhận
+overall-hr-total = Tổng số giờ
+cv-license = Giấy phép
+audio-format = Định dạng âm thanh
+number-of-voices = Số lượng tiếng nói
+splits = Tách
+email-to-download = Nhập email để tải xuống
+why-email = <b>Tại sao lại cần email?</b> Chúng tôi có thể cần liên hệ với bạn trong tương lai về các thay đổi đối với tập dữ liệu, một email cung cấp cho chúng tôi một điểm liên hệ.
+confirm-size = Bạn đã sẵn sàng để bắt đầu tải xuống <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Bạn đồng ý</b> về việc không cố gắng xác định danh tính của người nói trong bộ dữ liệu Common Voice
+download-language = Tải xuống { $language }
+validated-hours = Số giờ đã xác thực
+recorded-hours = Số giờ đã ghi âm
+whats-inside = Những gì bên trong bộ dữ liệu Common Voice?
+dataset-description =
+    Mỗi mục trong bộ dữ liệu bao gồm một tệp MP3 và tệp văn bản tương ứng. Nhiều <b>{ $hours }</b> giờ được ghi trong tập dữ liệu cũng bao gồm siêu dữ liệu nhân khẩu học như tuổi, giới tính và giọng nói có thể giúp đào tạo tính chính xác của các công cụ nhận dạng giọng nói.
+    
+    Bộ dữ liệu hiện bao gồm <b>{ $hours }</b> giờ được xác thực bằng các ngôn ngữ <b>{ $languageCount }</b>, nhưng chúng tôi luôn luôn thêm nhiều tiếng nói và ngôn ngữ. Hãy xem <languagesLink>trang ngôn ngữ</languagesLink> của chúng tôi để yêu cầu ngôn ngữ hoặc bắt đầu đóng góp.
+want-dataset-update = Muốn cập nhật khi chúng tôi phát hành phiên bản mới của bộ dữ liệu Common Voice? Đăng kí theo dõi bản tin của chúng tôi.
+subscribe = Đăng kí
+get-started-speech = Bắt đầu với nhận dạng giọng nói
+other-datasets = Bộ dữ liệu thoại khác
+feedback-q = Có phản hồi?
+deepspeech-info = Bộ dữ liệu Common Voice bổ sung cho công cụ nhận dạng giọng nói mã nguồn mở Mozilla, Deep Speech, mà bạn có thể sử dụng để xây dựng các ứng dụng nhận dạng giọng nói. Đọc <githubLink>tổng quan về Github</githubLink> của chúng tôi hoặc tham gia <discourseLink>diễn ngôn DeepSpeech</discourseLink> để tìm hiểu cách bắt đầu.
+common-voice-info = Có câu hỏi nào về Common Voice? Tham gia trên <discourseLink>diễn đàn Discourse</discourseLink>.
+data-other-librispeech-description = LibriSpeech là một kho tàng khoảng 1000 giờ của 16Khz bài phát biểu tiếng Anh có nguồn gốc từ các audiobook từ dự án LibriVox.
+data-other-ted-name = TED-LIUM Corpus
+data-other-ted-description = TED-LIUM corpus được tạo từ các cuộc nói chuyện, và các bản ghi chép của họ có sẵn trên trang web của TED.
+data-other-voxforge-description = VoxForge được thiết lập để thu thập câu nói được chép lại để sử dụng với Hệ thống nhận dạng giọng nói miễn phí và nguồn mở.
+data-other-tatoeba-description = Tatoeba là một cơ sở dữ liệu lớn gồm các câu, bản dịch và bản nói chuyện để sử dụng trong việc học ngôn ngữ. Bản tải xuống này chứa tiếng Anh được ghi bởi cộng đồng của họ.
+your-feedback = Bạn có ý tưởng về cách chúng tôi có thể làm cho bộ dữ liệu Common Voice tốt hơn không? Hãy cho chúng tôi biết trên Discourse
+go-discourse = Đi đến Discourse
+missing-language = Không thấy ngôn ngữ của bạn được phản ánh trong bộ dữ liệu? Để yêu cầu một ngôn ngữ hãy đi đến trang ngôn ngữ của chúng tôi.
+go-languages-page = Đi đến trang ngôn ngữ
+ready-to-validate = Sẵn sàng để giúp xác nhận các câu?
 
 ## Download Modal
 

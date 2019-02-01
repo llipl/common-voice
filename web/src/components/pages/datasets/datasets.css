@@ -1,0 +1,13 @@
+@import url('../../vars.css');
+
+.new-datasets #content {
+    padding: 0;
+
+    & > div {
+        max-width: none;
+
+        @media (--lg-down) {
+            padding: 0;
+        }
+    }
+}
