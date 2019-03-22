@@ -17,10 +17,14 @@ indicates-required = * označuje povinná pole
 
 ## Languages
 
+ab = Abcházština
+ace = Acehština
+ady = Adygejština
 af = Afrikánština
+am = Amharština
 an = Aragonština
 ar = Arabština
-as = Azamština
+as = Ásámština
 ast = Asturština
 az = Ázerbájdžánština
 bg = Bulharština
@@ -36,6 +40,7 @@ cy = Velština
 da = Dánština
 de = Němčina
 dsb = Dolnolužická srbština
+dv = Dhivehi
 el = Řečtina
 en = Angličtina
 eo = Esperanto
@@ -49,6 +54,7 @@ fr = Francouzština
 fy-NL = Fríština
 ga-IE = Irština
 he = Hebrejština
+hr = Chorvatština
 hsb = Hornosrbština
 hu = Maďarština
 ia = Interlingua
@@ -60,11 +66,15 @@ ka = Gruzínština
 kab = Kabylština
 kk = Kazaština
 ko = Korejština
+kpv = Komi-zyrjanština
 kw = Kornština
 ky = Kyrgyzština
 mdf = Mókša
+mhr = Lužní Marijština
 mk = Makedonština
 mn = Mongolština
+mrj = Horská Marijština
+myv = Erzja
 nb-NO = Norština (Bokmål)
 ne-NP = Nepálština
 nl = Nizozemština
@@ -75,6 +85,7 @@ pl = Polština
 pt-BR = Portugalština (Brazílie)
 ro = Rumunština
 ru = Ruština
+rw = Rwandština
 sah = Jakutština
 sc = Sardinština
 sk = Slovenština
@@ -87,10 +98,13 @@ te = Telugština
 th = Thajština
 tr = Turečtina
 tt = Tatarština
+uby = Ubychština
+udm = Udmurtština
 uk = Ukrajinština
 ur = Urdština
 uz = Uzbečtina
 vi = Vietnamština
+vot = Votština
 zh-CN = Čínština (Čína)
 zh-HK = Čínština (Hong Kong)
 zh-TW = Čínština (Taiwan)
@@ -170,6 +184,7 @@ x-years-short =
 help-make-dataset = Pomozte nám vytvořit velmi kvalitní a veřejně přístupnou databázi
 profile-not-required = Není nutné mít vytvořený profil, abyste mohli přispívat, ale může být užitečný
 sign-up-account = Vytvořit účet
+email-subscription-title = přihlaste se k odběru novinek
 
 ## Account Benefits
 
@@ -236,8 +251,10 @@ english = Angličtina
 
 profile-form-username =
     .label = Uživatelské jméno
-profile-form-language =
-    .label = Jazyk
+profile-form-native-language =
+    .label = Mateřský jazyk
+profile-form-additional-language =
+    .label = Další jazyk
 profile-form-accent =
     .label = Přízvuk
 profile-form-age =
@@ -280,11 +297,13 @@ email-subscriptions = Odběr e-mailových zpráv
 download-profile = Stáhnout má data
 contribution-experience = Zkušenost s přispíváním
 skip-submission-feedback = Přeskočit zpětnou vazbu
+skip-submission-description = Při přispívání bude po klepnutí na Odeslat přeskočena zpětná vazba. Přispívání bude pokračovat rovnou na soubor dalších 5 vět k nahrávání nebo ověření.
 skip-submission-note = Poznámka: Pro změnu druhu vašich příspěvků budete stále muset zvolit mezi Mluvit a Poslouchat.
 off = Vypnuto
 on = Zapnuto
 add-avatar-title = Přidejte avatar na svůj profil
 browse-file-title = Nahrát obrázek
+browse-file = Přetáhněte nebo <browseWrap>Procházejte</browseWrap>
 connect-gravatar = Propojit s Gravatarem
 gravatar_not_found = Pro váš e-mail nebyl nalezen žádný gravatar
 file_too_large = Zvolený soubor je příliš velký
@@ -321,18 +340,13 @@ faq-why-different-speakers-a =
     Většina databází mluveného slova je trénována s nadměrným zastoupením určitých demografických skupin, zpravidla <articleLink>mužů  střední třídy</articleLink>. Méně zastoupeny jsou poté přízvuky a dialekty tradičně asociované s minoritními etnickými skupinami. Mnoho strojů má taktéž problémy s ženskými hlasy.
     Proto v naší databázi chceme slyšet všechny!
 faq-why-my-lang-q = Proč můj jazyk ještě není zahrnut?
-faq-why-my-lang-a = Organizace Mozilla nevybírá žádné jazyky ani je navzájem nijak neupřednostňuje. Místo toho je projekt Common Voice řízen čistě požadavky a aktivitou komunity. Přidání nového jazyka a zahájení sběru je však <multilangLink>procesem na více kroků</multilangLink>. Prvně je třeba přeložit stránky projektu Common Voice do daného jazyka, aby byla mluvčím daného jazyka práce se stránkou umožněna bez znalosti jakéhokoliv jiného jazyka. Dále potřebujeme sesbírat značnou databázi veřejně použitelných vět, jež mohou poté mluvčí v rámci přispívání číst. Jakmile jsou oba tyto požadavky splněny, jazyk je již na stránce projektu Common Voice spuštěn a mluvčí mohou začít nahrávat svůj hlas a ověřovat nahrávky jiných.
 faq-what-quality-q = Jaká úroveň kvality audio záznamu je potřebná pro nahrání klipu do databáze?
 faq-what-quality-a = Chceme, aby databáze projektu Common Voice odrážela kvalitu audio záznamů, s kterými se poté budoucí systémy rozpoznání hlasu mohou setkat v běžném provozu, takže se snažíme o co největší spektrum rozdílných kvalit. Systémy rozpoznávání hlasu si tedy budou moci snadněji poradit s různými běžnými situacemi, od rozhovorů na pozadí po zvuky projíždějících aut. Je-li tedy váš audio záznam slyšitelný, měl by pro naši databázi vyhovovat.
 faq-why-10k-hours-q = Proč je cílem pro nahrávání zvukových záznamů zrovna 10 000 ověřených hodin za jazyk?
 faq-why-10k-hours-a = Je to počet hodin potřebných k natrénování produkčního systému pro převod hlasu na text.
 faq-how-calc-hours-q = Jak projekt Common Voice počítá nahrané hodiny?
 faq-how-calc-hours-a = Celkovou nahranou dobu počítáme odhadnutím průměrné délky audio záznamu, kterou vynásobíme celkovým počtem audio záznamů.
-faq-where-src-from-q = Odkud pochází čtené texty?
-faq-where-src-from-a =
-    Čtené texty jsou tvořeny originálními příspěvky jednotlivých přispěvatelů, spolu s texty z veřejně přístupných knih, scénářů a podobných zdrojů.
-    
-    Všechny věty si můžete prohlédnout v příslušné složce na GitHubu.
+faq-where-src-from-2-q = Odkud pochází původní text?
 faq-why-not-ask-read-q = Proč prostě nepožádáte lidi, aby četli z knih či články na Wikipedii?
 faq-why-account-q = Proč bych si měl(a) vytvořit účet?
 faq-is-account-public-q = Jsou informace o mém účtu veřejně přístupné?
@@ -344,6 +358,8 @@ faq-what-determine-identity-q = Co to znamená že "nelze určit identity" mluv�
 glossary = Slovník
 localization = Lokalizace
 sentence-collection = Sbírka vět
+sst = Převod řeči na text (STT)
+sst-explanation = Technologie převodu řeči na text (STT) převádí hlasová data na text.
 
 ## NotFound
 
@@ -363,11 +379,6 @@ data-get-started = <speechBlogLink>Začínáme s rozpoznáváním hlasu</speechB
 data-other-title = Další hlasové datasety…
 data-other-goto = Přejít na { $name }
 data-other-download = Stáhnout data
-data-other-librispeech-description = LibriSpeech je korpus přibližně 1 000 hodin 16 kHz čtené angličtiny odvozený od čtených audioknih z projektu LibriVox.
-data-other-ted-name = Korpus TED-LIUM
-data-other-ted-description = Korpus TED-LIUM je tvořen zvukem přednášek a jejich přepisů dostupných na webu TED.
-data-other-voxforge-description = VoxForge byl vytvořen pro sběr přepsaných řečí pro použití ve zdarma dostupných a open-source systémech pro rozpoznávání řeči.
-data-other-tatoeba-description = Tatoeba je rozsáhlá databáze vět, překladů a mluveného slova pro použití při studiu jazyků. Tento obsah obsahuje všechnu mluvenou angličtinu nahranou jejich komunitou.
 data-bundle-button = Stáhnout balík datasetů
 data-bundle-description = Data Common Voice a data všech ostatních datasetů výše.
 license = Licence: <licenseLink>{ $license }</licenseLink>
@@ -383,6 +394,46 @@ review-rerecord = Nahrát znovu
 review-cancel = Zrušit odeslání
 review-keep-recordings = Uchovat nahrávky
 review-delete-recordings = Smazat nahrávky
+
+## New Datasets Page
+
+language = Jazyk
+# File size in gigabytes
+size = Velikost
+validated-hr-total = Celkem validovaných hodin
+overall-hr-total = Celkový počet hodin
+cv-license = Licence
+audio-format = Zvukový formát
+number-of-voices = Počet hlasů
+splits = Rozdělení
+email-to-download = Pro stažení zadejte svou e-mailovou adresu
+why-email = <b>Proč e-mail?</b> Je možné, že vás budeme potřebovat v budoucnu kontaktovat ohledně změn v datech.
+confirm-size = Jste připraveni stáhnout <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Souhlasíte</b>, že se nebudete pokoušet rozpoznat identitu přispěvatelů v datasetu Common Voice
+download-language = Stáhnout jazyk { $language }
+validated-hours = Ověřené hodiny
+recorded-hours = Nahrané hodiny
+whats-inside = Co je uvnitř datové sady Common Voice?
+subscribe = Odebírat
+get-started-speech = Začínáme s rozpoznáváním řeči
+other-datasets = Ostatní hlasové datasety
+feedback-q = Máte zpětnou vazbu?
+deepspeech-info = Dataset Common Voice doplňuje open source systém Mozilly Deep Speech pro rozpoznávání hlavu, který můžete použít pro tvorbu aplikací rozpoznávajících řeč. Pro začátek si přečtěte naše <githubLink>shrnutí na GitHubu</githubLink> nebo se připojte na <discourseLink>DeepSpeech Discourse</discourseLink>.
+data-other-librispeech-description = LibriSpeech je korpus přibližně 1 000 hodin 16 kHz čtené angličtiny odvozený od čtených audioknih z projektu LibriVox.
+data-other-ted-name = Korpus TED-LIUM
+data-other-ted-description = Korpus TED-LIUM je tvořen zvukem přednášek a jejich přepisů dostupných na webu TED.
+data-other-voxforge-description = VoxForge byl vytvořen pro sběr přepsaných řečí pro použití ve zdarma dostupných a open-source systémech pro rozpoznávání řeči.
+data-other-tatoeba-description = Tatoeba je rozsáhlá databáze vět, překladů a mluveného slova pro použití při studiu jazyků. Tento obsah obsahuje všechnu mluvenou angličtinu nahranou jejich komunitou.
+your-feedback = Máte nápad, jak zlepšit náš dataset Common Voice? Dejte nám vědět na Discourse
+go-discourse = Přejít na Discourse
+missing-language = Nevidíte váš jazyk v datasetu? Chcete-li požádat o jazyk, přejděte na stránku Jazyky.
+go-languages-page = Přejít na stránku Jazyky
+ready-to-validate = Jste připraveni pomoci s ověřováním vět?
+more = Více
+close = Zavřít
+download = Stáhnout
 
 ## Download Modal
 
@@ -435,6 +486,9 @@ contribute = Přispět
 listen = Poslouchejte
 skip = Přeskočit
 shortcuts = Zkratky
+clips-with-count = <bold>{ $count }</bold> nahrávek
+goal-help-recording = Pomohli jste Common Voice dosáhnout <goalPercentage></goalPercentage> našeho denního { $goalValue } cíle nahrávání!
+goal-help-validation = Pomohli jste Common Voice dosáhnout <goalPercentage></goalPercentage> našeho denního { $goalValue } cíle ověřování!
 contribute-more =
     { $count ->
         [one] Jste připraveni udělat ještě { $count }?
@@ -457,7 +511,9 @@ record-three-more-instruction = Ještě tři!
 record-again-instruction = Skvělé! <recordIcon></recordIcon> Nahrajte váš další klip
 record-again-instruction2 = Jen tak dál, pokračujte v nahrávání <recordIcon></recordIcon>
 record-last-instruction = <recordIcon></recordIcon> Poslední!
+review-tooltip = Zde zkontrolujte nahrávky a nahrajte je znovu
 unable-speak = Nemůžete teď mluvit?
+review-instruction = Zkontrolujte nahrávky a nahrajte je znovu, pokud to bude potřeba
 clips-uploaded = Nahraných klipů
 record-abort-title = Nechcete napřed dokončit nahrávání?
 record-abort-text = Když nyní odejdete, přijdete o dosavadní postup
@@ -466,12 +522,15 @@ record-abort-continue = Dokončit nahrávání
 record-abort-delete = Odejít a smazat nahrávky
 listen-instruction = { $actionType } <playIcon></playIcon> byla věta nahrána přesně?
 listen-again-instruction = Skvělá práce!<playIcon></playIcon> Až budete připraveni, můžete poslouchat znova
+listen-3rd-time-instruction = 2 máte za sebou, jen tak dál! <playIcon></playIcon>
 listen-last-time-instruction = <playIcon></playIcon>Poslední!
+nothing-to-validate = V tomto jazyce nemáme nic ke kontrole, pomozte nám naplnit frontu.
 record-button-label = Nahrajte svůj hlas
 share-title-new = <bold>Pomozte nám</bold> najít další hlasy
 
 ## Goals
 
+streaks = Rekord
 days =
     { $count ->
         [one] den
@@ -484,18 +543,35 @@ recordings =
         [few] Nahrávky
        *[other] Nahrávek
     }
+validations = zkontrolováno
 
 ## Dashboard
 
 your-languages = Vaše jazyky
+toward-next-goal = Další cíl
+clips-you-recorded = Nahrávky, které jste nahráli
+clips-you-validated = Nahrávky, které jste ověřili
+todays-recorded-progress = Dnešní pokrok Common Voice v zaznamenaných nahrávkách
+todays-validated-progress = Dnešní pokrok Common Voice v ověřených nahrávkách
 stats = Statistiky
 you = Vy
 everyone = Všichni
+contribution-activity = Přispěvatelská aktivita
 top-contributors = Nejaktivnější přispěvatelé
+recorded-clips = Zaznamenané nahrávky
+validated-clips = Ověřené nahrávky
+total-approved = Celkem schváleno
+overall-accuracy = Celková přesnost
 
 ## Profile Delete
 
+delete-q = Chcete smazat i vaše nahrávky, nebo je raději ponecháte v datasetu Common Voice?
 keep = Zachovat
 remove = Odebrat
 keep-info = Vaše anonymní hlasové záznamy zůstanou v databázi Common Voice. Po odstranění profilu již nebudete moci zadat žádost o odstranění vašich záznamů z databáze
+remove-info = Posoudíme váš požadavek na smazání vašich nahrávek z datasetu. Pokud ho schválíme, kontaktujeme ty, kteří si dataset stáhli, a požádáme je o smazání vašich nahrávek.
+why-delete-recordings =
+    Nahrávky v Common Voice jsou používány akademiky, malými podniky a fanoušky rozpoznávání hlasu k trénování a rozšiřování veřejně dostupných zdrojů, jako například hlasových modelů.
+    
+    Řeknete nám, proč chcete smazat vaše nahrávky?
 profile-form-delete = Smazat profil

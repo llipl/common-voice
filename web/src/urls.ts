@@ -1,18 +1,25 @@
 const PROFILE_ROOT = '/profile';
 export default Object.freeze({
   ROOT: '',
-  RECORD: '/record',
+
+  RECORD: '/record', // old, here for redirect purposes
   SPEAK: '/speak',
   LISTEN: '/listen',
+
   PROFILE: PROFILE_ROOT,
   PROFILE_INFO: PROFILE_ROOT + '/info',
   PROFILE_AVATAR: PROFILE_ROOT + '/avatar',
-  PROFILE_GOALS: PROFILE_ROOT + '/goals',
   PROFILE_SETTINGS: PROFILE_ROOT + '/settings',
   PROFILE_DELETE: PROFILE_ROOT + '/delete',
-  DASHBOARD: '/dashboard',
-  DATA: '/data',
+
+  DASHBOARD: '/dashboard', // old, here for redirect purposes
+  STATS: '/stats',
+  PROFILE_GOALS: PROFILE_ROOT + '/goals', // old, here for redirect purposes
+  GOALS: '/goals',
+
+  DATA: '/data', // old, here for redirect purposes
   DATASETS: '/datasets',
+
   FAQ: '/faq',
   PRIVACY: '/privacy',
   TERMS: '/terms',

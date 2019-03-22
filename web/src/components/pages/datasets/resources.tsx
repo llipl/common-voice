@@ -1,7 +1,9 @@
 import { Localized } from 'fluent-react/compat';
 import * as React from 'react';
+import { useState } from 'react';
 import { InView } from 'react-intersection-observer';
-import { Button, LinkButton } from '../../ui/ui';
+import URLS from '../../../urls';
+import { Button, LinkButton, StyledLink } from '../../ui/ui';
 import Dots from './dots';
 import datasets from './other-datasets';
 
@@ -13,29 +15,24 @@ const NAV_IDS = {
   feedback: 'feedback',
 };
 
-const A = (props: any) => <a {...props} />;
-
-class Dataset extends React.Component<any, { collapsed: boolean }> {
-  state = { collapsed: true };
-
-  render() {
-    const { color, name, nick, size, url, download, license } = this.props;
-    const { collapsed } = this.state;
+const Dataset = React.memo(
+  ({ color, name, nick, size, url, download, license }: any) => {
+    const [collapsed, setCollapsed] = useState(true);
     return (
       <div className="other-dataset box">
         <div className="banner" style={{ backgroundColor: color }} />
-        <img src="" alt="" />
+        <img src={`/img/datasets/${nick}.png`} alt="" />
         <div className="dots-and-content">
           <Dots backgroundColor={'var(--lighter-grey)'} space={20} />
           <div className="content">
             <h2>
-              <a href={url} target="_blank" rel="noopener noreferrer">
+              <StyledLink href={url} blank>
                 {name || (
                   <Localized id={'data-other-' + nick + '-name'}>
                     <span />
                   </Localized>
                 )}
-              </a>
+              </StyledLink>
             </h2>
             <Localized id={'data-other-' + nick + '-description'}>
               <p />
@@ -43,7 +40,12 @@ class Dataset extends React.Component<any, { collapsed: boolean }> {
             {!collapsed && (
               <ul>
                 {[
-                  ['cv-license', <a href={license.url}>{license.name}</a>],
+                  [
+                    'cv-license',
+                    <Localized id={license.name}>
+                      <StyledLink href={license.url}>{license.name}</StyledLink>
+                    </Localized>,
+                  ],
                   [
                     'size',
                     <span>
@@ -64,16 +66,15 @@ class Dataset extends React.Component<any, { collapsed: boolean }> {
               </ul>
             )}
             <div className="buttons">
-              <Localized
-                id={collapsed ? 'languages-show-more' : 'languages-show-less'}>
+              <Localized id={collapsed ? 'more' : 'close'}>
                 <Button
-                  onClick={() => this.setState({ collapsed: !collapsed })}
+                  onClick={() => setCollapsed(!collapsed)}
                   rounded
                   outline
                 />
               </Localized>
               {!collapsed && download && (
-                <Localized id="download-language" $language="">
+                <Localized id="download">
                   <LinkButton
                     rounded
                     outline
@@ -88,87 +89,149 @@ class Dataset extends React.Component<any, { collapsed: boolean }> {
       </div>
     );
   }
-}
+);
 
-interface State {
-  activeSection: string;
-}
+const Section = React.memo(({ name, onChangeIntersection, ...props }: any) => (
+  <InView
+    onChange={(isVisible, entry) => {
+      const { width, height } = entry.intersectionRect;
+      onChangeIntersection(name, width * height);
+    }}
+    threshold={[0.1, 0.2, 0.3, 0.4, 0.5]}>
+    <a id={name} />
+    <section {...props} />
+  </InView>
+));
 
-export default class extends React.Component<{}, State> {
-  state: State = { activeSection: null };
+export default React.memo(() => {
+  const [intersections, setIntersections] = useState({});
+  const handleIntersectionChange = (name: string, intersection: number) =>
+    setIntersections({ ...intersections, [name]: intersection });
+  const activeSection = Object.entries(intersections).reduce(
+    ([maxId, maxValue], [id, value]) =>
+      value > maxValue ? [id, value] : [maxId, maxValue],
+    [null, 0]
+  )[0];
+  return (
+    <div className="dataset-resources">
+      <nav>
+        <ul>
+          {[
+            ['get-started-speech', NAV_IDS.getStarted],
+            ['other-datasets', NAV_IDS.other],
+            ['feedback-q', NAV_IDS.feedback],
+          ].map(([labelId, id]) => (
+            <li key={id} className={id == activeSection ? 'active' : ''}>
+              <div className="line" />
+              <Localized id={labelId} key={labelId}>
+                <a href={'#' + id} />
+              </Localized>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
-  render() {
-    const Section = ({ name, ...props }: any) => (
-      <InView
-        onChange={isVisible => {
-          if (isVisible) {
-            this.setState({ activeSection: name });
-          }
-        }}>
-        <A name={name} />
-        <section {...props} />
-      </InView>
-    );
-    console.log(this.state.activeSection);
-    return (
-      <div className="dataset-resources">
-        <nav>
-          <ul>
-            {[
-              ['get-started-speech', NAV_IDS.getStarted],
-              ['other-datasets', NAV_IDS.other],
-              ['feedback-q', NAV_IDS.feedback],
-            ].map(([labelId, id]) => (
-              <li className={id == this.state.activeSection ? 'active' : ''}>
-                <div className="line" />
-                <Localized id={labelId} key={labelId}>
-                  <a href={'#' + id} />
-                </Localized>
-              </li>
-            ))}
-          </ul>
-        </nav>
-
-        <div className="sections">
-          <Section name={NAV_IDS.getStarted} className="get-started">
-            {[
-              [
-                'DeepSpeech',
-                'deepspeech-info',
-                'deepspeech',
-                { githubLink: <b />, discourseLink: <b /> },
-              ],
-              [
-                'Discourse',
-                'common-voice-info',
-                'discourse',
-                { discourseLink: <b /> },
-              ],
-            ].map(([title, descriptionId, imgSrc, props]) => (
-              <div className="box">
-                <img src={`/img/datasets/${imgSrc}.png`} />
-                <div className="dots-and-content">
-                  <Dots backgroundColor={'var(--lighter-grey)'} space={20} />
-                  <div className="content">
-                    <h2>{title}</h2>
-                    <Localized id={descriptionId as string} {...props}>
-                      <p />
-                    </Localized>
-                  </div>
+      <div className="sections">
+        <Section
+          name={NAV_IDS.getStarted}
+          onChangeIntersection={handleIntersectionChange}
+          className="get-started">
+          {[
+            [
+              'DeepSpeech',
+              'deepspeech-info',
+              'deepspeech',
+              {
+                githubLink: (
+                  <StyledLink
+                    href="https://github.com/mozilla/DeepSpeech"
+                    blank
+                  />
+                ),
+                discourseLink: (
+                  <StyledLink
+                    href="https://discourse.mozilla.org/c/deep-speech"
+                    blank
+                  />
+                ),
+              },
+            ],
+            [
+              'Discourse',
+              'common-voice-info-new',
+              'discourse',
+              {
+                discourseLink: (
+                  <StyledLink
+                    href="https://discourse.mozilla.org/c/voice"
+                    blank
+                  />
+                ),
+              },
+            ],
+          ].map(([title, descriptionId, imgSrc, props]) => (
+            <div className="box">
+              <img src={`/img/datasets/${imgSrc}.png`} />
+              <div className="dots-and-content">
+                <Dots backgroundColor={'var(--lighter-grey)'} space={20} />
+                <div className="content">
+                  <h2>
+                    {React.cloneElement((props as any).discourseLink, {
+                      children: title,
+                    })}
+                  </h2>
+                  <Localized id={descriptionId as string} {...props}>
+                    <p />
+                  </Localized>
                 </div>
               </div>
-            ))}
-          </Section>
+            </div>
+          ))}
+        </Section>
 
-          <Section name={NAV_IDS.other}>
-            {datasets.map(props => (
-              <Dataset {...props} />
-            ))}
-          </Section>
+        <Section
+          name={NAV_IDS.other}
+          onChangeIntersection={handleIntersectionChange}
+          className="other-datasets">
+          {datasets.map(props => (
+            <Dataset key={props.nick} {...props} />
+          ))}
+        </Section>
 
-          <Section name={NAV_IDS.feedback} />
-        </div>
+        <Section
+          name={NAV_IDS.feedback}
+          onChangeIntersection={handleIntersectionChange}>
+          <div className="box feedback">
+            <img src="/img/datasets/feedback.png" />
+            <div className="dots-and-content">
+              <Dots backgroundColor={'var(--lighter-grey)'} space={20} />
+              <div className="content">
+                <div className="described-button">
+                  <Localized id="your-feedback">
+                    <p />
+                  </Localized>
+                  <Localized id="go-discourse">
+                    <LinkButton
+                      href="https://discourse.mozilla.org/c/voice"
+                      blank
+                      rounded
+                      outline
+                    />
+                  </Localized>
+                </div>
+                <div className="described-button">
+                  <Localized id="missing-language">
+                    <p />
+                  </Localized>
+                  <Localized id="go-languages-page">
+                    <LinkButton to={URLS.LANGUAGES} rounded outline />
+                  </Localized>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Section>
       </div>
-    );
-  }
-}
+    </div>
+  );
+});

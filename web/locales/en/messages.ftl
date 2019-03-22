@@ -49,13 +49,16 @@ fo = Faroese
 fr = French
 fy-NL = Frisian
 ga-IE = Irish
+gl = Galician
 he = Hebrew
+hr = Croatian
 hsb = Sorbian, Upper
 hu = Hungarian
 ia = Interlingua
 id = Indonesian
 is = Icelandic
 it = Italian
+izh = Izhorian
 ja = Japanese
 ka = Georgian
 kab = Kabyle
@@ -64,6 +67,8 @@ ko = Korean
 kpv = Komi-Zyrian
 kw = Cornish
 ky = Kyrgyz
+lt = Lithuanian
+lv = Latvian
 mdf = Moksha
 mhr = Meadow Mari
 mk = Macedonian
@@ -81,6 +86,7 @@ pt-BR = Portuguese (Brazil)
 rm-sursilv = Romansh Sursilvan
 ro = Romanian
 ru = Russian
+rw = Kinyarwanda
 sah = Sakha
 sc = Sardinian
 sk = Slovak
@@ -186,6 +192,7 @@ x-years-short =
 help-make-dataset = Help us build a high quality, publicly open dataset
 profile-not-required = Having a profile is not required to contribute though it is helpful
 sign-up-account = Sign up for an account
+email-subscription-title = sign up for email updates
 
 ## Account Benefits
 benefits = Benefits
@@ -226,6 +233,9 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Record/Stop
+
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Re-record clip
 
 request-language-text = Don't see your language on Common Voice yet?
 request-language-button = Request a Language
@@ -348,7 +358,7 @@ faq-why-different-speakers-a =
     This is why in our voice database we want variety!
 
 faq-why-my-lang-q = Why is my language not included yet?
-faq-why-my-lang-a = Mozilla doesn’t pick or favor any one language over another. Instead, Common Voice is a purely community-driven initiative, but it takes <multilangLink>several steps to add a new language</multilangLink> and begin collecting voice donations. First, the Common Voice website needs to be translated so community members can access the contributor experience in their own language. Next, we need a large collection of copyright-free sentences for people to read outloud. Once both of those requirements are satisfied a language is “launched” on Common Voice for people to start recording their voice and validating others donations.
+faq-why-my-lang-new-a = Mozilla doesn’t pick or favor any one language over another. Instead, Common Voice is a purely community-driven initiative, but it takes <multilangLink>several steps to add a new language</multilangLink> and begin collecting voice donations. First, the Common Voice website needs to be translated so community members can access the contributor experience in their own language. Next, we need a large collection of copyright-free sentences for people to read outloud. Once both of those requirements are satisfied a language is “launched” on Common Voice for people to start recording their voice and validating others donations. If you want to help launch a new language, head over to our <sentenceCollectorLink>sentence collection tool</sentenceCollectorLink> to get started.
 
 faq-what-quality-q = What level of audio quality is required for a voice clip to be used in the dataset?
 faq-what-quality-a = We want the Common Voice dataset to reflect the audio quality a speech-to-text engine will hear in the wild, so we’re looking for variety. In addition to a diverse community of speakers, a dataset with varying audio quality will teach the speech-to-text engine to handle various real-world situations, from background talking to car noise. As long as your voice clip is intelligible, it should be good enough for the dataset.
@@ -454,17 +464,17 @@ download-language = Download { $language }
 validated-hours = Validated Hours
 recorded-hours = Recorded Hours
 whats-inside = What’s inside the Common Voice dataset?
-dataset-description =
-        Each entry in the dataset consists of a unique MP3 and corresponding text file. Many of the <b>{ $hours }</b> recorded hours in the dataset also include demographic metadata like age, sex, and accent that can help train the accuracy of speech recognition engines.
+dataset-description-hours =
+        Each entry in the dataset consists of a unique MP3 and corresponding text file. Many of the <b>{ $total }</b> recorded hours in the dataset also include demographic metadata like age, sex, and accent that can help train the accuracy of speech recognition engines.
 
-        The dataset currently consists of <b>{ $hours }</b> validated hours in <b>{ $languageCount }</b> languages, but we’re always adding more voices and languages. Take a look at our <languagesLink>Languages page</languagesLink> to request a language or start contributing.
+        The dataset currently consists of <b>{ $valid }</b> validated hours in <b>{ $languages }</b> languages, but we’re always adding more voices and languages. Take a look at our <languagesLink>Languages page</languagesLink> to request a language or start contributing.
 want-dataset-update = Want updates when we release a new version of the Common Voice dataset? Subscribe to our newsletter.
 subscribe = Subscribe
 get-started-speech = Get Started with Speech Recognition
 other-datasets = Other Voice Datasets
 feedback-q = Have Feedback?
 deepspeech-info = The Common Voice dataset complements Mozilla’s open source voice recognition engine Deep Speech, which you can use to build speech recognition applications. Read our <githubLink>Github overview</githubLink> or join the <discourseLink>DeepSpeech Discourse</discourseLink> to learn how to get started.
-common-voice-info = Have questions about Common Voice? Join us on our <discourseLink>Discourse forum</discourseLink>.
+common-voice-info-new = Have questions about Common Voice? Ideas for improvements or feedback about a specific language? Join us on our <discourseLink>Discourse forum</discourseLink> and let us know.
 data-other-librispeech-description = LibriSpeech is a corpus of approximately 1000 hours of 16Khz read English speech derived from read audiobooks from the LibriVox project.
 data-other-ted-name = TED-LIUM Corpus
 data-other-ted-description = The TED-LIUM corpus was made from audio talks and their transcriptions available on the TED website.
@@ -475,6 +485,9 @@ go-discourse = Go to Discourse
 missing-language = Don’t see your language reflected in the Dataset? To request a language head over to our Languages page.
 go-languages-page = Go to Languages Page
 ready-to-validate = Ready to help validate sentences?
+more = More
+close = Close
+download = Download
 
 ## Download Modal
 download-title = Your download has started.
@@ -499,12 +512,14 @@ request-language-form-language =
     .label = Language
 request-language-success-title = Language request successfully submitted, thank you.
 request-language-success-content = We will be in touch with more information about how to add your language to Common Voice very soon.
+select-language = Select a Language...
+other-language = Other Language
 
 ## Languages Overview
 language-section-in-progress = In Progress
-language-section-in-progress-description = In progress languages are currently being built for contribution by our communities; their progress reflects where they are across the website localization and sentence collection phases.
+language-section-in-progress-new-description = These languages are currently under community development. The progress bars indicate how far each language is in the process of <localizationGlossaryLink>website localization</localizationGlossaryLink> and <sentenceCollectionGlossaryLink>sentence collection</sentenceCollectionGlossaryLink>.
 language-section-launched = Launched
-language-section-launched-new-description = For these launched languages the website has been successfully localized, and has enough sentences collected, to allow for ongoing <italic>Speak</italic> and <italic>Listen</italic> contribution.
+language-section-launched-description = For these launched languages the website has been successfully <localizationGlossaryLink>localized</localizationGlossaryLink>, and has enough <sentenceCollectionGlossaryLink>sentences collected</sentenceCollectionGlossaryLink> to allow for ongoing <speakLink>Speak</speakLink> and <listenLink>Listen</listenLink> contributions.
 languages-show-more = See More
 languages-show-less = See Less
 language-speakers = Speakers

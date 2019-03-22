@@ -53,13 +53,16 @@ fo = Faeröers
 fr = Frans
 fy-NL = Fries
 ga-IE = Iers
+gl = Galicisch
 he = Hebreeuws
+hr = Kroatisch
 hsb = Oppersorbisch
 hu = Hongaars
 ia = Interlingua
 id = Indonesisch
 is = IJslands
 it = Italiaans
+izh = Izjorisch
 ja = Japans
 ka = Georgisch
 kab = Kabylisch
@@ -68,6 +71,8 @@ ko = Koreaans
 kpv = Zurjeens
 kw = Cornish
 ky = Kirgizisch
+lt = Litouws
+lv = Lets
 mdf = Moksja
 mhr = Weide-Mari
 mk = Macedonisch
@@ -85,6 +90,7 @@ pt-BR = Portugees (Brazilië)
 rm-sursilv = Reto-Romaans Surselvisch
 ro = Roemeens
 ru = Russisch
+rw = Kinyarwanda
 sah = Jakoets
 sc = Sardijns
 sk = Slowaaks
@@ -135,10 +141,10 @@ logout = Afmelden
 
 home-title = Het Common Voice-project is een initiatief van Mozilla om machines te helpen leren hoe echte mensen spreken.
 home-cta = Laat uw stem horen, draag hier bij!
-wall-of-text-start = Spraak is natuurlijk, spraak is menselijk. Daarom zijn we gefascineerd in het maken van een bruikbare spraaktechnologie voor onze machines. Maar voor het maken van spraaksystemen is een extreem grote hoeveelheid stemgegevens nodig.
+wall-of-text-start = Spraak is natuurlijk, spraak is menselijk. Daarom zijn we gefascineerd in het maken van een bruikbare spraaktechnologie voor onze machines. Maar voor het maken van spraaksystemen is een extreem grote hoeveelheid spraakgegevens nodig.
 wall-of-text-more-mobile = De meeste gegevens die door grote bedrijven worden gebruikt, zijn voor de meeste mensen niet beschikbaar. We denken dat dat innovatie belemmert. Daarom hebben we Project Common Voice gestart, een project dat spraakherkenning voor iedereen beschikbaar helpt te maken.
-wall-of-text-more-desktop = U kunt nu uw stem doneren om ons te helpen een opensource-stemdatabase te bouwen die iedereen kan gebruiken om innovatieve apps voor apparaten en het web te maken.<lineBreak></lineBreak>Lees een zin op om machines te helpen leren hoe echte mensen spreken. Controleer het werk van andere donateurs om de kwaliteit te verbeteren. Zo eenvoudig is het!
-wall-of-text-first = Spraak is natuurlijk, spraak is menselijk. Daarom zijn we enthousiast over het maken van een bruikbare spraaktechnologie voor onze machines. Maar voor het maken van spraaksystemen hebben ontwikkelaars een extreem grote hoeveelheid stemgegevens nodig.
+wall-of-text-more-desktop = U kunt nu uw stem doneren om ons te helpen een opensource-spraakdatabase te bouwen die iedereen kan gebruiken om innovatieve apps voor apparaten en het web te maken.<lineBreak></lineBreak>Lees een zin op om machines te helpen leren hoe echte mensen spreken. Controleer het werk van andere donateurs om de kwaliteit te verbeteren. Zo eenvoudig is het!
+wall-of-text-first = Spraak is natuurlijk, spraak is menselijk. Daarom zijn we enthousiast over het maken van een bruikbare spraaktechnologie voor onze machines. Maar voor het maken van spraaksystemen hebben ontwikkelaars een extreem grote hoeveelheid spraakgegevens nodig.
 wall-of-text-second = De meeste gegevens die door grote bedrijven worden gebruikt, zijn voor de meeste mensen niet beschikbaar. We denken dat dat innovatie belemmert. Daarom hebben we Common Voice gestart, een project dat helpt spraakherkenning voor iedereen open en toegankelijk te maken.
 show-wall-of-text = Meer lezen
 help-us-title = Help ons zinnen te valideren!
@@ -151,7 +157,7 @@ speak-subtitle = Doneer uw stem
 speak-paragraph = Het opnemen van spraakfragmenten is een integraal onderdeel van het bouwen van onze open gegevensset; volgens sommigen is het ook het leuke deel.
 speak-goal-text = Opgenomen fragmenten
 listen-subtitle = Help ons stemmen te valideren
-listen-paragraph = Validatie van gedoneerde fragmenten is net zo belangrijk als de missie van Common Voice. Luister eens en help ons kwalitatief hoogwaardige opensource-stemgegevens te creëren.
+listen-paragraph = Validatie van gedoneerde fragmenten is net zo belangrijk als de missie van Common Voice. Luister eens en help ons kwalitatief hoogwaardige opensource-spraakgegevens te creëren.
 listen-goal-text = Gevalideerde fragmenten
 hours-recorded = Opgenomen uren
 hours-validated = Gevalideerde uren
@@ -180,6 +186,7 @@ x-years-short =
 help-make-dataset = Help ons een openbaar toegankelijke gegevensset van hoge kwaliteit te bouwen
 profile-not-required = Een profiel is niet nodig om bij te dragen, hoewel het wel nuttig is
 sign-up-account = Een account aanmaken
+email-subscription-title = schrijf u in voor e-mailupdates
 
 ## Account Benefits
 
@@ -197,7 +204,7 @@ whats-public = Wat is openbaar?
 email-not-public = We maken uw e-mailadres niet openbaar.
 recordings-and-locale-public = Het aantal opnamen en de talen waaraan u bijdraagt zijn openbaar.
 username-optin-public = U kunt kiezen of uw gebruikersnaam openbaar of anoniem is.
-demographic-deidentified = Optioneel ingediende demografische gegevens (bv. leeftijd, geslacht, taal en accent) worden anoniem gemaakt ten opzichte van uw ingediende stemgegevens en zullen nooit openbaar worden gemaakt op uw profiel.
+demographic-deidentified = Optioneel ingediende demografische gegevens (bv. leeftijd, geslacht, taal en accent) worden anoniem gemaakt ten opzichte van uw ingediende spraakgegevens en zullen nooit openbaar worden gemaakt op uw profiel.
 username-email-not-demographic = Uw gebruikersnaam en e-mailadres zullen niet met de gepubliceerde gegevens worden gekoppeld.
 
 ## Speak & Listen Shortcuts
@@ -224,6 +231,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = o
 shortcut-record-toggle-label = Opnemen/Stoppen
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Fragment opnieuw opnemen
 request-language-text = Ziet u uw taal nog niet op Common Voice?
 request-language-button = Een taal aanvragen
 
@@ -277,7 +286,7 @@ settings = Instellingen
 edit-profile = Profiel bewerken
 profile-create-success = Gelukt, profiel aangemaakt!
 profile-close = Sluiten
-profile-explanation = Houd uw voortgang bij met een profiel en help onze stemgegevens nauwkeuriger te zijn.
+profile-explanation = Houd uw voortgang bij met een profiel en help onze spraakgegevens nauwkeuriger te zijn.
 thanks-for-account = Bedankt voor het bevestigen van uw account, nu gaan we uw profiel opbouwen.
 why-demographic = Waarom is dit belangrijk?
 why-demographic-explanation = Anonieme gebruikersgegevens zoals leeftijd, geslacht en accent helpen de audiogegevens die voor het trainen van de nauwkeurigheid van spraakherkenningsengines worden gebruikt te verbeteren. Uw gebruikersnaam en e-mailadres zullen nooit met uw ingediende gegevens worden gekoppeld, en u kunt ervoor kiezen uw gebruikersnaam openbaar of anoniem te maken.
@@ -336,7 +345,7 @@ faq-why-different-speakers-a =
     De meeste spraakdatabases worden getraind met een oververtegenwoordiging van bepaalde demografische groepen, wat leidt tot een voorkeur voor <articleLink>mannelijk en uit de middenklasse</articleLink>. Accenten en dialecten die vaak ondervertegenwoordigd zijn in trainingsgegevenssets worden meestal in verband gebracht met groepen mensen die al gemarginaliseerd zijn. Veel machines hebben ook moeite met het begrijpen van vrouwelijke stemmen.
     Dit is de reden waarom we variatie in onze spraakdatabase willen!
 faq-why-my-lang-q = Waarom zit mijn taal er nog niet bij?
-faq-why-my-lang-a = Mozilla verkiest niet de ene taal boven de andere. In plaats daarvan is Common Voice een initiatief dat uitsluitend door de gemeenschap wordt aangestuurd, maar het vergt <multilangLink>diverse stappen om een nieuwe taal toe te voegen</multilangLink> en met het verzamelen van spraakdonaties te beginnen. Allereerst moet de Common Voice-website worden vertaald, zodat gemeenschapsleden toegang hebben tot de ervaring van de bijdrager in hun eigen taal. Vervolgens hebben we een grote verzameling auteursrechtvrije zinnen nodig die mensen kunnen voorlezen. Zodra aan beide vereisten is voldaan, wordt een taal ‘uitgebracht’ op Common Voice, zodat mensen hun stem kunnen opnemen en donaties van anderen kunnen valideren.
+faq-why-my-lang-new-a = Mozilla verkiest niet de ene taal boven de andere. In plaats daarvan is Common Voice een initiatief dat uitsluitend door de gemeenschap wordt aangestuurd, maar het vergt <multilangLink>diverse stappen om een nieuwe taal toe te voegen</multilangLink> en met het verzamelen van spraakdonaties te beginnen. Allereerst moet de Common Voice-website worden vertaald, zodat gemeenschapsleden in hun eigen taal toegang hebben tot de ervaring van de bijdrager. Vervolgens hebben we een grote verzameling auteursrechtvrije zinnen nodig die mensen kunnen voorlezen. Zodra aan beide vereisten is voldaan, wordt een taal ‘uitgebracht’ op Common Voice, zodat mensen hun stem kunnen opnemen en donaties van anderen kunnen valideren. Als u een nieuwe taal beschikbaar wilt helpen maken, ga dan naar ons <sentenceCollectorLink>hulpmiddel voor zinnenverzameling</sentenceCollectorLink> om te beginnen.
 faq-what-quality-q = Welk geluidskwaliteitsniveau is nodig voor een spraakfragment om in de gegevensset te kunnen worden gebruikt?
 faq-what-quality-a = We willen dat de Common Voice-gegevensset de audiokwaliteit weerspiegelt die een spraak-naar-tekst-engine in het wild zal horen, dus we zijn op zoek naar afwisseling. Naast een gevarieerde sprekersgemeenschap leert een gegevensset met verschillende audiokwaliteiten de spraak-naar-tekst-engine om verschillende levensechte situaties aan te kunnen, van achtergrondgeluid tot autolawaai. Zolang uw spraakopname begrijpelijk is, moet deze goed genoeg zijn voor de gegevensset.
 faq-why-10k-hours-q = Waarom is de doelstelling voor geluidsopnamen 10.000 uur per taal?
@@ -367,10 +376,10 @@ localization = Lokalisatie
 localization-explanation = Dit is ons proces voor vertalen en aanpassen van onze inhoud voor veel locales (talen).
 sentence-collection = Zinnenverzameling
 sentence-collection-explanation = Het verzamelen van zinnen uit het publieke domein, of het schrijven van nieuwe voor het publieke domein.
-hours-recorded-explanation = Het aantal uren aan stemopnamen dat we tot dusver hebben verzameld.
+hours-recorded-explanation = Het aantal uren aan spraakopnamen dat we tot dusver hebben verzameld.
 hours-validated-explanation = Het aantal spraakopname-uren dat door 2 van de 3 gebruikers met een ‘Ja’-stem is gevalideerd. Deze markeren de voortgang in de richting van de totale projectdoelstelling van 10.000 uur.
 sst = Spraak-naar-tekst (STT)
-sst-explanation = Spraak-naar-tekst (STT)-technologieën zetten stemgegevens om naar tekst.
+sst-explanation = Spraak-naar-tekst (STT)-technologieën zetten spraakgegevens om naar tekst.
 de-identified = Anoniem gemaakt
 de-identified-explanation = Het proces waarbij de profielgegevens van een bijdrager worden gescheiden van gedoneerde spraakfragmenten wanneer deze als onderdeel van de gegevensset worden verpakt voor downloaden.
 
@@ -392,11 +401,6 @@ data-get-started = <speechBlogLink>Beginnen met spraakherkenning</speechBlogLink
 data-other-title = Andere spraakgegevenssets…
 data-other-goto = Naar { $name }
 data-other-download = Gegevens downloaden
-data-other-librispeech-description = LibriSpeech is een pakket met circa 1000 uur aan 16 kHz gesproken Engels, afgeleid van opgelezen audioboeken uit het LibriVox-project.
-data-other-ted-name = TED-LIUM-corpus
-data-other-ted-description = Het TED-LIUM-corpus is samengesteld uit audiotoespraken en hun transcripties, zoals beschikbaar op de TED-website.
-data-other-voxforge-description = VoxForge is opgezet om spraaktranscripties te verzamelen voor gebruik met gratis en opensource-spraakherkenningsengines.
-data-other-tatoeba-description = Tatoeba is een grote database van zinnen, vertalingen en gesproken audio voor gebruik in het leren van talen. Deze download bevat alle Engelse spraakopnamen van hun gemeenschap.
 data-bundle-button = Gegevenssetbundel downloaden
 data-bundle-description = Common Voice-gegevens plus alle overige bovenstaande gegevenssets.
 license = Licentie: <licenseLink>{ $license }</licenseLink>
@@ -412,6 +416,59 @@ review-rerecord = Opnieuw opnemen
 review-cancel = Inzending annuleren
 review-keep-recordings = Opnamen behouden
 review-delete-recordings = Mijn opnamen verwijderen
+
+## New Datasets Page
+
+datasets-headline = We bouwen een opensource, meertalige spraakgegevensset die iedereen kan gebruiken om spraaktoepassingen te trainen.
+datasets-positioning =
+    We geloven dat grote, openbare spraakgegevenssets voor innovatie en gezonde commerciële competitie in het veld van geautomatiseerd lerende spraaktechnologie zal zorgen.
+    
+    De meertalige gegevensset van Common Voice is nu al de grootste openbare spraakgegevensset in zijn soort, maar het is niet de enige.
+    
+    Beschouw deze pagina als een lijst met referenties naar andere opensource-spraakgegevenssets en, terwijl Common Voice doorgroeit, de startpagina voor onze nieuwe uitgaven.
+language = Taal
+# File size in gigabytes
+size = Grootte
+validated-hr-total = Totaal aantal gevalideerde uren
+overall-hr-total = Algemeen aantal uren
+cv-license = Licentie
+audio-format = Audio-indeling
+number-of-voices = Aantal stemmen
+splits = Opdelingen
+email-to-download = Voer uw e-mailadres in om te downloaden
+why-email = <b>Waarom een e-mailadres?</b> Mogelijk moeten we in de toekomst contact met u opnemen over wijzigingen in de gegevensset, en een e-mailadres geeft ons contactinformatie.
+confirm-size = U staat op het punt om een download van <b>{ $size }</b> te starten
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>U gaat ermee akkoord</b> om niet te proberen de identiteit van sprekers in de Common Voice-gegevensset te achterhalen
+download-language = { $language } downloaden
+validated-hours = Gevalideerde uren
+recorded-hours = Opgenomen uren
+whats-inside = Wat zit er in de Common Voice-gegevensset?
+dataset-description-hours =
+    Elk onderdeel in de gegevensset bestaat uit een uniek MP3-bestand en een bijbehorend tekstbestand. Veel van de <b>{ $total }</b> opgenomen uren in de gegevensset bevatten ook demografische metagegevens, zoals leeftijd, geslacht en accent, die de nauwkeurigheid van spraakherkenningsengines kunnen helpen trainen.
+    
+    De gegevensset bestaat momenteel uit <b>{ $valid }</b> gevalideerde uren in <b>{ $languages }</b> talen, maar we voegen doorlopend spraak en talen toe. Kijk eens op onze <languagesLink>pagina Talen</languagesLink> om een taal aan te vragen of een bijdrage te leveren.
+want-dataset-update = Wilt u updates wanneer we een nieuwe versie van de Common Voice-gegevensset uitbrengen? Abonneer u dan op onze nieuwsbrief.
+subscribe = Abonneren
+get-started-speech = Beginnen met spraakherkenning
+other-datasets = Andere spraakgegevenssets
+feedback-q = Hebt u feedback?
+deepspeech-info = De Common Voice-gegevensset is een aanvulling op Deep Speech, de opensource-spraakherkenningsengine van Mozilla, die u kunt gebruiken om spraakherkenningstoepassingen te bouwen. Lees ons <githubLink>GitHub-overzicht</githubLink> of bezoek het <discourseLink>DeepSpeech-forum op Discourse</discourseLink> om te ontdekken hoe u kunt beginnen.
+common-voice-info-new = Hebt u vragen over Common Voice? Ideeën voor verbeteringen of feedback over een specifieke taal? Praat mee op ons <discourseLink>Discourse-forum</discourseLink> en laat het ons weten.
+data-other-librispeech-description = LibriSpeech is een pakket met circa 1.000 uur aan 16 kHz gesproken Engels, afgeleid van opgelezen audioboeken uit het LibriVox-project.
+data-other-ted-name = TED-LIUM-corpus
+data-other-ted-description = Het TED-LIUM-corpus is samengesteld uit audiotoespraken en hun transcripties, zoals beschikbaar op de TED-website.
+data-other-voxforge-description = VoxForge is opgezet om spraaktranscripties te verzamelen voor gebruik met gratis en opensource-spraakherkenningsengines.
+data-other-tatoeba-description = Tatoeba is een grote database van zinnen, vertalingen en gesproken audio voor gebruik in het leren van talen. Deze download bevat alle Engelse spraakopnamen van hun gemeenschap.
+your-feedback = Hebt u ideeën over hoe we de Common Voice-gegevensset kunnen verbeteren? Laat het ons weten op Discourse.
+go-discourse = Naar Discourse
+missing-language = Ziet u uw taal niet in de gegevensset? Ga naar onze pagina Talen om een taal aan te vragen.
+go-languages-page = Naar de pagina Talen
+ready-to-validate = Klaar om zinnen te helpen valideren?
+more = Meer
+close = Sluiten
+download = Downloaden
 
 ## Download Modal
 
@@ -439,13 +496,15 @@ request-language-form-language =
     .label = Taal
 request-language-success-title = Taalaanvraag met succes ingediend, bedankt.
 request-language-success-content = We nemen binnenkort contact op met meer informatie over hoe u uw taal aan Common Voice kunt toevoegen.
+select-language = Selecteer een taal…
+other-language = Andere taal
 
 ## Languages Overview
 
 language-section-in-progress = In uitvoering
-language-section-in-progress-description = Talen in uitvoering worden momenteel opgezet voor bijdragen vanuit onze gemeenschappen; de voortgang geeft weer hoe ver ze zijn met de websitevertaling en fasen van zinnenverzameling.
+language-section-in-progress-new-description = Deze talen worden momenteel door de gemeenschap ontwikkeld. De voortgangsbalken geven aan hoe ver elke taal is met de <localizationGlossaryLink>websitevertaling</localizationGlossaryLink> en het <sentenceCollectionGlossaryLink>verzamelen van zinnen</sentenceCollectionGlossaryLink>.
 language-section-launched = Beschikbaar
-language-section-launched-new-description = Voor deze gelanceerde talen is de website met succes vertaald, en zijn er voldoende zinnen verzameld voor doorlopende bijdragen aan het <italic>spreken</italic> en <italic>luisteren</italic>.
+language-section-launched-description = Voor deze beschikbare talen is de website met succes <localizationGlossaryLink>vertaald</localizationGlossaryLink>, en zijn er voldoende <sentenceCollectionGlossaryLink>zinnen verzameld</sentenceCollectionGlossaryLink> voor doorlopende bijdragen aan het <speakLink>spreken</speakLink> en <listenLink>luisteren</listenLink>.
 languages-show-more = Meer zien
 languages-show-less = Minder zien
 language-speakers = Sprekers
@@ -543,9 +602,13 @@ overall-accuracy = Algemene nauwkeurigheid
 
 ## Profile Delete
 
-delete-q = Wilt u ook dat uw stemopnamen worden verwijderd, of wilt u deze in de gegevensset van Common Voice behouden?
+delete-q = Wilt u ook dat uw spraakopnamen worden verwijderd, of wilt u deze in de gegevensset van Common Voice behouden?
 keep = Behouden
 remove = Verwijderen
-keep-info = Uw anonieme stemopnamen blijven in de gegevensset van Common Voice aanwezig. Zodra u uw profiel verwijdert, kunt u geen verzoek meer indienen om uw opnamen uit de gegevensset te verwijderen.
-remove-info = We zullen uw verzoek om uw stemopnamen uit de gegevensset te verwijderen beoordelen. Als uw verzoek wordt goedgekeurd, nemen we contact op met de partijen die de gegevensset hebben gedownload en vragen we hen ook uw stemopnamen te verwijderen.
+keep-info = Uw anonieme spraakopnamen blijven in de gegevensset van Common Voice aanwezig. Zodra u uw profiel verwijdert, kunt u geen verzoek meer indienen om uw opnamen uit de gegevensset te verwijderen.
+remove-info = We zullen uw verzoek om uw spraakopnamen uit de gegevensset te verwijderen beoordelen. Als uw verzoek wordt goedgekeurd, nemen we contact op met de partijen die de gegevensset hebben gedownload en vragen we hen ook uw spraakopnamen te verwijderen.
+why-delete-recordings =
+    Common Voice-opnamen worden gebruikt door academici, kleine bedrijven en liefhebbers van spraakherkenning om te helpen bij het trainen en ontwikkelen van vrij beschikbare bronnen, zoals spraakmodellen.
+    
+    Kunt u ons laten weten waarom u uw opnamen wilt laten verwijderen?
 profile-form-delete = Profiel verwijderen

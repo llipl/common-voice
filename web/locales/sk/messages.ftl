@@ -53,7 +53,9 @@ fo = faerčina
 fr = francúzština
 fy-NL = frízština
 ga-IE = írčina
+gl = galícijčina
 he = hebrejčina
+hr = chorvátčina
 hsb = hornolužická srbčina
 hu = maďarčina
 ia = interlingua
@@ -68,6 +70,8 @@ ko = kórejčina
 kpv = komi-zyriančina
 kw = kornčina
 ky = kirgizština
+lt = litovčina
+lv = lotyština
 mdf = mokša
 mhr = lúčnovýchodná marijčina
 mk = macedónčina
@@ -191,6 +195,7 @@ x-years-short =
        *[other] { $count } rokov
     }
 help-make-dataset = Pomôžte nám vytvoriť vysokokvalitnú a verejne prístupnú databázu
+profile-not-required = Profil nie je nutnosťou, no môže byť užitočný
 
 ## Account Benefits
 
@@ -200,6 +205,8 @@ benefits = Výhody
 
 whats-public = Čo všetko zverejňujeme?
 email-not-public = Vašu e-mailovú adresu nezverejňujeme.
+demographic-deidentified = Dobrovoľne poskytnuté demografické údaje (vek, pohlavie a prízvuk) sú anonymizované a nikdy nebudú zverejnené na vašom profile.
+username-email-not-demographic = Vaše používateľské meno a e-mailová adresa nebudú nijakým spôsobom prepojené s uverejnenými údajmi.
 
 ## Speak & Listen Shortcuts
 
@@ -225,6 +232,7 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Nahrať/zastaviť
+shortcut-rerecord-toggle = [1-5]
 request-language-text = Nevidíte na Common Voice svoj jazyk?
 request-language-button = Požiadajte o jazyk
 
@@ -305,10 +313,20 @@ add-language = Pridať jazyk
 
 faq-title = Často kladené otázky
 faq-what-cv-q = Čo je Common Voice?
+faq-when-release-q = Kedy uverejníte údaje projektu Common Voice aj v ďalších jazykoch?
 faq-why-mission-q = Prečo je projekt Common Voice súčasťou misie Mozilly?
+faq-what-cv-and-deepspeech-q = Aký je rozdiel medzi projektami Common Voice a Deep Speech?
+faq-is-goal-assistant-q = Je cieľom projektu Common Voice vytvorenie hlasového asistenta?
+faq-why-my-lang-q = Prečo môj jazyk zatiaľ nie je zahrnutý?
+faq-how-calc-hours-q = Ako projekt Common Voice počíta nahrané hodiny?
+faq-where-src-from-2-q = Odkiaľ pochádza zdrojový text?
+faq-is-account-public-q = Sú informácie o mojom účte verejne prístupné?
 
 ## Glossary
 
+glossary = Slovník
+localization = Lokalizácia
+sentence-collection = Zber viet
 
 ## NotFound
 
@@ -349,9 +367,12 @@ review-delete-recordings = Odstrániť moje nahrávky
 language = Jazyk
 # File size in gigabytes
 size = Veľkosť
+cv-license = Licencia
+audio-format = Formát zvuku
 size-gigabyte = GB
 size-megabyte = MB
 subscribe = Odoberať
+feedback-q = Máte spätnú väzbu?
 data-other-librispeech-description = LibriSpeech je korpus približne 1 000 hodín 16 kHz čítanej angličtiny odvodený z audiokníh z projektu LibriVox.
 data-other-ted-name = Korpus TED-LIUM
 data-other-ted-description = Korpus TED-LIUM je tvorený zvukovými nahrávkami prednášok a ich prepismi dostupnými na webovej stránke TED.
@@ -362,6 +383,9 @@ go-discourse = Prejsť na Discourse
 missing-language = Nevidíte v datasete svoj jazyk? Ak chcete o jazyk požiadať, prejdite na stránku s jazykmi.
 go-languages-page = Prejsť na stránku s jazykmi
 ready-to-validate = Ste pripravení pomôcť s overovaním viet?
+more = Viac
+close = Zavrieť
+download = Prevziať
 
 ## Download Modal
 
@@ -389,13 +413,13 @@ request-language-form-language =
     .label = Jazyk
 request-language-success-title = Žiadosť o jazyk bola odoslaná. Ďakujeme.
 request-language-success-content = Čoskoro vám dáme vedieť, ako môžete pridať svoj jazyk do Common Voice.
+select-language = Vyberte si jazyk...
+other-language = Ostatné jazyky
 
 ## Languages Overview
 
 language-section-in-progress = Jazyky, ktoré sa pripravujú
-language-section-in-progress-description = Tieto jazyky momentálne naše komunity pripravujú na prispievanie. Ich pokrok zobrazuje, ako ďaleko sú s prekladom stránky a so zberom viet.
 language-section-launched = Spustené jazyky
-language-section-launched-new-description = V týchto jazykoch je webová stránka dostupná a zároveň máme pre našich prispievateľov dostatočné množstvo viet.
 languages-show-more = Zobraziť viac
 languages-show-less = Zobraziť menej
 language-speakers = Počet prispievateľov

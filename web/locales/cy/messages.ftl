@@ -53,13 +53,16 @@ fo = Ffaroeg
 fr = Ffrangeg
 fy-NL = Ffriseg
 ga-IE = Gwyddeleg
+gl = Galisieg
 he = Hebraeg
+hr = Croatieg
 hsb = Sorbeg Uwch
 hu = Hwngareg
 ia = Interlingua
 id = Indoneseg
 is = Eislandeg
 it = Eidaleg
+izh = Izhorieg
 ja = Japanëeg
 ka = Georgeg
 kab = Kabyle
@@ -68,6 +71,8 @@ ko = Corëeg
 kpv = Komi-Zyrian
 kw = Cernyweg
 ky = Kyrgyz
+lt = Lithiuanieg
+lv = Latfieg
 mdf = Moksha
 mhr = Mari Dwyreiniol
 mk = Macedoneg
@@ -85,6 +90,7 @@ pt-BR = Portiwgaleg (Brasil)
 rm-sursilv = Romansh Sursilvan
 ro = Rwmaneg
 ru = Rwsieg
+rw = Kinyarwanda
 sah = Sakha
 sc = Sardinieg
 sk = Slofaceg
@@ -194,6 +200,7 @@ x-years-short =
 help-make-dataset = Helpwch ni i greu set ddata o ansawdd uchel sy'n agored i'r cyhoedd
 profile-not-required = Nid oes angen cael proffil i gyfrannu ond gall fod yn ddefnyddiol
 sign-up-account = Cofrestru am gyfrif
+email-subscription-title = cofrestrwch am ddiweddariadau e-bost
 
 ## Account Benefits
 
@@ -238,6 +245,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Recordio/Atal
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Clip wedi'i ail recordio
 request-language-text = Ddim yn gweld eich iaith ar Common Voice eto?
 request-language-button = Cais am Iaith
 
@@ -337,7 +346,7 @@ faq-why-important-a =
     Yn aml, defnyddio ein llais yw'r ffordd fwyaf naturiol rydym yn ei ddefnyddio i gyfathrebu â'n gilydd ac mae technolegau llais yn dod â'r cyfleustra hwnnw i'n cyfrifiaduron a'n dyfeisiau symudol. Rydyn am roi grym i ddatblygwyr adeiladu apiau adnabod llais anhygoel fel cyfieithwyr amser real a chynorthwywyr digidol sy'n defnyddio llais. Ond ar hyn o bryd mae'r rhan fwyaf o'r data llais sydd ei angen i adeiladu'r mathau hyn o apiau yn ddrud ac yn berchnogol. Rydym yn gobeithio y bydd set ddata Common Voice yn rhoi i'r datblygwyr hyn yr hyn sydd ei angen arnyn nhw i arloesi a gwneud technoleg llais ar gael yn eu hiaith eu hunain.
     Er mwyn gwneud adnabod llais hyd yn oed yn fwy cyffredin, rydym yn casglu samplau llais mewn ieithoedd sydd á phoblogaethau mawr llafar yn ogystal â rhai sydd â llai o siaradwyr yn aml wedi'u tanwasanaethu gan wasanaethau adnabod llais masnachol. Bydd cyhoeddi set ddata amrywiol o leisiau yn grymuso datblygwyr, entrepreneuriaid a chymunedau llais cyfan i fynd i'r afael â'r bwlch hwn eu hunain.
 faq-how-get-q = Sut mae cmodd i mi ael gafael ar ddata Common Voice?
-faq-how-get-a = Mae set ddata Common Voice ar gael i'w lwytho i lawr o dan y drwydded <licenseLink> CC0 </ licenseLink> ar <datasetLink> ein tudalen Setiau Data</datasetLink>. Gallwch hefyd lwytho i lawr nifer o setiau data eraill sydd ar gael i'r cyhoedd o'r un dudalen.
+faq-how-get-a = Mae set ddata Common Voice ar gael i'w lwytho i lawr o dan y drwydded <licenseLink> CC0 </licenseLink> ar <datasetLink> ein tudalen Setiau Data</datasetLink>. Gallwch hefyd lwytho i lawr nifer o setiau data eraill sydd ar gael i'r cyhoedd o'r un dudalen.
 faq-when-release-q = Pryd fyddwch chi'n rhyddhau data Common Voice mewn ieithoedd eraill?
 faq-when-release-a = Mae fersiwn aml-iaith set ddata Common Voice yn cael ei fwndelu a'i lanhau ar hyn o bryd gyda chymorth cymunedol. Os hoffech chi ddysgu mwy am gefnogi'r ymdrech hon, <contactLink> cysylltwch â ni </contactLink>. Ar hyn o bryd rydym yn targedu cyhoeddi ym mis Ionawr 2019. Ar ôl hynny, byddwn yn diweddaru'r set ddata o bryd i'w gilydd gydag ieithoedd newydd a chlipiau llais wrth iddyn nhw ddod ar gael. Mae'r cylch rhyddhau i'r dyfodol eto i'w benderfynu.
 faq-why-mission-q = Pam mae Common Voice yn rhan o genhadaeth Mozilla?
@@ -350,10 +359,10 @@ faq-do-want-native-q = Rwy'n siaradwr ail iaith ac rwy'n siarad gydag acen, ydyc
 faq-do-want-native-a = Ydyn, rydym wir eisiau eich llais! Rhan o nod Common Voice yw casglu cymaint o wahanol acenion â phosibl fel bod gwasanaethau adnabod llais yn gweithio cystal i bawb. Mae hyn yn golygu bod cyfraniadau gan siaradwyr anfrodorol yn arbennig o bwysig.
 faq-why-different-speakers-q = Pam mae angen cymaint o wahanol siaradwyr arnoch chi ar gyfer pob iaith?
 faq-why-different-speakers-a =
-    Mae'r rhan fwyaf o gronfeydd data llais wedi'u hyfforddi gyda gormod o ddemograffeg penodol sy'n arwain at ragfarn tuag at <articleLink>dynion dosbarth canol</ articleLink>. Fel arfer, mae acenion a thafodieithoedd sy'n dueddol o gael eu tangynrychioli mewn hyfforddiant yn gosod setiau data yn adlewyrchu'r grwpiau o bobl sydd eisoes wedi'u hymyleiddio. Mae llawer o beiriannau hefyd yn cael trafferth i ddeall lleisiau merched.
+    Mae'r rhan fwyaf o gronfeydd data llais wedi'u hyfforddi gyda gormod o ddemograffeg penodol sy'n arwain at ragfarn tuag at <articleLink>dynion dosbarth canol</articleLink>. Fel arfer, mae acenion a thafodieithoedd sy'n dueddol o gael eu tangynrychioli mewn hyfforddiant yn gosod setiau data yn adlewyrchu'r grwpiau o bobl sydd eisoes wedi'u hymyleiddio. Mae llawer o beiriannau hefyd yn cael trafferth i ddeall lleisiau merched.
     Dyna pam rydym eisiau amrywiaeth yn ein cronfa ddata llais!
 faq-why-my-lang-q = Pam nad yw fy iaith wedi'i chynnwys eto?
-faq-why-my-lang-a = Nid yw Mozilla yn dewis nac yn ffafrio unrhyw iaith o flaen un arall. Yn lle hynny, mae Common Voice yn fenter sy'n cael ei yrru gan y gymuned yn unig, ond mae'n cymryd <multilangLink> sawl cam i ychwanegu iaith newydd </ multilangLink> a dechrau casglu cyfraniadau llais. Yn gyntaf, mae angen cyfieithu gwefan y Common Voice er mwyn i aelodau'r gymuned gael mynediad i brofiad cyfrannwr yn eu hiaith eu hunain. Nesaf, mae arnom angen casgliad mawr o frawddegau dihawlfraint i bobl eu darllen allan. Unwaith y bydd y ddau ofyniad hynny wedi'u bodloni, caiff iaith ei "lansio" ar Common Voice i bobl ddechrau recordio eu llais a dilysu cyfraniadau pobl eraill.
+faq-why-my-lang-new-a = Nid yw Mozilla yn dewis nac yn ffafrio unrhyw iaith o flaen un arall. Yn lle hynny, mae Common Voice yn fenter sy'n cael ei yrru dim ond gan y gymuned, ond mae'n cymryd <multilangLink> sawl cam i ychwanegu iaith newydd </multilangLink> a dechrau casglu cyfraniadau llais. Yn gyntaf, mae angen cyfieithu gwefan y Common Voice er mwyn i aelodau'r gymuned gael mynediad i brofiad cyfrannwr yn eu hiaith eu hunain. Nesaf, mae arnom angen casgliad mawr o frawddegau heb hawlfraint i bobl eu darllen allan. Unwaith y bydd y ddau ofyniad hynny wedi'u bodloni, caiff iaith ei "lansio" ar Common Voice i bobl ddechrau recordio eu llais a dilysu cyfraniadau pobl eraill. Os hoffech chi helpu lansio iaith newydd, ewch draw i'n <sentenceCollectorLink>teclyn casglu brawddegau</sentenceCollectorLink>i gychwyn arni.
 faq-what-quality-q = Pa lefel o ansawdd sain sydd ei angen ar gyfer clip llais i'w ddefnyddio yn y set ddata?
 faq-what-quality-a = Rydyn eisiau i set ddata Common Voice adlewyrchu ansawdd sain y bydd peiriant llais-i-destun yn ei glywed yn gyffredin, felly rydym yn chwilio am amrywiaeth. Yn ogystal â chymuned amrywiol o siaradwyr, bydd set ddata gydag ansawdd sain amrywiol yn dysgu'r peiriant llais-i-destun i drin gwahanol sefyllfaoedd o'r byd go iawn, o gefndir gyda siarad i sŵn ceir. Cyn belled â bod eich clip llais yn ddealladwy, dylai fod yn ddigon da i'r set ddata.
 faq-why-10k-hours-q = Pam mae 10,000 awr wedi'i ddilysu y nod ar gyfer casglu sain iaith ?
@@ -409,11 +418,6 @@ data-get-started = <speechBlogLink>Cychwyn arni gydag Adnabod Lleferydd</speechB
 data-other-title = Setiau data llais eraill...
 data-other-goto = Mynd i { $name }
 data-other-download = Llwytho Data i Lawr
-data-other-librispeech-description = Mae LibriSpeech yn gorpws o tua 1000 o oriau o lefaru Saesneg 15Khz wedi ei ddarllen o lyfrau sain o broject LibriVox.
-data-other-ted-name = Corpws TED-LIUM
-data-other-ted-description = Mae corpws TED-LIUM wedi ei greu o sgyrsiau sain a'u trawsgrifiadau o wefan TED.
-data-other-voxforge-description = Cafodd VoxForge ei sefydlu i gasglu lleferydd wedi ei drawsgrifio ar gyfer ei ddefnyddio gyda Pheiriannau Adnabod Lleferydd Rhydd a Chod Agored.
-data-other-tatoeba-description = Mae Tatoeba yn gronfa ddata mawr o frawddegau, cyfieithiadau a sain llafar ar gyfer dysgu ieithoedd. Mae'r llwyth yma'n cynnwys yr holl Saesneg llafar recordiwyd gan eu cymuned.
 data-bundle-button = Llwytho Pecyn Set Ddata i Lawr
 data-bundle-description = Common Voice ynghyd â'r holl setiau data llais uchod.
 license = Trwydded: <licenseLink>{ $license }</licenseLink>
@@ -429,6 +433,59 @@ review-rerecord = Ail-recordio
 review-cancel = Diddymu'r Cyflwyno
 review-keep-recordings = Cadw'r recordiadau
 review-delete-recordings = Dileu fy recordiadau
+
+## New Datasets Page
+
+datasets-headline = Rydym yn adeiladu setiau data o leisiau amlieithog y gall unrhyw un eu defnyddio i hyfforddi rhaglenni sy'n cael eu galluogi drwy lais.
+datasets-positioning =
+    Rydym yn credu y bydd setiau data llais mawr, sydd ar gael yn gyhoeddus annog menter a chystadleuaeth fasnachol iach mewn technoleg llais wedi ei seilio ar ddysgu peirianyddol.
+    
+    Set data amlieithog Common Voice eisoes yw'r set data llais mwyaf sydd ar gael o'i fath, ond nid yw'r unig un.
+    
+    Mae'r dudalen hon yn ganolfan gwybodaeth am setiau data llais cod agored eraill ac wrth i Common Voice barhau i dyfu, yn gartref i'n diweddariadau ryddhau ni.
+language = Iaith
+# File size in gigabytes
+size = Maint
+validated-hr-total = Cyfanswm Oriau â Ddilyswyd
+overall-hr-total = Cyfanswm yr Oriau
+cv-license = Trwydded
+audio-format = Fformat Sain
+number-of-voices = Nifer y Lleisiau
+splits = Rhannu
+email-to-download = Rhowch E-bost i'w Lwytho i Lawr
+why-email = <b> Pam e-bost? </ b> Efallai y bydd angen i chi gysylltu â chi yn y dyfodol ynghylch newidiadau i'r set ddata, mae e-bost yn rhoi pwynt cyswllt inni.
+confirm-size = Rydych yn barod i gychwyn llwytho i lawr <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Rydych yn cytuno</b> i beidio â cheisio adnabod y siaradwyr yn set data Common Voice.
+download-language = Llwytho { $language } i Lawr
+validated-hours = Oriau â Ddilyswyd
+recorded-hours = Oriau â Recordiwyd
+whats-inside = Beth sydd o fewn set data Common Voice?
+dataset-description-hours =
+    Mae pob cofnod yn y set ddata yn cynnwys MP3 unigryw a ffeil testun cyfatebol. Mae llawer o'r <b>{ $total }</b> awr a gofnodwyd yn y set ddata  hefyd yn cynnwys metadata demograffig, oed, rhyw, ac acen a all helpu i hyfforddi cywirdeb peiriannau adnabod lleferydd.
+    
+    Mae'r set ddata ar hyn o bryd yn cynnwys <b>{ $valid }</b> awr wedi'u dilysu mewn <b>{ $languages }</b> iaith, ond rydym yn ychwanegu mwy o leisiau ac ieithoedd yn barhaus. Edrychwch ar ein tudalen <languagesLink>Ieithoedd </languagesLink> i ofyn am iaith neu i ddechrau cyfrannu.
+want-dataset-update = Eisiau diweddariadau pan fyddwn yn ryddhau fersiwn newydd o set data Common Voice? Tanysgrfiwch i'n newyddlen.
+subscribe = Tanysgryfio
+get-started-speech = Cychwyn gydag Adnabod Lleferydd
+other-datasets = Setiau Data Eraill
+feedback-q = Adborth?
+deepspeech-info = Mae set ddataCommopn Voice yn ategu peiriant adnabod lleferydd cod agored Mozilla, sef Deep Speech, y gallwch ei ddefnyddio i adeiladu rhaglenni adnabod lleferydd. Darllenwch ein <githubLink>trosolwg ar Github</ githubLink> neu ymuno â <discourseLink> DeepSpeech Discourse </ discourseLink> i wybod sut i gychwyn.
+common-voice-info-new = Oes gennych chi gwestiynau am Common Voice? Syniadau ar gyfer gwelliannau neu adborth am iaith benodol? Ymunwch â ni ar ein <discourseLink>fforwm Discource</discourseLink> a rhowch wybod i ni.
+data-other-librispeech-description = Mae LibriSpeech yn gorpws o tua 1000 o oriau o lefaru Saesneg 15Khz wedi ei ddarllen o lyfrau sain o broject LibriVox.
+data-other-ted-name = Corpws TED-LIUM
+data-other-ted-description = Mae corpws TED-LIUM wedi ei greu o sgyrsiau sain a'u trawsgrifiadau o wefan TED.
+data-other-voxforge-description = Cafodd VoxForge ei sefydlu i gasglu lleferydd wedi ei drawsgrifio ar gyfer ei ddefnyddio gyda Pheiriannau Adnabod Lleferydd Rhydd a Chod Agored.
+data-other-tatoeba-description = Mae Tatoeba yn gronfa ddata mawr o frawddegau, cyfieithiadau a sain llafar ar gyfer dysgu ieithoedd. Mae'r llwyth yma'n cynnwys yr holl Saesneg llafar recordiwyd gan eu cymuned.
+your-feedback = Oes gennych chi syniadau ar sut y gallwn ni wella set ddata Common Voice? Gadewch i ni wybod ar Discourse
+go-discourse = Mynd i Discourse
+missing-language = Ddim yn gweld eich iaith yn y set ddata? I ofyn i'ch iaith gael ei chynnwys ewch i'n tudalen Ieithoedd.
+go-languages-page = Mynd i'r Dudalen Ieithoedd
+ready-to-validate = Yn barod i helpu i ddilysu brawddegau?
+more = Rhagor
+close = Cau
+download = Llwytho i Lawr
 
 ## Download Modal
 
@@ -456,13 +513,15 @@ request-language-form-language =
     .label = Iaith
 request-language-success-title = Mae'r cais am iaith wedi ei gyflwyno'n llwyddiannus, diolch.
 request-language-success-content = Byddwn mewn cysylltiad gyda rhagor o wybodaeth am sut i ychwanegu eich iaith i Common Voice yn fuan.
+select-language = Dewiswch iaith...
+other-language = Iaith Arall
 
 ## Languages Overview
 
 language-section-in-progress = Ar y Ffordd
-language-section-in-progress-description = Mae ieithoedd sy'n cael eu datblygu yn cael eu hadeiladu ar hyn o bryd ar gyfer cyfraniadau gan ein cymunedau; mae eu cynnydd yn adlewyrchu lle maen nhw arni ar draws cyfnodau lleolieddio'r wefan a'r casglu brawddegau.
+language-section-in-progress-new-description = Mae'r ieithoedd hyn ar hyn o bryd o dan ddatblygiad cymunedol. Mae'r bariau cynnydd yn nodi pa mor bell y mae pob iaith yn y broses o <localizationGlossaryLink>leoleiddio'u gwefan</localizationGlossaryLink> a <sentenceCollectionGlossaryLink>chasglu brawddegau</sentenceCollectionGlossaryLink>.
 language-section-launched = Ar Gael
-language-section-launched-new-description = Ar gyfer yr ieithoedd hyn sydd ar gael mae'r wefan wedi ei leoleiddio'n llwyddiannus ac mae ganddo ddigon o frawddegau wedi'u casglu i ganiatáu ar gyfer cyfraniadau <italic>Siarad</italic> a <italic>Gwrando</italic>.
+language-section-launched-description = Ar gyfer yr ieithoedd sydd wedi'u lansio, mae'r wefan wedi'i <localizationGlossaryLink> leoleiddio'n </localizationGlossaryLink>llwyddiannus, ac mae ganddo ddigon o <sentenceCollectionGlossaryLink>frawddegau wedi'u casglu</sentenceCollectionGlossaryLink> i ganiatáu cyfraniadau <speakLink>Siarad</speakLink> a <listenLink>Gwrando</ listenLink>.
 languages-show-more = Gweld Mwy
 languages-show-less = Gweld Llai
 language-speakers = Siaradwyr
@@ -557,7 +616,7 @@ validations =
 your-languages = Eich Ieithoedd
 toward-next-goal = Ymlaen i'r nod nesaf
 clips-you-recorded = Clipiau Rydych Wedi'u Recordio
-clips-you-validated = Clipiau Rydych Wedi eu Dilysu
+clips-you-validated = Clipiau Rydych Wedi'u Dilysu
 todays-recorded-progress = Cynnydd Common Voice heddiw ar glipiau wedi'u recordio
 todays-validated-progress = Cynnydd Common Voice heddiw ar glipiau wedi'u dilysu
 stats = Ystadegau
@@ -577,4 +636,8 @@ keep = Cadw
 remove = Tynnu
 keep-info = Bydd eich recordiadau llais dienw yn parhau yn set ddata Common Voice. Ar ôl i chi ddileu eich proffil, ni fyddwch bellach yn gallu cyflwyno cais i ddileu eich recordiadau o'r set ddata
 remove-info = Byddwn yn adolygu'ch cais i gael gwared â'ch recordiadau llais o'r set ddata. Os bydd eich cais yn cael ei gymeradwyo, byddwn yn cysylltu â'r rhai sydd wedi llwytho'r set ddata i lawr a gofyn iddyn nhw gael gwared â'ch recordiadau llais hefyd.
+why-delete-recordings =
+    Mae recordiadau Common Voice yn cael eu defnyddio gan academyddion, busnesau bach a phobl sy'n hoff o adnabod llais i helpu i hyfforddi a thyfu adnoddau sydd ar gael i'r cyhoedd, fel modelau llais.
+    
+    A wnewch chi roi gwybod i ni pam yr hoffech i'ch cofnodion gael eu dileu?
 profile-form-delete = Dileu Proffil

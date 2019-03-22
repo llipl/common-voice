@@ -1,22 +1,22 @@
 import { Localized } from 'fluent-react/compat';
 import * as React from 'react';
+import { StyledLink } from '../ui/ui';
 import URLS from '../../urls';
 import { LocaleLink } from '../locale-helpers';
 import { BENEFITS, WHATS_PUBLIC } from '../../constants';
 
-const A = (props: React.HTMLProps<HTMLAnchorElement>) => (
-  <a target="_blank" rel="noopener noreferrer" {...props} />
-);
-
 function renderQA(content: any[]) {
   return content
     .map(c => (Array.isArray(c) ? c : [c, {}]))
-    .map(([id, props]) => (
-      <React.Fragment key={id}>
-        <Localized id={'faq-' + id + '-q'}>
+    .map(([id, ...rest]) =>
+      Array.isArray(id) ? [id, ...rest] : [[id, id], ...rest]
+    )
+    .map(([[qId, aId], props]) => (
+      <React.Fragment key={qId}>
+        <Localized id={'faq-' + qId + '-q'}>
           <h3 />
         </Localized>
-        <Localized id={'faq-' + id + '-a'} {...props}>
+        <Localized id={'faq-' + aId + '-a'} {...props}>
           <p />
         </Localized>
       </React.Fragment>
@@ -36,14 +36,21 @@ export default () => (
         'how-get',
         {
           licenseLink: (
-            <A href="https://creativecommons.org/publicdomain/zero/1.0/" />
+            <StyledLink
+              href="https://creativecommons.org/publicdomain/zero/1.0/"
+              blank
+            />
           ),
           datasetLink: <LocaleLink to={URLS.DATASETS} />,
         },
       ],
       [
         'when-release',
-        { contactLink: <A href="mailto:commonvoice@mozilla.com" /> },
+        {
+          contactLink: (
+            <StyledLink href="mailto:commonvoice@mozilla.com" blank />
+          ),
+        },
       ],
       'why-mission',
       'what-cv-and-deepspeech',
@@ -51,13 +58,22 @@ export default () => (
       'do-want-native',
       [
         'why-different-speakers',
-        { articleLink: <A href="https://econ.st/2AVxVG3" /> },
+        { articleLink: <StyledLink href="https://econ.st/2AVxVG3" blank /> },
       ],
       [
-        'why-my-lang',
+        ['why-my-lang', 'why-my-lang-new'],
         {
           multilangLink: (
-            <A href="https://medium.com/mozilla-open-innovation/more-common-voices-24a80c879944" />
+            <StyledLink
+              href="https://medium.com/mozilla-open-innovation/more-common-voices-24a80c879944"
+              blank
+            />
+          ),
+          sentenceCollectorLink: (
+            <StyledLink
+              href="https://common-voice.github.io/sentence-collector/"
+              blank
+            />
           ),
         },
       ],
@@ -69,7 +85,10 @@ export default () => (
         {
           italic: <i />,
           githubLink: (
-            <A href="https://github.com/mozilla/voice-web/tree/master/server/data" />
+            <StyledLink
+              href="https://github.com/mozilla/voice-web/tree/master/server/data"
+              blank
+            />
           ),
         },
       ],
@@ -112,10 +131,13 @@ export default () => (
       'de-identified',
     ].map(s => (
       <p key={s}>
-        <Localized id={s}>
-          <b />
-        </Localized>
-        <b>: </b>
+        <a id={s} />
+        <a href={'#' + s}>
+          <Localized id={s}>
+            <b />
+          </Localized>
+          <b>: </b>
+        </a>
         <Localized id={s + '-explanation'}>
           <span />
         </Localized>

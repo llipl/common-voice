@@ -53,13 +53,16 @@ fo = Färöisch
 fr = Französisch
 fy-NL = Friesisch
 ga-IE = Irisch
+gl = Galizisch
 he = Hebräisch
+hr = Kroatisch
 hsb = Obersorbisch
 hu = Ungarisch
 ia = Interlingua
 id = Indonesisch
 is = Isländisch
 it = Italienisch
+izh = Ischorisch
 ja = Japanisch
 ka = Georgisch
 kab = Kabylisch
@@ -68,6 +71,8 @@ ko = Koreanisch
 kpv = Komi-Syrjänisch
 kw = Cornish
 ky = Kirgisisch
+lt = Litauisch
+lv = Lettisch
 mdf = Mokschanisch
 mhr = Wiesenmari
 mk = Mazedonisch
@@ -85,6 +90,7 @@ pt-BR = Portugiesisch (Brasilianisch)
 rm-sursilv = Surselvisch
 ro = Rumänisch
 ru = Russisch
+rw = Kinyarwanda
 sah = Sacha
 sc = Sardisch
 sk = Slowakisch
@@ -180,6 +186,7 @@ x-years-short =
 help-make-dataset = Helfen Sie uns, einen qualitativ hochwertigen, öffentlich zugänglichen Datensatz zu erstellen
 profile-not-required = Ein Profil ist für die Mitarbeit nicht notwendig, aber hilfreich
 sign-up-account = Ein Konto erstellen
+email-subscription-title = Abonnieren Sie Neuigkeiten per E-Mail
 
 ## Account Benefits
 
@@ -224,6 +231,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = a
 shortcut-record-toggle-label = Aufnahme/Abbruch
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Aufzeichnung wiederholen
 request-language-text = Ihre Sprache wird bei Common Voice noch nicht aufgeführt? Da lässt sich was machen!
 request-language-button = Anfrage schicken
 
@@ -336,7 +345,7 @@ faq-why-different-speakers-a =
     Die meisten Sprachdatenbanken werden mit einer Überrepräsentation bestimmter Demografien trainiert, was zu einer Bevorzugung <articleLink>männlicher und Mittelklasse-Teilnehmern</articleLink> führt. Akzente und Dialekte, die in Trainingsdatensätzen tendenziell unterrepräsentiert sind, werden typischerweise mit Gruppen von Personen in Verbindung gebracht, die bereits an den Rand gedrängt sind. Viele Maschinen haben auch Mühe, weibliche Stimmen zu verstehen.
     Deshalb wollen wir in unserer Sprachdatenbank Abwechslung!
 faq-why-my-lang-q = Warum gibt es meine Sprache noch nicht?
-faq-why-my-lang-a = Mozilla wählt oder bevorzugt keine Sprache gegenüber einer anderen. Stattdessen handelt es sich bei Common Voice um eine rein gemeinschaftsorientierte Initiative, es erfordert jedoch <multilangLink>mehrere Schritte, um eine neue Sprache aufzunehmen</multilangLink> und das Sammeln von Sprachspenden zu beginnen. Erstens muss die Common-Voice-Website übersetzt werden, damit Mitglieder der Gemeinschaft in ihrer eigenen Sprache auf die Erfahrungen der Mitwirkenden zugreifen können. Als nächstes benötigen wir eine große Sammlung urheberrechtsfreier Sätze, die die Menschen vorlesen können. Sobald beide Anforderungen erfüllt sind, wird auf Common Voice eine Sprache „gestartet“, damit die Menschen ihre Stimme aufnehmen und die Spenden anderer bestätigen können.
+faq-why-my-lang-new-a = Mozilla wählt oder bevorzugt keine Sprache gegenüber einer anderen. Stattdessen handelt es sich bei Common Voice um eine rein gemeinschaftsorientierte Initiative, es erfordert jedoch <multilangLink>mehrere Schritte, um eine neue Sprache aufzunehmen</multilangLink> und das Sammeln von Sprachspenden zu beginnen. Erstens muss die Common-Voice-Website übersetzt werden, damit Mitglieder der Gemeinschaft in ihrer eigenen Sprache auf die Erfahrungen der Mitwirkenden zugreifen können. Als nächstes benötigen wir eine große Sammlung urheberrechtsfreier Sätze, die die Menschen vorlesen können. Sobald beide Anforderungen erfüllt sind, wird auf Common Voice eine Sprache „gestartet“, damit die Menschen ihre Stimme aufnehmen und die Spenden anderer bestätigen können. Wenn Sie beim Start einer neuen Sprache helfen möchten, besuchen Sie unser <sentenceCollectorLink>Werkzeug zur Sammlung von Sätzen</sentenceCollectorLink>, um loszulegen.
 faq-what-quality-q = Welche Audioqualität ist erforderlich, damit ein Sprachclip im Datensatz verwendet werden kann?
 faq-what-quality-a = Wir möchten, dass der Common-Voice-Datensatz die Audioqualität widerspiegelt, die eine Sprach-zu-Text-Engine in der freien Natur hört. Wir suchen also nach Abwechslung. Zusätzlich zu einer vielfältigen Gemeinschaft von Sprechern wird ein Datensatz mit unterschiedlicher Audioqualität die Sprach-zu-Text-Engine in die Lage versetzen, mit verschiedenen Situationen der realen Welt umzugehen, vom Hintergrundgespräch bis zum Autolärm. Solange Ihr Sprachclip verständlich ist, sollte er für den Datensatz gut genug sein.
 faq-why-10k-hours-q = Warum sind 10&thinsp;000 validierte Stunden das für die Audioaufnahme pro Sprache bestimmte Ziel?
@@ -436,17 +445,17 @@ download-language = { $Language } herunterladen
 validated-hours = Bestätigte Stunden
 recorded-hours = Aufgenommene Stunden
 whats-inside = Was steckt im Common-Voice-Datensatz?
-dataset-description =
-    Jeder Eintrag im Datensatz besteht aus einer eindeutigen MP3- und zugehörigen Textdatei. Viele der <b>{ $hours }</b> aufgezeichneten Stunden im Datensatz enthalten auch demografische Metadaten wie Alter, Geschlecht und Akzent, mit deren Hilfe die Genauigkeit von Spracherkennungs-Engines trainiert werden kann.
+dataset-description-hours =
+    Jeder Eintrag im Datensatz besteht aus einer eindeutigen MP3- und zugehörigen Textdatei. Viele der <b>{ $total }</b> aufgezeichneten Stunden im Datensatz enthalten auch demografische Metadaten wie Alter, Geschlecht und Akzent, mit deren Hilfe die Genauigkeit von Spracherkennungs-Engines trainiert werden kann.
     
-    Der Datensatz besteht derzeit aus <b>{ $hours }</b> bestätigten Stunden in <b>{ $languageCount }</b> Sprachen, aber wir fügen immer mehr Stimmen und Sprachen hinzu. Besuchen Sie unsere <languagesLink>Sprachen-Seite</languagesLink>, um eine Sprache anzufordern oder mitzumachen.
+    Der Datensatz besteht derzeit aus <b>{ $valid }</b> bestätigten Stunden in <b>{ $languages }</b> Sprachen, aber wir fügen immer mehr Stimmen und Sprachen hinzu. Besuchen Sie unsere <languagesLink>Sprachen-Seite</languagesLink>, um eine Sprache anzufordern oder mitzumachen.
 want-dataset-update = Möchten Sie benachrichtigt werden, wenn wir eine neue Version des Common-Voice-Datensatzes veröffentlichen? Dann abonnieren Sie unseren Newsletter.
 subscribe = Abonnieren
 get-started-speech = Erste Schritte mit der Spracherkennung
 other-datasets = Andere Sprachdatensätze
 feedback-q = Möchten Sie uns etwas mitteilen?
 deepspeech-info = Der Common-Voice-Datasatz ist eine Ergänzung zu Mozillas Open-Source-Spracherkennungs-Engine Deep Speech, mit der Sie Spracherkennungsanwendungen entwickeln können. Lesen Sie unsere <githubLink>Github-Übersicht</githubLink> oder treten Sie dem <discourseLink>DeepSpeech-Forum auf Discourse</discourseLink> bei, um zu erfahren, wie die ersten Schritte ausssehen
-common-voice-info = Haben Sie Fragen zu Common Voice? Besuchen Sie unser <discourseLink>Discourse-Forum</discourseLink>.
+common-voice-info-new = Haben Sie Fragen zu Common Voice? Verbesserungsvorschläge oder Feedback zu einer bestimmten Sprache? Besuchen Sie unser <discourseLink>Discourse-Forum</discourseLink>und teilen Sie uns dies mit.
 data-other-librispeech-description = LibriSpeech ist ein Korpus aus ca. 1000 Stunden vorgelesener Texte in englischer Sprache (aufgenommen in 16kHz), welche ursprünglich aus Hörbüchern des LibriVox-Projektes entnommen wurden.
 data-other-ted-name = TED-LIUM-Korpus
 data-other-ted-description = Der TED-LIUM-Korpus wurde aus Audio-Vorträgen und deren Abschriften erstellt, die auf der TED-Webseite verfügbar sind.
@@ -457,6 +466,9 @@ go-discourse = Discourse besuchen
 missing-language = Ihre Sprache fehlt noch im Datensatz? Besuchen Sie unsere Sprachen-Seite, um eine Sprache anzufordern
 go-languages-page = Sprachen-Seite besuchen
 ready-to-validate = Sind Sie bereit, um Sätze zu bestätigen?
+more = Mehr
+close = Schließen
+download = Herunterladen
 
 ## Download Modal
 
@@ -484,13 +496,15 @@ request-language-form-language =
     .label = Sprache
 request-language-success-title = Sprachanfrage erfolgreich abgesendet, vielen Dank.
 request-language-success-content = Wir melden uns bald mit weiteren Informationen darüber, wie Sie Ihre Sprache bei Common Voice hinzufügen können.
+select-language = Sprache auswählen…
+other-language = Andere Sprache
 
 ## Languages Overview
 
 language-section-in-progress = Vorbereitungsphase
-language-section-in-progress-description = Sprachen in der Vorbereitungsphase werden aktuell für die Mitarbeit durch unsere Gemeinschaften vorbereitet, dieser Fortschritt zeigt, wie weit sie bei Übersetzung der Website und Sammlung der Sätze gekommen sind.
+language-section-in-progress-new-description = Diese Sprachen werden derzeit durch die Gemeinschaft entwickelt. Die Fortschrittsbalken zeigen an, wie weit bei den einzelnen Sprachen die <localizationGlossaryLink>Website-Lokalisierung</localizationGlossaryLink> und die <sentenceCollectionGlossaryLink>Sammlung von Sätzen</sentenceCollectionGlossaryLink> umgesetzt wurde.
 language-section-launched = Aufnahmephase
-language-section-launched-new-description = Für diese aktiven Sprachen wurde die Website erfolgreich übersetzt und verfügt über ausreichend gesammelte Sätze, dass laufend über <italic>Sprechen</italic> und <italic>Anhören</italic> mitgearbeitet werden kann.
+language-section-launched-description = Für diese aktiven Sprachen wurde die Website erfolgreich <localizationGlossaryLink>lokalisiert</localizationGlossaryLink>, und es wurden ausreichend <satzCollectionGlossaryLink>Sätze gesammelt</satzCollectionGlossaryLink>, damit weiterhin Beiträge <speakLink>gesprochen</speakLink> und <listenLink>angehört</listenLink> werden können.
 languages-show-more = Mehr anzeigen
 languages-show-less = Weniger anzeigen
 language-speakers = Sprecher

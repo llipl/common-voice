@@ -53,13 +53,16 @@ fo = Tiếng Faroe
 fr = Tiếng Pháp
 fy-NL = Tiếng Frisia
 ga-IE = Tiếng Ireland
+gl = Tiếng Galicia
 he = Tiếng Do Thái
+hr = Tiếng Croatia
 hsb = Tiếng Sorb vùng Thượng
 hu = Tiếng Hungary
 ia = Tiếng Khoa học Quốc tế
 id = Tiếng Indonesia
 is = Tiếng Iceland
 it = Tiếng Ý
+izh = Tiếng Izhorian
 ja = Tiếng Nhật
 ka = Tiếng Gruzia
 kab = Tiếng Kabyle
@@ -68,6 +71,8 @@ ko = Tiếng Hàn
 kpv = Tiếng Komi-Zyria
 kw = Tiếng Cornwall
 ky = Tiếng Kyrgyz
+lt = Tiếng Litva
+lv = Tiếng Latvia
 mdf = Tiếng Moksha
 mhr = Tiếng Mari Đông
 mk = Tiếng Macedonia
@@ -85,6 +90,7 @@ pt-BR = Tiếng Bồ Đào Nha (Brazil)
 rm-sursilv = Tiếng Romansh Sursilva
 ro = Tiếng Rumani
 ru = Tiếng Nga
+rw = Tiếng Kinyarwanda
 sah = Tiếng Sakha
 sc = Tiếng Sardinia
 sk = Tiếng Slovakia
@@ -177,6 +183,7 @@ x-years-short =
 help-make-dataset = Hãy giúp chúng tôi xây dựng một bộ dữ liệu công khai, chất lượng cao
 profile-not-required = Có một hồ sơ là không cần thiết để đóng góp mặc dù nó rất hữu ích
 sign-up-account = Đăng kí một tài khoản
+email-subscription-title = đăng ký nhận email cập nhật
 
 ## Account Benefits
 
@@ -221,6 +228,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Ghi/Dừng
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Clip ghi lại
 request-language-text = Chưa thấy ngôn ngữ của mình trên Common Voice?
 request-language-button = Yêu cầu ngôn ngữ
 
@@ -269,7 +278,7 @@ dashboard = Bảng điều khiển
 build-profile = Xây dựng hồ sơ
 avatar = Ảnh đại diện
 goals = Mục tiêu
-settings = Thiết lập
+settings = Cài đặt
 edit-profile = Chỉnh sửa hồ sơ
 profile-create-success = Thành công, hồ sơ đã được tạo!
 profile-close = Đóng
@@ -332,7 +341,7 @@ faq-why-different-speakers-a =
     Hầu hết các cơ sở dữ liệu giọng nói được đào tạo với sự biểu hiện quá mức của các nhóm nhân khẩu học nhất định, dẫn đến ưu tiên cho <articleLink>nam giới và tầng lớp trung lưu</articleLink>. Điểm nhấn và phương ngữ thường được thể hiện trong bộ dữ liệu đào tạo thường được liên kết với các nhóm người đã bị thiệt thòi. Nhiều máy cũng gặp khó khăn trong việc hiểu giọng nói của phụ nữ.
     Đây là lý do tại sao chúng tôi muốn thay đổi trong cơ sở dữ liệu lời nói của chúng tôi!
 faq-why-my-lang-q = Tại sao ngôn ngữ của tôi chưa được đưa vào?
-faq-why-my-lang-a = Mozilla không chọn hay ưu tiên bất kỳ ngôn ngữ nào hơn ngôn ngữ khác. Thay vào đó, Common Voice là một sáng kiến hoàn toàn dựa vào cộng đồng, nhưng cần có <multilangLink>một vài bước để thêm một ngôn ngữ mới</multilangLink> và bắt đầu thu thập giọng nói. Đầu tiên, trang web Common Voice cần được dịch để các thành viên cộng đồng có thể truy cập vào trải nghiệm của người đóng góp bằng ngôn ngữ của họ. Tiếp theo, chúng tôi cần một bộ lớn các câu không có bản quyền để mọi người đọc thành tiếng. Khi cả hai yêu cầu đó được thỏa mãn, một ngôn ngữ sẽ ra mắt trên nền tảng Common Voice để mọi người bắt đầu ghi âm giọng nói của mình và xác thực các đóng góp của người khác.
+faq-why-my-lang-new-a = Mozilla không chọn hay ưu tiên bất kỳ ngôn ngữ nào hơn ngôn ngữ khác. Thay vào đó, Common Voice là một sáng kiến hoàn toàn dựa vào cộng đồng, nhưng cần có <multilangLink>một vài bước để thêm một ngôn ngữ mới</multilangLink> và bắt đầu thu thập giọng nói. Đầu tiên, trang web Common Voice cần được dịch để các thành viên cộng đồng có thể truy cập vào trải nghiệm của người đóng góp bằng ngôn ngữ của họ. Tiếp theo, chúng tôi cần một bộ lớn các câu không có bản quyền để mọi người đọc thành tiếng. Khi cả hai yêu cầu đó được thỏa mãn, một ngôn ngữ sẽ ra mắt trên nền tảng Common Voice để mọi người bắt đầu ghi âm giọng nói của mình và xác thực các đóng góp của người khác. Nếu bạn muốn giúp khởi chạy một ngôn ngữ mới, hãy đến <sentenceCollectorLink>công cụ thu thập câu</sentenceCollectorLink> của chúng tôi để bắt đầu.
 faq-what-quality-q = Mức chất lượng âm thanh nào được yêu cầu cho một clip thoại được sử dụng trong bộ dữ liệu?
 faq-what-quality-a = Chúng tôi muốn bộ dữ liệu Common Voice phản ánh chất lượng âm thanh mà một công cụ chuyển lời nói thành văn bản sẽ nghe thấy trong tự nhiên, vì vậy chúng tôi đang tìm kiếm sự đa dạng. Ngoài cộng đồng người nói đa dạng, bộ dữ liệu với chất lượng âm thanh khác nhau sẽ nghiên cứu cho công cụ chuyển lời nói thành văn bản để xử lý các tình huống thực tế khác nhau, từ nói chuyện nền tảng đến tiếng ồn xe hơi. Miễn là clip thoại của bạn dễ hiểu, nó sẽ đủ tốt cho bộ dữ liệu.
 faq-why-10k-hours-q = Tại sao 10.000 giờ được xác thực là mục tiêu cho mỗi ngôn ngữ để thu âm thanh?
@@ -381,7 +390,7 @@ data-download-button = Tải dữ liệu Common Voice
 data-download-yes = Có
 data-download-deny = Không
 data-download-license = Giấy phép: <licenseLink>CC-0</licenseLink>
-data-download-modal = Bạn sắp tải xuống <size>{ $size }GB</size>, tiếp tục?
+data-download-modal = Bạn sắp tải xuống mục này có dung lượng <size>{ $size }GB</size>, tiếp tục?
 data-subtitle = Chúng tôi đang xây dựng một bộ dữ liệu giọng nói mở và công khai mà mọi người có thể sử dụng để đào tạo các ứng dụng hỗ trợ giọng nói.
 data-explanatory-text = Chúng tôi tin rằng bộ dữ liệu giọng nói khổng lồ và công khai có sẵn sẽ thúc đẩy đổi mới và cạnh tranh thương mại lành mạnh về lĩnh vực công nghệ giọng nói dựa trên máy học. Đây là một nỗ lực toàn cầu và chúng tôi mời mọi người tham gia. Mục tiêu của chúng tôi là giúp công nghệ giọng nói trở nên hòa nhập hơn, phản ánh sự đa dạng của tiếng nói từ khắp nơi trên thế giới.
 data-get-started = <speechBlogLink>Bắt đầu với nhận dạng giọng nói</speechBlogLink>
@@ -432,17 +441,17 @@ download-language = Tải xuống { $language }
 validated-hours = Số giờ đã xác thực
 recorded-hours = Số giờ đã ghi âm
 whats-inside = Những gì bên trong bộ dữ liệu Common Voice?
-dataset-description =
-    Mỗi mục trong bộ dữ liệu bao gồm một tệp MP3 và tệp văn bản tương ứng. Nhiều <b>{ $hours }</b> giờ được ghi trong tập dữ liệu cũng bao gồm siêu dữ liệu nhân khẩu học như tuổi, giới tính và giọng nói có thể giúp đào tạo tính chính xác của các công cụ nhận dạng giọng nói.
+dataset-description-hours =
+    Mỗi mục trong bộ dữ liệu bao gồm một tệp MP3 duy nhất và tệp văn bản tương ứng. <b>{ $total }</b> giờ được ghi trong tập dữ liệu cũng bao gồm siêu dữ liệu nhân khẩu học như tuổi, giới tính và giọng nói có thể giúp rèn luyện tính chính xác của các công cụ nhận dạng giọng nói.
     
-    Bộ dữ liệu hiện bao gồm <b>{ $hours }</b> giờ được xác thực bằng các ngôn ngữ <b>{ $languageCount }</b>, nhưng chúng tôi luôn luôn thêm nhiều tiếng nói và ngôn ngữ. Hãy xem <languagesLink>trang ngôn ngữ</languagesLink> của chúng tôi để yêu cầu ngôn ngữ hoặc bắt đầu đóng góp.
+    Bộ dữ liệu hiện bao gồm <b>{ $valid }</b> giờ được xác thực bằng <b>{ $languages }</b> ngôn ngữ , nhưng chúng tôi luôn luôn thêm nhiều tiếng nói và ngôn ngữ. Hãy xem <languagesLink>trang ngôn ngữ</languagesLink> của chúng tôi để yêu cầu ngôn ngữ hoặc bắt đầu đóng góp.
 want-dataset-update = Muốn cập nhật khi chúng tôi phát hành phiên bản mới của bộ dữ liệu Common Voice? Đăng kí theo dõi bản tin của chúng tôi.
 subscribe = Đăng kí
 get-started-speech = Bắt đầu với nhận dạng giọng nói
 other-datasets = Bộ dữ liệu thoại khác
 feedback-q = Có phản hồi?
 deepspeech-info = Bộ dữ liệu Common Voice bổ sung cho công cụ nhận dạng giọng nói mã nguồn mở Mozilla, Deep Speech, mà bạn có thể sử dụng để xây dựng các ứng dụng nhận dạng giọng nói. Đọc <githubLink>tổng quan về Github</githubLink> của chúng tôi hoặc tham gia <discourseLink>diễn ngôn DeepSpeech</discourseLink> để tìm hiểu cách bắt đầu.
-common-voice-info = Có câu hỏi nào về Common Voice? Tham gia trên <discourseLink>diễn đàn Discourse</discourseLink>.
+common-voice-info-new = Có câu hỏi nào về Common Voice? Ý tưởng cho cải tiến hoặc phản hồi về một ngôn ngữ cụ thể? Tham gia với chúng tôi trên <discourseLink>diễn đàn Discourse</discourseLink> và cho chúng tôi biết.
 data-other-librispeech-description = LibriSpeech là một kho tàng khoảng 1000 giờ của 16Khz bài phát biểu tiếng Anh có nguồn gốc từ các audiobook từ dự án LibriVox.
 data-other-ted-name = TED-LIUM Corpus
 data-other-ted-description = TED-LIUM corpus được tạo từ các cuộc nói chuyện, và các bản ghi chép của họ có sẵn trên trang web của TED.
@@ -453,6 +462,9 @@ go-discourse = Đi đến Discourse
 missing-language = Không thấy ngôn ngữ của bạn được phản ánh trong bộ dữ liệu? Để yêu cầu một ngôn ngữ hãy đi đến trang ngôn ngữ của chúng tôi.
 go-languages-page = Đi đến trang ngôn ngữ
 ready-to-validate = Sẵn sàng để giúp xác nhận các câu?
+more = Thêm
+close = Đóng
+download = Tải xuống
 
 ## Download Modal
 
@@ -480,13 +492,15 @@ request-language-form-language =
     .label = Ngôn ngữ
 request-language-success-title = Đã gửi yêu cầu ngôn ngữ thành công, cảm ơn bạn.
 request-language-success-content = Chúng tôi sẽ giữ liên lạc với bạn để biết thêm thông tin về cách thêm ngôn ngữ của bạn vào Common Voice thật sớm.
+select-language = Chọn một ngôn ngữ...
+other-language = Ngôn ngữ khác
 
 ## Languages Overview
 
 language-section-in-progress = Trong tiến trình
-language-section-in-progress-description = Các ngôn ngữ trong tiến trình hiện đang được xây dựng để đóng góp bởi cộng đồng của chúng tôi; tiến trình sẽ phản ánh vị trí của chúng trên các trang web nội địa hóa và giai đoạn thu thập các câu.
+language-section-in-progress-new-description = Những ngôn ngữ này hiện đang được phát triển cộng đồng. Các thanh tiến trình cho biết mỗi ngôn ngữ trong quá trình <localizationGlossaryLink>bản địa hóa trang web</localizationGlossaryLink> và <sentenceCollectionGlossaryLink>thu thập câu</sentenceCollectionGlossaryLink>.
 language-section-launched = Ra mắt
-language-section-launched-new-description = Đối với những ngôn ngữ được ra mắt này thì trang web đã được nội địa hóa thành công, và đã thu thập đủ câu, cho phép việc tiếp tục đóng góp <italic>nói</italic> và <italic>nghe</italic>.
+language-section-launched-description = Đối với những ngôn ngữ được phát hành này, trang web đã được <localizationGlossaryLink>bản địa hóa</localizationGlossaryLink> thành công và có đủ <sentenceCollectionGlossaryLink>các câu được thu thập</sentenceCollectionGlossaryLink> để cho phép đóng góp <speakLink>Nói</speakLink> và <listenLink>Nghe</listenLink> liên tục.
 languages-show-more = Xem thêm
 languages-show-less = Xem ít hơn
 language-speakers = Diễn giả

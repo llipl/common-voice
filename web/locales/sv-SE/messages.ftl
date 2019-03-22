@@ -53,13 +53,16 @@ fo = Färöiska
 fr = Franska
 fy-NL = Frisiska
 ga-IE = Irländska
+gl = Galiciska
 he = Hebreiska
+hr = Kroatiska
 hsb = Högsorbiska
 hu = Ungerska
 ia = Interlingua
 id = Indonesiska
 is = Isländska
 it = Italienska
+izh = Ingriska
 ja = Japanska
 ka = Georgiska
 kab = Kabyliska
@@ -68,6 +71,8 @@ ko = Koreanska
 kpv = Komi-syrjänska
 kw = Korniska
 ky = Kirgiziska
+lt = Litauiska
+lv = Lettiska
 mdf = Moksha
 mhr = Östmariska
 mk = Makedonska
@@ -85,6 +90,7 @@ pt-BR = Portugisiska (Brasilien)
 rm-sursilv = Rätoromanska
 ro = Rumänska
 ru = Ryska
+rw = Kinyarwanda
 sah = Sakha
 sc = Sardiska
 sk = Slovakiska
@@ -183,6 +189,7 @@ x-years-short =
 help-make-dataset = Hjälp oss bygga en högkvalitativ, öppen datamängd
 profile-not-required = Det behövs ingen profil för att bidra, men det underlättar
 sign-up-account = Registrera dig för ett konto
+email-subscription-title = registrera dig för uppdateringar via e-post
 
 ## Account Benefits
 
@@ -227,6 +234,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Spela in/Stoppa
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Spela in klipp igen
 request-language-text = Kan du inte se ditt språk på Common Voice än?
 request-language-button = Skicka en förfrågan
 
@@ -339,7 +348,7 @@ faq-why-different-speakers-a =
     De flesta taldatabaser tränas med en överrepresentation av en viss demografi vilket resulterar i en partiskhet mot <articleLink>man och medelklass</articleLink>. Accenter och dialekter som tenderar att vara underrepresenterade i träningsdata är vanligtvis förknippade med grupper av människor som redan är marginaliserade. Många maskiner kämpar också för att förstå kvinnliga röster.
     Det är därför vi vill ha variation i vår röstdatabas!
 faq-why-my-lang-q = Varför är inte mitt språk inkluderat än?
-faq-why-my-lang-a = Mozilla väljer inte eller favoriserar ett språk över ett annat. Istället är Common Voice ett rent community-drivet initiativ, men det krävs <multilangLink>flera steg att lägga till ett nytt språk</multilangLink> och att börja samla röstdonationer. Först måste Common Voice-webbplatsen översättas så att medlemmar i communityn kan få tillgång till det på sitt eget språk. Därefter behöver vi en stor samling upphovsrättsfria meningar som människor ska kunna läsa upp. När båda dessa krav är uppfyllda, lanseras ett språk på Common Voice för att folk ska börja spela in sin röst och att bekräfta andras donationer.
+faq-why-my-lang-new-a = Mozilla väljer inte eller favoriserar ett språk över ett annat. Istället är Common Voice ett rent community-drivet initiativ, men det krävs <multilangLink>flera steg att lägga till ett nytt språk</multilangLink> och att börja samla röstdonationer. Först måste Common Voice-webbplatsen översättas så att medlemmar i communityn kan få tillgång till det på sitt eget språk. Därefter behöver vi en stor samling upphovsrättsfria meningar som människor ska kunna läsa upp. När båda dessa krav är uppfyllda, lanseras ett språk på Common Voice för att folk ska börja spela in sin röst och att bekräfta andras donationer. Om du vill hjälpa till att starta ett nytt språk går du vidare till vårt <sentenceCollectorLink>verktyg för meningsinsamling</sentenceCollectorLink> för att komma igång.
 faq-what-quality-q = Vilken nivå på ljudkvalitet krävs för att ett röstklipp ska kunna användas i datamängden?
 faq-what-quality-a = Vi vill att Common Voice-datamängd ska återspegla ljudkvaliteten som en tal-till-text-motor kommer att höra naturligt, så vi letar efter en variation. Förutom en blandning av talare kommer en datamängd med varierande ljudkvalitet att lära tal-till-text-motorn att hantera olika verkliga situationer, från samtal i bakgrunden till oljud från en bil. Så länge ditt röstklipp är förståeligt ska det vara tillräckligt bra för datamängden.
 faq-why-10k-hours-q = Varför är 10 000 validerade timmar per språk målet för inspelat ljud?
@@ -395,11 +404,6 @@ data-get-started = <speechBlogLink>Kom igång med taligenkänning</speechBlogLin
 data-other-title = Andra röstdatamängder…
 data-other-goto = Gå till { $name }
 data-other-download = Ladda ner data
-data-other-librispeech-description = LibriSpeech är ett korpus på cirka 1000 timmar av 16Khz inläst från engelska ljudböcker från LibriVox-projektet.
-data-other-ted-name = TED-LIUM korpus
-data-other-ted-description = TED-LIUM-korpuset gjordes av föredrag och deras transkriptioner tillgängliga från TED-webbplatsen.
-data-other-voxforge-description = VoxForge skapades för att samla transkriberat tal för användning med fria och öppna språkigenkänningsmotorer.
-data-other-tatoeba-description = Tatoeba är en stor databas med meningar, översättningar och talat språk för användning i språk inlärning. Denna nerladdning innehåller pratad engelska inspelad av/från deras gemenskap.
 data-bundle-button = Ladda ner Dataset-paket
 data-bundle-description = Common Voice data plus alla andra röstdatamängder ovan.
 license = Licens: <licenseLink>{ $license }</licenseLink>
@@ -444,11 +448,30 @@ download-language = Ladda ner { $language }
 validated-hours = Validerade timmar
 recorded-hours = Inspelade timmar
 whats-inside = Vad finns i Common Voice-datamängd?
-dataset-description =
-    Varje post i datamängden består av en unik MP3 och motsvarande textfil. Många av de <b>{ $hours }</b> inspelade timmarna i datamängden innehåller även demografiska metadata som ålder, kön och accent som kan hjälpa till att träna noggrannheten för taligenkänningsmotorer.
+dataset-description-hours =
+    Varje post i datamängden består av en unik MP3 och motsvarande textfil. Många av de <b>{ $total }</b> inspelade timmarna i datamängden innehåller även demografiska metadata som ålder, kön och accent som kan hjälpa till att träna noggrannheten för taligenkänningsmotorer.
     
-    Datamängden består för närvarande av <b>{ $hours }</b> validerade timmar på språk i <b>{ $languageCount }</b> men vi lägger alltid till fler röster och språk. Ta en titt på vår <languagesLink>Språk sida</languagesLink> för att begära ett språk eller börja bidra.
+    Datamängden består för närvarande av <b>{ $valid }</b> validerade timmar för <b>{ $languages }</b> språk, men vi lägger alltid till fler röster och språk. Ta en titt på vår <languagesLink>Språksida</languagesLink> för att begära ett språk eller börja bidra.
+want-dataset-update = Vill du ha uppdateringar om när vi släpper en ny version av Common Voice-datamängd? Prenumerera på vårt nyhetsbrev.
 subscribe = Prenumerera
+get-started-speech = Kom igång med taligenkänning
+other-datasets = Andra röstdatamängder
+feedback-q = Har du feedback?
+deepspeech-info = Common Voice-datamängd kompletterar Mozillas taligenkännande motor Deep Voice (öppen källkod), som du kan använda för att bygga taligenkänningsprogram. Läs vår <githubLink>Github-översikt</githubLink> eller gå med i <discourseLink>DeepSpeech Discourse</discourseLink> för att lära dig hur du kommer igång.
+common-voice-info-new = Har du frågor om Common Voice? Idéer för förbättringar eller feedback om ett visst språk? Gå med i vårt <discourseLink>Discourse-forum</discourseLink> och låt oss veta.
+data-other-librispeech-description = LibriSpeech är ett korpus på cirka 1000 timmar av 16Khz inläst från engelska ljudböcker från LibriVox-projektet.
+data-other-ted-name = TED-LIUM korpus
+data-other-ted-description = TED-LIUM-korpuset gjordes av föredrag och deras transkriptioner tillgängliga från TED-webbplatsen.
+data-other-voxforge-description = VoxForge skapades för att samla transkriberat tal för användning med fria och öppna språkigenkänningsmotorer.
+data-other-tatoeba-description = Tatoeba är en stor databas med meningar, översättningar och talat språk för användning i språk inlärning. Denna nerladdning innehåller pratad engelska inspelad av/från deras gemenskap.
+your-feedback = Har du idéer om hur vi kan göra Common Voice-datamängd bättre? Låt oss veta på Discourse
+go-discourse = Gå till Discourse
+missing-language = Återspeglas inte ditt språk i datamängden? För att begära ett språk, gå till vår språksida.
+go-languages-page = Gå till språksidan
+ready-to-validate = Är du redo för att hjälpa till att validera meningar?
+more = Mer
+close = Stäng
+download = Hämta
 
 ## Download Modal
 
@@ -476,13 +499,15 @@ request-language-form-language =
     .label = Språk
 request-language-success-title = Språkförfrågan har skickats in, tack.
 request-language-success-content = Vi hör av oss med mer information om hur du lägger till ditt språk i Common Voice väldigt snart.
+select-language = Välj ett språk...
+other-language = Andra språk
 
 ## Languages Overview
 
 language-section-in-progress = Pågående
-language-section-in-progress-description = Pågående språk byggs nu för bidrag från våra gemenskaper. Deras framsteg återspeglar var de står i översättning av webbplatsen och insamling av meningar.
+language-section-in-progress-new-description = Dessa språk är för närvarande under utveckling. Förloppsindikatorn visar hur långt varje språk är i färd med <localizationGlossaryLink> webbplatsöversättning</localizationGlossaryLink> och <sentenceCollectionGlossaryLink>insamling av meningar</sentenceCollectionGlossaryLink>.
 language-section-launched = Lanserad
-language-section-launched-new-description = För dessa lanserade språk har webbplatsen översatts fullständigt och tillräckligt med meningar har samlats in för att möjliggöra ett pågående samarbete genom <italic>Tala</italic> och <italic>Lyssna</italic>.
+language-section-launched-description = För dessa lanserade språk har webbplatsen blivit <localizationGlossaryLink>översatt</localizationGlossaryLink> och har tillräckligt med <sentenceCollectionGlossaryLink>meningar insamlade</sentenceCollectionGlossaryLink> för att tillåta bidrag för <talkLink>Röst</speakLink> och <listenLink>Lyssna</listenLink>.
 languages-show-more = Läs mer
 languages-show-less = Visa mindre
 language-speakers = Talas av

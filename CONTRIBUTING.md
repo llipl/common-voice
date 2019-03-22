@@ -14,7 +14,7 @@ Help us add more sentences for other volunteers to read. See [this topic](https:
 
 ### Bug Fixes and Feature Enhancements
 
-All of our current issues can be found here on GitHub. Anything with a [help wanted](https://github.com/mozilla/voice-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag is up for grabs.
+All of our current issues can be found here on GitHub. Anything with a [help wanted](https://github.com/mozilla/voice-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag is definitely up for grabs. If you're interested in an issues without this tag, best to ask first to make sure our vision of it aligns.
 
 #### Project requirements
 
@@ -51,6 +51,8 @@ This is going to:
 - Launch `voice-web` server
 
 You can visit the website at [http://localhost:9000](http://localhost:9000).
+
+To modify the configuration listed in config-helper.ts (e.g server port), you need to modify the file `local-docker-config.json` in `voice-web/docker`.
 
 #### Local setup
 

@@ -53,13 +53,16 @@ fo = Faroese
 fr = Francese
 fy-NL = Frison
 ga-IE = Irlandese
+gl = Galiciano
 he = Hebreo
+hr = Croata
 hsb = Sorbio, basse
 hu = Hungaro
 ia = Interlingua
 id = Indonesiano
 is = Islandese
 it = Italiano
+izh = Azoriano
 ja = Japonese
 ka = Georgiano
 kab = Cabilo
@@ -68,6 +71,8 @@ ko = Coreano
 kpv = Komi-Zyriano
 kw = Cornico
 ky = Kirghiso
+lt = Lituano
+lv = Latviano
 mdf = Moksha
 mhr = Mari oriental
 mk = Macedone
@@ -85,6 +90,7 @@ pt-BR = Portugese (Brasil)
 rm-sursilv = Romansh Sursilvan
 ro = Romaniano
 ru = Russo
+rw = Ruanda
 sah = Sakha
 sc = Sardo
 sk = Slovaco
@@ -180,6 +186,7 @@ x-years-short =
 help-make-dataset = Adjuta nos a crear un collection de datos de alte qualitate, publicamente aperte
 profile-not-required = Haber un profilo non es obligatori pro collaborar ben que illo sia utile
 sign-up-account = Registra te pro aperir tu conto
+email-subscription-title = accede pro actualisationes email
 
 ## Account Benefits
 
@@ -224,6 +231,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Registrar/stoppar
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Re-registrar retalio
 request-language-text = An tu non vide ancora tu lingua sur Common Voice?
 request-language-button = Propone un lingua
 
@@ -330,7 +339,6 @@ faq-why-different-speakers-a =
     Le major parte del bases de datos es maestrate con un super-representation de certe datos demographic que resultata in un prejudicio verso <articleLink>le classe masculin e medie</articleLink>.Accentos e dialectos que tende a ser sub-representate in le maestramento del collectiones de datos es typicamente associate con gruppos de personas qui es jam marginalisate. Multe machinas alsi es reluctante a comprender le voces feminin.
     Isto es perque in nostre base de datos de voces nos vole le varietate!
 faq-why-my-lang-q = Perque mi lingua non es ancora includite?
-faq-why-my-lang-a = Mozilla non prefere o favori ulle lingua contra un altere. In vice, Common Voice es un initiativa ducite solmente per le communitate, ma illo prende <multilangLink>plure grados pro adder un nove lingua</multilangLink> e initia per colliger donationes de voce. Primo, le sito web de Common Voice debe ser traducite assi que le membros del communitate pote acceder al experientias del collaboratores in lor proprie lingua. Pois nos require un grande collection de phrases libere de derectos de autor proque le personas pote los leger. Un vice que ambe ille requisitos es satisfacite un lingua es “lanceate” sur Common Voice pro le personas a partir del registration de lor voce e del validation del donationes del alteres.
 faq-what-quality-q = Que nivello de qualitate del audio es requirite proque le retalios vocal sia usate in le collection de datos?
 faq-what-quality-a = Nos vole que le collection de datos de Common Voice reflecte le qualitate del audio que un motor de recognition vocal audira in natura, assi nos recerca le varietate. In addition a un diverse communitate de parlantes, un collection de datos con qualitate del audio variabile <s0/>maestrara le recognition vocal a gerer varie situationes del mundo real, ab le voces se fundo al rumor del autos. Fin que tu retalio vocal es intelligibile, illo deberea ser bon bastante pro le collection de datos.
 faq-why-10k-hours-q = Perque le objectivo pro capturar audio es 10,000 horas validate per lingua?
@@ -424,16 +432,29 @@ download-language = Discargar { $language }
 validated-hours = Horas validate
 recorded-hours = Horas registrate
 whats-inside = Que es intra le collection de datos de Common Voice?
-dataset-description =
-    Cata entrata in le collection de datos consiste solo de un MP3 e del file de texto correspondente. Multe del <b>{ $horas }</b> horas registrate in le collection de datos alsi include demographic metadatos como etate, sexo e accento, que pote adjutar a maestrar le precision del motores de recognition del voce.
+dataset-description-hours =
+    Cata entrata in le collection de datos consiste solo de un MP3 e del file de texto correspondente. Multe del horas <b>{ $total }</b> registrate in le collection de datos alsi include metadatos demographic como etate, sexo e accento, que pote adjutar a maestrar le precision del motores de recognition del voce.
     
-    Le collection de datos actualmente consiste de <b>{ $horas }</b> horas validate in <b>{ $languageCount }</b> linguas, ma nos adde sempre altere voces e linguas. Perspice nostre <languagesLink>Pagina del linguas</languagesLink> pro requirer un lingua o pro initiar a collaborar.
+    Le collection de datos actualmente consiste de <b>{ $valid }</b> horas validate in <b>{ $languages }</b> linguas, ma nos adde sempre altere voces e linguas. Perspice nostre <languagesLink>Pagina del linguas</languagesLink> pro requirer un lingua o pro initiar a collaborar.
+want-dataset-update = Desira tu le actualisationes quando nos publica un nove version del collection de datos de Common Voice? Inscribe te a nostre littera de novas.
 subscribe = Subscriber se
+get-started-speech = Comenciar con le Recognition de voce
+other-datasets = Other Voice Datasets
+feedback-q = Ha tu commentario?
+deepspeech-info = Le collection de datos de Common Voice completa motor de recognition del voce open-source de Mozilla, Deep Speech, que tu pote usar pro crear applicationes de recognition de voce. Lege nostre <githubLink>panorama GitHub</githubLink> o junge te a <discourseLink>DeepSpeech Discourse</discourseLink> pro saper como comenciar.
 data-other-librispeech-description = LibriSpeech es un corpus de circa 1000 horas de anglese parlate a 16Khz derivate ab la lectura de audio-libros ab le projecto LibriVox.
 data-other-ted-name = Corpus de TED-LIUM
 data-other-ted-description = Le corpus de TED-LIUM esseva facite ab  audio e lor transcriptiones disponibile sur le sito web de TED.
 data-other-voxforge-description = VoxForge esseva create pro colliger voces transcribite a usar con motores de recognition de voce libere e open-source.
 data-other-tatoeba-description = Tatoeba es un grande base de datos de phrases, traductiones, e audio parlate a usar in apprendimento de linguas.Iste discarga contine anglese parlate registrate per lor communitates.
+your-feedback = Ha tu ideas sur como nos pote render le collection de datos de Common Voice melior? Face lo nos saper sur Discourse
+go-discourse = Va a Discourse
+missing-language = Non vide tu lingua reflectite in le Collection de datos? Si tu desira lo adder, accede a nostre Pagina del linguas.
+go-languages-page = Ir al pagina del linguas
+ready-to-validate = Preste a adjutar validar phrases?
+more = Altero
+close = Clauder
+download = Discargar
 
 ## Download Modal
 
@@ -461,13 +482,13 @@ request-language-form-language =
     .label = Lingua
 request-language-success-title = Lingua requirite inviate con successo, gratias.
 request-language-success-content = Nos essera in contacto con altere informationes circa como adder multo tosto tu lingua a Common Voice.
+select-language = Eliger un lingua...
+other-language = Altere linguas
 
 ## Languages Overview
 
 language-section-in-progress = In corso
-language-section-in-progress-description = Le linguas in corso es actualmente construite per contribution de nostre communitates; lor progresso reflecte ubi illos es trans le phases de localisation del sito web e collection de phrases.
 language-section-launched = Lanceate
-language-section-launched-new-description = Pro iste linguas lanceate le sito web ha essite localisate con successo, e ha bastante phrases colligite, pro consentir al contribution in corso de <italico>Parlar</italico> e <italico>Ascoltar</italico>.
 languages-show-more = Vider plus
 languages-show-less = Vider minus
 language-speakers = Locutores

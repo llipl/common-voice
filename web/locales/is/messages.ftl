@@ -54,6 +54,7 @@ fr = Franska
 fy-NL = Frísneska
 ga-IE = Írska
 he = Hebreska
+hr = Króatíska
 hsb = Hásorbíska
 hu = Ungverska
 ia = Interlingua
@@ -85,6 +86,7 @@ pt-BR = Portúgalska (brasilísk)
 rm-sursilv = Surilsvanrómanska
 ro = Rúmverska
 ru = Rússneska
+rw = Rúandíska
 sah = Jakútíska
 sc = Sardiníska
 sk = Slóvaska
@@ -182,14 +184,23 @@ x-years-short =
 help-make-dataset = Hjálpaðu okkur að byggja upp hágæða gagnasafn handa almenningi.
 profile-not-required = Prófíls er ekki krafist til að taka þátt en hann er gagnlegur þó
 sign-up-account = Búa til aðgang
+email-subscription-title = skráðu þig fyrir fréttum með tölvupósti
 
 ## Account Benefits
 
 benefits = Kostir
+rich-data = Gerðu þau gögn sem þú leggur til nytsamlegri með því að bæta við nafnlausum lýðfræðilegum upplýsingum. Allar slíkar upplýsingar eru sneiddar persónueinkennandi atriðum fyrir opinbera útgáfu.
+improve-audio = Prófílgögn hjálpa til við að þjálfa nákvæmari raddgreiningu.
+keep-track = Fylgstu með eigin framvindu og tölur um þátttöku í mörgum tungumálum.
+compare-progress = Berðu saman framvindu þína við aðra þátttakendur víðsvegar um heiminn.
+view-goals = Skoðaðu hvernig miðast í átt að verkefnismarkmiðum og persónuleg markmiðum.
+join-newsletter = Hægt er að skrá sig á póstlistann okkar til að fá fréttir um verkefnið.
 
 ## What's public
 
 whats-public = Hvað er gert opinbert?
+username-optin-public = Þú getur kosið að vera ónafngreind(ur), eða komið fram opinberlega með þínu notandanafni.
+demographic-deidentified = Hafir þú kosið að skrá lýðfræðileg gögn (t.d. aldur, kyn, tungumál og mállýsku) munu þau verða aftengd raddupptökum sem þú sendir inn. Þau munu einnig aldrei verða opinberuð á prófílnum þínum.
 username-email-not-demographic = Notandanafnið þitt og netfang verður ekki tengt gögnum útgáfunnar.
 
 ## Speak & Listen Shortcuts
@@ -311,6 +322,19 @@ faq-how-get-q = Hvernig get ég nálgast gögn Samróms?
 faq-how-get-a = Gögn Samróms verður hægt að niðurhala með <licenseLink>CC0-leyfi</licenseLink> á <datasetLink>gagnasafnasíðunni okkar</datasetLink>. Einnig verður hægt að niðurhala nokkur önnur gagnasöfn á síðunni sem opin eru almenningi.
 faq-when-release-q = Hvenær verður Samrómur í boði fyrir fleiri tungumál?
 faq-when-release-a = Mozilla-samfélagið vinnur um þessar mundir að fjöltunguútgáfu af Samrómsgögnunum, með því takmarki að gefa út í janúar 2019. Ef þú hefur áhuga á að læra meira um þetta ferli eða hjálpa til, <contactLink>hafðu þá endilega samband</contactLink>. Eftir þessa útgáfu munum við reglulega uppfæra gagna safnið þegar ný tungumál og hljóðklippur bætast við. Ekki er búið að ákveða hversu langt verður á milli útgáfa.
+faq-why-mission-q = Hví er Samrómur eitt af markmiðum Mozilla?
+faq-what-cv-and-deepspeech-q = Hver er munurinn á Samrómi og Deep Speech?
+faq-is-goal-assistant-q = Er það markmið Samróms að búa til raddaðstoðarkerfi?
+faq-do-want-native-q = Ég tala ekki þetta tungumál að móðurmáli og er með framburð, er enn áhugi fyrir því að ég leggi til raddupptökur?
+faq-why-different-speakers-q = Hvers vegna þarf svona marga talendur fyrir hvert tungumál?
+faq-why-my-lang-q = Af hverju er mitt tungumál ekki enn hluti af verkefninu?
+faq-what-quality-q = Hversu góð þurfa hljóðgæðin að vera til að upptaka verði notuð í gagnasafninu?
+faq-why-10k-hours-q = Hvers vegna er upptökumarkmiðið 10.000 klst á tungumál?
+faq-how-calc-hours-q = Hvernig reiknar Samrómur þessa klukkutíma?
+faq-where-src-from-2-q = Hvaðan kemur lestextinn?
+faq-why-not-ask-read-q = Hvers vegna biðjið þið ekki fólk að lesa úr bókum eða greinum af Wikipedia í ólíkum tungumálum?
+faq-why-account-q = Af hverju ætti ég að skrá mig?
+faq-is-account-public-q = Verða mínar reikningsupplýsingar opinberar?
 
 ## Glossary
 
@@ -318,6 +342,10 @@ glossary = Orðaskýringar
 localization = Staðfærsla
 sentence-collection = Setningaforði
 sentence-collection-explanation = Söfnun á almennum setningum eða að skrifa nýjar fyrir almenning.
+sst = Tal-í-texta (TÍT)
+sst-explanation = Tal-í-texta (TÍT) er tækni sem breytir raddupptökum í texta.
+de-identified = Einkennissneiðing
+de-identified-explanation = Það þegar tengsl prófílgagna þátttakanda við hljóðgögnin sem hann lagði til eru falin, áður en þau eru undirbúin til niðurhals sem hluti af málheild.
 
 ## NotFound
 
@@ -355,6 +383,27 @@ review-delete-recordings = Eyða upptökum
 
 ## New Datasets Page
 
+language = Tungumál
+# File size in gigabytes
+size = Stærð
+validated-hr-total = Staðfestar klst.
+overall-hr-total = Heildarfjöldi klst.
+cv-license = Leyfi
+audio-format = Hljóðsnið
+number-of-voices = Fjöldi radda
+splits = Skiptingar
+email-to-download = Sláðu inn tölvupóst til að hala niður
+why-email = <b>Af hverju tölvupóst?</b> Við gætum þurft að hafa samband við þig síðar vegna breytinga á málheildinni, og tölvupóstur veitir okkur leið til þess.
+confirm-size = Þú getur nú hafið niðurhal að stærð <b>{ $size }</b>.
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Þú samþykkir</b> að þú munir ekki reyna að bera kennsl á mælendur í málheild Samóms.
+download-language = Hala niður { $language }
+validated-hours = Staðfestar klukkustundir
+recorded-hours = Uppteknar klukkustundir
+whats-inside = Hvað er í málheild Samróms?
+subscribe = Gerast áskrifandi
+other-datasets = Aðrar málheildir
 common-voice-info = Hefurðu spurningar um Samróm? Taktu þátt í <discourseLink>Discourse spjallborðinu</discourseLink>.
 data-other-librispeech-description = LibriSpeech textasafnið geymir u.þ.b. 100 klst af 16Khz hljóðrituðu tali á ensku sem er fengið úr upplesnum bókum af LibriVox verkefninu.
 data-other-ted-name = TED-LIUM textasafn
@@ -363,6 +412,8 @@ data-other-voxforge-description = VoxForge var sett upp til að safna umrituðum
 data-other-tatoeba-description = Tatoeba er stór gagnagrunnur af setningum, þýðingum og raddupptökum tilætlað í tungumálanám. Þetta niðurhal inniheldur raddupptökur á ensku gerðar af samfélaginu kringum verkefnið.
 your-feedback = Ertu með hugmyndir um hvernig mætti bæta Samróms-gagnasafnið? Láttu okkur vita á Discourse
 go-discourse = Fara á Discourse
+go-languages-page = Fara á tungumálasíðu
+ready-to-validate = Tilbúin(n) til að hjálpa okkur að staðfesta setningar?
 
 ## Download Modal
 

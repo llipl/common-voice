@@ -8,6 +8,7 @@ email-input =
     .label = 電郵
 submit-form-action = 提交
 loading = 載入中…
+email-opt-in-privacy = 如果同意接收電郵，就代表您同意 Mozilla 依照<privacyLink>隱私權保護政策</privacyLink>當中描述嘅方法處理呢啲資訊。
 indicates-required = * 表示必填欄位
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
@@ -74,6 +75,7 @@ oc = 奧克文
 or = 歐利亞文
 pl = 波蘭文
 pt-BR = 葡萄牙文（巴西）
+rm-sursilv = 羅曼蘇塞瓦語
 ro = 羅馬尼亞文
 ru = 俄文
 sah = 薩哈文
@@ -93,7 +95,7 @@ ur = 烏都文
 uz = 烏茲別克文
 vi = 越南文
 zh-CN = 中文 (大陸)
-zh-HK = 中文 (香港)
+zh-HK = 中文（香港）
 zh-TW = 中文 (臺灣)
 
 # [/]
@@ -216,8 +218,8 @@ english = 英文
 
 profile-form-username =
     .label = 使用者名稱
-profile-form-language =
-    .label = 語言
+profile-form-native-language =
+    .label = 母語
 profile-form-accent =
     .label = 口音
 profile-form-age =
@@ -238,6 +240,7 @@ female = 女性
 other = 其他
 why-profile-title = 點解要個人檔案？
 why-profile-text = 提供一些關於您的資訊，可讓您的 Common Voice 語音資料更有用，令語音識別引擎更加準確。
+dashboard = 控制台
 build-profile = 建立個人檔案
 avatar = 頭像
 goals = 目標
@@ -265,6 +268,7 @@ off = 關
 on = 開
 add-avatar-title = 在您的個人檔案中加入頭像
 browse-file-title = 上傳圖片
+browse-file = 拖放至此處，或<browseWrap>按此瀏覽</browseWrap>
 connect-gravatar = 連結到 Gravatar
 gravatar_not_found = 找不到您電郵所屬的 Gravatar
 file_too_large = 選擇的檔案太大
@@ -300,11 +304,6 @@ data-get-started = <speechBlogLink>語音辨識新手上路</speechBlogLink>
 data-other-title = 其他語音數據集…
 data-other-goto = 前往 { $name }
 data-other-download = 下載數據
-data-other-librispeech-description = LibriSpeech 語料庫來自 LibriVox 計劃，共有約一千小時的 16Khz 英語有聲書錄音。
-data-other-ted-name = TED-LIUM 語料庫
-data-other-ted-description = TED-LIUM 語料庫是從 TED 網站上的講座對話，及其被抄寫下來的演講稿一起製作而成的語料庫。
-data-other-voxforge-description = VoxForge 的成立，是用來收集被抄寫的對話內容，給自由與開放源碼的語音辨識引擎使用。
-data-other-tatoeba-description = Tatoeba 是一套用於語言學習的大型數據庫，當中包含了各種句子、翻譯、以及錄音。這個下載項目包含了其社群所錄下的英語語音。
 data-bundle-button = 下載數據組合
 data-bundle-description = Common Voice 數據，以及上面列出的所有其他語音數據集。
 license = 授權條款：<licenseLink>{ $license }</licenseLink>
@@ -320,6 +319,19 @@ review-rerecord = 重新錄音
 review-cancel = 取消提交
 review-keep-recordings = 保存錄音
 review-delete-recordings = 刪除我的錄音
+
+## New Datasets Page
+
+validated-hr-total = 已驗證總時數
+size-gigabyte = GB
+size-megabyte = MB
+download-language = 下載{ $language }
+validated-hours = 已驗證時數
+data-other-librispeech-description = LibriSpeech 語料庫來自 LibriVox 計劃，共有約一千小時的 16Khz 英語有聲書錄音。
+data-other-ted-name = TED-LIUM 語料庫
+data-other-ted-description = TED-LIUM 語料庫是從 TED 網站上的講座對話，及其被抄寫下來的演講稿一起製作而成的語料庫。
+data-other-voxforge-description = VoxForge 的成立，是用來收集被抄寫的對話內容，給自由與開放源碼的語音辨識引擎使用。
+data-other-tatoeba-description = Tatoeba 是一套用於語言學習的大型數據庫，當中包含了各種句子、翻譯、以及錄音。這個下載項目包含了其社群所錄下的英語語音。
 
 ## Download Modal
 
@@ -351,9 +363,7 @@ request-language-success-content = 我們會很快將如何在 Common Voice 新�
 ## Languages Overview
 
 language-section-in-progress = 準備中
-language-section-in-progress-description = 準備中嘅語言，代表該語言社群正在貢獻中。當中嘅進度反映了網站本地化的翻譯進度，以及語句收集的進度。
 language-section-launched = 已上線
-language-section-launched-new-description = 已上線的語言代表該網站的本地化經已完成，並已收集足夠的語句，可接受<italic>聽話</italic>與<italic>說話</italic>的貢獻。
 languages-show-more = 檢視更多
 languages-show-less = 檢視更少
 language-speakers = 錄音人數
@@ -417,6 +427,7 @@ share-title-new = <bold>請幫助我們</bold>去找更多人的聲音
 
 ## Goals
 
+streaks = 連勝
 days =
     { $count ->
        *[other] 日
@@ -425,21 +436,31 @@ recordings =
     { $count ->
        *[other] 錄音
     }
+validations =
+    { $count ->
+       *[other] 驗證
+    }
 
 ## Dashboard
 
 your-languages = 您的語言
 toward-next-goal = 距離下一個目標
+clips-you-validated = 您驗證的錄音
+todays-validated-progress = 今日 Common Voice 驗證錄音嘅進度
 stats = 統計
 you = 您
 everyone = 所有人
 contribution-activity = 貢獻記錄
+recorded-clips = 錄音
 validated-clips = 已被驗證的錄音
 total-approved = 總批准數
 overall-accuracy = 整體準誠度
 
 ## Profile Delete
 
+delete-q = 您想刪除埋所有您的錄音，還是要將錄音保留喺 Common Voice 嘅資料集中？
 keep = 保留
 remove = 移除
+keep-info = 您的錄音會以匿名的形式保留喺 Common Voice 嘅資料集。當您刪除咗個人資料後，就唔能夠再從資料集中刪除錄音。
+remove-info = 我們將會審核您從資料集中刪除錄音的請求。如果您的請求獲得批准，我們將會聯絡已下載資料集的使用者，並請他們也刪除您的錄音。
 profile-form-delete = 刪除個人檔案

@@ -4,18 +4,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('/img/datasets/email-bg.png');
-    background-size: 100% 100%;
     color: var(--white);
 
     @media (--md-down) {
         padding: 30px 20px;
         flex-direction: column;
+        background: url('/img/datasets/email-bg-md.svg');
+        background-size: 100% 100%;
     }
 
     @media (--lg-up) {
         padding: 70px 0;
         flex-direction: row;
+        background: url('/img/datasets/email-bg.png');
+        background-size: 100% 100%;
     }
 
     & h2 {
@@ -54,24 +56,32 @@
     }
 
     & button {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
         border: 1.6px solid #f9f9f8;
+        width: 100%;
+        min-width: auto;
+        max-width: 200px;
         font-weight: normal;
         color: #666666;
         background: #f9f9f8;
 
         &:disabled {
-            opacity: 1;
-            background: transparent;
-            color: white;
+            opacity: 0.8;
+        }
 
-            & path {
-                fill: #f9f9f8;
-            }
+        &:hover {
+            border-color: var(--valid-green) !important;
+            background: var(--valid-green) !important;
+            color: var(--white) !important;
         }
 
         @media (--md-down) {
-            min-width: auto;
             height: auto;
+        }
+
+        @media (--lg-up) {
+            flex-shrink: 0;
         }
 
         & svg {
@@ -92,26 +102,13 @@
             color: var(--blue);
         }
 
-        & input {
+        & .checkbox-container {
             border: 1.6px solid #f9f9f8;
             border-radius: 2px;
-            width: 15px;
-            height: 15px;
-            appearance: none;
-            display: table;
-            position: relative;
+        }
 
-            &:checked::after {
-                content: '✖';
-                position: absolute;
-                top: -6px;
-                left: -0.2px;
-                font-weight: 600;
-                font-size: 18.5px;
-                width: 14px;
-                height: 20px;
-                overflow: hidden;
-            }
+        & .checkmark path {
+            fill: #f9f9f8;
         }
     }
 }

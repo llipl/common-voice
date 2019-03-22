@@ -53,13 +53,16 @@ fo = 法羅語
 fr = 法語
 fy-NL = 弗利西亞語
 ga-IE = 愛爾蘭語
+gl = 加里西亞語
 he = 希伯來語
+hr = 克羅埃西亞語
 hsb = 上索布語
 hu = 匈牙利語
 ia = 國際語
 id = 印尼語
 is = 冰島語
 it = 義大利語
+izh = 伊喬里亞語
 ja = 日語
 ka = 喬治亞語
 kab = 卡拜爾語
@@ -68,6 +71,8 @@ ko = 韓語
 kpv = 科米-齊良語
 kw = 康瓦爾語
 ky = 吉爾吉斯語
+lt = 立陶宛語
+lv = 拉脫維亞語
 mdf = 莫克沙語
 mhr = 草原馬里語
 mk = 馬其頓語
@@ -85,6 +90,7 @@ pt-BR = 葡萄牙語（巴西）
 rm-sursilv = 羅曼蘇塞瓦語
 ro = 羅馬尼亞語
 ru = 俄語
+rw = 盧安達語
 sah = 薩哈語
 sc = 薩丁尼亞語
 sk = 斯洛伐克語
@@ -141,7 +147,7 @@ wall-of-text-more-desktop =
     現在起，您可以將自己的聲音捐給我們，以幫助我們打造開放原始碼的語音資料庫，讓任何人都得以為裝置與網際網路打造創新的應用程式。<lineBreak></lineBreak>
     只要朗讀一段文字，即可幫助機器了解人們如何說話，也可看看其他貢獻者的心血結晶來協助改善品質，就是這麼簡單！
 wall-of-text-first = 語音是自然、是有人性的。這也是為什麼我們非常希望為電腦建立可用的語音技術。但若要建立語音系統，需要有大量的語音數據。
-wall-of-text-second = 大部分各大公司使用的資料，並未開放給大多數人使用。我們覺得這樣會阻礙創新，所以創立了想讓每個人都可以自由來進行語音識別的 Common Voice 專案。
+wall-of-text-second = 各大公司使用的資料，通常並未開放給大眾使用。我們認為這樣會阻礙創新，所以創立了讓每個人都可以自由進行語音識別的 Common Voice 專案。
 show-wall-of-text = 了解更多
 help-us-title = 請幫助我們驗證句子！
 help-us-explain = 按下播放按鈕，聽一聽，然後告訴我們: 他們正確說出下面的句子了嗎？
@@ -179,6 +185,7 @@ x-years-short =
 help-make-dataset = 幫助我們打造高品質、可公開使用的資料集
 profile-not-required = 不需要註冊個人資料即可貢獻，但如果有的話會更有幫助
 sign-up-account = 註冊帳號
+email-subscription-title = 訂閱最新消息電子報
 
 ## Account Benefits
 
@@ -223,6 +230,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = 錄音/停止
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = 重新錄製片段
 request-language-text = 沒在 Common Voice 看到您的語言嗎？
 request-language-button = 要求新語言
 
@@ -334,7 +343,7 @@ faq-why-different-speakers-a =
     大多數的語音資料庫的語音來源偏重於某群特定人口，造成結果偏向於<articleLink>男性與中產階級</articleLink>。而在訓練資料集中，各種不同的口音與方言會與被邊緣化的人群相關連起來。許多機器也很難理解女性的聲音。
     這就是為什麼我們的語音資料庫應該海納百川，收集各種語音！
 faq-why-my-lang-q = 為什麼還沒有我的語言？
-faq-why-my-lang-a = Mozilla 不特別偏好哪種語言，然而 Common Voice 是一個純社群發起的專案，需要<multilangLink>幾個步驟才能新增語言</multilangLink>並開始收集語音片段。首先需要完成翻譯 Common Voice 網站，這樣社群成員才能用自己的語言進行貢獻。次之，我們需要大量的無版權語句，讓人們可以大聲說出來。當兩個條件都滿足後 Common Voice 即可「上線」，讓人們開始錄音，並驗證其他人所錄下的片段。
+faq-why-my-lang-new-a = Mozilla 不特別偏好哪種語言，然而 Common Voice 是一個純社群發起的專案，需要<multilangLink>幾個步驟才能新增語言</multilangLink>並開始收集語音片段。首先需要完成翻譯 Common Voice 網站，這樣社群成員才能用自己的語言進行貢獻。次之，我們需要大量的無版權語句，讓人們可以大聲說出來。當兩個條件都滿足後 Common Voice 即可「上線」，讓人們開始錄音，並驗證其他人所錄下的片段。若您想要協助準備讓新語言上限，歡迎到<sentenceCollectorLink>語句收集工具</sentenceCollectorLink>開始幫忙。
 faq-what-quality-q = 錄音品質要到什麼等級，才能用於資料集中？
 faq-what-quality-a = 我們希望 Common Voice 資料集能夠反映出語音轉文字引擎就算在野外也會聽到的聲音，所以我們希望能夠收集各種環境與錄音品質下的片段。除了各種說話者以外，若資料集中包含各種語音品質的片段，可讓語音轉文字引擎處理各種現實環境下的狀況，例如背景中有人在講話，或是有車輛的噪音。只要您的片段能讓人足夠聽得懂，即可收錄至資料集中。
 faq-why-10k-hours-q = 為什麼每個語言有一萬小時的音檔驗證目標？
@@ -393,7 +402,7 @@ data-other-download = 下載資料
 data-bundle-button = 下載資料集總組合
 data-bundle-description = Common Voice 資料，以及上面列出的所有其他語音資料集。
 license = 授權條款: <licenseLink>{ $license }</licenseLink>
-license-mixed = 混合
+license-mixed = 混和
 review-terms = 使用 Common Voice，就代表您同意我們的<termsLink>使用條款</termsLink>與<privacyLink>隱私權公告</privacyLink>
 terms-agree = 我同意
 terms-disagree = 我不同意
@@ -408,7 +417,7 @@ review-delete-recordings = 刪除我的錄音
 
 ## New Datasets Page
 
-datasets-headline = 我們正在打造一套開放原始碼、多重語言的語音資料集，讓任何人都可以用來開發語音相關應用。
+datasets-headline = 我們想建立一套開放原始碼、多重語言的語音資料集，讓任何人都可以用來開發語音相關應用。
 datasets-positioning =
     我們相信若有一組大型、可公開使用的語音資料集，可奠定以機器學習為基礎的語音技術的創新，與健康的商業競爭。
     
@@ -422,7 +431,7 @@ validated-hr-total = 總驗證時數
 overall-hr-total = 全體總時數
 cv-license = 授權條款
 audio-format = 音檔格式
-number-of-voices = 語音數量
+number-of-voices = 錄音人數
 splits = 分割
 email-to-download = 輸入 E-Mail 即可下載
 why-email = <b>為什麼需要 E-Mail?</b>未來我們可能會聯絡您，提供資料集的相關更新資訊。E-Mail 可作為我們聯絡您的方式。
@@ -434,17 +443,17 @@ download-language = 下載 { $language } 資料集
 validated-hours = 已驗證時數
 recorded-hours = 已錄製時數
 whats-inside = Common Voice 資料集當中有什麼？
-dataset-description =
-    資料集中的每筆資料包含一組獨特的 MP3 錄音檔與對應的文字檔案。資料集中包含 <b>{ $hours }</b> 錄製完成的片段，當中有許多同時也包含年齡、性別、口音等，能夠幫助訓練語音識別引擎的人口統計資料。
+dataset-description-hours =
+    資料集中的每筆資料包含一組獨特的 MP3 錄音檔與對應的文字檔案。資料集中包含 <b>{ $total }</b> 小時錄製完成的片段，當中也包含有許多不同年齡層、性別、口音等，能夠幫助訓練語音識別引擎的人口統計資料。
     
-    資料集中，目前包含了 <b>{ $hours }</b> 小時的 <b>{ $languageCount }</b> 種語言已驗證資料，但我們希望能夠持續加入更多語音與語言。歡迎到我們的<languagesLink>語言頁面</languagesLink>要求更多語言，開始加入貢獻。
+    資料集中目前包含 <b>{ $valid }</b> 小時 <b>{ $languages }</b> 種語言的已驗證資料，但我們希望能夠持續加入更多語音與語言。歡迎到我們的<languagesLink>語言頁面</languagesLink>要求更多語言，開始加入貢獻。
 want-dataset-update = 想要在新的 Common Voice 資料集推出時收到通知嗎？請訂閱我們的電子報。
 subscribe = 訂閱
 get-started-speech = 語音辨識新手入門
 other-datasets = 其他語音資料集
 feedback-q = 有意見要回饋嗎？
 deepspeech-info = Common Voice 資料集可與 Mozilla 的開放原始碼語音識別引擎 Deep Speech 互補，讓您用來打造語音識別應用程式。您可閱讀我們的 <githubLink>Github 概觀</githubLink>或加入<discourseLink> DeepSpeech Discourse</discourseLink> 了解如何入門。
-common-voice-info = 有任何關於 Common Voice 的問題嗎？請到我們的 <discourseLink>Discourse 討論區</discourseLink>發問。
+common-voice-info-new = 有關於 Common Voice 的問題嗎？有針對某種語言的新點子或能改善的意見回饋嗎？歡迎加入 <discourseLink>Discourse 討論區</discourseLink>留言給我們知道。
 data-other-librispeech-description = LibriSpeech 是一套取自 LibriVox 計畫，約一千小時長度的 16Khz 英語有聲書的語料庫。
 data-other-ted-name = TED-LIUM 語料庫
 data-other-ted-description = TED-LIUM 語料庫是從 TED 網站上的語音對話及轉錄文字製作而成的語料庫。
@@ -455,6 +464,9 @@ go-discourse = 前往 Discourse
 missing-language = 沒在資料集中看到您的語言？請到語言頁面來要求加入新語言。
 go-languages-page = 前往語言頁面
 ready-to-validate = 準備好要幫助驗證句子了嗎？
+more = 更多
+close = 關閉
+download = 下載
 
 ## Download Modal
 
@@ -482,13 +494,15 @@ request-language-form-language =
     .label = 語言
 request-language-success-title = 已收到新語言請求，感謝您。
 request-language-success-content = 我們將很快在您的語言於 Common Voice 上線時通知您更多資訊。
+select-language = 選擇一種語言…
+other-language = 其他語言
 
 ## Languages Overview
 
 language-section-in-progress = 準備中
-language-section-in-progress-description = 處理中的語言，代表我們的該語言社群正在進行貢獻，當中的進度反映了網站的在地化翻譯進度，以及語句收集進度。
+language-section-in-progress-new-description = 這些語言目前正由社群開發中，進度條展示每種語言<localizationGlossaryLink>網站在地化</localizationGlossaryLink>及<sentenceCollectionGlossaryLink>搜集語句</sentenceCollectionGlossaryLink>的狀況。
 language-section-launched = 已上線
-language-section-launched-new-description = 針對已完成網站在地化並收集足夠語料的語言，我們就會盡快上線，接受<italic>聽</italic>與<italic>說</italic>貢獻。
+language-section-launched-description = 以下「已上線」的語言，代表網站已經成功<localizationGlossaryLink>在地化</localizationGlossaryLink>，且也已經<sentenceCollectionGlossaryLink>搜集了夠多句子</sentenceCollectionGlossaryLink>讓大家能用<speakLink>說話</speakLink>及<listenLink>聆聽</listenLink>的方式貢獻。
 languages-show-more = 檢視更多
 languages-show-less = 檢視更少
 language-speakers = 使用者數
@@ -523,8 +537,8 @@ record-error-too-short = 錄音太短了。
 record-error-too-long = 錄音太長了。
 record-error-too-quiet = 錄音太小聲了。
 record-cancel = 取消重新錄音
-record-instruction = { $actionType } 按下 <recordIcon></recordIcon> 然後大聲說出句子
-record-stop-instruction = { $actionType } 完成後按下 <stopIcon></stopIcon>
+record-instruction = { $actionType } <recordIcon></recordIcon> 然後大聲說出句子
+record-stop-instruction = 完成後{ $actionType } <stopIcon></stopIcon>
 record-three-more-instruction = 還有三筆！
 record-again-instruction = 好！點擊<recordIcon></recordIcon>錄下下個片段
 record-again-instruction2 = 繼續加油，再錄一筆！<recordIcon></recordIcon>
@@ -539,7 +553,7 @@ record-abort-text = 如果要現在離開，會失去目前的進度
 record-abort-submit = 送出片段
 record-abort-continue = 完成錄音
 record-abort-delete = 結束並刪除片段
-listen-instruction = { $actionType }<playIcon></playIcon> 他們有準確地說出句子嗎？
+listen-instruction = { $actionType } <playIcon></playIcon>，聽聽他們有準確地說出句子嗎？
 listen-again-instruction = 幹得好！<playIcon></playIcon> 準備好就可以再聽一次
 listen-3rd-time-instruction = 完成兩筆了 <playIcon></playIcon>，繼續保持！
 listen-last-time-instruction = <playIcon></playIcon> 最後一筆了！

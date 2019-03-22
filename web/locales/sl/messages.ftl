@@ -5,7 +5,7 @@ stayintouch = Pri Mozilli gradimo skupnost okrog glasovne tehnologije. Z vami bi
 privacy-info = Obljubimo, da bomo z vašimi podatki ravnali skrbno. Preberite več v našem <privacyLink>obvestilu o zasebnosti</privacyLink>.
 return-to-cv = Nazaj na Common Voice
 email-input =
-    .label = Elektronski naslov
+    .label = E-pošta
 submit-form-action = Pošlji
 loading = Nalaganje …
 email-opt-in-privacy = S potrditvijo prejemanja e-pošte soglašate z ravnanjem s temi podatki, kot je razloženo v Mozillini <privacyLink>politiki zasebnosti<privacyLink>.
@@ -17,7 +17,9 @@ indicates-required = * Zahtevano polje
 
 ## Languages
 
+ab = abhaščina
 ace = ačinščina
+ady = adigejščina
 af = afrikanščina
 am = amharščina
 an = aragonščina
@@ -51,13 +53,16 @@ fo = ferščina
 fr = francoščina
 fy-NL = frizijščina
 ga-IE = irščina
+gl = galicijščina
 he = hebrejščina
+hr = hrvaščina
 hsb = gornja lužiška srbščina
 hu = madžarščina
 ia = interlingva
 id = indonezijščina
 is = islandščina
 it = italijanščina
+izh = ingrijščina
 ja = japonščina
 ka = gruzinščina
 kab = kabilščina
@@ -66,9 +71,13 @@ ko = korejščina
 kpv = komijščina
 kw = kornijščina
 ky = kirgiščina
+lt = litovščina
+lv = latvijščina
 mdf = mokša
+mhr = vzhodna marijščina
 mk = makedonščina
 mn = mongolščina
+mrj = zahodna marijščina
 myv = erzjanščina
 nb-NO = norveščina (bokmål)
 ne-NP = nepalščina
@@ -81,6 +90,7 @@ pt-BR = portugalščina (Brazilija)
 rm-sursilv = retoromanščina (sursilvan)
 ro = romunščina
 ru = ruščina
+rw = ruandščina
 sah = jakutščina
 sc = sardinščina
 sk = slovaščina
@@ -93,10 +103,13 @@ te = teluščina
 th = tajščina
 tr = turščina
 tt = tatarščina
+uby = ubiščina
+udm = udmurtščina
 uk = ukrajinščina
 ur = urdujščina
 uz = uzbeščina
 vi = vietnamščina
+vot = votščina
 zh-CN = kitajščina (Kitajska)
 zh-HK = kitajščina (Hong Kong)
 zh-TW = kitajščina (Tajvan)
@@ -184,10 +197,14 @@ x-years-short =
 help-make-dataset = Pomagajte nam zgraditi kakovosten in javno dostopen nabor podatkov
 profile-not-required = Profil za sodelovanje ni obvezen, je pa priporočljiv
 sign-up-account = Prijavite se za račun
+email-subscription-title = prijavite se na e-poštna obvestila
 
 ## Account Benefits
 
 benefits = Prednosti
+rich-data = Obogatite svoje poslane posnetke s predložitvijo anonimnih demografskih podatkov. Pred objavo bomo vse demografske podatke prikrili.
+improve-audio = Podatki o profilu izboljšajo zvočne podatke, ki se uporabljajo pri natančnosti prepoznavanja govora.
+keep-track = Spremljajte napredek in meritve v več jezikih.
 compare-progress = Primerjajte svoj napredek z drugimi sodelujočimi po vsem svetu.
 view-goals = Spremljajte svoj napredek glede na osebne in projektne cilje.
 join-newsletter = Po želji se lahko pridružite našemu e-poštnemu seznamu za prejemanje posodobitev in novih podatkov o projektu.
@@ -195,7 +212,7 @@ join-newsletter = Po želji se lahko pridružite našemu e-poštnemu seznamu za 
 ## What's public
 
 whats-public = Kaj je javno?
-email-not-public = Vašga e-poštnega naslova ne bomo javno objavili.
+email-not-public = Vašega e-poštnega naslova ne bomo javno objavili.
 recordings-and-locale-public = Število posnetkov in jeziki, pri katerih sodelujete, bodo javni.
 username-optin-public = Svoje uporabniško ime lahko nastavite kot javno ali anonimno.
 demographic-deidentified = Po želji dodani demografski podatki (npr. starost, spol, jezik in naglas) so iz vaših poslanih glasovnih podatkov odstranjeni in jih v vašem profilu ne bomo nikoli javno objavili.
@@ -225,6 +242,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = s
 shortcut-record-toggle-label = Snemaj/Ustavi
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Znova posnemi posnetek
 request-language-text = Vaš jezik še ni vključen v Common Voice?
 request-language-button = Predlagaj jezik
 
@@ -248,6 +267,8 @@ english = angleščina
 
 profile-form-username =
     .label = Uporabniško ime
+profile-form-native-language =
+    .label = Materni jezik
 profile-form-additional-language =
     .label = Dodatni jezik
 profile-form-accent =
@@ -312,21 +333,41 @@ change-email-setings = E-poštni naslov spremenite v nastavitvah pod Identiteta 
 faq-title = Pogosta vprašanja
 faq-what-cv-q = Kaj je Common Voice?
 faq-why-important-q = Zakaj je to pomembno?
+faq-how-get-q = Kako lahko prenesem podatke Common Voice?
 faq-how-get-a = Podatkovni niz Common Voice je na voljo za prenos pod licenco <licenseLink>CC0</licenseLink> na <datasetLink>naši strani podatkovnih nizov</datasetLink>. Z iste strani lahko prenesete tudi več drugih javno dostopnih podatkovnih nizov.
 faq-when-release-q = Kdaj boste objavili podatke Common Voice v drugih jezikih?
 faq-why-mission-q = Zakaj je Common Voice del Mozillinega poslanstva?
 faq-what-cv-and-deepspeech-q = Kakšna je razlika med projektoma Common Voice in Deep Speech?
+faq-is-goal-assistant-q = Ali je cilj projekta Common Voice ustvariti glasovnega pomočnika?
+faq-do-want-native-q = Nisem materni govorec in govorim z naglasom; ali vseeno želite moj glas?
 faq-do-want-native-a = Da, še posebej želimo vaš glas! Del cilja Common Voice je zbrati čim več različnih naglasov, tako da lahko storitve prepoznavanja govora delujejo enako dobro za vse. To pomeni, da so prispevki tujih govorcev še posebej pomembni.
 faq-why-different-speakers-q = Zakaj potrebujete toliko različnih govorcev za en jezik?
 faq-why-my-lang-q = Zakaj moj jezik še ni vključen?
+faq-what-quality-q = Kolikšna kakovost zvoka je zahtevana za posnetke, da so uporabni za nabor podatkov?
+faq-why-10k-hours-q = Zakaj je 10 000 potrjenih ur na jezik cilj za snemanje zvoka?
+faq-why-10k-hours-a = To je približno število ur, ki jih sistem za pretvorbo govora v besedilo potrebuje za učenje.
+faq-how-calc-hours-q = Kako Common Voice računa ure?
+faq-how-calc-hours-a = Ure računamo tako, da ocenimo povprečno dolžino vsakega posnetka in nato to število pomnožimo s skupnim številom posnetkov v vseh jezikih.
 faq-where-src-from-2-q = Od kod prihaja izvorno besedilo?
+faq-why-not-ask-read-q = Zakaj ne prosite ljudi, da berejo iz knjig ali člankov na Wikipediji v različnih jezikih?
+faq-why-account-q = Zakaj naj si ustvarim račun?
 faq-is-account-public-q = Ali so podatki o mojem računu javni?
 faq-how-privacy-q = Kako zagotavljate anonimnost in zasebnost ljudi, ki so prispevali svoje glasove?
+faq-what-determine-identity-q = Kaj pomeni, da ne smem določiti identitete govorcev v naboru podatkov Common Voice?
 
 ## Glossary
 
 glossary = Slovar
 localization = Lokalizacija
+localization-explanation = Naš postopek prevajanja in prilagajanja vsebine za številne jezike.
+sentence-collection = Zbiranje stavkov
+sentence-collection-explanation = Zbiranje stavkov iz javnih domen ali pisanje novih za javno uporabo.
+hours-recorded-explanation = Število posnetih glasovnih ur, ki smo jih zbrali do sedaj.
+hours-validated-explanation = Število posnetih glasovnih ur, ki so bile potrjene s strani dveh od treh uporabnikov z "Da". Te označujejo napredek v smeri cilja projekta 10.000 ur.
+sst = Govor v besedilo (STT)
+sst-explanation = Tehnologija govora v besedilo (STT), pretvarja glasovne podatke v besedilo.
+de-identified = Prikrivanje
+de-identified-explanation = Postopek, s katerim so podatki o profilu avtorja prikriti iz njegovih poslanih glasovnih posnetkov, ko so ti pripravljeni za prenos kot del nabora podatkov.
 
 ## NotFound
 
@@ -364,10 +405,22 @@ review-delete-recordings = Izbriši moje posnetke
 
 ## New Datasets Page
 
+datasets-headline = Gradimo odprtokodni, večjezični nabor podatkov glasov, ki ga lahko vsakdo uporablja za izboljšanje aplikacij za prepoznavanje govora.
+datasets-positioning =
+    Verjamemo, da lahko veliki in javno dostopni nabori podatkov spodbujajo inovacije in zdravo tekmovalnost pri implementaciji strojnega učenja v govorno podprtih aplikacijah.
+    
+    Večjezični nabor podatkov Common Voice je že največji javno dostopen nabor podatkov te vrste, vendar ni edini.
+    
+    Uporabite to stran kot referenčno vozlišče za druge odprtokodne glasovne nabore podatkov in, med tem ko se Common Voice še naprej razvija, središče za naše posodobitve.
 language = Jezik
 # File size in gigabytes
 size = Velikost
+validated-hr-total = Skupno potrjenih ur
+overall-hr-total = Skupno vseh ur
+cv-license = Licenca
+audio-format = Oblika zvoka
 number-of-voices = Število glasov
+splits = Razdelitve
 email-to-download = Vnesite e-pošto za prenos
 why-email = <b>Zakaj potrebujete e-poštni naslov?</b> V prihodnje bomo morda morali stopiti v stik z vami o spremembah podatkovnega niza, e-pošta pa nam bo omogočila stik.
 confirm-size = Pripravljeni ste začeti prenos <b>{ $size }</b>
@@ -375,20 +428,32 @@ size-gigabyte = GB
 size-megabyte = MB
 confirm-no-identify = <b>Strinjate se</b>, da ne boste poskušali določiti identitete govorcev v naboru podatkov Common Voice
 download-language = Prenesi { $language }
+validated-hours = Potrjenih ur
+recorded-hours = Posnetih ur
 whats-inside = Kaj je v podatkovnem nizu Common Voice?
+dataset-description-hours =
+    Vsak vnos v nabor podatkov je sestavljen iz edinstvene datoteke MP3 in ustrezne besedilne datoteke. Veliko od <b>{ $total }</b> posnetih ur v naboru podatkov vključuje tudi demografske metapodatke, kot so starost, spol in naglas, ki lahko pomagajo pri natančnosti sistemov za prepoznavanje govora.
+    
+    Nabor podatkov je trenutno sestavljen iz <b>{ $valid }</b> potrjenih ur in <b>{ $languages }</b> jezikov, vendar dodajamo še več glasov in jezikov. Oglejte si našo <languagesLink>stran jezikov</languagesLink> in zahtevajte jezik ali začnite prispevati.
 want-dataset-update = Želite prejemati posodobitve ob izdaji nove različice nabora podatkov Common Voice? Naročite se na naše novice.
 subscribe = Naroči se
 get-started-speech = Začnite s prepoznavanjem govora
 other-datasets = Drugi glasovni nabori podatkov
 feedback-q = Želite poslati povratne informacije?
+deepspeech-info = Nabor podatkov Common Voice dopolnjuje Mozillin odprtokodni sistem za prepoznavanje govora Deep Speech, ki ga lahko uporabite za izdelavo aplikacij za prepoznavanje govora. Če želite izvedeti, kako začeti, preberite naš <githubLink>priročnik na Githubu</githubLink> ali se nam pridružite <DiscourseLink>na forumu Discourse</discourseLink>.
 data-other-librispeech-description = LibriSpeech je korpus, sestavljen iz približno 1000 ur branih angleških besedil (pri 16 kHz), pridobljen iz zvočnih knjig projekta LibriVox.
 data-other-ted-name = Korpus TED-LIUM
 data-other-ted-description = TED-LIUM je korpus, ki ga sestavljajo zvočni posnetki predstavitev in njihovi prepisi, dostopni na spletni strani TED.com.
 data-other-voxforge-description = VoxForge je bil ustanovljen za zbiranje prepisov govorov za uporabo v odprtokodnih in prosto dostopnih sistemih za prepoznavanje govora.
 data-other-tatoeba-description = Tatoeba je velika baza stavkov, prevodov in govorjenih zvočnih datotek za uporabo pri učenju jezikov. Tukaj lahko prenesete pogovorno angleščino, posneto v njihovi skupnosti.
+your-feedback = Imate ideje, kako lahko nabor podatkov Common Voice izboljšamo? Pišite nam na Discourse
 go-discourse = Pojdi na Discourse
 missing-language = Ne vidite svojega jezika v naboru podatkov? Če želite predlagati jezik, pojdite na stran z jeziki.
 go-languages-page = Pojdi na stran z jeziki
+ready-to-validate = Ste pripravljeni pomagati potrjevati stavke?
+more = Več
+close = Zapri
+download = Prenesi
 
 ## Download Modal
 
@@ -416,13 +481,15 @@ request-language-form-language =
     .label = Jezik
 request-language-success-title = Predlog za jezik je bil uspešno poslan, hvala.
 request-language-success-content = V kratkem se vam bomo oglasili z več informacijami o tem kako dodati vaš jezik v Common Voice.
+select-language = Izberite jezik ...
+other-language = Drug jezik
 
 ## Languages Overview
 
 language-section-in-progress = V nastajanju
-language-section-in-progress-description = Jezike, ki so trenutno v fazi nastajanja, naše skupnosti še pripravljajo za nadaljnje faze projekta Common Voice; napredek jezika tako odraža napredek pri prevajanju spletne strani in količino zbranih stavkov.
+language-section-in-progress-new-description = Ti jeziki so trenutno v fazi razvoja naše skupnosti. Napredek jezika odraža napredek pri <localizationGlossaryLink>prevajanju spletne strani</localizationGlossaryLink> in <sentenceCollectionGlossaryLink>količino zbranih stavkov</sentenceCollectionGlossaryLink>.
 language-section-launched = V teku
-language-section-launched-new-description = Spletna stran je bila uspešno prevedena v te jezike in ima dovolj zbranih stavkov, da omogoča nadaljevanje <italic>govornih</italic> in <italic>slušnih</italic> prispevkov.
+language-section-launched-description = Spletna stran je bila uspešno <localizationGlossaryLink>prevedena</localizationGlossaryLink> v te jezike in ima dovolj <sentenceCollectionGlossaryLink>zbranih stavkov</sentenceCollectionGlossaryLink>, da omogoča nadaljevanje <speakLink>govornih</speakLink> in <listenLink>slušnih</listenLink> prispevkov.
 languages-show-more = Več
 languages-show-less = Manj
 language-speakers = Govorcev
@@ -537,4 +604,8 @@ keep = Obdrži
 remove = Odstrani
 keep-info = Vaši anonimni glasovni posnetki bodo ostali v naboru podatkov Common Voice. Ko izbrišete profil, ne boste več mogli zahtevati izbrisa vaših posnetkov iz nabora podatkov
 remove-info = Preučili bomo zahtevo za odstranitev vaših glasovnih posnetkov iz nabora podatkov. Če bo zahteva odobrena, se bomo obrnili na tiste, ki so prenesli nabor podatkov, in zahtevali, da odstranijo vaše glasovne posnetke.
+why-delete-recordings =
+    Posnetke Common Voicea uporabljajo akademiki, mala podjetja in navdušenci nad glasovno prepoznavo, ki z njihovo pomočjo razvijajo in širijo javno dostopne vire, kot so glasovni modeli.
+    
+    Bi nam bili pripravljeni povedati, zakaj želite izbrisati svoje posnetke?
 profile-form-delete = Izbriši profil

@@ -53,13 +53,16 @@ fo = Ferejšćina
 fr = Francojšćina
 fy-NL = Frizišćina
 ga-IE = Iršćina
+gl = Galicišćina
 he = Hebrejšćina
+hr = Chorwatšćina
 hsb = Górnoserbšćina
 hu = Hungoršćina
 ia = Interlingua
 id = Indonešćina
 is = Islandšćina
 it = Italšćina
+izh = Ižoršćina
 ja = Japańšćina
 ka = Georgišćina
 kab = Kabylšćina
@@ -68,6 +71,8 @@ ko = Korejańšćina
 kpv = Komi-syrjeńšćina
 kw = Kornišćina
 ky = Kirgišćina
+lt = Litawšćina
+lv = Letišćina
 mdf = Mokša
 mhr = Łucna marišćina
 mk = Makedońšćina
@@ -85,6 +90,7 @@ pt-BR = Portugišćina (Brazilska)
 rm-sursilv = Retoromanišćina (Sursilvan)
 ro = Rumunšćina
 ru = Rušćina
+rw = Kinjarwanda
 sah = Sachašćina
 sc = Sardinišćina
 sk = Słowakšćina
@@ -186,6 +192,7 @@ x-years-short =
 help-make-dataset = Pomagajśo nam, zjawnje pśistupnu wótwórjonu datowu sajźbu wusokeje kwality napóraś
 profile-not-required = Za sobuźěło profil trěbny njejo, lěcrownož jo wužytny
 sign-up-account = Konto załožyś
+email-subscription-title = Registrěrujśo se za e-mailowe aktualizacije
 
 ## Account Benefits
 
@@ -230,6 +237,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Nagraś/Zastajiś
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Klip znowego nagraś
 request-language-text = Waša rěc hyšći njejo na Common Voice?
 request-language-button = Rěc pominaś
 
@@ -318,17 +327,32 @@ change-email-setings = E-mailowu adresu w nastajenjach pód pśizjawjeńskeju id
 
 faq-title = Ceste pšašanja
 faq-what-cv-q = Co Common Voice jo?
+faq-what-cv-a = Technologija głosowego spóznaśa wašnju rewolucioněrujo, na kótaruž z mašinami interagěrujomy, ale tuchylu k dispoziciji stojece systemy su droge a proprietarne. Common Voice jo źěl iniciatiwy Mozilla, technologije głosowego spóznaśa pólěpšyś a wěcej pśistupne cyniś. Common Voice jo wjelicka globalna datowa banka pósćonych głosow, kótaraž kuždemu zmóžnja, pśez głose wóźone nałoženja w kuždej rěcy malsnje a lažko treněrowaś.
 faq-why-important-q = Cogodla jo wažne?
+faq-why-important-a =
+    Powědanje jo cesto nejpśirodnjejša wašnja, na kótruž jaden z drugim komunicěrujomy a głosowe technologije pśinjasu toś tu lěpšynu k našym licadłam a mobilnym rědam. Comy wuwijarjow wuzamóžniś, wjelicne nałoženja głosowego spóznaśa  wuwijaś, na pśikład psełožowaki, kótarež w napšawdnem casu pśełožuju a pśez głos wóźone digitalne asistenty. Ale tuchylu jo nejwěcej głosowych datow, kótarež su trěbne za wuwijanje takich nałoženjow, su droge a proprietarne. Naźejamy se, až datowa sajźba Common Voice wuwijarjam dajo, což trjebaju, aby powědańsku technologiju w swójej rěcy wótnowili a napórali.
+    
+    Aby my głosowe spóznaśe wěcej uniwerselne cynili, gromaźimy głosowe pśikłady w daloko rozšyrjonych rěcach, ale teke w rěcach z małeju licbu powědarjow, kótarež se cesto wót komercielnych słužbow głosowego spóznaśa njepódpěraju. Wózjawjenje wjelerakeje datoweje sajźby głosow wuwijarjow, pśedewześarjow a cełe powědańske zgromaźeństwa wuzamóžnijo, toś tu źěru zatkaś.
 faq-how-get-q = Kak mógu daty Common Voice dostaś?
 faq-how-get-a = Datowa sajźba Common Voice jo pód licencu <licenseLink>CC0</licenseLink> na <datasetLink>našomu bokoju datowych sajźbow</datasetLink> za ześěgnjenje k dispoziciji. Móžośo teke někotare druge zjawnje k dispoziciji stojece datowe sajźby z togo samskego boka ześěgnuś.
 faq-when-release-q = Gdy Common Voice w drugich rěcach wózjawijośo?
+faq-when-release-a = Wěcejrěcna wersija datowje sajźby Common Voice se tuchylu z pomocu zgromaźeństwa zeběra a cysći. Jolic by wy rady wěcej wó pódpěranju toś tych procow zgónił, <contactLink>stajśo se pšosym z nami do zwiska</contactLink>. Měrimy se tuchylu na wózjawjeński datum januara 2019. Pótom buźomy datowu sajźbu pšawidłownje z nowymi rěcami a głosowymi klipami aktualizěrowaś, gaž su k dispoziciji. Iteratiwny wózjawjeński cyklus hyšći njejo póstajony.
 faq-why-mission-q = Cogodla jo Common Voice źěl misije Mozilla?
+faq-why-mission-a = Mozilla jo se pśedewzeł, web za kuždego wótwórjony a pśistupny źaržaś. Aby my to cynili, musymy webawtory pśez webprojekty ako Common Voice wuzamóžniś. Dokulaž głosowe technologije nišowym nałoženjam wurostuju, wěrimy, až muse wšym wužywarjam jadnak słužyś. To groni, do dalšnych rěcow inwestěrowaś a wšake akcenty a demografije zapśimjeś, gaž se głosowe technologije wuwijaju a testuju. Common Voice jo zjawna resursa, kótaraž wšym k dispoziciji stoj, a teamy a wuwijarje Mozilla na cełym swěśe wužywaju jen južo za projekty.
 faq-what-cv-and-deepspeech-q = Co jo rozdźěl mjazy Common Voice a Deep Speech?
+faq-what-cv-and-deepspeech-a = Datowa sajźba Common Voice wudopołnjujo Deep Speech, mašinu głosowego spóznaśa wótwórjonego žrědła Mozilla. Prědna wersija Deep Speech jo se wózjawiła w nowembrje 2017 a jo se wuwijała wót togo stawno dale. Gromaźe z datoweju sajźbu Common Voice, měnimy, až toś ta technologija głosowego spóznaśa wótwórjonego žrědła ma kuždemu k dispoziciji byś. Naźejamy se, až toś te technologije wuwijarjow wuwijarjam zmóžnjaju, žwału inowatiwnych produktow a słužbow wuwijaś.
 faq-is-goal-assistant-q = Jo cel Common Voice, głosowy asistent napóraś?
+faq-is-goal-assistant-a = Zaměr datoweje sajźby Common Voice jo, kuždemu na swěśe zmóžniś, powědańske spóznaśe, spóznaśe powědarjow abo drugi typ nałoženja wuwijaś, kótarež głosowe daty trjeba. Głosowy asistent jo jano jaden z wjele typow nałoženjow, kótarež móžośo wužywaś, aby datowu sajźbu natwarił.
 faq-do-want-native-q = Njejsom maminorěcny a powědam z akcentom, cośo mój głos?
+faq-do-want-native-a = Jo, comy pśedewšym waš głos! Jaden źěl cela Common Voice jo, tak wjele rozdźělnych akcentow ako móžno gromaźiś, aby słužby głosowego spóznaśa za kuždego jadnak funkcioněruju. To groni, dary wót njemaminorěcnych powědarjow su wósebnje wažne.
 faq-why-different-speakers-q = Cogodla trjebaśo wjele rozdźělnych powědarjow na rěc?
+faq-why-different-speakers-a =
+    Nejwěcej głosowych datowych bankow se z nadreprezentaciju wěstych demografijow treněrujo, pśez kótarež se <articleLink>muskece a žeńscyne wobźělniki a wobźělniki srjejźneje klase</articleLink> preferěruju. Akcenty a dialekty, kótarež su zwětšego pódreprezentěrowane w datowych sajźbach su typiski zwězane ze kupkami luźi, kótarež su južo na kšomu śišćane. Wjele mašinow ma južo śěže, žeńscyne głose rozměś.
+    Togodla comy wjelerakosć w swójej głosowej datowej bance!
 faq-why-my-lang-q = Cogodla mója rěc hyšći njedajo?
+faq-why-my-lang-new-a = Mozilla se wěstu rěc njewusněkujo a wěste rěcy njepreferěrujo. Město togo jo Common Voice iniciatiwa, kótaraž se dopołnje wót zgromaźeństwa doprědka póra, ale su trěbne <multilangLink>někotare kšace, aby se nowa rěc pśidała</multilangLink> a aby se gromaźenje rěcnych darow zachopiło. Nejpjerwjej musy se websedło Common Voice pśełožowaś, aby cłonki zgromaźeństwa pśistup k nazgónjenjam sobustatkujucych w swójej rěcy měli. Ako pśiduce trjebamy wjeliku zběrku sadow bźez awtorskopšawniskego šćita, kótrež luźe mógu głosnje pśedcytaś. Gaž stej toś tej pominani docynjonej, sr rěv na Common Voice "startujo", aby luźe mógli swój głos nagraś a dary drugich wobkšuśiś. Jolic cośo pomagaś, nowu rěc startowaś, woglědajśo se naš <sentenceCollectorLink>rěd za gromaźenje sadow</sentenceCollectorLink>, aby zachopił.
 faq-what-quality-q = Kótara awdiokwalita jo trěbna, aby se głosowy klip w datowej sajźbje wužywał?
+faq-what-quality-a = Comy, až datowa sajźba Common Voice awdiokwalitu wótbłyšćujo, kótaruž mašina powědanja do teksta w lichej pśiroźe słyša, pytamy pótakem za wjelerakosću. Mimo wjelerakego zgromaźeństwa powědarjow, datowa sajźba ze wšakeju awdiokwalitu mašinu powědanja do teksta wuzamóžnijo, z rozdźělnymi situacijami z napšawdnego žywjenja wobchadaś, wót rozgronow w slězynje do  awtowego zogola. Tak dłujko ako waš głosowy klip jo k rozměśu, dejał dobry dosć za datowu sajźbu byś.
 faq-why-10k-hours-q = Cogodla jo 10.000 pśeglědanych góźinow na rěc cel za awdionagraśe?
 faq-why-10k-hours-a = To jo pśibližnje licba góźinow, kótarež su trěbne, aby produktiwny system powědanje do teksta treněrowało.
 faq-how-calc-hours-q = Kak Common Voice góźiny woblicujo?
@@ -339,10 +363,16 @@ faq-where-src-from-2-a =
     
     Móžośo se naše žrědłowe sady w toś tom <githubLink>zarědniku GitHub</githubLink> woglědaś.
 faq-why-not-ask-read-q = Cogodla luźi njepšosyśo, z knigłow abo nastawkow Wikipedije w rozdźělnych rěcach pśedcytaś?
+faq-why-not-ask-read-a = Aby datowa sajźba Common Voice wužytna ako móžno była, smy rozsuźili, jano žrědłowy tekst dowóliś, kótaryž jo pód licencu Creative Commons (CC0) k dispoziciji. Wužywanje standarda CC0 wóznamjenijo, až jo śěžko, žrědłowy tekst namakaś a gromaźiś, ale dowólujo kuždemu, dobyte głosowe daty bźez wobgranicowanjow abo awtorizacije Mozilla wužywaś. Napósledku comy wěcejrěcnu datowu sajźbu  za kuždego tak wužytnu ako móžno cyniś, inkluziwnje slěźarje, uniwersity, nowe pśedewześa, kněžaŕstwa, organizacije za socialne zaměry a wugbarje hobbyja.
 faq-why-account-q = Cogodla dejał ja konto załožyś?
 faq-is-account-public-q = Su móje kontowe informacije zjawne?
 faq-how-privacy-q = Kak zawěsćujośo anonymnosć a priwatnosć luźi, kótarež su swóje głose pósćili?
+faq-how-privacy-a = Ze wšych głosowych klipow w datowej sajźbje se informacije wótwónoźuju, kótarež wósoby identificěruju. Gaž sobustatkujucy demografiske daty w swójom profilu pódawa, se toś te informacije z jogo głosowych klipow wótwónoźuju, nježli až se za ześěgnjenje gromadu wězaju a wóne se nigda w jogo profilowem boku njewózjawjaju.
 faq-what-determine-identity-q = Co wóznamjenijo, až njamógu „identitu“ powědarjow w datowej saźbje Common Voice „zwěsćiś“?
+faq-what-determine-identity-a =
+    Datowa sajźba Common Voice jo wótwórjona a zjawnje pśistupna resursa, kótaraž dajo se za treněrowanje šyrokeje wjelerakosći pśez powědanje wóźonych nałoženjow wužywaś. Aby my wěstotu našych sobustatkujucych šćitali, pšosymy kuždego, kótaryž datowu sajźbu Common Voice ześěgujo, priwatnosć našych sobustatkujucych respektěrowaś.
+    
+    Ze wšych głosowych klipow w datowej sajźbje se informacije wótwónoźuju, kótarež wósoby identificěruju. Gaž datowu sajźbu ześěgujośo, zwolijośo do togo, až njewopytujośo identitu sobustatkujucego póstajiś. To groni, až njamóžośo wopytaś, informacije w datowej sajźbje z wósobinskimi informacijami sobustatkujucego zwěazaś.  Móžośo pak datowu sajźbu wužywaś, aby powědańske spóznaśe, spóznaśe powědarjow abo druge nałoženja pśez to treněrował, až, na pśikład, informacije w datowej sajźbje z drugimi informacijami zwězujośo, kótarež su južo w datowej sajźbje.
 
 ## Glossary
 
@@ -352,6 +382,7 @@ localization-explanation = To jo naš proces za pśełožowanje a pśiměrjenje 
 sentence-collection = Zběrka sadow
 sentence-collection-explanation = Gromaźenje za wše wužytnych sadow abo pisanje nowych za wšě wužytnych sadow.
 hours-recorded-explanation = Licba dotychměst nagromaźonych nagratych góźinow.
+hours-validated-explanation = Licba góźinow głosowego nagraś, kótarež su se wót 2 z 3 wužywarjow z "Jo" wobkšuśili. To póstup k cełkownemu celoju 10&thinso;000 góźinow markěrujo.
 sst = Powědanje-do-teksta (STT)
 sst-explanation = Technologije Powědanje-do-teksta (STT) głosowe daty to teksta konwertěruju.
 de-identified = Anonymizěrowane
@@ -419,12 +450,17 @@ download-language = { $language } sćahnyć
 validated-hours = Wobkšuśone góźiny
 recorded-hours = Nagrate góźiny
 whats-inside = Co jo w datowej sajźbje Common Voice?
+dataset-description-hours =
+    Kuždy zapisk w datowej sajźbje wobstoj z jadnorazoweje MP3- a pśisłušneje tekstoweje dataje. Wjele z <b>{ $total }</b> nagratych góźinow w datowej sajźbje teke demografiske daty ako starstwo, rod a akcent wopśimuju, kótarež mógu pomagaś, dokradnosć mašinow powědańskego spóznaśa treněrowaś.
+    
+    Datowa sajźba tuchylu z <b>{ $valid }</b> wobkšuśonych góźinow w <b>{ $languages }</b> rěcach, ale pśidawamy pśecej dalšne głose a rěcy. Wowglědajśo se k našomu <languagesLink>bokoju rěcow</languagesLink>, aby wó rěc pšosył abo zachopił sobu pśinosowaś.
 want-dataset-update = Cośo aktualizacije, gaž nowu wersiju datoweje sajźby Common Voice wózjawjamy? Aboněrujśo naš powěsćowy list.
 subscribe = Aboněrowaś
 get-started-speech = Prědne kšace z powědańskim spóznaśim
 other-datasets = Druge głosowe datowe sajźby
 feedback-q = Maśo komentary?
-common-voice-info = Maśo pšašanja wó Common Voice? Pśizamkniśo se nam w našom <discourseLink>forumje Discourse</discourseLink>.
+deepspeech-info = Datowa sajźba Common Voice wudopołnjujo Deep Speech, mašinu głosowego spóznaśa wótwórjonego žrědła Mozilla, kótaruž móžośo wužywaś, aby nałoženja głosowego spóznaśa wuwijaś. Cytajśo naš <githubLink>pśeglěd Github</githubLink> abo pśizamkniśo se forumoju <discourseLink>DeepSpeech Discourse</discourseLink>, aby zgónił, kak móžośo zachopiś.
+common-voice-info-new = Maśo pšašanja wó Common Voice? Ideje za pólěpšenja abo komentary wó wěstej rěcy? Pśizamkniśo se nam na našom <discourseLink>forumje Discourse</discourseLink> a dajśo je nam k wěsći.
 data-other-librispeech-description = LibriSpeech jo korpus skóro 1.000 góźinow wjengelskej rěcy (nagrate z 16 Khz), kótarež z wótsłuchańskich knigłow projekta LibriVox póchadaju.
 data-other-ted-name = Korpus TED-LIUM
 data-other-ted-description = Korpus TED-LIUM jo napórał z awdiopśednoskow a jich transkripcijow, kótarež su na websedle TED k dispoziciji.
@@ -435,6 +471,9 @@ go-discourse = K forumje Discourse
 missing-language = Njenamakajośo swóju rěc w datowej sajźbje? Aby swóju rěc pominak, woglědajśo se k našomu bokoju rěcow.
 go-languages-page = K bokoju rěcow
 ready-to-validate = Sćo gótowy nam pomagaś, sady pśeglědowaś?
+more = Wěcej
+close = Zacyniś
+download = Ześěgnuś
 
 ## Download Modal
 
@@ -462,13 +501,15 @@ request-language-form-language =
     .label = Rěc
 request-language-success-title = Póžedanje na rěc jo se wuspěšnje wótpósłało, wjeliki źěk.
 request-language-success-content = Dajomy wjelgin skóro z dalšnymi informacijami wót se wó tom słyšaś, kak móžośo Common Voice swóju rěc pśidaś.
+select-language = Rěc wubraś...
+other-language = Druga rěc
 
 ## Languages Overview
 
 language-section-in-progress = W pśigótowanju
-language-section-in-progress-description = Rěcy w pśigótowanju se tuchylu pśez naše zgromaźeństwa wuwijaju; jich póstup wótbłyšćujo, na kótarem stawje pśełožowanje jich websedła a faze zběrki sadow su.
+language-section-in-progress-new-description = Toś te rěcy se tuchylu wót zgromaźeństwa wuwijaju. Póstupowe rědki pokazuju, w kótarej měrje <localizationGlossaryLink>lokalizacija websedła</localizationGlossaryLink> a <sentenceCollectionGlossaryLink>zběrka sadow</sentenceCollectionGlossaryLink> kuždeje rěcy stej póstupjonej.
 language-section-launched = Startowany
-language-section-launched-new-description = Za toś te aktiwěrowane rěcy jo se websedło wuspěšnje pśełožyło, a ma dosć zgromaźonych sadow, aby zmóžniło stawne sobuźěło pśez <italic>powědanje</italic> a <italic>słuchanje</italic>.
+language-section-launched-description = Za toś te aktiwizěrowane rěcy jo se websedło wuspěšnje <localizationGlossaryLink>lokalizěrowane</localizationGlossaryLink>, a ma dosć <sentenceCollectionGlossaryLink>zběranych sadow</sentenceCollectionGlossaryLink>. aby se pśichodne pśinoski za <speakLink>powědanje</speakLink> a <listenLink>słuchanje</listenLink> dowólili.
 languages-show-more = Wěcej pokazaś
 languages-show-less = Mjenjej pokazaś
 language-speakers = Powědarje
@@ -583,4 +624,8 @@ keep = Wobchowaś
 remove = Wótwónoźeś
 keep-info = Waše anonymne głosowe nagraśa wóstanu w datowej sajźbje Common Voice. Gaž swój profil wulašujośo, njamóžośo wěcej napšašowanje wótpósłaś, aby swóje nahraśa z datoweje sajźby wótwónoźeł
 remove-info = Buźomy wašo napšašowanje, waše głosowe nagraśa z datoweje sajźby wótwónoźeś, pśeglědowaś. Jolic se wašo napšašowanje pśizwólijo,  buźomy se z tymi do zwiska stajiś, kótarež su ześěgnuli datowu sajźbu, a pšosymy jich, aby waše głosowe nagraśa teke wótwónoźeli.
+why-delete-recordings =
+    Nagraśa Common Voice se wót akademikarjow, małych pśedewześow a entuziastow głosowego spóznaśa wužywaju, aby zjawnje k dispoziciji stojece resurse ako głosowe modele treněrowali a rozšyrili.
+    
+    Móžeće nam zdźělić, čehodla chceće swoje natočenja zhašeć?
 profile-form-delete = Profil wulašowaś

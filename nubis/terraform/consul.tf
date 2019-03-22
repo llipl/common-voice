@@ -51,6 +51,24 @@ resource "consul_keys" "config" {
     value  = "${aws_iam_access_key.clips_bucket.secret}"
     delete = true
   }
+
+  key {
+    path   = "${module.consul.config_prefix}/Bucket/Bundler/Region"
+    value  = "${var.region}"
+    delete = true
+  }
+
+  key {
+    path   = "${module.consul.config_prefix}/Bucket/Bundler/Users/Admin/AccessKeyID"
+    value  = "${aws_iam_access_key.bundler_bucket.id}"
+    delete = true
+  }
+
+  key {
+    path   = "${module.consul.config_prefix}/Bucket/Bundler/Users/Admin/SecretKey"
+    value  = "${aws_iam_access_key.bundler_bucket.secret}"
+    delete = true
+  }
 }
 
 # Publish our outputs into Consul for our application to consume
@@ -66,6 +84,23 @@ resource "consul_keys" "read_only_public_users" {
   key {
     path   = "${module.consul.config_prefix}/Bucket/Clips/Users/Read-Only-Public/${format("%.3d", count.index)}/SecretKey"
     value  = "${element(aws_iam_access_key.clips_readonly.*.secret, count.index)}"
+    delete = true
+  }
+}
+
+# Publish our outputs into Consul for our application to consume
+resource "consul_keys" "bundler_read_only_public_users" {
+  count = "${var.bundler_read_only_public_users}"
+
+  key {
+    path   = "${module.consul.config_prefix}/Bucket/Bundler/Users/Read-Only-Public/${format("%.3d", count.index)}/AccessKeyID"
+    value  = "${element(aws_iam_access_key.bundler_readonly.*.id, count.index)}"
+    delete = true
+  }
+
+  key {
+    path   = "${module.consul.config_prefix}/Bucket/Bundler/Users/Read-Only-Public/${format("%.3d", count.index)}/SecretKey"
+    value  = "${element(aws_iam_access_key.bundler_readonly.*.secret, count.index)}"
     delete = true
   }
 }

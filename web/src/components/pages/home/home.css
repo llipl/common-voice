@@ -27,8 +27,29 @@
         @media (--lg-up) {
             flex-direction: row;
 
-            & > :first-child {
-                border-right: 1px solid var(--light-grey);
+            &.single {
+                & .hero-box::before {
+                    background-size: 100% 50%;
+                }
+
+                @media (--lg-up) {
+                    & .column.cta {
+                        padding: 0 48px;
+                    }
+                }
+            }
+
+            &.multiple {
+                & > :first-child {
+                    border-right: 1px solid var(--light-grey);
+                }
+
+                & .active {
+                    width: 60%;
+                }
+                & .compressed {
+                    width: 40%;
+                }
             }
         }
     }

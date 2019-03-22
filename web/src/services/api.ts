@@ -1,4 +1,4 @@
-import { AllGoals } from 'common/goals';
+import { AllGoals, CustomGoalParams } from 'common/goals';
 import { LanguageStats } from 'common/language-stats';
 import { UserClient } from 'common/user-clients';
 import { Locale } from '../stores/locale';
@@ -65,6 +65,9 @@ export default class API {
       localStorage.removeItem(USER_KEY);
       location.reload();
       return;
+    }
+    if (response.status >= 400) {
+      throw new Error(await response.text());
     }
     return isJSON ? response.json() : response.text();
   }
@@ -221,6 +224,13 @@ export default class API {
     );
   }
 
+  createGoal(body: CustomGoalParams): Promise<AllGoals> {
+    return this.fetch(API_PATH + '/user_client/goals', {
+      method: 'POST',
+      body,
+    });
+  }
+
   fetchGoals(locale?: string): Promise<AllGoals> {
     return this.fetch(
       API_PATH + '/user_client' + (locale ? '/' + locale : '') + '/goals'
@@ -232,5 +242,11 @@ export default class API {
       API_PATH + '/user_clients/' + this.user.userId + '/claim',
       { method: 'POST' }
     );
+  }
+
+  saveHasDownloaded(email: string): Promise<void> {
+    return this.fetch(this.getLocalePath() + '/downloaders/' + email, {
+      method: 'POST',
+    });
   }
 }

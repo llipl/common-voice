@@ -49,6 +49,7 @@ fr = Γαλλικά
 fy-NL = Φριζιακά
 ga-IE = Ιρλανδικά
 he = Εβραϊκά
+hr = Κροατικά
 hsb = Άνω Σορβικά
 hu = Ουγγρικά
 ia = Ιντερλίνγκουα
@@ -212,6 +213,7 @@ shortcut-vote-no = χ
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = γ
 shortcut-record-toggle-label = Εγγραφή/Διακοπή
+shortcut-rerecord-toggle = [1-5]
 request-language-text = Δεν βλέπετε τη γλώσσα σας στο Common Voice;
 request-language-button = Αίτημα για γλώσσα
 
@@ -304,6 +306,7 @@ faq-why-different-speakers-q = Γιατί χρειάζεστε πολλούς κ
 faq-why-my-lang-q = Γιατί δεν περιλαμβάνεται ακόμη η γλώσσα μου;
 faq-what-quality-q = Ποιο είναι το απαιτούμενο επίπεδο ποιότητας φωνής για ένα κλιπ φωνής που θα χρησιμοποιηθεί στο σύνολο δεδομένων;
 faq-how-calc-hours-q = Πώς υπολογίζει το Common Voice τις ώρες;
+faq-where-src-from-2-q = Από πού προέρχεται το πηγαίο κείμενο;
 faq-why-account-q = Γιατί να δημιουργήσω λογαριασμό;
 faq-is-account-public-q = Είναι δημόσιες οι πληροφορίες του λογαριασμού μου;
 faq-how-privacy-q = Πώς εξασφαλίζετε την ανωνυμία και το απόρρητο των ατόμων που δώρισαν τις φωνές τους;
@@ -336,11 +339,6 @@ data-get-started = <speechBlogLink>Ξεκινήστε με την αναγνώρ
 data-other-title = Άλλα ανοιχτά σύνολα δεδομένων...
 data-other-goto = Μετάβαση στο { $name }
 data-other-download = Λήψη δεδομένων
-data-other-librispeech-description = Το LibriSpeech  είναι ένα corpus με περίπου 1000 ώρες ανάγνωσης στα αγγλικά 16Khz  και δημιουργήθηκε από ηχητικά βιβλία στο LibriVox.
-data-other-ted-name = Corpus TED-LIUM
-data-other-ted-description = Το Corpus TED-LIUM δημιουργήθηκε από ηχητικές συνομιλίες και τις μεταγραφές τους, που είναι διαθέσιμες στον ιστότοπο TED.
-data-other-voxforge-description = Το VoxForge  δημιουργήθηκε για τη συλλογή ομιλίας και της μεταγραφής της, για τη χρήση με μηχανές αναγνώρισης ομιλίας ανοιχτού λοσμικού.
-data-other-tatoeba-description = Το Tatoeba  είναι μια μεγάλη βάση δεδομένων προτάσεων, μεταφράσεων και ομιλίας για χρήση στην εκμάθηση γλώσσας. Η λήψη περιέχει ομιλία στα αγγλικά, που ηχογραφήθηκε από την κοινότητα.
 data-bundle-button = Λήψη ολόκληρου του συνόλου δεδομένων
 data-bundle-description = Τα δεδομένα του Common Voice, καθώς και όλα τα άλλα σύνολα φωνητικών δεδομένων που περιγράφονται πιο πάνω.
 license = Άδεια χρήσης: <licenseLink>{ $license }</licenseLink>
@@ -365,8 +363,22 @@ size = Μέγεθος
 cv-license = Άδεια
 audio-format = Μορφή ήχου
 number-of-voices = Αριθμός φωνών
+email-to-download = Εισάγετε το email για λήψη
+confirm-size = Πρόκειται να αρχίσετε μια λήψη <b>{ $size }</b>
 size-gigabyte = GB
 size-megabyte = MB
+download-language = Λήψη στα { $language }
+subscribe = Εγγραφή
+feedback-q = Έχετε σχόλια;
+data-other-librispeech-description = Το LibriSpeech  είναι ένα corpus με περίπου 1000 ώρες ανάγνωσης στα αγγλικά 16Khz  και δημιουργήθηκε από ηχητικά βιβλία στο LibriVox.
+data-other-ted-name = Corpus TED-LIUM
+data-other-ted-description = Το Corpus TED-LIUM δημιουργήθηκε από ηχητικές συνομιλίες και τις μεταγραφές τους, που είναι διαθέσιμες στον ιστότοπο TED.
+data-other-voxforge-description = Το VoxForge  δημιουργήθηκε για τη συλλογή ομιλίας και της μεταγραφής της, για τη χρήση με μηχανές αναγνώρισης ομιλίας ανοιχτού λοσμικού.
+data-other-tatoeba-description = Το Tatoeba  είναι μια μεγάλη βάση δεδομένων προτάσεων, μεταφράσεων και ομιλίας για χρήση στην εκμάθηση γλώσσας. Η λήψη περιέχει ομιλία στα αγγλικά, που ηχογραφήθηκε από την κοινότητα.
+ready-to-validate = Είστε έτοιμοι να βοηθήσετε στην επαλήθευση προτάσεων;
+more = Περισσότερα
+close = Κλείσιμο
+download = Λήψη
 
 ## Download Modal
 
@@ -394,13 +406,13 @@ request-language-form-language =
     .label = Γλώσσα
 request-language-success-title = Η υποβολή αιτήματος γλώσσας ήταν επιτυχής, ευχαριστούμε.
 request-language-success-content = Θα σας ενημερώσουμε πώς να προσθέσετε τη γλώσσα σας στο Common Voice πολύ σύντομα.
+select-language = Επιλέξτε γλώσσα...
+other-language = Άλλη γλώσσα
 
 ## Languages Overview
 
 language-section-in-progress = Σε εξέλιξη
-language-section-in-progress-description = Οι γλώσσες υπό κατασκευή δημιουργούνται με τη συνεισφορά των κοινοτήτων μας. Η πρόοδός τους αντανακλά την πορεία της μετάφρασης της ιστοσελίδας και της συλλογής προτάσεων.
 language-section-launched = Σε λειτουργία
-language-section-launched-new-description = Για αυτές τις ενεργές γλώσσες, η ιστοσελίδα έχει μεταφραστεί επιτυχώς και έχουν συλλεχθεί αρκετές προτάσεις έτσι, ώστε να επιτρέπεται συνεχής συνεισφορά <italic>ομιλίας</italic> και <italic>ακρόασης</italic>.
 languages-show-more = Δείτε περισσότερα
 languages-show-less = Λιγότερα
 language-speakers = Ομιλητές

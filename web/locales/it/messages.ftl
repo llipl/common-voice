@@ -53,13 +53,16 @@ fo = Faroese
 fr = Francese
 fy-NL = Frisone
 ga-IE = Irlandese
+gl = Gallego
 he = Ebraico
+hr = Croato
 hsb = Alto sorabo
 hu = Ungherese
 ia = Interlingua
 id = Indonesiano
 is = Islandese
 it = Italiano
+izh = Izoriano
 ja = Giapponese
 ka = Georgiano
 kab = Cabilo
@@ -68,6 +71,8 @@ ko = Coreano
 kpv = Komi-Zyrian
 kw = Cornico
 ky = Kirghiso
+lt = Lituano
+lv = Lettone
 mdf = Mokša
 mhr = Mari orientale
 mk = Macedone
@@ -85,6 +90,7 @@ pt-BR = Portoghese (Brasile)
 rm-sursilv = Romancio sottosilvano
 ro = Rumeno
 ru = Russo
+rw = Kinyarwanda
 sah = Sacha
 sc = Sardo
 sk = Slovacco
@@ -178,6 +184,7 @@ x-years-short =
 help-make-dataset = Aiutaci a realizzare un dataset di alta qualità e aperto
 profile-not-required = Registrare un profilo non è obbligatorio per collaborare, ma incoraggiato
 sign-up-account = Registrati
+email-subscription-title = Iscriviti agli aggiornamenti via email
 
 ## Account Benefits
 
@@ -222,6 +229,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Registra/Interrompi
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Ripeti la registrazione
 request-language-text = Non trovi la tua lingua su Common Voice?
 request-language-button = Richiedi una lingua
 
@@ -332,7 +341,7 @@ faq-do-want-native-a = Sì, cerchiamo soprattutto voci come la tua! Uno degli ob
 faq-why-different-speakers-q = Perché avete bisogno di così tante voci diverse per ogni lingua?
 faq-why-different-speakers-a = Nella stragrande maggioranza dei database per l’apprendimento vocale troviamo una netta sproporzione demografica a favore delle voci <articleLink>maschili e di classe media</articleLink>. Invece gli accenti e i dialetti associati ai gruppi già di per sé marginalizzati ricevono una rappresentazione minore nei dataset per l’apprendimento del software. Inoltre diversi dispositivi faticano a comprendere le voci femminili. Ecco perché vogliamo che il nostro database sia così vario.
 faq-why-my-lang-q = Perché la mia lingua non è stata ancora inclusa?
-faq-why-my-lang-a = Mozilla non sceglie quali lingue aggiungere, né preferisce una lingua piuttosto che un’altra: il successo dell’iniziativa dipende totalmente dalla comunità linguistica che l’appoggia. Tuttavia <multilangLink>prima di aggiungere una nuova lingua è necessario passare attraverso alcune fasi</ multilangLink> e cominciare a raccogliere registrazioni vocali donate dai volontari. Innanzitutto è necessario tradurre il sito web di Common Voice in modo che i membri della comunità possano collaborare usando la propria lingua. Successivamente, abbiamo bisogno di una vasta raccolta di frasi prive di copyright che i collaboratori possano leggere ad alta voce. Una volta soddisfatti entrambi i requisiti, una lingua viene ”lanciata” su Common Voice e i collaboratori possono iniziare a registrare la propria voce e convalidare le registrazioni di altri volontari.
+faq-why-my-lang-new-a = Mozilla non auspica o favorisce in alcun modo il progresso di alcune lingue rispetto ad altre. Common Voice è infatti un’iniziativa gestita interamente dalla comunità, ma richiede <multilangLink>diversi passaggi per aggiungere una nuova lingua</multilangLink> e iniziare a raccogliere donazioni vocali. Per prima cosa è necessario tradurre il sito web di Common Voice, in modo da offrire ai membri della comunità uno strumento di collaborazione nella propria lingua. In seguito è necessario caricare una vasta raccolta di frasi prive di copyright che i collaboratori possano leggere ad alta voce. Una volta soddisfatti tutti questi requisiti, una lingua viene “lanciata” su Common Voice e i collaboratori possono iniziare a registrare la propria voce e convalidare le registrazioni di altri. Puoi iniziare a collaborare al lancio di una nuova lingua dal nostro <sentenceCollectorLink>strumento per la raccolta frasi</sentenceCollectorLink>.
 faq-what-quality-q = Quale livello di qualità audio è richiesto da una registrazione vocale per essere utilizzata nel dataset?
 faq-what-quality-a = Vogliamo che il dataset di Common Voice rifletta la qualità audio che un motore di riconoscimento vocale “ascolterà” nella vita di tutti i giorni, per questo cerchiamo la varietà. Oltre a una comunità diversificata di parlanti, un dataset con qualità audio variabile insegnerà al motore di riconoscimento vocale a gestire varie situazioni del mondo reale, dal parlato di sottofondo al rumore dell’automobile. In poche parole, finché si distinguono le parole la tua registrazione va benissimo per il dataset!
 faq-why-10k-hours-q = Perché l’obiettivo di registrazione è proprio 10.000 ore convalidate per ogni lingua?
@@ -385,11 +394,6 @@ data-get-started = <speechBlogLink>Istruzioni per il riconoscimento vocale</spee
 data-other-title = Altri dataset vocali...
 data-other-goto = Vai a { $name }
 data-other-download = Scarica i dati
-data-other-librispeech-description = LibriSpeech è un corpus contenente circa 1000 ore di registrazioni in lingua inglese a 16Khz tratto dalla lettura di audiolibri del progetto LibriVox.
-data-other-ted-name = TED-LIUM Corpus
-data-other-ted-description = Il corpus TED-LIUM è realizzato con registrazioni audio di conferenze e relative trascrizioni disponibili sul sito TED.
-data-other-voxforge-description = VoxForge è stato creato appositamente per raccogliere trascrizioni di dettati da utilizzare nei motori di riconoscimento vocale gratuiti e open source.
-data-other-tatoeba-description = Tatoeba è un ampio database che raccoglie frasi, traduzioni e registrazioni vocali per scopi di apprendimento linguistico. Il presente download contiene tracce audio di inglese parlato registrato dalla comunità di Tatoeba.
 data-bundle-button = Scarica bundle di dataset
 data-bundle-description = Dati di Common Voice più tutti i dataset precedenti.
 license = Licenza: <licenseLink>{ $license }</licenseLink>
@@ -434,9 +438,29 @@ download-language = Scarica { $language }
 validated-hours = Ore convalidate
 recorded-hours = Ore registrate
 whats-inside = Che cosa c’è all’interno del dataset di Common Voice?
-dataset-description =
-    Ogni voce nel dataset è composta da un singolo MP3 e dal file di testo corrispondente. Molte delle <b>{ $hours }</b> ore registrate nel dataset includono anche metadati demografici come età, sesso e accento, che possono aiutare ad affinare l'accuratezza dei motori di riconoscimento vocale.
-    Il dataset al momento comprende <b>{ $hours }</b> ore convalidate in <b>{ $languageCount }</b> lingue, ma viene costantemente aggiornato con nuove voci e lingue. Dai un’occhiata alla nostra <languagesLink>pagina delle lingue</languagesLink> per richiedere una nuova lingua o iniziare a collaborare.
+dataset-description-hours =
+    Ogni voce nel dataset è composta da un singolo MP3 e dal file di testo corrispondente. Molte delle <b>{ $total }</b> ore registrate nel dataset includono anche metadati demografici come età, sesso e accento, che possono aiutare ad affinare l’accuratezza dei motori di riconoscimento vocale.
+    Il dataset al momento comprende <b>{ $valid }</b> ore convalidate in <b>{ $languages }</b> lingue, ma viene costantemente aggiornato con nuove voci e lingue. Dai un’occhiata alla nostra <languagesLink>pagina delle lingue</languagesLink> per richiedere una nuova lingua o iniziare a collaborare.
+want-dataset-update = Vuoi ricevere aggiornamenti sulle nuove versioni del dataset di Common Voice? Iscriviti alla newsletter.
+subscribe = Iscriviti
+get-started-speech = Inizia con il riconoscimento vocale
+other-datasets = Altri dataset vocali
+feedback-q = Hai suggerimenti?
+deepspeech-info = Il dataset di Common Voice integra il motore di riconoscimento vocale open source di Mozilla, Deep Speech, utilizzabile per creare applicazioni di riconoscimento vocale. Leggi la <githubLink>panoramica GitHub</githubLink> o unisciti a <discourseLink>DeepSpeech su Discourse</discourseLink> per sapere come cominciare.
+common-voice-info-new = Hai domande su Common Voice? Vuoi comunicarci opinioni o suggerimenti per migliorare una specifica lingua? Scrivici sul <discourseLink>forum Discourse</discourseLink>.
+data-other-librispeech-description = LibriSpeech è un corpus contenente circa 1000 ore di registrazioni in lingua inglese a 16Khz tratto dalla lettura di audiolibri del progetto LibriVox.
+data-other-ted-name = TED-LIUM Corpus
+data-other-ted-description = Il corpus TED-LIUM è realizzato con registrazioni audio di conferenze e relative trascrizioni disponibili sul sito TED.
+data-other-voxforge-description = VoxForge è stato creato appositamente per raccogliere trascrizioni di dettati da utilizzare nei motori di riconoscimento vocale gratuiti e open source.
+data-other-tatoeba-description = Tatoeba è un ampio database che raccoglie frasi, traduzioni e registrazioni vocali per scopi di apprendimento linguistico. Il presente download contiene tracce audio di inglese parlato registrato dalla comunità di Tatoeba.
+your-feedback = Hai idee su come migliorare il dataset di Common Voice? Faccelo sapere su Discourse
+go-discourse = Vai su Discourse
+missing-language = Non trovi la tua lingua nel dataset? Per richiederne una, vai sulla pagina Lingue.
+go-languages-page = Vai sulla pagina Lingue
+ready-to-validate = Sei pronto a convalidare qualche frase?
+more = Altro
+close = Chiudi
+download = Scarica
 
 ## Download Modal
 
@@ -464,13 +488,15 @@ request-language-form-language =
     .label = Lingua
 request-language-success-title = Richiesta per una nuova lingua inviata. Grazie per il tuo interessamento.
 request-language-success-content = Presto riceverai istruzioni su come aggiungere la tua lingua a Common Voice.
+select-language = Seleziona una lingua…
+other-language = Altra lingua
 
 ## Languages Overview
 
 language-section-in-progress = In corso
-language-section-in-progress-description = Le lingue “in corso” non sono ancora pronte per ricevere i contributi della comunità. La barra del progresso indica a che punto sono nelle fasi di localizzazione del sito e di raccolta frasi.
+language-section-in-progress-new-description = Queste lingue sono attualmente in fase di sviluppo da parte della comunità. Le barre di avanzamento indicano i progressi di ciascuna lingua nel processo di <localizationGlossaryLink>localizzazione del sito web</localizationGlossaryLink> e di <fraseCollectionGlossaryLink>raccolta delle frasi</sentenceCollectionGlossaryLink>.
 language-section-launched = Operative
-language-section-launched-new-description = Per queste lingue il sito web è stato tradotto completamente ed è stato raccolto un numero sufficiente di frasi per garantire ampie possibilità di collaborazione, sia per <italic>parlare</italic> che <italic>ascoltare</italic>.
+language-section-launched-description = Per le seguenti lingue operative il sito web è stato completamente <localizationGlossaryLink>localizzato</localizationGlossaryLink> e la <phraseCollectionGlossaryLink>raccolte di frasi</sentenceCollectionGlossaryLink> ha raggiunto dimensioni sufficienti da garantire sufficiente materiale da <speakLink>registrare</ speakLink> e <listenLink>ascoltare</listenLink> in modo continuativo.
 languages-show-more = Visualizza più elementi
 languages-show-less = Visualizza meno elementi
 language-speakers = Parlato da

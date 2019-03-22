@@ -17,8 +17,11 @@ indicates-required = * Pakollinen kenttä
 
 ## Languages
 
+ab = abhaasi
 ace = Atšeh
+ady = adyge
 af = Afrikaans
+am = amhara
 an = Aragonia
 ar = Arabia
 as = Assami
@@ -37,6 +40,7 @@ cy = Kymri
 da = Tanska
 de = Saksa
 dsb = Alasorbi
+dv = divehi
 el = Kreikka
 en = Englanti
 eo = Esperanto
@@ -44,12 +48,14 @@ es = Espanja
 et = Viro
 eu = Baski
 fa = Persia
-fi = Suomi
+fi = suomi
 fo = Fääri
 fr = Ranska
 fy-NL = Friisi
 ga-IE = Iiri
+gl = galicia
 he = Heprea
+hr = kroatia
 hsb = Yläsorbi
 hu = Unkari
 ia = Interlingua
@@ -64,9 +70,13 @@ ko = Korea
 kpv = Komisyrjääni
 kw = Korni
 ky = Kirgiisi
+lt = liettua
+lv = latvia
 mdf = Mokša
+mhr = niittymari
 mk = Makedonia
 mn = Mongoli
+mrj = vuorimari
 myv = Ersä
 nb-NO = Norjan bokmål
 ne-NP = Nepali
@@ -79,6 +89,7 @@ pt-BR = Brasilianportugali
 rm-sursilv = Sursilvan retoromaani
 ro = Romania
 ru = Venäjä
+rw = ruanda
 sah = Jakuutti
 sc = Sardi
 sk = Slovakki
@@ -91,10 +102,13 @@ te = Telugu
 th = Thai
 tr = Turkki
 tt = Tataari
+uby = ubyh
+udm = udmurtti
 uk = Ukraina
 ur = Urdu
 uz = Uzbekki
 vi = Vietnam
+vot = vatja
 zh-CN = Kiina (Kiina)
 zh-HK = Kiina (Hong Kong)
 zh-TW = Kiina (Taiwan)
@@ -171,6 +185,7 @@ x-years-short =
 help-make-dataset = Auta meitä keräämään korkealaatuinen ja avoin aineisto
 profile-not-required = Profiili ei ole välttämätön osallistumiseen, mutta siitä on hyötyä
 sign-up-account = Rekisteröidy palvelun käyttäjäksi
+email-subscription-title = tilaa sähköpostipäivitykset
 
 ## Account Benefits
 
@@ -215,6 +230,7 @@ shortcut-vote-no = e
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = n
 shortcut-record-toggle-label = Nauhoita / pysäytä
+shortcut-rerecord-toggle = [1-5]
 request-language-text = Eikö kieltäsi löydy Common Voicesta vielä?
 request-language-button = Pyydä kieltä lisättäväksi
 
@@ -236,8 +252,10 @@ english = Englanti
 
 profile-form-username =
     .label = Käyttäjänimi
-profile-form-language =
-    .label = Kieli
+profile-form-native-language =
+    .label = Äidinkieli
+profile-form-additional-language =
+    .label = Lisäkieli
 profile-form-accent =
     .label = Murre
 profile-form-age =
@@ -321,9 +339,8 @@ faq-is-goal-assistant-a = Common Voice -ääniaineiston tavoitteena on mahdollis
 faq-do-want-native-q = En ole syntyperäinen puhuja ja puhun korostaen. Haluatteko silti ääneni?
 faq-do-want-native-a = Kyllä, me haluamme erityisesti sinun äänesi! Osa Common Voice -projektin tavoitteita on kerätä mahdollisimman paljon korostuksia, jotta puheentunnistus toimisi yhtä hyvin kaikille. Tämän vuoksi lahjoitukset ei-syntyperäisiltä puhujilta ovat erityisen tärkeitä.
 faq-why-different-speakers-q = Miksi tarvitsette niin monta jokaisen kielen puhujaa?
-faq-why-different-speakers-a = Useimmat ääniaineistot on opetettu tietyn väestöryhmän yliedustuksella, mikä johtaa vinoumaan <articeLink>valkoihoisten ja keskiluokkaista</articleLink> suuntaan. Tyypillisesti ennalta syrjäytyneiden väestöryhmien korostukset ja murteet tapaavat olla aliedustettuja ääniaineistoissa. Monilla koneilla on lisäksi haasteita naisten ymmärtämisessä. Tästä syystä me haluamme monipuolisuutta aineistoomme!
+faq-why-different-speakers-a = Useimmat ääniaineistot on opetettu tietyn väestöryhmän yliedustuksella, mikä johtaa vinoumaan <articeLink>valkoihoisten ja keskiluokkaisten</articleLink> suuntaan. Tyypillisesti ennalta syrjäytyneiden väestöryhmien korostukset ja murteet tapaavat olla aliedustettuja ääniaineistoissa. Monilla koneilla on lisäksi haasteita naisten ymmärtämisessä. Tästä syystä me haluamme monipuolisuutta aineistoomme!
 faq-why-my-lang-q = Miksei kieleni ole vielä mukana?
-faq-why-my-lang-a = Mozilla ei valitse tai suosi yksittäisiä kieliä. Sen sijaan Common Voice on yhteisöpohjainen projekti, jossa uuden kielen lisäämiseksi tarvitaan <multiLangLink>useita vaiheita</multiLangLink> ennen äänilahjoitusten keräämistä. Ensimmäiseksi Common Voice -sivusto on käännettävä, jotta yhteisön jäsenet voivat osallistua omalla kielellään. Seuraavaksi me tarvitsemme laajan kokoelman tekijänoikeuksista vapaita lauseita ihmisten luettavaksi. Kun molemmat vaatimukset täyttyvät, kieli "julkaistaan" Common Voice -palvelussa, jotta ihmiset voivat aloittaa oman äänensä tallentamisen ja toisten lahjoitusten tarkastamisen.
 faq-what-quality-q = Minkä tasoinen äänenlaatu tarvitaan näytteen käyttämiseksi aineistossa?
 faq-what-quality-a = Haluamme Common Voice -aineiston heijastelevan puheentunnistusmoottorin luonnossa kuulemaa äänenlaatua, joten toivomme vaihtelua. Monipuolisen puhujien yhteisön lisäksi erilaista äänenlaatua sisältävä aineisto opettaa puheentunnistusmoottoria käsittelemään erilaisia tosielämän tilanteita, taustalla puhumisesta liikenteen meluun. Niin kauan kuin ääninäytteesi on ymmärrettävä, sen pitäisi olla tarpeeksi hyvä aineistoon.
 faq-why-10k-hours-q = Miksi tavoitteena on 10 000 tuntia tarkistettuja ääninäytteitä jokaista kieltä kohden?
@@ -379,11 +396,6 @@ data-get-started = <speechBlogLink>Lähde liikkeelle puheentunnistuksessa</speec
 data-other-title = Muut ääniaineistot...
 data-other-goto = Siirry sivustolle { $name }
 data-other-download = Lataa aineisto
-data-other-librispeech-description = LibriSpeech on noin 1000 tunnin 16 Khz:n puheaineisto englanninkielisiä ääneen luettuja audiokirjoja LibriVox-projektilta.
-data-other-ted-name = TED-LIUM-korpus
-data-other-ted-description = TED-LIUM on tehty puhenauhotteista ja niiden tekstityksistä TED-sivustolta.
-data-other-voxforge-description = VoxForge-projekti perustettiin keräämään tekstitettyä puhetta vapaista avoimen lähdekoodin puheentunnistusmoottoreista.
-data-other-tatoeba-description = Tatoeba on laaja virketietokanta, joka sisältää käännöksiä ja puhenauhoitteita kielenoppimistarkoituksiin. Tämä aineisto on englanniksi.
 data-bundle-button = Lataa koottu aineistokokoelma
 data-bundle-description = Common Voice -aineisto sekä kaikki ylläolevat aineistot
 license = Lisenssi: <licenseLink>{ $license }</licenseLink>
@@ -399,6 +411,46 @@ review-rerecord = Uudelleennauhoita
 review-cancel = Peru lähetys
 review-keep-recordings = Säilytä nauhoitteet
 review-delete-recordings = Poista nauhoitukset
+
+## New Datasets Page
+
+datasets-headline = Rakennamme avointa ja monikielistä ääniaineistoa, jota kuka tahansa voi käyttää puheeseen liittyvien sovellusten kehittämisessä.
+language = Kieli
+# File size in gigabytes
+size = Koko
+validated-hr-total = Tarkistettuja tunteja yhteensä
+overall-hr-total = Tunteja kaikkiaan yhteensä.
+cv-license = Lisenssi
+audio-format = Äänimuoto
+number-of-voices = Äänien määrä
+splits = Osat
+email-to-download = Anna sähköpostiosoite ladataksesi
+why-email = <b>Miksi sähköpostiosoite?</b> Meille voi tulla tarve olla sinuun yhteyksissä aineistoon muutoksiin liittyen, jolloin sähköposti on  yksi yhteystieto.
+confirm-size = Olet aloittamassa <b>{ $size }</b> gigatavun latausta.
+size-gigabyte = Gt
+size-megabyte = Mt
+download-language = Lataa { $language }
+validated-hours = Tarkistetut tunnit
+recorded-hours = Äänitetyt tunnit
+whats-inside = Mitä on Common Voicen datapaketeissa?
+want-dataset-update = Haluatko tiedotteen kun julkaisemme uuden version Common Voice -aineistosta? Tilaa uutiskirjeemme.
+subscribe = Tilaa
+get-started-speech = Aloita puheentunnistuksen parissa
+other-datasets = Muut puheaineistot
+feedback-q = Haluatko antaa palautetta?
+data-other-librispeech-description = LibriSpeech on noin 1000 tunnin 16 Khz:n puheaineisto englanninkielisiä ääneen luettuja audiokirjoja LibriVox-projektilta.
+data-other-ted-name = TED-LIUM-korpus
+data-other-ted-description = TED-LIUM on tehty puhenauhotteista ja niiden tekstityksistä TED-sivustolta.
+data-other-voxforge-description = VoxForge-projekti perustettiin keräämään tekstitettyä puhetta vapaista avoimen lähdekoodin puheentunnistusmoottoreista.
+data-other-tatoeba-description = Tatoeba on laaja virketietokanta, joka sisältää käännöksiä ja puhenauhoitteita kielenoppimistarkoituksiin. Tämä aineisto on englanniksi.
+your-feedback = Onko sinulla ajatuksia, kuinka voisimme tehdä Common Voice -aineistosta paremman? Kerro meille Discoursessa
+go-discourse = Siirry Discourseen
+missing-language = Etkö löydä omaa kieltä aineistosta? Pyytääksesi kielen lisäämistä siirry sivulle Kielet.
+go-languages-page = Siirry sivulle Kielet.
+ready-to-validate = Oletko valmis tarkistamaan lauseita?
+more = Lisää
+close = Sulje
+download = Lataa
 
 ## Download Modal
 
@@ -426,13 +478,13 @@ request-language-form-language =
     .label = Kieli
 request-language-success-title = Kielipyyntö lähetetty, kiitos.
 request-language-success-content = Otamme yhteyttä siitä miten voidaan lisätä kielesi Common Voiceen piakkoin.
+select-language = Valitse kieli...
+other-language = Muu kieli
 
 ## Languages Overview
 
 language-section-in-progress = Työn alla
-language-section-in-progress-description = Työn alla olevia kieliä yhteisö työstää parhaillaan. Niiden kehitys kertoo missä vaiheessa ne ovat verkkosivujen kääntämisessä ja lauseiden keräämisessä.
 language-section-launched = Julkistettu
-language-section-launched-new-description = Seuraavien kielten web-sivusto on käännetty ja niille on kerätty tarpeeksi virkkeitä <italic>puhumisen</italic> sekä <italic>kuuntelemisen</italic> aloittamiseksi.
 languages-show-more = Lisää
 languages-show-less = Vähemmän
 language-speakers = Puhujat
@@ -539,4 +591,8 @@ keep = Säilytä
 remove = Poista
 keep-info = Ääninäytteesi säilyvät nimettöminä Common Voice -tietoaineistossa. Poistettuasi profiilisi et voi enää pyytää näytteidesi poistamista tietoaineistosta.
 remove-info = Käsittelemme pyyntösi poistaa ääninäytteesi aineistosta. Jos pyyntösi hyväksytään, otamme yhteyttä aineiston ladanneisiin ja pyydämme myös heitä poistamaan ääninäytteesi.
+why-delete-recordings =
+    Common Voice -nauhoitteita voivat käyttää tutkijat, yritykset ja puheentunnistuksen harrastajat uusien ja karttuvien resurssien, kuten kielimallien, luomiseksi.
+    
+    Haluatko kertoa, miksi haluat poistaa tekemäsi nauhoitukset?
 profile-form-delete = Poista profiili

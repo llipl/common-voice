@@ -53,13 +53,16 @@ fo = 法罗语
 fr = 法语
 fy-NL = 弗里西语
 ga-IE = 爱尔兰语
+gl = 加利西亚语
 he = 希伯莱语
+hr = 克罗地亚语
 hsb = 上索布语
 hu = 匈牙利语
 ia = 国际语
 id = 印度尼西亚语
 is = 冰岛语
 it = 意大利语
+izh = 英格里亚语
 ja = 日语
 ka = 格鲁吉亚语
 kab = 卡拜尔语
@@ -68,6 +71,8 @@ ko = 韩语
 kpv = 科米-齐良语
 kw = 康沃尔语
 ky = 吉尔吉斯语
+lt = 立陶宛语
+lv = 拉脱维亚语
 mdf = 莫克沙语
 mhr = 草原马里语
 mk = 马其顿语
@@ -85,6 +90,7 @@ pt-BR = 葡萄牙语（巴西）
 rm-sursilv = 罗曼什语（苏斯勒万）
 ro = 罗马尼亚语
 ru = 俄语
+rw = 卢旺达语
 sah = 萨哈语
 sc = 萨丁尼亚语
 sk = 斯洛伐克语
@@ -138,7 +144,7 @@ home-cta = 有话在此大声说！
 wall-of-text-start = 语音是自然的、有人性的。这也是为什么我们希望为机器建立可用的语音技术。但要创造一个语音系统，需要大量的语音数据。
 wall-of-text-more-mobile = 大部分由大公司持有的数据，并未开放给公众使用。我们认为这会扼杀创新，因而推出了 Common Voice 项目，让语音识别技术的大门对每个人开放。
 wall-of-text-more-desktop = 现在，您可以贡献出您的声音，帮助我们建立一个开源的语音数据库，任何人都可以使用它来为设备和网络制作创新的应用程序。<lineBreak></lineBreak> 只要朗读一段文字，即可帮助机器了解人们如何说话。您也可以复查其他贡献者的工作以提高质量。就这么简单!
-wall-of-text-first = 语音应该是自然、人性的。我们因此着迷于为我们的机器创造实用的语音技术。但要创造一个语音系统，需要大量的语音数据。
+wall-of-text-first = 语音是自然的、有人性的。这也是为什么我们希望为机器建立可用的语音技术。但要创造一个语音系统，开发者需要大量的语音数据。
 wall-of-text-second = 大部分由大公司持有的数据，并未开放给公众使用。我们认为这会扼杀创新，因而推出了 Common Voice 项目，让语音识别技术的大门对每个人开放而无障碍。
 show-wall-of-text = 详细了解
 help-us-title = 帮助我们验证语句！
@@ -155,7 +161,7 @@ listen-paragraph = 验证别人录下的语音片段，对 Common Voice 的使�
 listen-goal-text = 已验证片段数
 hours-recorded = 已录制小时数
 hours-validated = 已验证小时数
-voices-online = 目前上线的语音
+voices-online = 目前上线的语音种数
 todays-progress = 本日进度
 help-reach-goal = 帮助我们达成 { $goal }
 read-terms-q = 您阅读过我们的使用条款了吗？
@@ -175,8 +181,9 @@ x-years-short =
        *[other] { $count } 年
     }
 help-make-dataset = 帮助我们构建高质量、可公开使用的数据集
-profile-not-required = 不需创建个人资料即可贡献，但如果有的话会更有帮助
+profile-not-required = 不需注册个人资料即可贡献，但如果注册的话会更有帮助
 sign-up-account = 注册账号
+email-subscription-title = 订阅邮件更新
 
 ## Account Benefits
 
@@ -221,6 +228,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = 录音/停止
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = 重新录制片段
 request-language-text = 没在 Common Voice 看到您的语言吗？
 request-language-button = 请求新语言
 
@@ -329,7 +338,7 @@ faq-why-different-speakers-a =
     大多数语音数据库的语音来源偏重于某一特定人群，造成结果偏向于<articleLink>男性与中产阶级</articleLink>。而在训练数据集中，代表性不足的口音与方言往往会与被边缘化的人群相关联。许多机器也很难理解女性的声音。
     这就是为何我们的语音数据库应该海纳百川，收集各种语音！
 faq-why-my-lang-q = 为什么还没有我的语言？
-faq-why-my-lang-a = Mozilla 不会偏好某一语言，然而 Common Voice 是一个纯社区驱动的项目，需要<multilangLink>几个步骤才能添加新语言</multilangLink>并开始收集语音片段。首先，需要翻译 Common Voice 网站，以便社区成员可以用自己的语言进行贡献。其次，我们需要大量的无版权语句，供人们大声说出来。一旦满足上述两条件， Common Voice 即可“上线”该语言，让人们开始录音，并验证其他人所录制的片段。
+faq-why-my-lang-new-a = Mozilla 不会偏好某一语言，然而 Common Voice 是一个纯社区驱动的项目，需要<multilangLink>几个步骤才能添加新语言</multilangLink>并开始收集语音片段。首先，需要翻译 Common Voice 网站，以便社区成员可以用自己的语言进行贡献。其次，我们需要大量的无版权语句，供人们大声说出来。一旦满足上述两条件， Common Voice 即可“上线”该语言，让人们开始录音，并验证其他人所录制的片段。如果您想帮助上线一种新语言，请前往我们的<sentenceCollectorLink>语句收集工具页</sentenceCollectorLink>以开始。
 faq-what-quality-q = 录音片段的音质要达到什么等级，才可用于数据集中？
 faq-what-quality-a = 我们希望 Common Voice 数据集能够反映出语音转文字引擎就算在野外也会听到的音频质量，所以我们希望能够收集各种环境与录音质量下的片段。除了各种说话者以外，具有不同音频质量的数据集，可让语音转文字引擎更能处理各种真实情况，例如背景中有人在讲话，或是有车辆的噪音。只要您的片段能让人听得懂，即可收录至数据集中。
 faq-why-10k-hours-q = 为什么每种语言均有 10,000 小时的有效音频采集目标？
@@ -417,7 +426,7 @@ validated-hr-total = 总验证小时数
 overall-hr-total = 总综合小时数
 cv-license = 许可协议
 audio-format = 音频格式
-number-of-voices = 语音数量
+number-of-voices = 录音人数
 splits = 分割
 email-to-download = 输入电子邮件地址进行下载
 why-email = <b>为什么需要电子邮件地址?</b>未来我们可能会联系您，提供数据集的相关更新信息。 邮件地址可作为我们联系您的方式。
@@ -429,17 +438,17 @@ download-language = 下载 { $language }
 validated-hours = 已验证小时数
 recorded-hours = 已录制小时数
 whats-inside = Common Voice 数据集里面有什么？
-dataset-description =
-    数据集中的每一条都包含了一组独立 MP3 录音及相应的文字文件。数据集所记录的 <b>{ $hours }</b> 小时的录音中，有许多条数据同时包含了年龄、性别、口音等人口统计元数据，能够训练语音识别引擎提升其准确性。
+dataset-description-hours =
+    数据集中的每一条都包含了一组独立 MP3 录音及相应的文字文件。数据集所记录的 <b>{ $total }</b> 小时的录音中，有许多条数据同时包含了年龄、性别、口音等人口统计元数据，能够训练语音识别引擎提升其准确性。
     
-    该数据集当前有 <b>{ $hours }</b> 小时，<b>{ $languageCount }</b> 种语言的语音数据，但我们在持续添加更多的语音数据和更多的语言。前往我们的<languagesLink>语言页</languagesLink>请求加入更多的语言或开始做出贡献。
+    该数据集当前有 <b>{ $valid }</b> 小时，<b>{ $languages }</b> 种语言的语音数据，但我们在持续添加更多的语音数据和更多的语言。前往我们的<languagesLink>语言页</languagesLink>请求加入更多的语言或开始做出贡献。
 want-dataset-update = 想要在我们发布新版本 Common Voice 数据集时得到通知？请订阅我们的新闻通讯。
 subscribe = 订阅
 get-started-speech = 语音识别入门
 other-datasets = 其他语音数据集
 feedback-q = 有反馈要提供？
 deepspeech-info = Common Voice 数据集与 Mozilla 的开源语音识别引擎 Deep Speech 相辅相成，您可以使用其构建语音识别应用程序。您可以阅读我们的 <githubLink>Github 概述</githubLink>或加入<discourseLink> DeepSpeech Discourse</discourseLink> 了解如何入门。
-common-voice-info = 对 Common Voice 有疑问？请加入我们的 <discourseLink>Discourse 论坛</discourseLink>。
+common-voice-info-new = 对 Common Voice 有疑问？有针对特定语言的改进或反馈意见？欢迎加入我们的 <discourseLink>Discourse  论坛</discourseLink>告诉我们。
 data-other-librispeech-description = Librispeech 是从 Librivox 项目中得到的大约 1000 小时的 16khz 有声读物的英文语音语料库。
 data-other-ted-name = TED-LIUM 语料库
 data-other-ted-description = TED-LIUM 语料库由在 TED 网站上提供的讲话音频和转录文字制作而成。
@@ -450,6 +459,9 @@ go-discourse = 前往 Discourse
 missing-language = 未在数据集中看到您的语言？请到语言页请求加入新语言。
 go-languages-page = 前往语言页
 ready-to-validate = 准备好帮助验证语句了吗？
+more = 更多
+close = 关闭
+download = 下载
 
 ## Download Modal
 
@@ -477,21 +489,23 @@ request-language-form-language =
     .label = 语言
 request-language-success-title = 非常感谢，您的语言请求已成功提交。
 request-language-success-content = 我们将尽快披露更多有关如何将您的语言添加到 Common Voice 的信息。
+select-language = 选择语言...
+other-language = 其他语言
 
 ## Languages Overview
 
 language-section-in-progress = 准备中
-language-section-in-progress-description = 处理中的语言，代表我们的该语言社区正在进行贡献，当中的进度反映了网站的本地化翻译进度，以及语句收集进度。
+language-section-in-progress-new-description = 这些语言当前处于社区发展中。其中的进度条反映了<localizationGlossaryLink>网站的本地化</localizationGlossaryLink>翻译进度，以及<sentenceCollectionGlossaryLink>语句</sentenceCollectionGlossaryLink>收集进度。
 language-section-launched = 已上线
-language-section-launched-new-description = 推出的语言代表网站已成功本地化，也收集了足够的语句，足以支持<italic>说话</italic>及<italic>聆听</italic>的贡献。
+language-section-launched-description = 推出的语言代表网站已成功<localizationGlossaryLink>本地化</localizationGlossaryLink>，也收集了足够的<sentenceCollectionGlossaryLink>语句</sentenceCollectionGlossaryLink>，足以支持<speakLink>说话</speakLink>及<listenLink>聆听</listenLink>的贡献。
 languages-show-more = 显示更多
 languages-show-less = 显示更少
-language-speakers = 使用人数
+language-speakers = 参与人数
 language-meter-in-progress = 进度
 language-total-progress = 总共
 language-search-input =
     .placeholder = 搜索
-language-speakers = 使用人数
+language-speakers = 参与人数
 localized = 本地化
 sentences = 句子
 total-hours = 总小时数
@@ -499,7 +513,7 @@ total-hours = 总小时数
 ## New Contribution
 
 action-click = 点击
-action-tap = 点选
+action-tap = 点按
 contribute = 参与贡献
 listen = 聆听
 skip = 跳过

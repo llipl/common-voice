@@ -23,7 +23,12 @@ export function track(
 }
 
 export function trackGlobal(
-  action: 'change-language' | 'github' | 'discourse' | 'contact',
+  action:
+    | 'change-language'
+    | 'github'
+    | 'discourse'
+    | 'contact'
+    | 'footer-newsletter',
   locale: string
 ) {
   track('Global', action, locale);
@@ -36,6 +41,7 @@ export function trackNav(route: string, locale: string) {
 export function trackHome(
   action:
     | 'speak'
+    | 'speak-mars'
     | 'listen'
     | 'read-more'
     | 'metric-locale-change'
@@ -78,6 +84,7 @@ export function trackListening(
 
 export function trackProfile(
   action:
+    | 'create'
     | 'give-email'
     | 'give-username'
     | 'give-accent'

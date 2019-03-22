@@ -16,6 +16,9 @@ indicates-required = * Betyder at feltet skal udfyldes
 
 ## Languages
 
+ab = Abkhasisk
+af = Afrikaans
+am = Amharisk
 an = Aragonsk
 ar = Arabisk
 as = Assamesisk
@@ -47,12 +50,14 @@ fr = Fransk
 fy-NL = Frisisk
 ga-IE = Irsk
 he = Hebraisk
+hr = Kroatisk
 hsb = Øvresorbisk
 hu = Ungarnsk
 ia = Interlingua
 id = Indonesisk
 is = Islandsk
 it = Italiensk
+izh = Izhorian
 ja = Japansk
 ka = Georgisk
 kab = Kabylisk
@@ -61,9 +66,12 @@ ko = Koreansk
 kpv = Komi
 kw = Cornisk
 ky = Kirgisisk
+lt = Litauisk
 mdf = Moksha
+mhr = Meadow Mari
 mk = Makedonsk
 mn = Mongolsk
+mrj = Hill Mari
 myv = Erzya
 nb-NO = Bokmål
 ne-NP = Nepalesisk
@@ -75,6 +83,7 @@ pl = Polsk
 pt-BR = Portugisisk (Brasilien)
 ro = Rumænsk
 ru = Russisk
+rw = Kinyarwanda
 sah = Yakut
 sc = Sardisk
 sk = Slovakisk
@@ -87,10 +96,13 @@ te = Telugu
 th = Thai
 tr = Tyrkisk
 tt = Tatarisk
+uby = Ubykh
+udm = Udmurt
 uk = Ukrainsk
 ur = Urdu
 uz = Usbekisk
 vi = Vietnamesisk
+vot = Votisk
 zh-CN = Kinesisk (Kina)
 zh-HK = Kinesisk (Hong Kong)
 zh-TW = Kinesisk (Taiwan)
@@ -163,12 +175,17 @@ x-years-short =
         [one] år
        *[other] { $count } år
     }
+help-make-dataset = Hjælp os med at opbygge et offentligt og åbent datasæt af høj kvalitet.
+profile-not-required = Det er ikke påkrævet at have en profil for at bidrage, men vil gøre det nemmere
+sign-up-account = Opret en konto
 
 ## Account Benefits
 
+benefits = Fordele
 
 ## What's public
 
+whats-public = Hvad er offentligt?
 
 ## Speak & Listen Shortcuts
 
@@ -194,6 +211,7 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = O
 shortcut-record-toggle-label = Optag/Stop
+shortcut-rerecord-toggle = [1-5]
 request-language-text = Kan du ikke finde dit sprog på Common Voice?
 request-language-button = Anmod om at få tilføjet et nyt sprog
 
@@ -215,8 +233,10 @@ english = Engelsk
 
 profile-form-username =
     .label = Brugernavn
-profile-form-language =
-    .label = Sprog
+profile-form-native-language =
+    .label = Modersmål
+profile-form-additional-language =
+    .label = Yderligere sprog
 profile-form-accent =
     .label = Accent
 profile-form-age =
@@ -224,7 +244,7 @@ profile-form-age =
 profile-form-gender =
     .label = Køn
 hidden = Skjult
-visible = Synlig
+visible = Synligt
 native-language =
     .label = Modersmål
 profile-form-submit-save = Gem
@@ -235,6 +255,7 @@ female = Kvinde
 other = Andet
 why-profile-title = Hvorfor oprette en profil?
 why-profile-text = Ved at give nogle oplysninger om dig selv, vil de lyddata, du indsender til Common Voice være mere brugbare til talegenkendelses-systemerne, der skal bruge disse data til at forbedre deres nøjagtighed.
+dashboard = Oversigt
 build-profile = Lav profil
 avatar = Avatar
 goals = Mål
@@ -243,24 +264,42 @@ edit-profile = Rediger profil
 profile-create-success = Profil oprettet!
 profile-close = Luk
 profile-explanation = Hold styr på din fremgang med en profil, samtidig med at du gør vores stemme-data mere præcist.
+thanks-for-account = Tak fordi du bekræftede din konto, lad os nu udfylde din profil.
 why-demographic = Hvorfor er dette vigtigt?
 login-signup = Log ind / Opret dig
 edit = Rediger
-download-profile = Download mine data
+download-profile = Hent mine data
+contribution-experience = Bidragserfaring
+skip-submission-note = Bemærk: Du skal stadig vælge mellem Tal eller Lyt for at ændre bidragstype.
 off = Fra
 on = Til
 add-avatar-title = Tilføj en avatar til din profil
 browse-file-title = Upload en billedfil
+browse-file = Træk og slip eller <browseWrap>gennemse</browseWrap>
 connect-gravatar = Forbind med Gravatar
 file_too_large = Den valgte fil er for stor
 manage-subscriptions = Håndter abonnementer
+add-language = Tilføj sprog
 
 ## FAQ
 
 faq-title = Ofte stillede spørgsmål
+faq-why-mission-q = Hvorfor er Common Voice en del af Mozillas mission?
+faq-what-cv-and-deepspeech-q = Hvad er forskellen mellem Common Voice og Deep Speech?
+faq-is-goal-assistant-q = Er målet med Common Voice at opbygge en stemmeassistent?
+faq-do-want-native-q = { $lang } er ikke mit modersmål, og jeg taler med accent. Vil I stadig gerne have, at jeg bidrager med min stemme?
+faq-why-different-speakers-q = Hvorfor har i brug for så mange forskellige stemmer per sprog?
+faq-why-my-lang-q = Hvorfor er mit sprog her ikke?
+faq-what-quality-q = Hvilken lydkvalitet er nødvendig for at et stemmeklip kan bruges i datasættet?
+faq-how-calc-hours-q = Hvordan bliver timerne udregnet af Common Voice?
+faq-how-calc-hours-a = Vi beregner timerne ved at estimere den gennemsnitlige længde af hver optagelse, og ganger det antal med det samlede antal optagelser på tværs af alle sprog.
+faq-why-not-ask-read-a = For at gøre datasættet fra Common Voice så nyttigt som muligt, har vi besluttet kun at tillade tekst, der er tilgængeligt under en Creative Commons (CC0) licens. Brugen af CC0-standarden betyder, at det er sværere at finde og indsamle tekst, men tillader at alle kan bruge datasættet uden brugsbegrænsninger eller tilladelse fra Mozilla. I sidste ende ønsker vi at gøre det flersprogede datasæt så nyttigt som muligt for alle, herunder forskere, universiteter, iværksættere, regeringer, sociale formål og hobbyfolk.
+faq-why-account-q = Hvorfor skal jeg oprette en konto?
+faq-is-account-public-q = Er mine kontooplysninger offentlige?
 
 ## Glossary
 
+glossary = Ordliste
 
 ## NotFound
 
@@ -280,13 +319,8 @@ data-get-started = <speechBlogLink>Kom i gang med talegenkendelse</speechBlogLin
 data-other-title = Andre stemme-datasæt
 data-other-goto = Gå til { $name }
 data-other-download = Hent data
-data-other-librispeech-description = LibriSpeech er et korpus af cirka 1000 timers engelsk tale (optaget ved 16Khz), der stammer fra lydbøger fra LibriVox-projektet.
-data-other-ted-name = TED-LIUM korpus
-data-other-ted-description = TED-LIUM korpus er lavet på baggrund af taler og deres transskriptioner fra TED's websted.
-data-other-voxforge-description = VoxForge blev startet for at indsamle transskriberet tale til brug for frie og open source talegenkendelses-systemer.
-data-other-tatoeba-description = Tatoeba er en stor database af sætninger, oversættelser og indtalt lyd til brug for sprogindlæring. Denne filhentning indeholder indtalt engelsk optaget af fællesskabet bag Tatoeba.
 data-bundle-button = Hent datasæt-samling
-data-bundle-description = Data fra Common Voice  samt alle andre stemme-datasæt ovenfor.
+data-bundle-description = Data fra Common Voice samt alle andre stemme-datasæt ovenfor.
 license = Licens: <licenseLink>{ $license }</licenseLink>
 license-mixed = Blandet
 review-terms = Ved brug af Common Voice accepterer du vores <termsLink>Vilkår</termsLink> og <privacyLink>Privatlivspolitik</privacyLink>
@@ -300,6 +334,33 @@ review-rerecord = Optag igen
 review-cancel = Afbryd indsendelsen
 review-keep-recordings = Behold optagelserne
 review-delete-recordings = Slet mine optagelser
+
+## New Datasets Page
+
+language = Sprog
+# File size in gigabytes
+size = Størrelse
+cv-license = Licens
+audio-format = Lydformat
+number-of-voices = Antal stemmer
+email-to-download = Indtast mailadresse for at hente
+confirm-size = Du er parat til at hente <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+download-language = Hent { $language }
+validated-hours = Validerede timer
+recorded-hours = Indspillede timer
+subscribe = Abonnér
+get-started-speech = Kom godt i gang med talegenkendelse
+data-other-librispeech-description = LibriSpeech er et korpus af cirka 1000 timers engelsk tale (optaget ved 16Khz), der stammer fra lydbøger fra LibriVox-projektet.
+data-other-ted-name = TED-LIUM korpus
+data-other-ted-description = TED-LIUM korpus er lavet på baggrund af taler og deres transskriptioner fra TED's websted.
+data-other-voxforge-description = VoxForge blev startet for at indsamle transskriberet tale til brug for frie og open source talegenkendelses-systemer.
+data-other-tatoeba-description = Tatoeba er en stor database af sætninger, oversættelser og indtalt lyd til brug for sprogindlæring. Denne filhentning indeholder indtalt engelsk optaget af fællesskabet bag Tatoeba.
+go-discourse = Gå til Discourse
+more = Mere
+close = Luk
+download = Hent
 
 ## Download Modal
 
@@ -331,7 +392,6 @@ request-language-success-content = Vi kontakter dig snart med oplysninger om, hv
 ## Languages Overview
 
 language-section-in-progress = I gang
-language-section-in-progress-description = Kommende sprog er ved at blive gjort klar til at fællesskabet kan bidrage. Deres fremgang viser, hvor langt bidragsydere er med at oversætte hjemmesiden og indsamle sætninger.
 language-section-launched = Startet
 languages-show-more = Se flere
 languages-show-less = Se mindre
@@ -412,6 +472,7 @@ validations =
 
 ## Dashboard
 
+your-languages = Dine sprog
 toward-next-goal = Til næste mål
 stats = Statistik
 you = Dig
@@ -422,4 +483,6 @@ validated-clips = Validerede klip
 
 ## Profile Delete
 
+keep = Behold
+remove = Fjern
 profile-form-delete = Slet profil

@@ -53,13 +53,16 @@ fo = Fariseesk
 fr = Frânsk
 fy-NL = Frysk
 ga-IE = Iersk
+gl = Galisysk
 he = Hebriuwsk
+hr = Kroätysk
 hsb = Boppe-Sorbysk
 hu = Hongaarsk
 ia = Ynterlingua
 id = Yndonezysk
 is = Iislânsk
 it = Italiaansk
+izh = Izjorysk
 ja = Japansk
 ka = Georgysk
 kab = Kabylysk
@@ -68,6 +71,8 @@ ko = Koreaansk
 kpv = Kom-Zyrian
 kw = Kornish
 ky = Kirgizysk
+lt = Litousk
+lv = Letsk
 mdf = Moksja
 mhr = Greide-Mari
 mk = Masedoanysk
@@ -85,6 +90,7 @@ pt-BR = Portugeesk (Braziliaansk)
 rm-sursilv = Reto-Romaansk Surselvysk
 ro = Roemeensk
 ru = Russysk
+rw = Kinyarwanda
 sah = Sakha
 sc = Sardyn
 sk = Slowaaksk
@@ -190,6 +196,7 @@ x-years-short =
 help-make-dataset = Help ús in iepenbier tagonklike gegevensset fan hege kwaliteit te bouwen
 profile-not-required = In profyl is net nedich om by te dragen, hoewol it wol nuttich is
 sign-up-account = In account oanmeitsje
+email-subscription-title = skriuw jo yn foar e-mailfernijingen
 
 ## Account Benefits
 
@@ -234,6 +241,8 @@ shortcut-vote-no = N
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = O
 shortcut-record-toggle-label = Opnimme/Stopje
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Fragmint opnij opnimme
 request-language-text = Sjogge jo jo taal noch net op Common Voice?
 request-language-button = In taal oanfreegje
 
@@ -346,7 +355,7 @@ faq-why-different-speakers-a =
     De measte spraakdatabases wurde traind mei in oerfertsjinwurdiging fan bepaalde demografyske groepen, wat liedt ta in foarkar foar <articleLink>manlik en út de middenklasse</articleLink>. Aksinten en dialekten dy't faak ûnderfertsjinwurdige binne yn trainingsgegevenssets wurde meastentiids yn ferbân brocht mei groepen minsken dy't al marzjinalisearre binne. In protte masinen hawwe it ek swier mei it begripen fan froulike stimmen.
     Dit is de reden wêrom wy fariaasje yn ús spraakdatabase wolle!
 faq-why-my-lang-q = Wêrom sit myn taal der noch net by?
-faq-why-my-lang-a = Mozilla kiest net ien taal boppe de oare. Yn stee dêrfan is Common Voice in inisjatyf dat útslutend troch de mienskip oanstjoerd wurdt, mar it ferget <multilangLink>diverske stappen om in nije taal ta te foegjen</multilangLink> en mei it sammeljen fan spraakdonaasjes te begjinnen. Alderearst moat de Common Voice-website oerset wurde, sadat mienskipsleden tagong hawwe ta de ûnderfining fan de meiwurker yn harren eigen taal. Dêrnei hawwe wy in grutte samling auteursrjochtfrije sinnen nedich dy't minsken foarlêze kinne. Sa gau as oan beide easken foldien is, wurdt in taal ‘útbrocht’ op Common Voice, sadat minsken harren stim opnimme kinne en donaasjes fan oaren falidearje kinne.
+faq-why-my-lang-new-a = Mozilla ferkiest net ien taal boppe de oare. Yn stee dêrfan is Common Voice in inisjatyf dat útslutend troch de mienskip oanstjoerd wurdt, mar it ferget <multilangLink>diverske stappen om in nije taal ta te foegjen</multilangLink> en mei it sammeljen fan spraakdonaasjes te begjinnen. Alderearst moat de Common Voice-website oerset wurde, sadat mienskipsleden tagong hawwe ta de ûnderfining fan de meiwurker yn harren eigen taal. Dêrnei hawwe wy in grutte samling auteursrjochtfrije sinnen nedich dy't minsken foarlêze kinne. Sa gau as oan beide easken foldien is, wurdt in taal ‘útbrocht’ op Common Voice, sadat minsken harren stim opnimme kinne en donaasjes fan oaren falidearje kinne. As jo in nije taal beskikber helpe meitsje wolle, gean dan nei 'us <sentenceCollectorLink>helpmiddel foar sinnensamling</sentenceCollectorLink> om te begjinnen.
 faq-what-quality-q = Hokker lûdskwaliteitsnivo is nedich foar in spraakfragmint om yn de gegevensset brûkt wurde te kinnen?
 faq-what-quality-a = Wy wolle dat de Common Voice-gegevensset de audiokwaliteit wjerspegelet dy't yn spraak-nei-tekst-engine yn it wyld hearre sil, dus wy binne op syk nei ôfwikseling. Neist in fariearre sprekkersmienskip leart in gegevensset mei ferskate audiokwaliteiten de spraak-nei-tekst-engine om ferskate libbensechte situaasjes oan te kinnen, fan achtergrûnlûd oant autolawaai. Sa lang jo spraakopname begryplik is, moat dizze goed genôch wêze foar de gegevensset.
 faq-why-10k-hours-q = Wêrom is de doelstelling foar lûdsopnamen 10.000 oer per taal?
@@ -421,6 +430,12 @@ review-delete-recordings = Myn opnamen fuortsmite
 ## New Datasets Page
 
 datasets-headline = Wy bouwe in meartalige, iepen boarne gegevensset fan stimmen, dy't elkenien brûke kin om mei spraak oanstjoerde applikaasjes te trainen.
+datasets-positioning =
+    Wy leauwe dat grutte, iepenbiere spraakgegevenssets foar ynnovaasje en sûne kommersjele kompetysje yn it fjild fan automatisearre learende spraaktechnology soargje sil.
+    
+    De meartalige gegevensset fan Common Voice is no al de grutste iepenbiere spraakgegevensset yn syn soarte, mar it is net de iennige.
+    
+    Beskôgje dizze side as in list mei referinsjes nei oare iepenboarne-spraakgegevenssets en, wylst Common Voice trochgroeit, de startside foar ús nije útjefte.
 language = Taal
 # File size in gigabytes
 size = Grutte
@@ -435,15 +450,22 @@ why-email = <b>Wêrom in e-mailadres?</b> Mooglik moatte wy jo yn de takomst oer
 confirm-size = Jo binne ree om in download te starten fan <b>{ $size }</b>
 size-gigabyte = GB
 size-megabyte = MB
+confirm-no-identify = <b>Jo geane dermei akkoard</b> om net te probearjen de identiteit fan sprekkers yn de Common Voice-gegevensset te achterheljen
 download-language = { $language } downloade
 validated-hours = Falidearre oeren:
 recorded-hours = Opnommen oeren
 whats-inside = Wat is de ynhâld fan de Common Voice-gegevensset?
+dataset-description-hours =
+    Elk ûnderdiel yn de gegevensset bestiet út in unyk MP3-bestân en in byhearrend tekstbestân. In protte fan de <b>{ $total }</b> opnommen oeren yn de gegevensset befetsje ek demografyske metagegevens lykas leeftyd, geslacht en aksint, dy't de sekuerens fan spraakwerkenningsmasinen helpe kinne te trainen.
+    
+    De gegevensset bestiet op dit stuit út <b>{ $valid }</b> falidearre oeren yn <b>{ $languageCount }</b> talen, mar wy foegje trochgeand spraak en talen ta. Sjoch ris op ú <languagesLink>side Talen</languagesLink> om in taal oan te freegjen of in bydrage te leverjen.
+want-dataset-update = Wolle jo updates wannear wy in nije ferzje fan de Common Voice-gegevensset útbringe? Abonnearje jo dan op ús nijsbrief.
 subscribe = Abonnearje
 get-started-speech = Oan 'e gong mei spraakwerkenning
 other-datasets = Oare stimgegevensets
 feedback-q = Kommentaar?
-common-voice-info = Hawwe jo fragen oer Common Voice? Start by ús <discourseLink>Discuorse-foarum</ discourseLink>.
+deepspeech-info = De Common Voice-gegevensset is in oanfolling op Deep Speech, de iepenboarne-spraakwerkenningsmasine fan Mozilla, dy't jo brûke kinne om spraakwerkenningstapassingen te bouwen. Lês ús <githubLink>GitHub-oersicht</githubLink> of besykje it <discourseLink>DeepSpeech-forum op Discourse</discourseLink> om te ûntdekken hoe't jo begjinne kinne.
+common-voice-info-new = Hawwe jo fragen oer Common Voice? Ideeën foar ferbetteringen of kommentaar oer in spesifike taal? Praat mei op 'us <discourseLink>Discourse-foarum</discourseLink> en lit it 'us witte.
 data-other-librispeech-description = LibriSpeech is in korpus fan ûngefear 1.000 oeren lêzen Ingelske spraak yn 16Khz ôfkomstich fan lêzen audioboeken fan it LibriVox-projekt.
 data-other-ted-name = TED-LIUM-korpus
 data-other-ted-description = De TED-LIUM-korpus is makke fan audiopetearen en harren ûndertitels beskikber op de TED-website.
@@ -454,6 +476,9 @@ go-discourse = Gean nei Discourse
 missing-language = Sjogge jo jo taal net yn de gegevensset reflektearre? Gean nei ús talenside om in taal oan te freegjen.
 go-languages-page = Gean nei talenside
 ready-to-validate = Ree om te helpen sinnen te falidearjen?
+more = Mear
+close = Slute
+download = Downloade
 
 ## Download Modal
 
@@ -481,13 +506,15 @@ request-language-form-language =
     .label = Taal
 request-language-success-title = Taaloanfraach mei sukses yntsjinne, tank.
 request-language-success-content = Wy nimme ynkoarten kontakt op mei mear ynformaasje oer hoe't jo taal oan Common Voice tafoege wurde kin .
+select-language = Selektearje in taal…
+other-language = Oare taal
 
 ## Languages Overview
 
 language-section-in-progress = Yn útfiering
-language-section-in-progress-description = Talen yn útfiering wurde op dit stuit ree makke foar meiwurking troch ús mienskippen; harren foarútgong lit sjen hoefier't se binne mei it oersetten fan de website en it sammeljen fan sinnen.
+language-section-in-progress-new-description = Dizze talen wurde op dit stuit troch de mienskip ûntwikkele. De foartgongsbalken jouwe oan hoe fier elke taal is mei de <localizationGlossaryLink>websiteoersetting</localizationGlossaryLink> en it <sentenceCollectionGlossaryLink>sammeljen fan sinnen</sentenceCollectionGlossaryLink>.
 language-section-launched = Lansearre
-language-section-launched-new-description = Foar dizze lansearre talen is de website mei sukses oerset, en binne der genôch sinnen sammele foar trochrinnende bydragen oan it <italic>sprekken</italic> en <italic>lústerjen</italic>.
+language-section-launched-description = Foar dizze beskikbere talen is de website mei sukses <localizationGlossaryLink>oerset</localizationGlossaryLink>, en binne der genôch <sentenceCollectionGlossaryLink>sinnen sammele</sentenceCollectionGlossaryLink> foar trochgeande bydragen oan it <speakLink>sprekken</speakLink> en <listenLink>lústerjen</listenLink>.
 languages-show-more = Mear besjen
 languages-show-less = Minder besjen
 language-speakers = Sprekkers
@@ -590,4 +617,8 @@ keep = Behâlde
 remove = Fuortsmite
 keep-info = Jo anonime stimopnamen bliuwe yn de gegevensset fan Common Voice oanwêzich. Sa gau as jo jo profyl fuortsmite, kinne jo gjin fersyk mear yntsjinje om jo opnamen út de gegevensset fuort te smiten.
 remove-info = Wy sille jo fersyk om jo stimopnamen út de gegevensset fuort te smiten beoardiele. As jo fersyk goedkard wurdt, nimme wy kontakt op mei de partijen dy't de gegevensset download hawwe en freegje wy harren ek jo stimopnamen fuort te smiten.
+why-delete-recordings =
+    Common Voice-opnamen wurde brûkt troch akademisy, lytse bedriuwen en leafhawwers fan spraakwerkenning om te helpen by it trainen en ûntwikkeljen fan frij beskikbere boarnen, lykas spraakmodellen.
+    
+    Kinne jo ús witte litte wêrom jo jo opnamen fuortsmite litte wolle?
 profile-form-delete = Profyl fuortsmite

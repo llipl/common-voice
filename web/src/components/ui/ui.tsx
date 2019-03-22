@@ -1,8 +1,9 @@
+import { Localized } from 'fluent-react/compat';
 import * as React from 'react';
-import { HTMLProps } from 'react';
+import { HTMLProps, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LocaleLink } from '../locale-helpers';
-import { Localized } from 'fluent-react/compat';
+import { CheckIcon } from './icons';
 
 export const Avatar = ({ url }: { url?: string }) => (
   <div className="avatar-wrap">
@@ -48,7 +49,10 @@ export const Hr = (props: any) => <hr className="hr" {...props} />;
 export const LabeledCheckbox = React.forwardRef(
   ({ label, style, ...props }: any, ref) => (
     <label className="labeled-checkbox" style={style}>
-      <input ref={ref} type="checkbox" {...props} />
+      <span className="checkbox-container">
+        <input ref={ref} type="checkbox" {...props} />
+        <CheckIcon className="checkmark" />
+      </span>
       <span className="label">{label}</span>
     </label>
   )
@@ -102,6 +106,7 @@ export const LabeledTextArea = (props: any) => (
 
 export const LinkButton = ({
   className = '',
+  blank = false,
   outline = false,
   rounded = false,
   absolute = false,
@@ -116,41 +121,44 @@ export const LinkButton = ({
         rounded ? 'rounded' : '',
         className,
       ].join(' ')}
+      {...(blank ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       {...props}
     />
   );
 };
 
-type SpinnerState = { showSpinner: boolean };
+export const Spinner = ({ delayMs }: { delayMs?: number }) => {
+  const [showSpinner, setShowSpinner] = useState(false);
 
-export class Spinner extends React.Component<
-  { delayMs: number },
-  SpinnerState
-> {
-  static defaultProps = { delayMs: 300 };
+  useEffect(() => {
+    const timeoutId = setTimeout(() => setShowSpinner(true), delayMs);
+    return () => clearTimeout(timeoutId);
+  }, []);
 
-  state: SpinnerState = { showSpinner: false };
+  return showSpinner ? (
+    <div className="spinner">
+      <span />
+    </div>
+  ) : null;
+};
+Spinner.defaultProps = { delayMs: 300 };
 
-  delayTimeout: number;
-
-  componentDidMount() {
-    this.delayTimeout = setTimeout(() => {
-      this.setState({ showSpinner: true });
-    }, this.props.delayMs);
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.delayTimeout);
-  }
-
-  render() {
-    return this.state.showSpinner ? (
-      <div className="spinner">
-        <span />
-      </div>
-    ) : null;
-  }
-}
+export const StyledLink = ({
+  blank = false,
+  className,
+  ...props
+}: (
+  | React.HTMLProps<HTMLAnchorElement>
+  | React.ComponentProps<typeof LocaleLink>) & { blank?: boolean }) => {
+  const Component = props.href ? 'a' : LocaleLink;
+  return (
+    <Component
+      className={'link ' + (className || '')}
+      {...(blank ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      {...props}
+    />
+  );
+};
 
 export const TextButton = ({ className = '', ...props }: any) => (
   <button type="button" className={'text-button ' + className} {...props} />

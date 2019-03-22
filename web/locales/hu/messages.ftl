@@ -53,13 +53,16 @@ fo = Feröeri
 fr = Francia
 fy-NL = Fríz
 ga-IE = Ír
+gl = Galícia
 he = Héber
+hr = Horvát
 hsb = Szorb, felső
 hu = Magyar
 ia = Interlingva
 id = Indonéz
 is = Izlandi
 it = Olasz
+izh = Izsór
 ja = Japán
 ka = Grúz
 kab = Kabil
@@ -68,6 +71,8 @@ ko = Koreai
 kpv = Komi-zürjén
 kw = Cornwalli
 ky = Kirgiz
+lt = Litván
+lv = Lett
 mdf = Moksa
 mhr = Mezei mari
 mk = Macedón
@@ -85,6 +90,7 @@ pt-BR = Portugál (Brazília)
 rm-sursilv = Romans sursilvan
 ro = Román
 ru = Orosz
+rw = Ruandai
 sah = Szaha
 sc = Szárd
 sk = Szlovák
@@ -186,6 +192,7 @@ x-years-short =
 help-make-dataset = Segítsen minket egy kiváló minőségű, nyilvános és nyílt adatkészlet létrehozásában
 profile-not-required = Profil nem szükséges a közreműködéshez, de hasznos ha van
 sign-up-account = Regisztráljon egy fiókot
+email-subscription-title = iratkozzon fel a hírlevélre
 
 ## Account Benefits
 
@@ -230,6 +237,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Rözgzítés/leállítás
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Klip újrarögzítése
 request-language-text = Nem látja az anyanyelvét a Common Voice-on?
 request-language-button = Nyelv kérése
 
@@ -342,7 +351,7 @@ faq-why-different-speakers-a =
     A legtöbb beszédadatbázist bizonyos demográfiák felülreprezentálásával tanítják be, amely a <articleLink>férfiak és a középosztály</articleLink> felé torzít. Az alulreprezentált akcentusok és dialektusok jellemzően pont olyan embercsoportokhoz kapcsolódnak, akik eleve marginalizáltak. Számos gép a női hangok megértésével is küszködik.
     Ezért akarunk változatosságot a saját hangadatbázisunkban!
 faq-why-my-lang-q = Az én nyelven miért nem szerepel még?
-faq-why-my-lang-a = A Mozilla nem válogat, vagy részesít előnyben nyelveket. Ehelyett a Common Voice teljesen közösség által vezérelt, de <multilangLink>számos lépés szükséges egy új nyelv hozzáadásához</multilangLink>, és a hanghozzájárulások begyűjtésének elkezdéséhez. Először, le kell fordítani a Common Voice weboldalt, hogy a közösség tagjai a saját nyelvükön tapasztalják meg a közreműködés élményét. Aztán egy nagy szerzői joggal nem védett mondatgyűjteményre van szükség, amelyet az emberek fel kell olvassanak. Ha mindkét követelmény teljesül, akkor a nyelv „elindul” a Common Voice-on, így az emberek elkezdhetik rögzíteni a hangjukat, és ellenőrizhetik mások felajánlásait.
+faq-why-my-lang-new-a = A Mozilla nem válogat, vagy részesít előnyben nyelveket. Ehelyett a Common Voice teljesen közösség által vezérelt, de <multilangLink>számos lépés szükséges egy új nyelv hozzáadásához</multilangLink>, és a hanghozzájárulások begyűjtésének elkezdéséhez. Először, le kell fordítani a Common Voice weboldalt, hogy a közösség tagjai a saját nyelvükön tapasztalják meg a közreműködés élményét. Aztán egy nagy szerzői joggal nem védett mondatgyűjteményre van szükség, amelyet az emberek fel kell olvassanak. Ha mindkét követelmény teljesül, akkor a nyelv „elindul” a Common Voice-on, így az emberek elkezdhetik rögzíteni a hangjukat, és ellenőrizhetik mások felajánlásait. Ha segítene egy új nyelv elindításában, akkor a kezdéshez ugorjon a <sentenceCollectorLink>mondatgyűjtő eszközhöz</sentenceCollectorLink>.
 faq-what-quality-q = Milyen hangminőségre van szükség ahhoz, hogy a hangklip használható legyen az adatkészletben?
 faq-what-quality-a = Azt szeretnénk, hogy a Common Voice adatkészlet tükrözze valóságban jellemző hangminőséget, amit a beszéd szöveggé alakítási motor hallani fog, ezért változatosságot szeretnénk. A beszélők sokféle közössége, a változó hangminőség megtanítja a beszéd szöveggé alakítási motort a valós helyzetek kezelésére, a háttérzajtól kezdve az autóhangig. Amíg a hangklip érthető, addig elég jó az adatkészlet számára.
 faq-why-10k-hours-q = Miért 10 000 ellenőrzött óra szükséges nyelvenként a hangrögzítésnél?
@@ -395,11 +404,6 @@ data-get-started = <speechBlogLink>Vágjon bele a Beszédfelismerésbe</speechBl
 data-other-title = További hangadatkészletek…
 data-other-goto = Ugrás ide: { $name }
 data-other-download = Adatok letöltése
-data-other-librispeech-description = A LibriSpeech egy közel 1000 órás 16 KHz-es korpusz, ami a LibriVox projekt hangoskönyveinek felolvasott angol szövegéből áll.
-data-other-ted-name = TED-LIUM korpusz
-data-other-ted-description = A TED-LIUM korpusz a TED weboldalon elérhető előadások hanganyagából és a hozzájuk tartozó feliratokból készült.
-data-other-voxforge-description = A VoxForge a szabad és nyílt forráskódú beszédfelismerő rendszerekkel készült felvételek összegyűjtésére lett létrehozva.
-data-other-tatoeba-description = A Tatoeba egy nyelvtanulásra használt nagy mondat-, fordítás- és hangadatkészlet. Ez a letöltés a közösségük által felvett angol hanganyagokat tartalmazza.
 data-bundle-button = Adatkészletcsomag letöltése
 data-bundle-description = Common Voice adatok plusz az összes fenti adatkészlet.
 license = Licenc: <licenseLink>{ $license }</licenseLink>
@@ -444,12 +448,30 @@ download-language = Letöltés: { $language }
 validated-hours = Ellenőrzött órák
 recorded-hours = Rögzített órák
 whats-inside = Mi van a Common Voice adatkészletben?
-dataset-description =
-    Az adatkészlet minden bejegyzése egy egyéni MP3-ból és egy hozzátartozó szövegfájlból áll. A(z) <b>{ $hours }</b> órányi rögzítésben számos felvétel demográfiai metaadatokat is tartalmaz, mint a beszélő kora, neme és akcentusa, melyek segíthetnek a beszédfelismerő motorok pontosságának betanításában.
+dataset-description-hours =
+    Az adatkészlet minden bejegyzése egy egyéni MP3-ból és egy hozzátartozó szövegfájlból áll. A(z) <b>{ $total }</b> órányi rögzítésben számos felvétel demográfiai metaadatokat is tartalmaz, mint a beszélő kora, neme és akcentusa, melyek segíthetnek a beszédfelismerő motorok pontosságának betanításában.
     
     Az adatkészlet jelenleg <b>{ $hours }</b> órányi ellenőrzött felvételből áll, <b>{ $languageCount }</b> nyelven, de folyamatosan adunk hozzá további hangokat és nyelveket. Nézze meg a <languagesLink>Nyelvek oldalt</languagesLink> egy nyelv kéréséhez vagy a közreműködés elkezdéséhez.
 want-dataset-update = Szeretne értesítést kapni, ha kiadjuk a Common Voice adatkészlet új verzióját? Iratkozzon fel a hírlevelünkre.
 subscribe = Feliratkozás
+get-started-speech = Első lépések a beszédfelismeréssel
+other-datasets = Más hangadatkészletek
+feedback-q = Visszajelzése van?
+deepspeech-info = A Common Voice adatkészlet kiegészíti a Mozilla nyílt forráskódú hangfelismerő motorját, a Deep Speech-et, amelyet beszédfelismerő alkalmazások készítéséhez használhat. Olvassa el a <githubLink>Github áttekintést</githubLink>, vagy az első lépésekhez csatlakozzon a <discourseLink>DeepSpeech Discourse-hoz</discourseLink>.
+common-voice-info-new = Kérdése van a Common Voice-szal kapcsolatban? Ötlete van egy adott nyelv fejlesztéséhez, vagy visszajelzést küldene? Csatlakozzon hozzánk a <discourseLink>Discourse fórumon</discourseLink>, és tudassa velünk.
+data-other-librispeech-description = A LibriSpeech egy közel 1000 órás 16 KHz-es korpusz, ami a LibriVox projekt hangoskönyveinek felolvasott angol szövegéből áll.
+data-other-ted-name = TED-LIUM korpusz
+data-other-ted-description = A TED-LIUM korpusz a TED weboldalon elérhető előadások hanganyagából és a hozzájuk tartozó feliratokból készült.
+data-other-voxforge-description = A VoxForge a szabad és nyílt forráskódú beszédfelismerő rendszerekkel készült felvételek összegyűjtésére lett létrehozva.
+data-other-tatoeba-description = A Tatoeba egy nyelvtanulásra használt nagy mondat-, fordítás- és hangadatkészlet. Ez a letöltés a közösségük által felvett angol hanganyagokat tartalmazza.
+your-feedback = Ötlete van, hogyan tehetnénk jobbá a Common Voice adatkészletet? Tudassa velünk a Discourse-on
+go-discourse = Ugrás a Discourse-hoz
+missing-language = Nem látja a nyelvét az adatkészletben? Nyelv kéréséhez lépjen a Nyelvek oldalra.
+go-languages-page = Ugrás a Nyelvek oldalra
+ready-to-validate = Készen áll, hogy segítsen a mondatok ellenőrzésében?
+more = Több
+close = Bezárás
+download = Letöltés
 
 ## Download Modal
 
@@ -477,13 +499,15 @@ request-language-form-language =
     .label = Nyelv
 request-language-success-title = Nyelvkérés sikeresen beküldve, köszönjük.
 request-language-success-content = Hamarosan jelenkezünk további információkkal arról, hogy tudja hozzáadni a nyelvét a Common Voice projekthez.
+select-language = Válasszon nyelvet…
+other-language = Más nyelv
 
 ## Languages Overview
 
 language-section-in-progress = Folyamatban
-language-section-in-progress-description = A folyamatban lévő nyelveket a közösség közreműködésére építjük; az előrehaladás a weboldal honosítását, és a mondatgyűjtési fázist tükrözi.
+language-section-in-progress-new-description = Ezek a nyelvek jelenleg közösségi fejlesztés alatt állnak. A folyamatjelzők a <localizationGlossaryLink>webhely lokalizáció</localizationGlossaryLink> és a <sentenceCollectionGlossaryLink>mondatgyűjtemény</sentenceCollectionGlossaryLink> előrehaladását jelzi.
 language-section-launched = Elindítva
-language-section-launched-new-description = Ezen elindított nyelvek esetén a weboldal sikeresen honosítva lett, és elég mondat gyűjt össze ahhoz, hogy elinduljanak a <italic>Beszéd</italic> és <italic>Hallgatás</italic> közreműködések.
+language-section-launched-description = Az elindított nyelvek esetén a webhely már sikeresen <localizationGlossaryLink>lokalizálva lett</localizationGlossaryLink>, és elég <sentenceCollectionGlossaryLink>összegyűjtött mondat</sentenceCollectionGlossaryLink> van, hogy lehetővé tegye a <speakLink>Beszéd</speakLink> és <listenLink>Hallgatás</listenLink> közreműködéseket.
 languages-show-more = Több
 languages-show-less = Kevesebb
 language-speakers = Beszélők

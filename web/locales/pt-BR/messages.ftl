@@ -53,13 +53,16 @@ fo = Feroês
 fr = Francês
 fy-NL = Frisão
 ga-IE = Irlandês
+gl = Galego
 he = Hebraico
+hr = Croata
 hsb = Alto Sorábio
 hu = Húngaro
 ia = Interlíngua
 id = Indonésio
 is = Islandês
 it = Italiano
+izh = Ijoriano
 ja = Japonês
 ka = Georgiano
 kab = Kabyle
@@ -68,6 +71,8 @@ ko = Coreano
 kpv = Komi-Zyrian
 kw = Córnico
 ky = Quirguiz
+lt = Lituano
+lv = Letão
 mdf = Moksha
 mhr = Meadow Mari
 mk = Macedônio
@@ -85,6 +90,7 @@ pt-BR = Português (Brasil)
 rm-sursilv = Romanche (Sursilvan)
 ro = Romeno
 ru = Russo
+rw = Kinyarwanda
 sah = Sakha
 sc = Sardo
 sk = Eslovaco
@@ -180,6 +186,7 @@ x-years-short =
 help-make-dataset = Ajude-nos a construir um conjunto de dados de alta qualidade, aberto publicamente
 profile-not-required = Não é obrigatório ter um perfil para contribuir, apesar de ser útil
 sign-up-account = Cadastre uma conta
+email-subscription-title = cadastre-se para receber notícias por e-mail
 
 ## Account Benefits
 
@@ -224,6 +231,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Gravar/Parar
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Regravar clipe
 request-language-text = Seu idioma ainda não está disponível no Common Voice?
 request-language-button = Solicite um idioma
 
@@ -336,7 +345,7 @@ faq-why-different-speakers-a =
     A maioria dos bancos de dados de voz é treinado com uma representação excessiva de certos grupos demográficos, o que resulta em um viés <articleLink>masculino e de classe média</articleLink>. Sotaques e dialetos que tendem a ser sub-representados em conjuntos de dados de treinamento são tipicamente associados a grupos de pessoas que já estão marginalizadas. Muitas máquinas também têm dificuldades para entender vozes femininas.
     É por isso que, no nosso banco de dados de voz, queremos variedade!
 faq-why-my-lang-q = Por que meu idioma ainda não foi incluído?
-faq-why-my-lang-a = A Mozilla não escolhe ou favorece qualquer idioma em detrimento de outro. Em vez disso, o Common Voice é uma iniciativa puramente voltada para a comunidade, mas são necessárias <multilangLink>diversas etapas para adicionar um novo idioma</multilangLink> e começar a coletar doações de voz. Primeiro, o site do Common Voice precisa ser traduzido para que os membros da comunidade possam acessar a experiência do contribuinte em seu próprio idioma. Em seguida, precisamos de uma grande coleção de sentenças sem limitação de direitos autorais para as pessoas lerem em voz alta. Uma vez que ambos os requisitos estejam satisfeitos, um idioma é “lançado” no Common Voice para que as pessoas comecem a gravar suas vozes e validar outras doações.
+faq-why-my-lang-new-a = A Mozilla não escolhe ou favorece nenhum idioma sobre outro. Pelo contrário, o Common Voice é uma iniciativa puramente orientada à comunidade, mas são necessárias <multilangLink>diversas etapas para adicionar um novo idioma</multilangLink> e começar a coletar doações de voz. Primeiro, o site do Common Voice precisa estar traduzido para que membros da comunidade possam acessar a experiência de colaborador em seus próprios idiomas. Depois, precisamos de uma grande coleção de frases livres de direitos autorais para que as pessoas leiam em voz alta. Uma vez que ambos os requisitos estejam satisfeitos, um idioma é “lançado” no Common Voice para as pessoas começarem a gravar suas vozes e validar doações de outros. Se você quer ajudar a lançar um novo idioma, siga para nossa <sentenceCollectorLink>ferramenta de coleta de frases</sentenceCollectorLink> para começar.
 faq-what-quality-q = Qual o nível de qualidade de áudio é necessário para um clipe de voz ser usado no conjunto de dados?
 faq-what-quality-a = Queremos que o conjunto de dados do Common Voice reflita a qualidade de áudio que um mecanismo de conversão de fala para texto ouvirá no mundo real, por isso, estamos procurando variedade. Além de uma comunidade diversificada de falantes, um conjunto de dados com qualidade de áudio variada ensinará o mecanismo de conversão de fala para texto a lidar com várias situações do mundo real, desde conversas ao fundo até ruído de carro. Contanto que o seu clipe de voz seja inteligível, ele deve ser bom o suficiente para o conjunto de dados.
 faq-why-10k-hours-q = Por que 10.000 horas validadas é a meta por idioma de captura de áudio?
@@ -392,11 +401,6 @@ data-get-started = <speechBlogLink>Comece com o reconhecimento de voz</speechBlo
 data-other-title = Outros conjuntos de dados de voz…
 data-other-goto = Ir para { $name }
 data-other-download = Baixar dados
-data-other-librispeech-description = LibriSpeech é um corpus de aproximadamente 1000 horas de leitura em inglês em 16Khz, derivado de audiolivros do projeto LibriVox.
-data-other-ted-name = TED-LIUM Corpus
-data-other-ted-description = TED-LIUM Corpus foi criado a partir de áudios de palestras e suas transcrições, que estão disponíveis no site TED.
-data-other-voxforge-description = VoxForge foi criado para coletar falas transcritas para uso com mecanismos de reconhecimento de fala gratuitos e de código aberto.
-data-other-tatoeba-description = Tatoeba é uma grande base de dados de frases, traduções e áudio falado para uso em aprendizagem de idiomas. Este arquivo contém falas em inglês gravadas por sua comunidade.
 data-bundle-button = Baixar pacote do conjunto de dados
 data-bundle-description = Os dados do Common Voice mais todos os outros conjuntos de dados acima.
 license = Licença: <licenseLink>{ $license }</licenseLink>
@@ -441,10 +445,30 @@ download-language = Baixar { $language }
 validated-hours = Horas validadas
 recorded-hours = Horas gravadas
 whats-inside = O que existe dentro do conjunto de dados do Common Voice?
-dataset-description =
-    Cada entrada no conjunto de dados consiste de um MP3 único e o correspondente arquivo de texto. Muitas das <b>{ $hours }</b> horas gravadas no conjunto de dados também incluem metadados demográficos, como idade, sexo e sotaque, que podem ajudar a treinar a precisão de mecanismos de reconhecimento de voz.
+dataset-description-hours =
+    Cada entrada no conjunto de dados consiste de um MP3 único e o correspondente arquivo de texto. Muitas das <b> { $total }</b> horas gravadas no conjunto de dados também incluem metadados demográficos, como idade, sexo e sotaque, que podem ajudar a treinar a precisão de mecanismos de reconhecimento de voz.
     
-    O conjunto de dados atualmente consiste de <b>{ $hours }</b> horas validadas em <b>{ $languageCount }</b> idiomas, mas estamos sempre adicionando mais vozes e idiomas. Dê uma olhada em nossa <languagesLink>página de idiomas</languagesLink> para solicitar um idioma ou começar a contribuir.
+    O conjunto de dados atualmente consiste de <b>{ $valid }</b> horas validadas em <b>{ $languages }</b> idiomas, mas estamos sempre adicionando mais vozes e idiomas. Dê uma olhada em nossa <languagesLink>página de idiomas</languagesLink> para solicitar um idioma ou começar a contribuir.
+want-dataset-update = Quer receber avisos quando lançarmos novas versões do conjunto de dados do Common Voice? Assine nosso boletim informativo.
+subscribe = Assinar
+get-started-speech = Introdução ao reconhecimento de voz
+other-datasets = Outros conjuntos de dados de voz
+feedback-q = Quer fazer comentários?
+deepspeech-info = O conjunto de dados do Common Voice complementa o mecanismo de reconhecimento de voz de código aberto da Mozilla, Deep Speech, que você pode usar para construir aplicações de reconhecimento de voz. Leia nossa <githubLink>introdução no Github</githubLink> ou participe do <discourseLink>DeepSpeech Discourse</discourseLink> para saber como começar.
+common-voice-info-new = Tem perguntas sobre o Common Voice? Ideias para aprimorar, ou comentários sobre um idioma específico? Junte-se a nós em nosso <discourseLink>fórum do Discourse</discourseLink> e nos conte.
+data-other-librispeech-description = LibriSpeech é um corpus de aproximadamente 1000 horas de leitura em inglês em 16Khz, derivado de audiolivros do projeto LibriVox.
+data-other-ted-name = TED-LIUM Corpus
+data-other-ted-description = TED-LIUM Corpus foi criado a partir de áudios de palestras e suas transcrições, que estão disponíveis no site TED.
+data-other-voxforge-description = VoxForge foi criado para coletar falas transcritas para uso com mecanismos de reconhecimento de fala gratuitos e de código aberto.
+data-other-tatoeba-description = Tatoeba é uma grande base de dados de frases, traduções e áudio falado para uso em aprendizagem de idiomas. Este arquivo contém falas em inglês gravadas por sua comunidade.
+your-feedback = Você tem ideias de como podemos melhorar o conjunto de dados do Common Voice? Fale conosco no Discourse
+go-discourse = Ir para o Discourse
+missing-language = Não encontra seu idioma refletido no conjunto de dados? Para solicitar um idioma, vá na nossa página de idiomas.
+go-languages-page = Ir para a página de idiomas
+ready-to-validate = Pronto para ajudar a validar frases?
+more = Mais
+close = Fechar
+download = Baixar
 
 ## Download Modal
 
@@ -472,13 +496,15 @@ request-language-form-language =
     .label = Idioma
 request-language-success-title = A solicitação de idioma foi enviada com sucesso, obrigado.
 request-language-success-content = Nós entraremos em contato com mais informações sobre como adicionar o seu idioma ao Common Voice muito em breve.
+select-language = Selecionar um idioma...
+other-language = Outro idioma
 
 ## Languages Overview
 
 language-section-in-progress = Em andamento
-language-section-in-progress-description = Idiomas em andamento estão atualmente sendo preparados para contribuições por nossas comunidades. Seu progresso reflete onde estão com relação à tradução do site e à coleta de frases.
+language-section-in-progress-new-description = Esses idiomas estão atualmente em desenvolvimento pela comunidade. As barras de progresso indicam em que ponto cada idioma está no processo de <localizationGlossaryLink>tradução do site</localizationGlossaryLink> e <sentenceCollectionGlossaryLink>coleta de frases</sentenceCollectionGlossaryLink>.
 language-section-launched = Lançados
-language-section-launched-new-description = Nestes idiomas lançados, o site foi traduzido com sucesso e há frases coletadas suficientes para permitir dar sequência a contribuições de <italic>Falar</italic> e <italic>Ouvir</italic>.
+language-section-launched-description = Nestes idiomas lançados, o site foi totalmente <localizationGlossaryLink>traduzido</localizationGlossaryLink> e há <sentenceCollectionGlossaryLink>frases coletadas</sentenceCollectionGlossaryLink> suficientes para permitir dar seguimento a contribuições de <speakLink>Falar</speakLink> e <listenLink>Ouvir</listenLink>.
 languages-show-more = Ver mais
 languages-show-less = Ver menos
 language-speakers = Falantes

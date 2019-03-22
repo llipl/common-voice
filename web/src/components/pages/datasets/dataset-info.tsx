@@ -4,6 +4,16 @@ import {
   withLocalization,
 } from 'fluent-react/compat';
 import * as React from 'react';
+import { useState } from 'react';
+import { connect } from 'react-redux';
+import API from '../../../services/api';
+import StateTree from '../../../stores/tree';
+import { ACCENTS, AGES } from '../../../stores/demographics';
+import {
+  localeConnector,
+  LocalePropsFromState,
+  LocalizedGetAttribute,
+} from '../../locale-helpers';
 import { CloudIcon } from '../../ui/icons';
 import {
   Button,
@@ -14,28 +24,116 @@ import {
   TextButton,
 } from '../../ui/ui';
 import CircleStats from './circle-stats';
+import stats from './stats';
 
 import './dataset-info.css';
 
-class DatasetInfo extends React.Component<
-  LocalizationProps,
-  {
-    showIntroTextMdDown: boolean;
-    hideEmailForm: boolean;
-    email: string;
-    confirmSize: boolean;
-    confirmNoIdentify: boolean;
-  }
-> {
-  state = {
-    showIntroTextMdDown: false,
-    hideEmailForm: true,
-    email: '',
-    confirmSize: false,
-    confirmNoIdentify: false,
-  };
+const msToHours = (ms: number) => Math.floor(ms / 1000 / 60 / 60);
 
+const validHours = Object.entries(stats.locales).reduce(
+  (obj, [locale, localeStats]) => {
+    const avgDuration = localeStats.duration / localeStats.clips;
+    console.log(locale, avgDuration);
+    obj[locale] = msToHours(localeStats.buckets.validated * avgDuration);
+    return obj;
+  },
+  {} as any
+);
+
+const total = msToHours(
+  Object.values(stats.locales).reduce((sum, l) => sum + l.duration, 0)
+);
+const valid = Object.values(validHours).reduce(
+  (sum: number, n: number) => sum + n,
+  0
+) as number;
+const languages = Object.keys(stats.locales).length;
+const globalStats = { total, valid, languages };
+
+const DEFAULT_CATEGORY_COUNT = 2;
+
+const Splits = ({
+  category,
+  values,
+  locale,
+}: {
+  category: string;
+  values: { [key: string]: number };
+  locale: string;
+}) => {
+  const [expanded, setExpanded] = useState(false);
+  const categories = Object.entries(values).filter(
+    ([key, value]) => key && key != 'other' && value > 0
+  );
+  return (
+    <div key={category} className="splits">
+      <LocalizedGetAttribute id={'profile-form-' + category} attribute="label">
+        {label => <h5>{label}</h5>}
+      </LocalizedGetAttribute>
+      <ol onClick={() => setExpanded(!expanded)} tabIndex={0} role="button">
+        {categories
+          .sort((a, b) => (a[1] < b[1] ? 1 : -1))
+          .slice(0, expanded ? categories.length : DEFAULT_CATEGORY_COUNT)
+          .map(([key, value]) => (
+            <li key={key}>
+              <b>{Math.round(value * 100)}%</b>
+              <span> </span>
+              <div className="ellipsis">
+                {category == 'gender' ? (
+                  <Localized id={key}>
+                    <span />
+                  </Localized>
+                ) : category == 'accent' ? (
+                  ACCENTS[locale] ? (
+                    ACCENTS[locale][key]
+                  ) : (
+                    key
+                  )
+                ) : category == 'age' ? (
+                  (AGES as any)[key]
+                ) : (
+                  key
+                )}
+              </div>
+            </li>
+          ))}
+        {!expanded && categories.length > DEFAULT_CATEGORY_COUNT && (
+          <li key="more">...</li>
+        )}
+      </ol>
+    </div>
+  );
+};
+
+interface PropsFromState {
+  api: API;
+}
+
+type Props = LocalePropsFromState & LocalizationProps & PropsFromState;
+
+type State = {
+  locale: string;
+  showIntroTextMdDown: boolean;
+  hideEmailForm: boolean;
+  email: string;
+  confirmSize: boolean;
+  confirmNoIdentify: boolean;
+};
+
+class DatasetInfo extends React.Component<Props, State> {
   emailInputRef = React.createRef<HTMLInputElement>();
+
+  constructor(props: Props, context: any) {
+    super(props, context);
+    this.state = {
+      locale: (stats.locales as any)[props.locale] ? props.locale : 'en',
+      showIntroTextMdDown: false,
+      hideEmailForm: true,
+      email: '',
+      confirmSize: false,
+      confirmNoIdentify: false,
+    };
+  }
 
   showEmailForm = () => this.setState({ hideEmailForm: false });
 
@@ -45,16 +143,27 @@ class DatasetInfo extends React.Component<
     } as any);
   };
 
+  saveHasDownloaded = async () => {
+    const { email, locale } = this.state;
+    await this.props.api.forLocale(locale).saveHasDownloaded(email);
+  };
+
   render() {
     const { getString } = this.props;
     const {
+      locale,
       showIntroTextMdDown,
       hideEmailForm,
       email,
       confirmSize,
       confirmNoIdentify,
     } = this.state;
-
+    const localeStats = stats.locales[locale as keyof typeof stats.locales];
+    const megabytes = Math.floor(localeStats.size / 1000 / 1000);
+    const size =
+      megabytes > 1000
+        ? Math.floor(megabytes / 1000) + ' ' + getString('size-gigabyte')
+        : megabytes + ' ' + getString('size-megabyte');
     return (
       <div className="dataset-info">
         <div className="top">
@@ -83,16 +192,33 @@ class DatasetInfo extends React.Component<
           </div>
           <div className="info">
             <div className="inner">
-              <LabeledSelect label={getString('language')} />
+              <LabeledSelect
+                label={getString('language')}
+                value={locale}
+                onChange={(event: any) =>
+                  this.setState({ locale: event.target.value })
+                }>
+                {Object.keys(stats.locales).map(locale => (
+                  <Localized key={locale} id={locale}>
+                    <option value={locale} />
+                  </Localized>
+                ))}
+              </LabeledSelect>
               <ul className="facts">
                 {Object.entries({
-                  size: 54,
-                  'validated-hr-total': 189,
-                  'overall-hr-total': 200,
+                  size,
+                  'validated-hr-total': validHours[locale],
+                  'overall-hr-total': msToHours(
+                    localeStats.duration
+                  ).toLocaleString(),
                   'cv-license': 'CC-0',
-                  'number-of-voices': (1234).toLocaleString(),
+                  'number-of-voices': localeStats.users.toLocaleString(),
                   'audio-format': 'MP3',
-                  splits: <div>hi</div>,
+                  splits: Object.entries(localeStats.splits)
+                    .filter(([, values]) => Object.keys(values).length > 1)
+                    .map(([category, values]) => (
+                      <Splits {...{ category, values, locale }} />
+                    )),
                 }).map(([id, value], i) => (
                   <li key={id}>
                     <Localized id={id}>
@@ -129,10 +255,7 @@ class DatasetInfo extends React.Component<
                   </Localized>
                   <LabeledCheckbox
                     label={
-                      <Localized
-                        id="confirm-size"
-                        b={<b />}
-                        $size={10 + getString('size-gigabyte')}>
+                      <Localized id="confirm-size" b={<b />} $size={size}>
                         <span />
                       </Localized>
                     }
@@ -156,15 +279,18 @@ class DatasetInfo extends React.Component<
                       confirmNoIdentify &&
                       email &&
                       this.emailInputRef.current.checkValidity()
-                        ? 'someurl'
+                        ? stats.bundleURLTemplate.replace('{locale}', locale)
                         : null
                     }
+                    onClick={this.saveHasDownloaded}
                     rounded
                     className="download-language"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{ minWidth: 300 }}>
                     <Localized
                       id="download-language"
-                      $language={getString('en')}>
+                      $language={getString(locale)}>
                       <span />
                     </Localized>
                     <CloudIcon />
@@ -176,14 +302,23 @@ class DatasetInfo extends React.Component<
         </div>
 
         <div className="description">
-          <CircleStats className="hidden-md-down" />
+          <CircleStats {...globalStats} className="hidden-md-down" />
           <div className="text">
             <div className="line" />
             <Localized id="whats-inside">
               <h1 />
             </Localized>
-            <CircleStats className="hidden-lg-up" />
-            <Localized id="dataset-description" b={<b />}>
+            <CircleStats {...globalStats} className="hidden-lg-up" />
+            <Localized
+              id="dataset-description-hours"
+              b={<b />}
+              {...Object.entries(globalStats).reduce(
+                (obj: any, [key, value]) => {
+                  obj['$' + key] = value;
+                  return obj;
+                },
+                {}
+              )}>
               <p />
             </Localized>
           </div>
@@ -193,4 +328,10 @@ class DatasetInfo extends React.Component<
   }
 }
 
-export default withLocalization(DatasetInfo);
+const mapStateToProps = ({ api }: StateTree) => ({
+  api,
+});
+
+export default localeConnector(
+  withLocalization(connect<PropsFromState>(mapStateToProps)(DatasetInfo))
+);

@@ -42,12 +42,12 @@
     }
 
     & .intro {
-        background: url('/img/datasets/intro-bg.png');
-        background-size: 100% 100%;
         color: var(--white);
 
         @media (--md-down) {
             padding: 70px 0;
+            background: url('/img/datasets/intro-bg-md.svg');
+            background-size: 100% 100%;
 
             & h1,
             & button,
@@ -75,6 +75,8 @@
                 (100vw - var(--desktop-width)) / 2 + var(--page-margin)
             );
             box-sizing: border-box;
+            background: url('/img/datasets/intro-bg.png');
+            background-size: 100% 100%;
 
             & h1,
             & p {
@@ -128,18 +130,29 @@
         }
 
         & .facts {
-            margin: 0 0 20px;
+            margin: 0 0 40px;
             padding: 0;
             list-style: none;
 
-            & li {
+            & > li {
                 border-bottom: 1px solid var(--desert-storm);
                 padding: 20px 0;
                 display: flex;
                 flex-direction: row;
+
+                @media (--md-down) {
+                    &:last-child {
+                        flex-direction: column;
+
+                        & .label {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
             }
 
             & .label {
+                flex-shrink: 0;
                 width: 200px;
                 display: block;
                 font-size: var(--font-size-xs);
@@ -151,6 +164,54 @@
             & .value {
                 font-size: var(--font-size-lg);
                 font-weight: 600;
+            }
+
+            & .splits {
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                & h5 {
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: var(--warm-grey);
+                }
+
+                & ol {
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: var(--font-size);
+                    font-weight: normal;
+                    color: var(--near-black);
+                    list-style: none;
+                }
+
+                & li {
+                    display: flex;
+                    flex-direction: row;
+                    white-space: pre;
+
+                    @media (--md-down) {
+                        width: 100%;
+
+                        & .ellipsis {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
+                    &::after {
+                        content: ', ';
+                    }
+                }
+
+                & li:last-child::after {
+                    content: '';
+                }
             }
         }
 
@@ -187,6 +248,10 @@
             min-width: 300px;
             display: inline-flex;
             justify-content: space-between;
+
+            @media (--lg-up) {
+                margin-bottom: 80px;
+            }
 
             &:not([href]) {
                 background: var(--warm-grey);

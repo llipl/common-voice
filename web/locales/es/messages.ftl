@@ -53,13 +53,16 @@ fo = Feroés
 fr = Francés
 fy-NL = Frisón
 ga-IE = Irlandés
+gl = Gallego
 he = Hebreo
+hr = Croata
 hsb = Alto sorabo
 hu = Húngaro
 ia = Interlingua
 id = Indonesio
 is = Islandés
 it = Italiano
+izh = Izhoriano
 ja = Japonés
 ka = Georgiano
 kab = Cabilio
@@ -68,6 +71,8 @@ ko = Coreano
 kpv = Komi-Zyrian
 kw = Córnico
 ky = Kirguís
+lt = Lituano
+lv = Letón
 mdf = moksha
 mhr = Mari oriental
 mk = Macedonio
@@ -85,6 +90,7 @@ pt-BR = Portugués (Brasil)
 rm-sursilv = romanche sursilvano
 ro = Rumano
 ru = Ruso
+rw = Kinyarwanda
 sah = Yakuto
 sc = sardo
 sk = Eslovaco
@@ -157,7 +163,7 @@ hours-recorded = Horas grabadas
 hours-validated = Horas validadas
 voices-online = Voces actualmente en línea
 todays-progress = Progreso de hoy
-help-reach-goal = Ayúdanos a lograr { $meta }
+help-reach-goal = Ayúdanos a lograr { $goal }
 read-terms-q = ¿Has leído las condiciones de uso del servicio?
 ready-to-record = ¿Listo para donar tu voz?
 all-locales = Todo
@@ -180,6 +186,7 @@ x-years-short =
 help-make-dataset = Ayúdanos a crear una base de datos de alta calidad y accesible para todo el mundo
 profile-not-required = No es necesario tener un perfil para colaborar, aunque puede resultar útil.
 sign-up-account = Regístrate para obtener una cuenta
+email-subscription-title = suscríbete para recibir actualizaciones por correo
 
 ## Account Benefits
 
@@ -224,6 +231,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = g
 shortcut-record-toggle-label = Grabar/Detener
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Grabar de nuevo el clip
 request-language-text = ¿Aún no encuentras tu idioma en Common Voice?
 request-language-button = Solicitar un idioma
 
@@ -336,7 +345,7 @@ faq-why-different-speakers-a =
     La mayoría de las bases de datos de voz están creadas con una representación excesiva de ciertos datos demográficos que dan como resultado un sesgo hacia el <articleLink> masculino de clase media </articleLink>. Los acentos y dialectos que tienden a estar poco representados en las bases de datos de entrenamiento suelen corresponder con grupos de personas que ya están marginados. A muchas máquinas también les cuesta entender las voces femeninas.
     ¡Por eso queremos variedad en nuestra base de datos de voces!
 faq-why-my-lang-q = ¿Por qué mi idioma aún no está incluido?
-faq-why-my-lang-a = Mozilla no elige ni favorece ningún idioma sobre otro. Al contrario, Common Voice es una iniciativa puramente comunitaria, pero hacen falta <multilangLink>varios pasos para agregar un nuevo idioma</multilangLink> y comenzar a recopilar donaciones de voz. Primero, el sitio web de Common Voice debe traducirse para que los miembros de la comunidad puedan acceder a la experiencia del colaborador en su propio idioma. A continuación, necesitamos una gran recopilación de frases sin derechos de autor para que las personas puedan leerlas en voz alta. Una vez que se cumplan ambos requisitos, se "inicia" un idioma en Common Voice para que las personas comiencen a grabar su voz y validar las donaciones de otros.
+faq-why-my-lang-new-a = Mozilla no elige ni favorece ningún idioma sobre otro. Al contrario, Common Voice es una iniciativa impulsada por la comunidad, pero <multilangLink>lleva tiempo agregar un nuevo idioma</multilangLink> y comenzar a recopilar donaciones de voz. Primero, el sitio web de Common Voice debe traducirse para que los miembros de la comunidad puedan acceder a la experiencia del colaborador en su propio idioma. A continuación, necesitamos una gran colección de frases sin derechos de autor que se puedan leer en voz alta. Una vez que se cumplan estos dos requisitos, se “inicia” un idioma en Common Voice para que se pueda empezar a grabar y validar las donaciones de otros. Si quieres ayudar a lanzar un nuevo idioma, dirígete a nuestra <sentenceCollectorLink>herramienta de recopilación de frases</sentenceCollectorLink> para comenzar.
 faq-what-quality-q = ¿Qué nivel de calidad de audio se requiere para que un fragmento de voz se use en la base de datos?
 faq-what-quality-a = Queremos que la base de datos de Common Voice refleje la calidad de audio que un motor de voz a texto escuchará en la realidad, así que estamos buscando variedad. Además de una comunidad diversa de oradores, una base de datos con una calidad de audio variable enseñará al motor de voz a texto a manejar diversas situaciones del mundo real, desde hablar en segundo plano hasta ruido de autos. Si el fragmento de voz es inteligible, debería ser válido para la base de datos.
 faq-why-10k-hours-q = ¿Por qué el objetivo son 10.000 horas validadas?
@@ -436,17 +445,17 @@ download-language = Descargar { $language }
 validated-hours = Horas validadas
 recorded-hours = Horas grabadas
 whats-inside = ¿Qué hay en la base de datos de Common Voice?
-dataset-description =
-    Cada entrada de la base de datos consiste en un único MP3 y su correspondiente archivo de texto. Muchas de las <b>{ $hours }</b> horas grabadas en la base de datos también incluyen metadatos demográficos, como edad, sexo y acento que pueden ayudar a mejorar la precisión en el entrenamiento de los motores de reconocimiento del  habla.
+dataset-description-hours =
+    Cada entrada de la base de datos consiste en un único MP3 y su correspondiente archivo de texto. Muchas de las <b>{ $total }</b> horas grabadas en la base de datos también incluyen metadatos demográficos, como edad, sexo y acento que pueden ayudar a mejorar la precisión en el entrenamiento de los motores de reconocimiento del  habla.
     
-    Por ahora, la base de datos consta de <b>{ $hours }</b> horas validadas en <b>{ $languageCount }</b> idiomas, pero siempre estamos añadiendo más voces e idiomas. Echa un vistazo a nuestra <languagesLink>Página de idiomas</languagesLink> para solicitar un idioma o empezar a colaborar.
+    Por ahora, la base de datos consta de <b>{ $valid }</b> horas validadas en <b>{ $languages }</b> idiomas, pero siempre estamos añadiendo más voces e idiomas. Echa un vistazo a nuestra <languagesLink>Página de idiomas</languagesLink> para solicitar un idioma o empezar a colaborar.
 want-dataset-update = ¿Quieres recibir información sobre nuevas versiones y actualizaciones de las bases de datos de Common Voice? Suscríbete a nuestro boletín.
 subscribe = Suscribirse
 get-started-speech = Empieza hoy mismo con el Reconocimiento de voz
 other-datasets = Otras bases de datos de voces
 feedback-q = ¿Tienes algún comentario?
 deepspeech-info = La base de datos de Common Voice complementa el motor de reconocimiento de voz de código abierto de Deep Speech, que puedes utilizar para crear aplicaciones de reconocimiento de voz. Consulta nuestra <githubLink>sinopsis de Github</githubLink> o únete a <discourseLink>DeepSpeech Discourse</discourseLink> para saber más sobre cómo y por dónde empezar.
-common-voice-info = ¿Tienes dudas sobre Common Voice? Únete a nuestro <discourseLink>foro de Discourse</discourseLink>.
+common-voice-info-new = ¿Tienes dudas sobre Common Voice? ¿Ideas para mejorar o comentarios de un idioma en concreto? Únete a nuestro <discourseLink>foro de Discourse</discourseLink> y cuéntanoslo.
 data-other-librispeech-description = LibriSpeech es un corpus de aproximadamente 1000 horas de inglés hablado a 16Khz derivado de lecturas de audiolibros del proyecto LibriVox.
 data-other-ted-name = Corpus de TED-LIUM
 data-other-ted-description = El corpus de TED-LIUM fue hecho de audios de charlas y de sus transcripciones disponibles en el sitio web de TED
@@ -457,6 +466,9 @@ go-discourse = Ir a Discourse
 missing-language = ¿No aparece tu idioma en la base de datos? Si quieres agregarlo, accede a nuestra Página de idiomas.
 go-languages-page = Ir a la Página de idiomas
 ready-to-validate = ¿Estás listo para validar frases?
+more = Más
+close = Cerrar
+download = Descargar
 
 ## Download Modal
 
@@ -484,13 +496,15 @@ request-language-form-language =
     .label = Idioma
 request-language-success-title = Solicitud de idioma enviada correctamente, gracias.
 request-language-success-content = Estaremos en contacto con más información sobre cómo añadir tu idioma a Common Voice muy pronto.
+select-language = Seleccionar un idioma...
+other-language = Otro idioma
 
 ## Languages Overview
 
 language-section-in-progress = En proceso
-language-section-in-progress-description = Son nuestras comunidades las que crean los idiomas en progreso; es decir, en qué fase se encuentran del proceso de localización web y de la recopilación de frases.
+language-section-in-progress-new-description = Estos idiomas están actualmente en desarrollo por parte de la comunidad. Las barras de progreso indican el avance de cada idioma en el proceso de <localizationGlossaryLink>localización de la web </localizationGlossaryLink> y <sentenceCollectionGlossaryLink>recolección de frases</sentenceCollectionGlossaryLink>.
 language-section-launched = Lanzados
-language-section-launched-new-description = Para estos idiomas el sitio web está totalmente traducido y tiene suficientes frases recolectadas para permitir contribuciones <italic>hablando</italic> y <italic>escuchando</italic> .
+language-section-launched-description = Para estos idiomas publicados, el sitio web ha sido <localizationGlossaryLink>localizado</localizationGlossaryLink> con éxito, y tiene suficientes <sentenceCollectionGlossaryLink>frases recopiladas</sentenceCollectionGlossaryLink> para permitir <speakLink>hablar</spenderLink> y <listenLink>escuchar</ listenLink > aportaciones de forma continua.
 languages-show-more = Ver más
 languages-show-less = Ver menos
 language-speakers = Hablantes

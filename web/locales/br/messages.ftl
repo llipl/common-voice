@@ -53,13 +53,16 @@ fo = Faeroeg
 fr = Galleg
 fy-NL = Frizeg
 ga-IE = Iwerzhoneg
+gl = Galisian
 he = Hebraeg
+hr = Kroateg
 hsb = Uhel-Sorabeg
 hu = Hungareg
 ia = Interlingua
 id = Indonezeg
 is = Islandeg
 it = Italianeg
+izh = Izhorian
 ja = Japaneg
 ka = Jorjieg
 kab = Kabileg
@@ -68,6 +71,8 @@ ko = Koreaneg
 kpv = Komi-Zyrian
 kw = Kerneveureg
 ky = Kirgizeg
+lt = Lituanian
+lv = Latvian
 mdf = Moksha
 mhr = Mari ar pradoù
 mk = Makedoneg
@@ -85,6 +90,7 @@ pt-BR = Portugaleg (Brazil)
 rm-sursilv = Romanch sursilvan
 ro = Roumaneg
 ru = Rusianeg
+rw = Kinyarwanda
 sah = Sakha
 sc = Sardinieg
 sk = Slovakeg
@@ -189,6 +195,7 @@ x-years-short =
 help-make-dataset = Skoazellit ac'hanomp da sevel un diaz-roadennoù foran, digor hag a galite uhel
 profile-not-required = Kaout ur profil n'eo ket un dra ret met evit kemer perzh met talvoudus eo memestra
 sign-up-account = Krouit ur gont
+email-subscription-title = marilhit evit keleier dre bostel
 
 ## Account Benefits
 
@@ -233,6 +240,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Enrollañ/Paouez
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Adenrollañ ar c'hlip
 request-language-text = Ne welit ket ho yezh e Common Voice evit ar mare?
 request-language-button = Goulenn ouzhpennañ ur yezh
 
@@ -340,16 +349,43 @@ faq-why-mission-a = Mennet eo Mozilla da virout ar Web digor ha tizhus d'an holl
 faq-what-cv-and-deepspeech-q = Petra eo an diforc'h etre Common Voice ha Deep Speech?
 faq-what-cv-and-deepspeech-a = Roadennoù Common Voice a gloka lusker anaoudegezh ar vouezh digor e darzh Deep Speech krouet gant Mozilla. Handelv kentañ Deep Speech a zo bet ermaeziet e miz Du 2017 ha kendalc'het en deus da emdreiñ abaoe. Asambles gant roadennoù Common Voice e soñj deomp e rankfe teknologiezhioù ar vouezh bezañ hegerz evit an holl. Spi hon eus e tegaso an teknologiezhioù-mañ dorrerien da sevel aozadoù ha servijoù nevezadus.
 faq-is-goal-assistant-q = Pal Common Voice eo sevel ur skoazeller mouezh?
+faq-is-goal-assistant-a = Pal roadennoù Common Voice eo reiñ an tu da forzh piv er bed da sevel un anaoudeger mouezhioù, an anaoudeger komzer, pe forzh pe arload all a goulenn roadennoù mouezh. Ur skoazeller dre vouezh n'eo nemet un doare arload a c'hallfe arverañ ar roadennoù-mañ.
+faq-do-want-native-q = N'on ket ur c'homzer a vihanik ha komz a ran gant un taol-mouezh, ha fellout a ra deoc'h kaout ma mouezh ivez?
+faq-do-want-native-a = Ya, c'hoant hon eus ho mouezh! Ul lodenn eus pal Common Voice eo dastum ar muiañ posupl a daolioù-mouezh disheñvel evit ma vefe gouest an anaoudeger mouezhioù da vont en-dro evit an holl. Setu perak eo pouezus kaout roadennoù mouezh eus komzerien n'int ket a-vihanik.
+faq-why-different-speakers-q = Perak ho peus ezhomm kement a gomzerien disheñvel dre yezh?
+faq-why-different-speakers-a = Lodenn vrasañ an diaz roadennoù mouezhioù a zo gourdonet gant un dreistdileuridigezh eus poblañsoù 'zo, dreist-holl ar <articleLink>gwazed a renkad etre</articleLink>. An taolioù-mouezh hag ar rannyezhoù a zo is-dileuriet er roadennoù gourdonañ a zo peurvuiañ liammet gant strolladoù a zo arlezekaet endeo. Meur a vekanik o deus diaesterioù evit adanavezout mouezhioù maouezed. Setu perak e fell deomp kaout liesseurted en hor diaz-roadennoù!
+faq-why-my-lang-q = Perak n'eo ket enkorfet ma yezh c'hoazh?
+faq-why-my-lang-new-a = Ne vez ket lakaet ur yezh a-us d'eben gant Mozilla. Un intrudu lusket gant ar gumuniezh eo, met <multilangLink>meur a bazenn a zo evit ouzhpennañ ur yezh nevez</multilangLink> ha kregiñ da zastum enrolladennoù. Da gentañ penn eo dav treiñ lec'hienn ar gumuniezh evit ma c'hallfe bezañ merdeet gant izili ar gumuniezh en o yezh. Da c'houde hon eus ezhomm eus un dastumadeg bras a frazennoù hep gwirioù aozer evit ma c'hallfent bezañ lennet a vouezh uhel gant an dud. Ur wech m'eo leuniet an daou dra-se e c'hall bezañ "lañset" ar yezh war Common Voice evit ma krogfe an dud da enrollañ o mouezh ha da wiriekaat ar roadoù all. Ma fell deoc'h skoazellañ evit lañsañ ur yezh nevez, kit da welet hon ostilh <sentenceCollectorLink>dastum frazennoù</sentenceCollectorLink> evit kregiñ.
+faq-what-quality-q = Peseurt perzhded son a zo goulennet evit implijout ur c'hlip mouezh er roadennoù?
+faq-what-quality-a = Fellout a ra deomp e vefe roadennoù Common Voice heverk eus perzhded ar son a vo enrollet gant un anaoudeger ar vouezh neuze e klaskomp kaout liesseurted. Asambles gant ur gumuniezh liesseurt e c'hallo roadennoù gant perzhded son disheñvel deskiñ d'al lusker anaoudegezh ar vouezh merañ meur a zegouezhioù er bed gwirion, gant trouzioù ur c'harr pe gant tud o komz.en drekleur. Keit ha m'eo komprenus ho klip mouezh eo mat a-walc'h da vezañ enkorfet er roadennoù.
+faq-why-10k-hours-q = Perak eo 10 000 eurvezh gwiriekaet ar pal dre yezh evit tapout ar son?
+faq-why-10k-hours-a = Ar c'hementad a eurioù dleet evit gourdonañ ur reizhiad anaoudegezh ar vouezh an hini eo, tamm pe damm.
+faq-how-calc-hours-q = Penaos e vez jede an eurioù gant Common Voice?
+faq-how-calc-hours-a = Jediñ a reomp an eurioù en ur vrasjediñ hirder keidennel an enrolladennoù, ha lieskementet e vez an niver-mañ dre an niver hollek a enrolladennoù e-touez an holl yezhoù.
+faq-where-src-from-2-q = Eus pelec'h e teu an destenn vammenn?
+faq-where-src-from-2-a =
+    Hor mammennoù testenn a zo savet gant roadoù hiniennoù kement ha divizoù filmoù en domani foran evel <italic>It’s a Wonderful Life</italic>.
+    
+    Gallout a rit gwelout ar frazennoù mammenn en <githubLink>teuliad Github</githubLink>.
+faq-why-not-ask-read-q = Perak ne c'houlennit ket gant an dud lenn levrioù pe pennadoù Wikipedia e yezhoù disheñvel?
+faq-why-not-ask-read-a = Evit ma vefe roadennoù Common Voice an talvoudusañ posupl hon eus divizet aotre testennoù mammenn a zo dindan ul lañvaz Creative Commons (CC0). Ober gant ar CC0 a dalv eo diaesoc'h kavout ha dastum testennoù mammenn, met aotren a ra an holl da implij ar roadennoù mouezh hep bevenn hag hep aotre da gaout eus perzh Mozilla. Da ziwezhañ e fell deomp sevel ar roadennoù liesyezh ken an talvoudusañ posupl evit an holl, en o zouez: klaskerien, skolioù-meur, embregerezhioù, gouarnamantoù, aozadurioù gant palioù kevredadel ha n'eus forzh piv a vefe dedennet.
 faq-why-account-q = Perak e rankfen krouiñ ur gont?
 faq-is-account-public-q = Ha foran eo titouroù ma c'hont?
 faq-how-privacy-q = Penaos e vezit sur e chom dizanv ha prevez titouroù an dud a ro o mouezh?
 faq-how-privacy-a = Skarzhet e vez an titouroù personel en holl glipoù en diaz roadennoù. Pa vez roet roadennoù poblañsouriezh gant ur c'hendaoler dre o frofil eo dizanvet an titour-mañ eus o klip mouezh a-raok bezañ paket evit bezañ pellgarget er roadennoù ha n'eo morse diskouezet d'an holl war o fajenn brofil.
+faq-what-determine-identity-q = Petra dalv ne c'hallan ket "despizañ pivelezh" ar gomzerien e roadennoù Common Voice?
+faq-what-determine-identity-a =
+    Digor hag hegerz d'ar foran eo roadennoù Common Voice ha gallout a ra bezañ implijet evit gourdonañ arloadoù a-bep seurt a implij anaoudegezh ar vouezh. Evit gwareziñ diogelroez hor c'hendaolerien e c'houlennomp gant an holl a bellgarg roadennoù Common Voice da zoujañ ouzh buhez prevez ar gendaloerien.
+    
+    Skarzhet e vez an titouroù a c'hallfe servijout da adanavezout ar c'homzer er c'hlipoù son. Pa pellgargit ar roadennoù ec'h asantit da chom hep klask kavout pivelezh ar gendaolerien. Talvezout a ra ne c'hallit ket klask liammañ titouroù er roadennoù da ditouroù personel ur c'hendaoler. Gallout a rit avat ober gant ar roadennoù evit gourdonañ anaoudegezh ar vouezh, anaoudegezh ar c'homzer pe un arload all, da skouer evit liammañ titouroù er roadennoù da ditouroù all er roadennoù.
 
 ## Glossary
 
 glossary = Geriaoueg
 localization = Lec'hiadur
+localization-explanation = Hon hentenn evit evit treiñ hag azasaat hon endalc'had evit meur a yezh an hini eo.
 sentence-collection = Dastumadeg frazennoù
+sentence-collection-explanation = Dastum frazennoù en domani foran pe skrivañ reoù nevez evit an domani foran.
 hours-recorded-explanation = An niver a eurvezhioù enrollañ hag a zo bet dastumet ganeomp betek-hen.
 hours-validated-explanation = Niver a eurvezhioù enrolladennoù mouezh gwiriekaet gant 2 pe 3 implijer gant ur vot "Ya". Ar re-se a verk pal hollek ar raktres hag a zo da dizhout, 10 000 eurvezh.
 sst = Komz-da-destenn (KDD)
@@ -374,11 +410,6 @@ data-get-started = <speechBlogLink>Kregiñ da anaout ar vouezh</speechBlogLink>
 data-other-title = Hollad roadennoù gant mouezhioù all...
 data-other-goto = Mont da { $name }
 data-other-download = Pellgargañ roadennoù
-data-other-librispeech-description = LibriSpeech a zo anezhañ ur c'horpus a 1000 eurvezh skrid bennak lennet e saozneg (16 kHz) hag a zeu diwar levrioù son ar raktres LibriVox.
-data-other-ted-name = Korpus TED-LIUM
-data-other-ted-description = Savet eo bet ar c'horpus TED-LIUM diwar divizoù komzet hag an treuzskrivadurioù anezho a c'haller kavout war lec'hienn TED.
-data-other-voxforge-description = VoxForge a zo bet savet evit dastum mouezhioù treuzskrivet da vezañ implijet e luskerioù anaout ar vouezh frank.
-data-other-tatoeba-description = Tatoeba a zo anezhañ ur pikol diaz-roadennoù frazennoù, troidigezhioù hag enrolladennoù komzet implijet en deskiñ yezhoù. Ar bellgargadenn-mañ a ya d'he ober saozneg komzet enrollet gant o c'humuniezh.
 data-bundle-button = Pellgargañ un hollad roadennoù
 data-bundle-description = Hollad roadennoù Common Voice mui an holl holladoù roadennoù mouezh all a-us.
 license = Lañvaz: <licenseLink>{ $license }</licenseLink>
@@ -397,6 +428,32 @@ review-delete-recordings = Dilemel ma enrolladennoù
 
 ## New Datasets Page
 
+language = Yezh
+# File size in gigabytes
+size = Ment
+validated-hr-total = Hollad eurvezhioù gwiriekaet
+overall-hr-total = Hollad eurvezhioù en holl
+cv-license = Lañvaz
+audio-format = Stumm aodio
+number-of-voices = Niver a vouezhioù
+email-to-download = Enankit ur c'homlec'h postel evit pellgargañ
+size-gigabyte = Go
+size-megabyte = Mo
+download-language = Pellgargañ { $language }
+validated-hours = Eurvezhioù gwiriet
+recorded-hours = Eurvezhioù enrollet
+subscribe = Koumanantiñ
+feedback-q = Evezhiadennoù ho peus?
+data-other-librispeech-description = LibriSpeech a zo anezhañ ur c'horpus a 1000 eurvezh skrid bennak lennet e saozneg (16 kHz) hag a zeu diwar levrioù son ar raktres LibriVox.
+data-other-ted-name = Korpus TED-LIUM
+data-other-ted-description = Savet eo bet ar c'horpus TED-LIUM diwar divizoù komzet hag an treuzskrivadurioù anezho a c'haller kavout war lec'hienn TED.
+data-other-voxforge-description = VoxForge a zo bet savet evit dastum mouezhioù treuzskrivet da vezañ implijet e luskerioù anaout ar vouezh frank.
+data-other-tatoeba-description = Tatoeba a zo anezhañ ur pikol diaz-roadennoù frazennoù, troidigezhioù hag enrolladennoù komzet implijet en deskiñ yezhoù. Ar bellgargadenn-mañ a ya d'he ober saozneg komzet enrollet gant o c'humuniezh.
+go-languages-page = Mont da bajenn ar yezh
+ready-to-validate = Prest da sikour gwiriañ frazennoù?
+more = Muioc'h
+close = Serriñ
+download = Pellgargañ
 
 ## Download Modal
 
@@ -424,13 +481,12 @@ request-language-form-language =
     .label = Yezh
 request-language-success-title = Goulenn yezh kaset gant berzh, trugarez vras deoc'h.
 request-language-success-content = Mont a raimp e darempred ganeoc'h a-barzh nemeur gant muioc'h a ditouroù war ar mod da ouzhpennañ ho yezh da gCommon Voice.
+select-language = Diuzañ ur yezh...
 
 ## Languages Overview
 
 language-section-in-progress = War ober
-language-section-in-progress-description = Ar yezhoù war ober a zo war sevel evit ar mare gant hor c'humuniezhioù evit gallout kemer-perzh da c'houde; o araokadenn a ziskouez pelec'h emaint en em gavet ganti war droidigezh al lec'hienn hag an dastum frazennoù.
 language-section-launched = Loc'het
-language-section-launched-new-description = Evit ar yezhoù loc'het da-heul eo bet troet al lec'hienn gant berzh ha trawalc'h a frazennoù a zo bet dastumet evit bezañ gouest da gemer perzh el lodennoù <italic>Komz</italic> ha <italic>Selaou</italic>.
 languages-show-more = Gouzout hiroc'h
 languages-show-less = Gwelet nebeutoc'h
 language-speakers = Komzerien
