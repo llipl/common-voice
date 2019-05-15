@@ -22,6 +22,7 @@ import {
   LocalePropsFromState,
 } from '../../../locale-helpers';
 import Modal, { ModalButtons } from '../../../modal/modal';
+import TermsModal from '../../../terms-modal';
 import { CheckIcon, FontIcon, MicIcon, StopIcon } from '../../../ui/icons';
 import { Button, TextButton } from '../../../ui/ui';
 import { getItunesURL, isFirefoxFocus, isNativeIOS } from '../../../../utility';
@@ -74,7 +75,7 @@ const UnsupportedInfo = () => (
       </Localized>
     </p>
     <a target="_blank" href={getItunesURL()}>
-      <img src="/img/appstore.svg" />
+      <img src={require('./appstore.svg')} />
     </a>
   </div>
 );
@@ -88,7 +89,7 @@ interface PropsFromState {
 
 interface PropsFromDispatch {
   addUploads: typeof Uploads.actions.add;
-  addNotification: typeof Notifications.actions.add;
+  addNotification: typeof Notifications.actions.addPill;
   removeSentences: typeof Sentences.actions.remove;
   tallyRecording: typeof User.actions.tallyRecording;
   refreshUser: typeof User.actions.refresh;
@@ -493,17 +494,10 @@ class SpeakPage extends React.Component<Props, State> {
           )}
         </NavigationPrompt>
         {showPrivacyModal && (
-          <Localized
-            id="review-terms"
-            termsLink={<LocaleLink to={URLS.TERMS} blank />}
-            privacyLink={<LocaleLink to={URLS.PRIVACY} blank />}>
-            <Modal
-              buttons={{
-                [getString('terms-agree')]: this.agreeToTerms,
-                [getString('terms-disagree')]: this.toggleDiscardModal,
-              }}
-            />
-          </Localized>
+          <TermsModal
+            onAgree={this.agreeToTerms}
+            onDisagree={this.toggleDiscardModal}
+          />
         )}
         {showDiscardModal && (
           <Localized id="review-aborted">
@@ -618,7 +612,7 @@ const mapStateToProps = (state: StateTree) => {
 };
 
 const mapDispatchToProps = {
-  addNotification: Notifications.actions.add,
+  addNotification: Notifications.actions.addPill,
   addUploads: Uploads.actions.add,
   removeSentences: Sentences.actions.remove,
   tallyRecording: User.actions.tallyRecording,

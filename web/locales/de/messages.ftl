@@ -8,8 +8,10 @@ email-input =
     .label = E-Mail-Adresse
 submit-form-action = Absenden
 loading = Wird geladen…
+email-opt-in-info = Ich möchte E-Mails wie Zielerinnerungen, Fortschrittsaktualisierungen und Newsletter zu Common Voice erhalten.
 email-opt-in-privacy = Mit Ihrer Zustimmung zum Empfang von E-Mails erklären Sie, dass Sie damit einverstanden sind, dass Mozilla diese Informationen gemäß der <privacyLink>Datenschutzerklärung<privacyLink> von Mozilla verarbeitet.
 indicates-required = * Pflichtfeld
+not-available-abbreviation = Nicht verfügbar
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Arabisch
 as = Assamesisch
 ast = Asturisch
 az = Aserbaidschanisch
+ba = Baschkirisch
 bg = Bulgarisch
 bn = Bengali
 br = Bretonisch
@@ -54,7 +57,9 @@ fr = Französisch
 fy-NL = Friesisch
 ga-IE = Irisch
 gl = Galizisch
+ha = Hausa
 he = Hebräisch
+hi-IN = Hindi
 hr = Kroatisch
 hsb = Obersorbisch
 hu = Ungarisch
@@ -69,13 +74,16 @@ kab = Kabylisch
 kk = Kasachisch
 ko = Koreanisch
 kpv = Komi-Syrjänisch
+ku = Kurdisch
 kw = Cornish
 ky = Kirgisisch
+lij = Ligurisch
 lt = Litauisch
 lv = Lettisch
 mdf = Mokschanisch
 mhr = Wiesenmari
 mk = Mazedonisch
+ml = Malayalam
 mn = Mongolisch
 mrj = Bergmari
 myv = Ersjanisch
@@ -93,6 +101,7 @@ ru = Russisch
 rw = Kinyarwanda
 sah = Sacha
 sc = Sardisch
+si = Singhalesisch
 sk = Slowakisch
 sl = Slowenisch
 sq = Albanisch
@@ -100,6 +109,7 @@ sr = Serbisch
 sv-SE = Schwedisch
 ta = Tamil
 te = Telugu
+tg = Tadschikisch
 th = Thailändisch
 tr = Türkisch
 tt = Tatarisch
@@ -123,6 +133,7 @@ speak = Sprechen
 speak-now = Sprechen Sie jetzt
 datasets = Datensätze
 languages = Sprachen
+about = Über uns
 profile = Profil
 help = Hilfe
 contact = Kontakt
@@ -290,8 +301,6 @@ profile-explanation = Mit einem Profil können Sie Ihren Fortschritt im Auge beh
 thanks-for-account = Danke für die Bestätigung Ihres Kontos, Sie können jetzt Ihr Profil erstellen.
 why-demographic = Warum sind diese Angaben relevant?
 why-demographic-explanation = Das Verknüpfen von Ihren Aufzeichnungen mit anonymisierten Nutzerangaben wie Alter, Geschlecht und Akzent hilft Entwicklern dabei, die Genauigkeit von Spracherkennungssoftware besser zu trainieren. Ihr Benutzername und Ihre E-Mail-Adresse werden natürlich nicht mit diesen Daten verknüpft und es bleibt Ihnen überlassen, ob Sie Ihren Benutzernamen öffentlich machen oder lieber anonym bleiben möchten.
-keep-me-posted =
-    .label = Haltet mich auf dem Laufenden, wenn es was neues bzgl. Common Voice gibt.
 accept-privacy = Ich bin einverstanden, dass diese Daten wie in der <privacyLink>Datenschutzerklärung</privacyLink> beschrieben verwendet werden.
 login-identity = Anmeldeidentität
 login-signup = Anmelden / Registrieren
@@ -311,6 +320,7 @@ connect-gravatar = Mit Gravatar verbinden
 gravatar_not_found = Für Ihre E-Mail-Adresse wurde kein Gravatar gefunden
 file_too_large = Die ausgewählte Datei ist zu groß
 manage-subscriptions = Abonnements verwalten
+manage-email-subscriptions = E-Mail-Abonnements verwalten
 email-already-used = E-Mail-Adresse wird bereits durch ein anderes Konto verwendet
 add-language = Sprache hinzufügen
 change-email-setings = Ändern Sie Ihre E-Mail-Adresse über die Einstellungen unter Anmeldeidentität
@@ -368,6 +378,59 @@ faq-what-determine-identity-a =
     Der Common-Voice-Datensatz ist eine offene und öffentlich zugängliche Ressource, mit der eine Vielzahl von sprachgesteuerten Anwendungen trainiert werden kann. Um die Sicherheit unserer Mitwirkenden zu gewährleisten, bitten wir jeden, der den Common-Voice-Datensatz herunterlädt, um den Schutz der Privatsphäre der Mitwirkenden.
     
     Alle Sprachclips im Datensatz werden um persönlich identifizierende Informationen bereinigt. Wenn Sie den Daten herunterladen, stimmen Sie zu, nicht zu versuchen, die Identität eines Mitwirkenden zu ermitteln. Das bedeutet, dass Sie nicht versuchen dürfen, Informationen in der Datenmenge mit den persönlichen Informationen eines Mitwirkenden zu verknüpfen. Sie können den Datensatz jedoch zum Trainieren der Spracherkennung, Sprechererkennung oder anderer Anwendungen verwenden, indem Sie beispielsweise Informationen im Datensatz mit anderen Informationen verknüpfen, die bereits im Datensatz vorhanden sind.
+faq-what-is-cv = Was ist Common Voice?
+faq-using-cv = Common Voice verwenden
+faq-description = Common-Voice ist ein Teil von Mozillas Initiative, die dabei helfen soll, Maschinen beizubringen, wie echte Menschen sprechen.
+faq-search-for-answers =
+    .label = Nach Antworten suchen
+
+## ABOUT US
+
+about-title = Warum Common Voice?
+about-subtitle = Common-Voice ist ein Teil von Mozillas Initiative, die dabei helfen soll, Maschinen beizubringen, wie echte Menschen sprechen. Zusätzlich zum Common-Voice-Datensatz entwickeln wir auch eine quelloffene Spracherkennungs-Engine namens Deep Speech.
+about-header-description =
+    Beide Projekte sind Teil unserer Bemühungen, die Lücke, die digitale Sprache bedeutet, zu überbrücken. Spracherkennungstechnologien verleihen unseren Geräten eine menschliche Dimension, aber Entwickler benötigen eine riesige Menge an Sprachdaten, um sie zu erstellen. Derzeit sind die meisten dieser Daten teuer und proprietär.
+    Wir möchten Sprachdaten frei und öffentlich verfügbar machen und sicherstellen, dass die Daten die Vielfalt echter Menschen darstellen. Gemeinsam können wir die Spracherkennung für alle verbessern.
+how-does-it-work-title = Wie es funktioniert
+how-does-it-work-text = Wir crowdsourcen einen Open-Source-Datensatz von Stimmen. Spenden Sie Ihre Stimme, überprüfen Sie die Genauigkeit der Clips anderer Personen, und verbessern Sie den Datensatz für alle.
+about-speak = Sprechen
+about-speak-text = Mitwirkende zeichnen Sprachclips auf, indem sie aus einer Datenbank gespendeter Sätze lesen.
+about-listen-queue = Hör-Warteschlange
+about-listen-queue-text = Sprachclips werden in eine Übermittlungswarteschlange eingereiht, in der sie zum Anhören bereitstehen.
+about-listen = Anhören
+about-listen-text = Benutzer überprüfen die Richtigkeit der gespendeten Clips und überprüfen, ob der Sprecher den Satz richtig gelesen hat.
+about-is-it-valid = Ist der Clip korrekt?
+about-is-it-valid-text = Ein Sprachclip wird als „korrekt“ markiert, wenn ein Benutzer ihm eine Ja-Stimme gibt.
+about-yes-votes = ≥ 2 Ja-Stimmen
+about-yes-votes-text = Um in den Common-Voice-Datensatz aufgenommen zu werden, muss ein Sprach-Clip von zwei verschiedenen Benutzern geprüft werden.
+about-no-votes = ≥ 2 Nein-Stimmen
+about-no-votes-text = Wenn ein Benutzer einen Sprachclip ablehnt, kehrt er zur Warteschlange zurück. Wenn er ein zweites Mal abgelehnt wird, wird der Sprachclip in den Clip-Friedhof verschoben.
+about-dataset = Common-Voice-Datensatz
+about-dataset-text = Wenn ein Benutzer einen Sprachclip ablehnt, kehrt er zur Warteschlange zurück. Wenn er ein zweites Mal abgelehnt wird, wird der Sprachclip in den Clip-Friedhof verschoben.
+about-clip-graveyard = Clip-Friedhof
+about-clip-graveyard-text = Der Clip-Friedhof besteht aus Sprachclips, die nicht in den Common-Voice-Datensatz aufgenommen wurden. Der Clip-Friedhof steht wie der Datensatz zum Download zur Verfügung.
+about-partners = Partner
+about-become-a-partner = Partner werden
+about-partnership =
+    Common Voice ist ein Gemeinschaftsprojekt und wir sind auf unsere Gemeinschaft von Partnern und Mitwirkenden angewiesen, um den größten Open-Source-Datensatz von Stimmen zu erstellen.
+    
+    Wir möchten uns bei folgenden Personen und Organisationen für ihre Hilfe bei dem Projekt bedanken:
+about-get-involved = Mitmachen
+about-get-involved-text =
+    Möchten Sie Common Voice noch besser machen?
+    Großartig! Kontaktieren Sie uns per E-Mail oder über <discourseLink>Discourse</discourseLink>,
+    geben Sie uns Feedback über <githubLink>GitHub</githubLink>
+    oder besuchen Sie uns auf <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = Warum?
+about-nav-how-it-works = Wie?
+about-nav-partners = Partner
+about-nav-get-involved = Mitmachen
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Künstliche Intelligenz
+mycroft-description =
+    Mycroft ist der erste Open-Source-Assistent der Welt.
+    Mycroft läuft überall – auf einem Desktop-Computer, in einem Auto oder auf einem Raspberry Pi.
+mycroft-secondary-description = Hierbei handelt es sich um Open-Source-Software, die frei remixt, erweitert und verbessert werden kann. Mycroft kann in allen Bereichen verwendet werden, von wissenschaftlichen Projekten bis hin zu Unternehmenssoftware.
 
 ## Glossary
 

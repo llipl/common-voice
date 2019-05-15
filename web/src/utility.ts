@@ -1,6 +1,6 @@
-/**
- * Functions to be shared across mutiple modules.
- */
+import { UserClient } from 'common/user-clients';
+
+const SEARCH_REG_EXP = new RegExp('</?[^>]+(>|$)', 'g');
 
 /**
  * Generate RFC4122 compliant globally unique identifier.
@@ -78,6 +78,10 @@ export function isMobileWebkit(): boolean {
   );
 }
 
+export function isMobileResolution(): boolean {
+  return window.matchMedia('(max-width: 768px)').matches;
+}
+
 export function isProduction(): boolean {
   return window.location.origin === 'https://voice.mozilla.org';
 }
@@ -97,4 +101,30 @@ export function replacePathLocale(pathname: string, locale: string) {
   const pathParts = pathname.split('/');
   pathParts[1] = locale;
   return pathParts.join('/');
+}
+
+export function getManageSubscriptionURL(account: UserClient) {
+  const firstLanguage = account.locales[0];
+  return `https://www.mozilla.org/${
+    firstLanguage ? firstLanguage.locale + '/' : ''
+  }newsletter/existing/${account.basket_token}`;
+}
+
+export async function hash(text: string) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(text);
+  const digest = await window.crypto.subtle.digest('SHA-256', data);
+
+  return [...new Uint8Array(digest)]
+    .map(value => value.toString(16).padStart(2, '0'))
+    .join('');
+}
+
+export function stringContains(haystack: string, needles: string) {
+  return (
+    haystack
+      .toUpperCase()
+      .replace(SEARCH_REG_EXP, '')
+      .indexOf(needles) !== -1
+  );
 }

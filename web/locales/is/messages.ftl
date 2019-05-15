@@ -8,8 +8,10 @@ email-input =
     .label = Tölvupóstur
 submit-form-action = Senda inn
 loading = Hleður...
+email-opt-in-info = Ég vil gjarnan fá tölvupóst um markmiðsáminningar, framvindu mína og fréttabréf Samróms.
 email-opt-in-privacy = Með því að kjósa að fá tölvupóst frá okkur samþykkir þú að Mozilla notist við þær upplýsingar eins og lýst er í <privacyLink>Meðferð persónuupplýsinga<privacyLink>.
 indicates-required = * táknar nauðsynlegan reit
+not-available-abbreviation = Á ekki við
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -53,7 +55,9 @@ fo = Færeyska
 fr = Franska
 fy-NL = Frísneska
 ga-IE = Írska
+gl = Galisíska
 he = Hebreska
+hi-IN = Hindí
 hr = Króatíska
 hsb = Hásorbíska
 hu = Ungverska
@@ -67,8 +71,11 @@ kab = Kabýlska
 kk = Kasakska
 ko = Kóreska
 kpv = Kómíska
+ku = Kúrdíska
 kw = Kornbreska
 ky = Kyrgíska
+lt = Litháenska
+lv = Lettneska
 mdf = Mokseska
 mhr = Austur-mari
 mk = Makedónska
@@ -89,6 +96,7 @@ ru = Rússneska
 rw = Rúandíska
 sah = Jakútíska
 sc = Sardiníska
+si = Singalíska
 sk = Slóvaska
 sl = Slóvenska
 sq = Albanska
@@ -199,6 +207,8 @@ join-newsletter = Hægt er að skrá sig á póstlistann okkar til að fá frét
 ## What's public
 
 whats-public = Hvað er gert opinbert?
+email-not-public = Við munum ekki birta tölvupóstinn þinn opinberlega.
+recordings-and-locale-public = Það hversu margar upptökur þú hefur lagt til, og til hvaða tungumála, verður opinbert.
 username-optin-public = Þú getur kosið að vera ónafngreind(ur), eða komið fram opinberlega með þínu notandanafni.
 demographic-deidentified = Hafir þú kosið að skrá lýðfræðileg gögn (t.d. aldur, kyn, tungumál og mállýsku) munu þau verða aftengd raddupptökum sem þú sendir inn. Þau munu einnig aldrei verða opinberuð á prófílnum þínum.
 username-email-not-demographic = Notandanafnið þitt og netfang verður ekki tengt gögnum útgáfunnar.
@@ -227,6 +237,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Taka upp/Stöðva
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Taka upp aftur
 request-language-text = Sérðu enn engan Samróm fyrir tungumálið þitt?
 request-language-button = Biðja um tungumál
 
@@ -404,7 +416,7 @@ recorded-hours = Uppteknar klukkustundir
 whats-inside = Hvað er í málheild Samróms?
 subscribe = Gerast áskrifandi
 other-datasets = Aðrar málheildir
-common-voice-info = Hefurðu spurningar um Samróm? Taktu þátt í <discourseLink>Discourse spjallborðinu</discourseLink>.
+feedback-q = Ertu með ábendingar?
 data-other-librispeech-description = LibriSpeech textasafnið geymir u.þ.b. 100 klst af 16Khz hljóðrituðu tali á ensku sem er fengið úr upplesnum bókum af LibriVox verkefninu.
 data-other-ted-name = TED-LIUM textasafn
 data-other-ted-description = TED-LIUM textasafnið var þróað úr talsetningum og afritunum þeirra sem eru fáanlegar á TED vefnum.
@@ -414,6 +426,9 @@ your-feedback = Ertu með hugmyndir um hvernig mætti bæta Samróms-gagnasafni�
 go-discourse = Fara á Discourse
 go-languages-page = Fara á tungumálasíðu
 ready-to-validate = Tilbúin(n) til að hjálpa okkur að staðfesta setningar?
+more = Meira
+close = Loka
+download = Niðurhala
 
 ## Download Modal
 
@@ -441,13 +456,13 @@ request-language-form-language =
     .label = Tungumál
 request-language-success-title = Tungumálabeiðni tókst að senda inn. Takk fyrir.
 request-language-success-content = Við munum vera í sambandi fljótlega til að útskýra betur hvernig hægt er að bæta þínu tungumáli við Samróm.
+select-language = Velja tungumál...
+other-language = Annað tungumál
 
 ## Languages Overview
 
 language-section-in-progress = Í vinnslu
-language-section-in-progress-description = Tungumál sem eru merkt með "í vinnslu" eru í undirbúningi hjá sjálfboðaliðum í samfélaginu fyrir að taka við upptökum og yfirferð almennings. Framvindustikan sýnir hversu langt á leið síðan er komin í þýðingu og að safna í dæmisetningasarpinn.
 language-section-launched = Gangsett
-language-section-launched-new-description = Vefsíðan hefur verið að fullu þýdd og dæmisetningasarpurinn orðinn nógu stór fyrir þessi gangsettu tungumál að taka við <italic>raddupptökum</italic> og <italic>yfirferð</italic> almennings.
 languages-show-more = Sjá meira
 languages-show-less = Sjá minna
 language-speakers = Talendur

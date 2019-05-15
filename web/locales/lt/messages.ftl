@@ -143,13 +143,13 @@ home-title = „Common Voice“ yra „Mozillos“ iniciatyva, padedanti apmokyt
 home-cta = Prisijunk prie mūsų veiklos čia!
 wall-of-text-start = Balsas yra natūralus ir žmogiškas. Todėl mes džiaugiamės kurdami naudingas balso technologijas. Tačiau jas kuriant, reikalingas labai didelis balso duomenų kiekis.
 wall-of-text-more-mobile = Dauguma didelių kompanijų duomenų nėra prienami plačiajai publikai. Mes manome, jog tai slopina inovacijas, dėl to vykdome „Common Voice“ – projektą, kurio pagalba kalbos atpažinimo technologijos taps atviros ir pasiekiamos visiems.
-wall-of-text-more-desktop = Dabar ir tu gali sudalyvauti kuriant atvirojo kodo balso duomenų bazę, prieinamą kiekvienam, norinčiam kurti naujoviškas programas įrenginiams ir saitynui. Balsu perskaityk sakinį – taip padėsi apmokyti kompiuterį, kaip kalba tikri žmonės. Patikrink kitų padarytus įrašus – taip padėsi užtikrinti rezultato kokybę. Tai tikrai paprasta!
+wall-of-text-more-desktop = Dabar ir tu gali sudalyvauti kuriant atvirojo kodo balso duomenų bazę, prieinamą kiekvienam, norinčiam kurti naujoviškas programas įrenginiams ir saitynui. Balsu perskaityk frazę – taip padėsi apmokyti kompiuterį, kaip kalba tikri žmonės. Patikrink kitų padarytus įrašus – taip padėsi užtikrinti rezultato kokybę. Tai tikrai paprasta!
 wall-of-text-first = Balsas yra natūralus ir žmogiškas. Todėl mes džiaugiamės kurdami naudingas balso technologijas. Tačiau jas kuriant, reikalingas labai didelis balso duomenų kiekis.
 wall-of-text-second = Dauguma didelių kompanijų duomenų nėra prienami plačiajai publikai. Mes manome, jog tai slopina inovacijas, dėl to vykdome „Common Voice“ – projektą, kurio pagalba kalbos atpažinimo technologijos taps atviros ir pasiekiamos visiems.
 show-wall-of-text = Skaityti daugiau
-help-us-title = Padėk mums patvirtinti sakinius!
-help-us-explain = Spustelėk atkūrimo mygtuką, išklausyk įrašą ir atsakyk: ar diktorius tiksliai perskaitė žemiau pateiktą sakinį?
-no-clips-to-validate = Panašu, jog šia kalba neturime parengtų patikrai garso įrašų. Padėk mums papildyti jų eilę – įrašyk keletą sakinių dabar.
+help-us-title = Padėk mums patvirtinti frazes!
+help-us-explain = Spustelėk atkūrimo mygtuką, išklausyk įrašą ir atsakyk: ar diktorius tiksliai perskaitė žemiau pateiktą frazę?
+no-clips-to-validate = Panašu, jog šia kalba neturime patikrai parengtų garso įrašų. Padėk mums papildyti jų eilę – įrašyk keletą frazių dabar.
 vote-yes = Taip
 vote-no = Ne
 toggle-play-tooltip = Spustelėk { shortcut-play-toggle } įrašui atkurti
@@ -304,7 +304,7 @@ email-subscriptions = El. pašto prenumeratos
 download-profile = Parsisiųsti mano duomenis
 contribution-experience = Indėlio pateikimo eiga
 skip-submission-feedback = Praleisti progreso apžvalgos žingsnį
-skip-submission-description = Pateikus indėlį (paspaudus mygtuką „Pateikti“), padėkos už jį ir progreso apžvalgos žingsnis bus praleistas – bus iškart pereita prie kitos penkių sakinių ar įrašų grupės.
+skip-submission-description = Pateikus indėlį (paspaudus mygtuką „Pateikti“), padėkos už jį ir progreso apžvalgos žingsnis bus praleistas – bus iškart pereita prie kitos penkių frazių ar įrašų grupės.
 skip-submission-note = Pastaba: jeigu norėsi pakeisti indėlio tipą, ir toliau galėsi pasinaudoti saitais „Kalbėk“ ir „Klausyk“.
 off = Išjungta
 on = Įjungta
@@ -331,6 +331,9 @@ faq-why-important-q = Kodėl tai svarbu?
 faq-how-get-q = Kaip galiu gauti „Common Voice“ duomenis?
 faq-when-release-q = Kada bus išleisti „Common Voice“ duomenys kitomis kalbomis?
 faq-why-mission-q = Kodėl  „Common Voice“ yra „Mozillos“ misijos dalis?
+faq-why-mission-a = „Mozilla“ siekia, kad internetinė erdvė išliktų atvira ir prieinama kiekvienam. Kad tai įgyvendintume, turime įgalinti internetinės erdvės kūrėjus tokių projektų kaip „Common Voice“ pagalba. Balso technologijoms besivystant ir tampant mūsų kasdienybės dalimi, mes manome, kad jos privalo visų naudotojų poreikius tenkinti vienodai. Tai reiškia, kad, kuriant ir testuojant balso technologijas, šie procesai turi aprėpti daugiau kalbų, įtraukti įvairesnes tarmes ir akcentus, apimti daugiau demografinių grupių. „Common Voice“ yra viešas išteklius, prieinamas kiekvienam, o „Mozilla“ komandos ir kūrėjai visame pasaulyje jau naudoja jį savo projektuose.
+faq-what-cv-and-deepspeech-q = Kuo skiriasi „Common Voice“ ir „Deep Speech“?
+faq-what-cv-and-deepspeech-a = „Common Voice“ duomenų rinkinys papildo „Mozillos“ atviro kodo balso atpažinimo variklį „Deep Speech“. Pirmoji „Deep Speech“ versija buvo išleista 2017 m. lapkritį, o projekto vystymas tęsiasi iki šiol. Mes manome, kad kartu su „Common Voice“ duomenų rinkiniu ši atviro kodo balso atpažinimo technologija turėtų būti prieinama kiekvienam. Viliamės, jog šios technologijos įgalins kūrėjus sukurti virtinę inovatyvių produktų ir paslaugų.
 faq-is-goal-assistant-q = Ar „Common Voice“ tikslas – sukurti balso asistentą?
 faq-why-different-speakers-q = Kodėl jums reikia tiek daug skirtingų kalbančiųjų?
 faq-why-different-speakers-a =
@@ -342,17 +345,23 @@ faq-why-10k-hours-q = Kodėl kiekvienos kalbos tikslas yra 10 000 patvirtintų 
 faq-how-calc-hours-q = Kaip „Common Voice“ apskaičiuoja valandas?
 faq-where-src-from-2-q = Iš kur gaunamas šaltinio tekstas?
 faq-why-not-ask-read-q = Kodėl neprašote žmonių skaityti knygų ar „Vikipedijos“ straipsnių įvairiomis kalbomis?
+faq-why-account-q = Kodėl turėčiau susikurti paskyrą?
 faq-is-account-public-q = Ar mano paskyros informacija yra vieša?
 
 ## Glossary
 
 glossary = Terminai
 localization = Lokalizavimas
-sentence-collection = Sakinių rinkimas
+localization-explanation = procesas, kurio metu išverčiamas ir pritaikomas daugeliui kalbų bei šalių svetainės turinys.
+sentence-collection = Frazių rinkimas
+hours-recorded-explanation = iki šiol balsu įrašytų valandų kiekis.
+sst = Šnekos atpažinimas
+sst-explanation = šnekos atpažinimo technologijos balso duomenis paverčia tekstu.
 
 ## NotFound
 
 notfound-title = Nerasta
+notfound-content = Deja, nežinome ko ieškai.
 
 ## Data
 
@@ -363,7 +372,11 @@ data-download-license = Licencija: <licenseLink>CC-0</licenseLink>
 data-other-title = Kiti balso duomenų rinkiniai…
 data-other-goto = Eiti į { $name }
 data-other-download = Parsisiųsti duomenis
+data-bundle-button = Atsisiųsti duomenų rinkinius
+data-bundle-description = „Common Voice“ ir visi aukščiau nurodyti duomenų rinkiniai.
 license = Licencija: <licenseLink>{ $license }</licenseLink>
+license-mixed = Mišri
+review-terms = Naudodamasis „Common Voice“, sutinki su <termsLink>Sąlygomis</termsLink> ir <privacyLink>Privatumo pranešimu</privatacyLink>
 terms-agree = Sutinku
 terms-disagree = Nesutinku
 review-aborted = Įkėlimas atšauktas. Ar nori pašalinti savo įrašus?
@@ -371,6 +384,7 @@ review-submit-title = Peržiūrėti ir pateikti
 review-submit-msg = Kol kas įrašymas baigtas! <lineBreak> </lineBreak>Dabar peržiūrėk ir pateik savo įrašus žemiau.
 review-recording = Peržiūrėti
 review-rerecord = Įrašyti iš naujo
+review-cancel = Atšaukti indėlį
 review-keep-recordings = Palikti įrašus
 review-delete-recordings = Pašalinti mano įrašus
 
@@ -393,22 +407,32 @@ download-language = Parsisiųsti – { $language }
 validated-hours = Patvirtinta valandų
 recorded-hours = Įrašyta valandų
 whats-inside = Kas yra „Common Voice“ duomenų rinkinyje?
+want-dataset-update = Nori sužinoti kai išleisime naują „Common Voice“ duomenų rinkinio versiją? Prenumeruok mūsų naujienlaiškį.
 subscribe = Prenumeruoti
+get-started-speech = Susipažinkite su kalbos atpažinimu
 other-datasets = Kiti balso duomenų rinkiniai
 feedback-q = Turi komentarų?
 deepspeech-info = „Common Voice“ duomenų rinkinys papildo „Mozillos“ atvirojo kodo balso atpažinimo variklį „Deep Speech“, kuri gali naudoti kalbos atpažinimo programoms kurti. Perskaityk <githubLink>„Github“ apžvalgą </githubLink> arba prisijunk prie <discourseLink>„DeepSpeech“ grupės „Discourse“ platformoje</discourseLink> ir sužinok kaip gali pradėti naudotis šiais duomenimis.
+common-voice-info-new = Turi klausimų apie „Common Voice“? Idėjų ar atsiliepimų apie konkrečią kalbą? Prisijunk prie mūsų <discourseLink>„Discourse“ forumo</discourseLink> ir papasakok.
 data-other-librispeech-description = „LibriSpeech“ yra maždaug 1000 valandų 16 kHz skaitomos anglų kalbos įrašų rinkinys, gautas iš „LibriVox“ projekte įgarsintų garsaknygių.
+data-other-ted-name = „TED-LIUM“ rinkinys
+data-other-ted-description = „TED-LIUM“ rinkinys sukurtas panaudojant „TED“ svetainėje esančias prakalbas ir jų nuorašus.
+data-other-voxforge-description = „VoxForge“ projektas įkurtas siekiant kaupti transkribuotus balso įrašus naudojimui laisvuosiuose ir atvirojo kodo kalbos atpažinimo varikliuose.
 go-discourse = Eiti į „Discourse“
 go-languages-page = Eiti į kalbų tinklalapį
+ready-to-validate = Ar pasiruošei padėti patvirtinti frazes?
 more = Išsamiau
 close = Užverti
 download = Atsisiųsti
 
 ## Download Modal
 
+download-title = Parsiuntimas prasidėjo.
+download-helpus = Padėk mums kurti balto technologijų bendruomenę, palaikykime ryšį el. paštu.
 download-form-email =
     .label = Įvesk savo el. paštą
     .value = Ačiū, susisieksime su jumis.
+download-back = Grįžti į „Common Voice“  duomenų rinkinius
 download-no = Ne, ačiū
 
 ## Contact Modal
@@ -425,10 +449,14 @@ request-language-title = Prašymas aktyvinti kalbą
 request-language-form-language =
     .label = Kalba
 request-language-success-title = Prašymas sėkmingai pateiktas, dėkojame.
+request-language-success-content = Netrukus su tavimi susisieksime ir papasakosime, kaip pridėti tavo norimą kalbą į „Common Voice“.
+select-language = Pasirink kalbą…
+other-language = Kita kalba
 
 ## Languages Overview
 
 language-section-in-progress = Ruošiamos
+language-section-in-progress-new-description = Šios kalbos kol kas yra ruošiamos bendruomenės. Progreso juostos ties kiekviena kalba nurodo, kiek į ją yra <localizationGlossaryLink>lokalizuota ši svetainė</localizationGlossaryLink> ir kiek jai <sentenceCollectionGlossaryLink>surinkta frazių</sentenceCollectionGlossaryLink>.
 language-section-launched = Aktyvios
 languages-show-more = Rodyti daugiau
 languages-show-less = Rodyti mažiau
@@ -439,7 +467,7 @@ language-search-input =
     .placeholder = Ieškoti
 language-speakers = Diktorių
 localized = Lokalizuota
-sentences = Sakinių
+sentences = Frazės
 total-hours = Patvirtinta valandų
 
 ## New Contribution
@@ -449,7 +477,14 @@ action-tap = Bakstelėk
 contribute = Prisidėti
 listen = Klausyk
 skip = Praleisti
+shortcuts = Spartieji klavišai
 clips-with-count = <bold>{ $count }</bold> įrašų
+contribute-more =
+    { $count ->
+        [one] Gal nori padėti dar { $count } fraze?
+        [few] Gal nori padėti dar { $count } frazėmis?
+       *[other] Gal nori padėti dar { $count } frazių?
+    }
 record-cta = Pradėk įrašymą
 record-platform-not-supported = Atsiprašome, tavo platforma kol kas nepalaikoma.
 record-platform-not-supported-desktop = Staliniam kompiuteriui gali parsisiųsti naujausią:
@@ -460,12 +495,13 @@ record-error-too-short = Įrašas buvo per trumpas.
 record-error-too-long = Įrašas buvo per ilgas.
 record-error-too-quiet = Įrašas buvo per tylus.
 record-cancel = Atsisakyti pakartotinio įrašymo
-record-instruction = { $actionType }<recordIcon></recordIcon> ir balsu perskaityk sakinį
+record-instruction = { $actionType }<recordIcon></recordIcon> ir balsu perskaityk frazę
 record-stop-instruction = { $actionType }<stopIcon></stopIcon> kai baigsi
 record-three-more-instruction = Liko dar trys!
-record-again-instruction = Šaunu!<recordIcon></recordIcon> Dabar įrašyk kitą sakinį
+record-again-instruction = Šaunu!<recordIcon></recordIcon> Dabar įrašyk kitą frazę
 record-again-instruction2 = Puiku, įrašinėkime toliau <recordIcon></recordIcon>
 record-last-instruction = <recordIcon></recordIcon> Paskutinis!
+review-tooltip = Čia peržiūrėk ir, jei reikia, iš naujo atlik įrašus
 unable-speak = Dabar negali šnekėti?
 review-instruction = Peržiūrėk ir, jei reikia, iš naujo atlik įrašus
 record-submit-tooltip = { $actionType }, kad pateiktum šį savo įnašą
@@ -475,10 +511,11 @@ record-abort-text = Jeigu išeisi dabar, prarasi ką tik įrašytas frazes
 record-abort-submit = Pateikti įrašus
 record-abort-continue = Tęsti įrašymą
 record-abort-delete = Išeiti ir atmesti įrašus
-listen-instruction = { $actionType }<playIcon></playIcon>. Ar diktorius teisingai perskaitė sakinį?
+listen-instruction = { $actionType }<playIcon></playIcon>. Ar diktorius teisingai perskaitė frazę?
 listen-again-instruction = Šaunu! <playIcon></playIcon> Kai galėsi, klausyk vėl
 listen-3rd-time-instruction = Du įrašai išklausyti, taip ir toliau!<playIcon></playIcon>
 listen-last-time-instruction = <playIcon></playIcon>Paskutinis!
+nothing-to-validate = Neturime jokių frazių šia kalba, kurias galėtum patvirtinti – padėk tai pakeisti.
 record-button-label = Įrašyk savo balsą
 share-title-new = <bold>Padėk mums</bold> rasti daugiau balsų
 

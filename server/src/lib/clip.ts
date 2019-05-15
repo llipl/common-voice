@@ -7,8 +7,10 @@ import { getConfig } from '../config-helper';
 import { AWS } from './aws';
 import Model from './model';
 import getLeaderboard from './model/leaderboard';
+import * as Basket from './basket';
 import Bucket from './bucket';
 import { ClientParameterError } from './utility';
+import Awards from './model/awards';
 
 const Transcoder = require('stream-transcoder');
 
@@ -83,6 +85,7 @@ export default class Clip {
     }
 
     await this.model.db.saveVote(id, client_id, isValid);
+    await Awards.checkProgress(client_id);
 
     const glob = clip.path.replace('.mp3', '');
     const voteFile = glob + '-by-' + client_id + '.vote';
@@ -98,6 +101,8 @@ export default class Clip {
     console.log('clip vote written to s3', voteFile);
 
     response.json(glob);
+
+    Basket.sync(client_id).catch(e => console.error(e));
   };
 
   /**
@@ -173,8 +178,11 @@ export default class Clip {
       sentence,
       sentenceId: headers.sentence_id,
     });
+    await Awards.checkProgress(client_id);
 
     response.json(filePrefix);
+
+    Basket.sync(client_id).catch(e => console.error(e));
   };
 
   serveRandomClips = async (

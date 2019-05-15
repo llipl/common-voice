@@ -14,11 +14,13 @@
     & .denominator {
         display: flex;
         flex-direction: row;
+        flex-shrink: 0;
         white-space: pre-wrap;
     }
 }
 
 .circle-progress {
+    &,
     & svg {
         width: 68px;
         height: 68px;
@@ -31,11 +33,11 @@
     & .progress-circle {
         transform-origin: center;
         transform: rotate(-90deg);
-        stroke: var(--progress-color);
+        stroke: var(--type-color);
     }
 
     & text {
-        fill: var(--progress-color);
-        font-weight: bold;
+        fill: var(--type-color);
+        font-weight: 600;
     }
 }

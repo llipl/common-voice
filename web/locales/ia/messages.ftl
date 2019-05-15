@@ -8,8 +8,10 @@ email-input =
     .label = Email
 submit-form-action = Inviar
 loading = Cargamento…
+email-opt-in-info = Io volerea reciper e-mails como rememorationes de objectivos, actualisationes de mi progresso e bulletines de novas sur Common Voice.
 email-opt-in-privacy = Si ti opta de reciper emails, tu accepta que Mozilla usa iste informationes como explicate in su <privacyLink>Politica de confidentialitate<privacyLink>.
 indicates-required = * indica un campo obligatori
+not-available-abbreviation = N/D
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Arabe
 as = Assamese
 ast = Asturiano
 az = Azerbaijano
+ba = Bashkir
 bg = Bulgaro
 bn = Bengali
 br = Breton
@@ -54,7 +57,9 @@ fr = Francese
 fy-NL = Frison
 ga-IE = Irlandese
 gl = Galiciano
+ha = Hausa
 he = Hebreo
+hi-IN = Hindi
 hr = Croata
 hsb = Sorbio, basse
 hu = Hungaro
@@ -69,13 +74,16 @@ kab = Cabilo
 kk = Kazakh
 ko = Coreano
 kpv = Komi-Zyriano
+ku = Kurdo
 kw = Cornico
 ky = Kirghiso
+lij = Ligure
 lt = Lituano
 lv = Latviano
 mdf = Moksha
 mhr = Mari oriental
 mk = Macedone
+ml = Malayalam
 mn = Mongol
 mrj = Mari occidental
 myv = Erzya
@@ -93,6 +101,7 @@ ru = Russo
 rw = Ruanda
 sah = Sakha
 sc = Sardo
+si = Sinhala
 sk = Slovaco
 sl = Sloveno
 sq = Albanese
@@ -100,6 +109,7 @@ sr = Serbo
 sv-SE = Svedese
 ta = Tamil
 te = Telugu
+tg = Tajik
 th = Thai
 tr = Turco
 tt = Tataro
@@ -123,6 +133,7 @@ speak = Parla
 speak-now = Parla ora
 datasets = Collection de datos
 languages = linguas
+about = A proposito de nos
 profile = Profilo
 help = Auxilio
 contact = Contacto
@@ -290,8 +301,6 @@ profile-explanation = Mantene tracia de tu progresso con un profilo e adjuta nos
 thanks-for-account = Gratias pro le confirma de tu conto, ora que nos crea tu profilo.
 why-demographic = Perque isto es relevante?
 why-demographic-explanation = Le datos anonyme del usator como su etate, sexo, e accento adjuta a meliorar le datos audio usate pro maestrar le precision del motores de recognition de voce. Tu nomine de usator e email jammais essera associate con tu datos submittite, e tu pote eliger si render tu nomine de usator public o anonyme.
-keep-me-posted =
-    .label = Io amarea saper le actualisationes e mantener me al currente con lo que eveni a Common Voice.
 accept-privacy = Io concorda que vos tracta iste informationes como vos explica in le <privacyLink>Politica de confidentialitate</privacyLink> de Mozilla
 login-identity = Identitate de connexion
 login-signup = Connecter se / Registrar se
@@ -311,6 +320,7 @@ connect-gravatar = Connecter con Gravatar
 gravatar_not_found = Nulle gravatar trovate pro tu email
 file_too_large = Le file seligite es troppo grande
 manage-subscriptions = Gerer le subscriptiones
+manage-email-subscriptions = Gerer le abonamentos a email
 email-already-used = Iste email es jam utilisate pro un conto differente
 add-language = Adder un lingua
 change-email-setings = Cambia tu email via Configurationes sub Identitate de connexion
@@ -339,6 +349,7 @@ faq-why-different-speakers-a =
     Le major parte del bases de datos es maestrate con un super-representation de certe datos demographic que resultata in un prejudicio verso <articleLink>le classe masculin e medie</articleLink>.Accentos e dialectos que tende a ser sub-representate in le maestramento del collectiones de datos es typicamente associate con gruppos de personas qui es jam marginalisate. Multe machinas alsi es reluctante a comprender le voces feminin.
     Isto es perque in nostre base de datos de voces nos vole le varietate!
 faq-why-my-lang-q = Perque mi lingua non es ancora includite?
+faq-why-my-lang-new-a = Mozilla non prefere o favori ulle lingua contra un altere. In vice, Common Voice es un initiativa ducite solmente per le communitate, ma require <multilangLink>plure grados pro adder un nove lingua</multilangLink> e initiar a colliger donationes de voce. Primo, le sito web de Common Voice debe ser traducite, assi que le membros del communitate pote fruer de instrumentos de collaboration in lor proprie lingua. Pois nos require un grande collection de phrases libere de derectos de autor proque le personas pote los leger ad voce alte. Un vice que ambe ille requisitos es satisfacite, un lingua es “lanceate” sur Common Voice pro le personas a partir del registration de lor voce e del validation del donationes del alteres. Si tu desira adjutar a lancear un nove lingua, va a nostre <sentenceCollectorLink>application de collection de phrases</sentenceCollectorLink> pro comenciar.
 faq-what-quality-q = Que nivello de qualitate del audio es requirite proque le retalios vocal sia usate in le collection de datos?
 faq-what-quality-a = Nos vole que le collection de datos de Common Voice reflecte le qualitate del audio que un motor de recognition vocal audira in natura, assi nos recerca le varietate. In addition a un diverse communitate de parlantes, un collection de datos con qualitate del audio variabile <s0/>maestrara le recognition vocal a gerer varie situationes del mundo real, ab le voces se fundo al rumor del autos. Fin que tu retalio vocal es intelligibile, illo deberea ser bon bastante pro le collection de datos.
 faq-why-10k-hours-q = Perque le objectivo pro capturar audio es 10,000 horas validate per lingua?
@@ -355,6 +366,59 @@ faq-how-privacy-q = Como assecura vos le anonymitate e le confidentialitate del 
 faq-how-privacy-a = Tote le retalios vocal in le collection de datos es depurate del informationes de identification personal. Quando un collaborator forni datos demographic via su profilo, ille informationes es de-identificate de lor retalios vocal ante que esser paccate pro le discarga in le collection de datos e es jammais rendite public sur su pagina del profilo.
 faq-what-determine-identity-q = Que significa que io non pote “determinar le identitate” del parlantes in le collection de datos de Common Voice?
 faq-what-determine-identity-a = Le collection de datos de Common Voice es un ressource aperte e publicamente disponibile que pote ser usate pro maestrar un large varietate de applicationes ad activation vocal. Pro proteger le securitate de nostre collaboratores, <s0/>nos demanda a totes qui discarga le collection de datos de Common Voice de respectar le confidentialitate del collaboratores.
+faq-what-is-cv = Que es Common Voice?
+faq-using-cv = Uso de Common Voice
+faq-description = Common Voice es parte del initiativa de Mozilla pro adjutar a inseniar al machinas como parla le personas real.
+faq-search-for-answers =
+    .label = Cercar responsas
+
+## ABOUT US
+
+about-title = Perque Common Voice?
+about-subtitle = Common Voice es parte del initiativa de Mozilla pro adjutar a inseniar al machinas como parla le personas real. Ultra al collection de datos Common Voice, nos alsi produce un motor open-source de recognition de voce appellate Deep Speech.
+about-header-description =
+    Ambe iste projectos es parte de nostre effortios pro crear un ponte contra le division digital  vocal. Le technologias de recognition vocal apporta un dimension human a nostre apparatos, ma le disveloppatores besonia de un enorme amonta de datos vocal pro los crear. Actualmente, le major parte de ille datos es costose e proprietari.
+    Nos vole render le datos vocal liberemente e publicamente disponibile e verificar que le datos representa le diversitate del personas de real. Insimul nos pote render le recognition vocal melior pro totes.
+how-does-it-work-title = Como functiona illo?
+how-does-it-work-text = Nos collecta un collection open-source de voces donate. Dona tu voce, valida le precision del retalios vocal del alteres, rende melior le collection de datos pro totes!
+about-speak = Parlar
+about-speak-text = Le collaboratores registra retalios vocal legente ab un banca de phrases donate.
+about-listen-queue = Cauda pro le ascolta
+about-listen-queue-text = Le retalios vocal es introducite in un cauda de invio que los appresta pro le ascolta.
+about-listen = Ascoltar
+about-listen-text = Le usatores valida le precision del retalios donate e controla que le lector lege le phrase correctemente.
+about-is-it-valid = Es le retalio valide?
+about-is-it-valid-text = Un retalio vocal es marcate "valide" quando un usator da illo un voto Si.
+about-yes-votes = ≥ 2 votos Si
+about-yes-votes-text = Pro lo introducer in le collection de datos de Common Voice, un retalio vocal debe ser validate per duo diverse usatores.
+about-no-votes = ≥ 2 votos No
+about-no-votes-text = Quando un usator rejecta un retalio vocal illo retorna al Cauda. Si rejectate un secunde vice, le retalio vocal es movite al Cemeterio del retalios.
+about-dataset = Collection de datos de Common Voice
+about-dataset-text = Quando un usator rejecta un retalio vocal illo retorna al Cauda. Si rejectate un secunde vice, le retalio vocal es movite al Cemeterio del retalios.
+about-clip-graveyard = Cemeterio del retalios
+about-clip-graveyard-text = Le Cemeterio del retalios consiste de retalios vocal que non es admittite in le collection de datos de Common Voice. Justo como le collection de datos, le Cemeterio del retalios es disponibile pro discarga.
+about-partners = Partners
+about-become-a-partner = Deveni un partner
+about-partnership =
+    Common Voice es un projecto in collaboration, e nos es dependente de nostre communitate de socios e collaboratores pro crear le major collection de datos de voces open-source de sempre.
+    
+    Nos place regratiar le sequente personas e organisationes pro lor adjuta al projecto:
+about-get-involved = Collabora
+about-get-involved-text =
+    Vole tu adjutar a render Common Voice mesmo melior?
+    Grande! Tener te in contacto via email o sur <discourseLink>Discourse</discourseLink>,
+    invia un commentario per <githubLink>GitHub</githubLink>,
+    o junge te a nos sur <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = Perque ?
+about-nav-how-it-works = Como ?
+about-nav-partners = Partners
+about-nav-get-involved = Collabora
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Intelligentia artificial
+mycroft-description =
+    Mycroft es le prime assistente open-source al mundo.
+    Mycroft flue ubicunque: sur un computator de scriptorio, intra un automobile o sur un Raspberry Pi.
+mycroft-secondary-description = Isto es un software open-source que pote ser liberemente re-miscite, extendite e meliorate. Mycroft pote ser usate in toto, ab un projecto scientific a un application software de interprisa.
 
 ## Glossary
 
@@ -442,6 +506,7 @@ get-started-speech = Comenciar con le Recognition de voce
 other-datasets = Other Voice Datasets
 feedback-q = Ha tu commentario?
 deepspeech-info = Le collection de datos de Common Voice completa motor de recognition del voce open-source de Mozilla, Deep Speech, que tu pote usar pro crear applicationes de recognition de voce. Lege nostre <githubLink>panorama GitHub</githubLink> o junge te a <discourseLink>DeepSpeech Discourse</discourseLink> pro saper como comenciar.
+common-voice-info-new = Ha tu questiones re Common Voice? Ideas pro meliorationes o commentarios re un lingua specific? Junge te a nos sur nostre <discourseLink>foro de Discourse</discourseLink> e face lo nos saper.
 data-other-librispeech-description = LibriSpeech es un corpus de circa 1000 horas de anglese parlate a 16Khz derivate ab la lectura de audio-libros ab le projecto LibriVox.
 data-other-ted-name = Corpus de TED-LIUM
 data-other-ted-description = Le corpus de TED-LIUM esseva facite ab  audio e lor transcriptiones disponibile sur le sito web de TED.
@@ -487,8 +552,10 @@ other-language = Altere linguas
 
 ## Languages Overview
 
-language-section-in-progress = In corso
+language-section-in-progress = In curso
+language-section-in-progress-new-description = Iste linguas es actualmente sub disveloppamento de communitate. Le barras de progresso indica le avantiamento de cata lingua in le processo de <localizationGlossaryLink>localisation del sito web </localizationGlossaryLink> e <sentenceCollectionGlossaryLink>collection de phrases</sentenceCollectionGlossaryLink>.
 language-section-launched = Lanceate
+language-section-launched-description = Le sito web ha essite <localizationGlossaryLink>localisate</localizationGlossaryLink> con successo pro iste linguas lanceate, e il ha satis <sentenceCollectionGlossaryLink>phrases colligite</sentenceCollectionGlossaryLink> pro consentir de contribuer con continuitate tamben per <speakLink>Parlar</speakLink> que per <listenLink>Ascoltar</listenLink>.
 languages-show-more = Vider plus
 languages-show-less = Vider minus
 language-speakers = Locutores

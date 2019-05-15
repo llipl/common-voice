@@ -1,3 +1,5 @@
+import { CustomGoal } from './goals';
+
 export type UserClient = {
   email?: string;
   username?: string;
@@ -11,4 +13,6 @@ export type UserClient = {
   avatar_url?: string;
   clips_count?: number;
   votes_count?: number;
+  awards?: any[];
+  customGoal?: CustomGoal;
 };

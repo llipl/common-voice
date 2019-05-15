@@ -2,12 +2,16 @@ import { Localized } from 'fluent-react/compat';
 import * as React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { connect } from 'react-redux';
+import { UserClient } from 'common/user-clients';
 import { BENEFITS, WHATS_PUBLIC } from '../../../constants';
 import { trackHome } from '../../../services/tracker';
 import { Locale } from '../../../stores/locale';
 import StateTree from '../../../stores/tree';
 import { User } from '../../../stores/user';
+import URLS from '../../../urls';
+import { CUSTOM_GOAL_LOCALE } from '../../custom-goal-lock';
 import { ContributableLocaleLock } from '../../locale-helpers';
+import { Banner } from '../../notification-banner/notification-banner';
 import { RecordLink } from '../../primary-buttons/primary-buttons';
 import RequestLanguageModal from '../../request-language-modal/request-language-modal';
 import { LinkButton } from '../../ui/ui';
@@ -24,7 +28,11 @@ function RegisterSection(props: { locale: string }) {
   const info = (
     <div className="signup-info">
       <div className="tabs">
-        <img className="waves" src="/img/signup-waves.png" alt="Waves" />
+        <img
+          className="waves"
+          src={require('./images/signup-waves.png')}
+          alt="Waves"
+        />
         {['benefits', 'whats-public'].map(l => (
           <label key={l}>
             <input
@@ -93,7 +101,7 @@ function RegisterSection(props: { locale: string }) {
           <img className="mars" src="/img/mars.svg" alt="Mars" />
           <img
             className="screenshot"
-            src={`/img/screenshots/${isBenefits ? 1 : 2}-${index + 1}.png`}
+            src={require(`./images/${isBenefits ? 1 : 2}-${index + 1}.png`)}
             alt=""
           />
         </div>
@@ -105,12 +113,23 @@ function RegisterSection(props: { locale: string }) {
 type HeroType = 'speak' | 'listen';
 
 interface PropsFromState {
+  account: UserClient;
   heroes: string[];
+  isFetchingAccount: boolean;
   locale: Locale.State;
   user: User.State;
 }
 
-function HomePage({ heroes, locale, user }: PropsFromState) {
+const GOALS_NOTIFICATION_KEY = 'seenGoalsNotification';
+
+function HomePage({
+  account,
+  heroes,
+  isFetchingAccount,
+  locale,
+  user,
+}: PropsFromState) {
+  const [showGoalsBanner, setShowGoalsBanner] = useState(false);
   const [activeHero, setActiveHero] = useState<null | HeroType>(null);
   const [showRequestLanguageModal, setShowRequestLanguageModal] = useState(
     false
@@ -124,10 +143,39 @@ function HomePage({ heroes, locale, user }: PropsFromState) {
       statsRef.current.scrollIntoView(true);
       window.scrollBy(0, -130);
     }
-  }, []);
+
+    if (
+      locale == CUSTOM_GOAL_LOCALE &&
+      !isFetchingAccount &&
+      !(account && account.customGoal) &&
+      !localStorage.getItem(GOALS_NOTIFICATION_KEY)
+    ) {
+      setShowGoalsBanner(true);
+    }
+  }, [account, isFetchingAccount, locale]);
 
   return (
     <div className="home">
+      {showGoalsBanner && (
+        <Banner
+          className="goals-banner"
+          ctaButtonProps={
+            account
+              ? { children: 'Get Started', to: URLS.GOALS }
+              : { children: 'Log In / Sign Up', href: '/login' }
+          }
+          onClose={() => {
+            setShowGoalsBanner(false);
+            localStorage.setItem(GOALS_NOTIFICATION_KEY, JSON.stringify(true));
+          }}>
+          Help reach 10,000 hours in English, set a{' '}
+          <a
+            href="https://discourse.mozilla.org/t/common-voice-launches-personal-goals/38794"
+            target="_blank">
+            personal goal
+          </a>
+        </Banner>
+      )}
       <ContributableLocaleLock
         render={({ isContributable }: any) =>
           isContributable ? (
@@ -155,10 +203,14 @@ function HomePage({ heroes, locale, user }: PropsFromState) {
             </div>
           ) : (
             <div className="non-contributable-hero">
-              <img className="fading" src="/img/fading.svg" alt="Fading" />
+              <img
+                className="fading"
+                src={require('./images/fading.svg')}
+                alt="Fading"
+              />
               <img
                 className="waves"
-                src="/img/home-waves/speak.svg"
+                src={require('./images/speak.svg')}
                 alt="Waves"
               />
             </div>
@@ -270,7 +322,9 @@ function HomePage({ heroes, locale, user }: PropsFromState) {
 
 export default connect<PropsFromState>(
   ({ flags, locale, user }: StateTree) => ({
+    account: user.account,
     heroes: flags.homeHeroes,
+    isFetchingAccount: user.isFetchingAccount,
     locale,
     user,
   })

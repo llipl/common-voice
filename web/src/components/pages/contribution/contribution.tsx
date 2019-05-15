@@ -22,7 +22,7 @@ import {
 } from '../../ui/icons';
 import { Button } from '../../ui/ui';
 import { PrimaryButton } from '../../primary-buttons/primary-buttons';
-import ShareModal from './share-modal';
+import ShareModal from '../../share-modal/share-modal';
 import Success from './success';
 import Wave from './wave';
 
@@ -48,9 +48,10 @@ interface Props extends LocalizationProps, PropsFromState {
   activeIndex: number;
   errorContent?: any;
   extraButton?: React.ReactNode;
-  instruction: (
-    props: { $actionType: string; children: any }
-  ) => React.ReactNode;
+  instruction: (props: {
+    $actionType: string;
+    children: any;
+  }) => React.ReactNode;
   isFirstSubmit?: boolean;
   isPlaying: boolean;
   isSubmitted: boolean;

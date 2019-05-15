@@ -8,8 +8,10 @@ email-input =
     .label = E-mail
 submit-form-action = Trimite
 loading = Se încarcă…
+email-opt-in-info = Vreau să primesc mesaje pe e-mail, cum ar fi memento-uri de obiective, actualizări ale progresului propriu și buletine de știri despre Common Voice.
 email-opt-in-privacy = Prin optarea pentru primirea de mesaje pe e-mail, declari că ești de acord ca Mozilla să gestioneze aceste informații conform explicațiilor din <privacyLink>Politica de confidențialitate<privacyLink> Mozilla.
 indicates-required = * Indică un câmp obligatoriu
+not-available-abbreviation = Nu e cazul
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -21,12 +23,13 @@ ab = Abhază
 ace = Acehneză
 ady = Adyghe
 af = Afrikaans
-am = Amharică
+am = Amhară
 an = Aragoneză
 ar = Arabă
 as = Assameză
 ast = Asturiană
 az = Azerbaidjană
+ba = Bașkiră
 bg = Bulgară
 bn = Bengali
 br = Bretonă
@@ -53,7 +56,10 @@ fo = Feroeză
 fr = Franceză
 fy-NL = Friziană
 ga-IE = Irlandeză
+gl = Galiciană
+ha = Hausa
 he = Ebraică
+hi-IN = Hindi
 hr = Croată
 hsb = Sorbenă de sus
 hu = Maghiară
@@ -68,16 +74,20 @@ kab = Kabilă
 kk = Kazahă
 ko = Coreeană
 kpv = Komi-ziriană
+ku = Kurdă
 kw = Cornică
 ky = Kirghiză
+lij = Ligură
 lt = Lituaniană
+lv = Letonă
 mdf = Moksha
 mhr = Mari de est
 mk = Macedoneană
+ml = Malayalam
 mn = Mongolă
 mrj = Mari de vest
 myv = Erzya
-nb-NO = Norvegiană (Bokmål)
+nb-NO = Norvegiană Bokmål
 ne-NP = Nepaleză
 nl = Olandeză
 nn-NO = Norvegiană Nynorsk
@@ -90,7 +100,8 @@ ro = Română
 ru = Rusă
 rw = Kinyarwanda
 sah = Sakha
-sc = Sardiniană
+sc = Sardă
+si = Sinhaleză
 sk = Slovacă
 sl = Slovenă
 sq = Albaneză
@@ -98,6 +109,7 @@ sr = Sârbă
 sv-SE = Suedeză
 ta = Tamilă
 te = Telugu
+tg = Tadjică
 th = Thailandeză
 tr = Turcă
 tt = Tătară
@@ -121,6 +133,7 @@ speak = Vorbește
 speak-now = Vorbește acum
 datasets = Seturi de date
 languages = Limbi
+about = Despre noi
 profile = Profil
 help = Ajutor
 contact = Contact
@@ -232,6 +245,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Înregistrare/Oprire
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Reînregistrează secvența audio
 request-language-text = Încă nu îți vezi limba pe Common Voice?
 request-language-button = Solicită o limbă
 
@@ -290,8 +305,6 @@ profile-explanation = Urmărește-ți progresul cu ajutorul unui profil și ajut
 thanks-for-account = Îți mulțumim pentru confirmarea contului. Acum, să îți construim profilul.
 why-demographic = De ce contează?
 why-demographic-explanation = Datele de utilizator anonimizate, precum vârsta, sexul și accentul, ajută la îmbunătățirea datelor audio folosite la antrenarea și ridicarea gradului de acuratețe al motoarelor de recunoaștere vocală. Numele de utilizator și parola nu vor fi niciodată asociate cu datele trimise și poți opta dacă numele tău de utilizator să fie public sau anonim.
-keep-me-posted =
-    .label = Aș dori actualizări și să fiu la curent cu ce se întâmplă pe Common Voice.
 accept-privacy = Sunt de acord să gestionați aceste informații conform explicațiilor din <privacyLink>Politica de confidențialitate</privacyLink> Mozilla
 login-identity = Identitate de autentificare
 login-signup = Autentificare / Înregistrare
@@ -311,6 +324,7 @@ connect-gravatar = Conectează-te cu Gravatar
 gravatar_not_found = Nu s-a găsit niciun gravatar pentru e-mailul tău
 file_too_large = Fișierul selectat este prea mare
 manage-subscriptions = Gestionează abonamentele
+manage-email-subscriptions = Gestionează abonamentele prin e-mail
 email-already-used = Adresa de e-mail este deja utilizată pentru alt cont
 add-language = Adaugă o limbă
 change-email-setings = Schimbă-ți e-mailul în Setări sub Identitate de autentificare
@@ -342,7 +356,7 @@ faq-do-want-native-a = Da, vrem mai ales vocea ta! O parte a scopului Common Voi
 faq-why-different-speakers-q = De ce aveți nevoie de atât de mulți vorbitori diferiți pe fiecare limbă?
 faq-why-different-speakers-a = Cele mai multe seturi de date vocale sunt construite cu o suprareprezentare a anumitor date demografice, ceea ce conduce la o favorizare a <articleLink>bărbaților și a clasei de mijloc</articleLink>. Accentele și dialectele care tind să fie subreprezentate în seturile de date vocale sunt în mod tipic asociate cu grupuri de persoane deja marginalizate. Multe mașini încă înțeleg cu greu vocile feminine. De aceea vrem varietate în baza noastră de date vocale!
 faq-why-my-lang-q = De ce limba mea nu este încă inclusă?
-faq-why-my-lang-a = Mozilla nu alege și nu favorizează nicio limbă față de altele. În schimb, Common Voice este o inițiativă integral controlată de comunitate, dar este nevoie de <multilangLink>mai multe etape pentru adăugarea unei limbi noi</multilangLink> și începerea colectării donațiilor de voce. Mai întâi, trebuie tradus site-ul web Common Voice astfel încât membrii comunității să poată accesa contribuțiile în limba lor. Apoi, avem nevoie de o colecție mare de propoziții negrevate de drepturi de reproducere pe care persoanele să le citească cu voce tare. Odată satisfăcute aceste două cerințe, limba nouă este „lansată” pe Common Voice și colaboratorii pot începe să își înregistreze vocile și să valideze donațiile celorlalți.
+faq-why-my-lang-new-a = Mozilla nu alege sau nu favorizează nicio limbă în detrimentul altora. În schimb, Common Voice este o inițiativă condusă exclusiv de comunitate, dar necesită <multilangLink>mai mulți pași pentru adăugarea unei limbi noi</multilangLink> și începerea colectării donațiilor de voce. În primul rând, trebuie tradus site-ul Common Voice pentru ca membrii comunității să poată accesa experiența de colaborare în limba lor. Apoi, avem nevoie de o colecție amplă de propoziții care să fie citite cu voce tare și care să nu fie protejate prin drepturi de reproducere. Odată satisfăcute ambele cerințe, o limbă nouă este „lansată” în Common Voice pentru ca persoanele să înceapă să își înregistreze vocile și să își valideze donațiile. Dacă vrei să ne ajuți să lansăm o limbă nouă, mergi la <sentenceCollectorLink>unealta de colectare a propozițiilor</sentenceCollectorLink> și începe.
 faq-what-quality-q = Ce nivel de calitate audio este necesar pentru ca o secvență audio să fie utilizată în setul de date?
 faq-what-quality-a = Vrem ca setul de date Common Voice să reflecte calitatea audio cu care un motor de recunoaștere vocală se va confrunta în realitate, așa că vrem varietate. În plus față de diversitatea comunității de vorbitori, un set de date cu o calitate audio variabilă va ajuta motorul de recunoaștere vocală să învețe să gestioneze variate situații din lumea reală, de la vorbire în fundal până la zgomote de autovehicule. Atât timp cât secvența ta audio este inteligibilă, înseamnă că este suficient de bună pentru adăugarea în setul de date.
 faq-why-10k-hours-q = De ce obiectivul de 10.000 de ore validate de capturi audio pe fiecare limbă?
@@ -365,6 +379,53 @@ faq-what-determine-identity-a =
     Setul de date Common Voice este o resursă deschisă și accesibilă publicului care poate fi utilizată pentru o largă varietate de aplicații cu comandă vocală. Pentru a proteja securitatea colaboratorilor noștri, am cerut tuturor celor care descarcă setul de date Common Voice să respecte viața privată a colaboratorilor noștri.
     
     Toate datele cu caracter personal care permit identificarea sunt eliminate din secvențele vocale din setul de date. La descărcarea setului de date, agreați să nu încercați să determinați identitatea niciunui colaborator. Aceasta înseamnă că nu vi se permite să încercați să legați informații din setul de date cu datele cu caracter personal ale unui colaborator. Dar vi se permite să folosiți setul de date pentru „instruirea” aplicațiilor de recunoaștere vocală, de recunoaștere a vorbitorului sau a altor aplicații de exemplu prin corelarea informațiilor din setul de date cu alte informații deja existente în setul de date.
+faq-what-is-cv = Ce este Common Voice?
+faq-using-cv = Utilizarea Common Voice
+faq-description = Common Voice face parte din inițiativa Mozilla de a ajuta mașinile să învețe cum vorbesc oamenii reali.
+faq-search-for-answers =
+    .label = Caută răspunsuri
+
+## ABOUT US
+
+about-title = De ce Common Voice?
+about-subtitle = Common Voice face parte din inițiativa Mozilla de a ajuta mașinile să învețe cum vorbesc oamenii reali. În plus față de setul de date Common Voice, construim și un motor cu sursă deschisă de recunoaștere vocală, denumit Deep Speech.
+about-header-description = Ambele proiecte fac parte din eforturile noastre pentru a crea o punte de legătură cu vorbirea digitală. Tehnologiile de recunoaștere vocală conferă o dimensiune umană dispozitivelor noastre, dar dezvoltatorii au nevoie de o cantitate imensă de date vocale ca să le construiască. În prezent, cea mai mare parte a acestor date este scumpă și deținută în proprietate. Vrem să facem datele vocale disponibile la liber în domeniul public și să ne asigurăm că datele reprezintă diversitatea oamenilor reali. Împreună putem face recunoașterea vocală mai bună pentru toți.
+how-does-it-work-title = Cum funcționează
+how-does-it-work-text = Creăm un set de date cu sursă deschisă prin participare colectivă. Donează-ți vocea, validează acuratețea înregistrărilor altora, fă setul de date mai bun pentru toți.
+about-speak = Vorbește
+about-speak-text = Colaboratorii își înregistrează secvențele audio citind dintr-o bancă de propoziții donate.
+about-listen-queue = Coadă de ascultare
+about-listen-queue-text = Secvențele audio de voce sunt introduse într-o coadă de transmitere care le pregătește pentru ascultare.
+about-listen = Ascultă
+about-listen-text = Utilizatorii validează acuratețea secvențelor audio donate, verificând faptul dacă vorbitorul citește propoziția corect.
+about-is-it-valid = Secvența este validă?
+about-is-it-valid-text = Secvența de voce este marcată cu „validă” când un utilizator îi acordă un vot de Da.
+about-yes-votes = ≥ 2 voturi de Da
+about-yes-votes-text = Pentru a ajunge în setul de date Common Voice, o secvență audio trebuie validată de doi utilizatori diferiți.
+about-no-votes = ≥ 2 voturi de Nu
+about-no-votes-text = Când un utilizator respinge o secvență audio, aceasta reintră în Coadă. Dacă este respinsă a doua oară, secvența este mutată în Cimitirul de secvențe audio.
+about-dataset = Set de date Common Voice
+about-dataset-text = Când un utilizator respinge o secvență audio, aceasta reintră în Coadă. Dacă este respinsă a doua oară, secvența este mutată în Cimitirul de secvențe audio.
+about-clip-graveyard = Cimitir de secvențe audio
+about-clip-graveyard-text = Cimitirul de secvențe audio constă din secvențe de voce care nu au ajuns în setul de date Common Voice. Ca setul de date Common Voice, și Cimitirul de secvențe audio este disponibil pentru descărcare.
+about-partners = Parteneri
+about-become-a-partner = Devino un partener
+about-partnership = Common Voice este un proiect de colaborare și depindem de comunitatea de parteneri și colaboratori ca să construim cel mai mare set de date vocale cu sursă deschisă. Am dori să mulțumim următoarelor persoane și organizații pentru ajutorul acordat în cadrul proiectului:
+about-get-involved = Implică-te
+about-get-involved-text =
+    Vrei să ajuți la îmbunătățirea Common Voice?
+    Grozav! Ia legătura cu noi prin e-mail sau intră pe <discourseLink>Discurs</discourseLink>,
+    dă-ne feedback prin <githubLink>GitHub</githubLink> sau alătură-te pe <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = De ce?
+about-nav-how-it-works = Cum?
+about-nav-partners = Parteneri
+about-nav-get-involved = Implică-te
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Inteligență artificială
+mycroft-description =
+    Mycroft este primul asistent cu sursă deschisă din lume.
+    Mycroft rulează pe orice - pe calculator, în automobil sau pe Raspberry Pi.
+mycroft-secondary-description = Este un software cu sursă deschisă care poate fi remixat, extins și îmbunătățit liber. Mycroft poate fi utilizat în orice, de la proiecte științifice până la aplicații de software pentru întreprinderi.
 
 ## Glossary
 
@@ -452,7 +513,7 @@ get-started-speech = Familiarizează-te cu recunoașterea vocală
 other-datasets = Alte seturi de date vocale
 feedback-q = Ai sugestii?
 deepspeech-info = Setul de date Common Voice este complementar motorului de recunoaștere vocală Deep Speech cu sursă deschisă de la Mozilla, pe care îl poți folosi pentru a construi aplicații de recunoaștere vocală. Citește <githubLink>Prezentarea generală de pe Github</githubLink> sau intră pe <discourseLink>forumul DeepSpeech Discourse</discourseLink> ca să afli cum să începi.
-common-voice-info = Ai întrebări despre Common Voice? Intră pe <discourseLink>forumul Discourse</discourseLink>.
+common-voice-info-new = Ai întrebări despre Common Voice? Idei de îmbunătățire sau feedback despre o limbă anume? Alătură-te pe <discourseLink>forumul Discurs</discourseLink> și spune-ne.
 data-other-librispeech-description = LibriSpeech este un corp de date de aproximativ 1000 de ore de vorbire, codate la 16Khz, în limba engleză, derivate din cărți audio citite, preluate din proiectul LibriVox.
 data-other-ted-name = Corpusul TED-LIUM
 data-other-ted-description = Corpusul de date TED-LIUM a fost realizat din prezentări audio și transcrierile aferente, disponibile pe site-ul TED.
@@ -493,13 +554,15 @@ request-language-form-language =
     .label = Limbă
 request-language-success-title = Solicitarea de limbă a fost trimisă cu succes, îți mulțumim.
 request-language-success-content = Vom reveni în curând cu mai multe informații despre cum să îți adaugi limba pe Common Voice.
+select-language = Selectează o limbă...
+other-language = Altă limbă
 
 ## Languages Overview
 
 language-section-in-progress = În lucru
-language-section-in-progress-description = Limbile în lucru sunt momentan construite pentru contribuții din partea comunităților noastre; avansul lor reflectă stadiul la care au ajuns în cadrul fazelor de localizare a site-urilor web și de colectare de propoziții.
+language-section-in-progress-new-description = Aceste limbi sunt în prezent în curs de dezvoltare de către comunitate. Barele de progres arată cât de departe am ajuns cu fiecare limbă în <localizationGlossaryLink>localizarea site-ului</localizationGlossaryLink> și <sentenceCollectionGlossaryLink>colectarea de propoziții</sentenceCollectionGlossaryLink>.
 language-section-launched = Lansate
-language-section-launched-new-description = Site-ul web a fost localizat cu succes pentru aceste limbi lansate și deține suficiente propoziții colectate pentru a permite contribuții curente tip <italic>Vorbește</italic> și <italic>Ascultă</italic>.
+language-section-launched-description = Pentru aceste limbi lansate, site-ul web a fost <localizationGlossaryLink>localizat</localizationGlossaryLink> cu succes și are suficiente <sentenceCollectionGlossaryLink>propoziții colectate</sentenceCollectionGlossaryLink> pentru a permite contribuții curente de <speakLink>Vorbire</speakLink> și <listenLink>Ascultare</listenLink> contributions.
 languages-show-more = Vezi mai multe
 languages-show-less = Vezi mai puține
 language-speakers = Vorbitori

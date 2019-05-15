@@ -8,8 +8,10 @@ email-input =
     .label = E-mejlowa adresa
 submit-form-action = Wotpósłać
 loading = Čita so…
+email-opt-in-info = Bych rady mejlki přijał, kaž na přikład cilowe dopomnjeća, postupowe aktualizacije a powěsćowe listy wo Common Voice.
 email-opt-in-privacy = Jeli chceće e-mejlki dóstać, dyrbiće do wobchadźenja Mozilla z tymi informacijemi zwolić, kotrež so w <privacyLink>prawidłach priwatnosće<privacyLink> Mozilla rozjasnjeja.
 indicates-required = * Woznamjenja trěbne polo
+not-available-abbreviation = Ničo k dispoziciji
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Arabšćina
 as = Asamšćina
 ast = Asturišćina
 az = Azerbajdźanšćina
+ba = Baškiršćina
 bg = Bołharšćina
 bn = Bengalšćina
 br = Bretonšćina
@@ -54,7 +57,9 @@ fr = Francosćina
 fy-NL = Frizišćina
 ga-IE = Iršćina
 gl = Galicišćina
+ha = Hausa
 he = Hebrejšćina
+hi-IN = Hindišćina
 hr = Chorwatšćina
 hsb = Hornjoserbšćina
 hu = Madźaršćina
@@ -69,13 +74,16 @@ kab = Kabylšćina
 kk = Kazachšćina
 ko = Korejšćina
 kpv = Komi-syrjenšćina
+ku = Kurdišćina
 kw = Kornišćina
 ky = Kirgišćina
+lij = Ligurišćina
 lt = Litawšćina
 lv = Letišćina
 mdf = Mokša
 mhr = Łučna marišćina
 mk = Makedonšćina
+ml = Malajalamšćina
 mn = Mongolšćina
 mrj = Hórska marišćina
 myv = Erzya
@@ -93,6 +101,7 @@ ru = Rušćina
 rw = Kinjarwanda
 sah = Sachašćina
 sc = Sardinšćina
+si = Singalezišćina
 sk = Słowakšćina
 sl = Słowjenšćina
 sq = Albanšćina
@@ -100,6 +109,7 @@ sr = Serbišćina
 sv-SE = Šwedšćina
 ta = Tamilšćina
 te = Telugušćina
+tg = Tadźikišćina
 th = Thaišćina
 tr = Turkowšćina
 tt = Tataršćina
@@ -123,6 +133,7 @@ speak = Rěčeć
 speak-now = Rěčće nětko
 datasets = Datowe sadźby
 languages = Rěče
+about = Wo nas
 profile = Profil
 help = Pomoc
 contact = Kontakt
@@ -298,8 +309,6 @@ profile-explanation = Z profilom móžeće swój pokrok we wóčku wobchować a 
 thanks-for-account = Dźakujemy so, zo sće swoje konto wobkrućił, chcemy nětko waš profil zarjadować.
 why-demographic = Čehodla je to wažne?
 why-demographic-explanation = Anonymizowane wužiwarske daty kaž staroba, splah a akcent pomhaja awdiodaty polěpšić, kotrež so wužiwaja, zo bychu dokładnosć softwary rěčenskeho spóznaća trenowali. Waše wužiwarske mjeno a e-mejlowa adresa so ženje z wašimi pósłanymi datami njezwjazujetej, a móžeće wubrać, hač ma waše wužiwarske mjeno zjawne abo anonymne być.
-keep-me-posted =
-    .label = Bych rady aktualizacije měł a informujće mje běžnje, hdyž je něšto nowe wo Common Voice.
 accept-privacy = Sym přezjedny, zo so tute informacije wužiwaja, kak so w <privacyLink>prawidłach priwatnosće</privacyLink> Mozilla wujasnja.
 login-identity = Přizjewjenska identita
 login-signup = Přizjewić/Registrować
@@ -319,6 +328,7 @@ connect-gravatar = Z gravatarom zwjazać
 gravatar_not_found = Njeje so žadyn gravatar za wašu e-mejl namakał
 file_too_large = Wubrana dataja je přewulka
 manage-subscriptions = Abonementy rjadować
+manage-email-subscriptions = E-mejlowe abonementy rjadować
 email-already-used = E-mejlowa adresa so hižo za druhe konto wužiwa
 add-language = Rěč přidać
 change-email-setings = Emejlowu adresu w nastajenjach pod přizjewjenskej identitu změnić
@@ -373,6 +383,35 @@ faq-what-determine-identity-a =
     Datowa sadźba Common Voice je wotewrjena a zjawnje přistupna resursa, kotraž hodźi so za trenowanje šěrokeje wšelakorosće přez rěčenje wodźenych nałoženjow wužiwać. Zo bychmy wěstotu našich sobuskutkowarjow škitali, prosymy kóždeho, kotryž datowu sadźbu Common Voice sćahuje, priwatnosć našich sobuskutkowarjow respektować.
     
     Ze wšěch hłosowych klipow w datowej sadźbje so informacije wotstronjeja, kotrež wosoby identifikuja. Hdyž datowu sadźbu sćahujeće, zwoliće do toho, zo njepospytujeće identitu sobuskutkowarja postajić. To rěka, zo njemóžeće spytać, informacije w datowej sadźbje z wosobinskimi informacijemi sobuskutkowarja zwjazać.  Móžeće wšak datowu sadźbu wužiwać, zo byšće rěčenske spóznaće, spóznaće rěčnikow abo druhe nałoženja přez to trenował, zo, na přikład, informacije w datowej sadźbje z druhimi informacijemi zwjazujeće, kotrež su hižo w datowej sadźbje.
+faq-what-is-cv = Što je Common Vocie?
+faq-using-cv = Common Voice wužiwać
+faq-description = Common Voice je dźěl iniciatiwy Mozilla, kotryž pomha, mašiny wučić, kak woprawdźići ludźo rěča.
+faq-search-for-answers =
+    .label = Za wotmołwami pytać
+
+## ABOUT US
+
+about-title = Čehodla Common Voice?
+how-does-it-work-title = Kak to funguje
+about-speak = Rěčeć
+about-listen-queue = Słuchowy čakanski rynk
+about-listen-queue-text = Hłosowe klipy so do přenošowanskeho čakanskeho rynka zapodawaja, kotryž je za słuchanje k dispoziciji staja.
+about-listen = Poskać
+about-is-it-valid = Je klip płaćiwy?
+about-is-it-valid-text = Hłosowy klip so jako „płaćiwy markěruje, hdyž wužiwar jemu hajhłós da.
+about-yes-votes = ≥ 2 hajhłosaj
+about-no-votes = ≥ 2 něhłosaj
+about-dataset = Datowa sadźba Common Voice
+about-clip-graveyard = Klipowy kěrchow
+about-partners = Partnerojo
+about-become-a-partner = Budźće partner
+about-get-involved = Čińće sobu
+about-nav-why-common-voice = Čehodla?
+about-nav-how-it-works = Kak?
+about-nav-partners = Partnerojo
+about-nav-get-involved = Čińće sobu
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Kumšnta inteligenca
 
 ## Glossary
 

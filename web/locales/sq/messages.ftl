@@ -8,8 +8,10 @@ email-input =
     .label = Email
 submit-form-action = Parashtroje
 loading = Po ngarkohet…
+email-opt-in-info = Do të doja të merrja email-e të tillë si kujtues synimesh, përditësime rreth ecurisë time dhe buletine mbi Common Voice.
 email-opt-in-privacy = Duke zgjedhur të merrni email-e, deklaroni se pajtoheni me përdorimin nga Mozilla të këtyre të dhënave, ashtu siç shpjegohet te <privacyLink>Rregulla Privatësie<privacyLink> të Mozilla-s.
 indicates-required = * tregon një fushë të domosdoshme
+not-available-abbreviation = N/A
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Arabisht
 as = Asamezisht
 ast = Asturisht
 az = Azerbajxhanisht
+ba = Bashkire
 bg = Bullgarisht
 bn = Bengalisht
 br = Bretonisht
@@ -54,6 +57,7 @@ fr = Frëngjisht
 fy-NL = Frisiane
 ga-IE = Irlandisht
 he = Hebraisht
+hi-IN = Indisht
 hr = Kroate
 hsb = Sorbiane, E sipërme
 hu = Hungarisht
@@ -67,9 +71,12 @@ kab = Kabile
 kk = Kazake
 ko = Koreane
 kpv = Komi-Zyrian
+ku = Kurde
 kw = Kornike
 ky = Kirgize
+lij = Ligure
 lt = Lituanisht
+lv = Letonisht
 mdf = Moksha
 mk = Maqedonisht
 mn = Mongolisht
@@ -95,6 +102,7 @@ sr = Serbisht
 sv-SE = Suedisht
 ta = Tamileze
 te = Telugu
+tg = Taxhike
 th = Tajlandisht
 tr = Turqisht
 tt = Tatare
@@ -118,6 +126,7 @@ speak = Flisni
 speak-now = Flisni tani
 datasets = Grupe të dhënash
 languages = Gjuhë
+about = Mbi
 profile = Profil
 help = Ndihmë
 contact = Kontakt
@@ -287,8 +296,6 @@ profile-explanation = Ndiqni ecurinë tuaj, përmes një profili, dhe ndihmoni q
 thanks-for-account = Faleminderit që ripohuat llogarinë tuaj, tani le të krijojmë profilin tuaj.
 why-demographic = Pse ka rëndësi kjo?
 why-demographic-explanation = Të dhëna të anonimizuara përdoruesish, të tilla si mosha, gjinia dhe theksi ndihmojnë të përmirësohen të dhënat audio e përdorura për të stërvitur mekanizmat e kuptimit të të folurës në pikëpamje të saktësisë. Emri juaj i përdoruesit dhe email nuk do të përshoqërohen kurrë me të dhënat e parashtruara prej jush, dhe mund të zgjidhni bërjen publik të emrit tuaj të përdoruesit ose anonimitetin.
-keep-me-posted =
-    .label = Do të doja përditësime dhe të jem në dijeni se ç’po ndodh me Common Voice.
 accept-privacy = Pajtohem me trajtimin që u bëni këtyre të dhënave ashtu siç e shpjegoni <privacyLink>Rregulla Privatësie</privacyLink> të Mozilla-s
 login-identity = Identitet Hyrjesh
 login-signup = Hyni / Regjistrohuni
@@ -308,6 +315,7 @@ connect-gravatar = Lidhuni përmes Gravatari
 gravatar_not_found = S’u gjet gravatar për email-in tuaj
 file_too_large = Kartela e përzgjedhur është shumë e madhe
 manage-subscriptions = Administroni Pajtime
+manage-email-subscriptions = Administroni Pajtime Me Email
 email-already-used = Email-i është tashmë i përdorur për një tjetër llogari
 add-language = Shtoni Gjuhë
 change-email-setings = Ndryshojeni email-in tuaj që nga Rregullimet , te ndarja Identitet Hyrjesh
@@ -342,7 +350,7 @@ faq-why-different-speakers-a =
     Shumica e bazave të të dhënave për të folurën përgatiten bazuar në një përfaqësim të tepruar të disa shtresave demografike, çka sjell anshmëri kah  <articleLink>meshkujt dhe klasa e mesme</articleLink>. Theksat dhe dialektet që priren të jenë të përfaqësuar më dobët në grupe të dhënash të përdorura për stërvitjen e aplikacioneve zakonisht kanë lidhje me grupe njerëzish që janë tashmë të lënë mënjanë. Plot makina e kanë gjithashtu të zorshme të kuptojnë zëra femërorë.
     This is why in our voice database we want variety!
 faq-why-my-lang-q = Pse s’është përfshirë ende gjuha ime?
-faq-why-my-lang-a = Mozilla nuk zgjedh apo favorizon ndonjë gjuhë para një tjetre. Në vend të kësaj, Common Voice është një nismë e bazuar kthjellët mbi bashkësinë, por duhen përmbushur <multilangLink>disa hapa për të shtuar një gjuhë të re</multilangLink> dhe për të filluar grumbullim kontributesh zanore. Së pari, lypset të përkthehet sajti Common Voice, që anëtarët e bashkësisë të mund ta përdorin në gjuhën e tyre projektin. Më tej, na duhet një koleksion i madh frazash të lira nga të drejta kopjimi që të mund të lexohen nga njerëzit. Pasi të jenë plotësuar që të dyja këto domosdoshmëri, gjuha “shtohet” te Common Voice që njerëzit të fillojnë të incizojnë zërin e tyre dhe të vleftësojnë kontributet nga të tjerët.
+faq-why-my-lang-new-a = Mozilla nuk zgjedh apo favorizon ndonjë gjuhë para një tjetre. Në vend të kësaj, Common Voice është një nismë e bazuar kthjellët mbi bashkësinë, por duhen përmbushur <multilangLink>disa hapa për të shtuar një gjuhë të re</multilangLink> dhe për të filluar grumbullim kontributesh zanore. Së pari, lypset të përkthehet sajti Common Voice, që anëtarët e bashkësisë të mund ta përdorin në gjuhën e tyre projektin. Më tej, na duhet një koleksion i madh frazash të lira nga të drejta kopjimi, që të mund të lexohen nga njerëzit. Pasi të jenë plotësuar që të dyja këto domosdoshmëri, gjuha “shtohet” te Common Voice që njerëzit të fillojnë të incizojnë zërin e tyre dhe të vleftësojnë kontributet nga të tjerët. Nëse doni të ndihmoni në shtimin e një gjuhe të re, shkoni te <sentenceCollectorLink>mjeti ynë për grumbullim frazash</sentenceCollectorLink> që t’ia filloni.
 faq-what-quality-q = Ç’shkallë cilësie audio është e domosdoshme që një copëz zanore të përdoret në grupin e të dhënave?
 faq-what-quality-a = Dëshirojmë që grupi i të dhënave Common Voice të pasqyrojë cilësinë e audios që një mekanizëm nga-e-folura-në-tekst do të ndeshë në përgjithësi, ndaj kërkojmë larmi. Përveç një bashkësie të larmishme folësish, një grup të dhënash me cilësi audio të larmishme do t’i mësojë mekanizmit nga-e-folura-në-tekst të trajtojë situata të ndryshme nga jeta reale, nga e folura nën zë e deri te zhurma e automjeteve. Për sa kohë që copëza juaj zanore është e kuptueshme,  i bie të jetë e mjaftueshme për grupin e të dhënave.
 faq-why-10k-hours-q = Pse për incizimet audio synimi është 10 mijë orë të vleftësuara për gjuhë?
@@ -365,6 +373,59 @@ faq-what-determine-identity-a =
     Grupi i të dhënave Common Voice është një burim i hapur dhe i përdorshëm publikisht, që mund të përdoret për të stërvitur një gamë të gjerë aplikacionesh që përdorin të folurën. Për të mbrojtur sigurinë e kontribuesve tanë,  i kërkojmë cilitdo që shkarkon grupin e të dhënave Common Voice të respektojë privatësinë e kontribuesve.
     
     All voice clips in the dataset are scrubbed of personally identifying information.  When you download the dataset, you agree to not attempt  to determine  the identity of any contributor. That means you cannot try to link information in the dataset to a contributor’s personal information. You may, however, use the dataset to train speech recognition, speaker recognition, or other applications, by, for instance, linking information in the dataset to other information already in the dataset.
+faq-what-is-cv = Ç’është Common Voice?
+faq-using-cv = Si të përdoret Common Voice
+faq-description = Common Voice është pjesë e nismës së Mozilla-s për të ndihmuar që makinat të mësojnë se si flasin njerëzit realë.
+faq-search-for-answers =
+    .label = Kërkoni për përgjigje
+
+## ABOUT US
+
+about-title = Ç’duhet Common Voice?
+about-subtitle = Common Voice është pjesë e nismës së Mozilla-s për të ndihmuar që makinat të mësojnë se si flasin njerëzit realë. Përveç grupeve të të dhënave Common Voice, po krijojmë edhe një motor kuptimi të folure, me burim të hapët, të quajtur Deep Speech.
+about-header-description =
+    Që të dy këta projekte janë pjesë e përpjekjeve tona për të mbushur hendekun në të folurën digitale. Teknologjitë për kuptimin e të folurës sjellin një përmasë njerëzore te pajisjet tona, por për t’i krijuar ato zhvilluesve u duhen sasi të stërmëdha të dhënash zanore. Hëpërhë, shumica e këtyre të dhënave janë të shtrenjta dhe pronësore.
+    Duam t’i bëjmë të dhënat zanore të përdorshme lirisht dhe publikisht, dhe të bëjmë të mundur që të dhënat përfaqësojnë larminë e njerëzve realë. Tok, mund ta bëjmë kuptimin e të folurës më të mirë për këdo.
+how-does-it-work-title = Si funksionon?
+how-does-it-work-text = Po krijojmë, me ndihmën e publikut, një grup të dhënash zanore me burim të hapur. Dhuroni zërin tuaj, vlerësoni përpikërinë e copëzave të regjistruara nga persona të tjerë, bëjeni grupin e të dhënave më të mirë për këdo.
+about-speak = Flisni
+about-speak-text = Kontribuesit incizojnë copëza zanore duke lexuar prej një fondi frazash të dhuruara.
+about-listen-queue = Radhë Dëgjimi
+about-listen-queue-text = Copëzat zanore parashtrohen në një radhë ku përgatiten për dëgjim.
+about-listen = Dëgjoni
+about-listen-text = Përdoruesit gjykojnë përpikërinë e copëzave të dhuruara, duke kontrolluar që folësi e lexon frazën saktësisht.
+about-is-it-valid = Është e vlefshme copëza?
+about-is-it-valid-text = Një copëze zanore i vihet shenjë si "e vlefshme" kur një përdorues i jep një votë Po.
+about-yes-votes = ≥ 2 vota Po
+about-yes-votes-text = Për t’u bërë pjesë e grupit të të dhënave Common Voice, një copëz zanore duhet vleftësuar nga dy përdorues të ndryshëm.
+about-no-votes = ≥ 2 vota Jo
+about-no-votes-text = Kur një përdorues e hedh poshtë një copëz zanore, ajo rikthehet te Radha. Nëse hidhet poshtë edhe një herë, copëza zanore shpihet te Varreza e Copëzave.
+about-dataset = Grup të Dhënash Common Voice
+about-dataset-text = Grupi i të Dhënave Common Voice përmban qindra mijëra copëza zanore që u vijnë në ndihmë zhvilluesve të ndërtojnë mjete kuptimi të folure.
+about-clip-graveyard = Varrezë Copëzash
+about-clip-graveyard-text = Varreza e Copëzave përbëhet nga copëza zanore që nuk arritën të bëhen pjesë e grupit të të dhënave Common Voice. Ashtu si grupi i të dhënave, edhe Varreza e Copëzave mund të shkarkohet.
+about-partners = Partnerë
+about-become-a-partner = Bëhuni një partner
+about-partnership =
+    Common Voice është një projekt i ngritur mbi bashkëpunimin, dhe për të krijuar grupin e zërave me burim të hapur, më të madh deri sot, varemi nga partnerët dhe bashkëpunëtorët e bashkësisë.
+    
+    We would like to thank the following people and organizations for their help with the project:
+about-get-involved = Përfshihuni
+about-get-involved-text =
+    Doni të ndihmoni për ta bërë edhe më të mirë Common Voice-in?
+    Bukur! Lidhuni përmes email-i, ose përmes <discourseLink>Discourse</discourseLink>,
+    parashtroni mendime përmes <githubLink>GitHub</githubLink>,
+    ose merrni pjesë në kanalin tonë <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = Pse?
+about-nav-how-it-works = Si?
+about-nav-partners = Partnerë
+about-nav-get-involved = Përfshihuni
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Inteligjencë Artificiale
+mycroft-description =
+    Mycroft është asistenti i parë në botë me burim të hapur.
+    Mycroft xhiron kudo - në kompjuter desktop, brenda një automjeti, ose në një Raspberry Pi.
+mycroft-secondary-description = Ky është <em>software</em> që mund të ripërzihet, zgjerohet dhe përmirësohet lirisht. Mycroft mund të përdoret për gjithçka, nga projekte shkencore deri te aplikacione  software-i në shkallë industriale.
 
 ## Glossary
 
@@ -448,7 +509,7 @@ get-started-speech = Fillojani me Kuptimin e të Folurës
 other-datasets = Grupe të Tjera të Dhënash Zëri
 feedback-q = Keni Diçka Për të Thënë?
 deepspeech-info = Grupi i të dhënave Common Voice plotëson mekanizmin me burim të hapur të Mozilla-s për kuptimin e të folurës, Deep Speech, të cilin mund ta përdorni për të ndërtuar aplikacione që bazohen ose përdorin kuptimin e të folurës. Për të mësuar se si t’ia fillohet, lexoni <githubLink>përmbledhjen tonë në Github</githubLink> ose ejani te <discourseLink>DeepSpeech Discourse</discourseLink>.
-common-voice-info = Keni pyetje mbi Common Voice? Merrni pjesë te <discourseLink>forumi ynë Discourse</discourseLink>.
+common-voice-info-new = Keni pyetje rreth Common Voice? Ide për përmirësime apo përshtypje rreth një gjuhe të dhënë? Merrni pjesë në <discourseLink>forumin tonë Discourse</discourseLink> dhe na i bëni të ditura.
 data-other-librispeech-description = LibriSpeech është një korpus i afërsisht 1000 orëve incizimesh në 16Khz leximi në anlgisht, rrjedhur prej leximi audiolibrash nga projekti LibriVox.
 data-other-ted-name = Korpusi TED-LIUM
 data-other-ted-description = Korpusi TED-LIUM është ndërtuar mbi bazën e bisedave dhe transkriptimit të tyre, të gatshme në sajtin TED.
@@ -489,6 +550,8 @@ request-language-form-language =
     .label = Gjuhë
 request-language-success-title = Kërkesa për gjuhë u parashtrua me sukses, ju faleminderit.
 request-language-success-content = Shumë shpejt do të lidhemi me ju me më tepër të dhëna rreth se si të shtoni gjuhën tuaj te Common Voice.
+select-language = Përzgjidhni një Gjuhë…
+other-language = Gjuhë Tjetër
 
 ## Languages Overview
 

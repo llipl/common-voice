@@ -15,7 +15,13 @@
 
     & .personal,
     & .overall {
-        padding: 41px 20px 41px 68px;
+        padding-right: 20px;
+        padding-left: 68px;
+        min-height: 130px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
         @media (--lg-down) {
             padding-left: 30px;
@@ -24,16 +30,24 @@
     }
 
     & .personal {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         background: var(--white);
+
+        @media (--lg-down) {
+            padding-top: 30px;
+            padding-bottom: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
         & .fraction {
             border-inline-end: 1px solid var(--desert-storm);
             margin-inline-end: 20px;
             padding-inline-end: 20px;
             color: var(--type-color);
+
+            @media (max-width: 420px) {
+                border-inline-end: 0;
+            }
         }
 
         & .infinity {
@@ -43,9 +57,63 @@
         }
 
         & .description {
+            margin-right: 20px;
             font-family: var(--strong-font-family);
             font-size: 20px;
             line-height: 1.4;
+        }
+
+        & .custom-goal-section {
+            margin-left: auto;
+
+            @media (--md-down) {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            @media (--lg-down) {
+                margin-top: 20px;
+            }
+        }
+
+        & .custom-goal-button {
+            border: none;
+            padding: 0 30px;
+            min-width: auto;
+            height: 50px;
+            white-space: pre;
+            background: var(--type-color);
+            color: var(--white);
+
+            @media (--md-down) {
+                display: flex;
+                width: 100%;
+            }
+
+            &:hover {
+                border: 1px solid var(--black);
+            }
+        }
+
+        & .custom-goal-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        & .custom-goal-text {
+            margin-left: 10px;
+            margin-right: 30px;
+            display: flex;
+            flex-direction: column;
+            font-size: var(--font-size-xs);
+            letter-spacing: 0.5px;
+
+            & > :first-child {
+                color: var(--warm-grey);
+            }
         }
     }
 
@@ -87,8 +155,17 @@
         border-top: 2px solid var(--type-color-opaque);
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         background: #f9f9f8;
+
+        @media (--md-down) {
+            flex-wrap: wrap;
+        }
+
+        @media (--lg-down) {
+            padding-top: 50px;
+            padding-bottom: 30px;
+            justify-content: center;
+        }
 
         & > * {
             margin-inline-end: 30px;
@@ -110,8 +187,18 @@
         }
 
         & .button {
-            flex-grow: 100;
+            padding: 0 30px;
             min-width: auto;
+            min-height: 50px;
+            white-space: pre;
+
+            @media (--lg-down) {
+                margin-top: 20px;
+            }
+
+            @media (--xl-up) {
+                margin-left: auto;
+            }
         }
     }
 }

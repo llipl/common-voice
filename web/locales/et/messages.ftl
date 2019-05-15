@@ -167,6 +167,7 @@ x-years-short =
        *[other] { $count } aastat
     }
 help-make-dataset = Aita meil luua kvaliteetne ja kõigile avalik andmestik
+profile-not-required = Konto omamine ei ole vajalik, ent võimaldab rohkem
 sign-up-account = Loo konto
 
 ## Account Benefits
@@ -226,6 +227,10 @@ english = inglise
 
 profile-form-username =
     .label = Kasutajanimi
+profile-form-native-language =
+    .label = Emakeel
+profile-form-additional-language =
+    .label = Lisakeel
 profile-form-accent =
     .label = Aktsent
 profile-form-age =
@@ -258,8 +263,6 @@ profile-explanation = Jälgi profiili abil oma edenemist ja ühtlasi aita ka mei
 thanks-for-account = Täname, et kinnitasid oma kasutajakonto, loome nüüd sulle profiili.
 why-demographic = Miks see oluline on?
 why-demographic-explanation = Anonüümsed kasutajate andmed (nt vanus, sugu, aktsent) aitavad täiustada neid hääleandmeid, mida kasutatakse kõnetuvastussüsteemide paremaks treenimiseks. Sinu kasutajanime ega e-posti aadressi ei ühendata kunagi sinu andmetega ja sa võid ise valida, kas sinu kasutajanimi on avalik või anonüümne.
-keep-me-posted =
-    .label = Saadetakse teavitusi ja infot Common Voice projektiga toimuvast.
 accept-privacy = Olen nõus selle info käsitsemiseks Mozilla <privacyLink>privaatsusreeglitest</privacyLink> lähtuvalt
 login-identity = Kasutajatunnus
 login-signup = Logi sisse / registreeru
@@ -288,18 +291,40 @@ faq-title = Korduma kippuvad küsimused
 faq-what-cv-q = Mis on Common Voice?
 faq-why-important-q = Miks on see tähtis?
 faq-how-get-q = Kuidas ma saaksin endale Common Voice'i andmestikke?
+faq-how-get-a = Common Voice'i andmestik on allalaaditav <licenseLink>CC0</licenseLink> litsentsiga <datasetLink>meie andmestike lehelt</datasetLink>. Samalt lehelt saad alla laadida ka teisi avalikult kasutatavaid andmestikke.
 faq-when-release-q = Millal avaldate Common Voice'i teiste keelte andmestikud?
+faq-what-cv-and-deepspeech-q = Mis vahe on Common Voice'il ja Deep Speech'il?
 faq-is-goal-assistant-q = Kas Common Voice'i eesmärgiks on luua häälassistent?
+faq-is-goal-assistant-a = Common Voice'i andmekogu eesmärk on võimaldada igaühel ehitada kõnetuvastus- või kõnelejatuvastussüsteem või ükskõik milline muu kõneandmeid vajav rakendus. Häälassistent on vaid üks võimalik rakendus.
 faq-why-different-speakers-q = Miks vajate iga keele kohta nii palju erinevaid kõnelejaid?
+faq-why-different-speakers-a = Enamikus kõneandmebaasides on teatud demograafilistele tunnustele vastavate inimeste andmed üle-esindatud, mille tulemusena on kõnetuvastussüsteemid kaldu <articleLink> meeste ja keskklassi </articleLink> poole. Aktsendiga ja murdeline kõne, mis seostuvad marginaliseerunud inimrühmadega, on sageli sellistes andmebaasides alaesindatud. Paljudel kõnetuvastussüsteemidel on raskusi ka naishäälte tuvastamisega. Sellepärast me tahame, et meie andmekogud oleksid mitmekesised.
 faq-why-my-lang-q = Miks minu keelt pole veel kaasatud?
 faq-what-quality-q = Milline peab olema kõnesalvestise kvaliteet, et seda saaks andmekogus kasutada?
 faq-why-10k-hours-q = Miks on eesmärgiks 10 000 tundi kontrollitud kõnenäiteid iga keele jaoks?
 faq-why-10k-hours-a = Sest umbes nii palju kõnetunde on vaja kõnetuvastussüsteemi treenimiseks.
 faq-how-calc-hours-q = Kuidas Common Voice tunde arvestab?
+faq-how-calc-hours-a = Arvutame tunde hinnates salvestuste keskmist pikkust ja korrutades selle numbri kõigi keelte salvestuste koguarvuga.
 faq-where-src-from-2-q = Kust etteloetavad tekstid tulevad?
+faq-why-not-ask-read-q = Miks te ei lase inimestel ette lugeda raamatuid või Vikipeedia artikleid?
+faq-why-account-q = Miks ma peaksin konto registreerima?
+faq-is-account-public-q = Kas minu konto teave on avalik?
+faq-how-privacy-q = Kuidas tagate oma hääle annetanud inimeste anonüümsuse ja privaatsuse?
+faq-how-privacy-a = Kõigist andmestikus olevatest heliklippidest eemaldatakse isikuandmed. Kui osaleja esitab oma profiili kaudu demograafilisi andmeid, eemaldatakse see teave tema häälklippidest enne, kui need allalaadimiseks kokku pakitakse ja seda ei avaldata kunagi tema profiililehel.
+faq-what-determine-identity-q = Mida tähendab, et "kõnelejat ei saa tuvastada" Common Voice'i andmekogus?
 
 ## Glossary
 
+glossary = Sõnastik
+localization = Lokaliseerimise ülevaade
+localization-explanation = Sellise protsessiga tõlgime ja kohandame oma sisu paljude keelte jaoks.
+sentence-collection = Lausete kogumine
+sentence-collection-explanation = Vabalt kasutatavate lausete kogumine või uute lausete kirjutamine vabaks kasutuseks.
+hours-recorded-explanation = Siiani kogutud helisalvestustundide arv.
+hours-validated-explanation = Nende helisalvestiste maht tundides, mille kaks kolmest kasutajast on kinnitanud, hääletades "jah". See näitab edenemist 10 000 tunni eesmärgi suunas.
+sst = Kõnetuvastus
+sst-explanation = Kõnetuvastustehnoloogiad teisendavad hääleandmed tekstiks.
+de-identified = Anonümiseeritud
+de-identified-explanation = Protsess, mille abil panustaja profiiliandmed varjatakse nende salvestatud häälklippidest, kui need andmestiku allalaadimiseks kokku pakitakse.
 
 ## NotFound
 
@@ -337,18 +362,31 @@ review-delete-recordings = Kustuta mu salvestised
 
 ## New Datasets Page
 
+datasets-headline = Me ehitame avatud ligipääsuga mitmekeelset häälte kogumit, mida igaüks saab kasutada kõnetehnoloogiliste rakenduste loomiseks.
 language = Keel
 # File size in gigabytes
 size = Suurus
+validated-hr-total = Kontrollitud tunde kokku
 overall-hr-total = Tunde kokku
 cv-license = Litsents
 audio-format = Heliformaat
 number-of-voices = Häälte arv
+splits = Jaotused
+email-to-download = Sisesta allalaadimiseks e-posti aadress
+size-gigabyte = GB
+size-megabyte = MB
+validated-hours = Kontrollitud tunde
+recorded-hours = Salvestatud tunde
+whats-inside = Mis on Common Voice'i andmekogu sees?
+feedback-q = Sul on tagasisidet?
 data-other-librispeech-description = LibriSpeech on kõneandmestik, mis koosneb umbes 1000st tunnist 16Khz kvaliteediga salvestatud ingliskeelsest kõnest, mis on saadud LibriVoxi projekti audioraamatutest.
 data-other-ted-name = TED-LIUM korpus
 data-other-ted-description = TED-LIUM korpus koosneb audio kõnedest ja nende transkriptsioonidest, mis on kättesaadavad TEDi veebilehel.
 data-other-voxforge-description = VoxForge käivitati, et koguda transkribeeritud kõnet kasutamaks tasuta ja avatud lähtekoodiga kõnetuvastuse mootorites.
 data-other-tatoeba-description = Tatoeba on suur lausete, nende tõlgete ja kõneldud heli andmebaas, mida kasutatakse keeleõppes. Käesolev allalaadimise komplekt sisaldab nende kogukonna poolt salvestatud inglise keelt.
+go-discourse = Vaata foorumit
+go-languages-page = Ava keelte leht
+ready-to-validate = Valmis lausete kontrollimiseks?
 
 ## Download Modal
 
@@ -380,9 +418,7 @@ request-language-success-content = Me võtame varsti ühendust lisainfoga selles
 ## Languages Overview
 
 language-section-in-progress = Pooleli
-language-section-in-progress-description = Pooleliolevad keeli hetkel valmistatakse meie kogukonna panuste jaoks; nende edenemine kajastab seda, kui kaugel on nende veebisaitide lokaliseerimise ja lausete kogumise etapid.
 language-section-launched = Käivitatud
-language-section-launched-new-description = Selliste käivitatud keelte jaoks on veebisait edukalt lokaliseeritud ja sellele on kogutud piisavalt lauseid, et võimaldada <italic>rääkimise</ italic> ja <italic>kuulamise</ italic> panused.
 languages-show-more = Vaata rohkem
 languages-show-less = Vaata vähem
 language-speakers = Kõnelejaid
@@ -405,7 +441,7 @@ skip = Jäta vahele
 shortcuts = Otseteed
 clips-with-count = <bold>{ $count }</bold> salvestist
 goal-help-recording = Oled aidanud Common Voice'il saavutada <goalPercentage></ goalPercentage> meie igapäevasest salvestamise eesmärgist ({ $goalValue })!
-goal-help-validation = Oled aidanud Common Voice'il saavutada <goalPercentage></ goalPercentage> meie igapäevasest valideerimise eesmärgist ({ $goalValue })!
+goal-help-validation = Oled aidanud Common Voice'il saavutada <goalPercentage></ goalPercentage> meie igapäevasest kontrollimise eesmärgist ({ $goalValue })!
 contribute-more =
     { $count ->
         [one] Valmis tegema { $count } veel?
@@ -447,6 +483,7 @@ share-title-new = <bold>Aita meil</bold> leida rohkem hääli
 
 ## Goals
 
+streaks = Seeriad
 days =
     { $count ->
         [one] päev
@@ -466,6 +503,9 @@ validations =
 ## Dashboard
 
 your-languages = Sinu keeled
+toward-next-goal = Edasi järgmise eesmärgi poole
+clips-you-recorded = Sinu lindistatud heliklipid
+clips-you-validated = Sinu kontrollitud heliklipid
 stats = Statistika
 you = Sina
 everyone = Kõik
@@ -473,8 +513,11 @@ contribution-activity = Panustamise aktiivsus
 top-contributors = Panustajate edetabel
 recorded-clips = Salvestatud salvestisi
 validated-clips = Kontrollitud salvestisi
+total-approved = Kinnitatud kokku
+overall-accuracy = Üldine korrektsus
 
 ## Profile Delete
 
 keep = Säilita
+remove = Kustuta
 profile-form-delete = Kustuta profiil

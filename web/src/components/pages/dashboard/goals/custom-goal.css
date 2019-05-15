@@ -38,7 +38,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background: url('/img/goals/wave.svg') no-repeat 0 center;
+        background: url('/img/wave.svg') no-repeat 0 center;
         background-size: contain;
     }
 
@@ -49,6 +49,7 @@
     & .padded {
         margin: 0 auto;
         max-width: 350px;
+        width: 100%;
     }
 
     & .box {
@@ -73,6 +74,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            text-align: start;
 
             & button {
                 border: none;
@@ -144,6 +146,23 @@
         }
     }
 
+    & .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        & .close-button {
+            border: 2px solid var(--grey);
+            align-self: center;
+        }
+
+        & .filler {
+            width: 50px;
+        }
+    }
+
     & .arrow-button {
         border: none;
         border-radius: 50%;
@@ -162,11 +181,26 @@
         }
     }
 
+    & .close-button {
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--white);
+    }
+
     &.step-0 {
         padding-top: 100px;
 
         @media (--md-up) {
             padding-bottom: 0;
+        }
+
+        & .padded {
+            text-align: center;
         }
 
         & .sub-head {
@@ -196,7 +230,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            background-image: url('/img/goals/wave-2.svg');
+            background-image: url('./wave-2.svg');
             background-position-y: bottom;
 
             & .text {
@@ -232,9 +266,26 @@
             display: block;
         }
 
+        & .subscription-info {
+            color: var(--warm-grey);
+        }
+
+        & .manage-subscriptions {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: var(--black);
+
+            & svg {
+                margin-inline-start: 5px;
+            }
+        }
+
         & .submit {
             border: none;
-            margin: 0 auto;
             padding: 0 30px;
             height: 57px;
             min-width: auto;
@@ -317,17 +368,6 @@
                 fill: var(--white);
             }
         }
-
-        & .close-button {
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: var(--white);
-        }
     }
 
     & .view-goal {
@@ -368,8 +408,9 @@
 
         & .goal-box {
             border: 1.6px solid var(--grey);
+            border-radius: 5px;
             margin-bottom: 70px;
-            padding: 30px 12px 50px 30px;
+            padding: 30px 30px 50px;
             position: relative;
             display: flex;
             flex-direction: row;
@@ -385,7 +426,12 @@
             }
 
             color: var(--color);
-            --progress-color: var(--color);
+            --type-color: var(--color);
+
+            & .fraction {
+                position: relative;
+                top: 9px;
+            }
 
             & .relative {
                 display: flex;

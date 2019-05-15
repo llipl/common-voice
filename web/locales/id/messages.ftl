@@ -8,8 +8,10 @@ email-input =
     .label = Surel
 submit-form-action = Kirim
 loading = Memuat…
+email-opt-in-info = Saya bersedia menerima surel seperti pengingat sasaran, pembaruan progres, dan nawala tentang Common Voice.
 email-opt-in-privacy = Dengan bersedia menerima surel, Anda menyatakan bahwa Anda OK dengan Mozilla untuk menangani informasi tersebut sesuai yang dijelaskan pada <privacyLink>Kebijakan Privasi<privacyLink> Mozilla.
 indicates-required = * Wajib diisi
+not-available-abbreviation = N/A
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Bahasa Arab
 as = Bahasa Assam
 ast = Bahasa Asturia
 az = Bahasa Azeri
+ba = Bahasa Bashkir
 bg = Bahasa Bulgaria
 bn = Bahasa Bengali
 br = Bahasa Breton
@@ -54,7 +57,9 @@ fr = Bahasa Perancis
 fy-NL = Bahasa Frisia
 ga-IE = Bahasa Irlandia
 gl = Bahasa Galisia
+ha = Bahasa Hausa
 he = Bahasa Ibrani
+hi-IN = Bahasa Hindi
 hr = Bahasa Kroasia
 hsb = Bahasa Sorbia Hulu
 hu = Bahasa Hongaria
@@ -69,13 +74,16 @@ kab = Bahasa Kabyle
 kk = Bahasa Kazak
 ko = Bahasa Korea
 kpv = Bahasa Komi-Zyrian
+ku = Bahasa Kurdi
 kw = Bahasa Kornish
 ky = Bahasa Kirgiz
+lij = Bahasa Liguria
 lt = Bahasa Lituania
 lv = Bahasa Latvia
 mdf = Bahasa Moksha
 mhr = Meadow Mari
 mk = Bahasa Makedonia
+ml = Bahasa Malayalam
 mn = Bahasa Mongol
 mrj = Hill Mari
 myv = Bahasa Erzya
@@ -93,6 +101,7 @@ ru = Bahasa Rusia
 rw = Bahasa Kinyarwanda
 sah = Bahasa Sakha
 sc = Bahasa Sardinia
+si = Bahasa Sinhala
 sk = Bahasa Slowakia
 sl = Bahasa Slovenia
 sq = Bahasa Albania
@@ -100,6 +109,7 @@ sr = Bahasa Serbia
 sv-SE = Bahasa Swedia
 ta = Bahasa Tamil
 te = Bahasa Telugu
+tg = Bahasa Tajik
 th = Bahasa Thai
 tr = Bahasa Turki
 tt = Bahasa Tatar
@@ -123,6 +133,7 @@ speak = Bicara
 speak-now = Bicara sekarang
 datasets = Himpunan Data
 languages = Bahasa
+about = Tentang Kami
 profile = Profil
 help = Bantuan
 contact = Kontak
@@ -288,8 +299,6 @@ profile-explanation = Pantau progres Anda dengan sebuah profil dan bantu data su
 thanks-for-account = Terima kasih telah mengkonfimasi akun, sekarang mari buat profil Anda.
 why-demographic = Mengapa ini berpengaruh?
 why-demographic-explanation = Data pengguna yang dianonimkan seperti usia, jenis kelamin, dan logat membantu memperbaiki data suara yang digunakan untuk melatih akurasi mesin pengenalan ucapan. Nama pengguna dan surel Anda tidak akan dikaitkan dengan data yang Anda kirimkan, dan Anda dapat memilih untuk mempublikkan nama pengguna Anda atau menjadikannya anonim.
-keep-me-posted =
-    .label = Saya ingin menerima pembaruan & terus diberitahu berita terbaru tentang Common Voice.
 accept-privacy = Saya setuju Mozilla mengelola infomasi saya sesuai yang tertera pada <privacyLink>Kebijakan Privasi</privacyLink>
 login-identity = Identitas Masuk
 login-signup = Masuk / Daftar
@@ -309,6 +318,7 @@ connect-gravatar = Sambungkan ke Gravatar
 gravatar_not_found = Tidak ditemukan gravatar untuk surel Anda
 file_too_large = Berkas yang dipilih terlalu besar
 manage-subscriptions = Kelola Langganan
+manage-email-subscriptions = Kelola Langganan Surel
 email-already-used = Surel telah digunakan untuk akun yang berbeda
 add-language = Tambah Bahasa
 change-email-setings = Ubah email Anda melalui Pengaturan di bawah Identitas Login
@@ -366,6 +376,59 @@ faq-what-determine-identity-a =
     Set data Common Voice adalah sumber daya terbuka dan tersedia untuk umum yang dapat digunakan untuk melatih berbagai aplikasi yang berkemampuan-bicara. Untuk melindungi keamanan kontributor kami, kami meminta semua orang yang mengunduh set data Common Voice untuk menghormati privasi kontributor.
     
     Semua klip suara dalam set data telah terpisahkan dari informasi pengenal pribadi. Ketika Anda mengunduh set data, Anda setuju untuk tidak mencoba menentukan identitas kontributor manapun. Itu berarti Anda tidak dapat mencoba menautkan informasi dalam set data ke informasi pribadi kontributor. Namun, Anda dapat menggunakan set data untuk melatih pengenalan ucapan, pengenalan pembicara, atau aplikasi lain, dengan, misalnya, menghubungkan informasi dalam set data ke informasi lain yang sudah ada dalam set data.
+faq-what-is-cv = Apa itu Common Voice?
+faq-using-cv = Menggunakan Common Voice
+faq-description = Common Voice adalah bagian dari inisiatif Mozilla untuk membantu mengajari mesin bagaimana manusia sebenarnya berbicara.
+faq-search-for-answers =
+    .label = Cari jawaban
+
+## ABOUT US
+
+about-title = Mengapa Common Voice?
+about-subtitle = Common Voice adalah bagian dari inisiatif Mozilla untuk membantu mengajari mesin bagaimana manusia sebenarnya berbicara. Selain himpunan data Common Voice, kami juga membangun mesin pengenalan ucapan sumber terbuka yang disebut Deep Speech.
+about-header-description =
+    Kedua proyek ini adalah bagian dari upaya kami untuk menjembatani kesenjangan ucapan digital. Teknologi pengenalan suara membawa dimensi manusia ke perangkat kami, tetapi pengembang membutuhkan sejumlah besar data suara untuk membangunnya. Saat ini, sebagian besar datanya mahal dan eksklusif.
+    Kami ingin agar data suara bisa tersedia secara bebas dan untuk umum, serta memastikan bahwa data tersebut mewakili keragaman manusia sebenarnya. Kita bisa bersama-sama menjadikan pengenalan suara lebih baik bagi semua orang.
+how-does-it-work-title = Bagaimana cara kerjanya
+how-does-it-work-text = Kami mengurundayakan penghimpunan data suara sumber terbuka. Sumbangkan suara Anda, validasi akurasi klip yang ada, jadikan himpunan data lebih baik bagi siapa saja.
+about-speak = Bicara
+about-speak-text = Kontributor merekam klip suara dengan membaca dari bank donasi kalimat.
+about-listen-queue = Antrean-Dengar
+about-listen-queue-text = Klip suara dimasukkan ke antrean ajuan agar siap untuk didengarkan.
+about-listen = Dengarkan
+about-listen-text = Pengguna memvalidasi akurasi klip donasi, memeriksa apakah penuturnya telah membaca kalimat dengan saksama.
+about-is-it-valid = Apakah klipnya valid?
+about-is-it-valid-text = Klip suara ditandai "valid" ketika pengguna memilih Ya.
+about-yes-votes = ≥ 2 pilihan Ya
+about-yes-votes-text = Supaya diterima dalam himpunan data Common Voice, klip suara harus divalidasi oleh dua pengguna berbeda.
+about-no-votes = ≥ 2 pilihan Tidak
+about-no-votes-text = Ketika ditolak oleh pengguna, klip suara akan kembali ke Antrean. Apabila ditolak lagi, klip suara akan dialihkan ke Kober Klip.
+about-dataset = Himpunan Data Common Voice
+about-dataset-text = Ketika ditolak oleh pengguna, klip suara akan kembali ke Antrean. Apabila ditolak lagi, klip suara akan dialihkan ke Kober Klip.
+about-clip-graveyard = Kober Klip
+about-clip-graveyard-text = Kober Klip terdiri dari klip suara yang ditolak masuk ke himpunan data Common Voice. Sebagaimana himpunan data, Kober Klip juga tersedia untuk diunduh.
+about-partners = Mitra
+about-become-a-partner = Jadilah mitra
+about-partnership =
+    Common Voice adalah proyek kolaboratif, dan kami bergantung kepada komunitas mitra dan kontributor kami dalam membangun himpunan data suara sumber terbuka yang pernah ada.
+    
+    Kami ingin berterima kasih kepada orang-orang dan organisasi berikut atas bantuan mereka dalam proyek ini:
+about-get-involved = Mari berperan
+about-get-involved-text =
+    Ingin menjadikan Common Voice lebih baik lagi?
+    Bagus! Hubungi kami melalui surel atau di <discourseLink>Discourse</discourseLink>,
+    sampaikan tanggapan melalui <githubLink>GitHub</githubLink>,
+    atau bergabunglah bersama kami di <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = Mengapa?
+about-nav-how-it-works = Bagaimana?
+about-nav-partners = Mitra
+about-nav-get-involved = Mari berperan
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Kecerdasan buatan
+mycroft-description =
+    Mycroft adalah asisten sumber terbuka pertama di dunia.
+    Mycroft berfungsi di mana saja - di komputer desktop, di dalam mobil, atau di Raspberry Pi.
+mycroft-secondary-description = Ini adalah perangkat lunak sumber terbuka yang dapat secara bebas dicampur aduk, diperluas, dan diperbagus. Mycroft dapat digunakan dalam segala hal mulai dari proyek sains hingga aplikasi perangkat lunak perusahaan.
 
 ## Glossary
 

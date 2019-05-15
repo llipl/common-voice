@@ -8,8 +8,10 @@ email-input =
     .label = E-post
 submit-form-action = Skicka in
 loading = Laddar…
+email-opt-in-info = Jag vill få e-postmeddelanden med påminnelser om mål, mina framstegsuppdateringar och nyhetsbrev om Common Voice.
 email-opt-in-privacy = Genom att ta emot e-postmeddelanden godkänner du Mozillas hantering av denna information som förklaras i Mozillas <privacyLink>sekretesspolicy<privacyLink>.
 indicates-required = * Indikerar obligatoriska fält
+not-available-abbreviation = inte tillgänglig
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Arabiska
 as = Assamesiska
 ast = Asturiska
 az = Azerbajdzjanska
+ba = Basjkiriska
 bg = Bulgariska
 bn = Bengaliska
 br = Bretonska
@@ -54,7 +57,9 @@ fr = Franska
 fy-NL = Frisiska
 ga-IE = Irländska
 gl = Galiciska
+ha = Hausa
 he = Hebreiska
+hi-IN = Hindi
 hr = Kroatiska
 hsb = Högsorbiska
 hu = Ungerska
@@ -69,13 +74,16 @@ kab = Kabyliska
 kk = Kazakstanska
 ko = Koreanska
 kpv = Komi-syrjänska
+ku = Kurdiska
 kw = Korniska
 ky = Kirgiziska
+lij = Liguriska
 lt = Litauiska
 lv = Lettiska
 mdf = Moksha
 mhr = Östmariska
 mk = Makedonska
+ml = Malayalam
 mn = Mongoliska
 mrj = Västmariska
 myv = Erzya
@@ -93,6 +101,7 @@ ru = Ryska
 rw = Kinyarwanda
 sah = Sakha
 sc = Sardiska
+si = Singalesiska
 sk = Slovakiska
 sl = Slovenska
 sq = Albanska
@@ -100,6 +109,7 @@ sr = Serbiska
 sv-SE = Svenska
 ta = Tamilska
 te = Telugu
+tg = Tadzjikiska
 th = Thailändska
 tr = Turkiska
 tt = Tatariska
@@ -123,6 +133,7 @@ speak = Tala
 speak-now = Prata nu
 datasets = Datamängder
 languages = Språk
+about = Om oss
 profile = Profil
 help = Hjälp
 contact = Kontakt
@@ -293,8 +304,6 @@ profile-explanation = Håll reda på dina framsteg med en profil och hjälp vår
 thanks-for-account = Tack för att du har bekräftat ditt konto, nu bygger vi din profil.
 why-demographic = Vad innebär det?
 why-demographic-explanation = Anonymiserade användardata som ålder, kön och accent hjälper till att förbättra ljuddata som används för att träna noggrannheten för taligenkänningsmotorer. Ditt användarnamn och e-post kommer aldrig att kopplas till dina inlämnade data, och du kan välja om du vill göra ditt användarnamn offentligt eller anonymt.
-keep-me-posted =
-    .label = Jag skulle vilja ha uppdateringar och hålla mig uppdaterad med vad som händer med Common Voice.
 accept-privacy = Jag är okej med att du hanterar denna information som du förklarar i Mozillas <privacyLink>sekretesspolicy</privacyLink>
 login-identity = Inloggningsidentitet
 login-signup = Logga in / Registrera dig
@@ -314,6 +323,7 @@ connect-gravatar = Anslut med Gravatar
 gravatar_not_found = Ingen gravatar hittades för din e-postadress
 file_too_large = Den valda filen är för stor
 manage-subscriptions = Hantera prenumerationer
+manage-email-subscriptions = Hantera e-postprenumerationer
 email-already-used = E-postadress används redan för ett annat konto
 add-language = Lägg till språk
 change-email-setings = Ändra ditt e-post via Inställningar under inloggningsidentitet
@@ -371,6 +381,59 @@ faq-what-determine-identity-a =
     Common Voice-datamängd är en öppen och allmänt tillgänglig resurs som kan användas för att träna ett brett utbud av röstaktiverade applikationer. För att skydda våra bidragsgivares säkerhet ber vi alla som hämtar Common Voice-datamängd att respektera bidragsgivarnas integritet.
     
     Alla röstklipp i datamängden rensas på personidentifierande information. När du hämtar datamängden godkänner du att du inte försöker ta reda på identiteten hos någon bidragsgivare. Det betyder att du inte får försöka länka information i datamängden till en bidragsgivares personuppgifter. Du kan dock använda datamängden för att träna taligenkänning, talarigenkänning eller andra program, t.ex. genom att länka information i datamängden till annan information som redan finns i datamängden.
+faq-what-is-cv = Vad är Common Voice?
+faq-using-cv = Använda Common Voice
+faq-description = Projektet Common Voice är Mozillas initiativ att hjälpa till att lära maskiner hur riktiga människor talar.
+faq-search-for-answers =
+    .label = Sök efter svar
+
+## ABOUT US
+
+about-title = Varför Common Voice?
+about-subtitle = Common Voice är en del av Mozillas initiativ för att hjälpa till att lära maskiner hur riktiga människor talar. Förutom Common Voice-datamängd bygger vi också en taligenkänningsmotor med öppen källkod som heter Deep Speech.
+about-header-description =
+    Båda dessa projekt är en del av våra ansträngningar att överbrygga den digitala talklyftan. Röstigenkänningsteknik ger en mänsklig dimension till våra enheter, men utvecklare behöver en enorm mängd röstdata för att bygga dem. För närvarande är de flesta av dessa data dyra och proprietära.
+    Vi vill göra röstdata fritt och allmänt tillgängliga, och se till att uppgifterna representerar mångfalden av riktiga människor. Tillsammans kan vi göra röstigenkänning bättre för alla.
+how-does-it-work-title = Hur fungerar det
+how-does-it-work-text = Vi crowdsourcar en röstdatamängd med öppen källkod. Donera din röst, bekräfta noggrannheten i inspelningar från andra och gör datamängden bättre för alla.
+about-speak = Tala
+about-speak-text = Bidragsgivare spelar in röstklipp genom att läsa från en bank med givna meningar.
+about-listen-queue = Lyssna-kö
+about-listen-queue-text = Röstklipp läggs in i en kö som läser dem för lyssning.
+about-listen = Lyssna
+about-listen-text = Användare bekräftar noggrannheten av donerade klipp, kontrollera att talaren läser meningen korrekt.
+about-is-it-valid = Är klippet giltigt?
+about-is-it-valid-text = Ett röstklipp är markerat "giltigt" när en användare ger den en, Ja röst.
+about-yes-votes = ≥ 2 Ja röster
+about-yes-votes-text = För att göra det i Common Voice-datamängd måste ett röstklipp valideras av två separata användare.
+about-no-votes = ≥ 2 Nej röster
+about-no-votes-text = När en användare avvisar ett röstklipp återgår det till kön. Om det avvisas för andra gången flyttas röstklippet till klippkyrkogården.
+about-dataset = Common Voice-datamängd
+about-dataset-text = När en användare avvisar ett röstklipp återgår det till kön. Om det avvisas för andra gången flyttas röstklippet till klippkyrkogården.
+about-clip-graveyard = Klippkyrkogården
+about-clip-graveyard-text = Klippkyrkogården består av röstklipp som inte platsar i Common Voice-datamängd. Precis som datamängden är klippkyrkogården tillgänglig för nedladdning.
+about-partners = Partners
+about-become-a-partner = Bli en partner
+about-partnership =
+    Common Voice är ett samarbetsprojekt och vi är beroende av våra samarbetspartners och medarbetares sammansättning för att skapa den största datamängden med öppen källkod för röster någonsin.
+    
+    Vi vill tacka följande personer och organisationer för deras hjälp med projektet:
+about-get-involved = Engagera dig
+about-get-involved-text =
+    Vill du hjälpa till att göra Common Voice ännu bättre?
+    Bra! Ta kontakt via e-post eller på <discourseLink>Discourse</discourseLink>,
+    skicka in återkoppling via <githubLink>GitHub</ githubLink>,
+    eller gå med oss på <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = Varför ?
+about-nav-how-it-works = Hur ?
+about-nav-partners = Partners
+about-nav-get-involved = Engagera dig
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Artificiell intelligens
+mycroft-description =
+    Mycroft är världens första assistent med öppen källkod. 
+    Mycroft körs var som helst - på en stationär dator, inuti en bil, eller på en Raspberry Pi.
+mycroft-secondary-description = Detta är öppen källkodsprogramvara som kan remixas, utvidgas och förbättras fritt. Mycroft kan användas i allt från ett vetenskapligt projekt till en företagsprogramvara.
 
 ## Glossary
 

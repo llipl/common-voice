@@ -8,8 +8,10 @@ email-input =
     .label = Email
 submit-form-action = Gửi
 loading = Đang tải...
+email-opt-in-info = Tôi muốn nhận email như lời nhắc mục tiêu, cập nhật tiến độ và bản tin của tôi về Common Voice.
 email-opt-in-privacy = Bằng cách chọn nhận email, bạn tuyên bố rằng bạn đồng ý với việc Mozilla xử lý thông tin này như được giải thích trong <privacyLink>chính sách bảo mật<privacyLink> của Mozilla.
 indicates-required = * Trường được yêu cầu
+not-available-abbreviation = N/A
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Tiếng Ả Rập
 as = Tiếng Assam
 ast = Tiếng Asturia
 az = Tiếng Azerbaijan
+ba = Tiếng Bashkir
 bg = Tiếng Bungari
 bn = Tiếng Bengal
 br = Tiếng Breton
@@ -54,7 +57,9 @@ fr = Tiếng Pháp
 fy-NL = Tiếng Frisia
 ga-IE = Tiếng Ireland
 gl = Tiếng Galicia
+ha = Tiếng Hausa
 he = Tiếng Do Thái
+hi-IN = Tiếng Hindi
 hr = Tiếng Croatia
 hsb = Tiếng Sorb vùng Thượng
 hu = Tiếng Hungary
@@ -69,13 +74,16 @@ kab = Tiếng Kabyle
 kk = Tiếng Kazakh
 ko = Tiếng Hàn
 kpv = Tiếng Komi-Zyria
+ku = Tiếng Kurdish
 kw = Tiếng Cornwall
 ky = Tiếng Kyrgyz
+lij = Tiếng Ligurian
 lt = Tiếng Litva
 lv = Tiếng Latvia
 mdf = Tiếng Moksha
 mhr = Tiếng Mari Đông
 mk = Tiếng Macedonia
+ml = Tiếng Malayalam
 mn = Tiếng Mông Cổ
 mrj = Tiếng Mari Tây
 myv = Tiếng Erzya
@@ -93,6 +101,7 @@ ru = Tiếng Nga
 rw = Tiếng Kinyarwanda
 sah = Tiếng Sakha
 sc = Tiếng Sardinia
+si = Tiếng Sinhala
 sk = Tiếng Slovakia
 sl = Tiếng Slovenia
 sq = Tiếng Albania
@@ -100,6 +109,7 @@ sr = Tiếng Serbia
 sv-SE = Tiếng Thụy Điển
 ta = Tiếng Tamil
 te = Tiếng Telugu
+tg = Tiếng Tajik
 th = Tiếng Thái
 tr = Tiếng Thổ Nhĩ Kỳ
 tt = Tiếng Tatar
@@ -123,6 +133,7 @@ speak = Nói
 speak-now = Nói ngay
 datasets = Tập dữ liệu
 languages = Ngôn ngữ
+about = Giới thiệu về chúng tôi
 profile = Hồ sơ
 help = Trợ giúp
 contact = Liên hệ
@@ -286,8 +297,6 @@ profile-explanation = Theo dõi tiến trình của bạn với một hồ sơ v
 thanks-for-account = Cảm ơn bạn đã xác nhận tài khoản của mình, giờ hãy tạo hồ sơ của bạn.
 why-demographic = Vì sao điều này quan trọng?
 why-demographic-explanation = Dữ liệu người dùng ẩn danh như tuổi, giới tính và giọng vùng miền giúp cải thiện dữ liệu âm thanh được sử dụng để đào tạo sự chính xác của công cụ nhận dạng giọng nói. Tên người dùng và email của bạn sẽ không bao giờ được liên kết với dữ liệu đã gửi của bạn, và bạn có thể chọn đặt tên người dùng của mình ở chế độ công khai hoặc ẩn danh.
-keep-me-posted =
-    .label = Tôi muốn được nhận thông tin và biết những gì diễn ra với dự án Common Voice.
 accept-privacy = Tôi đồng ý với việc các bạn xử lý thông tin này khi các bạn giải thích trong <privacyLink>Chính sách bảo mật</privacyLink> của Mozilla
 login-identity = Nhận dạng đăng nhập
 login-signup = Đăng nhập / Đăng ký
@@ -307,6 +316,7 @@ connect-gravatar = Kết nối với Gravatar
 gravatar_not_found = Không tìm thấy gravatar cho email của bạn
 file_too_large = Tập tin đã chọn quá lớn
 manage-subscriptions = Quản lý các mục đăng kí
+manage-email-subscriptions = Quản lý đăng ký bản tin email
 email-already-used = Email đã được sử dụng cho tài khoản khác
 add-language = Thêm ngôn ngữ
 change-email-setings = Thay đổi email của bạn thông qua Cài đặt và ở bên dưới Nhận dạng đăng nhập
@@ -364,6 +374,59 @@ faq-what-determine-identity-a =
     Bộ dữ liệu Common Voice là một tài nguyên mở và công khai có thể được sử dụng để đào tạo nhiều ứng dụng hỗ trợ giọng nói. Để bảo vệ tính bảo mật của những người đóng góp, chúng tôi yêu cầu mọi người tải xuống tập dữ liệu Common Voice phải tôn trọng quyền riêng tư của cộng tác viên.
     
     Tất cả các clip thoại trong bộ dữ liệu được kiểm tra thông tin nhận dạng cá nhân. Khi bạn tải xuống tập dữ liệu, bạn đồng ý không cố gắng xác định danh tính của bất kỳ người đóng góp nào. Điều đó có nghĩa là bạn không thể cố gắng liên kết thông tin trong bộ dữ liệu với thông tin cá nhân của cộng tác viên. Tuy nhiên, bạn có thể sử dụng tập dữ liệu để huấn luyện nhận dạng giọng nói, nhận dạng người nói hoặc các ứng dụng khác, ví dụ, bằng cách liên kết thông tin trong tập dữ liệu với thông tin khác đã có trong tập dữ liệu.
+faq-what-is-cv = Common Voice là gì?
+faq-using-cv = Sử dụng Common Voice
+faq-description = Common Voice là một phần trong sáng kiến của Mozilla nhằm giúp đào tạo cho máy móc cách người thật nói.
+faq-search-for-answers =
+    .label = Tìm kiếm câu trả lời
+
+## ABOUT US
+
+about-title = Tại sao là Common Voice?
+about-subtitle = Common Voice là một phần trong sáng kiến của Mozilla nhằm giúp đào tạo cho máy móc cách người thật nói. Ngoài bộ dữ liệu Common Voice, chúng tôi còn xây dựng một công cụ nhận dạng giọng nói nguồn mở có tên Deep Speech.
+about-header-description =
+    Cả hai dự án này là một phần trong những nỗ lực của chúng tôi để thu hẹp sự phân chia lời nói kỹ thuật số. Các công nghệ nhận dạng giọng nói mang lại kích thước con người cho các thiết bị của chúng tôi, nhưng các nhà phát triển cần một lượng dữ liệu giọng nói khổng lồ để xây dựng chúng. Hiện nay, hầu hết các dữ liệu đó là đắt tiền và độc quyền.
+    Chúng tôi muốn cung cấp dữ liệu giọng nói một cách tự do và công khai và đảm bảo dữ liệu thể hiện sự đa dạng của người thực. Cùng nhau chúng ta có thể làm cho nhận dạng giọng nói tốt hơn cho mọi người.
+how-does-it-work-title = Nó hoạt động như thế nào
+how-does-it-work-text = Chúng tôi có thể cung cấp một bộ dữ liệu nguồn mở của các giọng nói. Quyên góp giọng nói của bạn, xác thực tính chính xác clip của người khác, làm cho bộ dữ liệu tốt hơn cho mọi người.
+about-speak = Nói
+about-speak-text = Người đóng góp ghi lại clip bằng giọng nói bằng cách đọc từ ngân hàng các câu được tặng.
+about-listen-queue = Nghe-Xếp hàng
+about-listen-queue-text = Các clip thoại được nhập vào hàng đợi gửi để sẵn sàng nghe.
+about-listen = Nghe
+about-listen-text = Người dùng xác nhận tính chính xác của các clip được tặng, kiểm tra xem người nói có đọc câu đúng không.
+about-is-it-valid = Clip có hợp lệ không?
+about-is-it-valid-text = Một clip thoại được đánh dấu là "hợp lệ" khi người dùng cho nó một phiếu bầu Có.
+about-yes-votes = ≥2 phiếu bầu đồng ý
+about-yes-votes-text = Để đưa nó vào bộ dữ liệu Common Voice, một clip thoại phải được xác thực bởi hai người dùng riêng biệt.
+about-no-votes = ≥ 2 phiếu bầu không đồng ý
+about-no-votes-text = Khi người dùng từ chối clip thoại, nó sẽ trở về hàng đợi. Nếu bị từ chối lần thứ hai, clip thoại sẽ được chuyển sang clip không hợp lệ.
+about-dataset = Bộ dữ liệu Common Voice
+about-dataset-text = Khi người dùng từ chối clip thoại, nó sẽ trở về hàng đợi. Nếu bị từ chối lần thứ hai, clip thoại sẽ được chuyển sang clip không hợp lệ.
+about-clip-graveyard = Clip không hợp lệ
+about-clip-graveyard-text = Clip không hợp lệ bao gồm các clip thoại không được đưa vào bộ dữ liệu Common Voice. Giống như tập dữ liệu, clip không hợp lệ có sẵn để tải xuống.
+about-partners = Đối tác
+about-become-a-partner = Trở thành một đối tác
+about-partnership =
+    Common Voice là một dự án hợp tác và chúng tôi phụ thuộc vào cộng đồng đối tác và cộng tác viên của mình để xây dựng bộ dữ liệu giọng nói nguồn mở lớn nhất từ trước đến nay.
+    
+    Chúng tôi xin cảm ơn những người và tổ chức sau đây đã giúp đỡ cho dự án:
+about-get-involved = Tham gia đóng góp
+about-get-involved-text =
+    Bạn muốn giúp làm cho Common Voice trở nên tốt hơn?
+    Tuyệt quá! Hãy liên lạc qua email hoặc trên <discourseLink>Discourse</discourseLink>,
+    gửi phản hồi thông qua <githubLink>GitHub</githubLink>,
+    hoặc tham gia với chúng tôi trên <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = Tại sao ?
+about-nav-how-it-works = Làm thế nào ?
+about-nav-partners = Đối tác
+about-nav-get-involved = Tham gia đóng góp
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Trí tuệ nhân tạo
+mycroft-description =
+    Mycroft là trợ lý mã nguồn mở đầu tiên trên thế giới.
+    Mycroft chạy mọi nơi - trên máy tính để bàn, bên trong ô tô hoặc trên Raspberry Pi.
+mycroft-secondary-description = Đây là phần mềm nguồn mở có thể được tự do phối lại, mở rộng và cải thiện. Mycroft có thể được sử dụng trong mọi thứ từ dự án khoa học đến ứng dụng phần mềm doanh nghiệp.
 
 ## Glossary
 

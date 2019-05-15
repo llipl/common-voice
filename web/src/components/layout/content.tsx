@@ -6,7 +6,6 @@ import {
   localeConnector,
   LocalePropsFromState,
 } from '../locale-helpers';
-import FAQPage from '../pages/faq';
 import DocumentPage from '../pages/document-page';
 import NotFoundPage from '../pages/not-found';
 import { Spinner } from '../ui/ui';
@@ -15,6 +14,8 @@ const DatasetsPage = React.lazy(() => import('../pages/datasets/datasets'));
 const LanguagesPages = React.lazy(() => import('../pages/languages/languages'));
 const DashboardPage = React.lazy(() => import('../pages/dashboard/dashboard'));
 const ProfileLayoutPage = React.lazy(() => import('../pages/profile/layout'));
+const FAQPage = React.lazy(() => import('../pages/faq/faq'));
+const AboutPage = React.lazy(() => import('../pages/about/about'));
 
 export default localeConnector(
   ({ locale, toLocaleRoute }: LocalePropsFromState) => (
@@ -63,7 +64,7 @@ export default localeConnector(
             component={ProfileLayoutPage}
           />
           <Route
-            path={[URLS.STATS, URLS.GOALS].map(toLocaleRoute)}
+            path={[URLS.STATS, URLS.GOALS, URLS.AWARDS].map(toLocaleRoute)}
             component={DashboardPage}
           />
           <Route
@@ -77,6 +78,7 @@ export default localeConnector(
             render={() => <Redirect to={toLocaleRoute(URLS.GOALS)} />}
           />
           <Route exact path={toLocaleRoute(URLS.FAQ)} component={FAQPage} />
+          <Route exact path={toLocaleRoute(URLS.ABOUT)} component={AboutPage} />
           <Route
             exact
             path={toLocaleRoute(URLS.PRIVACY)}

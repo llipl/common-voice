@@ -8,8 +8,10 @@ email-input =
     .label = E-pošta
 submit-form-action = Pošlji
 loading = Nalaganje …
+email-opt-in-info = Želim prejemati e-poštna sporočila, kot so opomniki za cilje, posodobitve napredka in novice projekta Common Voice.
 email-opt-in-privacy = S potrditvijo prejemanja e-pošte soglašate z ravnanjem s temi podatki, kot je razloženo v Mozillini <privacyLink>politiki zasebnosti<privacyLink>.
 indicates-required = * Zahtevano polje
+not-available-abbreviation = Ni na voljo
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = arabščina
 as = asamščina
 ast = asturijščina
 az = azerbajdžanščina
+ba = baškirščina
 bg = bolgarščina
 bn = bengalščina
 br = bretonščina
@@ -54,7 +57,9 @@ fr = francoščina
 fy-NL = frizijščina
 ga-IE = irščina
 gl = galicijščina
+ha = havščina
 he = hebrejščina
+hi-IN = hindujščina
 hr = hrvaščina
 hsb = gornja lužiška srbščina
 hu = madžarščina
@@ -69,13 +74,16 @@ kab = kabilščina
 kk = kazaščina
 ko = korejščina
 kpv = komijščina
+ku = kurdščina
 kw = kornijščina
 ky = kirgiščina
+lij = ligurščina
 lt = litovščina
 lv = latvijščina
 mdf = mokša
 mhr = vzhodna marijščina
 mk = makedonščina
+ml = malajalamščina
 mn = mongolščina
 mrj = zahodna marijščina
 myv = erzjanščina
@@ -93,6 +101,7 @@ ru = ruščina
 rw = ruandščina
 sah = jakutščina
 sc = sardinščina
+si = sinhalščina
 sk = slovaščina
 sl = slovenščina
 sq = albanščina
@@ -100,6 +109,7 @@ sr = srbščina
 sv-SE = švedščina
 ta = tamilščina
 te = teluščina
+tg = tadžiščina
 th = tajščina
 tr = turščina
 tt = tatarščina
@@ -123,6 +133,7 @@ speak = Govori
 speak-now = Začnite govoriti
 datasets = Nabori podatkov
 languages = Jeziki
+about = O nas
 profile = Profil
 help = Pomoč
 contact = Kontakt
@@ -303,8 +314,6 @@ profile-explanation = Sledite svojemu napredku s pomočjo profila in nam pomagaj
 thanks-for-account = Hvala za potrditev računa, zdaj pa se lotimo ustvarjanja vašega profila.
 why-demographic = Zakaj je to pomembno?
 why-demographic-explanation = Anonimni uporabniški podatki, kot so starost, spol in naglas, izboljšajo glasovne podatke, ki se uporabljajo za zagotavljanje natančnosti sistemov za prepoznavanje govora. Vaše uporabniško ime in e-pošta ne bosta nikoli povezana z vašimi posredovanimi podatki, zato lahko izberete, ali bo vaše uporabniško ime javno ali anonimno.
-keep-me-posted =
-    .label = Želim prejemati posodobitve in novosti o poteku projekta Common Voice.
 accept-privacy = Strinjam se z ravnanjem s temi podatki, kot je razloženo v Mozillini <privacyLink>politiki zasebnosti</privacyLink>
 login-identity = Identiteta prijave
 login-signup = Prijava / Registracija
@@ -324,6 +333,7 @@ connect-gravatar = Poveži z Gravatarjem
 gravatar_not_found = Za vaš e-poštni naslov ne obstaja Gravatar
 file_too_large = Izbrana datoteka je prevelika
 manage-subscriptions = Upravljaj z naročninami
+manage-email-subscriptions = Upravljanje e-poštnih naročnin
 email-already-used = E-poštni naslov je že v uporabi za drug račun
 add-language = Dodaj jezik
 change-email-setings = E-poštni naslov spremenite v nastavitvah pod Identiteta prijave
@@ -337,23 +347,64 @@ faq-how-get-q = Kako lahko prenesem podatke Common Voice?
 faq-how-get-a = Podatkovni niz Common Voice je na voljo za prenos pod licenco <licenseLink>CC0</licenseLink> na <datasetLink>naši strani podatkovnih nizov</datasetLink>. Z iste strani lahko prenesete tudi več drugih javno dostopnih podatkovnih nizov.
 faq-when-release-q = Kdaj boste objavili podatke Common Voice v drugih jezikih?
 faq-why-mission-q = Zakaj je Common Voice del Mozillinega poslanstva?
+faq-why-mission-a = Mozilla se zavzema za splet, ki je odprt in dostopen vsem. Za to želimo opolnomočiti ustvarjalce spleta s pomočjo projektov, kot je Common Voice. Medtem ko se govorne tehnologije širijo preko meja nišnih aplikacij, si prizadevamo, da bi vsem uporabnikom služile enako dobro. Pri razvoju in testiranju govorne tehnologije tako vidimo potrebo po investiranju v čim več jezikov in vključevanju različnih naglasov ter demografskih skupin. Common Voice je prostodostopen javni vir, ki ga ekipe Mozille, kot tudi razvijalci po celem svetu že uporabljajo pri svojih projektih.
 faq-what-cv-and-deepspeech-q = Kakšna je razlika med projektoma Common Voice in Deep Speech?
+faq-what-cv-and-deepspeech-a = Nabor podatkov Common Voice dopolnjuje Mozillin odprtokodni sistem za prepoznavanje govora Deep Speech. Prva različica sistema Deep Speech je bila izdana novembra 2017 in se od takrat še naprej razvija. Verjamemo, da bi morala biti ta odprtokodna tehnologija za prepoznavanje govora, skupaj z nabori podatkov Common Voice, na voljo vsem. Upamo, da bodo te tehnologije razvijalcem omogočile ustvariti številne inovativne izdelke in storitve.
 faq-is-goal-assistant-q = Ali je cilj projekta Common Voice ustvariti glasovnega pomočnika?
+faq-is-goal-assistant-a = Cilj nabora podatkov Common Voice je omogočiti, da lahko vsakdo ustvari aplikacije za prepoznavanje govora ali katero drugo vrsto aplikacije, ki zahteva glasovne podatke. Glasovni pomočnik je le ena od mnogih aplikacij, za katero lahko uporabite nabor podatkov.
 faq-do-want-native-q = Nisem materni govorec in govorim z naglasom; ali vseeno želite moj glas?
 faq-do-want-native-a = Da, še posebej želimo vaš glas! Del cilja Common Voice je zbrati čim več različnih naglasov, tako da lahko storitve prepoznavanja govora delujejo enako dobro za vse. To pomeni, da so prispevki tujih govorcev še posebej pomembni.
 faq-why-different-speakers-q = Zakaj potrebujete toliko različnih govorcev za en jezik?
 faq-why-my-lang-q = Zakaj moj jezik še ni vključen?
 faq-what-quality-q = Kolikšna kakovost zvoka je zahtevana za posnetke, da so uporabni za nabor podatkov?
+faq-what-quality-a = Želimo, da nabor podatkov Common Voice odraža kakovost zvoka, ki ga bo sistem za pretvarjanje govora v besedilo zaznal v naravnem okolju, zato iščemo raznolikost. Poleg raznolike skupnosti govorcev, bo nabor podatkov z različno kakovostjo zvoka naučil sisteme za pretvarjanje govora v besedilo, da bodo ti lahko upoštevali različne situacije v naravnem okolju, od različnih zvokov v ozadju, do hrupa avtomobilov. Dokler je vaš glasovni posnetek razumljiv, bi moral biti dovolj dober za nabor podatkov.
 faq-why-10k-hours-q = Zakaj je 10 000 potrjenih ur na jezik cilj za snemanje zvoka?
 faq-why-10k-hours-a = To je približno število ur, ki jih sistem za pretvorbo govora v besedilo potrebuje za učenje.
 faq-how-calc-hours-q = Kako Common Voice računa ure?
 faq-how-calc-hours-a = Ure računamo tako, da ocenimo povprečno dolžino vsakega posnetka in nato to število pomnožimo s skupnim številom posnetkov v vseh jezikih.
 faq-where-src-from-2-q = Od kod prihaja izvorno besedilo?
+faq-where-src-from-2-a =
+    Naše izvorno besedilo je sestavljeno iz prispevkov sodelavcev in dialogov iz filmov v javni domeni, kot je <italic>Čudovito življenje</italic>.
+    
+    Naše izvorne stavke si lahko ogledate v <githubLink>tej mapi na GitHubu</githubLink>.
 faq-why-not-ask-read-q = Zakaj ne prosite ljudi, da berejo iz knjig ali člankov na Wikipediji v različnih jezikih?
 faq-why-account-q = Zakaj naj si ustvarim račun?
 faq-is-account-public-q = Ali so podatki o mojem računu javni?
 faq-how-privacy-q = Kako zagotavljate anonimnost in zasebnost ljudi, ki so prispevali svoje glasove?
+faq-how-privacy-a = Vsi osebni identifikacijski podatki se izločijo iz glasovnih posnetkov v naboru podatkov. Ko sodelavec preko svojega profila posreduje demografske podatke, se te informacije iz njegovih glasovnih posnetkov prikrijejo, preden se posnetki prenesejo v zbirko podatkov za prenos, in nikoli niso objavljeni na njegovi strani profila.
 faq-what-determine-identity-q = Kaj pomeni, da ne smem določiti identitete govorcev v naboru podatkov Common Voice?
+faq-what-determine-identity-a =
+    Nabor podatkov Common Voice je odprt in javno dostopen vir, ki ga lahko uporabite za izboljšanje aplikacij za prepoznavanje govora. Da bi zaščitili varnost naših sodelavcev, prosimo vse, ki bodo prenesli nabor podatkov Common Voice, da spoštujejo njihovo zasebnost.
+    
+    Osebni identifikacijski podatki so izločeni iz vseh glasovnih posnetkov v naboru podatkov. S prenosom nabora podatkov se strinjate, da ne boste poskušali določiti identitete sodelujočih. To pomeni, da ne smete poskusiti povezati podatkov v naboru podatkov z osebnimi podatki sodelujočih. Lahko pa nabor podatkov uporabite za izboljšanje prepoznavanja govora, prepoznavanja govorcev ali drugih aplikacij, na primer s povezovanjem podatkov v naboru podatkov z drugimi podatki, ki so že v naboru podatkov.
+faq-what-is-cv = Kaj je Common Voice?
+faq-using-cv = Uporaba Common Voicea
+faq-search-for-answers =
+    .label = Išči odgovore
+
+## ABOUT US
+
+about-title = Zakaj Common Voice?
+how-does-it-work-title = Kako deluje
+about-is-it-valid = Ali je posnetek veljaven?
+about-is-it-valid-text = Glasovni posnetek je označen kot "veljaven", ko uporabnik zanj glasuje "Da".
+about-yes-votes = ≥ 2 glasova Da
+about-yes-votes-text = Glasovni posnetek mora biti potrjen s strani dveh različnih uporabnikov, preden je uvrščen v nabor podatkov Common Voice.
+about-no-votes = ≥ 2 glasova Ne
+about-dataset = Nabor podatkov Common Voice
+about-clip-graveyard = Pokopališče posnetkov
+about-partners = Partnerji
+about-become-a-partner = Postanite partner
+about-get-involved = Pridružite se
+about-nav-why-common-voice = Zakaj?
+about-nav-how-it-works = Kako?
+about-nav-partners = Partnerji
+about-nav-get-involved = Pridružite se
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Umetna inteligenca
+mycroft-description =
+    Mycroft je prvi odprtokodni asistent.
+    Mycroft deluje kjerkoli – na namiznem računalniku, v avtomobilu ali na Raspberry Pi.
 
 ## Glossary
 
@@ -441,6 +492,7 @@ get-started-speech = Začnite s prepoznavanjem govora
 other-datasets = Drugi glasovni nabori podatkov
 feedback-q = Želite poslati povratne informacije?
 deepspeech-info = Nabor podatkov Common Voice dopolnjuje Mozillin odprtokodni sistem za prepoznavanje govora Deep Speech, ki ga lahko uporabite za izdelavo aplikacij za prepoznavanje govora. Če želite izvedeti, kako začeti, preberite naš <githubLink>priročnik na Githubu</githubLink> ali se nam pridružite <DiscourseLink>na forumu Discourse</discourseLink>.
+common-voice-info-new = Imate vprašanja o projektu Common Voice? Zamisli za izboljšave ali povratne informacije o določenem jeziku? Pridružite se nam na <discourseLink>forumu Discourse</discourseLink> in nam to sporočite.
 data-other-librispeech-description = LibriSpeech je korpus, sestavljen iz približno 1000 ur branih angleških besedil (pri 16 kHz), pridobljen iz zvočnih knjig projekta LibriVox.
 data-other-ted-name = Korpus TED-LIUM
 data-other-ted-description = TED-LIUM je korpus, ki ga sestavljajo zvočni posnetki predstavitev in njihovi prepisi, dostopni na spletni strani TED.com.

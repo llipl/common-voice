@@ -8,8 +8,10 @@ email-input =
     .label = E-mail
 submit-form-action = Wyślij
 loading = Wczytywanie…
+email-opt-in-info = Chcę otrzymywać wiadomości e-mail, takie jak przypomnienia o celach, informacje o moim postępie oraz biuletyny na temat Common Voice.
 email-opt-in-privacy = Wybierając otrzymywanie wiadomości wyrażasz zgodę na wykorzystywanie tych danych przez Mozillę w sposób opisany w <privacyLink>zasadach ochrony prywatności<privacyLink>.
 indicates-required = * wskazuje pole obowiązkowe
+not-available-abbreviation = Niedostępne
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = arabski
 as = asamski
 ast = asturyjski
 az = azerski
+ba = baszkirski
 bg = bułgarski
 bn = bengalski
 br = bretoński
@@ -54,7 +57,9 @@ fr = francuski
 fy-NL = fryzyjski
 ga-IE = irlandzki
 gl = galicyjski
+ha = hausa
 he = hebrajski
+hi-IN = hindi
 hr = chorwacki
 hsb = górnołużycki
 hu = węgierski
@@ -69,13 +74,16 @@ kab = kabylski
 kk = kazachski
 ko = koreański
 kpv = komi (zyriański)
+ku = kurdyjski
 kw = kornijski
 ky = kirgiski
+lij = liguryjski
 lt = litewski
 lv = łotewski
 mdf = moksza
 mhr = maryjski łąkowy
 mk = macedoński
+ml = malajalam
 mn = mongolski
 mrj = maryjski górski
 myv = erzja
@@ -93,6 +101,7 @@ ru = rosyjski
 rw = kinyarwanda
 sah = jakucki
 sc = sardyński
+si = syngaleski
 sk = słowacki
 sl = słoweński
 sq = albański
@@ -100,6 +109,7 @@ sr = serbski
 sv-SE = szwedzki
 ta = tamilski
 te = telugu
+tg = tadżycki
 th = tajski
 tr = turecki
 tt = tatarski
@@ -123,6 +133,7 @@ speak = Nagrywaj
 speak-now = Wymów teraz
 datasets = Zbiory danych
 languages = Języki
+about = O nas
 profile = Profil
 help = Pomoc
 contact = Kontakt
@@ -139,7 +150,7 @@ logout = Wyloguj się
 
 ## Home Page
 
-home-title = Projekt Common Voice to inicjatywa Mozilli pomagająca w uczeniu maszyn mowy prawdziwych ludzi.
+home-title = Common Voice to inicjatywa Mozilli pomagająca w uczeniu maszyn mowy prawdziwych ludzi.
 home-cta = Nagrywaj i pomagaj!
 wall-of-text-start = Mowa to dla nas coś naturalnego i ludzkiego. Dlatego tak bardzo fascynuje nas tworzenie systemu rozpoznawania mowy, który mogłyby wykorzystywać maszyny. Ale aby to osiągnąć, potrzeba niezwykle obszernej bazy danych z nagraniami ludzkiej mowy.
 wall-of-text-more-mobile = Dane wykorzystywane przez duże firmy są niedostępne dla większości. Uważamy, że to hamuje rozwój. Dlatego uruchomiliśmy projekt Common Voice, który ma sprawić, aby systemy rozpoznawania głosu były dostępne dla każdego.
@@ -189,14 +200,26 @@ x-years-short =
 help-make-dataset = Pomóż nam zbudować wysokiej jakości, publicznie otwarty zbiór danych
 profile-not-required = Profil nie jest wymagany do wzięcia udziału, ale się przydaje
 sign-up-account = Zarejestruj konto
+email-subscription-title = zapisz się, aby otrzymywać informacje przez e-mail
 
 ## Account Benefits
 
 benefits = Korzyści
+rich-data = Udostępnij anonimowe dane demograficzne, aby jak najbardziej wzbogacić wysyłane dane. Anonimizujemy je przed upublicznieniem.
+improve-audio = Informacje profilowe zwiększają jakość danych dźwiękowych wykorzystywanych w trenowania dokładności rozpoznawania mowy.
+keep-track = Śledź swoje postępy i parametry w wielu językach.
+compare-progress = Porównaj swoje postępy z innymi uczestnikami z całego świata.
+view-goals = Zobacz swoje postępy na tle celów własnych i projektu.
+join-newsletter = Opcjonalnie dołącz do naszej listy pocztowej, aby otrzymywać wiadomości i nowe informacje o projekcie.
 
 ## What's public
 
 whats-public = Co jest publiczne?
+email-not-public = Twój adres e-mail nie będzie dostępny publicznie.
+recordings-and-locale-public = Liczba nagrań i języki, w których uczestniczysz, będą publiczne.
+username-optin-public = Możesz ustawić swoją nazwę użytkownika jako publiczną lub anonimową.
+demographic-deidentified = Opcjonalnie przesłane dane demograficzne (np. wiek, płeć, język i akcent) są anonimizowane z przesłanych danych głosowych i nigdy nie zostaną upublicznione w Twoim profilu.
+username-email-not-demographic = Twoja nazwa użytkownika i adres e-mail nie będą powiązane z opublikowanymi danymi.
 
 ## Speak & Listen Shortcuts
 
@@ -225,7 +248,7 @@ shortcut-record-toggle-label = Nagraj/zatrzymaj
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Nagraj ponownie
 request-language-text = Common Voice nie oferuje jeszcze Twojego języka?
-request-language-button = Poproś o dodanie języka
+request-language-button = Zaproponuj dodanie języka
 
 ## ProjectStatus
 
@@ -271,7 +294,7 @@ other = Inna
 why-profile-title = Po co profil?
 why-profile-text = Podając pewne informacje o sobie, dane dźwiękowe wysyłane do projektu Common Voice będą bardziej przydatne dla mechanizmów rozpoznawania mowy, które korzystają z tych danych do zwiększenia dokładności.
 dashboard = Panel
-build-profile = Zbuduj profil
+build-profile = Utwórz profil
 avatar = Awatar
 goals = Cele
 settings = Ustawienia
@@ -279,11 +302,9 @@ edit-profile = Edytuj profil
 profile-create-success = Pomyślnie utworzono profil.
 profile-close = Zamknij
 profile-explanation = Kontroluj swój postęp za pomocą profilu i pomóż zwiększyć dokładność naszych danych.
-thanks-for-account = Dziękujemy za potwierdzenie konta. Zbudujmy teraz Twój profil.
+thanks-for-account = Dziękujemy za potwierdzenie konta. Utworzymy teraz Twój profil.
 why-demographic = Dlaczego to ważne?
 why-demographic-explanation = Anonimowe dane o użytkowniku, takie jak wiek, płeć i akcent zwiększają jakość danych dźwiękowych używanych do trenowania dokładności mechanizmów rozpoznawania mowy. Twoja nazwa użytkownika i adres e-mail nigdy nie będą powiązane z przesyłanymi danymi, a także możesz ustawić, czy nazwa użytkownika ma być publiczna lub anonimowa.
-keep-me-posted =
-    .label = Chcę otrzymywać aktualizacje i informacje o tym, co dzieje się w projekcie Common Voice.
 accept-privacy = Pozwalam wykorzystywać te dane w sposób opisany w <privacyLink>zasadach ochrony prywatności</privacyLink> Mozilli
 login-identity = Tożsamość logowania
 login-signup = Zaloguj/zarejestruj się
@@ -303,6 +324,7 @@ connect-gravatar = Połącz z serwisem Gravatar
 gravatar_not_found = Nie odnaleziono awatara Gravatar dla tego adresu e-mail
 file_too_large = Wybrany plik jest za duży
 manage-subscriptions = Zarządzaj subskrypcjami
+manage-email-subscriptions = Zarządzaj subskrypcjami wiadomości
 email-already-used = Adres e-mail jest już używany przez inne konto
 add-language = Dodaj język
 change-email-setings = Zmień swój adres e-mail w ustawieniach tożsamości logowania
@@ -311,14 +333,101 @@ change-email-setings = Zmień swój adres e-mail w ustawieniach tożsamości lo
 
 faq-title = Często zadawane pytania
 faq-what-cv-q = Czym jest Common Voice?
+faq-what-cv-a =
+    Technologia rozpoznawania głosu rewolucjonizuje sposób używania maszyn, ale obecnie dostępne systemy są kosztowne i zastrzeżone. Common Voice jest częścią inicjatywy Mozilli mającej na celu uczynienie rozpoznawania głosu lepszym i dostępnym dla każdego. Common Voice to ogromna globalna baza nagrań głosu, która pozwala każdemu szybko i łatwo trenować aplikacje obsługujące głos w potencjalnie każdym języku.
+    
+    Zbieramy nie tylko próbki głosu w powszechnie używanych językach, ale także w tych z mniejszą liczbę użytkowników. Opublikowanie różnorodnego zbioru danych głosowych umożliwi deweloperom, przedsiębiorcom i społecznościom samodzielne zasypanie tej przepaści. Oprócz zbioru danych Common Voice tworzymy także mechanizm rozpoznawania mowy open source o nazwie Deep Speech.
 faq-why-important-q = Dlaczego to jest ważne?
+faq-how-get-q = Jak mogę pobrać dane z Common Voice?
+faq-how-get-a = Zbiór danych Common Voice jest dostępny do pobrania w ramach licencji <licenseLink>CC0</licenseLink> na <datasetLink>naszej stronie zbioru danych</datasetLink>. Z tej samej strony można pobrać także kilka innych publicznie dostępnych zbiorów danych.
+faq-when-release-q = Kiedy wydacie dane Common Voice w innych językach?
+faq-why-mission-q = Dlaczego Common Voice jest częścią misji Mozilli?
+faq-what-cv-and-deepspeech-q = Jaka jest różnica między Common Voice a Deep Speech?
+faq-is-goal-assistant-q = Czy celem Common Voice jest zbudowanie asystenta głosowego?
+faq-do-want-native-q = Nie jestem rodzimym użytkownikiem języka i mówię z akcentem. Czy dalej chcecie mój głos?
+faq-why-different-speakers-q = Dlaczego potrzeba tylu różnych osób mówiących w danym języku?
+faq-why-my-lang-q = Dlaczego mój język nie jest jeszcze dodany?
+faq-what-quality-q = Jakiej jakości musi być nagranie, aby zostało użyte w zbiorze danych?
+faq-why-10k-hours-q = Dlaczego celem dla każdego z języków jest 10 tysięcy sprawdzonych godzin nagrań?
+faq-why-10k-hours-a = Jest to przybliżona liczba godzin wymagana do uruchomienia systemu rozpoznawania mowy.
+faq-how-calc-hours-q = W jaki sposób Common Voice oblicza godziny?
+faq-how-calc-hours-a = Godziny obliczamy szacując średnią długość każdego nagrania, a następnie mnożąc tę liczbę przez całkowitą liczbę nagrań we wszystkich językach.
+faq-where-src-from-2-q = Skąd pochodzi tekst źródłowy?
+faq-where-src-from-2-a =
+    Nasz tekst źródłowy składa się z oryginalnych zdań przekazanych przez uczestników, a także dialogów ze scenariuszy filmów będących w domenie publicznej, takich jak <italic>To wspaniałe życie</italic>.
+    
+    Nasze zdania źródłowe można zobaczyć w tym <githubLink>folderze w serwisie GitHub</githubLink>.
+faq-why-not-ask-read-q = Dlaczego nie prosicie uczestników o czytanie z książek lub artykułów z Wikipedii w różnych językach?
 faq-why-account-q = Po co mam zarejestrować konto?
+faq-is-account-public-q = Czy informacje zawarte na moim koncie są publiczne?
+faq-how-privacy-q = W jaki sposób zapewniacie anonimowość i prywatność osób, które przekazały nagrania?
+faq-what-determine-identity-q = Co to znaczy, że nie mogę „ustalać tożsamości” osób mówiących w zbiorze danych Common Voice?
+faq-what-is-cv = Czym jest Common Voice?
+faq-using-cv = Jak używać Common Voice
+faq-description = Projekt Common Voice jest częścią inicjatywy Mozilli pomagającej w uczeniu maszyn mowy prawdziwych ludzi.
+faq-search-for-answers =
+    .label = Wyszukaj odpowiedzi
+
+## ABOUT US
+
+about-title = Dlaczego Common Voice?
+about-subtitle = Common Voice jest częścią inicjatywy Mozilli pomagającej w uczeniu maszyn mowy prawdziwych ludzi. Oprócz zbioru danych Common Voice tworzymy także mechanizm rozpoznawania mowy open source o nazwie Deep Speech.
+about-header-description =
+    Oba te projekty są częścią naszych wysiłków na rzecz zniwelowania podziału cyfrowego. Technologie rozpoznawania głosu nadają naszym urządzeniom ludzki wymiar, ale deweloperzy do ich tworzenia potrzebują olbrzymiej ilości danych mowy. Obecnie większość takich danych jest kosztowna i zastrzeżona.
+    Chcemy, aby dane mowy były publicznie dostępne i upewnić się, że reprezentują różnorodność prawdziwych ludzi. Razem możemy ulepszyć rozpoznawanie głosu dla wszystkich.
+how-does-it-work-title = Jak to działa
+how-does-it-work-text = Wspólnie tworzymy zbiór danych mowy open source. Nagraj swój głos, sprawdź dokładność nagrań innych osób, ulepsz zbiór dla wszystkich.
+about-speak = Nagrywanie
+about-speak-text = Uczestnicy nagrywają swój głos czytając zdania z puli zebranych zdań.
+about-listen-queue = Kolejka do odsłuchania
+about-listen-queue-text = Nagrania są umieszczane w kolejce, która przygotowuje je do odsłuchu.
+about-listen = Odsłuchiwanie
+about-listen-text = Użytkownicy sprawdzają dokładność nagrań, kontrolując czy zdanie zostało poprawie przeczytane.
+about-is-it-valid = Czy nagranie jest prawidłowe?
+about-is-it-valid-text = Nagranie zostaje oznaczone jako „prawidłowe”, kiedy użytkownik zagłosuje na tak.
+about-yes-votes = ≥ 2 głosy na tak
+about-yes-votes-text = Aby trafić do zbioru danych Common Voice, nagranie musi zostać sprawdzone przez dwóch użytkowników.
+about-no-votes = ≥ 2 głosy na nie
+about-no-votes-text = Po odrzuceniu przez użytkownika nagranie wraca do kolejki. Jeśli zostanie odrzucone drugi raz, to zostaje przeniesione na cmentarz nagrań.
+about-dataset = Zbiór danych Common Voice
+about-dataset-text = Zbiór danych Common Voice zawiera setki tysięcy próbek głosowych pomagających deweloperom tworzyć narzędzia do rozpoznawania mowy.
+about-clip-graveyard = Cmentarz nagrań
+about-clip-graveyard-text = Cmentarz nagrań składa się z nagrań, które nie trafiły do zbioru Common Voice. Tak jak główny zbiór, cmentarz nagrań jest dostępny do pobrania.
+about-partners = Partnerzy
+about-become-a-partner = Zostań partnerem
+about-partnership =
+    Common Voice to wspólny projekt i budowa największego zbioru danych mowy open source w historii jest zależna od naszej społeczności partnerów i uczestników.
+    
+    Chcielibyśmy podziękować następującym osobom i organizacjom za pomoc przy projekcie:
+about-get-involved = Dołącz do nas
+about-get-involved-text =
+    Chcesz pomóc jeszcze bardziej ulepszyć projekt Common Voice?
+    Wspaniale! Skontaktuj się z nami przez e-mail lub serwis <discourseLink>Discourse</discourseLink>,
+    prześlij opinię przez <githubLink>GitHub</githubLink> lub dołącz do nas w aplikacji <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = Dlaczego?
+about-nav-how-it-works = Jak?
+about-nav-partners = Partnerzy
+about-nav-get-involved = Dołącz do nas
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Sztuczna inteligencja
+mycroft-description =
+    Mycroft to pierwszy asystent open source na świecie.
+    Mycroft działa na każdym sprzęcie — na komputerze, w samochodzie czy na Raspberry Pi.
+mycroft-secondary-description = To oprogramowanie open source, które może być dowolnie zmieniane, rozszerzane i ulepszane. Mycroft może być używany we wszystkim od projektu naukowego po aplikację korporacyjną.
 
 ## Glossary
 
 glossary = Glosariusz
 localization = Lokalizacja
+localization-explanation = To nasz proces tłumaczenia i dostosowywania treści do wielu lokalizacji (języków).
 sentence-collection = Zbieranie zdań
+sentence-collection-explanation = Zbieranie zdań będących w domenie publicznej lub pisanie nowych, które staną się domeną publiczną.
+hours-recorded-explanation = Liczba godzin nagrań mowy, które zebraliśmy do tej pory.
+hours-validated-explanation = Liczba godzin nagrań mowy, które zostały zatwierdzone przez 2 z 3 użytkowników głosem na tak. Są one liczone jako postęp w kierunku ogólnego celu projektu (10 tysięcy godzin).
+sst = Rozpoznawanie mowy
+sst-explanation = Technologie rozpoznawania mowy zamieniają dane głosowe na tekst.
+de-identified = Anonimizacja
+de-identified-explanation = Proces, w wyniku którego informacje profilowe uczestnika są usuwane z przekazanych nagrań mowy podczas pakowania ich do pobrania jako część zbioru danych.
 
 ## NotFound
 
@@ -356,6 +465,13 @@ review-delete-recordings = Usuń moje nagrania
 
 ## New Datasets Page
 
+datasets-headline = Tworzymy wielojęzyczny zbiór danych mowy open source, który wszyscy mogą używać do trenowania aplikacji obsługujących mowę.
+datasets-positioning =
+    Uważamy, że duże, publicznie dostępne zbiory danych głosowych będą promować innowacje i zdrową konkurencję w dziedzinie technologii mowy opartej na uczeniu maszynowym.
+    
+    Wielojęzykowy zbiór danych Common Voice jest już największym publicznie dostępnym zbiorem danych mowy tego typu, ale nie jest jedynym.
+    
+    Ta strona może służyć jako centrum informacji o innych zbiorach danych mowy open source oraz, wraz z rozwojem Common Voice, miejsce na nasze nowe wydania.
 language = Język
 # File size in gigabytes
 size = Rozmiar
@@ -374,15 +490,28 @@ confirm-no-identify = <b>Zgadzasz się</b>, że nie będziesz próbować ustala�
 download-language = Pobierz język: { $language }
 validated-hours = Sprawdzone godziny
 recorded-hours = Nagrane godziny
+whats-inside = Co znajduje się w zbiorze danych Common Voice?
+dataset-description-hours =
+    Każdy zapis w zbiorze danych składa się z unikalnego pliku MP3 i odpowiadającemu mu pliku tekstowego. Wiele z <b>{ $total }</b> nagranych godzin w zbiorze zawiera także metadane demograficzne, takie jak wiek, płeć i akcent, które mogą pomóc w trenowaniu dokładności mechanizmów rozpoznawania mowy.
+    
+    Obecnie zbiór danych składa się z <b>{ $valid }</b> sprawdzonych godzin nagrań w <b>{ $languages }</b> językach, ale zawsze dodajemy więcej głosów i języków. <languagesLink>Strona języków</languagesLink> umożliwia zaproponowanie języka i rozpoczęcie nagrywania.
+want-dataset-update = Chcesz otrzymywać powiadomienia, gdy wydajemy nową wersję zbioru danych Common Voice? Subskrybuj nasz biuletyn.
 subscribe = Subskrybuj
+get-started-speech = Poznaj rozpoznawanie mowy
 other-datasets = Inne zbiory danych
+feedback-q = Masz sugestie?
+deepspeech-info = Zbiór danych Common Voice stanowi uzupełnienie mechanizmu rozpoznawania mowy open source o nazwie Deep Speech od Mozilli, którego można używać do tworzenia aplikacji rozpoznających mowę. Przeczytaj <githubLink>podsumowanie w serwisie GitHub</githubLink> lub dołącz do <discourseLink>DeepSpeech w serwisie Discourse</discourseLink>, aby dowiedzieć się, jak zacząć.
+common-voice-info-new = Masz pytania dotyczące Common Voice? Pomysły na ulepszenia lub sugestie na temat konkretnego języka? Dołącz do nas na naszym <discourseLink>forum Discourse</discourseLink> i daj znam znać.
 data-other-librispeech-description = LibriSpeech to zbiór około 1000 godzin angielskiej mowy w jakości 16 KHz, z tekstów audiobooków z projektu LibriVox.
 data-other-ted-name = Zbiór TED-LIUM
 data-other-ted-description = Zbiór TED-LIUM został utworzony z nagrań przemów i ich transkrypcji dostępnych na stronie konferencji TED.
 data-other-voxforge-description = VoxForge został stworzony w celu zbierania transkrybowanej mowy do użytku z wolnymi i otwartymi silnikami rozpoznawania mowy.
 data-other-tatoeba-description = Tatoeba jest wielką bazą danych zdań, tłumaczeń i mowy do użytku w nauczaniu maszynowym. Ten plik zawiera wszystkie angielskie nagrania mowy stworzone przez ich społeczność.
+your-feedback = Masz pomysły, jak możemy ulepszyć zbiór danych Common Voice? Daj nam znać w serwisie Discourse
 go-discourse = Przejdź do serwisu Discourse
+missing-language = Nie widzisz swojego języka w zbiorze danych? Możesz go zaproponować na stronie języków.
 go-languages-page = Przejdź do listy języków
+ready-to-validate = Chcesz rozpocząć sprawdzanie zdań?
 more = Więcej
 close = Zamknij
 download = Pobierz
@@ -408,10 +537,10 @@ contact-required = * wymagane
 
 ## Request Language Modal
 
-request-language-title = Poproś o język
+request-language-title = Propozycja języka
 request-language-form-language =
     .label = Język
-request-language-success-title = Prośba o język została pomyślnie przesłana, dziękujemy.
+request-language-success-title = Propozycja języka została pomyślnie przesłana, dziękujemy.
 request-language-success-content = Już niedługo udzielimy więcej informacji o tym, jak dodać swój język do projektu Common Voice.
 select-language = Wybierz język…
 other-language = Inny język
@@ -419,7 +548,9 @@ other-language = Inny język
 ## Languages Overview
 
 language-section-in-progress = W trakcie
+language-section-in-progress-new-description = Te języki są obecnie w trakcie rozwoju przez społeczność. Paski postępu wskazują postęp <localizationGlossaryLink>tłumaczenia strony</localizationGlossaryLink> oraz <sentenceCollectionGlossaryLink>zbierania zdań</sentenceCollectionGlossaryLink> dla danego języka.
 language-section-launched = Działające
+language-section-launched-description = Dla tych języków strona została pomyślnie <localizationGlossaryLink>przetłumaczona</localizationGlossaryLink> i jest dość <sentenceCollectionGlossaryLink>zebranych zdań</sentenceCollectionGlossaryLink>, aby umożliwić <speakLink>nagrywanie</speakLink> i <listenLink>odsłuchiwanie</listenLink>.
 languages-show-more = Więcej
 languages-show-less = Mniej
 language-speakers = Osoby mówiące
@@ -437,7 +568,7 @@ total-hours = Razem godzin
 action-click = Kliknij
 action-tap = Stuknij
 contribute = Nagraj
-listen = Posłuchaj
+listen = Odsłuchaj
 skip = Pomiń
 shortcuts = Skróty
 clips-with-count = Nagrania <bold>{ $count }</bold>
@@ -471,7 +602,7 @@ record-abort-submit = Wyślij nagrania
 record-abort-continue = Dokończ nagrywanie
 record-abort-delete = Wyjdź i usuń nagrania
 listen-instruction = { $actionType } <playIcon></playIcon> czy poprawnie wymówiono zdanie?
-listen-again-instruction = Świetna robota! <playIcon></playIcon> Posłuchaj ponownie
+listen-again-instruction = Świetna robota! <playIcon></playIcon> Odsłuchaj ponownie
 listen-3rd-time-instruction = Dwa zrobione <playIcon></playIcon>, tak trzymaj!
 listen-last-time-instruction = <playIcon></playIcon> Ostatnie!
 nothing-to-validate = Nie mamy nic do zweryfikowania w tym języku, pomóż nam wypełnić kolejkę.
@@ -525,4 +656,8 @@ keep = Zachowaj
 remove = Usuń
 keep-info = Twoje anonimowe nagrania pozostaną w zbiorze danych Common Voice. Po usunięciu profilu nie będzie już można wysłać prośby o ich usunięcie
 remove-info = Zweryfikujemy Twoją prośbę o usunięcie nagrań ze zbioru danych. Jeśli zostanie zatwierdzona, skontaktujemy się z tymi, którzy pobrali zbiór i poprosimy ich o usunięcie Twoich nagrań.
+why-delete-recordings =
+    Nagrania projektu Common Voice są używane przez naukowców, małe firmy i entuzjastów technologii rozpoznawania głosu, aby pomóc w trenowaniu i rozwijaniu publicznie dostępnych zasobów, takich jak modele głosu.
+    
+    Czy możesz nam powiedzieć, dlaczego chcesz, aby Twoje nagrania zostały usunięte?
 profile-form-delete = Usuń profil

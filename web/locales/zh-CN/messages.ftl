@@ -8,8 +8,10 @@ email-input =
     .label = 电子邮箱
 submit-form-action = 提交
 loading = 加载中…
+email-opt-in-info = 我希望收到诸如目标提醒、我的进度更新与 Common Voice 的相关新闻通讯。
 email-opt-in-privacy = 若同意接收邮件，即代表您同意依照 Mozilla 的<privacyLink>隐私政策</privacyLink>所描述的方式处理这些信息。
 indicates-required = * 表示必填字段
+not-available-abbreviation = 不可用
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = 阿拉伯语
 as = 阿萨姆语
 ast = 阿斯图里亚斯语
 az = 阿塞拜疆语
+ba = 巴什基尔语
 bg = 保加利亚语
 bn = 孟加拉语
 br = 布列塔尼语
@@ -54,7 +57,9 @@ fr = 法语
 fy-NL = 弗里西语
 ga-IE = 爱尔兰语
 gl = 加利西亚语
+ha = 豪萨语
 he = 希伯莱语
+hi-IN = 印地语
 hr = 克罗地亚语
 hsb = 上索布语
 hu = 匈牙利语
@@ -69,13 +74,16 @@ kab = 卡拜尔语
 kk = 哈萨克语
 ko = 韩语
 kpv = 科米-齐良语
+ku = 库尔德语
 kw = 康沃尔语
 ky = 吉尔吉斯语
+lij = 利古里亚语
 lt = 立陶宛语
 lv = 拉脱维亚语
 mdf = 莫克沙语
 mhr = 草原马里语
 mk = 马其顿语
+ml = 马拉雅拉姆语
 mn = 蒙古语
 mrj = 山地马里语
 myv = 厄尔兹亚语
@@ -93,6 +101,7 @@ ru = 俄语
 rw = 卢旺达语
 sah = 萨哈语
 sc = 萨丁尼亚语
+si = 僧伽罗语
 sk = 斯洛伐克语
 sl = 斯洛文尼亚语
 sq = 阿尔巴尼亚语
@@ -100,6 +109,7 @@ sr = 塞尔维亚语
 sv-SE = 瑞典语
 ta = 泰米尔语
 te = 泰卢固语
+tg = 塔吉克语
 th = 泰语
 tr = 土耳其语
 tt = 鞑靼语
@@ -123,6 +133,7 @@ speak = 说话
 speak-now = 开始朗读
 datasets = 数据集
 languages = 语言
+about = 关于我们
 profile = 用户资料
 help = 帮助
 contact = 联系我们
@@ -286,8 +297,6 @@ profile-explanation = 通过使用个人资料跟踪您的进度，以帮助我�
 thanks-for-account = 感谢您确认账户信息，接下来请提供您的个人资料。
 why-demographic = 为什么这很重要？
 why-demographic-explanation = 匿名的用户数据，如年龄、性别、口音等，帮助改进用于训练语音识别引擎准确性的音频数据。您的用户名和电子邮件永远不会与您提交的数据相关联，并且您可以选择将您的用户名设为公开或匿名。
-keep-me-posted =
-    .label = 我想收到 Common Voice 相关的最新消息。
 accept-privacy = 我同意依照 Mozilla 的<privacyLink>隐私政策</privacyLink>所描述的方式处理这些信息
 login-identity = 登录身份
 login-signup = 登录 / 注册
@@ -307,6 +316,7 @@ connect-gravatar = 连接 Gravatar
 gravatar_not_found = 通过您的电子邮件地址未找到 Gravatar
 file_too_large = 所选文件太大
 manage-subscriptions = 管理订阅
+manage-email-subscriptions = 管理邮件订阅
 email-already-used = 此电子邮件地址已被其他账户占用
 add-language = 添加语言
 change-email-setings = 请到“设置”的“登录身份”修改电子邮件地址
@@ -320,7 +330,7 @@ faq-what-cv-a =
     
     我们不只收集被广泛使用的语言的语音样本，也收集较少人使用的语言的语音样本。发布多种多样的语音数据集，可帮助开发者、创业者，以及各个社区来缩小彼此之间的鸿沟。除 Common Voice 数据集外，我们还在构建一个名为 Deep Speech 的开源语音识别引擎。
 faq-why-important-q = 为什么如此重要？
-faq-why-important-a = 说话是人类相互沟通最自然的方式。而语音技术把这种方便感带到了计算机与移动设备上。我们想让开发者能够打造效果极好的语音识别程序，比如实时翻译器和语音数字助理。但此刻，大多数打造这类应用所必需的语音数据都是私有且昂贵的。我们希望 Common Voice 提供的数据集能满足开发者所需，把语音技术带到他们所说的语言。
+faq-why-important-a = 说话是人类相互沟通最自然的方式。而语音技术把这种方便感带到了计算机与移动设备上。我们想让开发者能够打造效果极好的语音识别程序，比如实时翻译器和语音数字助手。但此刻，大多数打造这类应用所必需的语音数据都是私有且昂贵的。我们希望 Common Voice 提供的数据集能满足开发者所需，把语音技术带到他们所说的语言。
 faq-how-get-q = 我要如何获取 Common Voice 数据？
 faq-how-get-a = 可到 <datasetLink>Common Voice 数据集页面</datasetLink>下载，本数据集遵循<licenseLink>CC0</licenseLink> 进行授权。您也可以在该页面中下载其他几组公开可用的数据集。
 faq-when-release-q = 你们什么时候会发布其他语言的 Common Voice 数据？
@@ -361,6 +371,57 @@ faq-what-determine-identity-a =
     Common Voice 数据集是一个开放且可公开获取的资源，可用于训练各种支持语音的应用程序。为了保护我们的贡献者的安全，我们要求下载 Common Voice 数据集的每个人都尊重贡献者的隐私。
     
     数据集中的所有语音片段都会抹除个人识别信息。下载数据集时，您须同意不试图去确定任何贡献者的身份。这意味着您不可尝试将数据集中的信息关联到贡献者的个人信息。但是，您可以使用数据集来训练语音识别，声纹识别或其他应用程序，例如，将数据集中的信息关联到数据集中已有的其他信息。
+faq-what-is-cv = Common Voice 是什么？
+faq-using-cv = 使用 Common Voice
+faq-description = Common Voice 项目是 Mozilla 发起的倡议，旨在帮助教会机器真人的说话方式。
+faq-search-for-answers =
+    .label = 搜索答案
+
+## ABOUT US
+
+about-title = 为什么会有 Common Voice？
+about-subtitle = Common Voice 项目是 Mozilla 发起的倡议，旨在帮助教会机器真人的说话方式。除 Common Voice 数据集外，我们还在构建一个名为 Deep Speech 的开源语音识别引擎。
+about-header-description =
+    这两个项目都是我们努力弭平数字语音鸿沟的一部分。语音识别技术为我们的设备带来人性的维度，但开发者需要巨量的语音数据来构建它们。目前大部分语音数据都相当昂贵且为巨头专有。
+    我们希望能够自由公开地提供语音数据，并确保数据反映出人们实际的多样性。让我们一起为所有人把语音识别技术发展得更好吧！
+how-does-it-work-title = 原理是什么？
+how-does-it-work-text = 我们集众人之力，构建开源的语音数据集。欢迎捐出您的声音、帮助验证录音片段是否正确，让数据集能够变得更好。
+about-speak = 说话
+about-speak-text = 贡献者通过朗读一系列由他人捐赠的语句，将语音片段录制下来。
+about-listen-queue = 聆听队列
+about-listen-queue-text = 录制的片段将进入提交队列中，准备接受聆听确认。
+about-listen = 聆听
+about-listen-text = 用户确认录音片段是否精准，并检查说话者是否正确读出了语句。
+about-is-it-valid = 片段正确吗？
+about-is-it-valid-text = 若用户投下“正确”，就会标记为有效。
+about-yes-votes = ≥ 2 张“正确”票
+about-yes-votes-text = 必须经过两位不同的用户确认，片段才能进入 Common Voice 数据集。
+about-no-votes = ≥ 2 张“不正确”票
+about-no-votes-text = 若用户投下“不正确”，片段会返回队列。若被拒绝两次，片段就会就会被丢进回收站。
+about-dataset = Common Voice 数据集
+about-dataset-text = 若用户投下“不正确”，片段会返回队列。若被拒绝两次，片段就会就会被丢进回收站。
+about-clip-graveyard = 片段回收站
+about-clip-graveyard-text = 回收站中包含无法进入 Common Voice 数据集的语音片段。与数据集一样，回收站内容也提供下载。
+about-partners = 合作伙伴
+about-become-a-partner = 成为合作伙伴
+about-partnership =
+    Common Voice 是一个协作项目。我们依靠由合作伙伴与贡献者所组成的社区，来构建有史以来最大的开源语音数据集。
+    
+    我们要感谢以下人员和组织对项目的帮助：
+about-get-involved = 参与进来
+about-get-involved-text =
+    想要帮忙使 Common Voice 变得更好吗？
+    太好了！请发送电子邮件与我们联系，也可以到 <discourseLink>Discourse</discourseLink> 留言、
+    通过 <githubLink>GitHub</githubLink> 提交反馈意见、
+    也可以加入我们的 <slackLink>Slack</slackLink>。
+about-nav-why-common-voice = 为什么？
+about-nav-how-it-works = 怎么做？
+about-nav-partners = 合作伙伴
+about-nav-get-involved = 参与进来
+mycroft-title = Mycroft Ai
+mycroft-subtitle = 人工智能
+mycroft-description = Mycroft 是全球第一个开源语音助手，不论是在桌面电脑、汽车、树莓派（Raspberry Pi）或是任何地方都能运行。
+mycroft-secondary-description = 这是一个可以自由混搭、扩展、改进的开源软件。 Mycroft 可以用于科学项目，或企业软件应用等各种情境中。
 
 ## Glossary
 
@@ -370,7 +431,7 @@ localization-explanation = 这是我们为许多语系（语言）进行翻译�
 sentence-collection = 语句集合
 sentence-collection-explanation = 收集公共领域的语句，或为公共领域编写新的语句。
 hours-recorded-explanation = 到目前为止我们收集到的录音小时数。
-hours-validated-explanation = 每 3 位用户中有 2 位投票赞成“是”的已验证录音小时数。这也就是整个项目 10000 小时目标的进度。
+hours-validated-explanation = 每 3 位用户中有 2 位投票“正确”的已验证录音小时数。这也就是整个项目 10000 小时目标的进度。
 sst = 语音转文字（STT）
 sst-explanation = 语音转文字（STT）技术将语音数据转换为文字。
 de-identified = 去识别化
@@ -439,7 +500,7 @@ validated-hours = 已验证小时数
 recorded-hours = 已录制小时数
 whats-inside = Common Voice 数据集里面有什么？
 dataset-description-hours =
-    数据集中的每一条都包含了一组独立 MP3 录音及相应的文字文件。数据集所记录的 <b>{ $total }</b> 小时的录音中，有许多条数据同时包含了年龄、性别、口音等人口统计元数据，能够训练语音识别引擎提升其准确性。
+    数据集中的每一条都包含了一组独立 MP3 录音及相应的文本文件。数据集所记录的 <b>{ $total }</b> 小时的录音中，有许多条数据同时包含了年龄、性别、口音等人口统计元数据，能够训练语音识别引擎提升其准确性。
     
     该数据集当前有 <b>{ $valid }</b> 小时，<b>{ $languages }</b> 种语言的语音数据，但我们在持续添加更多的语音数据和更多的语言。前往我们的<languagesLink>语言页</languagesLink>请求加入更多的语言或开始做出贡献。
 want-dataset-update = 想要在我们发布新版本 Common Voice 数据集时得到通知？请订阅我们的新闻通讯。

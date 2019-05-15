@@ -1,25 +1,41 @@
 import { Localized } from 'fluent-react/compat';
 import * as React from 'react';
+import { useState } from 'react';
+import { connect } from 'react-redux';
 import { CustomGoal, CustomGoalParams } from 'common/goals';
+import { UserClient } from 'common/user-clients';
 import URLS from '../../../../urls';
+import { getManageSubscriptionURL } from '../../../../utility';
+import StateTree from '../../../../stores/tree';
 import { LocaleLink } from '../../../locale-helpers';
+import ShareModal from '../../../share-modal/share-modal';
 import {
   ArrowLeft,
   CheckIcon,
   CrossIcon,
   PenIcon,
+  SettingsIcon,
   ShareIcon,
 } from '../../../ui/icons';
-import { Button, LinkButton } from '../../../ui/ui';
+import { Button, LabeledCheckbox, LinkButton } from '../../../ui/ui';
 import { CircleProgress, Fraction } from '../ui';
 
-export type State = CustomGoalParams & {
-  remind: boolean;
-};
+const Buttons = ({ children, ...props }: React.HTMLProps<HTMLDivElement>) => (
+  <div className="buttons padded" {...props}>
+    {children}
+    <div className="filler" />
+  </div>
+);
 
 const ArrowButton = (props: React.HTMLProps<HTMLButtonElement>) => (
   <button className="arrow-button" type="button" {...props}>
     <ArrowLeft />
+  </button>
+);
+
+const CloseButton = (props: React.HTMLProps<HTMLButtonElement>) => (
+  <button type="button" className="close-button" {...props}>
+    <CrossIcon />
   </button>
 );
 
@@ -63,115 +79,227 @@ export const ViewGoal = ({
   </div>
 );
 
+interface CustomGoalStepProps {
+  completedFields: React.ReactNode;
+  currentFields: React.ReactNode;
+
+  closeButtonProps: React.HTMLProps<HTMLButtonElement>;
+  nextButtonProps: React.HTMLProps<HTMLButtonElement>;
+
+  state: CustomGoalParams;
+
+  subscribed: boolean;
+  setSubscribed: (subscribed: boolean) => void;
+}
+
+interface AccountProps {
+  account: UserClient;
+}
+
+const SubmitStep = ({
+  account,
+  closeButtonProps,
+  completedFields,
+  nextButtonProps,
+
+  subscribed,
+  setSubscribed,
+}: CustomGoalStepProps & AccountProps) => {
+  const [privacyAgreed, setPrivacyAgreed] = useState(false);
+  return (
+    <div className="padded">
+      {completedFields}
+      {account.basket_token ? (
+        <>
+          <p className="subscription-info">
+            You're currently set to receive emails such as goal reminders, my
+            progress updates and newsletters about Common Voice
+          </p>
+          <a
+            className="manage-subscriptions"
+            href={getManageSubscriptionURL(account)}
+            target="__blank"
+            rel="noopener noreferrer">
+            <Localized id="manage-email-subscriptions">
+              <span />
+            </Localized>
+            <SettingsIcon />
+          </a>
+        </>
+      ) : (
+        <>
+          <label className="box">
+            <input
+              type="checkbox"
+              checked={subscribed}
+              onChange={event => setSubscribed(event.target.checked)}
+            />
+            <Localized id="email-opt-in-info">
+              <div className="content" />
+            </Localized>
+          </label>
+          <label className="box">
+            <input
+              type="checkbox"
+              checked={privacyAgreed}
+              onChange={event => setPrivacyAgreed(event.target.checked)}
+            />
+            <div className="content">
+              <Localized
+                id="accept-privacy"
+                privacyLink={<LocaleLink to={URLS.PRIVACY} blank />}>
+                <span />
+              </Localized>
+            </div>
+          </label>
+          <Localized id="read-terms-q">
+            <LocaleLink to={URLS.TERMS} className="terms" blank />
+          </Localized>
+        </>
+      )}
+      <Buttons>
+        <CloseButton {...closeButtonProps} />
+        <Button
+          rounded
+          className="submit"
+          {...nextButtonProps}
+          disabled={subscribed && !privacyAgreed}>
+          <CheckIcon /> Confirm Goal
+        </Button>
+      </Buttons>
+    </div>
+  );
+};
+
 export default [
-  ({ buttonProps }) => (
+  ({ nextButtonProps }) => (
     <>
-      <h1>Build a custom goal</h1>
-      <span className="sub-head">and help us reach 10k hours in English</span>
+      <div className="padded">
+        <h1>Build a custom goal</h1>
+        <span className="sub-head">
+          Help reach 10,000 hours in English with a personal goal
+        </span>
+      </div>
 
       <div className="waves">
         <img className="mars" src="/img/mars.svg" alt="Mars Robot" />
       </div>
 
-      <div className="padded">
-        <Button className="get-started-button" rounded {...buttonProps}>
-          Get Started
-        </Button>
-      </div>
+      <Button className="get-started-button" rounded {...nextButtonProps}>
+        Set a goal
+      </Button>
     </>
   ),
 
-  ({ buttonProps, currentRadios }) => (
+  ({ closeButtonProps, currentFields, nextButtonProps }) => (
     <>
       <div className="padded">
         <h2>What kind of goal do you want to build?</h2>
-        {currentRadios}
+        {currentFields}
       </div>
-      <ArrowButton {...buttonProps} style={{ marginBottom: 20 }} />
+      <Buttons style={{ marginBottom: 20 }}>
+        <CloseButton {...closeButtonProps} />
+        <ArrowButton {...nextButtonProps} />
+      </Buttons>
       <div className="waves">
         <img className="mars" src="/img/mars.svg" alt="Mars Robot" />
         <div className="text">
           <h4>Can't decide?</h4>
           <p>
-            If just 100 people submitted 15 clips/day or 105 clips/week), we'd
-            reach our 10 k hour goal in XX months.
+            10,000 hours is achievable in just over 6 months if 1000 people
+            record 45 clips a day.
           </p>
         </div>
       </div>
     </>
   ),
 
-  ({ buttonProps, completedRadios, currentRadios, state }) => (
+  ({
+    closeButtonProps,
+    completedFields,
+    currentFields,
+    nextButtonProps,
+    state,
+  }) => (
     <>
       <div className="padded">
-        {completedRadios}
+        {completedFields}
         <h2>
           Great! How many clips
           {state.daysInterval == 7 ? ' a week' : ' per day'}?
         </h2>
-        {currentRadios}
+        {currentFields}
       </div>
-      <ArrowButton {...buttonProps} />
+      <Buttons>
+        <CloseButton {...closeButtonProps} />
+        <ArrowButton {...nextButtonProps} />
+      </Buttons>
     </>
   ),
 
-  ({ buttonProps, completedRadios, currentRadios }) => (
+  ({ closeButtonProps, completedFields, currentFields, nextButtonProps }) => (
     <>
       <div className="padded">
-        {completedRadios}
+        {completedFields}
         <h2>Do you want to Speak, Listen or both?</h2>
-        {currentRadios}
+        {currentFields}
       </div>
-      <ArrowButton {...buttonProps} />
+      <Buttons>
+        <CloseButton {...closeButtonProps} />
+        <ArrowButton {...nextButtonProps} />
+      </Buttons>
     </>
   ),
 
-  ({ buttonProps, completedRadios }) => (
-    <div className="padded">
-      {completedRadios}
-      <label className="box">
-        <input type="checkbox" />
-        <div className="content">
-          Email me personal goal reminders to help me stay on track
-        </div>
-      </label>
-      <Localized
-        id="email-opt-in-privacy"
-        privacyLink={<LocaleLink to={URLS.PRIVACY} blank />}>
-        <p />
-      </Localized>
-      <Localized id="read-terms-q">
-        <LocaleLink to={URLS.TERMS} className="terms" blank />
-      </Localized>
-      <Button rounded className="submit" {...buttonProps}>
-        <CheckIcon /> Confirm Goal
-      </Button>
-    </div>
+  connect<AccountProps>(({ user }: StateTree) => ({ account: user.account }))(
+    SubmitStep
   ),
 
-  ({ buttonProps }) => (
-    <div className="padded">
-      <div className="check">
-        <div className="shadow" />
-        <CheckIcon />
+  ({ nextButtonProps, state }) => {
+    const [showShareModal, setShowShareModal] = useState(false);
+    const goalType = state.daysInterval == 7 ? 'Weekly' : 'Daily';
+    return (
+      <div className="padded">
+        {showShareModal && (
+          <ShareModal
+            title={<>Help us find more voices, share your goal</>}
+            text={`Share your ${state.amount} Clip ${goalType} Goal for 
+              ${
+                ({
+                  speak: 'Speaking',
+                  listen: 'Listening',
+                  both: 'Speaking and Listening',
+                } as any)[state.type]
+              }`
+            }
+            shareText="I just created a personal goal for voice donation to #CommonVoice -- join me and help teach machines how real people speak {link}"
+            onRequestClose={() => {
+              setShowShareModal(false);
+              const { onClick } = nextButtonProps as any;
+              if (onClick) {
+                onClick();
+              }
+            }}
+          />
+        )}
+        <div className="check">
+          <div className="shadow" />
+          <CheckIcon />
+        </div>
+        <h2>Your {goalType} goal has been created</h2>
+        <p>
+          Track progress here and on your stats page.
+          <br />
+          Return here to edit your goal anytime.
+        </p>
+        <Button
+          rounded
+          className="share-button"
+          onClick={() => setShowShareModal(true)}>
+          <ShareIcon /> Share my goal
+        </Button>
+        <CloseButton {...nextButtonProps} />
       </div>
-      <h2>Your weekly goal has  been created</h2>
-      <p>
-        Track progress here and on your stats page.
-        <br />
-        Return here to edit your goal anytime.
-      </p>
-      <Button rounded className="share-button">
-        <ShareIcon /> Share my goal
-      </Button>
-      <button type="button" className="close-button" {...buttonProps}>
-        <CrossIcon />
-      </button>
-    </div>
-  ),
-] as (React.ComponentType<{
-  buttonProps: React.HTMLProps<HTMLButtonElement>;
-  completedRadios: React.ReactNode;
-  currentRadios: React.ReactNode;
-  state: State;
-}>)[];
+    );
+  },
+] as (React.ComponentType<CustomGoalStepProps>)[];

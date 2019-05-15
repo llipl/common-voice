@@ -8,8 +8,10 @@ email-input =
     .label = Imayl
 submit-form-action = Azen
 loading = Asali…
+email-opt-in-info = Bɣiɣ ad d-ṭṭfeɣ imaylen am ismektiyen n yiswan, aswir-iw n umecwar n ileqman akked uɣmis ɣef Common Voice.
 email-opt-in-privacy = Ma tferneḍ armas n yimaylen, ad tqebleḍ d akken Mozilla ad tesseqdec talɣut-a akken i tettwasegza deg <privacyLink>Tasertit Tabaḍnit <privacyLink> n Mozilla.
 indicates-required = * Yemmal-d urti ilaqen
+not-available-abbreviation = N/A
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Taεrabt
 as = Tasamizt
 ast = Tasturit
 az = Tazerbiǧanit
+ba = Tabackirit
 bg = Tabulgarit
 bn = Tabengalit
 br = Tabrutunt
@@ -54,7 +57,9 @@ fr = Tafransist
 fy-NL = Tafrizunt
 ga-IE = Tirlandit
 gl = Tagalisit
+ha = Tahawsit
 he = Taɛebrit
+hi-IN = Tahendit
 hr = Takarwasit
 hsb = Sorbyan, Tameqqrant
 hu = Tahungaṛit
@@ -69,13 +74,16 @@ kab = Taqbaylit
 kk = Takazaxt
 ko = Takurit
 kpv = Takumt Zyrian
+ku = Takurdit
 kw = Takuṛnikt
 ky = Takirgizt
+lij = Taliguriant
 lt = Talitwaynit
 lv = Talitunit
 mdf = Mukca
 mhr = Tamarit n uzaɣar
 mk = Tamasidunit
+ml = Tamalayalamit
 mn = Tamungult
 mrj = Tamarit n udrar
 myv = Erzya
@@ -93,6 +101,7 @@ ru = Tarusit
 rw = Takinyaṛwandit
 sah = Tasaxit
 sc = Tasardinit
+si = Tasinhalit
 sk = Tasluvakt
 sl = Tasluvinit
 sq = Talbanit
@@ -100,6 +109,7 @@ sr = Taṣirbit
 sv-SE = Taswidit
 ta = Taṭamilit
 te = Tatelgut
+tg = Tatajikt
 th = Taṭaylant
 tr = Taṭurkit
 tt = Taṭaṭarit
@@ -123,6 +133,7 @@ speak = Mmeslay
 speak-now = Mmeslay tura
 datasets = Tagrumma n yisefka
 languages = Tutlayin
+about = Anwa-aɣ
 profile = Amaɣnu
 help = Tallelt
 contact = Nermes-aɣ-d
@@ -290,8 +301,6 @@ profile-explanation = Sers allen-ik ɣef usfari s tmerna n umaɣnu sakin muddaɣ
 thanks-for-account = Tanemmirt ɣimi tsentmeḍ amiḍan-ik, tura rnu kra n talɣut ɣer umaɣnu-inek.
 why-demographic = Ayɣer aya isεa azal?
 why-demographic-explanation = Talɣut tusligt am laεmer, tuzuft, akked tmeslayt ad aɣ-d-mudden afus akken senqed isefka n umesli deg imesdayen n uεqal aɣectan. Isem-ik n useqdac akked imayl-inek werǧin ad ddun akked isefka ad ittwaznen, tzemreḍ daɣen ad terreḍ isem-inek n useqdec d aziraz neɣ d uslig.
-keep-me-posted =
-    .label = Bɣiɣ ad leqmeɣ wa ad iliɣ seg imezwura ad iḥsun amaynut n Common Voice.
 accept-privacy = Qebleɣ akken ad tesqedcem talɣut inu am akken yella deg <privacyLink>tsertit n tbaḍnit</privacyLink> n Mozilla.
 login-identity = Tinekkit n tuqna
 login-signup = Kcem / Jerred
@@ -311,6 +320,7 @@ connect-gravatar = Qqen s Gravatar
 gravatar_not_found = Ulac Gravatar ittwafen i imayl-inek
 file_too_large = Afaylu ittwafernen meqqer aṭas
 manage-subscriptions = Sefrekajerred
+manage-email-subscriptions = Sefrek ijerriden ɣer yimaylen
 email-already-used = Imayl ittuseqdec yakan i umiḍan nniḍen
 add-language = Rnu tutlayt
 change-email-setings = Beddel tansa-ik imayl deg yiɣewwaṛen, tigezmi Timagit n tuqqna
@@ -365,6 +375,59 @@ faq-what-determine-identity-a =
     Tagrumma n yisefka Common Voice d taɣbalut tazayezt yeldin i yemren ad tettwaseqdec i usleɣmu n ddeqs n yisefka i yisnasen yesseqdacen taɣect. Akken ad nessiǧhed taɣellist n yimttekkiyen, ad nessuter yal yiwen ara yessidren tagrumma n yisefka Common Voice akken ad iqadeṛ tabadnit n yimttekkiyen.
     
     Akk tukkisin ad tettwakkes seg-sent telɣut ara yeǧǧen tifin n wid yettmeslayen. Ticki tessidreḍ-d taffa n yisefka, ad tqebleḍ d akken ur tettaɛraḍeḍ ara ad tafeḍ timagit n yimttekkiyen. Aya yemmal-d d akken ur yessefk ara ad tafeḍ assaɣ gar tagrumma n yisefka akked telɣut tudmawant n yimttekki. Maca tzemreḍ ad tesqedceḍ tagrumma n yisefka akken ad tesnulfuḍ taneɣruft n uɛqal n taɣect, neɣ tigin n wassaɣ gar tagrumma n yisefka akked telɣut yellan deg-s.
+faq-what-is-cv = D acu-t Common Voice?
+faq-using-cv = Aseqdec n Common Voice
+faq-description = Common Voice d asenfaṛ seg yisenfaṛen n Mozilla i uselmed n tmacinin akken ad mmeslayent tutlayin n yimdanen.
+faq-search-for-answers =
+    .label = Nadi tiriryin
+
+## ABOUT US
+
+about-title = Acuɣer Common Voice?
+about-subtitle = Common Voice d asenfaṛ n Mozilla i uselmed n tmacinin ad mmeslayent tutlayin n yimdanen. Ɣer tama n tegrumma n yisefka Common Voice, aqlaɣ nbennu daɣen amsedday neɣ amutur n uɛqal n taɣect n uɣbalu yeldin s yisem Deep Speech.
+about-header-description =
+    Sin-agi n yisenfaren ttekkan deg uxeddim-nneɣ i d-nger akken ad nsenɣes aceqqiq yellan deg taɣect tumḍint. Titiknulujiyin n uɛqal n taɣect rennunt-d kra n umaynut icudden ɣer umdan deg yisuga neɣ ibenkan-nneɣ, maca ineflayen sran ddeqs n yisefka n taɣect akken ad fefṣṣlen ifecka. Akka tura, tuget n yisefka-a ɣlay-it yerna ɣur-sen imawlan.
+    Nebɣa ad nerr isefka n taɣect baṭel daɣen ttwakcamen s wudem azayaz, daɣen ad neḍmen d akken isefka-a ḍummen-d meṛṛa imdanen deg tudert tilawt. Lwaḥid, nezmer ad nerr aɛqal n taɣect d ufrin i yal yiwen.
+how-does-it-work-title = Amek iteddu?
+how-does-it-work-text = Ad d-nemmekti attekki lwaḥid deg usbeddi n tegrumma n yisefka n uɣbalu yeldin. Mudd-d taɣect-ik, senqed tiseddi n tuɣac n wiyaḍ, snerni tagrumma n yisefka i yal yiwen.
+about-speak = Mmeslay
+about-speak-text = Imttekiyyen akke timttekkiyin ad ɣren sakin ad skelsen tukkisin n taɣect i d-yekkan seg tegrumma n tefyar i d-tmudd terbaɣt n yimttekkiyen.
+about-listen-queue = Adras n uṛaǧu n tmesliwt
+about-listen-queue-text = Tukkisin yettwaqeblen ttwaskensent deg udras n uraǧu n usumer ara d-yettwaheggin i tmesliwt.
+about-listen = Sel
+about-listen-text = Iseqdacen qqebblen tiseddi n tukkisin s usenqed ma yella win neɣ tin yettmeslayen yeɣra-d neɣ teɣra-d akken iwata tafyirt.
+about-is-it-valid = Tukkist-a d tameɣtut?
+about-is-it-valid-text = Tukkist n taɣect tettwacreḍ "tettwaqbel" ticki aseqdac neɣ taseqdact teqblet-itt s IH.
+about-yes-votes = ≥ 2 n tefranin IH
+about-yes-votes-text = Akken ad yekcem ɣer tegrumma n yisefka Common Voice, yessefk tukkist n taɣect ad tettwaqbel sɣur sin n yimdanen yemgaraden.
+about-no-votes = ≥ 2 n tefranin UHU
+about-no-votes-text = Ticki aseqdac yugi tukkist n taɣect, taneggarut-a ad tuɣal ɣer udras n uraǧu. Ma yugin-tt tikkelt-nniḍen, tukkist ad teddu ɣer tjebbant n tukkisin.
+about-dataset = Tagrumma n yisefka Common Voice
+about-dataset-text = Tagrumma n yisefka Common Voice tegber timeyyatin n luluf n tukkisin n taɣect ara imudden ineflayen afus deg usnefli n yifecka n uɛqal n taɣect.
+about-clip-graveyard = Tajebbant n tukkisin
+about-clip-graveyard-text = Tajebbant n tukkisin tegber tukkisin ur nettwaqbel ara deg tegrumma n yisefka Common Voice. Am uneggaru-a, tajebbant n tukkisin tella i usider.
+about-partners = Imendiden
+about-become-a-partner = Uɣal d amendid
+about-partnership =
+    Common Voice a asenfaṛ s uttekki daɣen nettkel ɣer terbaɛt-nneɣ n yimendiden akked imttekkiyen d timttekkiyin akken ad rnun tagrumma n yisefka n uɣbalu yeldin n taɣect tameqqrant deg umaḍal.
+    
+    Ad nesnemmer meṛṛa imdanen akked tuddsiwin-a ɣef tallelt deg usenfaṛ:
+about-get-involved = Ttekki
+about-get-involved-text =
+    Tabɣiḍ ad tesnerniḍ Common Voice ?
+    Igerrez! Nermes-aɣ-d s yimayl neɣ deg <discourseLink>Discourse</discourseLink>,
+    azen-d iwenniten deg <githubLink>GitHub</githubLink>,
+    neɣ ddu-d yid-neɣ deg <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = Acuɣer?
+about-nav-how-it-works = Amek?
+about-nav-partners = Imendiden
+about-nav-get-involved = Ttekki
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Tigzi n tmacint
+mycroft-description =
+    Mycroft d amarag amenzu n uɣbalu yeldin deg umaḍal.
+    Mycroft yettwaselkam deg yal amḍiq - deg uselkim, deg tkeṛṛust, neɣ deg Raspberry Pi.
+mycroft-secondary-description = D aseɣzan neɣ d ahil n uɣbalu yeldin i tzemreḍ ad tbeddleḍ akken tebɣiḍ, ad tesnefliḍ neɣ ad tesnerniḍ. Mycroft yezmer ad yettwaseqdec deg tɣula meṛṛa, seg usenfaṛ ussnan neɣ aseɣẓan n tkebbanit.
 
 ## Glossary
 

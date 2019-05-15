@@ -8,8 +8,10 @@ email-input =
     .label = Adresse électronique
 submit-form-action = Envoyer
 loading = Chargement…
+email-opt-in-info = J’aimerais recevoir des courriels tels que des rappels d’objectifs, des rapports sur mes progrès et les lettres d’information de Common Voice.
 email-opt-in-privacy = En acceptant de recevoir des courriels, vous indiquez accepter que Mozilla gère ces informations, conformément à la <privacyLink>politique de confidentialité<privacyLink> de Mozilla.
 indicates-required = * indique un champ obligatoire
+not-available-abbreviation = Non disponible
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Arabe
 as = Assamais
 ast = Asturien
 az = Azerbaïdjanais
+ba = Bashkir
 bg = Bulgare
 bn = Bengali
 br = Breton
@@ -54,7 +57,9 @@ fr = Français
 fy-NL = Frison
 ga-IE = Irlandais
 gl = Galicien
+ha = Haoussa
 he = Hébreu
+hi-IN = Hindi
 hr = Croate
 hsb = Haut-sorabe
 hu = Hongrois
@@ -62,19 +67,23 @@ ia = Interlingua
 id = Indonésien
 is = Islandais
 it = Italien
+izh = Ingrien
 ja = Japonais
 ka = Géorgien
 kab = Kabyle
 kk = Kazakh
 ko = Coréen
 kpv = Komi-zyriène
+ku = Kurde
 kw = Cornique
 ky = Kirghize
+lij = Ligure
 lt = Lituanien
 lv = Letton
 mdf = Mokcha
 mhr = Mari des prairies
 mk = Macédonien
+ml = Malayalam
 mn = Mongol
 mrj = Mari des montagnes
 myv = Erzya
@@ -92,6 +101,7 @@ ru = Russe
 rw = Kinyarwanda
 sah = Iakoute
 sc = Sarde
+si = Sinhala
 sk = Slovaque
 sl = Slovène
 sq = Albanais
@@ -99,6 +109,7 @@ sr = Serbe
 sv-SE = Suédois
 ta = Tamoul
 te = Télougou
+tg = Tadjik
 th = Thaï
 tr = Turc
 tt = Tatar
@@ -122,6 +133,7 @@ speak = Parler
 speak-now = Parler
 datasets = Jeux de données
 languages = Langues
+about = Qui sommes-nous
 profile = Profil
 help = Aide
 contact = Nous contacter
@@ -138,7 +150,7 @@ logout = Déconnexion
 
 ## Home Page
 
-home-title = Le projet Common Voice est une initiative de Mozilla pour aider à apprendre aux machines à parler comme tout un chacun.
+home-title = Le projet Common Voice est une initiative de Mozilla pour aider à apprendre aux machines comment les humains parlent vraiment.
 home-cta = Faites don de votre voix, contribuez ici !
 wall-of-text-start = La voix est naturelle, la voix est humaine. C’est pour cela que nous souhaitons créer des technologies vocales de qualité pour nos machines. Mais réaliser de tels systèmes requiert un gigantesque volume de données vocales.
 wall-of-text-more-mobile = La plupart des données utilisées par les grandes sociétés ne sont pas mises à la disposition de monsieur ou madame Tout-le-monde. Nous pensons que cela freine l’innovation. C’est pour cela que le projet Common Voice existe, c’est un projet qui facilite l’accès à la reconnaissance vocale, pour tout le monde.
@@ -233,6 +245,7 @@ shortcut-vote-no = n
 shortcut-record-toggle = e
 shortcut-record-toggle-label = Enregistrer/Arrêter
 shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = Refaire l’enregistrement
 request-language-text = Votre langue n’est pas encore disponible ?
 request-language-button = Proposer une langue
 
@@ -290,8 +303,6 @@ profile-explanation = Gardez un œil sur votre progression en créant un profil 
 thanks-for-account = Merci d’avoir confirmé votre compte, maintenant créons votre profil.
 why-demographic = Pourquoi est-ce important ?
 why-demographic-explanation = Les données utilisateur anonymes comme l’âge, le sexe, et l’accent particulier contribuent à améliorer les données audio utilisées pour entraîner et rendre plus pertinents les moteurs de reconnaissance vocale. Votre nom d’utilisateur et votre adresse courriel ne seront jamais associés aux données que vous communiquez, et vous pouvez choisir entre rendre public votre nom d’utilisateur et garder l’anonymat.
-keep-me-posted =
-    .label = Je voudrais profiter des mises à jour et être tenu au courant des avancées du projet Common Voice.
 accept-privacy = J’accepte que vous utilisiez ces informations conformément à la <privacyLink>Politique de confidentialité</privacyLink> de Mozilla
 login-identity = Identité de connexion
 login-signup = Se connecter / S’inscrire
@@ -311,6 +322,7 @@ connect-gravatar = Connectez-vous avec Gravatar
 gravatar_not_found = Impossible de trouver un Gravatar associé à votre adresse électronique
 file_too_large = Le fichier sélectionné est trop volumineux
 manage-subscriptions = Gérer vos abonnements
+manage-email-subscriptions = Gérer les abonnements aux courriels
 email-already-used = Cette adresse électronique est déjà utilisée par un compte différent
 add-language = Ajouter une langue
 change-email-setings = Modifiez votre adresse de courriel dans les Préférences, section « Identité de connexion »
@@ -365,6 +377,59 @@ faq-what-determine-identity-a =
     Le jeu de données Common Voice est une ressource ouverte et accessible à tous qui peut être utilisée pour de nombreuses applications liées à la voix. Pour protéger la sécurité de nos contributeurs, nous demandons à tous ceux qui téléchargent les données de respecter la vie privée des contributeurs.
     
     Tous les échantillons sont expurgés d’informations permettant d’identifier les locuteurs. Quand vous téléchargez le jeu de données, vous acceptez de ne pas essayer de déterminer l’identité des contributeurs. Cela signifie que vous ne devez pas essayer de faire le lien entre le jeu de données et des informations personnelles d’un contributeur. Vous pouvez par contre utiliser le jeu de données pour permettre la reconnaissance vocale, l’identification de différents locuteurs dans une conversation, par exemple en utilisant les données présentes uniquement dans le jeu de données.
+faq-what-is-cv = Qu’est-ce que Common Voice ?
+faq-using-cv = Utilisation de Common Voice
+faq-description = Le projet Common Voice fait partie des initiatives de Mozilla pour aider à apprendre aux machines comment les humains parlent vraiment.
+faq-search-for-answers =
+    .label = Rechercher des réponses
+
+## ABOUT US
+
+about-title = Pourquoi Common Voice ?
+about-subtitle = Common Voice fait partie de l’initiative de Mozilla aidant les machines à apprendre comment parlent les vraies personnes. Outre le jeu de données Common Voice, nous créons également un moteur de reconnaissance vocale open source appelé Deep Speech.
+about-header-description =
+    Ces deux projets font partie de nos efforts pour réduire la fracture de la parole numérisée. Les technologies de reconnaissance vocale apportent une dimension humaine à nos appareils, mais les développeurs ont besoin d’une énorme quantité de données vocales pour les concevoir. Actuellement, la plupart de ces données sont coûteuses et propriétaires.
+    Nous voulons rendre les données vocales librement et publiquement accessibles, et nous assurer que les données représentent la diversité de personnes réelles. Ensemble, nous pouvons améliorer la reconnaissance vocale pour tous.
+how-does-it-work-title = Mode d’emploi
+how-does-it-work-text = Nous appelons à la participation collective pour constituer un jeu de données open source de voix. Donnez votre voix, validez la précision des échantillons d’autres personnes, améliorez le jeu de données pour tout le monde.
+about-speak = Parler
+about-speak-text = Les contributeurs et contributrices lisent et enregistrent des échantillons vocaux issus d’une banque de phrases données par la communauté.
+about-listen-queue = File d’attente de l’écoute
+about-listen-queue-text = Les échantillons vocaux sont enregistrés dans une file d’attente de soumissions qui les prépare pour l’écoute.
+about-listen = Écouter
+about-listen-text = Les utilisateurs valident l’exactitude des échantillons en vérifiant que le locuteur ou la locutrice a correctement lu la phrase.
+about-is-it-valid = Cet échantillon est-il valide ?
+about-is-it-valid-text = Un échantillon vocal est marqué comme « valide » quand un utilisateur ou une utilisatrice l’approuve avec un OUI.
+about-yes-votes = ≥ 2 votes OUI
+about-yes-votes-text = Pour faire partie du jeu de données Common Voice, un échantillon vocal doit être validé par deux personnes distinctes.
+about-no-votes = ≥ 2 votes NON
+about-no-votes-text = Si une personne invalide un échantillon vocal, celui-ci retourne dans la file d’attente. S’il est rejeté une seconde fois, l’échantillon vocal est déplacé vers le cimetière des échantillons.
+about-dataset = Jeu de données Common Voice
+about-dataset-text = Si une personne invalide un échantillon vocal, celui-ci retourne dans la file d’attente. S’il est rejeté une seconde fois, l’échantillon vocal est déplacé vers le cimetière des échantillons.
+about-clip-graveyard = Cimetière des échantillons
+about-clip-graveyard-text = Le cimetière des échantillons est constitué d’échantillons qui n’ont pas été admis à faire partie du jeu de données Common Voice. Tout comme ce dernier, le cimetière des échantillons est disponible au téléchargement.
+about-partners = Partenaires
+about-become-a-partner = Devenir partenaire
+about-partnership =
+    Common Voice est un projet collaboratif et nous comptons sur notre communauté de partenaires et de contributeurs et contributrices pour créer le plus grand ensemble de données open source de voix.
+    
+    Nous voudrions remercier les personnes et organisations suivantes pour leur aide dans le projet :
+about-get-involved = Participer
+about-get-involved-text =
+    Vous voulez aider à améliorer Common Voice ?
+    Super ! Contactez-nous par courriel ou bien sur <discourseLink>Discourse</discourseLink>,
+    envoyez des commentaires sur <githubLink>GitHub</githubLink>,
+    ou rejoignez-nous sur <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = Pourquoi ?
+about-nav-how-it-works = Comment ?
+about-nav-partners = Partenaires
+about-nav-get-involved = Participer
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Intelligence artificielle
+mycroft-description =
+    Mycroft est le premier assistant open source au monde.
+    Mycroft fonctionne n’importe où : sur un ordinateur de bureau, dans une voiture ou sur un Raspberry Pi.
+mycroft-secondary-description = C’est un logiciel open source qui peut être librement remixé, développé et amélioré. Mycroft peut être utilisé dans tous les domaines, du projet scientifique au logiciel d’entreprise.
 
 ## Glossary
 
@@ -452,6 +517,7 @@ get-started-speech = S’initier à la reconnaissance vocale
 other-datasets = Autres jeux de données vocales
 feedback-q = Vous avez des suggestions ?
 deepspeech-info = Le jeu de données Common Voice est un complément au moteur open source de reconnaissance vocale de Mozilla, Deep Speech, que vous pouvez utiliser pour créer des applications de reconnaissance vocale. Consultez notre <githubLink>aperçu sur GitHub</githubLink> ou rejoignez le <discourseLink>Discourse de DeepSpeech</discourseLink> pour bien commencer.
+common-voice-info-new = Vous avez des questions sur Common Voice ? Des idées d’améliorations ou des suggestions sur une langue particulière ? Retrouvez-nous sur notre <discourseLink>forum Discourse</discourseLink> et faites-nous-en part.
 data-other-librispeech-description = LibriSpeech est un corpus d’environ 1000 heures de lecture en anglais (16 kHz) issu de livres audio du projet LibriVox.
 data-other-ted-name = Corpus TED-LIUM
 data-other-ted-description = Le corpus TED-LIUM est construit à partir des dialogues audio et de leurs transcriptions disponibles sur le site TED.
@@ -498,6 +564,7 @@ other-language = Autre langue
 ## Languages Overview
 
 language-section-in-progress = En cours
+language-section-in-progress-new-description = Ces langues sont actuellement en développement par la communauté. Les barres de progression indiquent où en est chacune d’elles dans <localizationGlossaryLink>la localisation du site web</localizationGlossaryLink> et <sentenceCollectionGlossaryLink>la collecte de phrases</sentenceCollectionGlossaryLink>.
 language-section-launched = Lancées
 language-section-launched-description = Pour les langues suivantes le site web a été <localizationGlossaryLink>localisé</localizationGlossaryLink>, et propose suffisamment de <sentenceCollectionGlossaryLink>phrases collectées</sentenceCollectionGlossaryLink> pour permettre de contribuer aussi bien en <speakLink>parlant</speakLink> qu’en <listenLink>écoutant</listenLink>.
 languages-show-more = Afficher davantage

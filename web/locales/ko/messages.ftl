@@ -8,6 +8,8 @@ email-input =
     .label = 이메일
 submit-form-action = 보내기
 loading = 로딩중…
+email-opt-in-privacy = 이메일을 받기로 수락함으로서 Mozilla의 <privacyLink>개인정보 정책</privacyLink>에 따라 Mozilla가 이 정보를 처리하는 것에 동의하게 됩니다.
+indicates-required = * 표시는 필수 항목
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -15,7 +17,11 @@ loading = 로딩중…
 
 ## Languages
 
+ab = 압하지야
 ace = 아체어
+ady = 아디게어
+af = 아프리칸스어
+am = 암하라어
 an = 아라곤어
 ar = 아랍어
 as = 아삼어
@@ -34,6 +40,7 @@ cy = 웨일스어
 da = 덴마크어
 de = 독일어
 dsb = 저지 소르브어
+dv = 디베히어
 el = 그리스어
 en = 영어
 eo = 에스페란토어
@@ -46,7 +53,9 @@ fo = 페로어
 fr = 프랑스어
 fy-NL = 프리지아어
 ga-IE = 아일랜드어
+gl = 갈리시아어
 he = 히브리어
+hr = 크로아티아어
 hsb = 고지 소르브어
 hu = 헝가리어
 ia = 인테르링구아어
@@ -61,6 +70,8 @@ ko = 한국어
 kpv = 코미지리안어
 kw = 콘월어
 ky = 키르기스스탄어
+lt = 리투아니아어
+lv = 라트비아어
 mdf = 목샤어
 mk = 마케도니아어
 mn = 몽골어
@@ -76,6 +87,7 @@ pt-BR = 포르투갈어(브라질)
 rm-sursilv = 로만슈 수르실반어
 ro = 루마니아어
 ru = 러시아어
+rw = 키냐르완다어
 sah = 사하어
 sc = 사르데냐어
 sk = 슬로바키아어
@@ -88,10 +100,13 @@ te = 텔루구어
 th = 태국어
 tr = 터키어
 tt = 타타르어
+uby = 우비흐어
+udm = 우드무르트어
 uk = 우크라이나어
 ur = 우르두어
 uz = 우즈베키스탄어
 vi = 베트남어
+vot = 바트어
 zh-CN = 중국어(중국)
 zh-HK = 중국어(홍콩)
 zh-TW = 중국어(중화민국)
@@ -150,6 +165,7 @@ todays-progress = 오늘의 성과
 help-reach-goal = { $goal }를 달성하도록 도와주세요.
 read-terms-q = 약관을 읽어보셨나요?
 ready-to-record = 목소리를 기부할 준비가 되셨나요?
+all-locales = 전체
 today = 오늘
 x-weeks-short =
     { $count ->
@@ -163,12 +179,25 @@ x-years-short =
     { $count ->
        *[other] { $count }년
     }
+help-make-dataset = 고품질의 공개 데이터 세트를 만드는 일을 도와주세요.
+profile-not-required = 프로파일이 있으면 도움이 되지만, 기여하기 위한 필수 사항은 아닙니다.
+sign-up-account = 새 계정 생성
+email-subscription-title = 이메일 업데이트 수신 등록
 
 ## Account Benefits
 
+benefits = 혜택
+rich-data = 익명의 통계 자료를 제공하여 가능한 풍부한 데이터가 수집되도록 해 주세요. 모든 통계 자료는 공개되기 전에 익명으로 처리됩니다.
+improve-audio = 프로파일 정보는 음성인식 기계학습에 사용되어 정확도를 높입니다.
+join-newsletter = 선택적으로 프로젝트의 새로운 정보와 업데이트 내용을 받기 위한 메일링 리스트에 가입하세요.
 
 ## What's public
 
+whats-public = 어떤 것이 공개됩니까?
+email-not-public = 사용자의 이메일을 공개하지 않습니다.
+username-optin-public = 사용자 이름의 공개여부를 선택하실 수 있습니다.
+demographic-deidentified = 추가적으로 제출된 통계 데이터(예: 나이, 성별, 언어, 억양)는 음성 데이터에서 개인을 식별할 수 없게 처리되고 사용자의 프로필에 공개되지 않습니다.
+username-email-not-demographic = 사용자 이름과 이메일은 공개된 데이터와 연관되지 않습니다.
 
 ## Speak & Listen Shortcuts
 
@@ -194,6 +223,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = 녹음/멈추기
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = 레코드클립 재녹음
 request-language-text = 아직도 Common Voice에서 사용하는 언어가 보이지 않나요?
 request-language-button = 언어 요청하기
 
@@ -214,6 +245,10 @@ english = 영어
 
 profile-form-username =
     .label = 사용자 이름
+profile-form-native-language =
+    .label = 모국어
+profile-form-additional-language =
+    .label = 추가 언어
 profile-form-accent =
     .label = 억양
 profile-form-age =
@@ -268,13 +303,40 @@ gravatar_not_found = 이메일에 사용할 gravatar를 찾을 수 없습니다.
 file_too_large = 선택한 파일이 너무 큽니다.
 manage-subscriptions = 구독 관리
 email-already-used = 다른 계정에 이미 이메일이 사용되었습니다.
+add-language = 언어 추가
+change-email-setings = 로그인 후 설정 페이지에서 이메일을 변경하십시오.
 
 ## FAQ
 
 faq-title = 자주 묻는 질문
+faq-what-cv-q = Common Voice 란 무엇인가요?
+faq-why-important-q = 이것이 왜 중요할까요?
+faq-how-get-q = Common Voice 데이터는 어떻게 얻을 수 있습니까?
+faq-how-get-a = Common Voice 데이터세트는 <licenseLink>CC0</licenseLink> 라이선스 하에 <datasetLink>데이터세트 페이지</datasetLink>에서 다운로드 하실 수 있습니다. 또한 공개된 다른 몇몇 데이터 세트도 같은 페이지에서 다운로드 가능합니다.
+faq-when-release-q = 다른 언어의 Common Voice 데이터세트는 언제 출시 되나요?
+faq-why-mission-q = Mozilla에서는 Common Voice를 왜 수행하게 되었나요?
+faq-what-cv-and-deepspeech-q = Common Voice와 Deep Speech의 차이는 무엇입니까?
+faq-is-goal-assistant-q = 보이스 어시스턴스를 만드는 것이 Common Voice의 목적인가요?
+faq-do-want-native-q = 모국어가 아니고 억양이 있는데도 목소리 기부가 가능한가요?
+faq-why-different-speakers-q = 언어별로 왜 수많고 다양한 목소리 기부자가 필요한가요?
+faq-why-my-lang-q = 왜 나의 언어가 아직 포함되지 않았나요?
+faq-what-quality-q = 데이터세트에 사용되기 위한 보이스 클립의 음질은 어느정도여야 하나요?
+faq-why-10k-hours-q = 왜 언어별로 수집되어야 할 오디오의 유효한 길이가 10,000 시간인가요?
+faq-how-calc-hours-q = Common Voice는 녹음된 시간을 어떻게 계산하나요?
+faq-where-src-from-2-q = 원본 글의 출처는 어디인가요?
+faq-why-account-q = 계정을 왜 만들어야 하나요?
+faq-is-account-public-q = 나의 계정 정보는 공개됩니까?
+faq-how-privacy-q = 기부된 음성의 익명성과 개인정보는 어떻게 보장되나요?
 
 ## Glossary
 
+glossary = 용어
+localization = 지역화
+localization-explanation = 이것은 여러 지역(언어)의 컨텐츠를 번역하고 적용하기 위한 프로세스입니다.
+sentence-collection = 문장 모음
+sst = 음성 문자 변환(STT)
+sst-explanation = 음성 문자 변환(STT) 기술은 음성 데이터를 문자로 변환합니다.
+de-identified = 개인정보가 제거된
 
 ## NotFound
 
@@ -312,11 +374,36 @@ review-delete-recordings = 내 녹음 삭제
 
 ## New Datasets Page
 
+language = 언어
+# File size in gigabytes
+size = 크기
+cv-license = 라이선스
+audio-format = 오디오 포멧
+number-of-voices = 음성 갯수
+splits = 분리
+email-to-download = 다운로드 하기 위한 이메일을 입력하십시오.
+confirm-size = <b>{ $size }</b>의 다운로드를 시작할 준비가 되었습니다.
+confirm-no-identify = Common Voice 데이터세트의 녹음기부자의 신원을 밝히려는 시도를 하지 않는데에 <b>동의</b>합니다.
+download-language = { $language } 다운로드
+validated-hours = 검증된 분량
+recorded-hours = 녹음된 분량
+whats-inside = Common Voice 데이터 세트에는 어떤것이 포함되어 있습니까?
+want-dataset-update = 새 버전의 Common Voice 데이터 세트의 릴리즈 소식을 받기 원하시나요? 뉴스 레터를 구독 하십시오.
+subscribe = 구독하기
+get-started-speech = 음성인식 시작하기
+other-datasets = 기타 음성 데이터세트
+feedback-q = 제안 사항이 있습니까?
 data-other-librispeech-description = LibriSpeech는 LibriVox 프로젝트에서 읽은 오디오 북에서 파생 된 16Khz의 약 1000 시간의 말뭉치입니다.
 data-other-ted-name = TED-LIUM 말뭉치
 data-other-ted-description = TED-LIUM 말뭉치는 TED 웹 사이트에서 이용할 수 있는 오디오 강연과 번역본으로 만들어졌습니다.
 data-other-voxforge-description = VoxForge는 무료 및 오픈 소스 음성 인식 엔진에서 사용하기 위한 변환된 음성을 수집하도록 설립 되었습니다.
 data-other-tatoeba-description = Tatoeba는 언어 학습에 사용하기 위한 문장, 번역, 음성 오디오의 대규모 데이터베이스입니다. 이 다운로드에는 커뮤니티에서 녹음한 구어체 영어가 포함되어 있습니다.
+go-discourse = Discourse로 이동
+go-languages-page = 언어 페이지로 이동
+ready-to-validate = 문장 검증에 기여하실 준비가 되셨습니까?
+more = 더보기
+close = 닫기
+download = 다운로드
 
 ## Download Modal
 
@@ -344,13 +431,14 @@ request-language-form-language =
     .label = 언어
 request-language-success-title = 언어 요청을 제출하였습니다, 감사합니다.
 request-language-success-content = 곧 언어를 Common Voice에 추가하는 방법에 대해 더 많은 정보를 알려 드리겠습니다.
+select-language = 언어를 선택하세요...
+other-language = 다른 언어
 
 ## Languages Overview
 
 language-section-in-progress = 진행중
-language-section-in-progress-description = 진행 중인 언어는 현재 우리 커뮤니티의 기여로 만들어지고 있습니다. 진행 상태는 웹 사이트의 지역화와 문장 수집을 종합하여 반영합니다.
+language-section-in-progress-new-description = 이 언어들은 현재 커뮤니티에서 개발중에 있습니다. 진행 상태 바는 각 언어의 <localizationGlossaryLink>웹사이트 지역화</localizationGlossaryLink>와  <sentenceCollectionGlossaryLink>문장 수집</sentenceCollectionGlossaryLink>이 어떻게 되고 있는지를 보여줍니다.
 language-section-launched = 출시됨
-language-section-launched-new-description = 이러한 런칭된 언어의 경우 웹사이트가 성공적으로 지역화되었으며 지속적인 <italic>말하기</italic>와 <italic>듣기</italic> 기여가 가능하도록 충분한 문장이 수집되었습니다.
 languages-show-more = 더 보기
 languages-show-less = 접기
 language-speakers = 말한 사람
@@ -431,6 +519,10 @@ validations =
 ## Dashboard
 
 toward-next-goal = 다음 목표를 향해
+clips-you-recorded = 녹음한 레코드 클립
+clips-you-validated = 검증한 레코드 클립
+todays-recorded-progress = 오늘의 Common Voice 레코드 클립 녹음 진행 현황
+todays-validated-progress = 오늘의 Common Voice 레코드 클립 검증 진행 현황
 stats = 통계
 you = 나
 everyone = 모두
@@ -438,7 +530,10 @@ contribution-activity = 기여 활동
 top-contributors = 상위 공헌자
 recorded-clips = 녹음된 클립
 validated-clips = 검증된 클립
+total-approved = 승인 전체
+overall-accuracy = 종합적 정확도
 
 ## Profile Delete
 
+keep = 유지
 profile-form-delete = 프로필 지우기

@@ -1,7 +1,8 @@
 @import url('../../vars.css');
 
 .stats,
-.goals {
+.goals,
+.awards {
     & header {
         @media (--lg-up) {
             max-width: var(--wide-desktop-width);
@@ -25,7 +26,8 @@
     max-width: initial !important;
     padding: 0 !important;
 
-    & .inner {
+    & .inner,
+    & .top-bar {
         margin: 0 auto;
         max-width: var(--wide-desktop-width);
         box-sizing: border-box;
@@ -34,17 +36,17 @@
 
 .top-bar {
     border-bottom: 1px solid var(--darker-grey);
-    padding: 0 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     @media (--sm-down) {
-        padding-top: 20px;
+        padding: 20px 20px 0;
     }
 
     @media (--md-up) {
-        padding-top: 30px;
+        padding: 30px 20px 0;
     }
 
     & nav {
@@ -56,11 +58,11 @@
             margin-inline-end: 25px;
             margin-bottom: -1.5px;
             padding-bottom: 5px;
-            opacity: 0.5;
+            color: rgba(0, 0, 0, 0.5);
 
             &.active {
+                color: var(--black);
                 border-bottom: 3px solid var(--black);
-                opacity: 1;
             }
         }
 
@@ -68,6 +70,23 @@
             font-family: var(--strong-font-family);
             font-size: var(--font-size-lg);
             font-weight: normal;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        & .badge {
+            border-radius: 50%;
+            margin-left: 10px;
+            width: 22px;
+            height: 22px;
+            line-height: 20px;
+            font-size: var(--font-size-xs);
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            color: var(--white);
+            background: var(--blue);
         }
     }
 
@@ -136,6 +155,10 @@
             background: url('/img/down-arrow.svg') no-repeat top 5px right 5px;
 
             @media (--md-down) {
+                width: initial;
+            }
+
+            &.selected {
                 width: initial;
             }
 

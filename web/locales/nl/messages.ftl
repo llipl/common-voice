@@ -8,8 +8,10 @@ email-input =
     .label = E-mailadres
 submit-form-action = Indienen
 loading = Laden…
+email-opt-in-info = Ik wil graag e-mailberichten zoals herinneringen aan doelstellingen, mijn voortgangsupdates en nieuwsbrieven over Common Voice ontvangen.
 email-opt-in-privacy = Door u in te schrijven voor het ontvangen van e-mailberichten, verklaart u dat u akkoord gaat met het verwerken van deze informatie door Mozilla in overeenstemming met Mozilla’s <privacyLink>Privacybeleid<privacyLink>.
 indicates-required = * Geeft verplicht veld aan
+not-available-abbreviation = NB
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Arabisch
 as = Assamees
 ast = Asturisch
 az = Azeri
+ba = Basjkiers
 bg = Bulgaars
 bn = Bengaals
 br = Bretons
@@ -54,7 +57,9 @@ fr = Frans
 fy-NL = Fries
 ga-IE = Iers
 gl = Galicisch
+ha = Hausa
 he = Hebreeuws
+hi-IN = Hindi
 hr = Kroatisch
 hsb = Oppersorbisch
 hu = Hongaars
@@ -69,13 +74,16 @@ kab = Kabylisch
 kk = Kazachs
 ko = Koreaans
 kpv = Zurjeens
+ku = Koerdisch
 kw = Cornish
 ky = Kirgizisch
+lij = Ligurisch
 lt = Litouws
 lv = Lets
 mdf = Moksja
 mhr = Weide-Mari
 mk = Macedonisch
+ml = Malayalam
 mn = Mongools
 mrj = Berg-Mari
 myv = Erzja
@@ -93,6 +101,7 @@ ru = Russisch
 rw = Kinyarwanda
 sah = Jakoets
 sc = Sardijns
+si = Singalees
 sk = Slowaaks
 sl = Sloveens
 sq = Albanees
@@ -100,6 +109,7 @@ sr = Servisch
 sv-SE = Zweeds
 ta = Tamil
 te = Telugu
+tg = Tadzjieks
 th = Thai
 tr = Turks
 tt = Tataars
@@ -123,6 +133,7 @@ speak = Spreken
 speak-now = Nu spreken
 datasets = Gegevenssets
 languages = Talen
+about = Over ons
 profile = Profiel
 help = Help
 contact = Contact
@@ -290,8 +301,6 @@ profile-explanation = Houd uw voortgang bij met een profiel en help onze spraakg
 thanks-for-account = Bedankt voor het bevestigen van uw account, nu gaan we uw profiel opbouwen.
 why-demographic = Waarom is dit belangrijk?
 why-demographic-explanation = Anonieme gebruikersgegevens zoals leeftijd, geslacht en accent helpen de audiogegevens die voor het trainen van de nauwkeurigheid van spraakherkenningsengines worden gebruikt te verbeteren. Uw gebruikersnaam en e-mailadres zullen nooit met uw ingediende gegevens worden gekoppeld, en u kunt ervoor kiezen uw gebruikersnaam openbaar of anoniem te maken.
-keep-me-posted =
-    .label = Ik ontvang graag updates en wil op de hoogte blijven van wat er met Common Voice gebeurt.
 accept-privacy = Ik ga akkoord met hoe u met deze gegevens omgaat, zoals uitgelegd in Mozilla’s <privacyLink>Privacybeleid</privacyLink>
 login-identity = Aanmeldingsidentiteit
 login-signup = Aanmelden / Registreren
@@ -311,6 +320,7 @@ connect-gravatar = Koppelen met Gravatar
 gravatar_not_found = Geen gravatar voor uw e-mailadres gevonden
 file_too_large = Het geselecteerde bestand is te groot
 manage-subscriptions = Abonnementen beheren
+manage-email-subscriptions = E-mailabonnementen beheren
 email-already-used = E-mailadres wordt al voor een andere account gebruikt
 add-language = Taal toevoegen
 change-email-setings = Wijzig uw e-mailadres via Instellingen onder Aanmeldingsidentiteit
@@ -368,6 +378,59 @@ faq-what-determine-identity-a =
     De Common Voice-gegevensset is een vrij toegankelijke en openbare bron die kan worden gebruikt om een breed scala aan spraakgestuurde toepassingen te trainen. Om de veiligheid van onze bijdragers te beschermen, vragen we iedereen die de Common Voice-gegevensset downloadt om de privacy van de bijdragers te respecteren.
     
     Alle spraakfragmenten in de gegevensset worden geschoond van persoonlijk identificeerbare gegevens. Wanneer u de gegevensset downloadt, gaat u ermee akkoord niet te proberen de identiteit van een bijdrager te bepalen. Dat betekent dat u niet mag proberen om gegevens in de gegevensset aan de persoonlijke informatie van een bijdrager te koppelen. U mag de gegevensset echter wel gebruiken om spraakherkenning, sprekerherkenning of andere toepassingen te trainen, bijvoorbeeld door gegevens in de gegevensset te koppelen aan andere informatie die al in de gegevensset staat.
+faq-what-is-cv = Wat is Common Voice?
+faq-using-cv = Common Voice gebruiken
+faq-description = Common Voice is onderdeel van een initiatief van Mozilla om machines te helpen leren hoe echte mensen spreken.
+faq-search-for-answers =
+    .label = Antwoorden zoeken
+
+## ABOUT US
+
+about-title = Waarom Common Voice?
+about-subtitle = Common Voice is onderdeel van een initiatief van Mozilla om machines te helpen leren hoe echte mensen spreken. In aanvulling op de Common Voice-gegevensset bouwen we ook een open source spraakherkenningsengine genaamd Deep Speech.
+about-header-description =
+    Beide projecten maken deel uit van onze inspanningen om de digitale spraakkloof te overbruggen. Spraakherkenningstechnologieën geven onze apparaten een menselijke dimensie, maar ontwikkelaars hebben een enorme hoeveelheid spraakgegevens nodig om ze te bouwen. Momenteel zijn de meeste van die gegevens duur en afgeschermd.
+    We willen spraakgegevens gratis en vrij beschikbaar maken en ervoor zorgen dat de gegevens de diversiteit van echte mensen vertegenwoordigen. Samen kunnen we stemherkenning voor iedereen beter maken.
+how-does-it-work-title = Hoe werkt het
+how-does-it-work-text = We crowdsourcen een open source stemgegevensset. Doneer uw stem, valideer de nauwkeurigheid van opnames van anderen, en maak de gegevensset beter voor iedereen.
+about-speak = Spreken
+about-speak-text = Bijdragers nemen spraakfragmenten op door te lezen van een databank van gedoneerde zinnen.
+about-listen-queue = Luisterwachtrij
+about-listen-queue-text = Spraakclips worden ingevoerd in een indieningswachtrij waar ze klaarstaan om beluisterd te worden.
+about-listen = Luisteren
+about-listen-text = Gebruikers valideren de nauwkeurigheid van gedoneerde fragmenten en controleren of de spreker de zin correct leest.
+about-is-it-valid = Is het fragment geldig?
+about-is-it-valid-text = Een spraakfragment wordt gemarkeerd als ‘geldig’ wanneer een gebruiker het een ja-stem geeft.
+about-yes-votes = ≥ 2 ja-stemmen
+about-yes-votes-text = Om opgenomen te worden in de Common Voice-gegevensset moet een fragment worden gevalideerd door twee afzonderlijke gebruikers.
+about-no-votes = ≥ 2 nee-stemmen
+about-no-votes-text = Wanneer een gebruiker een spraakfragment afwijst, keert deze terug naar de wachtrij. Bij een tweede afwijzing wordt het spraakfragment verplaatst naar het Fragmentenkerkhof.
+about-dataset = Common Voice-gegevensset
+about-dataset-text = Wanneer een gebruiker een spraakfragment afwijst, keert deze terug naar de wachtrij. Bij een tweede afwijzing wordt het spraakfragment verplaatst naar het Fragmentenkerkhof.
+about-clip-graveyard = Fragmentenkerkhof
+about-clip-graveyard-text = Het Fragmentenkerkhof bestaat uit stemfragmenten die de Common Voice-gegevensset niet hebben gehaald. Net als de gegevensset kan het Fragmentenkerkhof worden gedownload.
+about-partners = Partners
+about-become-a-partner = Een partner worden
+about-partnership =
+    Common Voice is een samenwerkingsproject en we zijn afhankelijk van onze gemeenschap van partners en medewerkers om de grootste open source gegevensset van stemmen ooit te bouwen.
+    
+    We willen de volgende mensen en organisaties bedanken voor hun hulp bij het project:
+about-get-involved = Meedoen
+about-get-involved-text =
+    Wilt u Common Voice nog beter helpen maken?
+    Geweldig! Neem contact op via e-mail of op <discourseLink>Discourse</discourseLink>,
+    geef feedback via <githubLink>GitHub</githubLink>,
+    of doe mee op <slackLink>Slack </slackLink>.
+about-nav-why-common-voice = Waarom?
+about-nav-how-it-works = Hoe?
+about-nav-partners = Partners
+about-nav-get-involved = Meedoen
+mycroft-title = Mycroft AI
+mycroft-subtitle = Kunstmatige intelligentie
+mycroft-description =
+    Mycroft is ’s werelds eerste open source assistent.
+    Mycroft draait overal – op een desktopcomputer, in een auto of op een Raspberry Pi.
+mycroft-secondary-description = Dit is opensourcesoftware die vrij kan worden geremixt, uitgebreid en verbeterd. Mycroft mag worden gebruikt in alles van een wetenschappelijk project tot een zakelijke softwaretoepassing.
 
 ## Glossary
 

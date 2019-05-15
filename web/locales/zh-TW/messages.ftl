@@ -8,8 +8,10 @@ email-input =
     .label = 電子郵件地址
 submit-form-action = 送出
 loading = 載入中…
+email-opt-in-info = 我希望收到諸如目標提醒、我的進度更新與 Common Voice 的相關電子報。
 email-opt-in-privacy = 若同意接收郵件，就代表您同意 Mozilla 依照<privacyLink>隱私權保護政策</privacyLink>當中描述的方式處理這些資訊。
 indicates-required = * 表示必填欄位
+not-available-abbreviation = 不適用
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = 阿拉伯語
 as = 阿薩姆語
 ast = 阿斯圖里亞斯語
 az = 亞塞拜然語
+ba = 巴什噶爾語
 bg = 保加利亞語
 bn = 孟加拉語
 br = 布里多尼語
@@ -54,7 +57,9 @@ fr = 法語
 fy-NL = 弗利西亞語
 ga-IE = 愛爾蘭語
 gl = 加里西亞語
+ha = 豪薩語
 he = 希伯來語
+hi-IN = 印地語
 hr = 克羅埃西亞語
 hsb = 上索布語
 hu = 匈牙利語
@@ -69,13 +74,16 @@ kab = 卡拜爾語
 kk = 哈薩克語
 ko = 韓語
 kpv = 科米-齊良語
+ku = 庫德語
 kw = 康瓦爾語
 ky = 吉爾吉斯語
+lij = 利古里亞語
 lt = 立陶宛語
 lv = 拉脫維亞語
 mdf = 莫克沙語
 mhr = 草原馬里語
 mk = 馬其頓語
+ml = 馬拉亞拉姆語
 mn = 蒙古語
 mrj = 山地馬里語
 myv = 厄茲亞語
@@ -93,6 +101,7 @@ ru = 俄語
 rw = 盧安達語
 sah = 薩哈語
 sc = 薩丁尼亞語
+si = 僧加羅語
 sk = 斯洛伐克語
 sl = 斯洛維尼亞語
 sq = 阿爾巴尼亞語
@@ -100,6 +109,7 @@ sr = 塞爾維亞語
 sv-SE = 瑞典語
 ta = 坦米爾語
 te = 泰盧固語
+tg = 塔吉克語
 th = 泰語
 tr = 土耳其語
 tt = 韃靼語
@@ -123,6 +133,7 @@ speak = 說話
 speak-now = 現在說話
 datasets = 資料集
 languages = 語言
+about = 關於我們
 profile = 帳號資料
 help = 說明
 contact = 聯絡我們
@@ -152,20 +163,20 @@ show-wall-of-text = 了解更多
 help-us-title = 請幫助我們驗證句子！
 help-us-explain = 按下播放按鈕，聽一聽，然後告訴我們: 他們正確說出下面的句子了嗎？
 no-clips-to-validate = 看來這個語言沒有任何片段可聽。請幫助我們錄下一些片段。
-vote-yes = 是
-vote-no = 否
+vote-yes = 正確
+vote-no = 錯誤
 toggle-play-tooltip = 按下 { shortcut-play-toggle } 即可切換播放模式
 speak-subtitle = 捐出您的聲音
 speak-paragraph = 錄下語音片段是打造我們的開放資料集當中很重要的部分，有的人說這很好玩。
-speak-goal-text = 已錄音片段數
+speak-goal-text = 筆已錄音片段
 listen-subtitle = 請幫助我們驗證其他人的錄音
 listen-paragraph = 驗證別人錄下的語音片段，對 Common Voice 的使命也很重要。請聆聽片段，並幫助我們打造高品質的開源語音資料。
-listen-goal-text = 已驗證片段數
-hours-recorded = 已記錄時數
+listen-goal-text = 筆已驗證片段
+hours-recorded = 已錄音時數
 hours-validated = 已驗證時數
 voices-online = 目前上線的語音
 todays-progress = 本日進度
-help-reach-goal = 幫助我們達成 { $goal }
+help-reach-goal = 幫助我們達成 { $goal } 筆的目標
 read-terms-q = 您閱讀過我們的使用條款了嗎？
 ready-to-record = 準備好捐出您的聲音了嗎？
 all-locales = 全部
@@ -288,8 +299,6 @@ profile-explanation = 保留您的專案紀錄，並幫助增加我們的語音�
 thanks-for-account = 感謝您確認帳號資訊，接下來請提供您的基本資料。
 why-demographic = 這有什麼重要的？
 why-demographic-explanation = 匿名化的使用者資料，如年齡、性別、腔調等，可幫助我們改善用來訓練語音識別引擎的語音資料。您的帳號與 E-Mail 不會與送出的資料相關聯，您也可以決定是否要公開您的帳號名稱或保持匿名。
-keep-me-posted =
-    .label = 我想收到 Common Voice 最近發生什麼事情的最新情報。
 accept-privacy = 我同意你依照 Mozilla 的<privacyLink>隱私權保護政策</privacyLink>當中描述的方式處理這些資訊
 login-identity = 登入身分
 login-signup = 登入 / 註冊
@@ -309,6 +318,7 @@ connect-gravatar = 連結 Gravatar
 gravatar_not_found = 找不到您電子郵件信箱的 Gravatar
 file_too_large = 選擇的檔案太大
 manage-subscriptions = 管理訂閱
+manage-email-subscriptions = 管理電子報訂閱項目
 email-already-used = 電子郵件地址已用於其他帳號
 add-language = 新增語言
 change-email-setings = 請到「設定」的「登入身分」修改 Email 地址
@@ -366,6 +376,57 @@ faq-what-determine-identity-a =
     Common Voice 資料集是一份開放，可公開使用的資源。含有語音功能的應用程式可使用這份資料來訓練程式。為了保護貢獻者的安全，我們要求所有下載 Common Voice 資料集的人確保貢獻者的隱私安全。
     
     所有語音片段中的個人識別資料已經清除。當您下載資料集時，就代表您同意不會識別資料集當中的任何貢獻者。這代表您不得嘗試將資料集中的資訊，與貢獻者的個人資訊連結起來。但您可以將資料集中的不同資訊互相連結起來，用來訓練語音識別、說話者識別等功能，或其他應用程式。
+faq-what-is-cv = Common Voice 是什麼？
+faq-using-cv = 使用 Common Voice
+faq-description = Common Voice 是 Mozilla 想讓機器學會真人說話方式的專案。
+faq-search-for-answers =
+    .label = 搜尋解答
+
+## ABOUT US
+
+about-title = 為什麼會有 Common Voice？
+about-subtitle = Common Voice 是 Mozilla 想讓機器學會真人說話方式的專案。除了 Common Voice 資料集外，我們也正在打造一套稱為 Deep Speech 的開放原始碼語音識別引擎。
+about-header-description =
+    這兩個專案都是我們努力弭平數位語音落差的一部份。語音識別技術可讓我們的裝置帶來人性，但開發者需要極為龐大數量的語音資料，才能打造出這樣的系統。目前大部分語音資料都相當昂貴，也是專有的資料。
+    我們希望讓語音資料能夠公開自由使用，並確保資料反映出人們實際的多樣性。讓我們一起為所有人把語音識別技術變得更好吧！
+how-does-it-work-title = 原理是什麼？
+how-does-it-work-text = 我們集合眾人之力，打造開放原始碼的語音資料集。歡迎捐出您的聲音、協助驗證錄音片段是否正確，讓資料集能夠變得更好。
+about-speak = 說話
+about-speak-text = 貢獻者透過讀出一系列由他人捐贈的語料庫句子，將語音片段錄音下來。
+about-listen-queue = 聆聽佇列
+about-listen-queue-text = 錄下的片段將進入佇列中排隊，準備接受聆聽確認。
+about-listen = 聆聽確認
+about-listen-text = 使用者確認錄音片段是否精準，並確認說話者是否正確讀出了句子。
+about-is-it-valid = 片段正確嗎？
+about-is-it-valid-text = 若使用者投下「正確」，就會標示為有效。
+about-yes-votes = ≥ 2 張「正確」票
+about-yes-votes-text = 必須經過兩位不同的使用者確認過，片段才會進入 Common Voice 資料集。
+about-no-votes = ≥ 2 張「不正確」票
+about-no-votes-text = 若使用者投下不正確，片段就會回到佇列重新排隊。若被退回第二次，片段就會就會被丟進回收桶。
+about-dataset = Common Voice 資料集
+about-dataset-text = 若使用者投下不正確，片段就會回到佇列重新排隊。若被退回第二次，片段就會就會被丟進回收桶。
+about-clip-graveyard = 片段回收桶
+about-clip-graveyard-text = 回收桶中包含無法進入 Common Voice 資料集的語音片段。與資料集一樣，回收桶內容也有提供下載。
+about-partners = 夥伴
+about-become-a-partner = 成為夥伴
+about-partnership =
+    Common Voice 是一套由眾人鼎力相助的專案。我們依賴由夥伴與貢獻者所組成的社群，來打有史以來最大的開放原始碼語音資料集。
+    
+    特別感謝下列人員與組織單位，協助本專案:
+about-get-involved = 參與我們
+about-get-involved-text =
+    想要幫忙讓 Common Voice 變得更棒嗎？
+    沒問題！請寄 E-Mail 給我們，也可以到 <discourseLink>Discourse</discourseLink> 留言、
+    透過 <githubLink>GitHub</githubLink> 送出意見回饋、
+    也可以加入我們的 <slackLink>Slack</slackLink>。
+about-nav-why-common-voice = 為什麼？
+about-nav-how-it-works = 怎麼做？
+about-nav-partners = 夥伴
+about-nav-get-involved = 參與我們
+mycroft-title = Mycroft Ai
+mycroft-subtitle = 人工智慧
+mycroft-description = Mycroft 是全球第一套的開放原始碼語音助理，不論是在電腦、車子、Raspberry Pi 或是任何地方都能運作。
+mycroft-secondary-description = 這是一套可以自由混搭、延伸、改進的開放原始碼軟體。Mycroft 可以用於科學專案，或企業軟體應用等各種情境中。
 
 ## Glossary
 
@@ -525,7 +586,7 @@ skip = 略過
 shortcuts = 捷徑
 clips-with-count = <bold>{ $count }</bold> 段
 goal-help-recording = 您已幫助 Common Voice 完成 <goalPercentage></goalPercentage> 的每日 { $goalValue } 錄音目標！
-goal-help-validation = 您已幫助 Common Voice 完成 <goalPercentage></goalPercentage> 的每日 { $goalValue } 驗證目標！
+goal-help-validation = 您已幫助 Common Voice 完成 <goalPercentage></goalPercentage> 的每日 { $goalValue } 筆驗證目標！
 contribute-more = 準備好再作 { $count } 筆了嗎？
 record-cta = 開始錄音
 record-platform-not-supported = 很抱歉，目前暫不支援您的平台。
@@ -553,10 +614,10 @@ record-abort-text = 如果要現在離開，會失去目前的進度
 record-abort-submit = 送出片段
 record-abort-continue = 完成錄音
 record-abort-delete = 結束並刪除片段
-listen-instruction = { $actionType } <playIcon></playIcon>，聽聽他們有準確地說出句子嗎？
-listen-again-instruction = 幹得好！<playIcon></playIcon> 準備好就可以再聽一次
-listen-3rd-time-instruction = 完成兩筆了 <playIcon></playIcon>，繼續保持！
-listen-last-time-instruction = <playIcon></playIcon> 最後一筆了！
+listen-instruction = { $actionType }<playIcon></playIcon>，聽聽他們有準確地說出句子嗎？
+listen-again-instruction = 幹得好！<playIcon></playIcon>準備好就可以再聽一次
+listen-3rd-time-instruction = 完成兩筆了<playIcon></playIcon>，繼續保持！
+listen-last-time-instruction = <playIcon></playIcon>最後一筆了！
 nothing-to-validate = 我們沒有這個語言可供驗證的錄音，請幫助我們多錄一些。
 record-button-label = 錄下您的聲音
 share-title-new = <bold>請幫助我們</bold>找到更多聲音

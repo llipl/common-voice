@@ -16,14 +16,26 @@ import './share-buttons.css';
 const SHARE_URL = 'https://voice.mozilla.org/';
 
 interface PropsFromDispatch {
-  addNotification: typeof Notifications.actions.add;
+  addNotification: typeof Notifications.actions.addPill;
 }
 
-type Props = LocalizationProps & PropsFromDispatch & LocalePropsFromState;
+interface Props
+  extends LocalizationProps,
+    PropsFromDispatch,
+    LocalePropsFromState {
+  shareText?: string;
+}
 
-function ShareButtons({ addNotification, getString, locale }: Props) {
+function ShareButtons({
+  addNotification,
+  getString,
+  locale,
+  shareText,
+}: Props) {
   const encodedShareText = encodeURIComponent(
-    getString('share-text', { link: SHARE_URL })
+    shareText
+      ? shareText.replace('{link}', SHARE_URL)
+      : getString('share-text', { link: SHARE_URL })
   );
   const shareURLInputRef = useRef(null);
 
@@ -51,14 +63,6 @@ function ShareButtons({ addNotification, getString, locale }: Props) {
       </button>
       <a
         className="share-button"
-        href={'https://twitter.com/intent/tweet?text=' + encodedShareText}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() => trackSharing('twitter', locale)}>
-        <FontIcon type="twitter" />
-      </a>
-      <a
-        className="share-button"
         href={
           'https://www.facebook.com/sharer/sharer.php?u=' +
           encodeURIComponent(SHARE_URL)
@@ -68,6 +72,14 @@ function ShareButtons({ addNotification, getString, locale }: Props) {
         onClick={() => trackSharing('facebook', locale)}>
         <FontIcon type="facebook" />
       </a>
+      <a
+        className="share-button"
+        href={'https://twitter.com/intent/tweet?text=' + encodedShareText}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => trackSharing('twitter', locale)}>
+        <FontIcon type="twitter" />
+      </a>
     </React.Fragment>
   );
 }
@@ -75,6 +87,6 @@ function ShareButtons({ addNotification, getString, locale }: Props) {
 export default connect<void, PropsFromDispatch>(
   null,
   {
-    addNotification: Notifications.actions.add,
+    addNotification: Notifications.actions.addPill,
   }
 )(localeConnector(withLocalization(ShareButtons)));

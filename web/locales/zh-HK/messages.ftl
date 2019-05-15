@@ -10,6 +10,7 @@ submit-form-action = 提交
 loading = 載入中…
 email-opt-in-privacy = 如果同意接收電郵，就代表您同意 Mozilla 依照<privacyLink>隱私權保護政策</privacyLink>當中描述嘅方法處理呢啲資訊。
 indicates-required = * 表示必填欄位
+not-available-abbreviation = 不適用
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -18,6 +19,8 @@ indicates-required = * 表示必填欄位
 ## Languages
 
 ace = 亞齊文
+ady = 阿第蓋文
+af = 南非荷蘭文
 an = 阿拉貢文
 ar = 阿拉伯文
 as = 阿薩姆文
@@ -36,6 +39,7 @@ cy = 威爾斯文
 da = 丹麥文
 de = 德文
 dsb = 下索布文
+dv = 迪維西文
 el = 希臘文
 en = 英文
 eo = 世界語
@@ -48,7 +52,9 @@ fo = 法羅文
 fr = 法文
 fy-NL = 菲士蘭文
 ga-IE = 愛爾蘭文
+gl = 加利西亞文
 he = 希伯來文
+hr = 克羅地亞文
 hsb = 上索布文
 hu = 匈牙利文
 ia = 因特文
@@ -61,11 +67,16 @@ kab = 卡拜爾文
 kk = 哈薩克文
 ko = 韓文
 kpv = 科米-齊良文
+ku = 庫爾德文
 kw = 康和文
 ky = 吉爾吉斯文
+lt = 立陶宛文
+lv = 拉脫維亞文
 mdf = 莫克沙文
+mhr = 草原馬里文
 mk = 馬其頓文
 mn = 蒙古文
+mrj = 山地馬里文
 myv = 厄爾茲亞文
 nb-NO = 挪威文（書面語）
 ne-NP = 尼泊爾文
@@ -90,10 +101,12 @@ te = 泰盧固文
 th = 泰文
 tr = 土耳其文
 tt = 韃靼文
+udm = 烏德穆爾特文
 uk = 烏克蘭文
 ur = 烏都文
 uz = 烏茲別克文
 vi = 越南文
+vot = 沃特文
 zh-CN = 中文 (大陸)
 zh-HK = 中文（香港）
 zh-TW = 中文 (臺灣)
@@ -107,6 +120,7 @@ speak = 說話
 speak-now = 現在開始說話
 datasets = 數據集
 languages = 所有語言
+about = 關於我們
 profile = 個人檔案
 help = 說明
 contact = 聯絡我們
@@ -166,13 +180,21 @@ x-years-short =
     { $count ->
        *[other] 年
     }
+help-make-dataset = 幫我們打造一個高品質、可公開使用的數據集
+sign-up-account = 註冊帳戶
+email-subscription-title = 訂閱最新消息電子報
 
 ## Account Benefits
 
 benefits = 益處
+improve-audio = 個人檔案中的資料可幫助改善訓練語音識別準確度時用的語音數據。
 
 ## What's public
 
+whats-public = 有哪些資料會公開？
+email-not-public = 我們不會公開您的電郵地址。
+username-optin-public = 您可以選擇公開您的使用者名稱，或保持匿名。
+username-email-not-demographic = 您的使用者名稱和電郵地址不會跟公開發布的數據有掛鉤。
 
 ## Speak & Listen Shortcuts
 
@@ -198,6 +220,8 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = 錄音/停止
+shortcut-rerecord-toggle = [1-5]
+shortcut-rerecord-toggle-label = 重新錄製片段
 request-language-text = 沒在 Common Voice 見到您的語言嗎？
 request-language-button = 申請增加一款語言
 
@@ -220,6 +244,8 @@ profile-form-username =
     .label = 使用者名稱
 profile-form-native-language =
     .label = 母語
+profile-form-additional-language =
+    .label = 其他語言
 profile-form-accent =
     .label = 口音
 profile-form-age =
@@ -252,8 +278,6 @@ profile-explanation = 使用您的個人檔案可以保留您的進展，並幫�
 thanks-for-account = 多謝您確認您的帳戶, 現在讓我們建立您的個人資料。
 why-demographic = 點解咁重要？
 why-demographic-explanation = 已匿名化的使用者資料，如年齡、性別、腔調等，可幫助我們改善用來訓練語音識別引擎的語音資料。您的帳號與電郵不會與您提交的數據相關，您也可以決定公開您的帳號或保持匿名。
-keep-me-posted =
-    .label = 我想收到 Common Voice 的最新消息。
 accept-privacy = 我同意你依照 Mozilla 的<privacyLink>私隱保護政策</privacyLink>中描述的方式處理這些資料
 login-identity = 登入身分
 login-signup = 登入 / 註冊
@@ -273,18 +297,64 @@ connect-gravatar = 連結到 Gravatar
 gravatar_not_found = 找不到您電郵所屬的 Gravatar
 file_too_large = 選擇的檔案太大
 manage-subscriptions = 管理訂閱
+manage-email-subscriptions = 電郵訂閱管理
 email-already-used = 電子郵件地址已被使用
 add-language = 增加語言
+change-email-setings = 請到「設定」内的「登入身分」修改電郵地址
 
 ## FAQ
 
 faq-title = 常見問題
 faq-what-cv-q = Common Voice 係咩嘢？
+faq-why-important-q = 點解咁重要？
+faq-how-get-q = 我怎樣可以取得 Common Voice 的數據？
+faq-why-mission-q = 為什麼 Common Voice 係 Mozilla 使命的一部分？
+faq-what-cv-and-deepspeech-q = Common Voice 跟 Deep Speech 有何不同？
+faq-do-want-native-q = 我並非母語人士，而且講話有點口音，你們仍想要我的聲音嗎？
+faq-do-want-native-a = 當然，我們特別想要您的聲音！Common Voice 的其中一個目標是盡可能收集各種口音，讓語音識別服務能適用於每一個人。這代表非母語人士的貢獻尤其重要。
+faq-why-different-speakers-q = 為什麼你們需要這麼多會說各種語言的人？
+faq-why-my-lang-q = 點解還沒有我的語言？
+faq-what-quality-q = 錄音品質要到甚麼等級，才能用於數據集中？
+faq-why-10k-hours-q = 為什麼每種語言都有一萬小時的錄音驗證目標？
+faq-how-calc-hours-q = Common Voice 如何計算時數？
+faq-why-account-q = 我點解應該去註冊帳戶？
+faq-is-account-public-q = 我的帳戶資料是公開的嗎？
+faq-what-is-cv = Common Voice 是甚麼？
+faq-using-cv = 使用 Common Voice
+faq-search-for-answers =
+    .label = 搜尋解答
+
+## ABOUT US
+
+about-title = 點解會有 Common Voice？
+how-does-it-work-title = 原理是甚麼？
+about-speak = 講話
+about-listen-queue = 聆聽隊列
+about-listen = 聆聽
+about-is-it-valid = 片段正確嗎？
+about-yes-votes = ≥ 2 張「正確」票
+about-no-votes = ≥ 2 張「不正確」票
+about-no-votes-text = 若使用者投下不正確票，錄音片段就會回到隊列重新排隊。若被退回第二次，片段就會就會被丟進回收桶。
+about-dataset = Common Voice 數據集
+about-clip-graveyard = 片段回收桶
+about-partners = 合作夥伴
+about-become-a-partner = 成為合作夥伴
+about-get-involved = 參與我們
+about-nav-how-it-works = 點做？
+about-nav-partners = 合作夥伴
+about-nav-get-involved = 參與我們
+mycroft-title = Mycroft Ai
+mycroft-subtitle = 人工智能
 
 ## Glossary
 
 glossary = 字彙
 localization = 本地化
+sentence-collection = 語句收集
+hours-recorded-explanation = 到目前為止我們收集到的錄音時數。
+sst = 語音轉文字（STT）
+sst-explanation = 語音轉文字（STT）技術可將語音資料轉為文字。
+de-identified = 去識別化
 
 ## NotFound
 
@@ -322,16 +392,38 @@ review-delete-recordings = 刪除我的錄音
 
 ## New Datasets Page
 
+language = 語言
+# File size in gigabytes
+size = 大小
 validated-hr-total = 已驗證總時數
+overall-hr-total = 綜合總時數
+cv-license = 授權條款
+audio-format = 音檔格式
+number-of-voices = 錄音人數
+email-to-download = 輸入電郵即可下載
+confirm-size = 您將開始一個<b>{ $size }</b>的下載項目
 size-gigabyte = GB
 size-megabyte = MB
 download-language = 下載{ $language }
 validated-hours = 已驗證時數
+recorded-hours = 已錄製時數
+whats-inside = Common Voice 數據集當中有什麼？
+subscribe = 訂閱
+get-started-speech = 語音識辨新手入門
+other-datasets = 其他語音數據集
+feedback-q = 有意見要回饋嗎？
 data-other-librispeech-description = LibriSpeech 語料庫來自 LibriVox 計劃，共有約一千小時的 16Khz 英語有聲書錄音。
 data-other-ted-name = TED-LIUM 語料庫
 data-other-ted-description = TED-LIUM 語料庫是從 TED 網站上的講座對話，及其被抄寫下來的演講稿一起製作而成的語料庫。
 data-other-voxforge-description = VoxForge 的成立，是用來收集被抄寫的對話內容，給自由與開放源碼的語音辨識引擎使用。
 data-other-tatoeba-description = Tatoeba 是一套用於語言學習的大型數據庫，當中包含了各種句子、翻譯、以及錄音。這個下載項目包含了其社群所錄下的英語語音。
+go-discourse = 前往 Discourse
+missing-language = 沒在數據集中看到您的語言？請到語言頁面要求新增語言。
+go-languages-page = 前往語言版面
+ready-to-validate = 準備好幫手驗證句子了嗎？
+more = 更多
+close = 關閉
+download = 下載
 
 ## Download Modal
 
@@ -359,10 +451,13 @@ request-language-form-language =
     .label = 語言
 request-language-success-title = 已收到新語言請求，感謝您。
 request-language-success-content = 我們會很快將如何在 Common Voice 新增語言的資訊寄給您。
+select-language = 選擇語言…
+other-language = 其他語言
 
 ## Languages Overview
 
 language-section-in-progress = 準備中
+language-section-in-progress-new-description = 這些語言目前正由社群開發中，進度條展示每種語言<localizationGlossaryLink>網站本地化</localizationGlossaryLink>及<sentenceCollectionGlossaryLink>搜集語句</sentenceCollectionGlossaryLink>的狀況。
 language-section-launched = 已上線
 languages-show-more = 檢視更多
 languages-show-less = 檢視更少
@@ -445,12 +540,15 @@ validations =
 
 your-languages = 您的語言
 toward-next-goal = 距離下一個目標
+clips-you-recorded = 您錄製的片段
 clips-you-validated = 您驗證的錄音
-todays-validated-progress = 今日 Common Voice 驗證錄音嘅進度
+todays-recorded-progress = 今日 Common Voice 錄音片段的進度
+todays-validated-progress = 今日 Common Voice 驗證片段的進度
 stats = 統計
 you = 您
 everyone = 所有人
 contribution-activity = 貢獻記錄
+top-contributors = 貢獻者排行榜
 recorded-clips = 錄音
 validated-clips = 已被驗證的錄音
 total-approved = 總批准數

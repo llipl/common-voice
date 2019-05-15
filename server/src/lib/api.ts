@@ -4,9 +4,11 @@ import { NextFunction, Request, Response, Router } from 'express';
 import * as sendRequest from 'request-promise-native';
 import { UserClient as UserClientType } from 'common/user-clients';
 import { getConfig } from '../config-helper';
+import Awards from './model/awards';
 import CustomGoal from './model/custom-goal';
 import getGoals from './model/goals';
 import UserClient from './model/user-client';
+import * as Basket from './basket';
 import Model from './model';
 import Clip from './clip';
 import Prometheus from './prometheus';
@@ -35,6 +37,17 @@ export default class API {
         this.metrics.countRequest(request);
 
         const client_id = request.headers.client_id as string;
+        if (request.user) {
+          const accountClientId = await UserClient.findClientId(
+            request.user.emails[0].value
+          );
+          if (accountClientId) {
+            request.client_id = accountClientId;
+            next();
+            return;
+          }
+        }
+
         if (client_id) {
           if (await UserClient.hasSSO(client_id)) {
             response.sendStatus(401);
@@ -43,10 +56,6 @@ export default class API {
             await this.model.db.saveUserClient(client_id);
           }
           request.client_id = client_id;
-        } else if (request.user) {
-          request.client_id = await UserClient.findClientId(
-            request.user.emails[0].value
-          );
         }
 
         next();
@@ -81,6 +90,7 @@ export default class API {
     router.post('/user_client/goals', this.createCustomGoal);
     router.get('/user_client/goals', this.getGoals);
     router.get('/user_client/:locale/goals', this.getGoals);
+    router.post('/user_client/awards/seen', this.seenAwards);
 
     router.get('/:locale/sentences', this.getRandomSentences);
     router.post('/skipped_sentences/:id', this.createSkippedSentence);
@@ -188,7 +198,7 @@ export default class API {
 
     const { email } = request.params;
     const basketResponse = await sendRequest({
-      uri: 'https://basket.mozilla.org/news/subscribe/',
+      uri: Basket.API_URL + '/news/subscribe/',
       method: 'POST',
       form: {
         'api-key': BASKET_API_KEY,
@@ -220,7 +230,7 @@ export default class API {
           avatarURL =
             'https://gravatar.com/avatar/' +
             MD5(user.emails[0].value).toString() +
-            '.png?s=24';
+            '.png';
           await sendRequest(avatarURL + '&d=404');
         } catch (e) {
           if (e.name != 'StatusCodeError') {
@@ -268,18 +278,14 @@ export default class API {
   createCustomGoal = async (request: Request, response: Response) => {
     await CustomGoal.create(request.client_id, request.body);
     await this.getGoals(request, response);
+    Basket.sync(request.client_id).catch(e => console.error(e));
   };
 
   getGoals = async (
     { client_id, params: { locale } }: Request,
     response: Response
   ) => {
-    response.json(
-      await Promise.all([
-        getGoals(client_id, locale),
-        CustomGoal.find(client_id),
-      ]).then(([globalGoals, customGoal]) => ({ globalGoals, customGoal }))
-    );
+    response.json({ globalGoals: await getGoals(client_id, locale) });
   };
 
   claimUserClient = async (
@@ -297,6 +303,14 @@ export default class API {
     response: Response
   ) => {
     await this.model.db.insertDownloader(params.locale, params.email);
+    response.json({});
+  };
+
+  seenAwards = async ({ client_id, query }: Request, response: Response) => {
+    await Awards.seen(
+      client_id,
+      query.hasOwnProperty('notification') ? 'notification' : 'award'
+    );
     response.json({});
   };
 }

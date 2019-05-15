@@ -4,13 +4,14 @@ import {
   withLocalization,
 } from 'fluent-react/compat';
 import * as React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { UserClient } from 'common/user-clients';
 import { Notifications } from '../../../../stores/notifications';
 import StateTree from '../../../../stores/tree';
 import { User } from '../../../../stores/user';
 import URLS from '../../../../urls';
+import { getManageSubscriptionURL } from '../../../../utility';
 import { LocaleLink } from '../../../locale-helpers';
 import { InfoIcon, PenIcon, SettingsIcon } from '../../../ui/icons';
 import {
@@ -45,18 +46,29 @@ const Section = ({
 
 interface PropsFromState {
   account: UserClient;
+  locale: string;
 }
 
 interface PropsFromDispatch {
-  addNotification: typeof Notifications.actions.add;
+  addNotification: typeof Notifications.actions.addPill;
   saveAccount: typeof User.actions.saveAccount;
 }
 
 interface Props extends LocalizationProps, PropsFromState, PropsFromDispatch {}
 
 function Settings(props: Props) {
-  const { account, addNotification, getString, saveAccount } = props;
-  const firstLanguage = account.locales[0];
+  const { account, addNotification, getString, locale, saveAccount } = props;
+  const [isSubscribed, setIsSubscribed] = useState<boolean>(null);
+
+  useEffect(() => {
+    if (!account.basket_token) return;
+    fetch(
+      'https://basket.mozilla.org/news/lookup-user/?token=' +
+        account.basket_token
+    )
+      .then(response => response.json())
+      .then(body => setIsSubscribed(body.newsletters.includes('common-voice')));
+  }, []);
 
   useEffect(() => {
     const { pathname, search } = location;
@@ -102,9 +114,7 @@ function Settings(props: Props) {
           titleAction={
             <a
               className="manage-subscriptions"
-              href={`https://www.mozilla.org/${
-                firstLanguage ? firstLanguage.locale + '/' : ''
-              }newsletter/existing/${account.basket_token}`}
+              href={getManageSubscriptionURL(account)}
               target="__blank"
               rel="noopener noreferrer">
               <Localized id="manage-subscriptions">
@@ -114,9 +124,19 @@ function Settings(props: Props) {
             </a>
           }>
           <div className="email-section">
-            <Localized id="keep-me-posted" attrs={{ label: true }}>
-              <LabeledCheckbox disabled={true} checked={true} />
-            </Localized>
+            {isSubscribed == null ? (
+              <div />
+            ) : (
+              <LabeledCheckbox
+                disabled={true}
+                checked={isSubscribed}
+                label={
+                  <Localized id="email-opt-in-info">
+                    <span />
+                  </Localized>
+                }
+              />
+            )}
             <div className="privacy-and-terms">
               <InfoIcon />
               <div>
@@ -161,12 +181,12 @@ function Settings(props: Props) {
         <div className="images">
           <img
             className="hidden-sm-down"
-            src="/img/submission-screenshot-lg.png"
+            src={require('./submission-screenshot-lg.png')}
             alt="Submission Success Screenshot"
           />
           <img
             className="hidden-md-up"
-            src="/img/submission-screenshot-xs.png"
+            src={require('./submission-screenshot-xs.png')}
             alt="Submission Success Screenshot"
           />
         </div>
@@ -176,11 +196,12 @@ function Settings(props: Props) {
 }
 
 export default connect<PropsFromState, PropsFromDispatch>(
-  ({ api, user }: StateTree) => ({
+  ({ locale, user }: StateTree) => ({
     account: user.account,
+    locale,
   }),
   {
-    addNotification: Notifications.actions.add,
+    addNotification: Notifications.actions.addPill,
     saveAccount: User.actions.saveAccount,
   }
 )(withLocalization(Settings));

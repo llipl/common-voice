@@ -8,8 +8,10 @@ email-input =
     .label = E-mail
 submit-form-action = Enviar
 loading = Carregando…
+email-opt-in-info = Quero receber e-mails como lembretes de meta, atualizações sobre meu progresso e novidades sobre o Common Voice.
 email-opt-in-privacy = Ao optar por receber e-mails, você declara que concorda com a Mozilla utilizar essas informações, conforme explicado na <privacyLink>Política de Privacidade<privacyLink> da Mozilla.
 indicates-required = * Indica campo obrigatório
+not-available-abbreviation = Não disponível
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
 # [Languages]
@@ -27,6 +29,7 @@ ar = Árabe
 as = Assamês
 ast = Asturiano
 az = Azerbaidjano
+ba = Basquir
 bg = Búlgaro
 bn = Bengalês
 br = Bretão
@@ -54,7 +57,9 @@ fr = Francês
 fy-NL = Frisão
 ga-IE = Irlandês
 gl = Galego
+ha = Hauçá
 he = Hebraico
+hi-IN = Hindi
 hr = Croata
 hsb = Alto Sorábio
 hu = Húngaro
@@ -69,13 +74,16 @@ kab = Kabyle
 kk = Cazaque
 ko = Coreano
 kpv = Komi-Zyrian
+ku = Curdo
 kw = Córnico
 ky = Quirguiz
+lij = Liguriano
 lt = Lituano
 lv = Letão
 mdf = Moksha
 mhr = Meadow Mari
 mk = Macedônio
+ml = Malaiala
 mn = Mongol
 mrj = Hill Mari
 myv = Erzya
@@ -93,6 +101,7 @@ ru = Russo
 rw = Kinyarwanda
 sah = Sakha
 sc = Sardo
+si = Cingalês
 sk = Eslovaco
 sl = Esloveno
 sq = Albanês
@@ -100,6 +109,7 @@ sr = Sérvio
 sv-SE = Sueco
 ta = Tâmil
 te = Telugo
+tg = Tajique
 th = Tailandês
 tr = Turco
 tt = Tártaro
@@ -123,6 +133,7 @@ speak = Falar
 speak-now = Fale agora
 datasets = Conjuntos de dados
 languages = Idiomas
+about = Sobre nós
 profile = Perfil
 help = Ajuda
 contact = Contato
@@ -290,8 +301,6 @@ profile-explanation = Acompanhe o seu progresso com um perfil e ajude que as gra
 thanks-for-account = Obrigado por confirmar sua conta. Agora, vamos construir seu perfil.
 why-demographic = Por que isto é importante?
 why-demographic-explanation = Dados anônimos de usuários, como idade, sexo e sotaque, ajudam a aprimorar os dados de áudio usados para treinar a precisão dos mecanismos de reconhecimento de voz. Seu nome de usuário e e-mail nunca serão associados com os dados enviados, e você pode escolher se seu nome de usuário ficará público ou anônimo.
-keep-me-posted =
-    .label = Eu quero receber novidades e ficar a par do que está acontecendo no Common Voice.
 accept-privacy = Concordo que estas informações sejam utilizadas conforme explicado na <privacyLink>Política de Privacidade</privacyLink> da Mozilla.
 login-identity = Identidade de acesso
 login-signup = Entrar / Inscrever-se
@@ -311,6 +320,7 @@ connect-gravatar = Conectar com Gravatar
 gravatar_not_found = Não foi encontrado um Gravatar para seu email
 file_too_large = O arquivo selecionado é grande demais
 manage-subscriptions = Gerenciar inscrições
+manage-email-subscriptions = Gerenciar inscrições de e-mails
 email-already-used = Este e-mail já está sendo usado em uma conta diferente
 add-language = Adicionar idioma
 change-email-setings = Altere seu e-mail usando as configurações em Identidade de acesso
@@ -368,6 +378,59 @@ faq-what-determine-identity-a =
     O conjunto de dados do Common Voice é um recurso aberto e disponível publicamente que pode ser usado para treinar uma ampla variedade de aplicativos habilitados para fala. Para proteger a segurança de nossos colaboradores, pedimos a todos que baixarem o conjunto de dados do Common Voice que respeitem a privacidade dos colaboradores.
     
     Todos os clipes de voz no conjunto de dados são limpos de informações de identificação pessoal. Ao baixar o conjunto de dados, você concorda em não tentar determinar a identidade de nenhum colaborador. Isso significa que você não pode tentar vincular informações no conjunto de dados a informações pessoais de um colaborador. Você pode, no entanto, usar o conjunto de dados para treinar reconhecimento de voz, reconhecimento de quem fala, ou outras aplicações, por exemplo, vinculando informações no conjunto de dados a outras informações já contidas no conjunto de dados.
+faq-what-is-cv = O que é Common Voice?
+faq-using-cv = Como usar o Common Voice
+faq-description = O Common Voice faz parte da iniciativa da Mozilla de ajudar a ensinar às máquinas como pessoas de verdade falam.
+faq-search-for-answers =
+    .label = Pesquisar respostas
+
+## ABOUT US
+
+about-title = Por que o Common Voice?
+about-subtitle = O Common Voice faz parte da iniciativa da Mozilla de ajudar a ensinar às máquinas como pessoas de verdade falam. Em paralelo ao conjunto de dados do Common Voice, estamos construindo também um mecanismo de reconhecimento de voz de código aberto chamado Deep Speech.
+about-header-description =
+    Ambos os projetos fazem parte de nossos esforços de conciliar a desunião da fala digital. Tecnologias de reconhecimento de voz dão uma dimensão humana a nossos dispositivos, mas os desenvolvedores precisam de uma enorme quantidade de dados de voz para construí-las. Atualmente, a maioria dos dados é cara e proprietária.
+    Queremos criar dados de voz disponíveis publicamente e gratuitamente, além de assegurar que os dados representem a diversidade de pessoas reais. Juntos podemos tornar o reconhecimento de voz melhor para todos.
+how-does-it-work-title = Como funciona
+how-does-it-work-text = Estamos colhendo um conjunto de dados de voz de código aberto através de colaboração pública. Doe sua voz, valide a correção dos clipes de outras pessoas, torne o conjunto de dados melhor para todos.
+about-speak = Falar
+about-speak-text = Os colaboradores gravam clipes de voz lendo a partir de um banco de frases doadas.
+about-listen-queue = Fila de audição
+about-listen-queue-text = Os clipes de voz são inseridos em uma fila de envio que as disponibiliza para ser ouvidas.
+about-listen = Ouvir
+about-listen-text = Os usuários validam a exatidão de clipes doados, verificando se quem falou leu a frase corretamente.
+about-is-it-valid = O clipe é válido?
+about-is-it-valid-text = Um clipe de voz é marcado como "válido" quando um usuário lhe dá um voto Sim.
+about-yes-votes = ≥ 2 votos Sim
+about-yes-votes-text = Para entrar no conjunto de dados do Common Voice, um clipe de voz precisa ser validado por dois diferentes usuários.
+about-no-votes = ≥ 2 votos Não
+about-no-votes-text = Quando um usuário rejeita um clipe de voz, este volta para a fila. Se for rejeitado uma segunda vez, o clipe de voz é movido para o cemitério de clipes.
+about-dataset = Conjunto de dados do Common Voice
+about-dataset-text = Quando um usuário rejeita um clipe de voz, este volta para a fila. Se for rejeitado uma segunda vez, o clipe de voz é movido para o cemitério de clipes.
+about-clip-graveyard = Cemitério de clipes
+about-clip-graveyard-text = O cemitério de clipes consiste de clipes de voz que não entraram no conjunto de dados do Common Voice. Assim como o conjunto de dados, o cemitério de clipes está disponível para ser baixado.
+about-partners = Parceiros
+about-become-a-partner = Torne-se um parceiro
+about-partnership =
+    O Common Voice é um projeto colaborativo e estamos dependendo de nossa comunidade de parceiros e colaboradores para construir o maior conjunto de dados de voz de código aberto já feito.
+    
+    Gostaríamos de agradecer as seguintes pessoas e organizações pela ajuda neste projeto:
+about-get-involved = Envolva-se
+about-get-involved-text =
+    Quer ajudar a tornar o Common Voice ainda melhor?
+    Ótimo! Entre em contato por e-mail ou no <discourseLink>Discourse</discourseLink>,
+    envie comentários pelo <githubLink>GitHub</githubLink>,
+    ou junte-se a nós no <slackLink>Slack</slackLink>.
+about-nav-why-common-voice = Por que?
+about-nav-how-it-works = Como?
+about-nav-partners = Parceiros
+about-nav-get-involved = Envolva-se
+mycroft-title = Mycroft Ai
+mycroft-subtitle = Inteligência artificial
+mycroft-description =
+    Mycroft é o primeiro assistente mundial de código aberto.
+    Mycroft funciona em qualquer lugar - em um computador de mesa, dentro de um automóvel, ou em um Raspberry Pi.
+mycroft-secondary-description = Este é um software de código aberto que pode ser livremente remixado, estendido e aprimorado. O Mycroft pode ser usado em qualquer coisa, desde um projeto científico até uma aplicação de software empresarial.
 
 ## Glossary
 
