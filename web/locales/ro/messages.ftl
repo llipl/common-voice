@@ -414,7 +414,7 @@ about-partnership = Common Voice este un proiect de colaborare și depindem de c
 about-get-involved = Implică-te
 about-get-involved-text =
     Vrei să ajuți la îmbunătățirea Common Voice?
-    Grozav! Ia legătura cu noi prin e-mail sau intră pe <discourseLink>Discurs</discourseLink>,
+    Grozav! Ia legătura cu noi prin e-mail sau intră pe <discourseLink>Discourse</discourseLink>,
     dă-ne feedback prin <githubLink>GitHub</githubLink> sau alătură-te pe <slackLink>Slack</slackLink>.
 about-nav-why-common-voice = De ce?
 about-nav-how-it-works = Cum?
@@ -463,7 +463,7 @@ data-bundle-button = Descarcă pachetul cu setul de date
 data-bundle-description = Datele Common Voice plus toate celelalte seturi de date de mai sus.
 license = Licență: <licenseLink>{ $license }</licenseLink>
 license-mixed = Mixtă
-review-terms = Prin utilizarea Common Voice, agreezi <termsLink>Termenii</termsLink> și <privacyLink>Notificarea privind confidențialitatea</privacyLink>
+review-terms = Prin utilizarea Common Voice, ești de acord cu <termsLink>Termenii</termsLink> și <privacyLink>Politica de confidențialitate</privacyLink>
 terms-agree = De acord
 terms-disagree = Nu sunt de acord
 review-aborted = Încărcare abandonată. Vrei să-ți ștergi înregistrările?
@@ -498,7 +498,7 @@ why-email = <b>De ce adresa de e-mail?</b> Este posibil să trebuiască să te c
 confirm-size = Ești gata să inițiezi o descărcare de <b>{ $size }</b>
 size-gigabyte = GB
 size-megabyte = MB
-confirm-no-identify = <b>Agreezi</b> să nu încerci să determini identitatea vorbitorilor din setul de date Common Voice
+confirm-no-identify = <b>Ești de acord</b> să nu încerci să determini identitatea vorbitorilor din setul de date Common Voice
 download-language = Descarcă { $language }
 validated-hours = Ore validate
 recorded-hours = Ore înregistrate
@@ -513,7 +513,7 @@ get-started-speech = Familiarizează-te cu recunoașterea vocală
 other-datasets = Alte seturi de date vocale
 feedback-q = Ai sugestii?
 deepspeech-info = Setul de date Common Voice este complementar motorului de recunoaștere vocală Deep Speech cu sursă deschisă de la Mozilla, pe care îl poți folosi pentru a construi aplicații de recunoaștere vocală. Citește <githubLink>Prezentarea generală de pe Github</githubLink> sau intră pe <discourseLink>forumul DeepSpeech Discourse</discourseLink> ca să afli cum să începi.
-common-voice-info-new = Ai întrebări despre Common Voice? Idei de îmbunătățire sau feedback despre o limbă anume? Alătură-te pe <discourseLink>forumul Discurs</discourseLink> și spune-ne.
+common-voice-info-new = Ai întrebări despre Common Voice? Idei de îmbunătățire sau feedback despre o limbă anume? Alătură-te pe <discourseLink>forumul Discourse</discourseLink> și spune-ne.
 data-other-librispeech-description = LibriSpeech este un corp de date de aproximativ 1000 de ore de vorbire, codate la 16Khz, în limba engleză, derivate din cărți audio citite, preluate din proiectul LibriVox.
 data-other-ted-name = Corpusul TED-LIUM
 data-other-ted-description = Corpusul de date TED-LIUM a fost realizat din prezentări audio și transcrierile aferente, disponibile pe site-ul TED.
