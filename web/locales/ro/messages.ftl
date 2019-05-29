@@ -2,13 +2,13 @@
 
 yes-receive-emails = Da, vreau să primesc e-mailuri. Aș dori să primesc informații despre proiectul Common Voice.
 stayintouch = La Mozilla construim o comunitate în jurul tehnologiei vocale. Am vrea să te ținem la curent cu noutăți, surse noi de date și să aflăm mai multe despre cum folosești aceste date.
-privacy-info = Promitem că vom gestiona cu atenție datele tale personale. Pentru mai multe informații, citește <privacyLink>Politica noastră de confidențialitate</privacyLink>.
+privacy-info = Promitem că vom gestiona cu atenție datele tale personale. Pentru mai multe informații, citește <privacyLink>Declarația noastră de confidențialitate</privacyLink>.
 return-to-cv = Întoarce-te la Common Voice
 email-input =
     .label = E-mail
 submit-form-action = Trimite
 loading = Se încarcă…
-email-opt-in-info = Vreau să primesc mesaje pe e-mail, cum ar fi memento-uri de obiective, actualizări ale progresului propriu și buletine de știri despre Common Voice.
+email-opt-in-info = Doresc să primesc mesaje pe e-mail, cum ar fi mementouri de obiective, actualizări ale progresului propriu și buletine informative despre Common Voice.
 email-opt-in-privacy = Prin optarea pentru primirea de mesaje pe e-mail, declari că ești de acord ca Mozilla să gestioneze aceste informații conform explicațiilor din <privacyLink>Politica de confidențialitate<privacyLink> Mozilla.
 indicates-required = * Indică un câmp obligatoriu
 not-available-abbreviation = Nu e cazul
@@ -51,6 +51,7 @@ es = Spaniolă
 et = Estonă
 eu = Bască
 fa = Persană
+ff = Fulah
 fi = Finlandeză
 fo = Feroeză
 fr = Franceză
@@ -463,7 +464,7 @@ data-bundle-button = Descarcă pachetul cu setul de date
 data-bundle-description = Datele Common Voice plus toate celelalte seturi de date de mai sus.
 license = Licență: <licenseLink>{ $license }</licenseLink>
 license-mixed = Mixtă
-review-terms = Prin utilizarea Common Voice, ești de acord cu <termsLink>Termenii</termsLink> și <privacyLink>Politica de confidențialitate</privacyLink>
+review-terms = Prin utilizarea Common Voice, ești de acord cu <termsLink>Termenii</termsLink> și <privacyLink>Declarația de confidențialitate</privacyLink>
 terms-agree = De acord
 terms-disagree = Nu sunt de acord
 review-aborted = Încărcare abandonată. Vrei să-ți ștergi înregistrările?
@@ -507,7 +508,7 @@ dataset-description-hours =
     Fiecare intrare din setul de date constă dintr-un MP3 unic și fișierul text corespondent. Multe dintre cele <b>{ $total }</b> de ore înregistrate din setul de date includ și metadate demografice, precum vârstă, sex și accent, care ajută la antrenarea pentru acuratețe a motoarelor de recunoaștere vocală.
     
     Setul de date constă în prezent din <b>{ $valid }</b> de ore validate în <b>{ $languages }</b> de limbi, dar adăugăm constant mai multe voci și limbi. Aruncă o privire pe <languagesLink>Pagina de limbi</languagesLink> ca să soliciți o limbă sau ca să începi să contribui și tu.
-want-dataset-update = Vrei să fii informat(ă) când lansăm o nouă versiune a setului de date Common Voice? Abonează-te la buletinul de știri.
+want-dataset-update = Vrei să fii informat(ă) când lansăm o nouă versiune a setului de date Common Voice? Abonează-te la buletinul informativ.
 subscribe = Abonare
 get-started-speech = Familiarizează-te cu recunoașterea vocală
 other-datasets = Alte seturi de date vocale

@@ -8,6 +8,7 @@ email-input =
     .label = E-posti aadress
 submit-form-action = Saada
 loading = Laadimine…
+email-opt-in-privacy = Lubades saata endale e-kirju, nõustud ühtlasi sellega, et Mozilla kasutab seda infot nii, nagu on kirjeldatud <privacyLink>Privaatsuspoliitikas<privacyLink>.
 indicates-required = * tähistab kohustuslikku välja
 
 # Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
@@ -173,14 +174,20 @@ sign-up-account = Loo konto
 ## Account Benefits
 
 benefits = Kasu
+rich-data = Lisades anonüümseid demograafilisi andmeid, muudad oma esitatud andmed eriti väärtuslikuks. Me anonümiseerime  demograafilised andmed enne nende avaldamist.
+improve-audio = Kontoinfo muudab kõnetuvastuse treenimiseks kasutatavad heliandmed väärtuslikumaks.
 keep-track = Jälgi oma edenemist ja mõõdikuid mitme keele kohta.
 compare-progress = Võrdle oma edenemist teiste osalejatega üle kogu maailma.
 view-goals = Vaata oma edenemist sinu isiklike ja kogu projekti eesmärkide suhtes.
+join-newsletter = Projekti kohta värske info saamiseks võid liituda meie meililoendiga.
 
 ## What's public
 
+email-not-public = Me ei avalikusta sinu e-posti aadressi.
 recordings-and-locale-public = Salvestiste arv ja teave selle kohta, milliste keelte andmetesse panustamises oled osalenud, on avalik.
 username-optin-public = Saad valida, kas sinu kasutajanimi on avalik või anonüümne.
+demographic-deidentified = Vabatahtlikult lisatud demograafilised andmed (nt vanus, sugu, keel ja murdetaust) anonümiseeritakse ja neid ei avaldata sinu konto juures.
+username-email-not-demographic = Sinu kasutajanime ja e-posti aadressi ei seostata avaldatud andmetega.
 
 ## Speak & Listen Shortcuts
 
@@ -206,6 +213,7 @@ shortcut-vote-no = E
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = a
 shortcut-record-toggle-label = Salvesta/Peata
+shortcut-rerecord-toggle = [1-5]
 request-language-text = Kas sa ei leia veel oma keelt Common Voice projektis?
 request-language-button = Esita soov keele lisamiseks
 
@@ -284,6 +292,7 @@ file_too_large = Valitud fail on liiga suur
 manage-subscriptions = Halda tellimusi
 email-already-used = See e-posti aadress on juba kasutuses teise konto jaoks
 add-language = Lisa keel
+change-email-setings = Muuda oma e-posti aadressi menüü Sätted valikus Kasutajatunnus.
 
 ## FAQ
 
@@ -293,9 +302,12 @@ faq-why-important-q = Miks on see tähtis?
 faq-how-get-q = Kuidas ma saaksin endale Common Voice'i andmestikke?
 faq-how-get-a = Common Voice'i andmestik on allalaaditav <licenseLink>CC0</licenseLink> litsentsiga <datasetLink>meie andmestike lehelt</datasetLink>. Samalt lehelt saad alla laadida ka teisi avalikult kasutatavaid andmestikke.
 faq-when-release-q = Millal avaldate Common Voice'i teiste keelte andmestikud?
+faq-why-mission-q = Miks on Common Voice osa Mozilla missioonist?
 faq-what-cv-and-deepspeech-q = Mis vahe on Common Voice'il ja Deep Speech'il?
 faq-is-goal-assistant-q = Kas Common Voice'i eesmärgiks on luua häälassistent?
 faq-is-goal-assistant-a = Common Voice'i andmekogu eesmärk on võimaldada igaühel ehitada kõnetuvastus- või kõnelejatuvastussüsteem või ükskõik milline muu kõneandmeid vajav rakendus. Häälassistent on vaid üks võimalik rakendus.
+faq-do-want-native-q = Ma ei räägi seda keelt emakeelena ning mul on aktsent. Kas te ikka tahate minu häält?
+faq-do-want-native-a = Jah, me tahame eriti teie häält! Common Voice'i eesmärgiks on koguda nii palju erinevaid aktsente kui võimalik, et kõnetuvastusteenused toimiksid kõigi jaoks hästi. See tähendab, et mitte-emakeelena kõnelejate annetused on eriti olulised.
 faq-why-different-speakers-q = Miks vajate iga keele kohta nii palju erinevaid kõnelejaid?
 faq-why-different-speakers-a = Enamikus kõneandmebaasides on teatud demograafilistele tunnustele vastavate inimeste andmed üle-esindatud, mille tulemusena on kõnetuvastussüsteemid kaldu <articleLink> meeste ja keskklassi </articleLink> poole. Aktsendiga ja murdeline kõne, mis seostuvad marginaliseerunud inimrühmadega, on sageli sellistes andmebaasides alaesindatud. Paljudel kõnetuvastussüsteemidel on raskusi ka naishäälte tuvastamisega. Sellepärast me tahame, et meie andmekogud oleksid mitmekesised.
 faq-why-my-lang-q = Miks minu keelt pole veel kaasatud?
@@ -311,6 +323,9 @@ faq-is-account-public-q = Kas minu konto teave on avalik?
 faq-how-privacy-q = Kuidas tagate oma hääle annetanud inimeste anonüümsuse ja privaatsuse?
 faq-how-privacy-a = Kõigist andmestikus olevatest heliklippidest eemaldatakse isikuandmed. Kui osaleja esitab oma profiili kaudu demograafilisi andmeid, eemaldatakse see teave tema häälklippidest enne, kui need allalaadimiseks kokku pakitakse ja seda ei avaldata kunagi tema profiililehel.
 faq-what-determine-identity-q = Mida tähendab, et "kõnelejat ei saa tuvastada" Common Voice'i andmekogus?
+
+## ABOUT US
+
 
 ## Glossary
 

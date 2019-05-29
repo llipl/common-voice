@@ -51,6 +51,7 @@ es = hiszpański
 et = estoński
 eu = baskijski
 fa = perski
+ff = ful
 fi = fiński
 fo = farerski
 fr = francuski
@@ -338,16 +339,30 @@ faq-what-cv-a =
     
     Zbieramy nie tylko próbki głosu w powszechnie używanych językach, ale także w tych z mniejszą liczbę użytkowników. Opublikowanie różnorodnego zbioru danych głosowych umożliwi deweloperom, przedsiębiorcom i społecznościom samodzielne zasypanie tej przepaści. Oprócz zbioru danych Common Voice tworzymy także mechanizm rozpoznawania mowy open source o nazwie Deep Speech.
 faq-why-important-q = Dlaczego to jest ważne?
+faq-why-important-a =
+    Mowa jest często najbardziej naturalnym sposobem komunikowania się ze sobą, a technologie głosowe zapewniają nam tę wygodę na komputerach i telefonach. Chcemy umożliwić deweloperom tworzenie niesamowitych aplikacji rozpoznających głos, takich jak tłumaczenie w czasie rzeczywistym i cyfrowi asystenci głosowi. Jednak obecnie większość danych głosowych wymaganych do tworzenia tego rodzaju aplikacji jest kosztowna i zastrzeżona. Mamy nadzieję, że zbiór danych Common Voice zapewni deweloperom to, czego potrzebują, aby wprowadzać innowacje i udostępniać technologię mowy w swoim języku.
+    
+    Aby rozpoznawanie głosu stało się jeszcze bardziej uniwersalne, zbieramy próbki głosu w powszechnie używanych językach, a także tych z mniejszą liczbą użytkowników, które często nie są obsługiwane przez komercyjne usługi rozpoznawania mowy. Opublikowanie różnorodnego zbioru głosów umożliwi deweloperom, przedsiębiorcom i całym społecznościom danego języka wypełnienie tej przestrzeni samodzielnie.
 faq-how-get-q = Jak mogę pobrać dane z Common Voice?
 faq-how-get-a = Zbiór danych Common Voice jest dostępny do pobrania w ramach licencji <licenseLink>CC0</licenseLink> na <datasetLink>naszej stronie zbioru danych</datasetLink>. Z tej samej strony można pobrać także kilka innych publicznie dostępnych zbiorów danych.
 faq-when-release-q = Kiedy wydacie dane Common Voice w innych językach?
+faq-when-release-a = Wielojęzyczna wersja zbioru danych Common Voice jest obecnie na etapie pakietowania i oczyszczania przy wsparciu społeczności. Jeśli chcesz dowiedzieć się więcej o wspieraniu tych działań, <contactLink>skontaktuj się z nami</contactLink>. Naszym obecnym celem jest publikacja w styczniu 2019 r. Następnie będziemy okresowo aktualizować zbiór o nowe języki i nagrania, gdy staną się dostępne. Częstotliwość iteracyjnego cyklu publikowania aktualizacji nie została jeszcze ustalona.
 faq-why-mission-q = Dlaczego Common Voice jest częścią misji Mozilli?
+faq-why-mission-a = Celem Mozilli jest Internet otwarty i dostępny dla wszystkich. Aby to osiągnąć, musimy dać twórcom sieci więcej możliwości przez projekty takie jak Common Voice. Technologie rozpoznawania mowy rozwijają się poza pierwotną niszę, a my wierzymy, że muszą one służyć wszystkim użytkownikom w tym samym stopniu. Oznacza to inwestycję w większą liczbę języków, akcentów i grup ludzi podczas budowania i testowania technologii rozpoznawania mowy. Common Voice jest publicznym zasobem dostępnym dla wszystkich, a zespoły Mozilli i deweloperzy na całym świecie już używają go także w naszych projektach.
 faq-what-cv-and-deepspeech-q = Jaka jest różnica między Common Voice a Deep Speech?
+faq-what-cv-and-deepspeech-a = Zbiór danych Common Voice stanowi uzupełnienie mechanizmu rozpoznawania mowy open source od Mozilli o nazwie Deep Speech. Pierwsza wersja Deep Speech została wydana w listopadzie 2017 r. i od tego czasu nieustannie ewoluuje. Wierzymy, że wraz ze zbiorem Common Voice ta technologia rozpoznawania głosu open source powinna być dostępna dla wszystkich. Mamy nadzieję, że te technologie umożliwią deweloperom zbudowanie fali innowacyjnych produktów i usług.
 faq-is-goal-assistant-q = Czy celem Common Voice jest zbudowanie asystenta głosowego?
+faq-is-goal-assistant-a = Celem zbioru danych Common Voice jest umożliwienie każdej osobie na świecie tworzenia rozpoznawania mowy, rozpoznawania mówców lub dowolnego innego rodzaju aplikacji, która wymaga danych głosowych. Asystent głosowy to tylko jeden z wielu typów aplikacji, do zbudowania których można będzie użyć tego zbioru.
 faq-do-want-native-q = Nie jestem rodzimym użytkownikiem języka i mówię z akcentem. Czy dalej chcecie mój głos?
+faq-do-want-native-a = Tak, szczególnie zależy nam na Twoim głosie! Jednym z celów projektu Common Voice jest zebranie jak największej liczby różnych akcentów, aby usługi rozpoznawania głosu działały równie dobrze dla wszystkich. Oznacza to, że darowizny od osób niebędących rodzimymi użytkownikami języka są szczególnie ważne.
 faq-why-different-speakers-q = Dlaczego potrzeba tylu różnych osób mówiących w danym języku?
+faq-why-different-speakers-a =
+    Większość baz danych mowy uczona jest na podstawie danych z przewagą pewnych danych demograficznych, co prowadzi do stronniczości na rzecz <articleLink>głosów męskich i klasy średniej</articleLink> kosztem innych. Akcenty i dialekty, które są niedostatecznie reprezentowane w zbiorach danych szkoleniowych, są zazwyczaj związane z grupami osób, które już są marginalizowane. Wiele komputerów ma trudności także ze zrozumieniem kobiecych głosów.
+    Dlatego w naszej bazie danych głosowych chcemy różnorodności!
 faq-why-my-lang-q = Dlaczego mój język nie jest jeszcze dodany?
+faq-why-my-lang-new-a = Mozilla nie wybiera ani nie preferuje żadnego języka nad innym. Zamiast tego Common Voice jest inicjatywą opartą wyłącznie na społeczności, ale <multilangLink>wymagającą kilku kroków, aby dodać nowy język</multilangLink> i rozpocząć zbieranie nagrań. Po pierwsze, strona internetowa Common Voice musi zostać przetłumaczona, aby członkowie społeczności mogli w pełni uczestniczyć w swoim własnym języku. Następnie potrzebujemy dużego zbioru zdań wolnych od praw autorskich, które uczestnicy będą mogli czytać na głos. Gdy oba te wymagania zostaną spełnione, język jest „uruchamiany” w Common Voice, aby ludzie mogli rozpocząć nagrywanie głosu i zatwierdzanie nagrań innych uczestników. Jeśli chcesz pomóc w uruchomieniu nowego języka, przejdź do naszego <sentenceCollectorLink>narzędzia do zbierania zdań</sentenceCollectorLink>.
 faq-what-quality-q = Jakiej jakości musi być nagranie, aby zostało użyte w zbiorze danych?
+faq-what-quality-a = Chcemy, aby zbiór danych Common Voice odzwierciedlał jakość dźwięku, który mechanizm rozpoznawania mowy usłyszy w rzeczywistym otoczeniu, dlatego szukamy różnorodności. Oprócz zróżnicowanej społeczności użytkowników zbiór danych o różnej jakości dźwięku nauczy mechanizm radzenia sobie w różnych sytuacjach rzeczywistych, od dźwięków tła po szum samochodowy. Dopóki nagranie jest zrozumiałe, powinno być wystarczająco dobre dla zbioru danych.
 faq-why-10k-hours-q = Dlaczego celem dla każdego z języków jest 10 tysięcy sprawdzonych godzin nagrań?
 faq-why-10k-hours-a = Jest to przybliżona liczba godzin wymagana do uruchomienia systemu rozpoznawania mowy.
 faq-how-calc-hours-q = W jaki sposób Common Voice oblicza godziny?
@@ -358,10 +373,16 @@ faq-where-src-from-2-a =
     
     Nasze zdania źródłowe można zobaczyć w tym <githubLink>folderze w serwisie GitHub</githubLink>.
 faq-why-not-ask-read-q = Dlaczego nie prosicie uczestników o czytanie z książek lub artykułów z Wikipedii w różnych językach?
+faq-why-not-ask-read-a = Aby zbiór danych Common Voice był jak najbardziej użyteczny, zdecydowaliśmy się zezwolić tylko na tekst źródłowy, który jest dostępny na licencji Creative Commons (CC0). Korzystanie ze standardu CC0 oznacza większy trud w znalezieniu i zebraniu odpowiednich tekstów źródłowych, ale pozwala każdemu na wykorzystanie uzyskanych danych głosowych bez ograniczeń użytkowania lub upoważnienia od Mozilli. Ostatecznie chcemy, aby wielojęzyczny zbiór danych był jak najbardziej przydatny dla wszystkich, w tym dla naukowców, uniwersytetów, start-upów, rządów, organizacji pożytku publicznego i hobbystów.
 faq-why-account-q = Po co mam zarejestrować konto?
 faq-is-account-public-q = Czy informacje zawarte na moim koncie są publiczne?
 faq-how-privacy-q = W jaki sposób zapewniacie anonimowość i prywatność osób, które przekazały nagrania?
+faq-how-privacy-a = Wszystkie nagrania głosowe w zbiorze danych są czyszczone z danych osobowych. Gdy uczestnik przekazuje dane demograficzne za pośrednictwem swojego profilu, informacje te są usuwane z ich nagrań przed dołączeniem do pobrania w zbiorze danych i nigdy nie są upubliczniane na stronie profilu.
 faq-what-determine-identity-q = Co to znaczy, że nie mogę „ustalać tożsamości” osób mówiących w zbiorze danych Common Voice?
+faq-what-determine-identity-a =
+    Zbiór danych Common Voice to otwarty i publicznie dostępny zasób, który można wykorzystywać do szkolenia szerokiej gamy aplikacji obsługujących mowę. Aby chronić bezpieczeństwo naszych uczestników, prosimy wszystkich, którzy pobierają zbiór Common Voice, o poszanowanie ich prywatności.
+    
+    Wszystkie nagrania głosowe w zbiorze danych są czyszczone z danych osobowych. Po pobraniu zbioru zgadzasz się nie podejmować prób ustalenia tożsamości jakiegokolwiek uczestnika. Oznacza to, że nie możesz próbować łączyć informacji w zbiorze danych z danymi osobowymi uczestnika. Możesz jednak użyć zbioru danych do szkolenia rozpoznawania mowy, rozpoznawania mówców lub innych aplikacji, na przykład poprzez łączenie informacji z innymi informacjami zawartymi w zbiorze danych.
 faq-what-is-cv = Czym jest Common Voice?
 faq-using-cv = Jak używać Common Voice
 faq-description = Projekt Common Voice jest częścią inicjatywy Mozilli pomagającej w uczeniu maszyn mowy prawdziwych ludzi.

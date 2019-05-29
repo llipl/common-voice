@@ -51,6 +51,7 @@ es = Spagnoleg
 et = Estoneg
 eu = Euskareg
 fa = Perseg
+ff = Fouleg
 fi = Finneg
 fo = Faeroeg
 fr = Galleg
@@ -204,7 +205,7 @@ x-years-short =
        *[other] bloaz
     }
 help-make-dataset = Skoazellit ac'hanomp da sevel ur spletad roadennoù foran, digor hag a galite uhel
-profile-not-required = Kaout ur profil n'eo ket un dra ret met evit kemer perzh met talvoudus eo memestra
+profile-not-required = Kaout ur profil n'eo ket un dra ret evit kemer perzh met talvoudus eo memestra
 sign-up-account = Krouit ur gont
 email-subscription-title = marilhit evit keleier dre bostel
 
@@ -400,7 +401,31 @@ about-title = Perak Common Voice?
 about-subtitle = Ul lodenn eus intrudu Mozilla evit sikour da gelenn d'ar mekanikoù penaos e komz an dud wirion eo Common Voice. E-kichen ar spletad roadennoù Common Voice e savomp ul lusker adanaoudegezh ar vouezh digor e darzh anvet Deep Speech.
 about-header-description = An daou raktres-se a zo ul lodenn eus hon strivoù evit gwellaat stad ar vouezh niverel. Teknologiezhioù adanaoudegezh ar vouezh a ro ur ment denel d'hon mekanikoù, met ezhomm a zo ur sammad bras-kenañ a roadennoù evit o sevel. Evit ar mare eo koustus ha perc'hennet ar roadennoù-se.
 how-does-it-work-title = Penaos ec'h a en-dro?
-how-does-it-work-text = Sevel a reomp un teskad roadennoù mouezhioù a-stroll. Roit ho mouezh, gwiriekait klipoù an dud all ha lakait an teskad roadennoù da vezañ gwelloc'h evit an holl.
+how-does-it-work-text = Sevel a reomp un teskad roadennoù mouezhioù a-stroll. Roit ho mouezh, gwiriekait klipoù an dud all ha lakait ar spletad roadennoù da vezañ gwelloc'h evit an holl.
+about-speak = Komz
+about-speak-text = Ar gendaolerien a enroll klipoù mouezh en ul lenn e-touez un hollad a frazennoù roet.
+about-listen-queue = Roll gortoz
+about-listen-queue-text = Ar c'hlipoù a zo kaset en ur roll gortoz evit ma vefent prest da vezañ selaouet.
+about-listen = Selaou
+about-listen-text = Gant an implijerien e vez kadarnaet ar c'hlipoù roet, evit gwiriekat ez eo bet lennet mat ar frazenn.
+about-is-it-valid = Reizh eo ar c'hlip?
+about-is-it-valid-text = Ur c'hlip mouezh a zo lakaet da "talvoudek" pa 'z eo bet lakaet "Ya" gant un implijer.
+about-yes-votes = ≥ 2 vouezh "Ya"
+about-yes-votes-text = Evit mont er spletad roadennoù Common Voice e rank ur c'hlip mouezh bezañ talvoudekaet gant daou implijer disheñvel.
+about-no-votes = ≥ 2 vouezh "Ket"
+about-no-votes-text = Pa 'z eo argaset ur c'hlip mouezh e zistro er roll gortoz. Mard eo nac'het un eil wech eo kaset d'ar vered klipoù.
+about-dataset = Spletad roadennoù Common VOice
+about-dataset-text = Spletad roadennoù Common Voice a zo kantadoù a viliadoù a standilhonoù mouezh ennañ. Sikour a reont an diorroerien da sevel ostilhoù adanaoudegezh ar vouezh.
+about-clip-graveyard = Bered ar c'hlipoù
+about-clip-graveyard-text = Bered ar c'hlipoù a zo ar c'hlipoù mouezh n'int ket bet asantet e spletad roadennoù Common Voice. Gallout a raer pellgargañ bered ar c'hlipoù evel ar spletad roadennoù.
+about-partners = Kevelerien
+about-become-a-partner = Dont da vezañ keveler
+about-partnership =
+    Ur raktres a-stroll eo Common Voice, gant ar gumuniezh a gevelerien hag a gendaolerien e savomp ar spletad roadennoù digor o zarzh brasañ zo bet.
+    
+    Fellout a rafe deomp trugarekaat an dud hag an aozadurioù da-heul evit o sikour gant ar raktres:
+about-get-involved = Kemer perzh
+about-get-involved-text = Fellout a ra deoc'h lakaat Common Voice da vezañ gwelloc'h c'hoazh? Dispar! Deuit e darempred dre bostel pe dre <discourseLink>Discourse</discourseLink>, roit ho ali dre <githubLink>GitHub</githubLink>, pe deuit ganeomp war <slackLink>Slack</slackLink>.
 about-nav-why-common-voice = Perak?
 about-nav-how-it-works = Penaos?
 about-nav-partners = Kevelerien
@@ -410,6 +435,7 @@ mycroft-subtitle = Speredegezh kalvezadel
 mycroft-description =
     Kentañ skoazeller open-source ar bed eo Mycroft.
     Mycroft a c'hall bezañ lañset e pep lec'h - war un urzhiataer burev, e-barzh ur c'harr pe war ur Raspberry Pi.
+mycroft-secondary-description = Ur meziant frank a c'hall bezañ admesket, astennet ha gwellaet an hini eo. Gallout a ra Mycroft bezañ implijet e raktresoù liesseurt, eus ur raktres skiantel betek un meziant evit an embregerezhioù.
 
 ## Glossary
 
