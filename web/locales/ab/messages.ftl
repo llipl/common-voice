@@ -193,6 +193,7 @@ x-years-short =
         [one] шықәсык
        *[other] шықәса
     }
+help-make-dataset = Иаарту, зхаҭабзиара ҳараку абызшәатә дыррақәа рбаза аԥҵара уҳацхыраа
 sign-up-account = Аҽҭагалара аҳасабрбатә нҵамҭазы
 email-subscription-title = Аҽҭагалара аԥошьҭала аиҭакрақәа рдырразы
 
@@ -344,11 +345,15 @@ faq-search-for-answers =
 about-title = Изаҭахузеи Common Voice?
 about-speak = Уцәажәа
 about-listen = Уазыӡырҩы
+about-is-it-valid = Ари анҵамҭа ииашаҵәҟьоума?
 about-dataset = Common Voice адыррақәа реизга
+about-clip-graveyard = Анҵамҭа Анышәынҭра
 about-partners = Алахәылаҩцәа
+about-get-involved = Уҽалаурхәырц
 about-nav-why-common-voice = Избан?
 about-nav-how-it-works = Ишԥа?
 about-nav-partners = Алахәылаҩцәа
+about-nav-get-involved = Уҽалаурхәырц
 mycroft-title = Mycroft Ai
 mycroft-subtitle = Иԥсабаратәым аин­тел­лект
 
@@ -598,3 +603,8 @@ keep-info = Имаӡоу убжьы ҭаҩрақәа Common Voice адыррақ
 remove-info = Адыррақәа реизга иагәылоу уара убжьытә нҵамҭақәа раныхразы иҟауҵо аҳәамҭа ҳара ҳахәаԥшуеит. Аҳәара иҟауҵаз иақәшаҳаҭхар, ҳара урҭ адыррақәа реизгақәа ҭазгалаз аҳәара раҳҭоит убжьытә нҵамҭақәа анырхырц.
 why-delete-recordings = Common Voice анҵамҭақәа рхы иадырхәоит аҵарауаа, абизнес маҷ аҟны, иара убас абжьы еилкаагақәа зхәыцуа рзы абжьытә модельқәа рышьақәыргылараан зегьы еицырзеиԥшу аресурсқәа рырҿиареи абызшәа арҵара аус аҟны. Еилаҳкаар ҟалома уара уанҵамҭақәа рықәгара зыуҭахыу?
 profile-form-delete = Аҷыдахәра аныхтәуп
+
+## Landing
+
+welcome-staff = Бзиала шәаабеит { $company } аусуҩцәа!
+login-company = Аҭалара/Аҽҭагалара { $company } ԥошьҭала
