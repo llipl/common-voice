@@ -10,6 +10,7 @@ xcuserdata/
 .DS_Store
 .vscode/
 ZZidea
+yarn-error.log
 
 # Nubis
 nubis/librarian-puppet.tar.gz

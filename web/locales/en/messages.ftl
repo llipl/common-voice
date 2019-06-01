@@ -1,13 +1,13 @@
 ## General
-yes-receive-emails = Yes, send me emails. I’d like to stay informed about the Common Voice Project.
+yes-receive-emails = Yes, send me emails. I’d like to stay informed about the Project Lok Project.
 stayintouch = We at Mozilla are building a community around voice technology. We would like to stay in touch with updates, new data sources and to hear more about how you're using this data.
 privacy-info = We promise to handle your information with care. Read more in our <privacyLink>Privacy Notice</privacyLink>.
-return-to-cv = Return to Common Voice
+return-to-cv = Return to Project Lok
 email-input =
     .label = Email
 submit-form-action = Submit
 loading = Loading…
-email-opt-in-info = I'd like to receive emails such as goal reminders, my progress updates and newsletters about Common Voice.
+email-opt-in-info = I'd like to receive emails such as goal reminders, my progress updates and newsletters about Project Lok.
 email-opt-in-privacy = By opting in to receive emails you state that you are okay with Mozilla handling this info as explained in Mozilla’s <privacyLink>Privacy Policy<privacyLink>.
 indicates-required = * Indicates required field
 not-available-abbreviation = N/A
@@ -144,28 +144,21 @@ logout = Log Out
 
 ## Home Page
 home-title =
-  Common Voice is Mozilla's initiative to help teach machines how real people speak.
-home-cta = Speak up, contribute here!
+  Project Lok shall collect Audio samples and validate the answers by crowdsourcing.
 wall-of-text-start =
   Voice is natural, voice is human. That’s why we’re fascinated with creating usable voice
   technology for our machines. But to create voice systems, an extremely large amount of voice
   data is required.
 wall-of-text-more-mobile =
-  Most of the data used by large companies isn’t available to the majority of people. We think
-  that stifles innovation. So we’ve launched Project Common Voice, a project to help make voice
-  recognition open to everyone.
+  Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Project Lok, a project to help make voice recognition for Indian languages.
 wall-of-text-more-desktop =
-  Now you can donate your voice to help us build an open-source voice database that anyone can use
-  to make innovative apps for devices and the web. Read a sentence to help machines learn how real people speak. Check the work of other
-  contributors to improve the quality. It’s that simple!
+  Now you can donate your voice to help us build a realist and practical voice database of Indian languages. Read a sentence to help machines learn how real people speak. Check the work of other contributors to improve the quality. It’s that simple!
 wall-of-text-first =
   Voice is natural, voice is human. That’s why we’re excited about creating usable voice technology
   for our machines. But to create voice systems, developers need an extremely large amount of voice
   data.
 wall-of-text-second =
-  Most of the data used by large companies isn’t available to the majority of people. We think that
-  stifles innovation. So we’ve launched Common Voice, a project to help make voice recognition open
-  and accessible to everyone.
+Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Project Lok, a project to help make voice recognition for Indian languages.
 show-wall-of-text = Read More
 help-us-title = Help us validate sentences!
 help-us-explain = Press play, listen & tell us: did they accurately speak the sentence below?
@@ -177,7 +170,7 @@ speak-subtitle = Donate your voice
 speak-paragraph = Recording voice clips is an integral part of building our open dataset; some would say it's the fun part too.
 speak-goal-text = Clips recorded
 listen-subtitle = Help us validate voices
-listen-paragraph = Validating donated clips is equally important to the Common Voice mission. Take a listen and help us create quality open source voice data.
+listen-paragraph = Validating donated clips is equally important to the Project Lok mission. Take a listen and help us create quality open source voice data.
 listen-goal-text = Clips validated
 hours-recorded = Hours Recorded
 hours-validated = Hours Validated
@@ -249,7 +242,7 @@ shortcut-record-toggle-label = Record/Stop
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Re-record clip
 
-request-language-text = Don't see your language on Common Voice yet?
+request-language-text = Don't see your language on Project Lok yet?
 request-language-button = Request a Language
 
 ## ProjectStatus
@@ -292,7 +285,7 @@ female = Female
 other = Other
 why-profile-title = Why a profile?
 why-profile-text =
-  By providing some information about yourself, the audio data you submit to Common Voice will be more useful to Speech
+  By providing some information about yourself, the audio data you submit to Project Lok will be more useful to Speech
   Recognition engines that use this data to improve their accuracy.
 dashboard = Dashboard
 build-profile = Build Profile
@@ -333,15 +326,15 @@ change-email-setings = Change your email via Settings under Login Identity
 ## FAQ
 faq-title = Frequently Asked Questions
 
-faq-what-cv-q = What is Common Voice?
+faq-what-cv-q = What is Project Lok?
 faq-what-cv-a =
-    Voice recognition technology is revolutionizing the way we interact with machines, but the currently available systems are expensive and proprietary. Common Voice is part of Mozilla’s initiative to make voice recognition technologies better and more accessible for everyone. Common Voice is a massive global database of donated voices that lets anyone quickly and easily train voice-enabled apps in potentially every language.
+    Voice recognition technology is revolutionizing the way we interact with machines, but the currently available systems are expensive and proprietary. Project Lok is a database of donated voices of Indian speakers that lets anyone quickly and easily train voice-enabled apps in potentially every language.
 
     We're not only collecting voice samples  in widely spoken languages but also in those with a smaller population of speakers. Publishing a diverse dataset of voices will empower developers, entrepreneurs, and communities to address this gap themselves. In addition to the Common Voice dataset, we’re also building an open source speech recognition engine called Deep Speech.
 
 faq-why-important-q = Why is it important?
 faq-why-important-a =
-    Speech is often the most natural way we communicate with each other and voice technologies are bringing that convenience to our computers and mobile devices. We want to empower developers to build amazing voice recognition applications like real-time translators and voice-enabled digital assistants. But right now most of the voice data required to build these kinds of apps is expensive and proprietary. We hope the Common Voice dataset will give developers what they need to innovate and make speech technology available in their own language.
+    Speech is often the most natural way we communicate with each other and voice technologies are bringing that convenience to our computers and mobile devices. We want to empower developers to build amazing voice recognition applications like real-time translators and voice-enabled digital assistants. But right now most of the voice data required to build these kinds of apps is expensive and proprietary. We hope the Project Lok dataset will give developers what they need to innovate and make speech technology available in their own language.
 
     To make voice recognition even more universal, we're collecting voice samples in widely spoken languages as well as those with a smaller population of speakers often underserved by commercial speech recognition services. Publishing a diverse dataset of voices will empower developers, entrepreneurs, and entire speech communities to address this gap themselves.
 
@@ -361,7 +354,7 @@ faq-is-goal-assistant-q = Is the goal of Common Voice to build a voice assistant
 faq-is-goal-assistant-a = The goal of the Common Voice dataset is to enable anyone in the world to build speech recognition, speaker recognition, or any other type of application that requires voice data. A voice assistant is just one of many types of applications you could use the dataset to build.
 
 faq-do-want-native-q = I am a non-native speaker and I speak with an accent, do you still want my voice?
-faq-do-want-native-a = Yes, we especially want your voice! Part of the aim of Common Voice is to gather as many different accents as possible so that voice recognition services work equally well for everyone. This means donations from non-native speakers are particularly important.
+faq-do-want-native-a = Yes, we especially want your voice! Part of the aim of Project Lok is to gather as many different accents as possible so that voice recognition services work equally well for everyone. This means donations from non-native speakers are particularly important.
 
 faq-why-different-speakers-q = Why do you need so many different speakers per language?
 faq-why-different-speakers-a =
@@ -372,12 +365,12 @@ faq-why-my-lang-q = Why is my language not included yet?
 faq-why-my-lang-new-a = Mozilla doesn’t pick or favor any one language over another. Instead, Common Voice is a purely community-driven initiative, but it takes <multilangLink>several steps to add a new language</multilangLink> and begin collecting voice donations. First, the Common Voice website needs to be translated so community members can access the contributor experience in their own language. Next, we need a large collection of copyright-free sentences for people to read outloud. Once both of those requirements are satisfied a language is “launched” on Common Voice for people to start recording their voice and validating others donations. If you want to help launch a new language, head over to our <sentenceCollectorLink>sentence collection tool</sentenceCollectorLink> to get started.
 
 faq-what-quality-q = What level of audio quality is required for a voice clip to be used in the dataset?
-faq-what-quality-a = We want the Common Voice dataset to reflect the audio quality a speech-to-text engine will hear in the wild, so we’re looking for variety. In addition to a diverse community of speakers, a dataset with varying audio quality will teach the speech-to-text engine to handle various real-world situations, from background talking to car noise. As long as your voice clip is intelligible, it should be good enough for the dataset.
+faq-what-quality-a = We want the Project Lok dataset to reflect the audio quality a speech-to-text engine will hear in the wild, so we’re looking for variety. In addition to a diverse community of speakers, a dataset with varying audio quality will teach the speech-to-text engine to handle various real-world situations, from background talking to car noise. As long as your voice clip is intelligible, it should be good enough for the dataset.
 
 faq-why-10k-hours-q = Why is 10,000 validated hours the per language goal for capturing audio?
 faq-why-10k-hours-a = This is approximately the number of hours required to train a production speech-to-text system.
 
-faq-how-calc-hours-q = How does Common Voice calculate hours?
+faq-how-calc-hours-q = How does Project Lok calculate hours?
 faq-how-calc-hours-a = We calculate hours by estimating the average length of each recording, and then multiplying that number by the total number of recordings across all languages.
 
 faq-where-src-from-2-q = Where does the source text come from?
@@ -395,21 +388,21 @@ faq-is-account-public-q = Is my account information public?
 faq-how-privacy-q = How do you ensure anonymity and privacy of the people who donated their voices?
 faq-how-privacy-a = All voice clips in the dataset are scrubbed of personally identifying information. When a contributor provides demographic data via their profile, that information is de-identified from their voice clips before being bundled for download in the dataset and is never made public on their profile page.
 
-faq-what-determine-identity-q = What does it mean that I can’t “determine the identity” of speakers in the Common Voice dataset?
+faq-what-determine-identity-q = What does it mean that I can’t “determine the identity” of speakers in the Project Lok dataset?
 faq-what-determine-identity-a =
-    The Common Voice dataset is an open and publicly available resource that can be used to train a wide variety of speech-enabled applications. To protect the security of our contributors, we ask everyone who downloads the Common Voice dataset to respect contributors’ privacy.
+    The Project Lok dataset is an open and publicly available resource that can be used to train a wide variety of speech-enabled applications. To protect the security of our contributors, we ask everyone who downloads the Common Voice dataset to respect contributors’ privacy.
 
     All voice clips in the dataset are scrubbed of personally identifying information. When you download the dataset, you agree to not attempt to determine the identity of any contributor. That means you cannot try to link information in the dataset to a contributor’s personal information. You may, however, use the dataset to train speech recognition, speaker recognition, or other applications, by, for instance, linking information in the dataset to other information already in the dataset.
 
-faq-what-is-cv = What is Common Voice?
-faq-using-cv = Using Common Voice
-faq-description = Common Voice is part of Mozilla's initiative to help teach machines how real people speak.
+faq-what-is-cv = What is Project Lok?
+faq-using-cv = Using Project Lok
+faq-description = Project Lok is an initiative to help teach machines how real people speak.
 faq-search-for-answers =
     .label = Search for answers
 
 ## ABOUT US
-about-title = Why Common Voice?
-about-subtitle = Common Voice is part of Mozilla's initiative to help teach machines how real people speak. In addition to the Common Voice dataset, we’re also building an open source speech recognition engine called Deep Speech.
+about-title = What is LOK?
+about-subtitle = LOK in Hindi (&amp; many other Indian languages) means people. Project Lok is an initiative to help teach machines how real people speak. In addition to the Project Lok dataset, we’re also building an open source Automated Speech Recognition (ASR) engine.
 about-header-description = Both of these projects are part of our efforts to bridge the digital speech divide. Voice recognition technologies bring a human dimension to our devices, but developers need an enormous amount of voice data to build them. Currently, most of that data is expensive and proprietary.
     We want to make voice data freely and publicly available, and make sure the data represents the diversity of real people. Together we can make voice recognition better for everyone.
 how-does-it-work-title = How does it work?
@@ -424,21 +417,21 @@ about-listen-text = Users validate the accuracy of donated clips, checking that 
 about-is-it-valid = Is the clip valid?
 about-is-it-valid-text = A voice clip is marked "valid" when a user gives it a Yes vote.
 about-yes-votes = ≥ 2 Yes votes
-about-yes-votes-text = To make it into the Common Voice dataset, a voice clip must be validated by two separate users.
+about-yes-votes-text = To make it into the Lok dataset, a voice clip must be validated by two separate users.
 about-no-votes = ≥ 2 No votes
 about-no-votes-text = When a user rejects a voice clip it returns to the Queue. If rejected a second time, the voice clip is moved to the Clip Graveyard.
-about-dataset = Common Voice Dataset
-about-dataset-text = The Common Voice Dataset contains hundreds of thousands of voice samples that help developers build voice recognition tools.
+about-dataset = Lok Dataset
+about-dataset-text = The Lok Dataset contains hundreds of thousands of voice samples that help developers build voice recognition tools.
 about-clip-graveyard = Clip Graveyard
-about-clip-graveyard-text = The Clip Graveyard consists of voice clips that didn't make it into the Common Voice dataset. Just like the dataset, the Clip Graveyard is available for download.
+about-clip-graveyard-text = The Clip Graveyard consists of voice clips that didn't make it into the Lok dataset. Just like the dataset, the Clip Graveyard is available for download.
 
 about-partners = Partners
 about-become-a-partner = Become a partner
-about-partnership = Common Voice is a collaborative project, and we're depending on our community of partners and contributors to build the largest open-source dataset of voices ever.
+about-partnership = Lok is a collaborative project, and we're depending on our community of partners and contributors to build the largest open-source dataset of voices ever.
 
     We would like to thank the following people and organizations for their help with the project:
 about-get-involved = Get involved
-about-get-involved-text = Want to help make Common Voice even better?
+about-get-involved-text = Want to help make Lok even better?
     Great! Get in touch via email or on <discourseLink>Discourse</discourseLink>,
     submit feedback through <githubLink>GitHub</githubLink>,
     or join us on <slackLink>Slack</slackLink>.
@@ -472,7 +465,7 @@ notfound-title = Not found
 notfound-content = I’m afraid I don’t know what you’re looking for.
 
 ## Data
-data-download-button = Download Common Voice Data
+data-download-button = Download Lok Data
 data-download-yes = Yes
 data-download-deny = No
 data-download-license = License: <licenseLink>CC-0</licenseLink>
@@ -484,11 +477,11 @@ data-other-title = Other voice datasets…
 data-other-goto = Go to { $name }
 data-other-download = Download Data
 data-bundle-button = Download Dataset Bundle
-data-bundle-description = Common Voice data plus all other voice datasets above.
+data-bundle-description = Lok data plus all other voice datasets above.
 license = License: <licenseLink>{ $license }</licenseLink>
 license-mixed = Mixed
 
-review-terms = By using Common Voice, you agree to our <termsLink>Terms</termsLink> and <privacyLink>Privacy Notice</privacyLink>
+review-terms = By using Lok, you agree to our <termsLink>Terms</termsLink> and <privacyLink>Privacy Notice</privacyLink>
 terms-agree = I agree
 terms-disagree = I do not agree
 review-aborted = Upload aborted. Do you want to delete your recordings?
@@ -522,16 +515,16 @@ why-email = <b>Why an email?</b> We may need to contact you in the future about 
 confirm-size = You are prepared to initiate a download of <b>{ $size }</b>
 size-gigabyte = GB
 size-megabyte = MB
-confirm-no-identify = <b>You agree</b> to not attempt to determine the identity of speakers in the Common Voice dataset
+confirm-no-identify = <b>You agree</b> to not attempt to determine the identity of speakers in the Lok dataset
 download-language = Download { $language }
 validated-hours = Validated Hours
 recorded-hours = Recorded Hours
-whats-inside = What’s inside the Common Voice dataset?
+whats-inside = What’s inside the Lok dataset?
 dataset-description-hours =
         Each entry in the dataset consists of a unique MP3 and corresponding text file. Many of the <b>{ $total }</b> recorded hours in the dataset also include demographic metadata like age, sex, and accent that can help train the accuracy of speech recognition engines.
 
         The dataset currently consists of <b>{ $valid }</b> validated hours in <b>{ $languages }</b> languages, but we’re always adding more voices and languages. Take a look at our <languagesLink>Languages page</languagesLink> to request a language or start contributing.
-want-dataset-update = Want updates when we release a new version of the Common Voice dataset? Subscribe to our newsletter.
+want-dataset-update = Want updates when we release a new version of the Lok dataset? Subscribe to our newsletter.
 subscribe = Subscribe
 get-started-speech = Get Started with Speech Recognition
 other-datasets = Other Voice Datasets
@@ -543,7 +536,7 @@ data-other-ted-name = TED-LIUM Corpus
 data-other-ted-description = The TED-LIUM corpus was made from audio talks and their transcriptions available on the TED website.
 data-other-voxforge-description = VoxForge was set up to collect transcribed speech for use with Free and Open Source Speech Recognition Engines.
 data-other-tatoeba-description = Tatoeba is a large database of sentences, translations, and spoken audio for use in language learning. This download contains spoken English recorded by their community.
-your-feedback = Do you have ideas on how we can make the Common Voice dataset better? Let us know on Discourse
+your-feedback = Do you have ideas on how we can make the Lok dataset better? Let us know on Discourse
 go-discourse = Go to Discourse
 missing-language = Don’t see your language reflected in the Dataset? To request a language head over to our Languages page.
 go-languages-page = Go to Languages Page
@@ -558,7 +551,7 @@ download-helpus = Help us build a community around voice technology, stay in tou
 download-form-email =
     .label = Enter your email
     .value = Thank you, we'll be in touch.
-download-back = Return to Common Voice Datasets
+download-back = Return to Lok Datasets
 download-no = No Thanks
 
 ## Contact Modal
@@ -603,8 +596,8 @@ listen = Listen
 skip = Skip
 shortcuts = Shortcuts
 clips-with-count = <bold>{ $count }</bold> Clips
-goal-help-recording = You've helped Common Voice reach <goalPercentage></goalPercentage> of our daily { $goalValue } recording goal!
-goal-help-validation = You've helped Common Voice reach <goalPercentage></goalPercentage> of our daily { $goalValue } validation goal!
+goal-help-recording = You've helped Project Lok reach <goalPercentage></goalPercentage> of our daily { $goalValue } recording goal!
+goal-help-validation = You've helped Project Lok reach <goalPercentage></goalPercentage> of our daily { $goalValue } validation goal!
 contribute-more =
     { $count ->
        *[other] Ready to do { $count } more?
@@ -664,8 +657,8 @@ your-languages = Your Languages
 toward-next-goal = Toward next goal
 clips-you-recorded = Clips You've Recorded
 clips-you-validated = Clips You've Validated
-todays-recorded-progress = Today's Common Voice progress on clips recorded
-todays-validated-progress = Today's Common Voice progress on clips validated
+todays-recorded-progress = Today's Project Lok progress on clips recorded
+todays-validated-progress = Today's Project Lok progress on clips validated
 stats = Stats
 you = You
 everyone = Everyone
@@ -678,12 +671,12 @@ overall-accuracy = Overall Accuracy
 
 
 ## Profile Delete
-delete-q = Would you like to request your voice recordings be deleted too, or do you prefer to keep them in the Common Voice dataset?
+delete-q = Would you like to request your voice recordings be deleted too, or do you prefer to keep them in the Project Lok dataset?
 keep = Keep
 remove = Remove
-keep-info = Your anonymous voice recordings will remain in the Common Voice dataset. Once you delete your profile you will no longer be able to submit a request to remove your recordings from the dataset
+keep-info = Your anonymous voice recordings will remain in the Project Lok dataset. Once you delete your profile you will no longer be able to submit a request to remove your recordings from the dataset
 remove-info = We will review your request to remove your voice recordings from the dataset. If your request is approved, we will contact those who have downloaded the dataset and request they remove your voice recordings as well.
-why-delete-recordings = Common Voice recordings are used by academics, small businesses, and voice recognition enthusiasts to help train and grow publicly available resources like voice models.
+why-delete-recordings = Project Lok recordings are used by academics, small businesses, and voice recognition enthusiasts to help train and grow publicly available resources like voice models.
 
     Can you let us know why you would like your recordings deleted?
 profile-form-delete = Delete Profile
@@ -691,7 +684,7 @@ profile-form-delete = Delete Profile
 
 ## Landing
 welcome-staff = Welcome { $company } staff!
-help-contribute = You can help build a diverse, open-source dataset by creating a Common Voice profile and contributing your voice.
+help-contribute = You can help build a diverse, open-source dataset by creating a Project Lok profile and contributing your voice.
 login-company = Log In / Sign Up with { $company } email
 profile-not-required = Having a profile is not required to contribute though it is helpful, see why below.
 read-more-about = Read more on our About page
