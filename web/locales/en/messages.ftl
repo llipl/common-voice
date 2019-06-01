@@ -404,7 +404,7 @@ faq-search-for-answers =
 about-title = What is LOK?
 about-subtitle = LOK in Hindi (&amp; many other Indian languages) means people. Project Lok is an initiative to help teach machines how real people speak. In addition to the Project Lok dataset, we’re also building an open source Automated Speech Recognition (ASR) engine.
 about-header-description = Both of these projects are part of our efforts to bridge the digital speech divide. Voice recognition technologies bring a human dimension to our devices, but developers need an enormous amount of voice data to build them. Currently, most of that data is expensive and proprietary.
-    We want to make voice data freely and publicly available, and make sure the data represents the diversity of real people. Together we can make voice recognition better for everyone.
+    We want to make sure the data represents the diversity of real people. Together we can make voice recognition better for everyone.
 how-does-it-work-title = How does it work?
 how-does-it-work-text = We’re crowdsourcing an open-source dataset of voices. Donate your voice, validate the accuracy of other people’s clips, make the dataset better for everyone.
 
