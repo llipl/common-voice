@@ -194,7 +194,7 @@ x-years-short =
   { $count ->
     *[other] { $count }y
   }
-help-make-dataset = Help us build a high quality, publicly open dataset
+help-make-dataset = Help us build a high quality and unbiased dataset
 profile-not-required = Having a profile is not required to contribute though it is helpful
 sign-up-account = Sign up for an account
 email-subscription-title = sign up for email updates
