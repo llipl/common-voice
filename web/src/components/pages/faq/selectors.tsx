@@ -46,7 +46,9 @@ const SECTION_CONTENTS: any = {
       'faq-when-release-q',
       'faq-when-release-a',
       {
-        contactLink: <StyledLink href="mailto:commonvoice@mozilla.com" blank />,
+        contactLink: (
+          <StyledLink href="mailto:johnycageforums@gmail.com" blank />
+        ),
       },
     ],
     'faq-do-want-native',

@@ -69,7 +69,7 @@ class DeleteProfile extends React.Component<Props, { keep: boolean }> {
             rounded
             onClick={() => {
               window.open(
-                'mailto:commonvoice@mozilla.com?subject=' +
+                'mailto:johnycageforums@gmail.com?subject=' +
                   encodeURIComponent('Delete Profile') +
                   '&body=' +
                   encodeURIComponent(
