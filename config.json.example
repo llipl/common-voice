@@ -1,0 +1,29 @@
+ {
+
+  'PROD': 'false', // Set to true for staging and production.
+  'SERVER_PORT': '80',
+  'DB_ROOT_USER': '', // For running schema migrations.
+  'DB_ROOT_PASS': '',
+  'MYSQLUSER': '', // For normal DB interactions.
+  'MYSQLPASS': '',
+  'MYSQLDBNAME': '',
+  'MYSQLHOST': '',
+  'MYSQLPORT': '',
+  'BUCKET_NAME': '',
+  'BUCKET_LOCATION': '',
+  'ENVIRONMENT': 'default',
+
+
+  'S3_CONFIG': {
+    'signatureVersion': 'v4',
+    'useDualstack': 'true',
+  },
+  
+  'AUTH0': {
+	    'DOMAIN': '',
+	    'CLIENT_ID': '',
+		  'CLIENT_SECRET': '',
+		      },
+
+  'IMPORT_SENTENCES': 'true',
+}
