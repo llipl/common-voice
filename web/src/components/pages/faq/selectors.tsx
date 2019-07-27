@@ -88,7 +88,7 @@ const SECTION_CONTENTS: any = {
         italic: <i />,
         githubLink: (
           <StyledLink
-            href="https://github.com/mozilla/voice-web/tree/master/server/data"
+            href="https://github.com/johnycage/lok/tree/master/server/data"
             blank
           />
         ),

@@ -14,7 +14,7 @@ Help us add more sentences for other volunteers to read. See [this topic](https:
 
 ### Bug Fixes and Feature Enhancements
 
-All of our current issues can be found here on GitHub. Anything with a [help wanted](https://github.com/mozilla/voice-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag is definitely up for grabs. If you're interested in an issues without this tag, best to ask first to make sure our vision of it aligns.
+All of our current issues can be found here on GitHub. Anything with a [help wanted](https://github.com/johnycage/lok/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag is definitely up for grabs. If you're interested in an issues without this tag, best to ask first to make sure our vision of it aligns.
 
 #### Project requirements
 
@@ -60,7 +60,7 @@ To modify the configuration listed in config-helper.ts (e.g server port), you ne
 
 [Fork](https://help.github.com/articles/fork-a-repo/) and [clone](https://help.github.com/articles/cloning-a-repository/) the repository onto your computer.
 
-Either create a MySQL root user that conforms to the default `DB_ROOT_USER` and `DB_ROOT_PASS` in `/server/src/config-helper.ts` or [create your own config](https://github.com/mozilla/voice-web/blob/master/CONTRIBUTING.md#configuration).
+Either create a MySQL root user that conforms to the default `DB_ROOT_USER` and `DB_ROOT_PASS` in `/server/src/config-helper.ts` or [create your own config](https://github.com/johnycage/lok/blob/master/CONTRIBUTING.md#configuration).
 
 Then `cd` into the project directory and enter the following commands:
 
@@ -111,7 +111,7 @@ Migrations are always run when the server is started.
 
 #### Making Strings localizable
 
-We're using [Fluent](http://projectfluent.org/) to localize strings. You can find examples all over the frontend code. Strings that appear in the [english message files](https://github.com/mozilla/voice-web/tree/master/web/locales/en), can then be translated on [Pontoon](https://pontoon.mozilla.org/projects/common-voice/). Some things to note regarding string changes are documented on [MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_content_best_practices#Changing_existing_strings).
+We're using [Fluent](http://projectfluent.org/) to localize strings. You can find examples all over the frontend code. Strings that appear in the [english message files](https://github.com/johnycage/lok/tree/master/web/locales/en), can then be translated on [Pontoon](https://pontoon.mozilla.org/projects/common-voice/). Some things to note regarding string changes are documented on [MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_content_best_practices#Changing_existing_strings).
 
 #### Import languages
 
@@ -139,7 +139,7 @@ yarn run
 
 The project is organized into the following directories:
 
-- _android_: The Android app, a simple webview wrapper of voice.mozilla.org. This app is currently not published.
+- _android_: The Android app, a simple webview wrapper of lok.vacha.ai. This app is currently not published.
 - _docs_: Design and data specifications for Common Voice.
 - _ios_: The iOS app. This is a simple wrapper app for the website, as a workaround for a microphone issue in Safari.
 - _nubis_: Configuration files for [Nubis](https://github.com/nubisproject), our deployment tool.
@@ -149,7 +149,7 @@ The project is organized into the following directories:
 
 ## Submitting an Issue
 
-Did you notice a bug? Do you have a feature request? Please file an issue [here on GitHub](https://github.com/mozilla/voice-web/issues).
+Did you notice a bug? Do you have a feature request? Please file an issue [here on GitHub](https://github.com/johnycage/lok/issues).
 
 ## Something Else?
 
