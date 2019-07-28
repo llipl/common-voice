@@ -143,22 +143,16 @@ back-top = Back to Top
 logout = Log Out
 
 ## Home Page
-home-title =
-  Project Lok shall collect Audio samples and validate the answers by crowdsourcing.
-wall-of-text-start =
-  Voice is natural, voice is human. That’s why we’re fascinated with creating usable voice
+home-title = Project Lok shall collect Audio samples and validate the answers by crowdsourcing.
+wall-of-text-start =  Voice is natural, voice is human. That’s why we’re fascinated with creating usable voice
   technology for our machines. But to create voice systems, an extremely large amount of voice
   data is required.
-wall-of-text-more-mobile =
-  Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Project Lok, a project to help make voice recognition for Indian languages.
-wall-of-text-more-desktop =
-  Now you can donate your voice to help us build a realist and practical voice database of Indian languages. Read a sentence to help machines learn how real people speak. Check the work of other contributors to improve the quality. It’s that simple!
-wall-of-text-first =
-  Voice is natural, voice is human. That’s why we’re excited about creating usable voice technology
+wall-of-text-more-mobile = Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Project Lok, a project to help make voice recognition for Indian languages.
+wall-of-text-more-desktop = Now you can donate your voice to help us build a realist and practical voice database of Indian languages. Read a sentence to help machines learn how real people speak. Check the work of other contributors to improve the quality. It’s that simple!
+wall-of-text-first = Voice is natural, voice is human. That’s why we’re excited about creating usable voice technology
   for our machines. But to create voice systems, developers need an extremely large amount of voice
   data.
-wall-of-text-second =
-Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Project Lok, a project to help make voice recognition for Indian languages.
+wall-of-text-second = Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Project Lok, a project to help make voice recognition for Indian languages.
 show-wall-of-text = Read More
 help-us-title = Help us validate sentences!
 help-us-explain = Press play, listen & tell us: did they accurately speak the sentence below?
@@ -284,8 +278,7 @@ female = Female
 # Gender
 other = Other
 why-profile-title = Why a profile?
-why-profile-text =
-  By providing some information about yourself, the audio data you submit to Project Lok will be more useful to Speech
+why-profile-text =  By providing some information about yourself, the audio data you submit to Project Lok will be more useful to Speech
   Recognition engines that use this data to improve their accuracy.
 dashboard = Dashboard
 build-profile = Build Profile
@@ -327,14 +320,12 @@ change-email-setings = Change your email via Settings under Login Identity
 faq-title = Frequently Asked Questions
 
 faq-what-cv-q = What is Project Lok?
-faq-what-cv-a =
-    Voice recognition technology is revolutionizing the way we interact with machines, but the currently available systems are expensive and proprietary. Project Lok is a database of donated voices of Indian speakers that lets anyone quickly and easily train voice-enabled apps in potentially every language.
+faq-what-cv-a =    Voice recognition technology is revolutionizing the way we interact with machines, but the currently available systems are expensive and proprietary. Project Lok is a database of donated voices of Indian speakers that lets anyone quickly and easily train voice-enabled apps in potentially every language.
 
     We're not only collecting voice samples  in widely spoken languages but also in those with a smaller population of speakers. Publishing a diverse dataset of voices will empower developers, entrepreneurs, and communities to address this gap themselves. In addition to the Common Voice dataset, we’re also building an open source speech recognition engine called Deep Speech.
 
 faq-why-important-q = Why is it important?
-faq-why-important-a =
-    Speech is often the most natural way we communicate with each other and voice technologies are bringing that convenience to our computers and mobile devices. We want to empower developers to build amazing voice recognition applications like real-time translators and voice-enabled digital assistants. But right now most of the voice data required to build these kinds of apps is expensive and proprietary. We hope the Project Lok dataset will give developers what they need to innovate and make speech technology available in their own language.
+faq-why-important-a = Speech is often the most natural way we communicate with each other and voice technologies are bringing that convenience to our computers and mobile devices. We want to empower developers to build amazing voice recognition applications like real-time translators and voice-enabled digital assistants. But right now most of the voice data required to build these kinds of apps is expensive and proprietary. We hope the Project Lok dataset will give developers what they need to innovate and make speech technology available in their own language.
 
     To make voice recognition even more universal, we're collecting voice samples in widely spoken languages as well as those with a smaller population of speakers often underserved by commercial speech recognition services. Publishing a diverse dataset of voices will empower developers, entrepreneurs, and entire speech communities to address this gap themselves.
 
@@ -357,8 +348,7 @@ faq-do-want-native-q = I am a non-native speaker and I speak with an accent, do 
 faq-do-want-native-a = Yes, we especially want your voice! Part of the aim of Project Lok is to gather as many different accents as possible so that voice recognition services work equally well for everyone. This means donations from non-native speakers are particularly important.
 
 faq-why-different-speakers-q = Why do you need so many different speakers per language?
-faq-why-different-speakers-a =
-    Most speech databases are trained with an overrepresentation of certain demographics which results in a bias towards <articleLink>male and middle class</articleLink>. Accents and dialects that tend to be under-represented in training data sets are typically associated with groups of people who are already marginalised. Many machines also struggle to understand female voices.
+faq-why-different-speakers-a =  Most speech databases are trained with an overrepresentation of certain demographics which results in a bias towards <articleLink>male and middle class</articleLink>. Accents and dialects that tend to be under-represented in training data sets are typically associated with groups of people who are already marginalised. Many machines also struggle to understand female voices.
     This is why in our voice database we want variety!
 
 faq-why-my-lang-q = Why is my language not included yet?
@@ -374,8 +364,7 @@ faq-how-calc-hours-q = How does Project Lok calculate hours?
 faq-how-calc-hours-a = We calculate hours by estimating the average length of each recording, and then multiplying that number by the total number of recordings across all languages.
 
 faq-where-src-from-2-q = Where does the source text come from?
-faq-where-src-from-2-a =
-    Our source text is made up of original contributor donations as well as dialogue from public domain movie scripts like <italic>It’s a Wonderful Life</italic>.
+faq-where-src-from-2-a = Our source text is made up of original contributor donations as well as dialogue from public domain movie scripts like <italic>It’s a Wonderful Life</italic>.
 
     You can view our source sentences in this <githubLink>GitHub folder</githubLink>.
 
@@ -495,11 +484,8 @@ review-delete-recordings = Delete my recordings
 
 ## New Datasets Page
 datasets-headline = We’re building an open source, multi-language dataset of voices that anyone can use to train speech-enabled applications.
-datasets-positioning =
-    We believe that large, publicly available voice datasets will foster innovation and healthy commercial competition in machine-learning based speech technology.
-
+datasets-positioning =  We believe that large, publicly available voice datasets will foster innovation and healthy commercial competition in machine-learning based speech technology.
     Common Voice’s multi-language dataset is already the largest publicly available voice dataset of its kind, but it’s not the only one.
-
     Look to this page as a reference hub for other open source voice datasets and, as Common Voice continues to grow, a home for our release updates.
 language = Language
 # File size in gigabytes
