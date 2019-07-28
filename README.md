@@ -1,7 +1,7 @@
-## Project LOK
+## Lok-Vacha Vacha Vacha
 
 This is a web, Android and iOS app for collecting speech
-donations for the Project LOK.
+donations for the Lok-Vacha.
 
 ### Official Website
 
