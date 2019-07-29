@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1200 300" style="enable-background:new 0 0 1200 300;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;}
-	.st1{fill:#FFFFFF;}
-	.st2{font-family:'MyriadPro-Regular';}
-	.st3{font-size:50px;}
-	.st4{font-family:'AdobeDevanagari-Regular';}
-	.st5{font-size:170px;}
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'Cambria';}
+	.st2{font-size:61.5647px;}
+	.st3{font-family:'AdobeDevanagari-Regular';}
+	.st4{font-size:194.0457px;}
 </style>
-<g id="Layer_2">
-	<path d="M1176,263H735c-6.6,0-12-5.4-12-12v-57c0-6.6,5.4-12,12-12h441c6.6,0,12,5.4,12,12v57C1188,257.6,1182.6,263,1176,263z"/>
-	<rect x="752.19" y="201.4" class="st0" width="421.48" height="85.91"/>
-	<text transform="matrix(1 0 0 1 752.1948 236.9023)" class="st1 st2 st3">https://lok.vacha.ai</text>
+<g>
+	<path d="M1189,300H636c-6.6,0-12-5.4-12-12v-76c0-6.6,5.4-12,12-12h553c6.6,0,12,5.4,12,12v76C1201,294.6,1195.6,300,1189,300z"/>
+	<text transform="matrix(1.0268 0 0 1 636 266.3115)" class="st0 st1 st2"> https://lok.vacha.ai</text>
 </g>
-<g id="Layer_1">
-	<rect x="43.19" y="37.41" class="st0" width="556.81" height="156.59"/>
-	<text transform="matrix(1 0 0 1 43.1948 158.1074)"><tspan x="0" y="0" class="st4 st5">लोक</tspan><tspan x="221.46" y="0" class="st2 st5">-</tspan><tspan x="273.65" y="0" class="st4 st5">वाचा</tspan><tspan x="501.68" y="0" class="st2 st5"> </tspan></text>
+<g>
+	<text transform="matrix(1.0076 0 0 1 21.46 159.7676)" class="st3 st4">लोक-वाचा</text>
 </g>
 </svg>
