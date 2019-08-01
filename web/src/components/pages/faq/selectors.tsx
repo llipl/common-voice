@@ -24,14 +24,13 @@ const SECTION_CONTENTS: any = {
   [SECTIONS.whatIsCV]: [
     'faq-what-cv',
     'faq-why-important',
-    'faq-why-todo',
+    'faq-what-todo',
     'faq-hinglish',
     'faq-what-cv-and-deepspeech',
     'faq-is-goal-assistant',
     'faq-list',
   ],
   [SECTIONS.usingCV]: [
-    [
       'faq-do-want-native',
       'faq-why-different-speakers',
       'faq-why-my-lang',
@@ -43,7 +42,6 @@ const SECTION_CONTENTS: any = {
       'faq-contribute',
       ['faq-why-account-q', BENEFITS],
       'faq-is-account-public',
-    ],
   ],
   [SECTIONS.glossary]: [
     ['localization', 'localization-explanation'],
