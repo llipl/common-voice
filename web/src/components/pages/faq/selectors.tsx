@@ -24,80 +24,26 @@ const SECTION_CONTENTS: any = {
   [SECTIONS.whatIsCV]: [
     'faq-what-cv',
     'faq-why-important',
-    'faq-why-mission',
+    'faq-why-todo',
+    'faq-hinglish',
     'faq-what-cv-and-deepspeech',
     'faq-is-goal-assistant',
+    'faq-list',
   ],
   [SECTIONS.usingCV]: [
     [
-      'faq-how-get-q',
-      'faq-how-get-a',
-      {
-        licenseLink: (
-          <StyledLink
-            href="https://creativecommons.org/publicdomain/zero/1.0/"
-            blank
-          />
-        ),
-        datasetLink: <LocaleLink to={URLS.DATASETS} />,
-      },
+      'faq-do-want-native',
+      'faq-why-different-speakers',
+      'faq-why-my-lang',
+      'faq-what-quality',
+      'faq-why-10k-hours',
+      'faq-how-calc-hours',
+      'faq-how-get',
+      'faq-pay-now',
+      'faq-contribute',
+      ['faq-why-account-q', BENEFITS],
+      'faq-is-account-public',
     ],
-    [
-      'faq-when-release-q',
-      'faq-when-release-a',
-      {
-        contactLink: (
-          <StyledLink href="mailto:johnycageforums@gmail.com" blank />
-        ),
-      },
-    ],
-    'faq-do-want-native',
-    [
-      'faq-why-different-speakers-q',
-      'faq-why-different-speakers-a',
-      {
-        articleLink: <StyledLink href="https://econ.st/2AVxVG3" blank />,
-      },
-    ],
-    [
-      'faq-why-my-lang-q',
-      'faq-why-my-lang-new-a',
-      {
-        multilangLink: (
-          <StyledLink
-            href="https://medium.com/mozilla-open-innovation/more-common-voices-24a80c879944"
-            blank
-          />
-        ),
-        sentenceCollectorLink: (
-          <StyledLink
-            href="https://common-voice.github.io/sentence-collector/"
-            blank
-          />
-        ),
-      },
-    ],
-    'faq-what-quality',
-    'faq-why-10k-hours',
-    'faq-why-not-ask-read',
-    'faq-how-calc-hours',
-    [
-      'faq-where-src-from-2-q',
-      'faq-where-src-from-2-a',
-      {
-        italic: <i />,
-        githubLink: (
-          <StyledLink
-            href="https://github.com/johnycage/lok/tree/master/server/data"
-            blank
-          />
-        ),
-      },
-    ],
-    ['faq-why-account-q', BENEFITS],
-    ['faq-is-account-public-q', WHATS_PUBLIC],
-    'faq-how-privacy',
-    'faq-what-determine-identity',
   ],
   [SECTIONS.glossary]: [
     ['localization', 'localization-explanation'],
