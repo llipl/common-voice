@@ -1,6 +1,6 @@
 ## General
 yes-receive-emails = Yes, send me emails. I’d like to stay informed about the Lok-Vacha Project.
-stayintouch = We at Mozilla are building a community around voice technology. We would like to stay in touch with updates, new data sources and to hear more about how you're using this data.
+stayintouch = We would like to stay in touch with updates, new data sources and to hear more about how you're using this data.
 privacy-info = We promise to handle your information with care. Read more in our <privacyLink>Privacy Notice</privacyLink>.
 return-to-cv = Return to Lok-Vacha
 email-input =
@@ -8,11 +8,11 @@ email-input =
 submit-form-action = Submit
 loading = Loading…
 email-opt-in-info = I'd like to receive emails such as goal reminders, my progress updates and newsletters about Lok-Vacha.
-email-opt-in-privacy = By opting in to receive emails you state that you are okay with Mozilla handling this info as explained in Mozilla’s <privacyLink>Privacy Policy<privacyLink>.
-indicates-required = * Indicates required field
+email-opt-in-privacy = By opting in to receive emails, you state that you are agreeing with us handling this info as explained in our <privacyLink>Privacy Policy<privacyLink>.
+indicates-required = * filling required
 not-available-abbreviation = N/A
 
-# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
+# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locales.js)
 # [Languages]
 ## Languages
 ab = Abkhaz
@@ -53,6 +53,7 @@ fo = Faroese
 fr = French
 fy-NL = Frisian
 ga-IE = Irish
+gj = Gujarati
 gl = Galician
 ha = Hausa
 he = Hebrew
@@ -69,6 +70,7 @@ ja = Japanese
 ka = Georgian
 kab = Kabyle
 kk = Kazakh
+kn = Kannada
 ko = Korean
 kpv = Komi-Zyrian
 ku = Kurdish
@@ -82,6 +84,7 @@ mhr = Meadow Mari
 mk = Macedonian
 ml = Malayalam
 mn = Mongolian
+mr = Marathi
 mrj = Hill Mari
 myv = Erzya
 nb-NO = Norwegian Bokmål
@@ -90,6 +93,7 @@ nl = Dutch
 nn-NO = Norwegian Nynorsk
 oc = Occitan
 or = Odia
+pa = Punjabi
 pl = Polish
 pt-BR = Portuguese (Brazil)
 rm-sursilv = Romansh Sursilvan
@@ -144,14 +148,10 @@ logout = Log Out
 
 ## Home Page
 home-title = Lok-Vacha shall collect Audio samples and validate the answers by crowdsourcing.
-wall-of-text-start =  Voice is natural, voice is human. That’s why we’re fascinated with creating usable voice
-  technology for our machines. But to create voice systems, an extremely large amount of voice
-  data is required.
+wall-of-text-start =  Voice is natural, voice is human. That’s why we’re fascinated with creating usable voice technology for our machines. But to create voice systems, an extremely large amount of voice data is required.
 wall-of-text-more-mobile = Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Lok-Vacha, a project to help make voice recognition for Indian languages.
 wall-of-text-more-desktop = Now you can donate your voice to help us build a realist and practical voice database of Indian languages. Read a sentence to help machines learn how real people speak. Check the work of other contributors to improve the quality. It’s that simple!
-wall-of-text-first = Voice is natural, voice is human. That’s why we’re excited about creating usable voice technology
-  for our machines. But to create voice systems, developers need an extremely large amount of voice
-  data.
+wall-of-text-first = Voice is natural, voice is human. That’s why we’re excited about creating usable voice technology for our machines. But to create voice systems, developers need an extremely large amount of voice data.
 wall-of-text-second = Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Lok-Vacha, a project to help make voice recognition for Indian languages.
 show-wall-of-text = Read More
 help-us-title = Help us validate sentences!
@@ -161,10 +161,8 @@ vote-yes = Yes
 vote-no = No
 toggle-play-tooltip = Press { shortcut-play-toggle } to toggle play mode
 speak-subtitle = Donate your voice
-speak-paragraph = Recording voice clips is an integral part of building our open dataset; some would say it's the fun part too.
 speak-goal-text = Clips recorded
 listen-subtitle = Help us validate voices
-listen-paragraph = Validating donated clips is equally important to the Lok-Vacha mission. Take a listen and help us create quality open source voice data.
 listen-goal-text = Clips validated
 hours-recorded = Hours Recorded
 hours-validated = Hours Validated
@@ -188,6 +186,8 @@ x-years-short =
   { $count ->
     *[other] { $count }y
   }
+
+  
 help-make-dataset = Help us build a high quality and unbiased dataset
 profile-not-required = Having a profile is not required to contribute though it is helpful
 sign-up-account = Sign up for an account
