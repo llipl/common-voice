@@ -1,6 +1,6 @@
 ## General
 yes-receive-emails = Yes, send me emails. I’d like to stay informed about the Lok-Vacha Project.
-stayintouch = We at Mozilla are building a community around voice technology. We would like to stay in touch with updates, new data sources and to hear more about how you're using this data.
+stayintouch = We would like to stay in touch with updates, new data sources and to hear more about how you're using this data.
 privacy-info = We promise to handle your information with care. Read more in our <privacyLink>Privacy Notice</privacyLink>.
 return-to-cv = Return to Lok-Vacha
 email-input =
@@ -8,118 +8,27 @@ email-input =
 submit-form-action = Submit
 loading = Loading…
 email-opt-in-info = I'd like to receive emails such as goal reminders, my progress updates and newsletters about Lok-Vacha.
-email-opt-in-privacy = By opting in to receive emails you state that you are okay with Mozilla handling this info as explained in Mozilla’s <privacyLink>Privacy Policy<privacyLink>.
-indicates-required = * Indicates required field
+email-opt-in-privacy = By opting in to receive emails, you state that you are agreeing with us handling this info as explained in our <privacyLink>Privacy Policy<privacyLink>.
+indicates-required = * filling required
 not-available-abbreviation = N/A
 
-# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
+# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locales.js)
 # [Languages]
 ## Languages
-ab = Abkhaz
-ace = Acehnese
-ady = Adyghe
-af = Afrikaans
-am = Amharic
-an = Aragonese
-ar = Arabic
 as = Assamese
-ast = Asturian
-az = Azerbaijani
-ba = Bashkirs
-bg = Bulgarian
 bn = Bengali
-br = Breton
-bxr = Buryat
-ca = Catalan
-cak = Kaqchikel
-cnh = Hakha Chin
-cs = Czech
-cv = Chuvash
-cy = Welsh
-da = Danish
-de = German
-dsb = Sorbian, Lower
-dv = Dhivehi
-el = Greek
 en = English
-eo = Esperanto
-es = Spanish
-et = Estonian
-eu = Basque
-fa = Persian
-ff = Fulah
-fi = Finnish
-fo = Faroese
-fr = French
-fy-NL = Frisian
-ga-IE = Irish
-gl = Galician
-ha = Hausa
-he = Hebrew
+gj = Gujarati
 hi = Hindi
-hr = Croatian
-hsb = Sorbian, Upper
-hu = Hungarian
-ia = Interlingua
-id = Indonesian
-is = Icelandic
-it = Italian
-izh = Izhorian
-ja = Japanese
-ka = Georgian
-kab = Kabyle
-kk = Kazakh
-ko = Korean
-kpv = Komi-Zyrian
-ku = Kurdish
-kw = Cornish
-ky = Kyrgyz
-lij = Ligurian
-lt = Lithuanian
-lv = Latvian
-mdf = Moksha
-mhr = Meadow Mari
-mk = Macedonian
+kn = Kannada
 ml = Malayalam
-mn = Mongolian
-mrj = Hill Mari
-myv = Erzya
-nb-NO = Norwegian Bokmål
+mr = Marathi
 ne = Nepali
-nl = Dutch
-nn-NO = Norwegian Nynorsk
-oc = Occitan
 or = Odia
-pl = Polish
-pt-BR = Portuguese (Brazil)
-rm-sursilv = Romansh Sursilvan
-ro = Romanian
-ru = Russian
-rw = Kinyarwanda
-sah = Sakha
-sc = Sardinian
-si = Sinhala
-sk = Slovak
-sl = Slovenian
-sq = Albanian
-sr = Serbian
-sv-SE = Swedish
+pa = Punjabi
 ta = Tamil
 te = Telugu
-tg = Tajik
-th = Thai
-tr = Turkish
-tt = Tatar
-uby = Ubykh
-udm = Udmurt
-uk = Ukrainian
 ur = Urdu
-uz = Uzbek
-vi = Vietnamese
-vot = Votic
-zh-CN = Chinese (China)
-zh-HK = Chinese (Hong Kong)
-zh-TW = Chinese (Taiwan)
 # [/]
 
 ## Layout
@@ -143,22 +52,12 @@ back-top = Back to Top
 logout = Log Out
 
 ## Home Page
-home-title =
-  Lok-Vacha shall collect Audio samples and validate the answers by crowdsourcing.
-wall-of-text-start =
-  Voice is natural, voice is human. That’s why we’re fascinated with creating usable voice
-  technology for our machines. But to create voice systems, an extremely large amount of voice
-  data is required.
-wall-of-text-more-mobile =
-  Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Lok-Vacha, a project to help make voice recognition for Indian languages.
-wall-of-text-more-desktop =
-  Now you can donate your voice to help us build a realist and practical voice database of Indian languages. Read a sentence to help machines learn how real people speak. Check the work of other contributors to improve the quality. It’s that simple!
-wall-of-text-first =
-  Voice is natural, voice is human. That’s why we’re excited about creating usable voice technology
-  for our machines. But to create voice systems, developers need an extremely large amount of voice
-  data.
-wall-of-text-second =
-Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Lok-Vacha, a project to help make voice recognition for Indian languages.
+home-title = Lok-Vacha shall collect Audio samples and validate the answers by crowdsourcing.
+wall-of-text-start =  Voice is natural, voice is human. That’s why we’re fascinated with creating usable voice technology for our machines. But to create voice systems, an extremely large amount of voice data is required.
+wall-of-text-more-mobile = Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Lok-Vacha, a project to help make voice recognition for Indian languages.
+wall-of-text-more-desktop = Now you can donate your voice to help us build a realist and practical voice database of Indian languages. Read a sentence to help machines learn how real people speak. Check the work of other contributors to improve the quality. It’s that simple!
+wall-of-text-first = Voice is natural, voice is human. That’s why we’re excited about creating usable voice technology for our machines. But to create voice systems, developers need an extremely large amount of voice data.
+wall-of-text-second = Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Lok-Vacha, a project to help make voice recognition for Indian languages.
 show-wall-of-text = Read More
 help-us-title = Help us validate sentences!
 help-us-explain = Press play, listen & tell us: did they accurately speak the sentence below?
@@ -167,10 +66,8 @@ vote-yes = Yes
 vote-no = No
 toggle-play-tooltip = Press { shortcut-play-toggle } to toggle play mode
 speak-subtitle = Donate your voice
-speak-paragraph = Recording voice clips is an integral part of building our open dataset; some would say it's the fun part too.
 speak-goal-text = Clips recorded
 listen-subtitle = Help us validate voices
-listen-paragraph = Validating donated clips is equally important to the Lok-Vacha mission. Take a listen and help us create quality open source voice data.
 listen-goal-text = Clips validated
 hours-recorded = Hours Recorded
 hours-validated = Hours Validated
@@ -194,6 +91,8 @@ x-years-short =
   { $count ->
     *[other] { $count }y
   }
+
+  
 help-make-dataset = Help us build a high quality and unbiased dataset
 profile-not-required = Having a profile is not required to contribute though it is helpful
 sign-up-account = Sign up for an account
@@ -216,7 +115,6 @@ username-optin-public = You can choose to make your username public or anonymous
 demographic-deidentified = Optionally submitted demographic data (e.g. age, sex, language, and accent) is de-identified from your submitted voice data and will never be made public on your profile.
 username-email-not-demographic = Your username and email will not be associated with the published data.
 
-
 ## Speak & Listen Shortcuts
 # Must be one letter that appears in the translated { skip } string.
 shortcut-skip = s
@@ -238,15 +136,12 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Record/Stop
-
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Re-record clip
-
 request-language-text = Don't see your language on Lok-Vacha yet?
 request-language-button = Request a Language
 
 ## ProjectStatus
-status-title = Overall project status: see how far we’ve come!
 status-contribute = Contribute Your Voice
 status-hours =
     { $hours ->
@@ -284,9 +179,7 @@ female = Female
 # Gender
 other = Other
 why-profile-title = Why a profile?
-why-profile-text =
-  By providing some information about yourself, the audio data you submit to Lok-Vacha will be more useful to Speech
-  Recognition engines that use this data to improve their accuracy.
+why-profile-text =  By providing some information about yourself, the audio data you submit to Lok-Vacha will be more useful to Speech Recognition engines that use this data to improve their accuracy.
 dashboard = Dashboard
 build-profile = Build Profile
 avatar = Avatar
@@ -326,73 +219,57 @@ change-email-setings = Change your email via Settings under Login Identity
 ## FAQ
 faq-title = Frequently Asked Questions
 
-faq-what-cv-q = What is Lok-Vacha?
-faq-what-cv-a =
-    Voice recognition technology is revolutionizing the way we interact with machines, but the currently available systems are expensive and proprietary. Lok-Vacha is a database of donated voices of Indian speakers that lets anyone quickly and easily train voice-enabled apps in potentially every language.
-
-    We're not only collecting voice samples  in widely spoken languages but also in those with a smaller population of speakers. Publishing a diverse dataset of voices will empower developers, entrepreneurs, and communities to address this gap themselves. In addition to the Common Voice dataset, we’re also building an open source speech recognition engine called Deep Speech.
+faq-what-cv-q = What is Project Lok-Vacha?
+faq-what-cv-a = Lok means people; Vacha means voice. Project Lok-Vacha is about collecting speech samples of real people and not just voice-over professionals. Voice recognition technology is revolutionizing the way we interact with machines, but the currently available systems are expensive and proprietary. Lok-Vacha is a database of donated voices of Indian speakers that lets anyone quickly and easily train voice-enabled apps in potentially all language. We're specifically collecting voice samples of Indian languages starting with more popular 15 languages (including Indian English & Hinglish) followed by more distant and less spoken languages and other dialects. The project ensures to cover the real-life colloquial language, words and phrases, including Hinglish. This makes the application more practical and relevant.  
 
 faq-why-important-q = Why is it important?
-faq-why-important-a =
-    Speech is often the most natural way we communicate with each other and voice technologies are bringing that convenience to our computers and mobile devices. We want to empower developers to build amazing voice recognition applications like real-time translators and voice-enabled digital assistants. But right now most of the voice data required to build these kinds of apps is expensive and proprietary. We hope the Lok-Vacha dataset will give developers what they need to innovate and make speech technology available in their own language.
+faq-why-important-a = Speech is often the most natural way we communicate with each other and voice technologies are bringing that convenience to our computers and mobile devices. We want to empower developers to build amazing voice recognition applications like real-time transcription, translation and voice-enabled digital assistants. But right now most of the voice data required to build these kinds of apps is expensive. We hope the Lok-Vacha dataset will give developers what they need to innovate and make speech technology available in their own language. To make voice recognition even more universal, we're collecting voice samples from all corners of India. 
 
-    To make voice recognition even more universal, we're collecting voice samples in widely spoken languages as well as those with a smaller population of speakers often underserved by commercial speech recognition services. Publishing a diverse dataset of voices will empower developers, entrepreneurs, and entire speech communities to address this gap themselves.
+faq-what-todo-q = What are you going to do with these voice samples?
+faq-what-todo-a = Having such diverse dataset of voices will empower developers, entrepreneurs, and communities to address this gap themselves. In addition to the project Lok-Vacha, we’re also building Speech Recognition Engine for Hinglish and all Indian languages called Vacha.AI. 
 
-faq-how-get-q = How can I get the Common Voice data?
-faq-how-get-a = The Common Voice dataset is available for download under the <licenseLink>CC0</licenseLink> license on <datasetLink>our Datasets page</datasetLink>. You can also download several other publicly available datasets from the same page.
+faq-hinglish-q = What is Hinglish?
+faq-hinglish-a = Hinglish is a portmanteau (a blend word) of "Hindi" and "English". Hinglish may also contain words / references from other Indian languages and is not just restricted to Hindi. It is also used sometimes to refer to very peculiar usage /invention of words by Indians, even in a formal context. 
 
-faq-when-release-q = When will you release Common Voice data in other languages?
-faq-when-release-a = The multi-language version of the Common Voice dataset is currently undergoing community supported bundling and cleaning. If you would like to learn more about supporting this effort, please <contactLink>contact us</contactLink>. We are currently targeting a publish date of January 2019. After that, we’ll update the dataset periodically with new languages and voice clips as they become available. An iterative release cycle cadence is still to be determined.
+faq-what-cv-and-deepspeech-q = What’s the difference between Lok-Vacha and Vacha.AI?
+faq-what-cv-and-deepspeech-a = Project Lok-Vacha is about collecting the audio samples of Indian languages. Vacha.AI is a Speech recognition engine, that uses the labelled data collected by Lok-Vacha.
 
-faq-why-mission-q = Why is Common Voice part of the Mozilla mission?
-faq-why-mission-a = Mozilla is dedicated to keeping the web open and accessible for everyone. To do that we need to empower web creators through projects like Common Voice. As voice technologies proliferate beyond niche applications, we believe they must serve all users equally. That means investing in more languages and accommodating diverse accents and demographics when building and testing voice technologies. Common Voice is a public resource available to everyone and Mozilla teams and developers around the world are already using it on our own projects as well.
+faq-is-goal-assistant-q = Is the goal of this app to build a voice assistant like Siri, Alexa, Cortana?
+faq-is-goal-assistant-a = The goal of the Project Lok-Vacha is to build a voice-text dataset. We are aiming to collect 10,000 hours of audio data for all major Indian (Indian subcontinent) languages.   is to enable anyone in the world to build speech recognition, speaker recognition, or any other type of application that requires voice data. A voice assistant is just one of many types of applications you could use the dataset to build.
 
-faq-what-cv-and-deepspeech-q = What’s the difference between Common Voice and Deep Speech?
-faq-what-cv-and-deepspeech-a = The Common Voice dataset complements Mozilla’s open source voice recognition engine Deep Speech. The first version of Deep Speech was released in November 2017 and has continued to evolve ever since. Together with the Common Voice dataset, we believe this open source voice recognition technology should be available to everybody. It’s our hope these technologies will enable developers to build a wave of innovative products and services.
-
-faq-is-goal-assistant-q = Is the goal of Common Voice to build a voice assistant?
-faq-is-goal-assistant-a = The goal of the Common Voice dataset is to enable anyone in the world to build speech recognition, speaker recognition, or any other type of application that requires voice data. A voice assistant is just one of many types of applications you could use the dataset to build.
+faq-list-q = Which languages I can contribute to? 
+faq-list-a = Currently, we are allowing people to speak & validate 15 languages, these are: Indian English, Hindi, Bangali, Urdu, Assamese, Punjabi, Gujarati, Marathi, Kannada, Telugu, Tamil, Mallayallam, Nepali, Odiya.
 
 faq-do-want-native-q = I am a non-native speaker and I speak with an accent, do you still want my voice?
 faq-do-want-native-a = Yes, we especially want your voice! Part of the aim of Lok-Vacha is to gather as many different accents as possible so that voice recognition services work equally well for everyone. This means donations from non-native speakers are particularly important.
 
 faq-why-different-speakers-q = Why do you need so many different speakers per language?
-faq-why-different-speakers-a =
-    Most speech databases are trained with an overrepresentation of certain demographics which results in a bias towards <articleLink>male and middle class</articleLink>. Accents and dialects that tend to be under-represented in training data sets are typically associated with groups of people who are already marginalised. Many machines also struggle to understand female voices.
-    This is why in our voice database we want variety!
+faq-why-different-speakers-a = Most speech databases are trained with over-over professional artists with an overrepresentation of certain demographics, which results in a bias towards male and middle class. Accents and dialects that tend to be under-represented in training data sets are typically associated with groups of people who are already marginalised. Many machines also struggle to understand female voices. The variety and randomness is good for ML problem.
 
-faq-why-my-lang-q = Why is my language not included yet?
-faq-why-my-lang-new-a = Mozilla doesn’t pick or favor any one language over another. Instead, Common Voice is a purely community-driven initiative, but it takes <multilangLink>several steps to add a new language</multilangLink> and begin collecting voice donations. First, the Common Voice website needs to be translated so community members can access the contributor experience in their own language. Next, we need a large collection of copyright-free sentences for people to read outloud. Once both of those requirements are satisfied a language is “launched” on Common Voice for people to start recording their voice and validating others donations. If you want to help launch a new language, head over to our <sentenceCollectorLink>sentence collection tool</sentenceCollectorLink> to get started.
+faq-why-my-lang-q = Why is my language is not included yet?
+faq-why-my-lang-new-a = We are specifically working on languages spoken in India. If you speak one of 6000+ Indian languages, which is not listed here, you can mail us. We may add Marwadi, Sindhi, Kashmiri, Maithili, Dogri, Konkani, Bodo in next phase of development of this app. 
 
 faq-what-quality-q = What level of audio quality is required for a voice clip to be used in the dataset?
 faq-what-quality-a = We want the Lok-Vacha dataset to reflect the audio quality a speech-to-text engine will hear in the wild, so we’re looking for variety. In addition to a diverse community of speakers, a dataset with varying audio quality will teach the speech-to-text engine to handle various real-world situations, from background talking to car noise. As long as your voice clip is intelligible, it should be good enough for the dataset.
 
 faq-why-10k-hours-q = Why is 10,000 validated hours the per language goal for capturing audio?
-faq-why-10k-hours-a = This is approximately the number of hours required to train a production speech-to-text system.
-
-faq-how-calc-hours-q = How does Lok-Vacha calculate hours?
+faq-why-10k-hours-a = Research in Deep Learning/ AI technology says that 10,000 hours of audio data is approximately the number of hours required to train a production-ready speech-to-text system.
+ 
+faq-how-calc-hours-q = How does you calculate hours?
 faq-how-calc-hours-a = We calculate hours by estimating the average length of each recording, and then multiplying that number by the total number of recordings across all languages.
 
-faq-where-src-from-2-q = Where does the source text come from?
-faq-where-src-from-2-a =
-    Our source text is made up of original contributor donations as well as dialogue from public domain movie scripts like <italic>It’s a Wonderful Life</italic>.
+faq-how-get-q = How can I get the Lok-Vacha data?
+faq-how-get-a = The data is not ready yet. Even after collecting good amount of data, bundling, cleaning, and labelling the data will require additional time and resources.  We may release the data for AI/ML developers and enthusiasts once it’s large enough. 
 
-    You can view our source sentences in this <githubLink>GitHub folder</githubLink>.
+faq-pay-now-q = I’m ready to pay for the vernacular data, can I get it now? 
+faq-pay-now-a = We appeal you to help us spread the word about this project; and convince people to donate their voices. This will fasten the data collection process and the release timeline. 
 
-faq-why-not-ask-read-q = Why don’t you ask people to read from books or Wikipedia articles in different languages?
-faq-why-not-ask-read-a = To make the Common Voice dataset as useful as possible we have decided to only allow source text that is available under a Creative Commons (CC0) license. Using the CC0 standard means its more difficult to find and collect source text, but allows anyone to use the resulting voice data without usage restrictions or authorization from Mozilla. Ultimately, we want to make the multi-language dataset as useful as possible to everyone, including researchers, universities, startups, governments, social purpose organizations, and hobbyists.
+faq-contribute-q = How can I contribute?
+faq-contribute-a = You can contribute by creating an account; donating your voice by speaking out loud the sentences provided by the app; and validating the other voices by approving/rejecting others work. Signing up for the account at Lok-Vacha would help the project increase the accuracy of the ASR model. 
 
 faq-why-account-q = Why should I sign up for an account?
 faq-is-account-public-q = Is my account information public?
-
-faq-how-privacy-q = How do you ensure anonymity and privacy of the people who donated their voices?
-faq-how-privacy-a = All voice clips in the dataset are scrubbed of personally identifying information. When a contributor provides demographic data via their profile, that information is de-identified from their voice clips before being bundled for download in the dataset and is never made public on their profile page.
-
-faq-what-determine-identity-q = What does it mean that I can’t “determine the identity” of speakers in the Lok-Vacha dataset?
-faq-what-determine-identity-a =
-    The Lok-Vacha dataset is an open and publicly available resource that can be used to train a wide variety of speech-enabled applications. To protect the security of our contributors, we ask everyone who downloads the Common Voice dataset to respect contributors’ privacy.
-
-    All voice clips in the dataset are scrubbed of personally identifying information. When you download the dataset, you agree to not attempt to determine the identity of any contributor. That means you cannot try to link information in the dataset to a contributor’s personal information. You may, however, use the dataset to train speech recognition, speaker recognition, or other applications, by, for instance, linking information in the dataset to other information already in the dataset.
+faq-is-account-public-a = No. 
 
 faq-what-is-cv = What is Lok-Vacha?
 faq-using-cv = Using Lok-Vacha
@@ -402,12 +279,10 @@ faq-search-for-answers =
 
 ## ABOUT US
 about-title = What is LOK?
-about-subtitle = LOK in Hindi (&amp; many other Indian languages) means people. Lok-Vacha is an initiative to help teach machines how real people speak. In addition to the Lok-Vacha dataset, we’re also building an open source Automated Speech Recognition (ASR) engine.
-about-header-description = Both of these projects are part of our efforts to bridge the digital speech divide. Voice recognition technologies bring a human dimension to our devices, but developers need an enormous amount of voice data to build them. Currently, most of that data is expensive and proprietary.
-    We want to make sure the data represents the diversity of real people. Together we can make voice recognition better for everyone.
+about-subtitle = "Lok" in Hindi (&amp; many other Indian languages) means people. "Vacha" means voice. Lok-Vacha is an initiative to help teach machines how real people speak. In addition to the Lok-Vacha dataset, we’re also building an open source Automated Speech Recognition (ASR) engine.
+about-header-description = Both of these projects are part of our efforts to bridge the digital speech divide. Voice recognition technologies bring a human dimension to our devices, but developers need an enormous amount of voice data to build them. Currently, most of that data is expensive and proprietary. We want to make sure the data represents the diversity of real people. Together we can make voice recognition better for everyone.
 how-does-it-work-title = How does it work?
 how-does-it-work-text = We’re crowdsourcing an open-source dataset of voices. Donate your voice, validate the accuracy of other people’s clips, make the dataset better for everyone.
-
 about-speak = Speak
 about-speak-text = Contributors record voice clips by reading from a bank of donated sentences.
 about-listen-queue = Listen-Queue
@@ -424,23 +299,19 @@ about-dataset = Lok Dataset
 about-dataset-text = The Lok Dataset contains hundreds of thousands of voice samples that help developers build voice recognition tools.
 about-clip-graveyard = Clip Graveyard
 about-clip-graveyard-text = The Clip Graveyard consists of voice clips that didn't make it into the Lok dataset. Just like the dataset, the Clip Graveyard is available for download.
-
 about-partners = Partners
 about-become-a-partner = Become a partner
-about-partnership = Lok is a collaborative project, and we're depending on our community of partners and contributors to build the largest open-source dataset of voices ever.
-
-    We would like to thank the following people and organizations for their help with the project:
+about-partnership = Lok is a collaborative project, and we're depending on our community of partners and contributors to build the largest open-source dataset of voices ever. We would like to thank the following people and organizations for their help with the project:
 about-get-involved = Get involved
-about-get-involved-text = Want to help make Lok even better?
-    Great! Get in touch via email or on <discourseLink>Discourse</discourseLink>,
-    submit feedback through <githubLink>GitHub</githubLink>,
-    or join us on <slackLink>Slack</slackLink>.
+about-get-involved-text = Want to help make Lok-Vacha even better? 
+    Have suggestions &amp; Feedback? Share on <discourseLink>Forums</discourseLink>, 
+    Found issue or a bug? Report it on <githubLink>GitHub</githubLink>. 
+    or Contact us for anything else <contactLink>Email</contactLink>.
 
 about-nav-why-common-voice = Why ?
 about-nav-how-it-works = How ?
 about-nav-partners = Partners
 about-nav-get-involved = Get involved
-
 mycroft-title = Mycroft Ai
 mycroft-subtitle = Artificial intelligence
 mycroft-description = Mycroft is the world’s first open source assistant.
@@ -480,7 +351,6 @@ data-bundle-button = Download Dataset Bundle
 data-bundle-description = Lok data plus all other voice datasets above.
 license = License: <licenseLink>{ $license }</licenseLink>
 license-mixed = Mixed
-
 review-terms = By using Lok, you agree to our <termsLink>Terms</termsLink> and <privacyLink>Privacy Notice</privacyLink>
 terms-agree = I agree
 terms-disagree = I do not agree
@@ -495,11 +365,8 @@ review-delete-recordings = Delete my recordings
 
 ## New Datasets Page
 datasets-headline = We’re building an open source, multi-language dataset of voices that anyone can use to train speech-enabled applications.
-datasets-positioning =
-    We believe that large, publicly available voice datasets will foster innovation and healthy commercial competition in machine-learning based speech technology.
-
+datasets-positioning =  We believe that large, publicly available voice datasets will foster innovation and healthy commercial competition in machine-learning based speech technology.
     Common Voice’s multi-language dataset is already the largest publicly available voice dataset of its kind, but it’s not the only one.
-
     Look to this page as a reference hub for other open source voice datasets and, as Common Voice continues to grow, a home for our release updates.
 language = Language
 # File size in gigabytes
@@ -522,7 +389,6 @@ recorded-hours = Recorded Hours
 whats-inside = What’s inside the Lok dataset?
 dataset-description-hours =
         Each entry in the dataset consists of a unique MP3 and corresponding text file. Many of the <b>{ $total }</b> recorded hours in the dataset also include demographic metadata like age, sex, and accent that can help train the accuracy of speech recognition engines.
-
         The dataset currently consists of <b>{ $valid }</b> validated hours in <b>{ $languages }</b> languages, but we’re always adding more voices and languages. Take a look at our <languagesLink>Languages page</languagesLink> to request a language or start contributing.
 want-dataset-update = Want updates when we release a new version of the Lok dataset? Subscribe to our newsletter.
 subscribe = Subscribe
@@ -583,7 +449,6 @@ language-meter-in-progress = Progress
 language-total-progress = Total
 language-search-input =
     .placeholder = Search
-language-speakers = Speakers
 localized = Localized
 sentences = Sentences
 total-hours = Validated Hrs
@@ -651,7 +516,6 @@ validations = { $count ->
   *[other] Validations
 }
 
-
 ## Dashboard
 your-languages = Your Languages
 toward-next-goal = Toward next goal
@@ -669,7 +533,6 @@ validated-clips = Validated Clips
 total-approved = Total Approved
 overall-accuracy = Overall Accuracy
 
-
 ## Profile Delete
 delete-q = Would you like to request your voice recordings be deleted too, or do you prefer to keep them in the Lok-Vacha dataset?
 keep = Keep
@@ -677,10 +540,8 @@ remove = Remove
 keep-info = Your anonymous voice recordings will remain in the Lok-Vacha dataset. Once you delete your profile you will no longer be able to submit a request to remove your recordings from the dataset
 remove-info = We will review your request to remove your voice recordings from the dataset. If your request is approved, we will contact those who have downloaded the dataset and request they remove your voice recordings as well.
 why-delete-recordings = Lok-Vacha recordings are used by academics, small businesses, and voice recognition enthusiasts to help train and grow publicly available resources like voice models.
-
     Can you let us know why you would like your recordings deleted?
 profile-form-delete = Delete Profile
-
 
 ## Landing
 welcome-staff = Welcome { $company } staff!
