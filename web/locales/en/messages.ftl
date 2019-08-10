@@ -210,7 +210,6 @@ username-optin-public = You can choose to make your username public or anonymous
 demographic-deidentified = Optionally submitted demographic data (e.g. age, sex, language, and accent) is de-identified from your submitted voice data and will never be made public on your profile.
 username-email-not-demographic = Your username and email will not be associated with the published data.
 
-
 ## Speak & Listen Shortcuts
 # Must be one letter that appears in the translated { skip } string.
 shortcut-skip = s
@@ -232,15 +231,12 @@ shortcut-vote-no = n
 # Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
 shortcut-record-toggle = r
 shortcut-record-toggle-label = Record/Stop
-
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Re-record clip
-
 request-language-text = Don't see your language on Lok-Vacha yet?
 request-language-button = Request a Language
 
 ## ProjectStatus
-status-title = Overall project status: see how far we’ve come!
 status-contribute = Contribute Your Voice
 status-hours =
     { $hours ->
@@ -278,8 +274,7 @@ female = Female
 # Gender
 other = Other
 why-profile-title = Why a profile?
-why-profile-text =  By providing some information about yourself, the audio data you submit to Lok-Vacha will be more useful to Speech
-  Recognition engines that use this data to improve their accuracy.
+why-profile-text =  By providing some information about yourself, the audio data you submit to Lok-Vacha will be more useful to Speech Recognition engines that use this data to improve their accuracy.
 dashboard = Dashboard
 build-profile = Build Profile
 avatar = Avatar
@@ -380,11 +375,9 @@ faq-search-for-answers =
 ## ABOUT US
 about-title = What is LOK?
 about-subtitle = "Lok" in Hindi (&amp; many other Indian languages) means people. "Vacha" means voice. Lok-Vacha is an initiative to help teach machines how real people speak. In addition to the Lok-Vacha dataset, we’re also building an open source Automated Speech Recognition (ASR) engine.
-about-header-description = Both of these projects are part of our efforts to bridge the digital speech divide. Voice recognition technologies bring a human dimension to our devices, but developers need an enormous amount of voice data to build them. Currently, most of that data is expensive and proprietary.
-    We want to make sure the data represents the diversity of real people. Together we can make voice recognition better for everyone.
+about-header-description = Both of these projects are part of our efforts to bridge the digital speech divide. Voice recognition technologies bring a human dimension to our devices, but developers need an enormous amount of voice data to build them. Currently, most of that data is expensive and proprietary. We want to make sure the data represents the diversity of real people. Together we can make voice recognition better for everyone.
 how-does-it-work-title = How does it work?
 how-does-it-work-text = We’re crowdsourcing an open-source dataset of voices. Donate your voice, validate the accuracy of other people’s clips, make the dataset better for everyone.
-
 about-speak = Speak
 about-speak-text = Contributors record voice clips by reading from a bank of donated sentences.
 about-listen-queue = Listen-Queue
@@ -401,23 +394,19 @@ about-dataset = Lok Dataset
 about-dataset-text = The Lok Dataset contains hundreds of thousands of voice samples that help developers build voice recognition tools.
 about-clip-graveyard = Clip Graveyard
 about-clip-graveyard-text = The Clip Graveyard consists of voice clips that didn't make it into the Lok dataset. Just like the dataset, the Clip Graveyard is available for download.
-
 about-partners = Partners
 about-become-a-partner = Become a partner
-about-partnership = Lok is a collaborative project, and we're depending on our community of partners and contributors to build the largest open-source dataset of voices ever.
-
-    We would like to thank the following people and organizations for their help with the project:
+about-partnership = Lok is a collaborative project, and we're depending on our community of partners and contributors to build the largest open-source dataset of voices ever. We would like to thank the following people and organizations for their help with the project:
 about-get-involved = Get involved
-about-get-involved-text = Want to help make Lok even better?
-    Great! Get in touch via email or on <discourseLink>Discourse</discourseLink>,
-    submit feedback through <githubLink>GitHub</githubLink>,
-    or join us on <slackLink>Slack</slackLink>.
+about-get-involved-text = Want to help make Lok-Vacha even better? 
+    Have suggestions &amp; Feedback? Share on <discourseLink>Forums</discourseLink>, 
+    Found issue or a bug? Report it on <githubLink>GitHub</githubLink>. 
+    or Contact us for anything else <contactLink>Email</contactLink>.
 
 about-nav-why-common-voice = Why ?
 about-nav-how-it-works = How ?
 about-nav-partners = Partners
 about-nav-get-involved = Get involved
-
 mycroft-title = Mycroft Ai
 mycroft-subtitle = Artificial intelligence
 mycroft-description = Mycroft is the world’s first open source assistant.
@@ -457,7 +446,6 @@ data-bundle-button = Download Dataset Bundle
 data-bundle-description = Lok data plus all other voice datasets above.
 license = License: <licenseLink>{ $license }</licenseLink>
 license-mixed = Mixed
-
 review-terms = By using Lok, you agree to our <termsLink>Terms</termsLink> and <privacyLink>Privacy Notice</privacyLink>
 terms-agree = I agree
 terms-disagree = I do not agree
@@ -496,7 +484,6 @@ recorded-hours = Recorded Hours
 whats-inside = What’s inside the Lok dataset?
 dataset-description-hours =
         Each entry in the dataset consists of a unique MP3 and corresponding text file. Many of the <b>{ $total }</b> recorded hours in the dataset also include demographic metadata like age, sex, and accent that can help train the accuracy of speech recognition engines.
-
         The dataset currently consists of <b>{ $valid }</b> validated hours in <b>{ $languages }</b> languages, but we’re always adding more voices and languages. Take a look at our <languagesLink>Languages page</languagesLink> to request a language or start contributing.
 want-dataset-update = Want updates when we release a new version of the Lok dataset? Subscribe to our newsletter.
 subscribe = Subscribe
@@ -557,7 +544,6 @@ language-meter-in-progress = Progress
 language-total-progress = Total
 language-search-input =
     .placeholder = Search
-language-speakers = Speakers
 localized = Localized
 sentences = Sentences
 total-hours = Validated Hrs
@@ -625,7 +611,6 @@ validations = { $count ->
   *[other] Validations
 }
 
-
 ## Dashboard
 your-languages = Your Languages
 toward-next-goal = Toward next goal
@@ -643,7 +628,6 @@ validated-clips = Validated Clips
 total-approved = Total Approved
 overall-accuracy = Overall Accuracy
 
-
 ## Profile Delete
 delete-q = Would you like to request your voice recordings be deleted too, or do you prefer to keep them in the Lok-Vacha dataset?
 keep = Keep
@@ -653,7 +637,6 @@ remove-info = We will review your request to remove your voice recordings from t
 why-delete-recordings = Lok-Vacha recordings are used by academics, small businesses, and voice recognition enthusiasts to help train and grow publicly available resources like voice models.
     Can you let us know why you would like your recordings deleted?
 profile-form-delete = Delete Profile
-
 
 ## Landing
 welcome-staff = Welcome { $company } staff!
