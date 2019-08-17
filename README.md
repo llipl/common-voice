@@ -1,4 +1,4 @@
-## Lok-Vacha Vacha Vacha
+## Project Lok-Vacha
 
 This is a web, Android and iOS app for collecting speech
 donations for the Lok-Vacha.
@@ -17,8 +17,7 @@ From writing and reading sentences to enhancing our front-end architecture, ther
 
 ### Discussion
 
-For general discussion (feedback, ideas, random musings), head to our [Discourse Category](https://discourse.mozilla-community.org/c/voice).
+For general discussion (feedback, ideas, random musings), head to our [Discourse Category](https://forums.vacha.ai).
 
 For technical problems or suggestions, please use the [GitHub issue tracker](https://github.com/johnycage/lok/issues).
 
-Or come chat with us on Slack: [Invite Link](https://common-voice-slack-invite.herokuapp.com/)
