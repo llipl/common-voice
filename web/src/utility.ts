@@ -83,7 +83,7 @@ export function isMobileResolution(): boolean {
 }
 
 export function isProduction(): boolean {
-  return window.location.origin === 'https://voice.mozilla.org';
+  return window.location.origin === 'https://lok.vacha.ai';
 }
 
 export function isStaging(): boolean {

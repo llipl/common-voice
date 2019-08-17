@@ -74,7 +74,7 @@ if (DOMAIN) {
       callbackURL:
         (({
           stage: 'https://voice.allizom.org',
-          prod: 'https://voice.mozilla.org',
+          prod: 'https://lok.vacha.ai',
         } as any)[ENVIRONMENT] || '') + CALLBACK_URL,
       scope: 'openid email',
     },

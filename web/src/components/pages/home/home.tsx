@@ -60,7 +60,7 @@ function HomePage({
       !(account && account.customGoal) &&
       !localStorage.getItem(GOALS_NOTIFICATION_KEY)
     ) {
-      setShowGoalsBanner(true);
+      // setShowGoalsBanner(true);
     }
   }, [account, isFetchingAccount, locale]);
 

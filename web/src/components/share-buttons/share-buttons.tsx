@@ -13,7 +13,7 @@ import { localeConnector, LocalePropsFromState } from '../locale-helpers';
 
 import './share-buttons.css';
 
-const SHARE_URL = 'https://voice.mozilla.org/';
+const SHARE_URL = 'https://lok.vacha.ai/';
 
 interface PropsFromDispatch {
   addNotification: typeof Notifications.actions.addPill;

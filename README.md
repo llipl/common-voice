@@ -1,11 +1,11 @@
-## Project LOK
+## Lok-Vacha Vacha Vacha
 
 This is a web, Android and iOS app for collecting speech
-donations for the Project LOK.
+donations for the Lok-Vacha.
 
 ### Official Website
 
-[voice.mozilla.org](https://voice.mozilla.org)
+[lok.vacha.ai](https://lok.vacha.ai)
 
 ### Code of Conduct
 
@@ -19,6 +19,6 @@ From writing and reading sentences to enhancing our front-end architecture, ther
 
 For general discussion (feedback, ideas, random musings), head to our [Discourse Category](https://discourse.mozilla-community.org/c/voice).
 
-For technical problems or suggestions, please use the [GitHub issue tracker](https://github.com/mozilla/voice-web/issues).
+For technical problems or suggestions, please use the [GitHub issue tracker](https://github.com/johnycage/lok/issues).
 
 Or come chat with us on Slack: [Invite Link](https://common-voice-slack-invite.herokuapp.com/)

@@ -17,7 +17,7 @@ export const GitHubLink = localeConnector(
     return (
       <a
         target="_blank"
-        href="https://github.com/mozilla/voice-web"
+        href="https://github.com/johnycage/lok"
         onClick={() => trackGlobal('github', locale)}
         {...props}
       />

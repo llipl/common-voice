@@ -1,0 +1,26 @@
+{
+  "PROD": false,
+  "SERVER_PORT": 9000,
+  "DB_ROOT_USER": "root",
+  "DB_ROOT_PASS": "",
+  "MYSQLUSER": "",
+  "MYSQLPASS": "",
+  "MYSQLDBNAME": "",
+  "MYSQLHOST": "",
+  "MYSQLPORT": 3306,
+  "BUCKET_NAME": "",
+  "BUCKET_LOCATION": "",
+  "ENVIRONMENT": "default",
+
+  "S3_CONFIG": {
+    "signatureVersion": "v4",
+    "useDualstack": true
+  },
+  "AUTH0": {
+    "DOMAIN": "",
+    "CLIENT_ID": "",
+    "CLIENT_SECRET": ""
+  },
+
+  "IMPORT_SENTENCES": true
+}
