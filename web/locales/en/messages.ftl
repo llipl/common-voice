@@ -7,7 +7,7 @@ email-input =
     .label = Email
 submit-form-action = Submit
 loading = Loading…
-email-opt-in-info = I'd like to receive emails such as goal reminders, my progress updates and newsletters about Lok-Vacha.
+email-opt-in-info = I'd like to receive emails on goal reminders, my progress and newsletters of Lok-Vacha.
 email-opt-in-privacy = By opting in to receive emails, you state that you are agreeing with us handling this info as explained in our <privacyLink>Privacy Policy<privacyLink>.
 indicates-required = * filling required
 not-available-abbreviation = N/A
@@ -92,7 +92,7 @@ x-years-short =
     *[other] { $count }y
   }
 
-  
+
 help-make-dataset = Help us build a high quality and unbiased dataset
 profile-not-required = Having a profile is not required to contribute though it is helpful
 sign-up-account = Sign up for an account
@@ -254,7 +254,7 @@ faq-what-quality-a = We want the Lok-Vacha dataset to reflect the audio quality 
 
 faq-why-10k-hours-q = Why is 10,000 validated hours the per language goal for capturing audio?
 faq-why-10k-hours-a = Research in Deep Learning/ AI technology says that 10,000 hours of audio data is approximately the number of hours required to train a production-ready speech-to-text system.
- 
+
 faq-how-calc-hours-q = How does you calculate hours?
 faq-how-calc-hours-a = We calculate hours by estimating the average length of each recording, and then multiplying that number by the total number of recordings across all languages.
 
