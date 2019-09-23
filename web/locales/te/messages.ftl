@@ -11,7 +11,7 @@ loading = లోడవుతున్నది...
 indicates-required = * ఖచ్చితంగా పూరించవలసిన ఖాళీ
 not-available-abbreviation = వర్తించదు
 
-# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
+# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locals.js)
 # [Languages]
 
 

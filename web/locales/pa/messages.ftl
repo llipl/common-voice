@@ -12,7 +12,7 @@ email-opt-in-privacy = By opting in to receive emails, you state that you are ag
 indicates-required = * filling required
 not-available-abbreviation = N/A
 
-# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locales.js)
+# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locals.js)
 # [Languages]
 ## Languages
 as = Assamese

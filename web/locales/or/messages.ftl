@@ -9,7 +9,7 @@ email-input =
 submit-form-action = ପଠାନ୍ତୁ
 loading = ଲୋଡ଼ହେଉଛି...
 
-# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/pontoon-languages-to-ftl.js)
+# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locals.js)
 # [Languages]
 
 

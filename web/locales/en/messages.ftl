@@ -8,11 +8,11 @@ email-input =
 submit-form-action = Submit
 loading = Loading…
 email-opt-in-info = I'd like to receive emails on goal reminders, my progress and newsletters of Lok-Vacha.
-email-opt-in-privacy = By opting in to receive emails, you state that you are agreeing with us handling this info as explained in our <privacyLink>Privacy Policy<privacyLink>.
+email-opt-in-privacy = By opting in to receive emails, you state that you are agreeing with us handling this info as explained in our <privacyLink>Privacy Policy</privacyLink>.
 indicates-required = * filling required
 not-available-abbreviation = N/A
 
-# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locales.js)
+# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locals.js)
 # [Languages]
 ## Languages
 as = Assamese

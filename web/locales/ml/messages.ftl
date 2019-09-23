@@ -12,7 +12,7 @@ email-opt-in-privacy = ഇമെയിലുകൾ സ്വീകരിക്�
 indicates-required = * പൂരിപ്പിക്കൽ ആവശ്യമാണ്
 not-available-abbreviation = N/A
 
-# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locales.js)
+# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locals.js)
 # [Languages]
 ## Languages
 as = ആസാമീസ്
