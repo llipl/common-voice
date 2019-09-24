@@ -1,551 +1,1001 @@
-## General
-yes-receive-emails = Yes, send me emails. I’d like to stay informed about the Lok-Vacha Project.
-stayintouch = We would like to stay in touch with updates, new data sources and to hear more about how you're using this data.
-privacy-info = We promise to handle your information with care. Read more in our <privacyLink>Privacy Notice</privacyLink>.
-return-to-cv = Return to Lok-Vacha
-email-input =
-    .label = Email
-submit-form-action = Submit
-loading = Loading…
-email-opt-in-info = I'd like to receive emails such as goal reminders, my progress updates and newsletters about Lok-Vacha.
-email-opt-in-privacy = By opting in to receive emails, you state that you are agreeing with us handling this info as explained in our <privacyLink>Privacy Policy<privacyLink>.
-indicates-required = * filling required
+ Marathi
+yes-receive-emails = होय, मला ईमेल पाठवा. मला लोक-वाच प्रकल्पाबद्दल माहिती रहायला आवडेल.
+stayintouch = आम्ही अद्यतने, नवीन डेटा स्रोतांच्या संपर्कात राहू आणि आपण हा डेटा कसा वापरत आहात याबद्दल अधिक ऐकण्यासाठी इच्छितो.
+privacy-info = आम्ही आपली माहिती काळजीपूर्वक हाताळण्याचे वचन देतो. आमच्या <privacyLink>गोपनीयता सूचना</privacyLink> मध्ये अधिक वाचा.
+return-to-cv = लोक-वाचाकडे परत या
+email-input = 
+.label = ईमेल
+submit-form-action = सबमिट करा
+loading = लोड करीत आहे…
+email-opt-in-info = मी ध्येय स्मरणपत्रे, माझे प्रगती आणि लोक-वचन च्या बातमीपत्रांवर ईमेल प्राप्त करू इच्छितो.
+email-opt-in-privacy = ईमेल प्राप्त करण्याचा पर्याय निवडण्याद्वारे, आपण नमूद केले आहे की आमच्या <privacyLink>गोपनीयता धोरण</privacyLink> मध्ये स्पष्ट केल्यानुसार आपण ही माहिती हाताळण्यास सहमती देत ​​आहात.
+indicates-required = * भरणे आवश्यक
 not-available-abbreviation = N/A
-
-# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locals.js)
-# [Languages]
-## Languages
-as = Assamese
-bn = Bengali
-en = English
-gj = Gujarati
-hi = Hindi
-kn = Kannada
-ml = Malayalam
-mr = Marathi
-ne = Nepali
-or = Odia
-pa = Punjabi
-ta = Tamil
-te = Telugu
-ur = Urdu
-# [/]
-
-## Layout
-speak = Speak
-speak-now = Speak now
-datasets = Datasets
-languages = Languages
-about = About
-profile = Profile
-help = Help
-contact = Contact
-privacy = Privacy
-terms = Terms
-cookies = Cookies
-faq = FAQ
-content-license-text = Content available under a <licenseLink>Creative Commons license</licenseLink>
-share-title = Help us find others to donate their voice!
-share-text = Help teach machines how real people speak, donate your voice at { $link }
-link-copied = Link Copied
-back-top = Back to Top
-logout = Log Out
-
-## Home Page
-home-title = Lok-Vacha shall collect Audio samples and validate the answers by crowdsourcing.
-wall-of-text-start =  Voice is natural, voice is human. That’s why we’re fascinated with creating usable voice technology for our machines. But to create voice systems, an extremely large amount of voice data is required.
-wall-of-text-more-mobile = Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Lok-Vacha, a project to help make voice recognition for Indian languages.
-wall-of-text-more-desktop = Now you can donate your voice to help us build a realist and practical voice database of Indian languages. Read a sentence to help machines learn how real people speak. Check the work of other contributors to improve the quality. It’s that simple!
-wall-of-text-first = Voice is natural, voice is human. That’s why we’re excited about creating usable voice technology for our machines. But to create voice systems, developers need an extremely large amount of voice data.
-wall-of-text-second = Most of the data used by large companies isn’t available to the majority of people. We think that stifles innovation. So we’ve launched Lok-Vacha, a project to help make voice recognition for Indian languages.
-show-wall-of-text = Read More
-help-us-title = Help us validate sentences!
-help-us-explain = Press play, listen & tell us: did they accurately speak the sentence below?
-no-clips-to-validate = Looks like there aren't any clips to listen to in this language. Help us fill the queue by recording some now.
-vote-yes = Yes
-vote-no = No
-toggle-play-tooltip = Press { shortcut-play-toggle } to toggle play mode
-speak-subtitle = Donate your voice
-speak-goal-text = Clips recorded
-listen-subtitle = Help us validate voices
-listen-goal-text = Clips validated
-hours-recorded = Hours Recorded
-hours-validated = Hours Validated
-voices-online = Voices Online Now
-todays-progress = Today's Progress
-help-reach-goal = Help us get to { $goal }
-read-terms-q = Have you read our Terms?
-ready-to-record = Ready to donate your voice?
-all-locales = All
-today = Today
-x-weeks-short =
-  { $count ->
-    [one] Week
-    *[other] { $count }wk
-  }
-x-months-short =
-  { $count ->
-    *[other] { $count }mo
-  }
-x-years-short =
-  { $count ->
-    *[other] { $count }y
-  }
-
-  
-help-make-dataset = Help us build a high quality and unbiased dataset
-profile-not-required = Having a profile is not required to contribute though it is helpful
-sign-up-account = Sign up for an account
-email-subscription-title = sign up for email updates
-
-## Account Benefits
-benefits = Benefits
-rich-data = Make your submitted data as rich as possible by providing some anonymous demographic data. We de-identify all demographic data before making it public.
-improve-audio = Profile information improves the audio data used in training speech recognition accuracy.
-keep-track = Keep track of your progress and metrics across multiple languages.
-compare-progress = See how your progress compares to other contributors all over the world.
-view-goals = View your progress against personal and project goals.
-join-newsletter = Optionally join on our email list for updates and new information about the project.
-
-## What's public
-whats-public = What's Public?
-email-not-public = We will not make your email public.
-recordings-and-locale-public = The number of recordings and which languages you contribute to will be public.
-username-optin-public = You can choose to make your username public or anonymous.
-demographic-deidentified = Optionally submitted demographic data (e.g. age, sex, language, and accent) is de-identified from your submitted voice data and will never be made public on your profile.
-username-email-not-demographic = Your username and email will not be associated with the published data.
-
-## Speak & Listen Shortcuts
-# Must be one letter that appears in the translated { skip } string.
-shortcut-skip = s
-
-## Listen Shortcuts
-# Must be one letter that appears in the translated play-string inside of { shortcut-play-toggle-label }.
-# Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
-shortcut-play-toggle = p
-shortcut-play-toggle-label = Play/Stop
-# Must be one letter that appears in the { vote-yes } string.
-# Must be different from { shortcut-skip }, { shortcut-vote-no } and { shortcut-play-toggle }
-shortcut-vote-yes = y
-# Must be one letter that appears in the { vote-no } string.
-# Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-play-toggle }
-shortcut-vote-no = n
-
-## Speak Shortcuts
-# Must be one letter that appears in the translated record-string inside of { shortcut-record-toggle-label }.
-# Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no }
-shortcut-record-toggle = r
-shortcut-record-toggle-label = Record/Stop
-shortcut-rerecord-toggle = [1-5]
-shortcut-rerecord-toggle-label = Re-record clip
-request-language-text = Don't see your language on Lok-Vacha yet?
-request-language-button = Request a Language
-
-## ProjectStatus
-status-contribute = Contribute Your Voice
-status-hours =
-    { $hours ->
-        [one] One validated hour so far!
-       *[other] { $hours } validated hours so far!
-    }
-# Variables:
-# $goal - number of hours representing the next goal
-status-goal = Next Goals: { $goal }
-english = English
-
-## ProfileForm
-profile-form-username =
-    .label = User Name
-profile-form-native-language =
-    .label = Native Language
-profile-form-additional-language =
-    .label = Additional Language
-profile-form-accent =
-    .label = Accent
-profile-form-age =
-    .label = Age
-profile-form-gender =
-    .label = Sex
-leaderboard-visibility =
-    .label = Leaderboard Visibility
-hidden = Hidden
-visible = Visible
-native-language =
-    .label = Native Language
-profile-form-submit-save = Save
-profile-form-submit-saved = Saved
-male = Male
-female = Female
-# Gender
-other = Other
-why-profile-title = Why a profile?
-why-profile-text =  By providing some information about yourself, the audio data you submit to Lok-Vacha will be more useful to Speech Recognition engines that use this data to improve their accuracy.
-dashboard = Dashboard
-build-profile = Build Profile
-avatar = Avatar
-goals = Goals
-settings = Settings
-edit-profile = Edit Profile
-profile-create-success = Success, profile created!
-profile-close = Close
-profile-explanation = Keep track of your progress with a profile and help our voice data be more accurate.
-thanks-for-account = Thanks for confirming your account, now let's build your profile.
-why-demographic = Why does this matter?
-why-demographic-explanation = Anonymized user data like age, sex, and accent helps improve the audio data used to train the accuracy of speech recognition engines. Your username and email will never be associated with your submitted data, and you can choose whether to make your username public or anonymous.
-accept-privacy = I'm okay with you handling this info as you explain in Mozilla's <privacyLink>Privacy Policy</privacyLink>
-login-identity = Login Identity
-login-signup = Log In / Sign Up
-edit = Edit
-email-subscriptions = Email Subscriptions
-download-profile = Download My Data
-contribution-experience = Contribution Experience
-skip-submission-feedback = Skip Submission Feedback
-skip-submission-description = During contribution submission feedback will be skipped after clicking 'Submit. Contribution will continue directly with the next set of 5 recordings or validations.
-skip-submission-note = Note: You will still need to select between Speak or Listen to change contribution type.
-off = Off
-on = On
-add-avatar-title = Add an avatar to your profile
-browse-file-title = Upload an image file
-browse-file = Drag and drop or <browseWrap>Browse</browseWrap>
-connect-gravatar = Connect with Gravatar
-gravatar_not_found = No gravatar found for your email
-file_too_large = The selected file is too large
-manage-subscriptions = Manage Subscriptions
-manage-email-subscriptions = Manage Email Subscriptions
-email-already-used = Email is already used for a different account
-add-language = Add Language
-change-email-setings = Change your email via Settings under Login Identity
-
-## FAQ
-faq-title = Frequently Asked Questions
-
-faq-what-cv-q = What is Project Lok-Vacha?
-faq-what-cv-a = Lok means people; Vacha means voice. Project Lok-Vacha is about collecting speech samples of real people and not just voice-over professionals. Voice recognition technology is revolutionizing the way we interact with machines, but the currently available systems are expensive and proprietary. Lok-Vacha is a database of donated voices of Indian speakers that lets anyone quickly and easily train voice-enabled apps in potentially all language. We're specifically collecting voice samples of Indian languages starting with more popular 15 languages (including Indian English & Hinglish) followed by more distant and less spoken languages and other dialects. The project ensures to cover the real-life colloquial language, words and phrases, including Hinglish. This makes the application more practical and relevant.  
-
-faq-why-important-q = Why is it important?
-faq-why-important-a = Speech is often the most natural way we communicate with each other and voice technologies are bringing that convenience to our computers and mobile devices. We want to empower developers to build amazing voice recognition applications like real-time transcription, translation and voice-enabled digital assistants. But right now most of the voice data required to build these kinds of apps is expensive. We hope the Lok-Vacha dataset will give developers what they need to innovate and make speech technology available in their own language. To make voice recognition even more universal, we're collecting voice samples from all corners of India. 
-
-faq-what-todo-q = What are you going to do with these voice samples?
-faq-what-todo-a = Having such diverse dataset of voices will empower developers, entrepreneurs, and communities to address this gap themselves. In addition to the project Lok-Vacha, we’re also building Speech Recognition Engine for Hinglish and all Indian languages called Vacha.AI. 
-
-faq-hinglish-q = What is Hinglish?
-faq-hinglish-a = Hinglish is a portmanteau (a blend word) of "Hindi" and "English". Hinglish may also contain words / references from other Indian languages and is not just restricted to Hindi. It is also used sometimes to refer to very peculiar usage /invention of words by Indians, even in a formal context. 
-
-faq-what-cv-and-deepspeech-q = What’s the difference between Lok-Vacha and Vacha.AI?
-faq-what-cv-and-deepspeech-a = Project Lok-Vacha is about collecting the audio samples of Indian languages. Vacha.AI is a Speech recognition engine, that uses the labelled data collected by Lok-Vacha.
-
-faq-is-goal-assistant-q = Is the goal of this app to build a voice assistant like Siri, Alexa, Cortana?
-faq-is-goal-assistant-a = The goal of the Project Lok-Vacha is to build a voice-text dataset. We are aiming to collect 10,000 hours of audio data for all major Indian (Indian subcontinent) languages.   is to enable anyone in the world to build speech recognition, speaker recognition, or any other type of application that requires voice data. A voice assistant is just one of many types of applications you could use the dataset to build.
-
-faq-list-q = Which languages I can contribute to? 
-faq-list-a = Currently, we are allowing people to speak & validate 15 languages, these are: Indian English, Hindi, Bangali, Urdu, Assamese, Punjabi, Gujarati, Marathi, Kannada, Telugu, Tamil, Mallayallam, Nepali, Odiya.
-
-faq-do-want-native-q = I am a non-native speaker and I speak with an accent, do you still want my voice?
-faq-do-want-native-a = Yes, we especially want your voice! Part of the aim of Lok-Vacha is to gather as many different accents as possible so that voice recognition services work equally well for everyone. This means donations from non-native speakers are particularly important.
-
-faq-why-different-speakers-q = Why do you need so many different speakers per language?
-faq-why-different-speakers-a = Most speech databases are trained with over-over professional artists with an overrepresentation of certain demographics, which results in a bias towards male and middle class. Accents and dialects that tend to be under-represented in training data sets are typically associated with groups of people who are already marginalised. Many machines also struggle to understand female voices. The variety and randomness is good for ML problem.
-
-faq-why-my-lang-q = Why is my language is not included yet?
-faq-why-my-lang-new-a = We are specifically working on languages spoken in India. If you speak one of 6000+ Indian languages, which is not listed here, you can mail us. We may add Marwadi, Sindhi, Kashmiri, Maithili, Dogri, Konkani, Bodo in next phase of development of this app. 
-
-faq-what-quality-q = What level of audio quality is required for a voice clip to be used in the dataset?
-faq-what-quality-a = We want the Lok-Vacha dataset to reflect the audio quality a speech-to-text engine will hear in the wild, so we’re looking for variety. In addition to a diverse community of speakers, a dataset with varying audio quality will teach the speech-to-text engine to handle various real-world situations, from background talking to car noise. As long as your voice clip is intelligible, it should be good enough for the dataset.
-
-faq-why-10k-hours-q = Why is 10,000 validated hours the per language goal for capturing audio?
-faq-why-10k-hours-a = Research in Deep Learning/ AI technology says that 10,000 hours of audio data is approximately the number of hours required to train a production-ready speech-to-text system.
  
-faq-how-calc-hours-q = How does you calculate hours?
-faq-how-calc-hours-a = We calculate hours by estimating the average length of each recording, and then multiplying that number by the total number of recordings across all languages.
-
-faq-how-get-q = How can I get the Lok-Vacha data?
-faq-how-get-a = The data is not ready yet. Even after collecting good amount of data, bundling, cleaning, and labelling the data will require additional time and resources.  We may release the data for AI/ML developers and enthusiasts once it’s large enough. 
-
-faq-pay-now-q = I’m ready to pay for the vernacular data, can I get it now? 
-faq-pay-now-a = We appeal you to help us spread the word about this project; and convince people to donate their voices. This will fasten the data collection process and the release timeline. 
-
-faq-contribute-q = How can I contribute?
-faq-contribute-a = You can contribute by creating an account; donating your voice by speaking out loud the sentences provided by the app; and validating the other voices by approving/rejecting others work. Signing up for the account at Lok-Vacha would help the project increase the accuracy of the ASR model. 
-
-faq-why-account-q = Why should I sign up for an account?
-faq-is-account-public-q = Is my account information public?
-faq-is-account-public-a = No. 
-
-faq-what-is-cv = What is Lok-Vacha?
-faq-using-cv = Using Lok-Vacha
-faq-description = Lok-Vacha is an initiative to help teach machines how real people speak.
-faq-search-for-answers =
-    .label = Search for answers
-
-## ABOUT US
-about-title = What is LOK?
-about-subtitle = "Lok" in Hindi (&amp; many other Indian languages) means people. "Vacha" means voice. Lok-Vacha is an initiative to help teach machines how real people speak. In addition to the Lok-Vacha dataset, we’re also building an open source Automated Speech Recognition (ASR) engine.
-about-header-description = Both of these projects are part of our efforts to bridge the digital speech divide. Voice recognition technologies bring a human dimension to our devices, but developers need an enormous amount of voice data to build them. Currently, most of that data is expensive and proprietary. We want to make sure the data represents the diversity of real people. Together we can make voice recognition better for everyone.
-how-does-it-work-title = How does it work?
-how-does-it-work-text = We’re crowdsourcing an open-source dataset of voices. Donate your voice, validate the accuracy of other people’s clips, make the dataset better for everyone.
-about-speak = Speak
-about-speak-text = Contributors record voice clips by reading from a bank of donated sentences.
-about-listen-queue = Listen-Queue
-about-listen-queue-text = Voice clips are entered into a submission queue that readies them for listening.
-about-listen = Listen
-about-listen-text = Users validate the accuracy of donated clips, checking that the speaker read the sentence correctly.
-about-is-it-valid = Is the clip valid?
-about-is-it-valid-text = A voice clip is marked "valid" when a user gives it a Yes vote.
-about-yes-votes = ≥ 2 Yes votes
-about-yes-votes-text = To make it into the Lok dataset, a voice clip must be validated by two separate users.
-about-no-votes = ≥ 2 No votes
-about-no-votes-text = When a user rejects a voice clip it returns to the Queue. If rejected a second time, the voice clip is moved to the Clip Graveyard.
-about-dataset = Lok Dataset
-about-dataset-text = The Lok Dataset contains hundreds of thousands of voice samples that help developers build voice recognition tools.
-about-clip-graveyard = Clip Graveyard
-about-clip-graveyard-text = The Clip Graveyard consists of voice clips that didn't make it into the Lok dataset. Just like the dataset, the Clip Graveyard is available for download.
-about-partners = Partners
-about-become-a-partner = Become a partner
-about-partnership = Lok is a collaborative project, and we're depending on our community of partners and contributors to build the largest open-source dataset of voices ever. We would like to thank the following people and organizations for their help with the project:
-about-get-involved = Get involved
-about-get-involved-text = Want to help make Lok-Vacha even better? 
-    Have suggestions &amp; Feedback? Share on <discourseLink>Forums</discourseLink>, 
-    Found issue or a bug? Report it on <githubLink>GitHub</githubLink>. 
-    or Contact us for anything else <contactLink>Email</contactLink>.
-
-about-nav-why-common-voice = Why ?
-about-nav-how-it-works = How ?
-about-nav-partners = Partners
-about-nav-get-involved = Get involved
-mycroft-title = Mycroft Ai
-mycroft-subtitle = Artificial intelligence
-mycroft-description = Mycroft is the world’s first open source assistant.
-    Mycroft runs anywhere - on a desktop computer, inside an automobile, or on a Raspberry Pi.
-mycroft-secondary-description = This is open source software which can be freely remixed, extended, and improved. Mycroft may be used in anything from a science project to an enterprise software application.
-
-## Glossary
-glossary = Glossary
-localization = Localization
-localization-explanation = This is our process for translating and adapting our content for many locales (languages).
-sentence-collection = Sentence Collection
-sentence-collection-explanation = Collecting sentences from the public domain, or writing new ones for the public domain.
-hours-recorded-explanation = The count of voice recording hours we have collected so far.
-hours-validated-explanation = The count of voice recording hours that have been validated by 2 out of 3 users with a vote of “Yes”. These mark progress toward the overall project 10k hours goal.
-sst = Speech-to-text (STT)
-sst-explanation = Speech-to-text (STT) technologies convert voice data into text.
-de-identified = De-identified
-de-identified-explanation = The process by which a contributor’s profile information is obscured from their donated voice clips when packaged for download as a part of the dataset.
-
-## NotFound
-notfound-title = Not found
-notfound-content = I’m afraid I don’t know what you’re looking for.
-
-## Data
-data-download-button = Download Lok Data
-data-download-yes = Yes
-data-download-deny = No
-data-download-license = License: <licenseLink>CC-0</licenseLink>
-data-download-modal = You are about to initiate a download of <size>{ $size }GB</size>, proceed?
-data-subtitle = We are building an open and publicly available dataset of voices that everyone can use to train speech-enabled applications.
-data-explanatory-text = We believe that large and publicly available voice datasets foster innovation and healthy commercial competition in machine-learning based speech technology. This is a global effort and we invite everyone to participate. Our aim is to help speech technology be more inclusive, reflecting the diversity of voices from around the world.
-data-get-started = <speechBlogLink>Get Started with Speech Recognition</speechBlogLink>
-data-other-title = Other voice datasets…
-data-other-goto = Go to { $name }
-data-other-download = Download Data
-data-bundle-button = Download Dataset Bundle
-data-bundle-description = Lok data plus all other voice datasets above.
-license = License: <licenseLink>{ $license }</licenseLink>
-license-mixed = Mixed
-review-terms = By using Lok, you agree to our <termsLink>Terms</termsLink> and <privacyLink>Privacy Notice</privacyLink>
-terms-agree = I agree
-terms-disagree = I do not agree
-review-aborted = Upload aborted. Do you want to delete your recordings?
-review-submit-title = Review & Submit
-review-submit-msg = Thank you for recording!<lineBreak></lineBreak>Now review and submit your clips below.
-review-recording = Review
-review-rerecord = Re-record
-review-cancel = Cancel Submission
-review-keep-recordings = Keep the recordings
-review-delete-recordings = Delete my recordings
-
-## New Datasets Page
-datasets-headline = We’re building an open source, multi-language dataset of voices that anyone can use to train speech-enabled applications.
-datasets-positioning =  We believe that large, publicly available voice datasets will foster innovation and healthy commercial competition in machine-learning based speech technology.
-    Common Voice’s multi-language dataset is already the largest publicly available voice dataset of its kind, but it’s not the only one.
-    Look to this page as a reference hub for other open source voice datasets and, as Common Voice continues to grow, a home for our release updates.
-language = Language
-# File size in gigabytes
-size = Size
-validated-hr-total = Validated Hr. Total
-overall-hr-total = Overall Hr. Total
-cv-license = License
-audio-format = Audio Format
-number-of-voices = Number of Voices
-splits = Splits
-email-to-download = Enter Email to Download
-why-email = <b>Why an email?</b> We may need to contact you in the future about changes to the dataset, an email provides us a point of contact.
-confirm-size = You are prepared to initiate a download of <b>{ $size }</b>
-size-gigabyte = GB
-size-megabyte = MB
-confirm-no-identify = <b>You agree</b> to not attempt to determine the identity of speakers in the Lok dataset
-download-language = Download { $language }
-validated-hours = Validated Hours
-recorded-hours = Recorded Hours
-whats-inside = What’s inside the Lok dataset?
-dataset-description-hours =
-        Each entry in the dataset consists of a unique MP3 and corresponding text file. Many of the <b>{ $total }</b> recorded hours in the dataset also include demographic metadata like age, sex, and accent that can help train the accuracy of speech recognition engines.
-        The dataset currently consists of <b>{ $valid }</b> validated hours in <b>{ $languages }</b> languages, but we’re always adding more voices and languages. Take a look at our <languagesLink>Languages page</languagesLink> to request a language or start contributing.
-want-dataset-update = Want updates when we release a new version of the Lok dataset? Subscribe to our newsletter.
-subscribe = Subscribe
-get-started-speech = Get Started with Speech Recognition
-other-datasets = Other Voice Datasets
-feedback-q = Have Feedback?
-deepspeech-info = The Common Voice dataset complements Mozilla’s open source voice recognition engine Deep Speech, which you can use to build speech recognition applications. Read our <githubLink>Github overview</githubLink> or join the <discourseLink>DeepSpeech Discourse</discourseLink> to learn how to get started.
-common-voice-info-new = Have questions about Common Voice? Ideas for improvements or feedback about a specific language? Join us on our <discourseLink>Discourse forum</discourseLink> and let us know.
-data-other-librispeech-description = LibriSpeech is a corpus of approximately 1000 hours of 16Khz read English speech derived from read audiobooks from the LibriVox project.
-data-other-ted-name = TED-LIUM Corpus
-data-other-ted-description = The TED-LIUM corpus was made from audio talks and their transcriptions available on the TED website.
-data-other-voxforge-description = VoxForge was set up to collect transcribed speech for use with Free and Open Source Speech Recognition Engines.
-data-other-tatoeba-description = Tatoeba is a large database of sentences, translations, and spoken audio for use in language learning. This download contains spoken English recorded by their community.
-your-feedback = Do you have ideas on how we can make the Lok dataset better? Let us know on Discourse
-go-discourse = Go to Discourse
-missing-language = Don’t see your language reflected in the Dataset? To request a language head over to our Languages page.
-go-languages-page = Go to Languages Page
-ready-to-validate = Ready to help validate sentences?
-more = More
-close = Close
-download = Download
-
-## Download Modal
-download-title = Your download has started.
-download-helpus = Help us build a community around voice technology, stay in touch via email.
-download-form-email =
-    .label = Enter your email
-    .value = Thank you, we'll be in touch.
-download-back = Return to Lok Datasets
-download-no = No Thanks
-
-## Contact Modal
-contact-title = Contact Form
-contact-form-name =
-    .label = Name
-contact-form-message =
-    .label = Message
-contact-required = *required
-
-## Request Language Modal
-request-language-title = Language Request
-request-language-form-language =
-    .label = Language
-request-language-success-title = Language request successfully submitted, thank you.
-request-language-success-content = We will be in touch with more information about how to add your language to Common Voice very soon.
-select-language = Select a Language...
-other-language = Other Language
-
-## Languages Overview
-language-section-in-progress = In Progress
-language-section-in-progress-new-description = These languages are currently under community development. The progress bars indicate how far each language is in the process of <localizationGlossaryLink>website localization</localizationGlossaryLink> and <sentenceCollectionGlossaryLink>sentence collection</sentenceCollectionGlossaryLink>.
-language-section-launched = Launched
-language-section-launched-description = For these launched languages the website has been successfully <localizationGlossaryLink>localized</localizationGlossaryLink>, and has enough <sentenceCollectionGlossaryLink>sentences collected</sentenceCollectionGlossaryLink> to allow for ongoing <speakLink>Speak</speakLink> and <listenLink>Listen</listenLink> contributions.
-languages-show-more = See More
-languages-show-less = See Less
-language-speakers = Speakers
-language-meter-in-progress = Progress
-language-total-progress = Total
-language-search-input =
-    .placeholder = Search
-localized = Localized
-sentences = Sentences
-total-hours = Validated Hrs
-
-## New Contribution
-action-click = Click
-action-tap = Tap
-contribute = Contribute
-listen = Listen
-skip = Skip
-shortcuts = Shortcuts
-clips-with-count = <bold>{ $count }</bold> Clips
-goal-help-recording = You've helped Lok-Vacha reach <goalPercentage></goalPercentage> of our daily { $goalValue } recording goal!
-goal-help-validation = You've helped Lok-Vacha reach <goalPercentage></goalPercentage> of our daily { $goalValue } validation goal!
-contribute-more =
-    { $count ->
-       *[other] Ready to do { $count } more?
-    }
-record-cta = Start recording
-record-platform-not-supported = We’re sorry, but your platform is not currently supported.
-record-platform-not-supported-desktop = On desktop computers, you can download the latest:
-record-platform-not-supported-ios = <bold>iOS</bold> users can download our free app:
-record-must-allow-microphone = You must allow microphone access.
-record-no-mic-found = No microphone found.
-record-error-too-short = The recording was too short.
-record-error-too-long = The recording was too long.
-record-error-too-quiet = The recording was too quiet.
-record-cancel = Cancel Re-recording
-record-instruction = { $actionType }<recordIcon></recordIcon> then read the sentence aloud
-record-stop-instruction = { $actionType }<stopIcon></stopIcon> when done
-record-three-more-instruction = Three to go!
-record-again-instruction = Great!<recordIcon></recordIcon> Record your next clip
-record-again-instruction2 = Keep it up, record again <recordIcon></recordIcon>
-record-last-instruction = <recordIcon></recordIcon> Last one!
-review-tooltip = Review & re-record clips here as you go
-unable-speak = Unable to speak right now?
-review-instruction = Review & re-record clips if needed
-record-submit-tooltip = { $actionType } submit when ready
-clips-uploaded = Clips Uploaded
-record-abort-title = Finish recording first?
-record-abort-text = Leaving now means you'll lose your progress
-record-abort-submit = Submit clips
-record-abort-continue = Finish recording
-record-abort-delete = Exit & Delete clips
-listen-instruction = { $actionType }<playIcon></playIcon> did they accurately speak the sentence?
-listen-again-instruction = Great work!<playIcon></playIcon> Listen again when you're ready
-listen-3rd-time-instruction = 2 down, keep it up!<playIcon></playIcon>
-listen-last-time-instruction = <playIcon></playIcon>Last one!
-nothing-to-validate = We don't have anything to validate in this language, help us fill the queue.
-record-button-label = Record your voice
-share-title-new = <bold>Help us</bold> find more voices
-
-## Goals
-streaks = Streaks
-days = { $count ->
-  [one] Day
-  *[other] Days
-}
+# Don't rename the following section, its contents are auto-inserted based on the name (see scripts/import-locals.js) 
+# [Languages] 
+## Languages 
+as = आसामी
+bn = बंगाली
+en = इंग्रजी
+gj = गुजराती
+hi = हिंदी
+kn = कन्नड
+ml = मल्याळम
+mr = मराठी
+ne = नेपाळी
+or = ओडिया
+pa = पंजाबी
+ta = तामिळ
+te = तेलगू
+ur = उर्दू
+# [/] 
+ 
+## Layout 
+speak= बोला
+speak-now = बोल आता
+datasets = डेटासेट
+languages = भाषा
+about = बद्दल
+profile = प्रोफाइल
+help = मदत करा
+contact = संपर्क
+privacy = गोपनीयता
+terms = अटी
+cookies = कुकीज
+faq = सामान्य प्रश्न
+content-license-text = <licenseLink>क्रिएटिव्ह कॉमन्स परवाना</licenseLink> अंतर्गत उपलब्ध सामग्री
+share-title = इतरांना त्यांचा आवाज दान करण्यास आम्हाला मदत करा!
+share-text = वास्तविक लोक कसे बोलतात हे शिकविण्यास मदत करा, voice { $link } at वर आपला आवाज दान करा
+link-copied = दुवा कॉपी केला
+back-top = वरती जा
+logout = बाहेर पडणे
+ 
+## Home Page 
+home-title = लोक-वचन ऑडिओ नमुने गोळा करेल आणि गर्दीच्या साहाय्याने उत्तरे सत्यापित करतील.
+wall-of-text-start = आवाज नैसर्गिक आहे, आवाज मानवी आहे. म्हणूनच आम्ही आमच्या मशीनसाठी वापरण्यायोग्य व्हॉईस तंत्रज्ञान तयार करण्यास मोहित आहोत. परंतु व्हॉईस सिस्टम तयार करण्यासाठी, मोठ्या प्रमाणात व्हॉईस डेटा आवश्यक आहे.
+wall-of-text-more-mobile = मोठ्या कंपन्यांद्वारे वापरलेला बहुतेक डेटा बहुसंख्य लोकांना उपलब्ध नसतो. आम्हाला वाटते की हे नाविन्य आणते. म्हणूनच आम्ही भारतीय-भाषांसाठी आवाज ओळखण्यात मदत करण्यासाठी 'लोक-वचन' हा प्रकल्प सुरू केला आहे.
+wall-of-text-more-desktop = भारतीय भाषांचा वास्तववादी आणि व्यावहारिक व्हॉईस डेटाबेस तयार करण्यात मदत करण्यासाठी आता आपण आपला आवाज दान करू शकता. मशीन्स वास्तविक लोक कसे बोलतात हे शिकण्यास मदत करण्यासाठी एक वाक्य वाचा. गुणवत्ता सुधारण्यासाठी अन्य योगदानकर्त्यांचे कार्य तपासा. हे इतके सोपे आहे!
+wall-of-text-first = आवाज नैसर्गिक आहे, आवाज मानवी आहे. म्हणूनच आम्ही आमच्या मशीनसाठी वापरण्यायोग्य व्हॉईस तंत्रज्ञान तयार करण्यास उत्सुक आहोत. परंतु व्हॉईस सिस्टम तयार करण्यासाठी, विकसकांना अत्यंत मोठ्या प्रमाणात व्हॉईस डेटा आवश्यक आहे.
+wall-of-text-second = मोठ्या कंपन्यांद्वारे वापरलेला बहुतेक डेटा बहुसंख्य लोकांना उपलब्ध नसतो. आम्हाला वाटते की हे नाविन्य आणते. म्हणूनच आम्ही भारतीय-भाषांसाठी आवाज ओळखण्यात मदत करण्यासाठी 'लोक-वचन' हा प्रकल्प सुरू केला आहे.
+show-wall-of-text = अधिक वाचा
+help-us-title = वाक्य मान्य करण्यात आमची मदत करा!
+help-us-explain = प्ले दाबा, ऐका आणि आम्हाला सांगा: त्यांनी खाली वाक्ये अचूकपणे बोलली का?
+no-clips-to-validate = या भाषेत ऐकण्यासाठी कोणत्याही क्लिप नसल्यासारखे दिसते आहे. आता काही रेकॉर्ड करून रांगेत भरण्यास मदत करा.
+vote-yes = होय
+vote-no = नाही
+toggle-play-tooltip = प्ले मोड टॉगल करण्यासाठी { shortcut-play-toggle } शॉर्टकट-प्ले-टॉगल Press दाबा
+speak-subtitle = आपला आवाज दान करा
+speak-goal-text = क्लिप रेकॉर्ड केल्या
+listen-subtitle = व्हॉइस सत्यापित करण्यात आमची मदत करा
+listen-goal-text = क्लिप सत्यापित
+hours-recorded = रेकॉर्ड केलेले तास
+hours-validated = तासांचे प्रमाणित
+voices-online = व्हॉइस ऑनलाईन
+todays-progress = आजची प्रगती
+help-reach-goal = आम्हाला{ $goal } वर पोहोचण्यात मदत करा
+read-terms-q = आपण आमच्या अटी वाचल्या आहेत का?
+ready-to-record = आपला आवाज दान करण्यास तयार आहात?
+all-locales = सर्व
+today = आज
+x-weeks-short 
+{ $count -> 
+[one] Week 
+*[other] { $count }wk 
+} 
+x-months-short  
+{ $count -> 
+*[other] { $count }mo 
+} 
+x-years-short 
+{ $count -> 
+*[other] { $count }y 
+} 
+ 
+ 
+help-make-dataset = आम्हाला उच्च दर्जाचे आणि निःपक्षपाती डेटासेट तयार करण्यात मदत करा
+profile-not-required = एखादे प्रोफाइल उपयुक्त असले तरीही योगदान देण्याची आवश्यकता नाही
+sign-up-account = खात्यासाठी साइन अप करा
+email-subscription-title = ईमेल अद्यतनांसाठी साइन अप करा
+ 
+## Account Benefits 
+benefits = फायदे
+rich-data = आपला अज्ञात लोकसंख्याशास्त्र डेटा प्रदान करुन आपला सबमिट केलेला डेटा शक्य तितक्या समृद्ध बनवा. आम्ही सर्व लोकसंख्याशास्त्रविषयक डेटा सार्वजनिक करण्यापूर्वी त्याची ओळख पटवितो.
+improve-audio = प्रोफाइल माहिती प्रशिक्षण भाषण अचूकतेमध्ये वापरलेला ऑडिओ डेटा सुधारते.
+keep-track = आपल्या प्रगतीचा आणि एकाधिक भाषांमधील मेट्रिक्सचा मागोवा ठेवा.
+compare-progress = आपली प्रगती जगातील इतर योगदानकर्त्यांशी कशी तुलना केली जाते ते पहा.
+view-goals = वैयक्तिक आणि प्रकल्प लक्ष्यांच्या विरूद्ध आपली प्रगती पहा.
+join-newsletter = प्रकल्पाविषयी अद्यतने आणि नवीन माहितीसाठी आमच्या ईमेल सूचीवर वैकल्पिकरित्या सामील व्हा.
+ 
+## What's public 
+whats-public = सार्वजनिक काय आहे?
+email-not-public = आम्ही आपले ईमेल सार्वजनिक करणार नाही.
+recordings-and-locale-public = रेकॉर्डिंगची संख्या आणि आपण कोणत्या भाषांमध्ये योगदान देता ते सार्वजनिक केले जाईल.
+username-optin-public = आपण आपले वापरकर्तानाव सार्वजनिक किंवा निनावी ठेवणे निवडू शकता.
+demographic-deidentified = वैकल्पिकरित्या सबमिट केलेला डेमोग्राफिक डेटा (उदा. वय, लिंग, भाषा आणि उच्चारण) आपल्या सबमिट केलेल्या व्हॉइस डेटामधून ओळखला गेला नाही आणि आपल्या प्रोफाइलवर कधीही सार्वजनिक केला जाणार नाही.
+username-email-not-demographic = आपले वापरकर्तानाव आणि ईमेल प्रकाशित डेटाशी संबद्ध राहणार नाही.
+ 
+## Speak & Listen Shortcuts 
+# Must be one letter that appears in the translated { skip } string. 
+shortcut-skip = s
+ 
+## Listen Shortcuts 
+# Must be one letter that appears in the translated play-string inside of { shortcut-play-toggle-label }. 
+# Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no } 
+shortcut-play-toggle = p
+shortcut-play-toggle-label = प्ले / थांबा
+# Must be one letter that appears in the { vote-yes } string. 
+# Must be different from { shortcut-skip }, { shortcut-vote-no } and { shortcut-play-toggle } 
+shortcut-vote-yes = y
+# Must be one letter that appears in the { vote-no } string. 
+# Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-play-toggle } 
+shortcut-vote-no = n
+ 
+## Speak Shortcuts 
+# Must be one letter that appears in the translated record-string inside of { shortcut-record-toggle-label }. 
+# Must be different from { shortcut-skip }, { shortcut-vote-yes } and { shortcut-vote-no } 
+shortcut-record-toggle = r
+shortcut-record-toggle-label = रेकॉर्ड / स्टॉप
+shortcut-rerecord-toggle = [१--5]
+shortcut-rerecord-toggle-label = क्लिप पुन्हा रेकॉर्ड करा
+request-language-text = आपली भाषा अद्याप लोक-वाचनावर दिसत नाही?
+request-language-button = भाषेची विनंती करा
+ 
+## ProjectStatus 
+status-contribute = आपल्या आवाजाचे योगदान द्या
+status-hours 
+{ $hours -> 
+[one]आतापर्यंत एक सत्यापित तास!
+* [other] आतापर्यंत {$hours} सत्यापित तास!
+} 
+# Variables: 
+# $goal - number of hours representing the next goal 
+status-goal = पुढील गोल: { $goal }
+english = इंग्रजी
+ 
+## ProfileForm 
+profile-form-username 
+.label = वापरकर्त्याचे नाव
+profile-form-native-language 
+.label = मूळ भाषा
+profile-form-additional-language 
+.label = अतिरिक्त भाषा
+profile-form-accent 
+.label = उच्चारण
+profile-form-age 
+.label = वय
+profile-form-gender 
+.label = सेक्स
+leaderboard-visibility 
+.label = लीडरबोर्ड दृश्यमानता
+hidden = लपलेले
+visible = दृश्यमान
+native-language = 
+.label = मूळ भाषा
+profile-form-submit-save = जतन करा
+profile-form-submit-saved = जतन केले
+male = नर
+female = स्त्री
+# Gender 
+other = इतर
+why-profile-title = प्रोफाइल का?
+why-profile-text = आपल्याबद्दल काही माहिती प्रदान करून, आपण लोक-वाचनावर सबमिट केलेला ऑडिओ डेटा अचूकता सुधारण्यासाठी या डेटाचा वापर करणारे स्पीच रिकग्निशन इंजिनसाठी अधिक उपयुक्त ठरेल.
+dashboard = डॅशबोर्ड
+build-profile = प्रोफाइल तयार करा
+avatar = अवतार
+goals = गोल
+settings = सेटिंग्ज
+edit-profile = प्रोफाईल संपादित करा
+profile-create-success = यश, प्रोफाइल तयार केले!
+profile-close = बंद
+profile-explanation = प्रोफाइलसह आपल्या प्रगतीचा मागोवा ठेवा आणि आमच्या व्हॉइस डेटाला अधिक अचूक होण्यास मदत करा.
+thanks-for-account = आपल्या खात्याची पुष्टी केल्याबद्दल धन्यवाद, आता आपण आपले प्रोफाइल तयार करूया.
+why-demographic = हे प्रकरण का आहे?
+why-demographic-explanation = वय, लिंग आणि उच्चारण यासारख्या अज्ञात वापरकर्त्याचा डेटा उच्चार ओळख इंजिनांच्या अचूकतेस प्रशिक्षित करण्यासाठी वापरलेला ऑडिओ डेटा सुधारण्यात मदत करतो. आपले वापरकर्तानाव आणि ईमेल कधीही आपल्या सबमिट केलेल्या डेटाशी संबद्ध राहणार नाही आणि आपण आपले वापरकर्तानाव सार्वजनिक किंवा निनावी करावे की नाही ते निवडू शकता.
+accept-privacy = आपण मोझिलाच्या <privacyLink>गोपनीयता धोरण</privacyLink> मध्ये स्पष्ट केल्याप्रमाणे ही माहिती हाताळण्यास मी ठीक आहे.
+login-identity = लॉगिन ओळख
+login-signup = लॉग इन / साइन अप
+edit = संपादित करा
+email-subscriptions = ईमेल सदस्यता
+download-profile = माझा डेटा डाउनलोड करा
+contribution-experience = योगदानाचा अनुभव
+skip-submission-feedback = सबमिशन अभिप्राय वगळा
+skip-submission-description = योगदानाच्या दरम्यान सबमिट केल्यावर 'सबमिट' क्लिक केल्यानंतर अभिप्राय वगळला जाईल. पुढील 5 रेकॉर्डिंग्ज किंवा वैधतेच्या संचासह थेट योगदान दिले जाईल.
+skip-submission-note = टीप: योगदानाचा प्रकार बदलण्यासाठी आपण बोलणे किंवा ऐकणे दरम्यान अद्याप निवडणे आवश्यक आहे.
+off = बंद
+on = चालू
+add-avatar-title = आपल्या प्रोफाइलमध्ये अवतार जोडा
+browse-file-title = एक प्रतिमा फाइल अपलोड करा
+browse-file = ड्रॅग आणि ड्रॉप किंवा  <browseWrap>Browse</browseWrap>
+connect-gravatar = Gravatar सह कनेक्ट करा
+gravatar_not_found = आपल्या ईमेलसाठी कोणतेही गुरुतर सापडले नाही
+file_too_large = निवडलेली फाईल खूप मोठी आहे
+manage-subscriptions = सदस्यता व्यवस्थापित करा
+manage-email-subscriptions = ईमेल सदस्यता व्यवस्थापित करा
+email-already-used = ईमेल आधीपासून भिन्न खात्यासाठी वापरलेले आहे
+add-language = भाषा जोडा
+change-email-setings = लॉगिन ओळख अंतर्गत सेटिंग्जद्वारे आपले ईमेल बदला
+ 
+## FAQ 
+faq-title = सतत विचारले जाणारे प्रश्न
+ 
+faq-what-cv-q = प्रकल्प लोक-वचन म्हणजे काय?
+faq-what-cv-a = लोक म्हणजे लोक; वाचा म्हणजे आवाज. प्रोजेक्ट लोक-वाचा म्हणजे केवळ व्हॉईस-ओव्हर व्यावसायिकांसाठी नव्हे तर वास्तविक लोकांचे भाषण नमुने गोळा करणे होय. व्हॉईस रेकग्निशन तंत्रज्ञान आम्ही मशीन्सशी संवाद साधण्याच्या मार्गाने क्रांतिकारक आहे, परंतु सध्या उपलब्ध असलेल्या सिस्टम महागड्या आणि मालकीच्या आहेत. लोक-वाच हा भारतीय भाषकांच्या दान केलेल्या आवाजाचा डेटाबेस आहे जो कोणालाही जलद आणि सहजपणे सर्व भाषांमध्ये व्हॉईस-सक्षम अ‍ॅप्सचे प्रशिक्षण देऊ देतो. आम्ही विशेषत: अधिक लोकप्रिय १ languages ​​भाषांसह (भारतीय इंग्रजी आणि हिंग्लिश यासह) सुरू होणार्‍या भारतीय भाषांचे व्हॉइस नमुने एकत्रित करीत आहोत, त्यानंतर अधिक दूरच्या आणि कमी बोलल्या जाणार्‍या भाषा आणि अन्य पोटभाषा. प्रोजेक्टमध्ये हिंग्लिशसह वास्तविक जीवनाची बोलणी, शब्द आणि वाक्ये समाविष्ट करणे सुनिश्चित केले आहे. हे अनुप्रयोग अधिक व्यावहारिक आणि संबंधित बनवते.
+ 
+faq-why-important-q = हे महत्वाचे का आहे?
+faq-why-important-a = बोलणे हा बर्‍याचदा नैसर्गिक मार्गाने आम्ही एकमेकांशी संवाद साधतो आणि व्हॉइस तंत्रज्ञान ही सुविधा आमच्या कॉम्प्यूटर आणि मोबाइल डिव्हाइसमध्ये आणत आहेत. आम्हाला विकसकांना रीअल-टाइम ट्रान्सक्रिप्शन, ट्रान्सलेशन आणि व्हॉईस-सक्षम डिजिटल सहाय्यक सारख्या आश्चर्यकारक व्हॉईस रेकग्निशन अनुप्रयोग तयार करण्यासाठी सक्षम बनवायचे आहे. परंतु सध्या या प्रकारच्या अॅप्स तयार करण्यासाठी आवश्यक असलेला बहुतेक व्हॉईस डेटा महाग आहे. आम्हाला आशा आहे की लोक-वाचा डेटासेट डेव्हलपर्सना त्यांच्यासाठी नवीन भाषा बनविण्याची व भाषण तंत्रज्ञान त्यांच्या भाषेत उपलब्ध करुन देण्यास आवश्यक असेल. व्हॉईस ओळख आणखी सार्वत्रिक बनविण्यासाठी आम्ही भारताच्या कानाकोप from्यातून व्हॉईसचे नमुने गोळा करीत आहोत.
+ 
+faq-what-todo-q = या व्हॉईस नमुन्यांसह आपण काय करणार आहात?
+faq-what-todo-a = आवाजाचे असे वैविध्यपूर्ण डेटासेट विकसक, उद्योजक आणि समुदायांना या अंतरांबद्दल स्वतः सामोरे जाण्यास सामर्थ्य देईल. लोक-वचन या प्रकल्पाव्यतिरिक्त, आम्ही हिंग्लिश आणि वाच.ए.आय. नावाच्या सर्व भारतीय भाषांसाठी स्पीच रिकग्निशन इंजिन देखील तयार करीत आहोत.
+ 
+faq-hinglish-q = हिंग्लिश म्हणजे काय?
+faq-hinglish-a = हिंग्लिश हा "हिंदी" आणि "इंग्रजी" चा पोर्टमँटेउ (एक मिश्रण शब्द) आहे. हिंग्लिशमध्ये अन्य भारतीय भाषांमधील शब्द / संदर्भ असू शकतात आणि ते फक्त हिंदीपुरते मर्यादित नाहीत. औपचारिक संदर्भातही कधीकधी हा शब्द भारतीयांच्या अगदी विचित्र उपयोग / शब्दाचा शोध घेण्याकरिता केला जातो.
+ 
+faq-what-cv-and-deepspeech-q = लोक-वाच आणि वाच.ए.ए. मध्ये काय फरक आहे?
+faq-what-cv-and-deepspeech-a = प्रोजेक्ट लोक-वचन भारतीय भाषांचे ऑडिओ नमुने गोळा करण्याविषयी आहे. वाच.ए.आय. एक भाषण ओळख इंजिन आहे, जे लोक-वाच द्वारा संकलित केलेल्या लेबल डेटाचा वापर करते.
+ 
+faq-is-goal-assistant-q = या अ‍ॅपचे ध्येय सिरी, अलेक्सा, कॉर्टानासारखे व्हॉईस सहाय्यक तयार करणे आहे काय?
+faq-is-goal-assistant-a = प्रोजेक्ट लोक-वचनचे लक्ष्य व्हॉईस-टेक्स्ट डेटासेट तयार करणे आहे. जगातील कोणालाही भाषण ओळख, स्पीकर ओळख किंवा व्हॉईस डेटा आवश्यक असणार्‍या कोणत्याही प्रकारचा अनुप्रयोग तयार करण्यास सक्षम बनविणे आहे. व्हॉईस सहाय्यक आपण तयार करण्यासाठी डेटासेट वापरू शकता अशा अनेक प्रकारच्या अनुप्रयोगांपैकी फक्त एक आहे.
+ 
+faq-list-q = मी कोणत्या भाषांमध्ये योगदान देऊ शकतो?
+faq-list-a = सध्या, आम्ही लोकांना 15 भाषा बोलू आणि मान्य करू देत आहोत, या आहेतः भारतीय इंग्रजी, हिंदी, बंगाली, उर्दू, आसामी, पंजाबी, गुजराती, मराठी, कन्नड, तेलगू, तामिळ, मल्लल्लाम, नेपाळी, ओडिया.
+ 
+faq-do-want-native-q = मी एक देशी नसलेला स्पीकर आहे आणि मी एका उच्चारणानं बोलतो, तुम्हाला अजूनही माझा आवाज पाहिजे आहे का?
+faq-do-want-native-a = होय, आम्हाला आपला आवाज विशेषत: हवा आहे! लोक-वाचनाच्या उद्दीष्टेचा एक भाग म्हणजे शक्य तितक्या विविध उच्चारण एकत्र करणे जेणेकरून आवाज ओळख सेवा प्रत्येकासाठी समान रीतीने कार्य करतील. याचा अर्थ असा की मूळ नसलेल्या भाषकांकडून दिले जाणारे देणगी विशेषतः महत्त्वपूर्ण आहेत.
+ 
+faq-why-different-speakers-q = आपल्याला प्रति भाषेमध्ये इतक्या वेगवेगळ्या स्पीकर्सची आवश्यकता का आहे?
+faq-why-different-speakers-a = बहुतेक स्पीच डेटाबेस विशिष्ट लोकसंख्याशास्त्राचे वर्णन करण्यासाठी ओव्हर ओव्हर व्यावसायिक कलाकारांसह प्रशिक्षित असतात, ज्यामुळे पुरुष आणि मध्यमवर्गाकडे पक्षपात होतो. प्रशिक्षण डेटा सेटमध्ये कमी प्रतिनिधित्व करणार्‍या अ‍ॅक्सेंट आणि पोटभाषा सामान्यत: आधीपासून सीमांत असलेल्या लोकांच्या गटांशी संबंधित असतात. बर्‍याच मशीन्स महिला आवाज समजण्यासाठी संघर्ष देखील करतात. एमएल समस्येसाठी विविधता आणि यादृच्छिकता चांगली आहे.
+ 
+faq-why-my-lang-q = माझी भाषा अद्याप समाविष्ट का नाही?
+faq-why-my-lang-new-a = आम्ही विशेषतः भारतात बोलल्या जाणार्‍या भाषांवर काम करत आहोत. आपण येथे 6000+ भारतीय भाषांपैकी एखादी भाषा बोलत असल्यास, जी येथे सूचीबद्ध नाही, आपण आम्हाला मेल करू शकता. आम्ही या अ‍ॅपच्या विकासाच्या पुढील टप्प्यात मारवाडी, सिंधी, काश्मिरी, मैथिली, डोगरी, कोंकणी, बोडो जोडू.
+ 
+faq-what-quality-q = डेटासेटमध्ये व्हॉइस क्लिप वापरण्यासाठी कोणत्या स्तरावरील ऑडिओ गुणवत्तेची आवश्यकता आहे?
+faq-what-quality-a = आम्हाला भाषण आहे की लोक-वाटा डेटासेट वाईड-टू-टेक्स्ट इंजिन ऐकू येईल अशा ऑडिओ गुणवत्तेचे प्रतिबिंबित करेल, म्हणून आम्ही विविधता शोधत आहोत. स्पीकर्सच्या विविध समुदायाव्यतिरिक्त, वेगवेगळ्या ऑडिओ गुणवत्तेसह एक डेटासेट स्पीच-टू-टेक्स्ट इंजिनला कारच्या आवाजापासून पार्श्वभूमीपासून बोलण्यापर्यंत विविध वास्तविक-जगातील परिस्थिती हाताळण्यास शिकवेल. जोपर्यंत आपली व्हॉइस क्लिप सुगम आहे तोपर्यंत डेटासेटसाठी ती चांगली असावी.
+ 
+faq-why-10k-hours-q = ऑडिओ कॅप्चर करण्यासाठी प्रति भाषेचे लक्ष्य 10,000 प्रमाणित तास का आहे?
+faq-why-10k-hours-a = डीप लर्निंग / एआय तंत्रज्ञानातील संशोधन सांगते की 10,000 तास ऑडिओ डेटा उत्पादन-तयार भाषण-ते-मजकूर सिस्टमला प्रशिक्षण देण्यासाठी आवश्यक तासांची संख्या आहे.
+ 
+faq-how-calc-hours-q = आपण तासांची गणना कशी कराल?
+faq-how-calc-hours-a = आम्ही प्रत्येक रेकॉर्डिंगच्या सरासरी लांबीचा अंदाज करून तासांची गणना करतो आणि नंतर सर्व भाषांमधील रेकॉर्डिंगच्या एकूण संख्येने ती संख्या गुणाकार करतो.
+ 
+faq-how-get-q = मी लोक-वाच डेटा कसा मिळवू शकतो?
+faq-how-get-a = डेटा अद्याप तयार नाही. डेटा चांगला प्रमाणात गोळा करून, बंडलिंग, साफ करणे आणि डेटा लेबलिंग करण्यासाठी अतिरिक्त वेळ आणि संसाधनांची आवश्यकता असेल. एकदा एआय / एमएल डेव्हलपर आणि उत्साही लोकांचा डेटा इतका मोठा झाला की आम्ही ते सोडू शकतो.
+ 
+faq-pay-now-q = मी स्थानिक भाषेसाठी पैसे देण्यास तयार आहे, मला ते आता मिळू शकेल काय?
+faq-pay-now-a = या प्रकल्पांविषयी आमची माहिती पोहोचवण्यासाठी आम्ही आपणास आवाहन करतो; आणि लोकांना त्यांचे आवाज दान करण्यास उद्युक्त करा. हे डेटा संकलन प्रक्रिया आणि रिलीझ टाइमलाइनला बांधील.
+ 
+faq-contribute-q = मी कसे योगदान देऊ?
+faq-contribute-a = आपण एखादे खाते तयार करुन योगदान देऊ शकता; अ‍ॅपद्वारे प्रदान केलेली वाक्य मोठ्याने बोलून आपला आवाज दान करा; आणि इतरांचे कार्य मंजूर करून किंवा नाकारून इतर व्हॉइसचे प्रमाणीकरण करणे. लोक-वाच येथे खात्यात साइन अप केल्यास प्रकल्पाला एएसआर मॉडेलची अचूकता वाढण्यास मदत होईल.
+ 
+faq-why-account-q = मी खात्यासाठी साइन अप का करावे?
+faq-is-account-public-q = माझी खाते माहिती सार्वजनिक आहे?
+faq-is-account-public-a = नाही
+ 
+faq-what-is-cv = लोक-वाच म्हणजे काय?
+faq-using-cv = लोक-वाचा वापरणे
+faq-description = लोक-वाचा हा एक उपक्रम आहे ज्यायोगे मशीन्स वास्तविक लोक कसे बोलतात हे शिकविण्यास मदत करतात.
+faq-search-for-answers 
+.label = उत्तरे शोधा
+ 
+## ABOUT US 
+about-title = एलओके म्हणजे काय?
+about-subtitle = हिंदीमधील "लोक" (& इतर अनेक भारतीय भाषा) म्हणजे लोक. "वाच" म्हणजे आवाज. लोक-वाचा हा एक उपक्रम आहे ज्यायोगे मशीन्स वास्तविक लोक कसे बोलतात हे शिकविण्यास मदत करतात. लोक-वाच डेटासेट व्यतिरिक्त, आम्ही एक मुक्त स्त्रोत स्वयंचलित स्पीच रिकग्निशन (एएसआर) इंजिन देखील तयार करीत आहोत.
+about-header-description = हे दोन्ही प्रकल्प डिजिटल स्पीच विभाजन कमी करण्याच्या आमच्या प्रयत्नांचा एक भाग आहेत. व्हॉईस रिकग्निशन टेक्नॉलॉजी आमच्या डिव्हाइसवर मानवी आयाम आणतात, परंतु विकासकांना ते तयार करण्यासाठी प्रचंड प्रमाणात व्हॉईस डेटाची आवश्यकता असते. सध्या, त्यातील बहुतेक डेटा महाग आणि मालकीचा आहे. आम्हाला खात्री करुन घ्यायची आहे की डेटा वास्तविक लोकांच्या विविधतेचे प्रतिनिधित्व करतो. एकत्रितपणे आम्ही प्रत्येकासाठी व्हॉइस ओळख अधिक चांगली बनवू शकतो.
+how-does-it-work-title = हे कस काम करत?
+how-does-it-work-text = आम्ही व्हॉईसच्या ओपन-सोर्स डेटासेटला क्राऊडसोर्स करीत आहोत. आपला आवाज दान करा, इतर लोकांच्या क्लिपची अचूकता सत्यापित करा, डेटासेट प्रत्येकासाठी अधिक चांगले करा.
+about-speak = बोला
+about-speak-text = योगदानकर्ता दान केलेल्या वाक्यांमधून वाचून व्हॉइस क्लिप रेकॉर्ड करतात.
+about-listen-queue = ऐका-रांग
+about-listen-queue-text = व्हॉइस क्लिप सबमिशन रांगेत प्रवेश केल्या आहेत ज्या ऐकण्यासाठी त्यांना तयार करतात.
+about-listen = ऐका
+about-listen-text = स्पीकरने वाक्य योग्यरित्या वाचले आहे हे तपासून वापरकर्ते दान केलेल्या क्लिपची अचूकता सत्यापित करतात.
+about-is-it-valid = क्लिप वैध आहे का?
+about-is-it-valid-text = जेव्हा वापरकर्त्याने हो मत दिले की व्हॉइस क्लिपला "वैध" चिन्हांकित केले जाईल.
+about-yes-votes = ≥ 2 होय मते
+about-yes-votes-text = ते लोक डेटासेटमध्ये बनविण्यासाठी, व्हॉइस क्लिप दोन स्वतंत्र वापरकर्त्यांद्वारे प्रमाणित करणे आवश्यक आहे.
+about-no-votes = ≥ 2 मते नाहीत
+about-no-votes-text = जेव्हा एखादा वापरकर्ता व्हॉइस क्लिप नाकारतो तो रांगेत परत येतो. दुसर्‍या वेळी नाकारल्यास व्हॉईस क्लिप क्लिप कब्रिस्तानमध्ये हलविली जाईल.
+about-dataset = लोक डेटासेट
+about-dataset-text = लोक डेटासेटमध्ये शेकडो हजार व्हॉईस नमुने आहेत जे विकासकांना आवाज ओळख साधने तयार करण्यात मदत करतात.
+about-clip-graveyard = क्लिप स्मशानभूमी
+about-clip-graveyard-text = क्लिप कब्रिस्तानमध्ये व्हॉइस क्लिप्स असतात ज्या त्यास लोक डेटासेटमध्ये बनवीत नाहीत. डेटासेट प्रमाणेच, क्लिप कब्रिस्तान डाउनलोड करण्यासाठी उपलब्ध आहे.
+about-partners = भागीदार
+about-become-a-partner = भागीदार व्हा
+about-partnership = लोक हा एक सहयोगी प्रकल्प आहे आणि आतापर्यंतचा सर्वात मोठा ओपन-सोर्स डेटासेट तयार करण्यासाठी आम्ही आमच्या भागीदार आणि योगदानकर्त्यांच्या समुदायावर अवलंबून आहोत. आम्ही या प्रकल्पात मदत केल्याबद्दल पुढील लोक आणि संस्थांचे आभार मानू इच्छितो:
+about-get-involved = अडकणे
+about-get-involved-text = लोक-वचन आणखी उत्कृष्ट बनविण्यात मदत करू इच्छिता?
+सूचना & विद्युतप्रवाह मोजण्याच्या एककाचे संक्षिप्त रुप; अभिप्राय? <discourseLink> फोरम </discourseLink> वर सामायिक करा,
+समस्या सापडली की दोष? <githubLink> GitHub </githubLink> वर त्याचा अहवाल द्या.
+किंवा दुसर्‍या कशासाठी आमच्याशी संपर्क साधा <contactLink>> ईमेल </contactLink>.
+ 
+about-nav-why-common-voice = का ?
+about-nav-how-it-works = कसे?
+about-nav-partners = भागीदार
+about-nav-get-involved = अडकणे
+mycroft-title = मायक्रॉफ्ट आय
+mycroft-subtitle = कृत्रिम बुद्धिमत्ता
+mycroft-description = मायक्रॉफ्ट हा जगातील पहिला मुक्त स्रोत सहाय्यक आहे.
+मायक्रॉफ्ट कुठेही चालतो - डेस्कटॉप संगणकावर, ऑटोमोबाईलमध्ये किंवा रास्पबेरी पाईवर. 
+mycroft-secondary-description = हे मुक्त स्त्रोत सॉफ्टवेअर आहे जे मुक्तपणे रीमिक्स केले जाऊ शकते, विस्तारित आणि सुधारित केले जाऊ शकते. मायक्रॉफ्टचा उपयोग सायन्स प्रोजेक्टपासून एंटरप्राइझ सॉफ्टवेअर अ‍ॅप्लिकेशनपर्यंत कशासाठीही होऊ शकतो.
+ 
+## Glossary 
+glossary = शब्दकोष
+localization = स्थानिकीकरण
+localization-explanation = बर्‍याच लोकॅल (भाषांमध्ये) आमच्या सामग्रीचे भाषांतर आणि रुपांतर करण्याची ही आमची प्रक्रिया आहे.
+sentence-collection = वाक्य संग्रह
+sentence-collection-explanation = सार्वजनिक डोमेनमधून वाक्य गोळा करणे किंवा सार्वजनिक डोमेनसाठी नवीन लिहिणे.
+hours-recorded-explanation = आतापर्यंत आम्ही संकलित केलेल्या व्हॉईस रेकॉर्डिंग तासांची संख्या.
+hours-validated-explanation = "होय" च्या मतासह 3 पैकी 2 वापरकर्त्यांद्वारे सत्यापित केलेल्या व्हॉईस रेकॉर्डिंग तासांची संख्या एकूण प्रकल्पाच्या 10k तासांच्या उद्दीष्ट्यासाठी ही प्रगती चिन्हांकित करते.
+sst = स्पीच टू टेक्स्ट (STT)
+sst-explanation = स्पीच-टू-टेक्स्ट (STT) तंत्रज्ञान व्हॉइस डेटाला मजकूरामध्ये रूपांतरित करते.
+de-identified = डी-ओळखले
+de-identified-explanation = डेटासेटचा एक भाग म्हणून डाउनलोड करण्यासाठी पॅकेज केल्यावर सहयोगकर्त्याची प्रोफाइल माहिती त्यांच्या देणगीदार व्हॉइस क्लिपवरून अस्पष्ट ठेवली जाते.
+ 
+## NotFound 
+notfound-title = सापडले नाही
+notfound-content = मला भीती वाटते की आपण काय पहात आहात हे मला माहित नाही.
+ 
+## Data 
+data-download-button = लोक डेटा डाउनलोड करा
+data-download-yes = होय
+data-download-deny = नाही
+data-download-license = परवाना: <licenseLink> CC-0 </licenseLink>
+data-download-modal = आपण <size>{ $size }GB</size> चे डाउनलोड प्रारंभ करणार आहात, पुढे जा?
+data-subtitle = आम्ही व्हॉईसचा एक खुला आणि सार्वजनिकपणे उपलब्ध डेटासेट तयार करीत आहोत जो प्रत्येकजण भाषण-सक्षम अनुप्रयोगांना प्रशिक्षित करण्यासाठी वापरू शकतो.
+data-explanatory-text = आमचा विश्वास आहे की मशीन-लर्निंग आधारित स्पीच तंत्रज्ञानामध्ये मोठ्या आणि सार्वजनिकरित्या उपलब्ध व्हॉईस डेटासेटचे नूतनीकरण आणि निरोगी व्यावसायिक स्पर्धा वाढवते. हा जागतिक प्रयत्न आहे आणि आम्ही सर्वांना सहभागी होण्यासाठी आमंत्रित करतो. आमचे उद्दीष्ट जगातील आवाजातील विविधता प्रतिबिंबित करणारे भाषण तंत्रज्ञानास अधिक समावेश करण्यात मदत करणे आहे.
+data-get-started = <speechBlogLink> भाषण ओळखीसह प्रारंभ करा </ speechBlogLink>
+data-other-title = अन्य व्हॉईस डेटासेट ...
+data-other-goto = { $name } वर जा
+data-other-download = डेटा डाउनलोड करा
+data-bundle-button = डेटासेट बंडल डाउनलोड करा
+data-bundle-description = वरील डेटा वरील सर्व इतर व्हॉईस डेटासेट.
+license = परवाना: <licenseLink>{ $license }</licenseLink>
+license-mixed = मिश्रित
+review-terms = लोक वापरुन, आपण आमच्या <termsLink>अटी</termsLink> and <privacyLink>गोपनीयता सूचना</privacyLink> गोपनीयता लिंकला सहमती देता
+terms-agree = मी सहमत आहे
+terms-disagree = मी सहमत नाही
+review-aborted = अपलोड रद्द केले. आपण आपले रेकॉर्डिंग हटवू इच्छिता?
+review-submit-title = पुनरावलोकन व सबमिट करा
+review-submit-msg = रेकॉर्डिंग केल्याबद्दल धन्यवाद! <lineBreak></lineBreak> आता खाली आपल्या क्लिपचे पुनरावलोकन करा आणि सबमिट करा.
+review-recording = पुनरावलोकन
+review-rerecord = पुन्हा रेकॉर्ड करा
+review-cancel = सबमिशन रद्द करा
+review-keep-recordings = रेकॉर्डिंग ठेवा
+review-delete-recordings = माझी रेकॉर्डिंग हटवा
+ 
+## New Datasets Page 
+datasets-headline = आम्ही ओपन सोर्स, आवाजांची बहु-भाषा डेटासेट तयार करीत आहोत ज्याचा वापर कोणीही भाषण-सक्षम अनुप्रयोगांना प्रशिक्षण देण्यासाठी वापरू शकेल.
+datasets-positioning = आमचा विश्वास आहे की मोठ्या, सार्वजनिकरित्या उपलब्ध व्हॉईस डेटासेट मशीन-शिक्षण आधारित भाषण तंत्रज्ञानामध्ये नवकल्पना आणि निरोगी व्यावसायिक स्पर्धा वाढवतील.
+कॉमन व्हॉईसची बहु-भाषा डेटासेट आधीपासूनच आपल्या प्रकारची सर्वात मोठी सार्वजनिकपणे उपलब्ध व्हॉईस डेटासेट आहे, परंतु ती एकमेव नाही.
+अन्य मुक्त स्रोत व्हॉईस डेटासेटचे संदर्भ केंद्र म्हणून या पृष्ठाकडे पहा आणि आमचे प्रकाशन अद्यतनित करण्यासाठी कॉमन व्हॉईस जसजसे वाढत जाईल तसतसे. 
+language = भाषा
+# File size in gigabytes 
+size = आकार
+validated-hr-total = प्रमाणित तास एकूण
+overall-hr-total = एकूणच ता. एकूण
+cv-license = परवाना
+audio-format = ऑडिओ स्वरूप
+number-of-voices = आवाजांची संख्या
+splits = विभाजन
+email-to-download = डाउनलोड करण्यासाठी ईमेल प्रविष्ट करा
+why-email = <b>Why an email?</b> डेटासेटच्या बदलांविषयी आम्हाला भविष्यात आपल्याशी संपर्क साधण्याची आवश्यकता असू शकते, ईमेल आम्हाला संपर्कासाठी एक बिंदू प्रदान करते.
+confirm-size = आपण <b>{ $size }</b> डाउनलोड डाउनलोड करण्यास सज्ज आहात
+size-gigabyte = जीबी
+size-megabyte = एमबी
+confirm-no-identify = <b>You agree</b> लोक डेटासेटमधील स्पीकर्सची ओळख निश्चित करण्याचा प्रयत्न करू नका
+download-language = { $language } डाउनलोड करा
+validated-hours = प्रमाणित तास
+recorded-hours = रेकॉर्ड केलेले तास
+whats-inside = लोक डेटासेटमध्ये काय आहे?
+dataset-description-hours 
+डेटासेटमधील प्रत्येक प्रविष्टीमध्ये एक अद्वितीय एमपी 3 आणि संबंधित मजकूर फाइल असते. डेटासेटमधील रेकॉर्ड केलेल्या बर्‍याच <b>{ $total }</b> तासांमध्ये वय, लिंग आणि उच्चारण सारख्या डेमोग्राफिक मेटाडेटाचा समावेश आहे जे भाषण ओळख इंजिनांच्या अचूकतेस प्रशिक्षित करण्यात मदत करू शकतात.
+डेटासेटमध्ये <b>{ $valid }</b> भाषा मध्ये वैध तास<b>{ $languages }</b> , परंतु आम्ही नेहमीच अधिक आवाज आणि भाषा जोडत आहोत. भाषेची विनंती करण्यासाठी किंवा भाषांतर करण्यास प्रारंभ करण्यासाठी आमचे <languagesLink> भाषा पृष्ठ </languagesLink> पहा.
+want-dataset-update = जेव्हा आम्ही लोक डेटासेटची नवीन आवृत्ती रीलिझ करतो तेव्हा अद्यतने पाहिजे? आमच्या वृत्तपत्राची सदस्यता घ्या.
+subscribe = सदस्यता घ्या
+get-started-speech = भाषण ओळखीसह प्रारंभ करा
+other-datasets = इतर व्हॉइस डेटासेट
+feedback-q = अभिप्राय आहे?
+deepspeech-info = कॉमन व्हॉईस डेटासेट मोझिलाचे ओपन सोर्स व्हॉइस रिकग्निशन इंजिन डीप स्पीचची पूर्तता करतो, जो आपण स्पीच रिकग्निशन अर्ज तयार करण्यासाठी वापरू शकता. कसे सुरू करावे हे जाणून घेण्यासाठी आमचे <githubLink>Github overview</githubLink> वाचा किंवा <discourseLink> डीपस्पीच प्रवचना </ discourseLink> मध्ये सामील व्हा.
+common-voice-info-new = कॉमन व्हॉईस बद्दल काही प्रश्न आहेत? एखाद्या विशिष्ट भाषेबद्दलच्या सुधारणांचे विचार किंवा अभिप्राय? आमच्यास आमच्या <discourseLink> डिस्कोर्स फोरम </discourseLink> वर सामील व्हा आणि आम्हाला कळवा.
+data-other-librispeech-description = लिब्रीस्पेच हे लिब्रीवॉक्स प्रोजेक्टमधील ऑडिओबुकवरुन वाचलेल्या इंग्रजी भाषेच्या सुमारे 16 तासांच्या सुमारे 1000 तासांचे कॉर्पस आहे.
+data-other-ted-name = टेड-लिम कॉर्पस
+data-other-ted-description = टेड-लिम कॉर्पस ऑडिओ चर्चेतून तयार केले गेले आहेत आणि त्यांचे ट्रान्सक्रिप्शन टेड वेबसाइटवर उपलब्ध आहेत.
+data-other-voxforge-description = फ्री आणि ओपन सोर्स स्पीच रिकग्निशन इंजिनसह वापरण्यासाठी लिप्यंतरणाचे भाषण एकत्र करण्यासाठी व्हॉक्सफोर्जची स्थापना केली गेली.
+data-other-tatoeba-description = ताटोएबा ही भाषा शिकण्यासाठी वापरण्यासाठी वाक्ये, भाषांतरे आणि स्पोकन ऑडिओचा एक मोठा डेटाबेस आहे. या डाउनलोडमध्ये त्यांच्या समुदायाद्वारे रेकॉर्ड केलेल्या स्पोकन इंग्रजी आहेत.
+your-feedback = आम्ही लोक डेटासेट कसे चांगले बनवू शकतो याबद्दल आपल्याकडे कल्पना आहे? आम्हाला प्रवचनावर जाणून घ्या
+go-discourse = प्रवचनावर जा
+missing-language = आपली भाषा डेटासेटमध्ये प्रतिबिंबित दिसत नाही? आमच्या भाषेच्या पृष्ठावरील भाषेच्या शीर्षकाची विनंती करण्यासाठी.
+go-languages-page = भाषा पृष्ठावर जा
+ready-to-validate = वाक्य मान्य करण्यास मदत करण्यास तयार आहात?
+more = अधिक
+close = बंद
+download = डाउनलोड करा
+ 
+## Download Modal 
+download-title = आपले डाउनलोड प्रारंभ झाले आहे.
+download-helpus = व्हॉईस तंत्रज्ञानाभोवती एक समुदाय तयार करण्यास, ईमेलद्वारे संपर्कात राहण्यास आम्हाला मदत करा.
+download-form-email 
+.label = तुमचा ईमेल टाका
+.value = धन्यवाद, आम्ही संपर्कात राहू.
+download-back = लोक डेटासेटवर परत या
+download-no = नको धन्यवाद
+ 
+## Contact Modal 
+contact-title = संपर्क फॉर्म
+contact-form-name 
+.label = नाव
+contact-form-message 
+.label = संदेश
+contact-required = * आवश्यक
+ 
+## Request Language Modal 
+request-language-title = भाषेची विनंती
+request-language-form-language 
+.label = भाषा
+request-language-success-title = भाषा विनंती यशस्वीरित्या सबमिट केली, धन्यवाद.
+request-language-success-content = आमची भाषा लवकरच कॉमन व्हॉईसमध्ये कशी जोडावी याविषयी अधिक माहितीच्या संपर्कात आहोत.
+select-language = एक भाषा निवडा ...
+other-language = इतर भाषा
+ 
+## Languages Overview 
+language-section-in-progress = प्रगतीपथावर
+language-section-in-progress-new-description = या भाषा सध्या सामुदायिक विकासाच्या अधीन आहेत. प्रगती पट्टे दर्शविते की प्रत्येक भाषा  <localizationGlossaryLink>वेबसाइट स्थानिकीकरण</localizationGlossaryLink> आणि <sentenceCollectionGlossaryLink>वाक्य संग्रह</sentenceCollectionGlossaryLink> प्रक्रियेमध्ये किती दूर आहे.
+language-section-launched = सुरू केले
+language-section-launched-description = या प्रक्षेपित भाषांकरिता वेबसाइट यशस्वीरित्या <localizationGlossaryLink>localized</localizationGlossaryLink> ला अनुमती देण्यासाठी पुरेशी <sentenceCollectionGlossaryLink>वाक्य गोळा केले</sentenceCollectionGlossaryLink> केली गेली आहे आणि चालू असलेल्या <speakLink>बोला</speakLink> आणि <listenLink>ऐका</listenLink>  योगदान.
+languages-show-more = अजून पहा
+languages-show-less = कमी पहा
+language-speakers = स्पीकर्स
+language-meter-in-progress = प्रगती
+language-total-progress = एकूण
+language-search-input 
+.placeholder = शोधा
+localized = स्थानिकीकृत
+sentences = वाक्य
+total-hours = प्रमाणित तास
+ 
+## New Contribution= 
+action-click = क्लिक करा
+action-tap = टॅप करा
+contribute = योगदान द्या
+listen = ऐका
+skip = वगळा
+shortcuts = शॉर्टकट्स
+clips-with-count = <bold>{ $count }</bold> क्लिप
+goal-help-recording  आमच्या दैनंदिन { $goalValue } रेकॉर्डिंग ध्येयांपैकी आपण लोक-वाचा <goalPercentage> </goalPercentage> पर्यंत पोहोचण्यास मदत केली आहे!
+goal-help-validation = आपण आमच्या दैनिक { $goalValue } वैधता ध्येयातील <goalPercentage> </goalPercentage> पर्यंत पोहोचण्यासाठी लोक-वाचनास मदत केली आहे!
+contribute-more 
+{ $count -> 
+* [other] { $count } अधिक करण्यास सज्ज आहात?
+} 
+record-cta = रेकॉर्डिंग प्रारंभ करा
+record-platform-not-supported = आम्ही दिलगीर आहोत, परंतु आपले व्यासपीठ सध्या समर्थित नाही.
+record-platform-not-supported-desktop = डेस्कटॉप संगणकांवर, आपण नवीनतम डाउनलोड करू शकता:
+record-platform-not-supported-ios = <bold>iOS</bold> वापरकर्ते आमचे विनामूल्य अ‍ॅप डाउनलोड करू शकतात:
+record-must-allow-microphone = आपण मायक्रोफोन प्रवेशास अनुमती देणे आवश्यक आहे.
+record-no-mic-found = कोणताही मायक्रोफोन आढळला नाही.
+record-error-too-short = रेकॉर्डिंग खूपच लहान होते.
+record-error-too-long = रेकॉर्डिंग बरेच लांब होते.
+record-error-too-quiet = रेकॉर्डिंग खूप शांत होते.
+record-cancel = पुन्हा रेकॉर्डिंग रद्द करा
+record-instruction = { $actionType } <recordIcon></recordIcon> नंतर वाक्य मोठ्याने वाचा
+record-stop-instruction = पूर्ण झाल्यावर. { $actionType }<stopIcon></stopIcon>
+record-three-more-instruction = जायला तीन!
+record-again-instruction = छान! <recordIcon></recordIcon> आपली पुढील क्लिप रेकॉर्ड करा
+record-again-instruction2 = हे सुरू ठेवून पुन्हा <recordIcon></recordIcon> रेकॉर्ड करा
+record-last-instruction = <recordIcon></recordIcon> शेवटचे!
+review-tooltip = आपण जाताच येथे क्लिपचे पुनरावलोकन करा आणि पुन्हा-रेकॉर्ड करा
+unable-speak = आत्ता बोलण्यात अक्षम?
+review-instruction = आवश्यक असल्यास क्लिपचे पुनरावलोकन व रेकॉर्ड करा
+record-submit-tooltip = तयार झाल्यावर { $actionType } सबमिट करा
+clips-uploaded = क्लिप अपलोड केल्या
+record-abort-title = प्रथम रेकॉर्डिंग समाप्त करा?
+record-abort-text = आता सोडणे म्हणजे आपण आपली प्रगती गमावाल
+record-abort-submit = क्लिप सबमिट करा
+record-abort-continue = रेकॉर्डिंग समाप्त करा
+record-abort-delete = बाहेर पडा आणि क्लिप हटवा
+listen-instruction = { $actionType }<playIcon></playIcon> त्यांनी वाक्य अचूकपणे बोलले का?
+listen-again-instruction = चांगले कार्य! <playIcon></playIcon> आपण तयार असाल तेव्हा पुन्हा ऐका
+listen-3rd-time-instruction = 2 खाली ठेवा, ते सुरू ठेवा! <playIcon></playIcon>
+listen-last-time-instruction = <playIcon></playIcon> शेवटचे!
+nothing-to-validate = आमच्याकडे या भाषेत प्रमाणीकरण करण्यासाठी काहीही नाही, रांग भरण्यास मदत करा.
+record-button-label = आपला आवाज रेकॉर्ड करा
+share-title-new = <bold>Help us</bold> अधिक आवाज शोधण्यात
+ 
+## Goals 
+streaks = पट्टे
+days ={ $count ->
+[one] Day 
+*[other] Days 
+} 
 recordings = { $count ->
-  [one] Recording
-  *[other] Recordings
-}
+[one] Recording 
+*[other] Recordings 
+} 
 validations = { $count ->
-  [one] Validation
-  *[other] Validations
-}
-
-## Dashboard
-your-languages = Your Languages
-toward-next-goal = Toward next goal
-clips-you-recorded = Clips You've Recorded
-clips-you-validated = Clips You've Validated
-todays-recorded-progress = Today's Lok-Vacha progress on clips recorded
-todays-validated-progress = Today's Lok-Vacha progress on clips validated
-stats = Stats
-you = You
-everyone = Everyone
-contribution-activity = Contribution Activity
-top-contributors = Top Contributors
-recorded-clips = Recorded Clips
-validated-clips = Validated Clips
-total-approved = Total Approved
-overall-accuracy = Overall Accuracy
-
-## Profile Delete
-delete-q = Would you like to request your voice recordings be deleted too, or do you prefer to keep them in the Lok-Vacha dataset?
-keep = Keep
-remove = Remove
-keep-info = Your anonymous voice recordings will remain in the Lok-Vacha dataset. Once you delete your profile you will no longer be able to submit a request to remove your recordings from the dataset
-remove-info = We will review your request to remove your voice recordings from the dataset. If your request is approved, we will contact those who have downloaded the dataset and request they remove your voice recordings as well.
-why-delete-recordings = Lok-Vacha recordings are used by academics, small businesses, and voice recognition enthusiasts to help train and grow publicly available resources like voice models.
-    Can you let us know why you would like your recordings deleted?
-profile-form-delete = Delete Profile
-
-## Landing
-welcome-staff = Welcome { $company } staff!
-help-contribute = You can help build a diverse, open-source dataset by creating a Lok-Vacha profile and contributing your voice.
-login-company = Log In / Sign Up with { $company } email
-profile-not-required = Having a profile is not required to contribute though it is helpful, see why below.
-read-more-about = Read more on our About page
+[one] Validation 
+*[other] Validations 
+} 
+ 
+## Dashboard 
+your-languages = आपल्या भाषा
+toward-next-goal = पुढील गोल दिशेने
+clips-you-recorded = आपण रेकॉर्ड केलेल्या क्लिप
+clips-you-validated = आपण प्रमाणित केलेल्या क्लिप
+todays-recorded-progress = रेकॉर्ड केलेल्या क्लिपवर आजची लोक-वचन प्रगती
+todays-validated-progress = क्लिपवरील आजची लोक-वचन प्रगती सत्यापित केली
+stats = आकडेवारी
+you = आपण
+everyone = प्रत्येकजण
+contribution-activity = योगदान क्रियाकलाप
+top-contributors = शीर्ष सहयोगी
+recorded-clips = रेकॉर्ड केलेल्या क्लिप
+validated-clips = प्रमाणित क्लिप
+total-approved = एकूण मंजूर
+overall-accuracy = एकूणच अचूकता
+ 
+## Profile Delete 
+delete-q = आपण आपल्या व्हॉईस रेकॉर्डिंगस हटविण्याची विनंती करू इच्छिता किंवा आपण त्यांना लोक-वाच डेटासेटमध्ये ठेवण्यास प्राधान्य देता?
+keep = ठेवा
+remove = काढा
+keep-info = आपली अज्ञात व्हॉइस रेकॉर्डिंग लोक-वाच डेटासेटमध्ये राहील. एकदा आपण आपले प्रोफाइल हटविल्यास आपण यापुढे डेटासेटमधून आपले रेकॉर्डिंग काढण्यासाठी विनंती सबमिट करण्यास सक्षम राहणार नाही
+remove-info = आम्ही डेटासेटमधून आपल्या व्हॉइस रेकॉर्डिंग काढून टाकण्याच्या आपल्या विनंतीचे पुनरावलोकन करू. आपली विनंती मंजूर झाल्यास आम्ही ज्यांनी डेटासेट डाउनलोड केला आहे त्यांच्याशी संपर्क साधू आणि त्यांची व्हॉईस रेकॉर्डिंग देखील काढून टाकण्याची विनंती करू.
+why-delete-recordings = लोक-वाचना रेकॉर्डिंगचा वापर शैक्षणिक, छोटे व्यवसाय आणि व्हॉईस ओळख उत्साही लोकांकडून व्हॉईस मॉडेल्स सारख्या सार्वजनिकपणे उपलब्ध संसाधनांच्या प्रशिक्षणासाठी आणि वाढविण्यात केला जातो.
+Can you let us know why you would like your recordings deleted? 
+profile-form-delete = प्रोफाइल हटवा
+ 
+## Landing 
+welcome-staff = {$ कंपनी} कर्मचारी आपले स्वागत आहे!
+help-contribute = आपण लोक-वचन प्रोफाइल तयार करुन आणि व्हॉइसमध्ये योगदान देऊन वैविध्यपूर्ण, मुक्त-स्रोत डेटासेट तयार करण्यात मदत करू शकता.
+login-company = In { $company }  ईमेलसह लॉग इन / साइन अप करा
+profile-not-required = एखादे प्रोफाइल उपयुक्त असले तरीही योगदान देण्याची आवश्यकता नाही, खाली का ते पहा.
+read-more-about = आमच्या बद्दल पृष्ठावरील अधिक वाचा
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
