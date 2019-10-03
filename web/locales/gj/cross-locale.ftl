@@ -9,10 +9,10 @@ get-involved-text =
 get-involved-form-title = {$ Lang} અપડેટ્સ માટે સાઇન અપ કરો:
 get-involved-email = 
 .label = ઇમેઇલ
-get-involved-opt-in = હા, મને ઇમેઇલ્સ મોકલો. હું Common Voice ઇસ પર આ ભાષાની પ્રગતિ વિશે માહિતગાર રહેવાનું પસંદ કરું છું.
+get-involved-opt-in = હા, મને ઇમેઇલ્સ મોકલો. હું લોક-વાચા ઇસ પર આ ભાષાની પ્રગતિ વિશે માહિતગાર રહેવાનું પસંદ કરું છું.
 get-involved-submit = સબમિટ કરો
 get-involved-stayintouch = અમે અપડેટ્સ, નવા ડેટા સ્રોતો સાથે સંપર્કમાં રહેવા માંગીએ છીએ અને તમે આ ડેટાનો ઉપયોગ કેવી રીતે કરી રહ્યાં છો તે વિશે વધુ જાણવા માટે.
-get-involved-privacy-info અમે તમારી માહિતી કાળજી સાથે હેન્ડલ કરવાનું વચન આપીએ છીએ. અમારી <ગોપનીયતાલિંક> ગોપનીયતા સૂચના </ ગોપનીયતા લિંક> માં વધુ વાંચો.
+get-involved-privacy-info અમે તમારી માહિતી કાળજી સાથે હેન્ડલ કરવાનું વચન આપીએ છીએ. અમારી <privacyLink> ગોપનીયતા સૂચના </privacyLink> માં વધુ વાંચો.
 get-involved-success-title તમે સફળતાપૂર્વક {$ ભાષા contrib માં ફાળો આપવા માટે સાઇન અપ કર્યું છે. આભાર.
 get-involved-success-text તે ઉપલબ્ધ થતાંની સાથે અમે વધુ માહિતીના સંપર્કમાં રહીશું.
 get-involved-return-to-languages ભાષાઓ પર પાછા ફરો

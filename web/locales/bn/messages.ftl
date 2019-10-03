@@ -366,8 +366,8 @@ review-delete-recordings = আমার রেকর্ডিংগুলি ম
 ## New Datasets Page	
 datasets-headline = আমরা একটি ওপেন সোর্স, ভয়েসগুলির বহু-ভাষা ডেটাসেট তৈরি করছি যা যে কেউ স্পিচ-সক্ষম অ্যাপ্লিকেশনগুলি প্রশিক্ষণের জন্য ব্যবহার করতে পারেন।
 datasets-positioning = আমরা বিশ্বাস করি যে বড়, সর্বজনীনভাবে উপলব্ধ ভয়েস ডেটাসেটগুলি মেশিন-লার্নিং ভিত্তিক স্পিচ প্রযুক্তিতে উদ্ভাবন এবং স্বাস্থ্যকর বাণিজ্যিক প্রতিযোগিতা বাড়িয়ে তুলবে।
-Common Voice’s multi-language dataset is already the largest publicly available voice dataset of its kind, but it’s not the only one.	
-Look to this page as a reference hub for other open source voice datasets and, as Common Voice continues to grow, a home for our release updates.	
+Lok Vacha’s multi-language dataset is already the largest publicly available voice dataset of its kind, but it’s not the only one.	
+Look to this page as a reference hub for other open source voice datasets and, as Lok Vacha continues to grow, a home for our release updates.	
 language = ভাষা
 # File size in gigabytes	
 size = আয়তন

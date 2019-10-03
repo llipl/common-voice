@@ -8,7 +8,7 @@ email-input =
 submit-form-action = ପଠାନ୍ତୁ
 loading = ଲୋଡ଼ହେଉଛି...
 email-opt-in-info = ମୁଁ କମନ ଭଏସରେ ମୋର ଲକ୍ଷ୍ୟ ସ୍ମାରକ, ପ୍ରଗତି ପତ୍ର ଏବଂ ସମ୍ବାଦପତ୍ର ସଂକ୍ରାନ୍ତୀୟ ଇମେଲ ପାଇବାକୁ ଇଛୁକ ।
-email-opt-in-privacy = ଆପଣ ଯଦି ଆମଠାରୁ ଇମେଲ ପାଇବାକୁ ରାଜି ଅଛନ୍ତି ତେବେ ମୋଜିଲା ତାହାର <privacyLink> ଗୋପନ ନିୟମାବଳୀ <privacyLink> ହିସାବରେ ଆପଣଙ୍କର ଏହି ଇମେଲ ଆଇଡି ଯେଭଳି ଭାବରେ ଉପଯୋଗ କରିବ ସେଥିରେ ଆପଣ ସହମତ ।
+email-opt-in-privacy = ଆପଣ ଯଦି ଆମଠାରୁ ଇମେଲ ପାଇବାକୁ ରାଜି ଅଛନ୍ତି ତେବେ ମୋଜିଲା ତାହାର <privacyLink> ଗୋପନ ନିୟମାବଳୀ </privacyLink> ହିସାବରେ ଆପଣଙ୍କର ଏହି ଇମେଲ ଆଇଡି ଯେଭଳି ଭାବରେ ଉପଯୋଗ କରିବ ସେଥିରେ ଆପଣ ସହମତ ।
 indicates-required = * ଦରକାରୀ କ୍ଷେତ୍ର ନିର୍ଦ୍ଦେଶ କରେ
 not-available-abbreviation = ଅନାବଶ୍ୟକ
 
@@ -54,10 +54,10 @@ logout = ଲଗ ଆଉଟ
 ## Home Page
 home-title = କମନ ଭଏସ, ମୋଜିଲାଦ୍ୱାରା ଆରମ୍ଭ ହୋଇଥିବା ଏକ ପ୍ରକଳ୍ପ ଓ ଏହା ମେସିନଗୁଡ଼ିକୁ ଲୋକମାନେ କେମିତି କଥାହୁଅନ୍ତି ତା' ଶିଖାଏ ।
 wall-of-text-start = କଣ୍ଠସ୍ୱର ହେଲା ପ୍ରାକୃତିକ ଓ ମାନବିକ । ଏଣୁ ଆମେ ଆମ ମେସିନଗୁଡ଼ିକ ପାଇଁ ବ୍ୟବହାରଯୋଗ୍ୟ କଣ୍ଠସ୍ୱର ତିଆରି ପାଇଁ ଉତ୍ସାହିତ । ତେବେ କଣ୍ଠସ୍ୱର ତିଆରି ପାଇଁ ଖୁବ ବଡ଼ ଆକାରର ଧ୍ୱନି ଡାଟା ଦରକାର ।
-wall-of-text-more-mobile = ବଡ଼ ବଡ଼ କମ୍ପାନୀର ବେଶୀ ଭାଗ ଡାଟା ସାଧାରଣ ଲୋକଙ୍କ ପାଇଁ ଖୋଲା ନୁହେଁ । ଆମେ ଭାବୁ ଯେ ଏହା ଉଦ୍ଭାବନର ପଥର ଏକ ବଡ଼ ଅନ୍ତରାୟ । ତେଣୁ ଆମେ Common Voice ନାମକ ଏକ ପ୍ରକଳ୍ପ ଆରମ୍ଭ କରିଛୁ ଯାହା ସମସ୍ତଙ୍କ ପାଇଁ  କଣ୍ଠସ୍ୱର ଚିହ୍ନିବା ବାଟ  ଖୋଲିବ ।
+wall-of-text-more-mobile = ବଡ଼ ବଡ଼ କମ୍ପାନୀର ବେଶୀ ଭାଗ ଡାଟା ସାଧାରଣ ଲୋକଙ୍କ ପାଇଁ ଖୋଲା ନୁହେଁ । ଆମେ ଭାବୁ ଯେ ଏହା ଉଦ୍ଭାବନର ପଥର ଏକ ବଡ଼ ଅନ୍ତରାୟ । ତେଣୁ ଆମେ Lok Vacha ନାମକ ଏକ ପ୍ରକଳ୍ପ ଆରମ୍ଭ କରିଛୁ ଯାହା ସମସ୍ତଙ୍କ ପାଇଁ  କଣ୍ଠସ୍ୱର ଚିହ୍ନିବା ବାଟ  ଖୋଲିବ ।
 wall-of-text-more-desktop = ଏବେ ଆପଣ ଆପଣଙ୍କର ସ୍ୱର ଦାନ କରିପାରିବେ, ଯାହାଦ୍ୱାରା ଆମେ ଏକ ମୁକ୍ତ ତଥ୍ୟଭଣ୍ଡାର ତିଆରି କରିପାରିବା, ଯାହାକୁ ବ୍ୟବହାର କରି ଲୋକେ ନାନାଦି ଉପକରଣ ଏବଂ ଇଣ୍ଟରନେଟ ପାଇଁ ଅଭିନବ ଆପ୍ଲିକେସନ ତିଆରି କରିପାରିବେ । ମେସିଂଗୁଡିକୁ ସାଧାରଣ ଲୋକ କିପରି କଥାବାର୍ତ୍ତା କରନ୍ତି ଜାଣିବାକୁ ଗୋଟିଏ ବାକ୍ୟ ପଢ଼ନ୍ତୁ । ଗୁଣାତ୍ମକ ମାନ ବୃଦ୍ଧି କରିବାକୁ ଅନ୍ୟମାନଙ୍କର ଯୋଗଦାନ ମଧ୍ୟ ଯାଞ୍ଚ କରନ୍ତୁ । ଏହା ମାତ୍ର ଏତିକିରେ ହେଇଯିବ ।
 wall-of-text-first = କଣ୍ଠସ୍ୱର ହେଲା ପ୍ରାକୃତିକ ଓ ମାନବିକ । ଏଣୁ ଆମେ ଆମ ମେସିନଗୁଡ଼ିକ ପାଇଁ ବ୍ୟବହାରଯୋଗ୍ୟ କଣ୍ଠସ୍ୱର ତିଆରି ପାଇଁ ଉତ୍ସାହିତ । ତେବେ କଣ୍ଠସ୍ୱର ତିଆରି ପାଇଁ ଖୁବ ବଡ଼ ଆକାରର ଧ୍ୱନି ତଥ୍ୟ ଦରକାର ।
-wall-of-text-second = ବଡ଼ ବଡ଼ କମ୍ପାନୀର ବେଶୀ ଭାଗ ତଥ୍ୟ ସାଧାରଣ ଲୋକଙ୍କ ପାଇଁ ଖୋଲା ନୁହେଁ  । ଆମେ ଭାବୁ ଯେ ଏହା ଉଦ୍ଭାବନର ପଥର ଏକ ବଡ଼ ଅନ୍ତରାଳ । ତେଣୁ ଆମେ Common Voice ନାମକ ଏକ ପ୍ରକଳ୍ପ ଆରମ୍ଭ କରିଛୁ ଯାହା ସମସ୍ତଙ୍କ ପାଇଁ  କଣ୍ଠସ୍ୱର ଚିହ୍ନିବା ବାଟ  ଖୋଲିବ ।
+wall-of-text-second = ବଡ଼ ବଡ଼ କମ୍ପାନୀର ବେଶୀ ଭାଗ ତଥ୍ୟ ସାଧାରଣ ଲୋକଙ୍କ ପାଇଁ ଖୋଲା ନୁହେଁ  । ଆମେ ଭାବୁ ଯେ ଏହା ଉଦ୍ଭାବନର ପଥର ଏକ ବଡ଼ ଅନ୍ତରାଳ । ତେଣୁ ଆମେ Lok Vacha ନାମକ ଏକ ପ୍ରକଳ୍ପ ଆରମ୍ଭ କରିଛୁ ଯାହା ସମସ୍ତଙ୍କ ପାଇଁ  କଣ୍ଠସ୍ୱର ଚିହ୍ନିବା ବାଟ  ଖୋଲିବ ।
 show-wall-of-text = ଅଧିକ ପଢ଼ନ୍ତୁ
 help-us-title = ଆମକୁ ବାକ୍ୟଗୁଡ଼ିକ ଯାଞ୍ଚ କରିବାରେ ସାହାର୍ଯ୍ୟ କରନ୍ତୁ!
 help-us-explain = ପ୍ଲେ ଦବାନ୍ତୁ, ଶୁଣନ୍ତୁ ଏବଂ ଆମକୁ କୁହନ୍ତୁ; କଣ ସେମାନେ ସଠିକ ଭାବରେ ନିମ୍ନ ବାକ୍ୟଟି ପଢ଼ିଲେ?
@@ -138,7 +138,7 @@ shortcut-record-toggle = r
 shortcut-record-toggle-label = ରେକର୍ଡ଼/ବନ୍ଦ
 shortcut-rerecord-toggle = [୧-୫]
 shortcut-rerecord-toggle-label = କ୍ଲିପଟିକୁ ଆଉ ଥରେ ରେକର୍ଡ଼ କରନ୍ତୁ
-request-language-text = Common Voiceରେ ଏଯାଏ ନିଜ ଭାଷା ପାଉନାହାନ୍ତି?
+request-language-text = Lok Vachaରେ ଏଯାଏ ନିଜ ଭାଷା ପାଉନାହାନ୍ତି?
 request-language-button = ଭାଷାଟିଏ ପାଇଁ ଅନୁରୋଧ କରନ୍ତୁ
 
 ## ProjectStatus
@@ -179,7 +179,7 @@ female = ମହିଳା
 # Gender
 other = ଅନ୍ଯାନ୍ଯ
 why-profile-title = ପ୍ରୋଫାଇଲଟିଏ କାହିଁକି?
-why-profile-text = ନିଜ ବିଷୟରେ କିଛି ତଥ୍ୟ ଦେବା ଦ୍ୱାରା Common Voiceରେ ଆପଣ ପଠାଉଥିବା ଅଡ଼ିଓ ଡାଟା ସେହି ଡାଟାକୁ ବ୍ୟବହାର କରୁଥିବା ସ୍ପିଚ ରେକଗନେସନ ଇଞ୍ଜିନ ପାଇଁ ବେଶୀ ସହାୟକ ହେବ ।
+why-profile-text = ନିଜ ବିଷୟରେ କିଛି ତଥ୍ୟ ଦେବା ଦ୍ୱାରା Lok Vachaରେ ଆପଣ ପଠାଉଥିବା ଅଡ଼ିଓ ଡାଟା ସେହି ଡାଟାକୁ ବ୍ୟବହାର କରୁଥିବା ସ୍ପିଚ ରେକଗନେସନ ଇଞ୍ଜିନ ପାଇଁ ବେଶୀ ସହାୟକ ହେବ ।
 dashboard = ଡ୍ୟାସବୋର୍ଡ଼
 build-profile = ପ୍ରୋଫାଇଲ ତିଆରି କରନ୍ତୁ
 avatar = ଅବତାର
@@ -262,10 +262,10 @@ faq-how-get-q = How can I get the Lok-Vacha data?
 faq-how-get-a = The data is not ready yet. Even after collecting good amount of data, bundling, cleaning, and labelling the data will require additional time and resources.  We may release the data for AI/ML developers and enthusiasts once it’s large enough. 
        
 faq-pay-now-q = I’m ready to pay for the vernacular data, can I get it now? 
-faq-pay-now-a = We appeal you to help us spread the word about this project; and convince people to donate their voices. This will fasten the data collection process and the release timeline. 
+faq-pay-now-a = We appeal you to help us spread the word about this project; and convince people to join in. This will fasten the data collection process. 
 
 faq-contribute-q = How can I contribute?
-faq-contribute-a = You can contribute by creating an account; donating your voice by speaking out loud the sentences provided by the app; and validating the other voices by approving/rejecting others work. Signing up for the account at Lok-Vacha would help the project increase the accuracy of the ASR model. 
+faq-contribute-a = You can contribute by creating an account; Speaking out loud the sentences provided by the app on the screen; and validating the other voices by approving/rejecting others work. Signing up for the account at Lok-Vacha would help the project increase the accuracy of the ASR model. 
 
 faq-why-account-q = Why should I sign up for an account?
 faq-is-account-public-q = Is my account information public?
@@ -278,7 +278,7 @@ faq-search-for-answers =
     .label = ଉତ୍ତରପାଇଁ ଖୋଜନ୍ତୁ
 
 ## ABOUT US
-about-title = କାହିଁକି Common Voice?
+about-title = କାହିଁକି Lok Vacha?
 about-subtitle = କମନ ଭଏସ ହେଉଛି ମୋଜିଲାର ଏକ ପ୍ରୟାସ ଯେଉଁଥିରେ ମେସିନ ମାନଙ୍କୁ ବାସ୍ତବ  ଲୋକେ କେମିତି କଥୋପକଥନ କରନ୍ତି ତାଲିମ ଦିଆଯାଇଥାଏ । କମନ ଭଏସ ତଥ୍ୟ ଭଣ୍ଡାର ସହିତ, ଆମେ ଏକ ଓପନ ସୋର୍ସ ସ୍ପିଚ ରେକଗନୀସନ ଇଞ୍ଜିନ, ଡିପ ସ୍ପିଚ ମଧ୍ୟ ତିଆରି କରୁଛୁ ।
 about-header-description = ଏହି ଦୁଇଟି ପ୍ରକଳ୍ପ ଡିଜିଟାଲ ସ୍ପିଚ ବ୍ୟବଧାନକୁ କମ କରିବାରେ ଆମର ପ୍ରୟାସରେ ସାମିଲ ଅଛନ୍ତି । ଭଏସ ରେକଗନୀସନ ପ୍ରଯୁକ୍ତି ବିଦ୍ୟା ଆମର ଉପକରଣଗୁଡିକର ଏକ ମାନବୀୟ ଆୟାମ ଯୋଡ଼ିଥାଏ, କିନ୍ତୁ ଡେଭେଲପର ମାନଙ୍କୁ ଏହା ତିଆରି କରିବାକୁ ବହୁତ ମାତ୍ରାରେ ଧ୍ୱନି ତଥ୍ୟ ଆବଶ୍ୟକ ହୋଇଥାଏ ।ବର୍ତ୍ତମାନ ଅଧିକାଂଶ ତଥ୍ୟ ମହଙ୍ଗା ଏବଂ ମାଲିକାନା ଯୁକ୍ତ ଅଟେ । ଆମେ ଧ୍ୱନି ତଥ୍ୟକୁ ସ୍ୱତନ୍ତ୍ର ରୂପରେ ସାର୍ବଜନିକ ପ୍ରକାଶ କରିବାକୁ ଚାହୁଁଛୁ, ଏବଂ ସୁନିଶ୍ଚିତ କରୁଛୁ କି ତଥ୍ୟ ବାସ୍ତବିକ ଏବଂ ବିବିଧ ଲୋକଙ୍କୁ ପ୍ରତିନିଧିତ୍ବ କରୁଛି ।ଆମେ ସବୁ ମିଶିକରି ଭଏସ ରେକଗନୀସନକୁ ଅଧିକ ଉନ୍ନତ କରିପାରିବା ।
 how-does-it-work-title = ଏହା କିଭଳି କାମ କରେ?

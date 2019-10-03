@@ -1,4 +1,4 @@
-# Contributing to Common Voice
+# Contributing to Lok Vacha
 
 🎉 First off, thanks for taking the time to contribute! This project would not be possible without people like you. 🎉
 
@@ -86,7 +86,7 @@ If you want to work with login-related features (Profile, Dashboard, Goals, ...)
 
 #### Setting up Amazon S3 for development
 
-The Common Voice project uses S3 for voice clip storage. If you need help configuring
+The Lok Vacha project uses S3 for voice clip storage. If you need help configuring
 S3, check out [HOWTO_S3.md](./docs/HOWTO_S3.md)
 
 #### Adding migrations
@@ -140,12 +140,12 @@ yarn run
 The project is organized into the following directories:
 
 - _android_: The Android app, a simple webview wrapper of lok.vacha.ai. This app is currently not published.
-- _docs_: Design and data specifications for Common Voice.
+- _docs_: Design and data specifications for Lok Vacha.
 - _ios_: The iOS app. This is a simple wrapper app for the website, as a workaround for a microphone issue in Safari.
 - _nubis_: Configuration files for [Nubis](https://github.com/nubisproject), our deployment tool.
 - _server_: The server-side app logic, written in [TypeScript](http://www.typescriptlang.org/).
 - _tools_: Some scripts for managing data.
-- _web_: The Common Voice website files, written in [TypeScript](http://www.typescriptlang.org/). We use [React](https://reactjs.org/) to build the website.
+- _web_: The Lok Vacha website files, written in [TypeScript](http://www.typescriptlang.org/). We use [React](https://reactjs.org/) to build the website.
 
 ## Submitting an Issue
 
