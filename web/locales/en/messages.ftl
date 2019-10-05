@@ -65,9 +65,9 @@ no-clips-to-validate = Looks like there aren't any clips to listen to in this la
 vote-yes = Yes
 vote-no = No
 toggle-play-tooltip = Press { shortcut-play-toggle } to toggle play mode
-speak-subtitle = Say it out
+speak-subtitle = Say it!
 speak-goal-text = Clips recorded
-listen-subtitle = Help us validate voices
+listen-subtitle = Validate recordings!
 listen-goal-text = Clips validated
 hours-recorded = Hours Recorded
 hours-validated = Hours Validated
@@ -94,7 +94,7 @@ x-years-short =
 
 
 help-make-dataset = Help us build a high quality and unbiased dataset
-profile-not-required = Having a profile is not required to contribute though it is helpful
+profile-not-required = Having a profile is not required to contribute, though it is helpful
 sign-up-account = Sign up for an account
 email-subscription-title = sign up for email updates
 
