@@ -163,7 +163,7 @@ export default React.memo(() => {
               {
                 discourseLink: (
                   <StyledLink
-                    href="https://discourse.mozilla.org/c/voice"
+                    href="https://forums.vacha.ai"
                     blank
                   />
                 ),
@@ -212,7 +212,7 @@ export default React.memo(() => {
                   </Localized>
                   <Localized id="go-discourse">
                     <LinkButton
-                      href="https://discourse.mozilla.org/c/voice"
+                      href="https://forums.vacha.ai"
                       blank
                       rounded
                       outline
