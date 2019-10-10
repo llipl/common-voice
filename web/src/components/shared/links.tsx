@@ -30,7 +30,7 @@ export const DiscourseLink = localeConnector(
     return (
       <a
         target="blank"
-        href="https://discourse.mozilla-community.org/c/voice"
+        href="https://forums.vacha.ai"
         onClick={() => trackGlobal('discourse', locale)}
         {...props}
       />
