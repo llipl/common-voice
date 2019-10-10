@@ -1,6 +1,6 @@
 {
-    "name": "Project Lok.Vacha",
-    "description": "Project Lok.Vacha collects audio samples of Indian languages to help teach machines how real people speak.",
+    "name": "Common Voice",
+    "description": "Common Voice is Mozilla's initiative to help teach machines how real people speak.",
     "repository": {
         "url": "https://github.com/johnycage/lok",
         "license": "MPL2",
@@ -9,7 +9,7 @@
     "participate": {
         "home": "https://lok.vacha.ai",
         "docs":"https://github.com/johnycage/lok/blob/master/CONTRIBUTING.md",
-        "forum": "https://forums.vacha.ai",
+        "forum": "https://discourse.mozilla.org/c/voice",
         "slack": "https://common-voice.slack.com/",
         "slack-invite": "https://common-voice-slack-invite.herokuapp.com/"
     },
