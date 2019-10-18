@@ -1,33 +1,33 @@
 {
-    "name": "Common Voice",
-    "description": "Common Voice is Mozilla's initiative to help teach machines how real people speak.",
-    "repository": {
-        "url": "https://github.com/johnycage/lok",
-        "license": "MPL2",
-        "tests": "https://travis-ci.org/mozilla/voice-web/"
-    },
-    "participate": {
-        "home": "https://lok.vacha.ai",
-        "docs":"https://github.com/johnycage/lok/blob/master/CONTRIBUTING.md",
-        "forum": "https://discourse.mozilla.org/c/voice",
-        "slack": "https://common-voice.slack.com/",
-        "slack-invite": "https://common-voice-slack-invite.herokuapp.com/"
-    },
-    "bugs": {
-        "list": "https://github.com/johnycage/lok/issues",
-        "report": "https://github.com/johnycage/lok/issues/new"
-    },
-    "urls": {
-        "prod": "https://lok.vacha.ai",
-        "stage": "https://voice.allizom.org"
-    },
-    "keywords": [
-        "asr",
-        "automatic speech recognition",
-        "computational linguistics",
-        "freemarker",
-        "typescript",
-        "voice datasets",
-        "open-data"
-    ]
+  "name": "Lok Vacha",
+  "description": "Lok.Vacha an initiative to help teach machines how real people speak.",
+  "repository": {
+    "url": "https://github.com/johnycage/lok",
+    "license": "MPL2",
+    "tests": "https://travis-ci.org/mozilla/voice-web/"
+  },
+  "participate": {
+    "home": "https://lok.vacha.ai",
+    "docs": "https://github.com/johnycage/lok/blob/master/CONTRIBUTING.md",
+    "forum": "https://forums.vacha.ai/",
+    "slack": "https://common-voice.slack.com/",
+    "slack-invite": "https://common-voice-slack-invite.herokuapp.com/"
+  },
+  "bugs": {
+    "list": "https://github.com/johnycage/lok/issues",
+    "report": "https://github.com/johnycage/lok/issues/new"
+  },
+  "urls": {
+    "prod": "https://lok.vacha.ai",
+    "stage": "https://voice.allizom.org"
+  },
+  "keywords": [
+    "asr",
+    "automatic speech recognition",
+    "computational linguistics",
+    "freemarker",
+    "typescript",
+    "voice datasets",
+    "open-data"
+  ]
 }

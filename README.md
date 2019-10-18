@@ -1,7 +1,5 @@
-## Project Lok-Vacha
-
-This is a web, Android and iOS app for collecting speech
-donations for the Lok-Vacha.
+## Project Lok.Vacha
+This is a web, Android and iOS app for collecting speech samples of real people for Project Lok.Vacha.
 
 ### Official Website
 
@@ -13,11 +11,10 @@ By participating in this project, you're agreeing to uphold the [Mozilla Communi
 
 ### Contributing
 
-From writing and reading sentences to enhancing our front-end architecture, there are many ways to get involved with Common Voice. For more information, check out [CONTRIBUTING.md](./CONTRIBUTING.md).
+From writing and reading sentences to enhancing our front-end architecture, there are many ways to get involved with Project Lok.Vacha. For more information, check out [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ### Discussion
 
 For general discussion (feedback, ideas, random musings), head to our [Discourse Category](https://forums.vacha.ai).
 
 For technical problems or suggestions, please use the [GitHub issue tracker](https://github.com/johnycage/lok/issues).
-

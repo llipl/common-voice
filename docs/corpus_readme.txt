@@ -1,7 +1,7 @@
 1. General information
 ======================
 
-Common Voice is a corpus of speech data read by users on the Common Voice website (https://lok.vacha.ai/), and based upon text from a number of public domain sources like user submitted blog posts, old books, movies, and other public speech corpora. Its primary purpose is to enable the training and testing of automatic speech recognition (ASR) systems, but we encourage its use for other purposes as well.
+Lok.Vacha is a corpus of speech data read by users on the website (https://lok.vacha.ai/), and based upon text from a number of public domain sources and user submitted content. Its primary purpose is to enable the training and testing of automatic speech recognition (ASR) systems.
 
 
 2. Structure
@@ -68,14 +68,12 @@ The audio clips for each subset are stored as mp3 files in folders with the same
 
 Acknowledgments
 ===============
+First and formost, Project Lok.Vacha is the fork of Common Voice by Mozilla. We wish to thank the open source community and Mozilla for making the project open so we could fork it and customize it for Indian Languages. 
 
-We sincerely  thank all of the people who donated their voice on the Common Voice website and app. You are the backbone of this project, and we thank you for making this possible!
-
-We also thank our community on Discourse (https://discourse.mozilla-community.org/c/voice) and Github (https://github.com/mozilla/voice-web), you have made this project better every step of the way.
-
-And special thanks to Mycroft, SNIPS.ai, Mythic, Tatoeba.org, Bangor University, and SAP for joining us on this journey. We look forward to working more with each of you.
+We sincerely  thank all of the people who contributed and offered their voice on the Lok.Vacha and Common Voice website and app. You are the backbone of this project, and we thank you for making this possible!
 
 ---
-Michael Henretty, Tilman Kamp, Kelly Davis & The Common Voice Team
-Mozilla
-Nov. 29, 2017
+
+Project Leader and Admin, 
+@johnycage (https://github.com/johnycage/lok/)
+Lok.Vacha.AI
