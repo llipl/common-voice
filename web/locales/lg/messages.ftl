@@ -8,8 +8,8 @@ email-input =
     .label = Email
 submit-form-action = Sindika
 loading = Bijja…
-email-opt-in-info = Nandi yagadde okufuna obubaka nga obujjukiza, bye'ntuseeko ate n'ebikwata ku Common Voice.
-email-opt-in-info-title = Weyunge kw'abo be tusindikira email ku bifa ku Common Voice
+email-opt-in-info = Nandi yagadde okufuna obubaka nga obujjukiza, bye ntuseeko ate n'ebikwata ku Common Voice.
+email-opt-in-info-title = Weeyunge ku abo be tusindikira email ku bifa ku Common Voice
 email-opt-in-info-sub-with-challenge = Ffuna email nga ezikwata ku bilemye n'okujikiza, wetutuse, n'ebikwata ku Common Voice.
 email-opt-in-privacy-v2 = Bwokkiriza okufuna email kitegeeza nti tolina buzibu na Mozilla kubeera na information eno nga bwe bannyonnyola. <privacyLink>Privacy Policy</privacyLink>.
 indicates-required = Kano * kalaga kyetagisa
@@ -388,51 +388,93 @@ faq-when-release2-a = Version y'ennimi eza dataset ya Common voice mu kasera kan
 faq-why-mission-q = Lwaki Common Voice kw'eli ku misoni ya Mozilla?
 faq-what-cv-and-deepspeech-q = Kiki eky'enjawulo wakati wa Common Voice ne Deep Speech?
 faq-is-goal-assistant-q = Okuzimba voice assistant ky'ekigobero kya Common Voice?
+faq-is-goal-assistant-a = Ekigendererwa kya dataset ya  Common Voice kwe kusobozesa buli omu wonna mu nsi okuzimba tekinologiya ategeera eddoboozi, ategeera enjogera y'omwogezi, oba tekinologiya yenna eyeetaaga data w'amaloboozi. Voice assistant y'emu ku bika bya tekinologiya by'oyinza okuzimba ne dataset.
+faq-do-want-native-q = Siri mwogezi wa lulimi muzaaliranwa era njogera ne akisenti, mwetaaga eddoboozi lyange?
 faq-do-want-native-a = Yee, tusinga kwagala ddoboozi lyo! Ebimu ku biruubirirwa bya Common Voice kwe kukungaanya enjogera ez'enjawulo okusobozesa obuweereza obutegeera amaloboozi okukolera buli omu mu bwenkanya. Kino kitegeeza nti ebiva eri aboogezi abatali bazaaliranwa byamugaso.
 faq-why-different-speakers-q = Lwaki twagala abogezi bangi kubuli lulimi?
 faq-why-my-lang-q = Lwaki olulimi lwange teluriimu?
+faq-what-quality-q = Mutindo ki audio  gw'erina okuba nagwo eddoboozi liryoke likozesebwe mu dataset?
+faq-what-quality-a = Twagala dataset ya Common Voice erefulekitinge omutindo gw'eddoboozi, speech-to-text engine gweneewulira, era tunoonya eby'enjawulo. Nga ogaseeko community ey'aboogezi ab'enjawulo, dataset erina omutindo gw'amaloboozi ag'enjawulo ejja kusomesa speech-to-text engine okukola ku mbeera z'ensi ez'enjawulo okuva ku kwogera okutuuka ku maloboozi g'emmotoka.Clip ye'ddoboozi lyo bwenaaba etegeerekeka, lijja kuba ddungi ekimala okuteeka mu dataset.
+faq-why-10k-hours-q = Lwaki essawa 10,000 ensunsule zeezeetaagisa ku buli lulimi mu kukwata eddoboozi?
+faq-why-10k-hours-a = Guno gwe muwendo gw'essaawa ogwetaagisa okutendeka sisitiimu efuula eddoboozi ebigambo.
 faq-how-calc-hours-q = Common voice ebala etya essaawa?
 faq-how-calc-hours-a = Tubala essaawa nga tuteebereza obuwanvu bwa buli likoodingi ne tumala ne tukubisaamu n'omugatte gwa likoodingi eziri mu nnimi zonna.
 faq-where-src-from-2-q = Ensibuko y'ebigambo evaawa?
+faq-where-src-from-2-a = Ensibuko y'ebigambo byaffe ekolebwa bannayini abenyigiramu nga bawaayo n'emboozi eziwandiikiddwa okuva mu firimu ez'olukale nga <italic>It’s a Wonderful Life</italic>.¶  ¶ Osobola okulaba ensibuko y'emboozi zaffe mu<githubLink>GitHub folder</githubLink>.
 faq-why-not-ask-read-q = Lwaki tetubuuza bantu kusoma mu bitabo oba Wikipedia ezili mu nnimi endala?
+faq-why-not-ask-read-a = Okufuula dataset ya Common voice ey'omugaso nga bwe kisoboka tusazeewo kukkiriza text yokka esibuka wansi wa layisinsi ya Creative Commons (CC0). Nga tukozesa emitendera gya CC0 kitegeeza nti kizibu nnyo okusanga n'okukunganya text, naye nga ekikiriza omuntu yenna okukozesebwa data w'amaloboozi nga tewali kugaanibwa oba kumala kukkirizibwa okuva ku Mozilla. Mu nkomerero twagala kufuula dataset y'ennimi zonna ey'omugaso eri buli omu, omuli abanoonyereza, universities, startups, gavumenti, ebitongole by'obulamu bwa bulijjo n'abanyumirwa.
+faq-why-account-q = Lwaki nnina okuggulawo akawunti?
 faq-is-account-public-q = Ebinfaako mu akawunti yange bilabika mu lwatu?
+faq-how-privacy-q = Mukakasa mutya nti ebikwata ku bagaba amaloboozi gaabwe bikumibwa mu kyama?
+faq-how-privacy-a = Clip z'amaloboozi zonna mu dataset zisangulwako ebikwata ku muntu. Omuntu bw'awaayo ebimukwatako ng'ayita ku pulofayiro ye, ebimukwatako byawulwa ku clip z'amaloboozi nga tezinateekebwateekebwa wamu okusobola okuziwanula mu dataset era tebifuulibwa bya lukale ku pulofayiro page ye.
 faq-what-determine-identity-q = Kitegeeza ki nti sisobola kumanya bikwata ku bogezi mu dataset ya Common voice?
+faq-what-determine-identity-a =
+    Dataset ya Common Voice ya lukale era esobola  okukozesebwa okuyigiriza tekinologiya akozesa amaloboozi ow'enjawulo.  Okukuuma abawaayo eri Common Voice, tusaba buli muntu awanula dataset ya Common voice okuwa ekitiibwa privacy yaabwe.
+    Clips ez'amaloboozi  zonna eziri mu dataset zisangulwako ebikwata  ku muntu. Bw'owanula dataset okiriziganya n'obutagezaako kuzuula ebikwata ku yawaayo. Ekyo kitegeeza nti tosobola kugezaako kukwanaganya biri mu dataset ku bikwata n'oyo eyawaayo. Wabula, osobola okukozesa dataset mu kuyigiriza tekinologiya ategeera okwogera, tekinologiya ategeera omwogezi oba tekinologiya omulala okugeza nga okukwataganya obubaka obuli mu dataset kubusangiddwamu.
 faq-what-is-cv = Common Voice Ky'ekiki?
 faq-using-cv = Okozesa Common Voice
 faq-description = Mozilla yasaawo Common Voice okuyamba okusomesa masiini engeri abantu gye bogera.
+faq-search-for-answers =
+    .label = Noonya answers.
 
 ## ABOUT US
 
 about-title = Lwaki Common Voice?
+about-subtitle = Common Voice kitundu ku byatandikibwawo Mozilaa okuyamba okuyigiriza komputa abantu bwe boogera. Nga oggyeko dataset ya Common Voice, tuzimba yingini ey'olukale etegeera okwogera eyitibwa Deep Speech.
 how-does-it-work-title = Ekola etya?
 how-does-it-work-text = Tuli mu kukunganya dataset y'amaloboozi ey'obwereere. Ggaba eddoboozi lyo, sunsula obutuufu bwa amaloboozi g'abalala, fuula dataset nnungi eri buli muntu.
 about-speak = Yogera
+about-speak-text = Abenyigiramu balikoodinga  voice clips nga basoma okuva terekero lya sentensi ezaweebwayo.
+about-listen-queue = Listen-Queue
+about-listen-queue-text = Clip z'amaloboozi ziyingizibwa mu lunyiriri oluziteekateeka okuwulirizibwa.
 about-listen = Wulira
+about-listen-text = Abakozesa  bakakasa obutuufu bwa clip eziweereddwayo, okukebera nti omwogezi yasomye sentensi mu butuufu.
+about-is-it-valid = Clip eno nkakase?
+about-is-it-valid-text = Clip y'eddoboozi erambibwa "nkakase" omukozesa bw'agiwa akalulu "Ye".
+about-yes-votes = ≥ Obululu "Ye" 2
+about-yes-votes-text = Okuyingizibwa mu dataset ya Common Voice, clip y'eddoboozi erina okukakasibwa abakozesa babiri ab'enjawulo.
+about-no-votes = ≥ obululu "Nedda" 2
 about-no-votes-text = Omuntu bwagana eddoboozi liddayo emabega mu layini y'ezo ezitannaba kutukibwako. Bweliganibwa ogw'okubiri, eddoboozi lisuulibwa mu limbo.
 about-dataset-new = Dataset ya Common Voice
+about-dataset-new-text = Dataset ya Common Voice erimu amaloboozi enkumi n'enkumi agayamba ba diveropa okuzimba  ebintu ebyeyamisibwa mu tekinologiya w'amaloboozi.
 about-clip-graveyard = Amalaalo G'obuloboozi
+about-clip-graveyard-text = Limbo ya Clip erimu clip z'amaloboozi ezitayinginziddwa mu dataset ya Common Voice. Nga era dataset, Limbo ya Clip weeri okuwanulwa.
 about-partners = Ba patana
 about-become-a-partner = Fuuka patana
+about-partnership =
+    Common Voice pulojekiti ya ku kolera wamu era twesigamye ku  ba patina baffe abangi n'abawaayo okuzimba dataset ey'amaloboozi ekyasinze obunene ate nga ya lukale.
+    
+    Twagala okwebaza abantu bano n'ebitongole  bino wamanga ku lw'obuyambi ku pulojekiti:
 about-get-involved = Twegatteko
+about-get-involved-text-2 = Oyagala okuyamba Common Voice okulungiwa? Kirungi! Kwatagana naffe ku email oba <discourseLink>Discourse</discourseLink> foramu, weereza ebizibu bya site eno ku <githubLink>GitHub</githubLink>, oba weegatte <matrixLink>Matrix</matrixLink>chat ya  community.
 about-nav-why-common-voice = Lwaki?
 about-nav-how-it-works = Batya?
 about-nav-partners = Ba patana
 about-nav-get-involved = Twegatteko
 mycroft-title = Mycroft Ai
 mycroft-subtitle = Artificial intelligence
+mycroft-description =
+    Mycroft ye kiyambi ey'obwereere nga ya lukale eyasooka mu nsi.
+    Mycroft ekolera wonna - ku komputa y'okummeeza, mu automobile, oba ku Raspberry Pi.
+mycroft-secondary-description = Ono software wa lukale asobola okutabikibwa,okugaziyizibwa, era n'okulongoosebwa ku bwereere. Mycroft asobola okukozesebwa mu ngeri yonna okuva ku  pulojekiti ya sayansi okutuuka ku software owa kitunzi.
 
 ## Glossary
 
+glossary = Awannyonnyolerwa Ebigambo
 localization = Okuvunnula
 localization-explanation = Eno y'enkola yaffe ey'okuvvunula n'okukyusa ebintu byaffe mu nnimi ez'enjawulo.
 sentence-collection = Okukunganya sentensi
 sentence-collection-explanation = Okukunganya sentensi okuva mu tterekero ly'olukale, oba okuwandiika empya.
 hours-recorded-explanation = Omuwendo gw'amaloboozi mu ssaawa ze twakalikodinga.
+hours-validated-explanation = Omuwendo gw'essaawa z'amaloboozi agalikondingibwa nga gakakasiddwa abantu babiri ku basatu n'akalulu aka "Ye". Bino biraga pulojekiti weetuuse ku kiruubirirwa  eky'essaawa omutwalo gumu.
 sst = Eddoboozi-mu-buwandiike (STT)
 sst-explanation = Tekinologiya wa Speech-to-text (STT) akyusa eddoboozi n'alizza mu buwandiike
+de-identified = De-identified
+de-identified-explanation = Enkola ey'okukweka ebikwata ku ayambako okuva  ku ddoboozi ly'awaddeyo bwe liteekebwateekebwa okuwanulwa awamu ne dataset.
 
 ## Error pages
 
+error-title-404 = Tetusobodde kufunira page eyo
 
 ## Data
 
@@ -441,6 +483,8 @@ data-download-yes = Ye
 data-download-deny = Nedda
 data-download-license = Layisensi: <licenseLink>CC-0</licenseLink>
 data-download-modal = Oli kumpi kutandika download eya <size>{ $size }GB</size>, weeyongereyo?
+data-subtitle = Tuzimba dataset ey'obwereere era nga yalukale nga y'amaloboozi buli muntu gy'asobola okukozesa okuyigiriza tekinologiya w'okwogera.
+data-explanatory-text = Tukkiriza nti dataset enene ate nga za lukale az'amaloboozi zireeta okuyiiya n'okuvuganya okulungi okw'ebyensimbi mu tekinologiya w'okwogera. Kuno kulafuubana kwa nsi yonna era tuyita buli omu okwenyigiramu. Ekigendererwa kyaffe kuyamba tekinologiya w'okwogera okukikirira n'okulaga  enjawulo eriwo mu maloboozi mu nsi yonna.
 data-get-started = <speechBlogLink>Tandika N'okutegera Amaloboozi</speechBlogLink>
 data-other-title = Dataset z'amaloboozi endala...
 data-other-goto = Genda mu { $name }
@@ -450,6 +494,7 @@ data-bundle-description = Data wa Common Voice gattako dataset y'amaloboozi amal
 license = Layisinsi: <licenseLink>{ $license }</licenseLink>
 license-mixed = Ntabule
 data-download-singleword-title = Dawunulodinga ekitundu kya tageti ya Single Word
+data-download-singleword-callout = This is a use case driven segment containing data to power spoken digit recognition, yes / no detection, and wakeword testing data for <fxLink>Firefox Voice</fxLink>.
 review-terms = Bw'okozesa Common Voice, okiriza <termsLink>Enkolagana</termsLink> ne <privacyLink>Eby'ekyama</privacyLink>
 terms-agree = Nzikiriza
 terms-disagree = Si kkiriza
@@ -464,6 +509,13 @@ review-delete-recordings = Sazaamu ebilikodinge byange
 
 ## Datasets Page
 
+datasets-headline = Tuzimba dataset y'amaloboozi ey'obwereere ey'ennimi ennyingi  omuntu yenna gy'asobola okukozesa okuyigiriza tekinologiya  w'okwogera.
+datasets-positioning =
+    Tukkiriza nti dataset enene ate nga za lukale az'amaloboozi zireeta okuyiiya n'okuvuganya okulungi okw'ebyensimbi mu tekinologiya w'okwogera.¶
+    ¶
+    Dataset ya Common Voice ey'ennimi ennyingi ye dataset ey'amaloboozi ey'olukale esinga obunene mu ngeri yaayo, naye si ye yokka.
+    ¶
+    Tunuulira page eno nga ekyokulabirako kya dataset z'amaloboozi ez'olukale era, nga Common Voice bwe ye yongera okukula, ekibanja aw'okufulumiza ebipya ebyaffe.
 language = Olulimi
 # File size in gigabytes
 size = Obunene
@@ -488,6 +540,14 @@ subscribe = Wewandiise
 get-started-speech = Tandika Okutegera Amaloboozi
 other-datasets = Dataset z'amaloboozi endala
 feedback-q = Oyina obubaka?
+deepspeech-info = Dataset ya Common Voice ekwatagana ne tekinologiya ow'obwereere owa Deep Speech owa Mozilla, gw'osobola okukozesa okuzimba tekinologiya ategeera amaloboozi. Soma <githubLink>Github overview</githubLink>  oba weyunge ku <discourseLink>DeepSpeech Discourse</discourseLink> okuyiga engeri y'okutandika.
+common-voice-info-new = Oyina ebibuuzo ebikwata ku Common Voice? Ebirowoozo by'okulongoosa oba obubaka obukwata ku lulimi olumu? Tweyungeko ku  <discourseLink>Discourse forum</discourseLink> otubuulire.
+data-other-librispeech-description = Ekunganiro lya LibriSpeech lirina essaawa 1000 eza 16Khz ez'Olungereza ezisomeddwa okuva mu bitabo by'amaloboozi ga pulojekiti ya LibriVox.
+data-other-ted-name = TED-LIUM Corpus
+data-other-ted-description = TED-LIUM Corpus yakolebwa okuva mu butambi bw'okwogera ne biwandiikiddwa okuva mu mboozi ezo  eziri ku kibanja kya TED.
+data-other-voxforge-description = VoxForge yakolebwa okukunganya emboozi empandiike ez'okukozesebwa ku bwereere mu tekinologiya  ow'olukale ategeera enjogera.
+data-other-tatoeba-description = Tatoeba database nene eya sentensi, enzivunule n'obutambi bw'amaloboozi obw'okukozesa mu kuyigiriza olulimi. Ekungaaniro lino lirimu amaloboozi g'Olungereza agaakwatibwa ekibiina kyabwe.
+your-feedback = Oyina ebirowoozo ku ngeri gye tuyinza okwongera  okufuula dataset ya Common Voice okubeera ennungi? Tutegeeze ku Kimeeza.
 go-discourse = Genda ku Discourse
 missing-language = Olulimi lwo tolulaba mu Dataset? Okusaba olulimi genda pegi yaffe Ey'ennimi.
 go-languages-page = Genda Ku Pegi y'ennimi
@@ -530,6 +590,7 @@ other-language = Olulimi Olulala
 
 language-section-in-progress = Kigenda mu maaso
 language-section-launched = Launched
+language-section-launched-description = Ennimi ezimaze okulonchingibwa website ezikirizza <OkugandawazaGlossaryLink>zigandawaziddwa</okugandawazaGlossaryLink>, era erina ekimala <sentensiEzikunganyiziddwaGlossaryLink>sentensienkunganye</sentensiezikunganyiziddwaGlossaryLink> okukiriza okugenda maaso  <kwogeraLink>Yogera</yogeraLink> and <WulirizaLink>Wuliriza</WulirirzaLink> ebituweereddwa
 languages-show-more = Laba Ebirala
 languages-show-less = Laba bitono
 language-meter-in-progress = Wekituuse
@@ -571,20 +632,35 @@ record-error-too-short = Likodingi yabadde nyimpi nyo.
 record-error-too-long = Likodingi yabadde mpanvu nyo.
 record-error-too-quiet = Likodingi yabadde nsilifu nnyo.
 record-cancel = Sazaamu okulikodinga buto
+record-instruction = { $actionType }<recordIcon></recordIcon> oluvannyuma soma sentensi n'amaanyi.
 record-stop-instruction = { $actionType }<stopIcon></stopIcon> nga omaze
 record-three-more-instruction = Wabulayo busatu!
+record-again-instruction = Kirungi!<recordIcon></recordIcon>Likodinga clip yo eddako.
+record-again-instruction2 = Weebale, ddamu okulikodinga<recordIcon></recordIcon>
 record-last-instruction = <recordIcon></recordIcon> Ekisembayo!
+review-tooltip = Weetegereze  & oddemu okwat clips nga bw'ogenda
 share-clip = Ggaba akaloboozi ko
 share-common-voice = Sheyaringa Common Voice
+review-instruction = Weetegereze  & oddemu okwate clips bwe kiba kyetaagisa.
 record-submit-tooltip = { $actionType } sindika nga wetegese
+clips-uploaded = Clips eziwanikiddwa
 record-abort-title = Sooka omale okulekodinga?
+record-abort-text = Okuvaawo kati kitegeeza ojja kufiirwa by'okozeeko.
+record-abort-submit = Waayo clips
 record-abort-continue = Maliriza okulikodinga
 record-abort-delete = Mala atte Osazeemu obuloboozi
+listen-instruction = { $actionType }<playIcon></playIcon>baayogedde sentensi mu butuufu?
+listen-again-instruction = Mulimu mulungi<playIcon></playIcon>ddamu owulirize nga weetegese.
 listen-3rd-time-instruction = 2 biwedde, kkola nga bw'otyo!<playIcon></playIcon>
 listen-last-time-instruction = <playIcon></playIcon> Ekisembayo!
+listen-empty-state = Clip ez'okusunsula ziweddewo mu lulimi luno...
 speak-empty-state = Emboozi ez'okulikodinga mulirimi luno zituweddeko...
 speak-empty-state-cta = Waayo ku mboozi
 record-button-label = Likodinga eddoboozi lyo
+share-title-new = <bold>Help us</bold> okufuna amaloboozi amalala.
+login-to-get-started = Log in oba sign up okutandika
+target-segment-first-card = Oli mu kuwaayo ku target segment yaffe esooka.
+target-segment-first-banner = Yambako okutondawo target segment ya Common Voice esooka mu { $locale }
 target-segment-add-voice = Gattako Eddoboozi lyo
 target-segment-learn-more = Manya Ebisingawo
 
@@ -603,10 +679,15 @@ report-difficult-pronounce = Kizibu okwogera
 report-difficult-pronounce-detail = Mulimu ebigambo ebizibu okusoma oba okwogera.
 report-offensive-speech = Enjogera nswevu
 report-offensive-speech-detail = Kano akaloboozi kalimu ebigambo ebibi oba ebiluma.
+report-other-comment =
+    .placeholder = Comment
+success = Success
 continue = Weyongereyo
+report-success = Alipoota yayisiddwawo bulungi
 
 ## Goals
 
+streaks = Streaks
 days =
     { $count ->
         [one] Olunaku
@@ -617,25 +698,46 @@ recordings =
         [one] Ekilikodinge
        *[other] Ebilikodinge
     }
+validations =
+    { $count ->
+        [one] Okukakasa
+       *[other] Ebikakasiddwa
+    }
 
 ## Dashboard
 
 your-languages = Ennimi Zo
 toward-next-goal = Sembera ekigobero ekiddirira
 clips-you-recorded = Obuloboozi Bw'olikodinze
+clips-you-validated = Clips z'okakasizza
+todays-recorded-progress = Wetutuuse leero ku Common Voice ku clips ezirikodingiddwa.
+todays-validated-progress = Wetutuuse leero ku Common Voice ku clips ezikakasiddwa
+stats = Stats
+awards = Awards
 you = Gwe
 everyone = Buli omu
+contribution-activity = Contribution Activity
 top-contributors = Abasinga Okuyamba
 recorded-clips = Obuloboozi Obulikodinge
+validated-clips = Clips ezikakasiddwa
+total-approved = Omuwendo gw'ebisiimiddwa
+overall-accuracy = Overall Accuracy
+set-visibility = Set my visibility
+visibility-explainer = Seetingi eno eyamba ku kulabika kwa leaderboard. Bw'ekwekebwa, okulaba wootuuse kuba kwa kyama. Kino kitegeeza, ekifaananyi kyo, erinnya ne wootuuse tebijja kulabika ku leadersboard . Jjukira nti leaderboard bwedda obuggya etwala ~{ $minutes } eddakiika okukyusa.
+visibility-overlay-note = Jjukira: Bw'eteekebwa ku 'Visible', setting eno esobola okukyusibwa ku <profileLink>Profile page</profileLink>
 show-ranking = Ndaga wendi
 
 ## Custom Goals
 
 get-started-goals = Tandika ku bigobero
+create-custom-goal = Teekawo ekiruubirirwa ekikyo
+goal-type = Kiruubirirwa ki ky'oyagala okuzimba?
 both-speak-and-listen = By'ombi
+both-speak-and-listen-long = Byombi (Yogera ate owulirize)
 daily-goal = Ekigobero Kya buli lunaku
 weekly-goal = Ekigobero Kya Buli Wiiki
 easy-difficulty = Nyangu
+average-difficulty = Average
 difficult-difficulty = Nzibu
 pro-difficulty = Nkugu
 lose-goal-progress-warning = Bw'okyusa ekigobero kyo, oyinza okufirwa w'otuuse.
@@ -643,24 +745,54 @@ want-to-continue = Oyagala okweyongerayo?
 finish-editing = Sooka omale by'okyuusa?
 lose-changes-warning = Okugenda kati kitegeeza nti ojja kufiirwa by'okyuusiza
 build-custom-goal = Zzimba eby'okukola
+help-reach-hours-pluralized =
+    Yamba okuweza{ NUMBER($hours) ->
+        [one] { $hours } essaawa
+       *[other] { $hours } ssaawa
+    } mu { $language }  n'ekiruubirirwa ekikyo
+help-reach-hours-general-pluralized =
+    Yamba Common Voice okuweza{ NUMBER($hours) ->
+        [one] { $hours } essaawa
+       *[other] { $hours } ssaawa
+    }  mu lulimi n'ekiruubirirwa ekikyo.
 set-a-goal = Tereeza ekigobero
 cant-decide = Tosobola kusalawo?
 how-many-per-day = Kilungi! Buloboozi bumeka olunaku?
 how-many-a-week = Kilungi! Buloboozi bumeka mu wiiki?
 which-goal-type = Oyagala kw'ogera, Kuwuliriza oba by'ombi?
+receiving-emails-info =
+    Kaakano oteekeddwa  okufuna emails nga ezikujjukiza ku kiruubirirwakyo,¶
+    wootuuse n'ebikwata ku Common Voice
+n-clips-pluralized =
+    { NUMBER($count) ->
+        [one] { $count } clip
+       *[other] { $count } clips
+    }
+help-share-goal = Tuyambeko okuzuula amaloboozi amalala, gabana ekiruubirirwa kyo
 confirm-goal = Kakasa Ekigobero
 goal-interval-weekly = Buli wiiki
+# $type is one of share-goal-type-*
+share-n-daily-contribution-goal = Gabana ekiruubirirwa kyo ekya { $count } Clip buli lunaku ku { $type }
+# $type is one of share-goal-type-*
+share-n-weekly-contribution-goal = Gabana ekiruubirirwa kyo ekya { $count } Clip buli wiiki ku { $type }
+share-goal-type-speak = Okwogera.
 share-goal-type-listen = Okuwliriza
+share-goal-type-both = Okwogera n'okuwuliriza.
 weekly-goal-created = Ekigobero kyo ekya buli wiiki kikolebbwa
 daily-goal-created = Ekigobero kyo ekya buli lunaku kikolebbwa
+track-progress = Manyira wano w'otuuse oba ku stats page yo.
+return-to-edit-goal = Komawo wano okyuse ekiruubirirwa kyo essaawa yonna.
 share-goal = Sheyaringa ekigobero kyange
 
 ## Profile Delete
 
 keep = Tereka
 remove = Jjako
+profile-form-delete = Sangula ebikwatako
 
 ## Landing
 
 welcome-staff = Tukwaniriza{ $company } mukozi waffe!
+login-company = Log in/ sign up ne { $company } email
 profile-not-required = Tekyetagisibwa kuba na profayilo okuyamba wadde kya mugaso, laba lwaki wansi awo.
+read-more-about = Soma ebisingawo ku page yaffe ey'Ebitukwatako.

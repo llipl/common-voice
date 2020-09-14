@@ -16,7 +16,14 @@ const PRIORITY_TAXONOMY = 'Benchmark';
 // Ref JIRA ticket OI-1300 - we want to exclude languages with fewer than 500k active global speakers
 // from the single sentence record limit, because they are unlikely to amass enough unique speakers
 // to benefit from single sentence constraints
-const SMALL_LANGUAGE_COMMUNITIES = ['ab', 'cnh', 'dv', 'rm-sursilv', 'sah', 'vot'];
+const SMALL_LANGUAGE_COMMUNITIES = [
+  'ab',
+  'cnh',
+  'dv',
+  'rm-sursilv',
+  'sah',
+  'vot',
+];
 
 const teammate_subquery =
   '(SELECT team_id FROM enroll e LEFT JOIN challenges c ON e.challenge_id = c.id WHERE e.client_id = ? AND c.url_token = ?)';
@@ -537,7 +544,7 @@ export default class DB {
     sentence: string;
   }): Promise<void> {
     try {
-      await this.mysql.query(
+      const [{ insertId }] = await this.mysql.query(
         `
           INSERT INTO clips (client_id, original_sentence_id, path, sentence, locale_id)
           VALUES (?, ?, ?, ?, ?)
@@ -554,6 +561,18 @@ export default class DB {
           WHERE id = ?
         `,
         [original_sentence_id, original_sentence_id]
+      );
+      await this.mysql.query(
+        `
+          INSERT INTO clip_demographics (clip_id, demographic_id) (
+            SELECT ?, id
+            FROM demographics
+            WHERE client_id = ?
+            ORDER BY updated_at DESC
+            LIMIT 1
+          )
+        `,
+        [insertId, client_id]
       );
     } catch (e) {
       console.error('error saving clip', e);
