@@ -26,6 +26,8 @@ export interface BundleState {
   language: string;
   totalHours: number;
   validHours: number;
+  rawSize: number;
+  datasetVersion?: string;
 }
 
 //Subscribe form interfaces

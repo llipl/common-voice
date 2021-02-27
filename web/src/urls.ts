@@ -1,5 +1,7 @@
 const PROFILE = '/profile';
 const DASHBOARD = '/dashboard';
+const DEMO = '/demo';
+
 export default Object.freeze({
   ROOT: '',
 
@@ -30,6 +32,14 @@ export default Object.freeze({
   LANGUAGES: '/languages',
   ABOUT: '/about',
 
+  DEMO,
+  INTRO: DEMO,
+  DEMO_DATASETS: DEMO + '/datasets',
+  DEMO_DASHBOARD: DEMO + '/dashboard',
+  DEMO_SPEAK: DEMO + '/speak',
+  DEMO_LISTEN: DEMO + '/listen',
+  DEMO_ACCOUNT: DEMO + '/create-profile',
+  DEMO_CONTRIBUTE: DEMO + '/contribute',
   TARGET_SEGMENT_INFO:
     'https://discourse.mozilla.org/t/help-create-common-voices-first-target-segment/59587',
   TARGET_SEGMENT_INFO_ES:
@@ -38,4 +48,8 @@ export default Object.freeze({
   HTTP_ROOT: 'https://commonvoice.mozilla.org',
   STAGING_ROOT: 'https://commonvoice.allizom.org',
   GITHUB_ROOT: 'https://github.com/mozilla/common-voice',
+
+  S3_BUCKET:
+    'https://voice-prod-bundler-ee1969a6ce8178826482b88e843c335139bd3fb4.s3.amazonaws.com',
+  S3_CDN: 'https://cdn.commonvoice.mozilla.org',
 });

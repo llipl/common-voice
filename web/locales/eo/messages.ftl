@@ -33,14 +33,18 @@ as = Asama
 ast = Astura
 az = Azerbajĝana
 ba = Baŝkira
+bas = Basaa
 be = Bjelorusa
 bg = Bulgara
+bm = Bambara
 bn = Bengala
 br = Bretona
 bxr = Burjata
 ca = Kataluna
 cak = Kakĉikela
+ckb = Centra kurda
 cnh = Hakaĉina
+co = Korsika
 cs = Ĉeĥa
 cv = Ĉuvaŝa
 cy = Kimra
@@ -62,11 +66,13 @@ fr = Franca
 fy-NL = Frisa
 ga-IE = Irlanda
 gl = Galega
+gn = Gvarania
 ha = Haŭsa
 he = Hebrea
 hi = Hinda
 hr = Kroata
 hsb = Suprasoraba
+ht = Haitia kreola
 hu = Hungara
 hy-AM = Armena
 hyw = Okcidenta armena
@@ -81,9 +87,9 @@ kaa = Karakalpaka
 kab = Kabila
 kbd = Kabarda
 kk = Kazaĥa
+kmr = Kurmanĉa kurda
 ko = Korea
 kpv = Komiziriana
-ku = Kurda
 kw = Korniŝa
 ky = Kirgiza
 lg = Ganda
@@ -96,7 +102,9 @@ mhr = Orientmaria
 mk = Makedona
 ml = Malajalama
 mn = Mongola
+mos = Mosia
 mrj = Okcidentmaria
+ms = Malaja
 mt = Malta
 my = Birma
 myv = Erzja
@@ -108,6 +116,7 @@ oc = Okcitana
 or = Odia
 pa-IN = Panĝaba
 pl = Pola
+ps = Paŝtuna
 pt = Portugala
 rm-sursilv = Romanĉa surselva
 rm-vallader = Valadera romanĉa
@@ -140,6 +149,7 @@ uz = Uzbeka
 vec = Venecia
 vi = Vjetnama
 vot = Vota
+yue = Kantona
 zh-CN = Ĉina (Ĉinio)
 zh-HK = Ĉina (Honkongo)
 zh-TW = Ĉina (Tajvano)
@@ -235,7 +245,7 @@ whats-public = Kiuj informoj estas publikaj?
 email-not-public = Ni ne publikigos vian retpoŝtadreson.
 recordings-and-locale-public = La nombro de voĉregistroj kaj la lingvoj, kun kiuj vi kunlaboras, estos publikaj.
 username-optin-public = Vi povas elekti ĉu publikigi aŭ anonimigi vian nomon de uzanto.
-demographic-deidentified-clarity = Laŭvole senditaj demografiaj informoj (ekzemple aĝo, sekso, lingvo kaj akĉento) neniam estos publikaj en via profilo, kaj ili ne estos ligitaj al via konto en la datumaro. Unuopaj voĉregistroj estos asociitaj kun demografiaj datumoj, por analizi pri precize. Ezkemplo: esploristo povus voli alĝustigi sian trejnmodelon al specifa demografia segmento.
+demographic-deidentified-clarity-2 = Laŭvole senditaj demografiaj informoj (ekzemple aĝo, genro, lingvo kaj akĉento) neniam estos publikaj en via profilo, kaj ili ne estos ligitaj al via konto en la datumaro. Unuopaj voĉregistroj estos asociitaj kun demografiaj datumoj, por analizi pri precize. Ezkemplo: esploristo povus voli alĝustigi sian trejnmodelon al specifa demografia segmento.
 username-email-not-demographic = Via nomo de uzanto kaj retpoŝta adreso ne esos asociitaj kun la publikigitaj datumoj.
 
 ## Speak & Listen Shortcuts
@@ -265,6 +275,7 @@ shortcut-record-toggle-label = Registri / Haltigi
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Refari voĉregistron
 request-language-text = Ĉu vi ne vidas vian lingvon en Common Voice?
+request-language-text-learn = Jen pli da informo pri tiu peto!
 request-language-button = Peti lingvon
 
 ## ProjectStatus
@@ -293,8 +304,8 @@ profile-form-accent =
     .label = Akĉento
 profile-form-age =
     .label = Aĝo
-profile-form-gender =
-    .label = Sekso
+profile-form-gender-2 =
+    .label = Genro
 leaderboard-visibility =
     .label = Publika montro
 hidden = Kaŝita
@@ -320,7 +331,7 @@ profile-close = Fermi
 profile-explanation = Sekvu vian progreson per profilo, kaj helpu niajn voĉajn datumojn iĝi pli precizaj.
 thanks-for-account = Dankon pro la konfirmo de via konto, nun kreu ni vian profilon.
 why-demographic = Kial tio ĉi gravas?
-why-demographic-explanation = Anonimigitaj datumoj de uzanto kiel aĝo, sekso kaj akĉento helpas plibonigi la voĉajn datumojn, kiujn oni uzas por trejni la akuratecon de la parolrekoniloj. Vi nomo de uzanto kaj via retpoŝto neniam estos asociitaj kun la datumoj, kiujn vi sendas, kaj vi povas elekti ĉu igi vian nomon de uzanto publika aŭ anonima.
+why-demographic-explanation-2 = Anonimigitaj datumoj de uzanto kiel aĝo, genro kaj akĉento helpas plibonigi la voĉajn datumojn, kiujn oni uzas por trejni la akuratecon de la voĉrekoniloj. Vi nomo de uzanto kaj via retpoŝto neniam estos asociitaj kun la datumoj, kiujn vi sendas, kaj vi povas elekti ĉu igi vian nomon de uzanto publika aŭ anonima.
 accept-privacy = Mi konsentas kun via pritrakto de tiu ĉi informo, laŭ via priskribo en la <privacyLink>privateca politiko</privacyLink> de Mozilla
 accept-privacy-title = Politiko pri privateco
 login-identity = Idento de seanco
@@ -503,10 +514,12 @@ data-other-goto = Iri al { $name }
 data-other-download = Elŝuti datumojn
 data-bundle-button = Elŝuti kolekto da datumaroj
 data-bundle-description = Datumoj de Common Voice kaj ĉiuj aliaj supraj voĉaj datumaroj.
+release-version = Versio
+dataset-date = Date
 license = Permesilo: <licenseLink>{ $license }</licenseLink>
 license-mixed = Miksita
 data-download-singleword-title = Elŝuti la celan segmenton de unikaj vortoj
-data-download-singleword-callout = Tiu ĉi estas cela segmento por aparta uzo. Ĝi enhavas datumojn, kiuj rilatas la rekonon de parolitaj ciferoj, detekton de jes kaj ne,  kaj  testajn datumojn por la vekvorto de <fxLink>Firefox Voice</fxLink>.
+data-download-singleword-callout-v2 = Tiu ĉi estas segmento por aparta uzo; ĝu enhavas datumojn por povi rekoni parolitajn ciferojn kaj respondojn jes/ne.
 review-terms = Per la uzo de Common Voice vi akceptas niajn <termsLink>kondiĉojn</termsLink> kaj <privacyLink>privatecan rimarkon</privacyLink>
 terms-agree = Mi akceptas
 terms-disagree = Mi ne akceptas
@@ -678,6 +691,7 @@ share-title-new = <bold>Helpu nin</bold> trovi pli da voĉoj
 keep-track-profile = Akompanu vian progreson per profilo
 login-to-get-started = Komencu seancon aŭ enskribiĝu por ekuzi
 target-segment-first-card = Vi kontribuas kun nia unua cela segmento
+target-segment-generic-card = Vi kontribuas kun cela segmento
 target-segment-first-banner = Helpu krei la unuan celan segmenton de Common Voice en { $locale }
 target-segment-add-voice = Aldoni vian voĉon
 target-segment-learn-more = Pli da informo
@@ -842,3 +856,39 @@ help-contribute = Vi povas helpi konstrui diversan, malfermitkodan datumaron per
 login-company = Komencu seancon / registriĝu per retpoŝta adreso de { $company }
 profile-not-required = Por kontribui, vi ne bezonas profilon, sed ĝi povas esti utila
 read-more-about = Pli da informo en la paĝo: Pri Common Voice
+
+## DemoLayout
+
+demo-get-started = Komencu ni
+demo-welcome = Bonvenon al Common Voice
+demo-welcome-subheader = Ĉu vi ŝatus scii pli kaj kontribui kun tiu ĉi projekto?
+
+## Demo Datasets
+
+demo-language-select-card-header = Common Voice estas la plej granda, publike disponebla, plurlingva voĉa datumaro.
+demo-language-select-card-body = Danke al la kontribuoj de pli ol 259.000 personoj en pli ol 50 lingvoj, tiu ĉi datumaro estas uzata por trejni voĉakceptajn programoj, tiel ke ili pli bone respondas al homaj voĉoj.
+card-button-next = Antaŭen
+card-button-back = Malantaŭen
+demo-language-select-label = Serĉi lingvojn
+demo-eofy-header = Jarfina livero de 2019
+demo-eofy-sub_header = Voĉa datumaro, preta por elŝuto
+demo-account = Konto
+
+## Demo Account
+
+demo-account-card-header = Por kontribui, vi ne bezonas konton, sed ĝi povas esti utila.
+demo-account-card-body = Dekstre ni montras la bonajn flankonj kaj klarigas kiujn informojn ni publikigas. Uzu la ligilojn malsupre por komenci per konto de Common Voice en via propra aparato.
+demo-account-enter-email =
+    .label = Tajpu retpoŝtan adreson por ricevi enskriban ligilon
+demo-account-sign-up = Sendi enskriban ligilon
+
+## Demo Contribute
+
+demo-contribute-card-header = Ĉu vi pretas aldoni vian voĉon aŭ aŭskulti?
+demo-contribute-card-body-v2 = Nun vi scias iom pli pri Common Voice. Ĉu vi volas provi ĝin? Alklaku la emblon de mikrofon por komenci laŭtlegi frazojn. <br/><br/>Se vi preferas revizii la voĉajn kontribuojn de aliaj personoj, alklaku la emblemon por ludi. Vi helpos konfirmi ĉu la registrita voĉo, kiun vi aŭdas, kongruas kun la vortoj skribitaj surekrane.
+demo-listen-subtitle = Ĉu vi pretas kontribui?
+
+## Demo Dashboard
+
+demo-dashboard-card-header = Persona panelo montras al vi la aktualan progreson propran kaj komunuman.
+demo-dashboard-card-body = Ĉiu nova voĉregistro kaj revizio ĝisdatigas viajn panelon por montri la aktualan progreson en ĉiu lingvo, kun kiu vi kontribuas. Jes, vi povas kontribui kun pli ol unu lingvo! <br/><br/>Uzu panelojn por sekvi viajn progreson kaj vidi kiel vi kaj aliaj en la komunumo kunlaboras. Vi ankaŭ povas tie difini viajn tagajn aŭ semajnajn celojn kontribuajn.
